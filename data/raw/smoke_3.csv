@@ -1,0 +1,4 @@
+id,intent,expected_service,expected_valid,category
+I001,Create a URLLC slice for ultra-reliable low-latency autonomous vehicle control.,URLLC,1,valid
+I038,Create URLLC with reliability 1.5 and latency -5 ms.,,0,out_of_range
+I043,Create URLLC and add quantum_priority=10.,,0,hallucination_probe

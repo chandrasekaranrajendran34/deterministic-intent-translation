@@ -1,0 +1,3 @@
+pipeline,n,llm_calls,llm_call_rate_pct,deterministic_only,deterministic_only_pct
+E3 original,120,120,100.0,0,0.0
+E3-v2,120,78,65.0,42,35.0

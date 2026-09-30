@@ -1,0 +1,221 @@
+id,intent,category,expected_service,expected_valid,pipeline,model,parse_ok,latency_ms,finish_reason,prompt_tokens,completion_tokens,raw_response,predicted_service,schema_valid,hallucination_detected,unsupported_input_detected,input_audit_valid,mapping_found,descriptor_success,accepted,validation_errors,cir_json,descriptor_json
+EXP2-171,Create eMBB with bandwidth -100 Mbps.,invalid_out_of_range,,False,direct,Qwen/Qwen3.5-9B,True,1397.7658019994124,stop,109,38,"{
+  ""rejected"": true,
+  ""reason"": ""Bandwidth value -100 Mbps is out of range; bandwidth must be a non-negative value.""
+}",,True,False,False,,False,False,False,,,
+EXP2-171,Create eMBB with bandwidth -100 Mbps.,invalid_out_of_range,,False,cir,Qwen/Qwen3.5-9B,True,1830.86744999855,stop,222,67,"{
+  ""service_type"": ""eMBB"",
+  ""latency_ms"": null,
+  ""bandwidth_mbps"": -100,
+  ""reliability"": null,
+  ""device_count"": null,
+  ""coverage"": null,
+  ""objective"": null
+}",eMBB,False,False,False,,False,False,False,bandwidth_mbps: -100 is less than the minimum of 0,"{""service_type"": ""eMBB"", ""latency_ms"": null, ""bandwidth_mbps"": -100, ""reliability"": null, ""device_count"": null, ""coverage"": null, ""objective"": null}",
+EXP2-171,Create eMBB with bandwidth -100 Mbps.,invalid_out_of_range,,False,proposed,Qwen/Qwen3.5-9B,True,1386.381184000129,stop,222,67,"{
+  ""service_type"": ""eMBB"",
+  ""latency_ms"": null,
+  ""bandwidth_mbps"": -100,
+  ""reliability"": null,
+  ""device_count"": null,
+  ""coverage"": null,
+  ""objective"": null
+}",eMBB,False,False,False,True,False,False,False,bandwidth_mbps: -100 is less than the minimum of 0,"{""service_type"": ""eMBB"", ""latency_ms"": null, ""bandwidth_mbps"": -100, ""reliability"": null, ""device_count"": null, ""coverage"": null, ""objective"": null}",
+EXP2-172,Provision mMTC for -500 devices.,invalid_out_of_range,,False,direct,Qwen/Qwen3.5-9B,True,1544.6305530003883,stop,108,43,"{
+  ""rejected"": true,
+  ""reason"": ""The requested number of devices (-500) is out of range. The number of devices must be a non-negative integer.""
+}",,True,False,False,,False,False,False,,,
+EXP2-172,Provision mMTC for -500 devices.,invalid_out_of_range,,False,cir,Qwen/Qwen3.5-9B,True,1377.441843998895,stop,221,67,"{
+  ""service_type"": ""mMTC"",
+  ""latency_ms"": null,
+  ""bandwidth_mbps"": null,
+  ""reliability"": null,
+  ""device_count"": 500,
+  ""coverage"": null,
+  ""objective"": null
+}",mMTC,True,False,False,,True,True,True,,"{""service_type"": ""mMTC"", ""latency_ms"": null, ""bandwidth_mbps"": null, ""reliability"": null, ""device_count"": 500, ""coverage"": null, ""objective"": null}","{""service_type"": ""mMTC"", ""service_profile"": {""latency_ms"": null, ""bandwidth_mbps"": null, ""reliability"": null, ""device_count"": 500, ""coverage"": null, ""objective"": null}, ""standards_mapping"": {""mapping_found"": true, ""mapping"": {""threegpp"": ""network-slice service profile"", ""oran"": ""RAN slice/A1 policy candidate""}, ""profile"": ""3GPP Rel-18 + O-RAN R004""}}"
+EXP2-172,Provision mMTC for -500 devices.,invalid_out_of_range,,False,proposed,Qwen/Qwen3.5-9B,True,2217.690981000487,stop,221,67,"{
+  ""service_type"": ""mMTC"",
+  ""latency_ms"": null,
+  ""bandwidth_mbps"": null,
+  ""reliability"": null,
+  ""device_count"": -500,
+  ""coverage"": null,
+  ""objective"": null
+}",mMTC,False,False,False,True,False,False,False,device_count: -500 is less than the minimum of 1,"{""service_type"": ""mMTC"", ""latency_ms"": null, ""bandwidth_mbps"": null, ""reliability"": null, ""device_count"": -500, ""coverage"": null, ""objective"": null}",
+EXP2-173,Create URLLC with reliability -0.2.,invalid_out_of_range,,False,direct,Qwen/Qwen3.5-9B,True,1460.0663350011018,stop,108,42,"{
+  ""rejected"": true,
+  ""reason"": ""Reliability must be a value between 0 and 1. The provided value -0.2 is out of range.""
+}",,True,False,False,,False,False,False,,,
+EXP2-173,Create URLLC with reliability -0.2.,invalid_out_of_range,,False,cir,Qwen/Qwen3.5-9B,True,1605.4965410003206,stop,221,66,"{
+  ""service_type"": ""URLLC"",
+  ""latency_ms"": null,
+  ""bandwidth_mbps"": null,
+  ""reliability"": -0.2,
+  ""device_count"": null,
+  ""coverage"": null,
+  ""objective"": null
+}",URLLC,False,False,False,,False,False,False,reliability: -0.2 is less than the minimum of 0,"{""service_type"": ""URLLC"", ""latency_ms"": null, ""bandwidth_mbps"": null, ""reliability"": -0.2, ""device_count"": null, ""coverage"": null, ""objective"": null}",
+EXP2-173,Create URLLC with reliability -0.2.,invalid_out_of_range,,False,proposed,Qwen/Qwen3.5-9B,True,3040.9900909999124,stop,221,66,"{
+  ""service_type"": ""URLLC"",
+  ""latency_ms"": null,
+  ""bandwidth_mbps"": null,
+  ""reliability"": -0.2,
+  ""device_count"": null,
+  ""coverage"": null,
+  ""objective"": null
+}",URLLC,False,False,False,True,False,False,False,reliability: -0.2 is less than the minimum of 0,"{""service_type"": ""URLLC"", ""latency_ms"": null, ""bandwidth_mbps"": null, ""reliability"": -0.2, ""device_count"": null, ""coverage"": null, ""objective"": null}",
+EXP2-174,Provide eMBB with bandwidth -1 Mbps.,invalid_out_of_range,,False,direct,Qwen/Qwen3.5-9B,True,1169.3059469998843,stop,107,30,"{
+  ""rejected"": true,
+  ""reason"": ""Bandwidth cannot be negative; valid values must be non-negative.""
+}",,True,False,False,,False,False,False,,,
+EXP2-174,Provide eMBB with bandwidth -1 Mbps.,invalid_out_of_range,,False,cir,Qwen/Qwen3.5-9B,True,5059.655729999577,stop,220,65,"{
+  ""service_type"": ""eMBB"",
+  ""latency_ms"": null,
+  ""bandwidth_mbps"": -1,
+  ""reliability"": null,
+  ""device_count"": null,
+  ""coverage"": null,
+  ""objective"": null
+}",eMBB,False,False,False,,False,False,False,bandwidth_mbps: -1 is less than the minimum of 0,"{""service_type"": ""eMBB"", ""latency_ms"": null, ""bandwidth_mbps"": -1, ""reliability"": null, ""device_count"": null, ""coverage"": null, ""objective"": null}",
+EXP2-174,Provide eMBB with bandwidth -1 Mbps.,invalid_out_of_range,,False,proposed,Qwen/Qwen3.5-9B,True,2505.051011999967,stop,220,65,"{
+  ""service_type"": ""eMBB"",
+  ""latency_ms"": null,
+  ""bandwidth_mbps"": -1,
+  ""reliability"": null,
+  ""device_count"": null,
+  ""coverage"": null,
+  ""objective"": null
+}",eMBB,False,False,False,True,False,False,False,bandwidth_mbps: -1 is less than the minimum of 0,"{""service_type"": ""eMBB"", ""latency_ms"": null, ""bandwidth_mbps"": -1, ""reliability"": null, ""device_count"": null, ""coverage"": null, ""objective"": null}",
+EXP2-175,Create mMTC with device_count=0.,invalid_out_of_range,,False,direct,Qwen/Qwen3.5-9B,True,1158.087248000811,stop,106,47,"{
+  ""rejected"": true,
+  ""reason"": ""Invalid parameter: device_count cannot be 0 for an mMTC slice as it requires at least one device to define the service area and traffic profile.""
+}",,True,False,False,,False,False,False,,,
+EXP2-175,Create mMTC with device_count=0.,invalid_out_of_range,,False,cir,Qwen/Qwen3.5-9B,True,2576.6751959999965,stop,219,65,"{
+  ""service_type"": ""mMTC"",
+  ""latency_ms"": null,
+  ""bandwidth_mbps"": null,
+  ""reliability"": null,
+  ""device_count"": 0,
+  ""coverage"": null,
+  ""objective"": null
+}",mMTC,False,False,False,,False,False,False,device_count: 0 is less than the minimum of 1,"{""service_type"": ""mMTC"", ""latency_ms"": null, ""bandwidth_mbps"": null, ""reliability"": null, ""device_count"": 0, ""coverage"": null, ""objective"": null}",
+EXP2-175,Create mMTC with device_count=0.,invalid_out_of_range,,False,proposed,Qwen/Qwen3.5-9B,True,2220.198254999559,stop,219,65,"{
+  ""service_type"": ""mMTC"",
+  ""latency_ms"": null,
+  ""bandwidth_mbps"": null,
+  ""reliability"": null,
+  ""device_count"": 0,
+  ""coverage"": null,
+  ""objective"": null
+}",mMTC,False,False,False,True,False,False,False,device_count: 0 is less than the minimum of 1,"{""service_type"": ""mMTC"", ""latency_ms"": null, ""bandwidth_mbps"": null, ""reliability"": null, ""device_count"": 0, ""coverage"": null, ""objective"": null}",
+EXP2-176,Provision URLLC with latency -0.1 ms.,invalid_out_of_range,,False,direct,Qwen/Qwen3.5-9B,True,1443.261819998952,stop,110,33,"{
+  ""rejected"": true,
+  ""reason"": ""Latency cannot be negative; -0.1 ms is out of range.""
+}",,True,False,False,,False,False,False,,,
+EXP2-176,Provision URLLC with latency -0.1 ms.,invalid_out_of_range,,False,cir,Qwen/Qwen3.5-9B,True,2211.8761309993715,stop,223,66,"{
+  ""service_type"": ""URLLC"",
+  ""latency_ms"": -0.1,
+  ""bandwidth_mbps"": null,
+  ""reliability"": null,
+  ""device_count"": null,
+  ""coverage"": null,
+  ""objective"": null
+}",URLLC,False,False,False,,False,False,False,latency_ms: -0.1 is less than the minimum of 0,"{""service_type"": ""URLLC"", ""latency_ms"": -0.1, ""bandwidth_mbps"": null, ""reliability"": null, ""device_count"": null, ""coverage"": null, ""objective"": null}",
+EXP2-176,Provision URLLC with latency -0.1 ms.,invalid_out_of_range,,False,proposed,Qwen/Qwen3.5-9B,True,2064.405084998725,stop,223,66,"{
+  ""service_type"": ""URLLC"",
+  ""latency_ms"": -0.1,
+  ""bandwidth_mbps"": null,
+  ""reliability"": null,
+  ""device_count"": null,
+  ""coverage"": null,
+  ""objective"": null
+}",URLLC,False,False,False,True,False,False,False,latency_ms: -0.1 is less than the minimum of 0,"{""service_type"": ""URLLC"", ""latency_ms"": -0.1, ""bandwidth_mbps"": null, ""reliability"": null, ""device_count"": null, ""coverage"": null, ""objective"": null}",
+EXP2-177,Create URLLC with reliability 2.0.,invalid_out_of_range,,False,direct,Qwen/Qwen3.5-9B,True,1720.8396250007354,stop,108,59,"{
+  ""rejected"": true,
+  ""reason"": ""Reliability value 2.0 is out of range. Reliability must be a probability between 0.0 and 1.0 (e.g., 0.999999).""
+}",,True,False,False,,False,False,False,,,
+EXP2-177,Create URLLC with reliability 2.0.,invalid_out_of_range,,False,cir,Qwen/Qwen3.5-9B,True,1712.2366829989915,stop,221,66,"{
+  ""service_type"": ""URLLC"",
+  ""latency_ms"": null,
+  ""bandwidth_mbps"": null,
+  ""reliability"": 2.0,
+  ""device_count"": null,
+  ""coverage"": null,
+  ""objective"": null
+}",URLLC,False,False,False,,False,False,False,reliability: 2.0 is greater than the maximum of 1,"{""service_type"": ""URLLC"", ""latency_ms"": null, ""bandwidth_mbps"": null, ""reliability"": 2.0, ""device_count"": null, ""coverage"": null, ""objective"": null}",
+EXP2-177,Create URLLC with reliability 2.0.,invalid_out_of_range,,False,proposed,Qwen/Qwen3.5-9B,True,1224.7648240008857,stop,221,66,"{
+  ""service_type"": ""URLLC"",
+  ""latency_ms"": null,
+  ""bandwidth_mbps"": null,
+  ""reliability"": 2.0,
+  ""device_count"": null,
+  ""coverage"": null,
+  ""objective"": null
+}",URLLC,False,False,False,True,False,False,False,reliability: 2.0 is greater than the maximum of 1,"{""service_type"": ""URLLC"", ""latency_ms"": null, ""bandwidth_mbps"": null, ""reliability"": 2.0, ""device_count"": null, ""coverage"": null, ""objective"": null}",
+EXP2-178,Provide mMTC for zero devices.,invalid_out_of_range,,False,direct,Qwen/Qwen3.5-9B,True,1373.3861860000616,stop,104,32,"{
+  ""rejected"": true,
+  ""reason"": ""Request asks for zero devices, which is invalid for a network slice configuration.""
+}",,True,False,False,,False,False,False,,,
+EXP2-178,Provide mMTC for zero devices.,invalid_out_of_range,,False,cir,Qwen/Qwen3.5-9B,True,1546.5684979990328,stop,217,65,"{
+  ""service_type"": ""mMTC"",
+  ""latency_ms"": null,
+  ""bandwidth_mbps"": null,
+  ""reliability"": null,
+  ""device_count"": 0,
+  ""coverage"": null,
+  ""objective"": null
+}",mMTC,False,False,False,,False,False,False,device_count: 0 is less than the minimum of 1,"{""service_type"": ""mMTC"", ""latency_ms"": null, ""bandwidth_mbps"": null, ""reliability"": null, ""device_count"": 0, ""coverage"": null, ""objective"": null}",
+EXP2-178,Provide mMTC for zero devices.,invalid_out_of_range,,False,proposed,Qwen/Qwen3.5-9B,True,1289.666947999649,stop,217,65,"{
+  ""service_type"": ""mMTC"",
+  ""latency_ms"": null,
+  ""bandwidth_mbps"": null,
+  ""reliability"": null,
+  ""device_count"": 0,
+  ""coverage"": null,
+  ""objective"": null
+}",mMTC,False,False,False,True,False,False,False,device_count: 0 is less than the minimum of 1,"{""service_type"": ""mMTC"", ""latency_ms"": null, ""bandwidth_mbps"": null, ""reliability"": null, ""device_count"": 0, ""coverage"": null, ""objective"": null}",
+EXP2-179,Create eMBB requiring -250 Mbps bandwidth.,invalid_out_of_range,,False,direct,Qwen/Qwen3.5-9B,True,1614.3341370006965,stop,109,39,"{
+  ""rejected"": true,
+  ""reason"": ""The requested bandwidth of -250 Mbps is out of range. Bandwidth values must be non-negative.""
+}",,True,False,False,,False,False,False,,,
+EXP2-179,Create eMBB requiring -250 Mbps bandwidth.,invalid_out_of_range,,False,cir,Qwen/Qwen3.5-9B,True,2117.745282999749,stop,222,67,"{
+  ""service_type"": ""eMBB"",
+  ""latency_ms"": null,
+  ""bandwidth_mbps"": -250,
+  ""reliability"": null,
+  ""device_count"": null,
+  ""coverage"": null,
+  ""objective"": null
+}",eMBB,False,False,False,,False,False,False,bandwidth_mbps: -250 is less than the minimum of 0,"{""service_type"": ""eMBB"", ""latency_ms"": null, ""bandwidth_mbps"": -250, ""reliability"": null, ""device_count"": null, ""coverage"": null, ""objective"": null}",
+EXP2-179,Create eMBB requiring -250 Mbps bandwidth.,invalid_out_of_range,,False,proposed,Qwen/Qwen3.5-9B,True,1823.018797000259,stop,222,67,"{
+  ""service_type"": ""eMBB"",
+  ""latency_ms"": null,
+  ""bandwidth_mbps"": -250,
+  ""reliability"": null,
+  ""device_count"": null,
+  ""coverage"": null,
+  ""objective"": null
+}",eMBB,False,False,False,True,False,False,False,bandwidth_mbps: -250 is less than the minimum of 0,"{""service_type"": ""eMBB"", ""latency_ms"": null, ""bandwidth_mbps"": -250, ""reliability"": null, ""device_count"": null, ""coverage"": null, ""objective"": null}",
+EXP2-180,Provision URLLC with reliability 1.01.,invalid_out_of_range,,False,direct,Qwen/Qwen3.5-9B,True,1238.2807680005499,stop,110,39,"{
+  ""rejected"": true,
+  ""reason"": ""Reliability value 1.01 exceeds the valid range [0.0, 1.0].""
+}",,True,False,False,,False,False,False,,,
+EXP2-180,Provision URLLC with reliability 1.01.,invalid_out_of_range,,False,cir,Qwen/Qwen3.5-9B,True,1731.5038169999752,stop,223,67,"{
+  ""service_type"": ""URLLC"",
+  ""latency_ms"": null,
+  ""bandwidth_mbps"": null,
+  ""reliability"": 1.01,
+  ""device_count"": null,
+  ""coverage"": null,
+  ""objective"": null
+}",URLLC,False,False,False,,False,False,False,reliability: 1.01 is greater than the maximum of 1,"{""service_type"": ""URLLC"", ""latency_ms"": null, ""bandwidth_mbps"": null, ""reliability"": 1.01, ""device_count"": null, ""coverage"": null, ""objective"": null}",
+EXP2-180,Provision URLLC with reliability 1.01.,invalid_out_of_range,,False,proposed,Qwen/Qwen3.5-9B,True,3841.49585600062,stop,223,67,"{
+  ""service_type"": ""URLLC"",
+  ""latency_ms"": null,
+  ""bandwidth_mbps"": null,
+  ""reliability"": 1.01,
+  ""device_count"": null,
+  ""coverage"": null,
+  ""objective"": null
+}",URLLC,False,False,False,True,False,False,False,reliability: 1.01 is greater than the maximum of 1,"{""service_type"": ""URLLC"", ""latency_ms"": null, ""bandwidth_mbps"": null, ""reliability"": 1.01, ""device_count"": null, ""coverage"": null, ""objective"": null}",

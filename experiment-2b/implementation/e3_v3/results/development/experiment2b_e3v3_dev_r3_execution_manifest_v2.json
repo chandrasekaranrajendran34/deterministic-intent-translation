@@ -1,0 +1,38 @@
+{
+  "step": "24E-D3D",
+  "purpose": "clean_real_dev_r3_end_to_end_execution",
+  "pipeline": "e3_v3",
+  "model": "Qwen/Qwen3.5-9B",
+  "runner": {
+    "path": "/content/experiment-1-v2-together/experiment-2b/implementation/e3_v3/run_experiment2b_e3v3_dev_v1.py",
+    "sha256": "8567344347834622815d915c0ee7fe62486991328d85b283ba8729e7c63d85f7"
+  },
+  "components": {
+    "analyzer": "71a6f00172149f66250b3c17386eea98b18008eb65b097c327db705e94068dc8",
+    "sidecar": "91742e13fce9683bd7ae36d771ef178ea5f40fc417ff0bab751c1c35d53185bd",
+    "preservation": "7fdc76ee4e24572c0dbef13b66290b0eb28ba0036a130f102dbd41b77834fe52",
+    "guard": "b01a665e8d295d4d36218668a1f84f64cf29226b76edb84789e2249d1ed5dd55",
+    "resolver": "e84dcb1b4e0f2a495c48c72aac3d3963eac51ed7529829378a5b84da3df58d3a",
+    "capability_profile": "ca7ff5c8f4292867a7a00e65bda7a083c69adb732e33ce9a56747f405065c0ba"
+  },
+  "dataset": {
+    "path": "/content/experiment-1-v2-together/experiment-2b/data/frozen/experiment2b_e3v3_development_160_v1.csv",
+    "sha256": "133c68842716f84a703478f7904c8cdd4f10cfdba683957ce23e473e81e7196f",
+    "family": "DEV-R3",
+    "cases": 20
+  },
+  "artifacts": {
+    "checkpoint": "/content/experiment-1-v2-together/experiment-2b/implementation/e3_v3/results/development/experiment2b_e3v3_dev_r3_checkpoint_v2.csv",
+    "raw_results": "/content/experiment-1-v2-together/experiment-2b/implementation/e3_v3/results/development/experiment2b_e3v3_dev_r3_results_v2.csv",
+    "raw_results_sha256": "f7e0c0a18e436a0e1f564a2da23dbdd66400a10fef8e1685938dd2947ce8e684",
+    "summary": "/content/experiment-1-v2-together/experiment-2b/implementation/e3_v3/results/development/experiment2b_e3v3_dev_r3_summary_v2.json",
+    "summary_sha256": "c89450a3c6f09eec811cb5dd56ae10f70ed2354a20c1ce82b49b01d4d322165a"
+  },
+  "historical_failed_attempt": {
+    "version": "v1",
+    "classification": "invalid_execution_harness_attempt",
+    "preserved": true,
+    "reason": "wrong wrapper argument plus missing capability-profile execution dependency"
+  },
+  "timestamp_utc": "2026-09-29T10:31:36.234572+00:00"
+}

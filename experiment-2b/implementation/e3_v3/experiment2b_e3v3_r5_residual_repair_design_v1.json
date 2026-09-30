@@ -1,0 +1,89 @@
+{
+  "created_utc": "2026-09-29T15:47:44.528161+00:00",
+  "design_id": "e3v3-r5-residual-repair-v1.0",
+  "development_evidence": {
+    "correct_to_wrong": 0,
+    "r4_correct": 113,
+    "r5_correct": 135,
+    "r5_target_family_correct": "16/20",
+    "remaining_r5_cases": [
+      "E3V3-DEV-097",
+      "E3V3-DEV-099",
+      "E3V3-DEV-101",
+      "E3V3-DEV-111"
+    ],
+    "wrong_to_correct": 22
+  },
+  "protected_scope": {
+    "R1": "unchanged",
+    "R2": "unchanged",
+    "R3": "unchanged",
+    "R4": "unchanged",
+    "R6": "not implemented in this repair",
+    "R7": "not implemented in this repair",
+    "cir_schema": "unchanged",
+    "dataset": "unchanged",
+    "llm_prompt": "unchanged"
+  },
+  "provenance": {
+    "analyzer": {
+      "path": "/content/experiment-1-v2-together/experiment-2b/implementation/e3_v3/src/source_analyzer_r5_repaired.py",
+      "sha256": "96c5d84afa6fee0dc4f1667aa8f5626bb783d23f3816ef4330e621a773f9da42"
+    },
+    "dataset": {
+      "path": "/content/experiment-1-v2-together/experiment-2b/data/frozen/experiment2b_e3v3_development_160_v1.csv",
+      "sha256": "133c68842716f84a703478f7904c8cdd4f10cfdba683957ce23e473e81e7196f"
+    },
+    "normalizer": {
+      "path": "/content/experiment-1-v2-together/experiment-2b/implementation/e3_v3/src/reliability_normalization.py",
+      "sha256": "43fe74225bb3c57cd145421296a91c52fb631e4f0786e9e5acbacde82b190830"
+    },
+    "result": {
+      "path": "/content/experiment-1-v2-together/experiment-2b/implementation/e3_v3/results/development/experiment2b_e3v3_r5_development_160_results_v1.csv",
+      "sha256": "cdda3612b69d5c9d0beb33f891d6096fe936f895aa54c758accba48ec8576c24"
+    },
+    "runner": {
+      "path": "/content/experiment-1-v2-together/experiment-2b/implementation/e3_v3/run_experiment2b_e3v3_r5_dev_v5.py",
+      "sha256": "7d34386eed96b05bbfc7dce05a6f5d67c64abff593a1141f19546f96a8832801"
+    }
+  },
+  "repair_id": "R5",
+  "required_tests": [
+    "reliability of 99.9% -> source reliability = 0.999",
+    "reliability of 98.5% -> source reliability = 0.985",
+    "reliability of 97% -> source reliability = 0.97",
+    "high reliability -> no numeric source constraint",
+    "source >0.999 + CIR 'above 99.9%' -> canonical 0.999",
+    "source >0.999 + CIR 'below 99.9%' -> do not normalize as compatible",
+    "operator-bearing CIR without source evidence -> do not normalize",
+    "existing canonical reliability remains unchanged"
+  ],
+  "residual_1_source_extraction": {
+    "allowed_change": "Add deterministic explicit-numeric reliability-of grammar.",
+    "canonicalization": "Percentage value is divided by 100.",
+    "examples": [
+      "reliability of 99.9%",
+      "reliability of 98.5%",
+      "reliability of 97%"
+    ],
+    "operator_policy": "Bare 'reliability of N%' represents exact '=' threshold.",
+    "problem": "Explicit numeric reliability phrase of the form 'reliability of N%' is not captured.",
+    "prohibited": [
+      "qualitative reliability inference",
+      "availability-to-reliability equivalence",
+      "inventing inequalities"
+    ]
+  },
+  "residual_2_operator_bearing_cir": {
+    "allowed_change": "Canonicalize operator-bearing CIR reliability only when independent deterministic source reliability evidence exists and the numeric threshold/operator are semantically compatible.",
+    "example": "source reliability > 0.999 plus CIR 'above 99.9%' may canonicalize CIR reliability to 0.999.",
+    "problem": "LLM may emit reliability as operator-bearing text such as 'above 99.9%' despite deterministic source evidence.",
+    "prohibited": [
+      "normalizing arbitrary unsupported LLM text",
+      "overwriting semantically conflicting CIR reliability",
+      "discarding source operator semantics",
+      "normalization without source evidence"
+    ]
+  },
+  "status": "DESIGN_FROZEN_BEFORE_IMPLEMENTATION"
+}

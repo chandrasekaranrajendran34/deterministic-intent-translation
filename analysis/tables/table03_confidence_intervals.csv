@@ -1,0 +1,4 @@
+Pipeline,Decision accuracy,Accuracy 95% CI,Invalid rejection,Rejection 95% CI,Valid acceptance,Acceptance 95% CI
+E1: Direct,1.000,"[0.929, 1.000]",1.000,"[0.863, 1.000]",1.000,"[0.863, 1.000]"
+E2: CIR,0.940,"[0.835, 0.987]",0.880,"[0.688, 0.975]",1.000,"[0.863, 1.000]"
+E3: Proposed,1.000,"[0.929, 1.000]",1.000,"[0.863, 1.000]",1.000,"[0.863, 1.000]"

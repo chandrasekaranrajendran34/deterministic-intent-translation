@@ -1,0 +1,94 @@
+{
+  "created_utc": "2026-09-29T15:59:55.051110+00:00",
+  "design_id": "e3v3-r6-residual-repair-v1.0",
+  "evaluation_policy": {
+    "first": "Implement repair in a new versioned R6 module.",
+    "llm_calls_before_integration": 0,
+    "runner_integration": "Only after deterministic repair evidence passes.",
+    "second": "Run deterministic residual and regression tests.",
+    "third": "Re-evaluate frozen 20-case R6 family."
+  },
+  "explicit_non_changes": [
+    "Do not make real-time alone sufficient for URLLC.",
+    "Do not make mission-critical alone sufficient for URLLC.",
+    "Do not weaken the two-group URLLC rule.",
+    "Do not change eMBB signatures.",
+    "Do not change mMTC signatures.",
+    "Do not change canonical service patterns.",
+    "Do not change conflict handling.",
+    "Do not change the frozen dataset.",
+    "Do not change the LLM prompt.",
+    "Do not change the CIR schema.",
+    "Do not change R1-R5."
+  ],
+  "provenance": {
+    "dataset": {
+      "path": "/content/experiment-1-v2-together/experiment-2b/data/frozen/experiment2b_e3v3_development_160_v1.csv",
+      "sha256": "133c68842716f84a703478f7904c8cdd4f10cfdba683957ce23e473e81e7196f"
+    },
+    "design": {
+      "path": "/content/experiment-1-v2-together/experiment-2b/implementation/e3_v3/experiment2b_e3v3_r6_design_v1.json",
+      "sha256": "eb50866568ebc1855cd1d80d92086f0ba21c51d864fcaa083970a60a694edd7c"
+    },
+    "manifest": {
+      "path": "/content/experiment-1-v2-together/experiment-2b/implementation/e3_v3/experiment2b_e3v3_r6_implementation_manifest_v1.json",
+      "sha256": "ae4a301abaee2ad4ce99d359bebe510045314ad86c0a545a329d0c3a552c2686"
+    },
+    "module": {
+      "path": "/content/experiment-1-v2-together/experiment-2b/implementation/e3_v3/src/service_type_resolver_r6.py",
+      "sha256": "164a90fc517b10b622dadeda732484ea6b9fb12fc1f7d9da55897357787bfd8f"
+    },
+    "results": {
+      "path": "/content/experiment-1-v2-together/experiment-2b/implementation/e3_v3/results/development/experiment2b_e3v3_r6_deterministic_20_results_v1.csv",
+      "sha256": "25df2ab8cf8dd8e695a12f938b478d9a8ba53505299cff040c4a72f5212c4d91"
+    },
+    "unit": {
+      "path": "/content/experiment-1-v2-together/experiment-2b/implementation/e3_v3/results/development/experiment2b_e3v3_r6_unit_tests_v1.json",
+      "sha256": "9d8ae81ceea84cd58676ddef415437b7b5e613a5886c7ee75b78ac857bdfe537"
+    }
+  },
+  "repair": {
+    "canonical_patterns_unchanged": true,
+    "change": "Add mission-critical / mission critical to the URLLC reliability_or_control signature group.",
+    "conflict_policy_unchanged": true,
+    "decision_rule_unchanged": true,
+    "rationale": "Mission-critical semantics provide explicit service criticality evidence. Combined with real-time timing evidence, the pair satisfies the existing two-group URLLC rule without making either generic timing or reliability language independently sufficient.",
+    "scope": "URLLC semantic signature only"
+  },
+  "required_tests": [
+    {
+      "expected": "URLLC",
+      "text": "Create connectivity suitable for mission-critical real-time exchanges."
+    },
+    {
+      "expected": null,
+      "text": "Provide mission-critical connectivity."
+    },
+    {
+      "expected": null,
+      "text": "Provide real-time connectivity."
+    },
+    {
+      "expected": "eMBB",
+      "text": "Provide high-capacity mobile broadband."
+    },
+    {
+      "expected": "mMTC",
+      "text": "Connect massive numbers of sensors."
+    },
+    {
+      "expected": null,
+      "reason": "eMBB and URLLC signatures conflict",
+      "text": "Provide high-capacity mobile broadband for mission-critical real-time exchanges."
+    }
+  ],
+  "root_cause": "Both mission-critical and real-time are currently represented only in the URLLC delay_or_criticality signature group. The two-group decision rule therefore lacks independent reliability/control/criticality-side evidence.",
+  "status": "DESIGN_FROZEN_BEFORE_IMPLEMENTATION",
+  "trigger_evidence": {
+    "deterministic_family_result": "19/20",
+    "expected_service": "URLLC",
+    "intent": "Create connectivity suitable for mission-critical real-time exchanges.",
+    "observed_service": null,
+    "single_failed_case": "E3V3-DEV-126"
+  }
+}

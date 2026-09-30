@@ -1,0 +1,18 @@
+rejection_stage,error_code,count
+source_gate,SOURCE_CONTROL_ATTEMPT,12
+source_gate,UNRESOLVED_SOURCE_REQUIREMENT,12
+constraint_consistency,INCOMPATIBLE_BOUNDS,9
+constraint_consistency,EXACT_VALUE_OUTSIDE_BOUNDS,5
+r7_qualitative_source_gate,UNSUPPORTED_QUALITATIVE_REQUIREMENT,5
+cir_validation,SERVICE_TYPE_UNRESOLVED,2
+preservation,SOURCE_CONSTRAINT_NOT_PRESERVED,2
+cir_validation,bandwidth_mbps: -1 is less than the minimum of 0,1
+cir_validation,device_count: -2500 is less than the minimum of 1,1
+cir_validation,latency_ms: -6 is less than the minimum of 0,1
+cir_validation,reliability: -0.2 is less than the minimum of 0,1
+cir_validation,reliability: -5 is less than the minimum of 0,1
+cir_validation,reliability: 1.4 is greater than the maximum of 1,1
+cir_validation,reliability: 1.8 is greater than the maximum of 1,1
+cir_validation,reliability: 250 is greater than the maximum of 1,1
+cir_validation,reliability: 96.7 is greater than the maximum of 1,1
+cir_validation,reliability: 99.82 is greater than the maximum of 1,1

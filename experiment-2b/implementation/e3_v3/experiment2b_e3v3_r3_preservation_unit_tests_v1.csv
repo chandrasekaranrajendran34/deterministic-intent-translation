@@ -1,0 +1,13 @@
+test_id,intent,expected_valid,actual_valid,pass,errors
+P-001,Provision URLLC with latency below 40 ms.,True,True,True,[]
+P-002,Provision URLLC with latency above 2 ms.,True,True,True,[]
+P-003,Provision eMBB with bandwidth below 720 Mbps.,True,True,True,[]
+P-004,Provision eMBB with bandwidth above 280 Mbps.,True,True,True,[]
+P-005,Provision URLLC with latency at most 9 ms.,True,True,True,[]
+P-006,Provision URLLC with latency at least 2 ms.,True,True,True,[]
+P-007,Create mMTC for no fewer than 180000 devices.,True,True,True,[]
+P-008,Provision eMBB with bandwidth exactly 640 Mbps.,True,True,True,[]
+P-009,"For URLLC operation, fix the one-way latency target at precisely 4 milliseconds.",True,True,True,[]
+P-010,Provision URLLC with latency below 40 ms.,False,False,True,"[{""code"": ""SOURCE_CONSTRAINT_NOT_PRESERVED"", ""field"": ""latency_ms"", ""message"": ""CIR threshold 45 does not preserve source constraint < 40.""}]"
+P-011,Provision URLLC with latency below 40 ms.,False,False,True,"[{""code"": ""SOURCE_CONSTRAINT_MISSING_FROM_CIR"", ""field"": ""latency_ms"", ""message"": ""Source contains 1 constraint(s) for latency_ms, but the CIR value is null/missing.""}]"
+P-012,Provision URLLC with latency below 40 ms.,False,False,True,"[{""code"": ""SOURCE_SERVICE_CONFLICTS_WITH_CIR"", ""field"": ""service_type"", ""message"": ""Source service type 'URLLC' conflicts with CIR service type 'eMBB'.""}]"

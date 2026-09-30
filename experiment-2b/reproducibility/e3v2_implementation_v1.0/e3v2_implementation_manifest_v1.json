@@ -1,0 +1,18 @@
+{
+  "freeze_id": "e3v2-implementation-v1.0",
+  "purpose": "Frozen E3-v2 implementation before construction and execution of the primary Experiment 2B unseen benchmark.",
+  "created_utc": "2026-09-29T06:58:14.517637+00:00",
+  "python_version": "3.13.15 (main, Aug  6 2026, 11:06:22) [GCC 13.3.0]",
+  "platform": "Linux-6.6.122+-x86_64-with-glibc2.39",
+  "files": {
+    "experiment-2b/src/source_intent.py": "de745a90d6fb675bfbf485446ce97dbd9bb8f46f1ea1893a3252c1ed73e3e9d6",
+    "experiment-2b/src/constraint_consistency.py": "a62a5cdaf917d3d31b28415246014e1728442c0178b96ec5bcec623dd16dfcef",
+    "experiment-2b/src/preservation_check.py": "b580ebfbef3736b10a2bcdcdc810b08a6afd1c99cfe4618b77770564f5d777d3",
+    "experiment-2b/src/source_gate.py": "764f9fd188a4b05a78afd4db6c23f92666688bffbccad811973d2c21b2feb1af",
+    "experiment-2b/src/source_analyzer.py": "05208f192c402a09a24a9db239aeb3a03e2e99f82c586f747dcac970df09970d",
+    "experiment-2b/src/capability_resolver.py": "e84dcb1b4e0f2a495c48c72aac3d3963eac51ed7529829378a5b84da3df58d3a",
+    "experiment-2b/src/e3v2_guard.py": "b01a665e8d295d4d36218668a1f84f64cf29226b76edb84789e2249d1ed5dd55",
+    "experiment-2b/configs/e3v2_capability_profile_v1.json": "ca7ff5c8f4292867a7a00e65bda7a083c69adb732e33ce9a56747f405065c0ba"
+  },
+  "claim_boundary": "E3-v2 provides deterministic safeguards within the implemented source analyzer, frozen capability profile, consistency rules, source gate, and source-to-CIR preservation checks. It does not establish universal natural-language understanding or formal standards certification."
+}

@@ -1,0 +1,92 @@
+{
+  "profile_id": "e3v2-capability-profile-v1.0",
+  "purpose": "Frozen experimental capability catalog for deterministic source-intent validation in Experiment 2B.",
+  "claim_boundary": "Unsupported means unsupported by this experimental capability profile. It does not mean universally impossible or prohibited by 3GPP or O-RAN.",
+  "service_types": [
+    "eMBB",
+    "URLLC",
+    "mMTC"
+  ],
+  "supported_requirements": {
+    "latency_ms": {
+      "type": "number",
+      "minimum": 0,
+      "operators": [
+        "=",
+        "<",
+        "<=",
+        ">",
+        ">="
+      ]
+    },
+    "bandwidth_mbps": {
+      "type": "number",
+      "minimum": 0,
+      "operators": [
+        "=",
+        "<",
+        "<=",
+        ">",
+        ">="
+      ]
+    },
+    "reliability": {
+      "type": "number",
+      "minimum": 0,
+      "maximum": 1,
+      "operators": [
+        "=",
+        "<",
+        "<=",
+        ">",
+        ">="
+      ]
+    },
+    "device_count": {
+      "type": "integer",
+      "minimum": 1,
+      "operators": [
+        "=",
+        "<",
+        "<=",
+        ">",
+        ">="
+      ]
+    },
+    "coverage": {
+      "type": "text"
+    },
+    "objective": {
+      "type": "text"
+    }
+  },
+  "source_control_policy": {
+    "reject_attempts_to": [
+      "bypass validation",
+      "disable validation",
+      "ignore validation",
+      "ignore schema",
+      "override schema",
+      "invent unsupported fields",
+      "add unsupported fields",
+      "skip policy checks",
+      "ignore policy checks"
+    ]
+  },
+  "consistency_policy": {
+    "detect_multiple_constraints_per_numeric_field": true,
+    "detect_conflicting_exact_values": true,
+    "detect_incompatible_bounds": true,
+    "detect_exact_value_outside_bounds": true
+  },
+  "preservation_policy": {
+    "require_supported_numeric_constraints_to_survive_cir": true,
+    "reject_unresolved_source_requirements": true,
+    "reject_unsupported_capability_requirements": true
+  },
+  "notes": [
+    "This profile is an experimental validation boundary and is not a formal standards certification profile.",
+    "Numeric limits in this profile are generic logical/schema limits unless later linked to verified normative clauses.",
+    "3GPP and O-RAN normative standards traceability will be handled separately from this experimental capability profile."
+  ]
+}

@@ -1,0 +1,16 @@
+id,intent,subcategory,expected_valid,expected_service,predicted_valid,correct,deterministic,supported_qualitative_matches,unsupported_qualitative_matches,error_codes
+E3V3-DEV-136,Provision eMBB connectivity with high throughput.,supported_qualitative_requirement,True,eMBB,True,True,True,"[""bandwidth_mbps""]",[],[]
+E3V3-DEV-137,Establish a URLLC slice intended for applications that need rapid response with minimal communication delay.,supported_qualitative_requirement,True,URLLC,True,True,True,"[""latency_ms"", ""latency_ms""]",[],[]
+E3V3-DEV-138,Configure URLLC connectivity requiring reliable communication.,supported_qualitative_requirement,True,URLLC,True,True,True,"[""reliability""]",[],[]
+E3V3-DEV-139,Deploy mMTC service for dense device connectivity.,supported_qualitative_requirement,True,mMTC,True,True,True,"[""device_count""]",[],[]
+E3V3-DEV-140,Provision eMBB with broad coverage.,supported_qualitative_requirement,True,eMBB,True,True,True,"[""coverage""]",[],[]
+E3V3-DEV-141,Create mMTC connectivity for large device populations.,supported_qualitative_requirement,True,mMTC,True,True,True,"[""device_count""]",[],[]
+E3V3-DEV-142,Configure eMBB for bandwidth-intensive traffic.,supported_qualitative_requirement,True,eMBB,True,True,True,"[""bandwidth_mbps""]",[],[]
+E3V3-DEV-143,Deploy URLLC for latency-sensitive reliable communication.,supported_qualitative_requirement,True,URLLC,True,True,True,"[""latency_ms"", ""reliability""]",[],[]
+E3V3-DEV-144,Provision eMBB with guaranteed teleportation support.,unsupported_or_unresolvable_requirement,False,eMBB,False,True,True,[],"[""teleportation""]","[""UNSUPPORTED_QUALITATIVE_REQUIREMENT""]"
+E3V3-DEV-145,Create URLLC service with unlimited physical range.,unsupported_or_unresolvable_requirement,False,URLLC,False,True,True,[],"[""unbounded_physical_range""]","[""UNSUPPORTED_QUALITATIVE_REQUIREMENT""]"
+E3V3-DEV-146,Configure mMTC connectivity with zero-energy operation forever.,unsupported_or_unresolvable_requirement,False,mMTC,False,True,True,[],"[""perpetual_zero_energy_operation""]","[""UNSUPPORTED_QUALITATIVE_REQUIREMENT""]"
+E3V3-DEV-147,Deploy eMBB with guaranteed infinite bandwidth.,unsupported_or_unresolvable_requirement,False,eMBB,False,True,True,[],"[""unbounded_bandwidth""]","[""UNSUPPORTED_QUALITATIVE_REQUIREMENT""]"
+E3V3-DEV-148,Provision URLLC with negative communication latency.,unsupported_or_unresolvable_requirement,False,URLLC,False,True,True,[],"[""negative_latency""]","[""UNSUPPORTED_QUALITATIVE_REQUIREMENT""]"
+E3V3-DEV-149,Create mMTC with support for an unlimited number of devices.,unsupported_or_unresolvable_requirement,False,mMTC,False,True,True,[],"[""unbounded_device_count""]","[""UNSUPPORTED_QUALITATIVE_REQUIREMENT""]"
+E3V3-DEV-150,Configure eMBB with physically instantaneous data transfer.,unsupported_or_unresolvable_requirement,False,eMBB,False,True,True,[],"[""instantaneous_data_transfer""]","[""UNSUPPORTED_QUALITATIVE_REQUIREMENT""]"

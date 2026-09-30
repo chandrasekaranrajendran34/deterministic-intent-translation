@@ -1,0 +1,27 @@
+{
+  "artifact_id": "core-manuscript-claim-audit-v1.0",
+  "audit_scope": "Stage-1 core manuscript evidence and claim consistency",
+  "claim_id_coverage": 0.9285714285714286,
+  "created_utc": "2026-09-30T01:50:26.851203+00:00",
+  "experiment_modified": false,
+  "failed_checks": 1,
+  "input_hashes": {
+    "abstract": "e28efe6e3765cd042853bcfcc8d79779b9ba4284561ad14a688b3db535bfa299",
+    "claims": "788d77cf84f9279314b15c82affc87634e8c6058a0e6b90c5559faed360abbea",
+    "combined_core": "572fc596c8f2bedcb4f44dac6b3a5bfcd176d38fd4f58a9efa88b65d51d52fa2",
+    "conclusion": "196bd11891efed6b43117cf17a5d1519f00236496ff90679ef99d8125cd6c53f",
+    "contributions": "d5e6a82b146d7eb59a5dd7a4d2702080b677d1ebb63682c92c0f45c40268b943",
+    "cross_results": "d2c2dca5732f667e54ea4104f7ea2cdd1f0b059f9860af3f5e66c11c0c082d90",
+    "draft_manifest": "2144802cd210e2b509e24b6a44a4e2398635535671104223726ed37deeff0d4a",
+    "results": "c77a92d2f8300845b46e2f82175ff7fe524a25c3ad9b313c717173789ed4cca5",
+    "traceability": "8f81ed7cd1100a8caff37bb582031def3e9976e685efc72daa44af4ec041392f"
+  },
+  "manuscript_modified": false,
+  "model_api_called": false,
+  "passed_checks": 39,
+  "total_checks": 40,
+  "unknown_claim_ids": [],
+  "unmapped_claim_ids": [
+    "C12"
+  ]
+}

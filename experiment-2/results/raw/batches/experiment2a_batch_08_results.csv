@@ -1,0 +1,232 @@
+id,intent,category,expected_service,expected_valid,pipeline,model,parse_ok,latency_ms,finish_reason,prompt_tokens,completion_tokens,raw_response,predicted_service,schema_valid,hallucination_detected,unsupported_input_detected,input_audit_valid,mapping_found,descriptor_success,accepted,validation_errors,cir_json,descriptor_json
+EXP2-071,Create a slice for 50000 low-power industrial monitoring sensors.,valid_mMTC,mMTC,True,direct,Qwen/Qwen3.5-9B,True,4131.683953000902,stop,113,111,"{
+  ""rejected"": true,
+  ""reason"": ""The request lacks specific technical parameters required to generate an executable network slice configuration, such as required bandwidth (e.g., kbps), latency (e.g., ms), reliability (e.g., 99.999%), packet loss tolerance, and geographic scope. Additionally, the quantity '50000' is a device count, not a network metric, and cannot be directly translated into slice resource allocation without defining the per-device or aggregate traffic profile.""
+}",,True,False,False,,False,False,False,,,
+EXP2-071,Create a slice for 50000 low-power industrial monitoring sensors.,valid_mMTC,mMTC,True,cir,Qwen/Qwen3.5-9B,True,1140.8156769994093,stop,226,69,"{
+  ""service_type"": ""mMTC"",
+  ""latency_ms"": null,
+  ""bandwidth_mbps"": null,
+  ""reliability"": null,
+  ""device_count"": 50000,
+  ""coverage"": null,
+  ""objective"": null
+}",mMTC,True,False,False,,True,True,True,,"{""service_type"": ""mMTC"", ""latency_ms"": null, ""bandwidth_mbps"": null, ""reliability"": null, ""device_count"": 50000, ""coverage"": null, ""objective"": null}","{""service_type"": ""mMTC"", ""service_profile"": {""latency_ms"": null, ""bandwidth_mbps"": null, ""reliability"": null, ""device_count"": 50000, ""coverage"": null, ""objective"": null}, ""standards_mapping"": {""mapping_found"": true, ""mapping"": {""threegpp"": ""network-slice service profile"", ""oran"": ""RAN slice/A1 policy candidate""}, ""profile"": ""3GPP Rel-18 + O-RAN R004""}}"
+EXP2-071,Create a slice for 50000 low-power industrial monitoring sensors.,valid_mMTC,mMTC,True,proposed,Qwen/Qwen3.5-9B,True,4239.816331999464,stop,226,69,"{
+  ""service_type"": ""mMTC"",
+  ""latency_ms"": null,
+  ""bandwidth_mbps"": null,
+  ""reliability"": null,
+  ""device_count"": 50000,
+  ""coverage"": null,
+  ""objective"": null
+}",mMTC,True,False,False,True,True,True,True,,"{""service_type"": ""mMTC"", ""latency_ms"": null, ""bandwidth_mbps"": null, ""reliability"": null, ""device_count"": 50000, ""coverage"": null, ""objective"": null}","{""service_type"": ""mMTC"", ""service_profile"": {""latency_ms"": null, ""bandwidth_mbps"": null, ""reliability"": null, ""device_count"": 50000, ""coverage"": null, ""objective"": null}, ""standards_mapping"": {""mapping_found"": true, ""mapping"": {""threegpp"": ""network-slice service profile"", ""oran"": ""RAN slice/A1 policy candidate""}, ""profile"": ""3GPP Rel-18 + O-RAN R004""}}"
+EXP2-072,Set up mMTC connectivity for smart-building telemetry devices.,valid_mMTC,mMTC,True,direct,Qwen/Qwen3.5-9B,True,2144.4526219984255,stop,108,82,"{
+  ""rejected"": true,
+  ""reason"": ""The request is ambiguous and lacks specific numeric requirements (e.g., number of devices, data rate, latency, coverage area) necessary to generate an executable network-slicing configuration. Additionally, 'mMTC' is a 5G use case category, not a specific slice configuration that can be directly translated without defined parameters.""
+}",,True,False,False,,False,False,False,,,
+EXP2-072,Set up mMTC connectivity for smart-building telemetry devices.,valid_mMTC,mMTC,True,cir,Qwen/Qwen3.5-9B,True,5051.207477999924,stop,221,68,"{
+  ""service_type"": ""mMTC"",
+  ""latency_ms"": null,
+  ""bandwidth_mbps"": null,
+  ""reliability"": null,
+  ""device_count"": null,
+  ""coverage"": null,
+  ""objective"": ""smart-building telemetry""
+}",mMTC,True,False,False,,True,True,True,,"{""service_type"": ""mMTC"", ""latency_ms"": null, ""bandwidth_mbps"": null, ""reliability"": null, ""device_count"": null, ""coverage"": null, ""objective"": ""smart-building telemetry""}","{""service_type"": ""mMTC"", ""service_profile"": {""latency_ms"": null, ""bandwidth_mbps"": null, ""reliability"": null, ""device_count"": null, ""coverage"": null, ""objective"": ""smart-building telemetry""}, ""standards_mapping"": {""mapping_found"": true, ""mapping"": {""threegpp"": ""network-slice service profile"", ""oran"": ""RAN slice/A1 policy candidate""}, ""profile"": ""3GPP Rel-18 + O-RAN R004""}}"
+EXP2-072,Set up mMTC connectivity for smart-building telemetry devices.,valid_mMTC,mMTC,True,proposed,Qwen/Qwen3.5-9B,True,1300.7058260009217,stop,221,68,"{
+  ""service_type"": ""mMTC"",
+  ""latency_ms"": null,
+  ""bandwidth_mbps"": null,
+  ""reliability"": null,
+  ""device_count"": null,
+  ""coverage"": null,
+  ""objective"": ""smart-building telemetry""
+}",mMTC,True,False,False,True,True,True,True,,"{""service_type"": ""mMTC"", ""latency_ms"": null, ""bandwidth_mbps"": null, ""reliability"": null, ""device_count"": null, ""coverage"": null, ""objective"": ""smart-building telemetry""}","{""service_type"": ""mMTC"", ""service_profile"": {""latency_ms"": null, ""bandwidth_mbps"": null, ""reliability"": null, ""device_count"": null, ""coverage"": null, ""objective"": ""smart-building telemetry""}, ""standards_mapping"": {""mapping_found"": true, ""mapping"": {""threegpp"": ""network-slice service profile"", ""oran"": ""RAN slice/A1 policy candidate""}, ""profile"": ""3GPP Rel-18 + O-RAN R004""}}"
+EXP2-073,Provide connectivity for a large fleet of battery-powered IoT sensors.,valid_mMTC,mMTC,True,direct,Qwen/Qwen3.5-9B,True,1153.0652129986265,stop,109,57,"{
+  ""rejected"": true,
+  ""reason"": ""The request lacks specific technical parameters required to generate an executable network-slicing configuration, such as required bandwidth, latency thresholds, packet loss tolerance, number of devices, QoS class, and geographic scope.""
+}",,True,False,False,,False,False,False,,,
+EXP2-073,Provide connectivity for a large fleet of battery-powered IoT sensors.,valid_mMTC,mMTC,True,cir,Qwen/Qwen3.5-9B,True,3500.835877001009,stop,222,76,"{
+  ""service_type"": ""mMTC"",
+  ""latency_ms"": null,
+  ""bandwidth_mbps"": null,
+  ""reliability"": null,
+  ""device_count"": null,
+  ""coverage"": null,
+  ""objective"": ""Provide connectivity for a large fleet of battery-powered IoT sensors.""
+}",mMTC,True,False,False,,True,True,True,,"{""service_type"": ""mMTC"", ""latency_ms"": null, ""bandwidth_mbps"": null, ""reliability"": null, ""device_count"": null, ""coverage"": null, ""objective"": ""Provide connectivity for a large fleet of battery-powered IoT sensors.""}","{""service_type"": ""mMTC"", ""service_profile"": {""latency_ms"": null, ""bandwidth_mbps"": null, ""reliability"": null, ""device_count"": null, ""coverage"": null, ""objective"": ""Provide connectivity for a large fleet of battery-powered IoT sensors.""}, ""standards_mapping"": {""mapping_found"": true, ""mapping"": {""threegpp"": ""network-slice service profile"", ""oran"": ""RAN slice/A1 policy candidate""}, ""profile"": ""3GPP Rel-18 + O-RAN R004""}}"
+EXP2-073,Provide connectivity for a large fleet of battery-powered IoT sensors.,valid_mMTC,mMTC,True,proposed,Qwen/Qwen3.5-9B,True,1789.8013170015474,stop,222,76,"{
+  ""service_type"": ""mMTC"",
+  ""latency_ms"": null,
+  ""bandwidth_mbps"": null,
+  ""reliability"": null,
+  ""device_count"": null,
+  ""coverage"": null,
+  ""objective"": ""Provide connectivity for a large fleet of battery-powered IoT sensors.""
+}",mMTC,True,False,False,True,True,True,True,,"{""service_type"": ""mMTC"", ""latency_ms"": null, ""bandwidth_mbps"": null, ""reliability"": null, ""device_count"": null, ""coverage"": null, ""objective"": ""Provide connectivity for a large fleet of battery-powered IoT sensors.""}","{""service_type"": ""mMTC"", ""service_profile"": {""latency_ms"": null, ""bandwidth_mbps"": null, ""reliability"": null, ""device_count"": null, ""coverage"": null, ""objective"": ""Provide connectivity for a large fleet of battery-powered IoT sensors.""}, ""standards_mapping"": {""mapping_found"": true, ""mapping"": {""threegpp"": ""network-slice service profile"", ""oran"": ""RAN slice/A1 policy candidate""}, ""profile"": ""3GPP Rel-18 + O-RAN R004""}}"
+EXP2-074,Create massive machine-type communication for agricultural monitoring.,valid_mMTC,mMTC,True,direct,Qwen/Qwen3.5-9B,True,1815.7461310001963,stop,106,86,"{
+  ""rejected"": true,
+  ""reason"": ""The request is ambiguous and lacks specific numeric requirements (e.g., latency, bandwidth, reliability, QoS thresholds) necessary to define a concrete network-slicing intent. Additionally, 'massive machine-type communication' is a category rather than a specific configuration, and the request does not provide sufficient details to generate executable-like JSON without inventing values.""
+}",,True,False,False,,False,False,False,,,
+EXP2-074,Create massive machine-type communication for agricultural monitoring.,valid_mMTC,mMTC,True,cir,Qwen/Qwen3.5-9B,True,5365.608310001335,stop,219,68,"{
+  ""service_type"": ""mMTC"",
+  ""latency_ms"": null,
+  ""bandwidth_mbps"": null,
+  ""reliability"": null,
+  ""device_count"": null,
+  ""coverage"": null,
+  ""objective"": ""agricultural monitoring""
+}",mMTC,True,False,False,,True,True,True,,"{""service_type"": ""mMTC"", ""latency_ms"": null, ""bandwidth_mbps"": null, ""reliability"": null, ""device_count"": null, ""coverage"": null, ""objective"": ""agricultural monitoring""}","{""service_type"": ""mMTC"", ""service_profile"": {""latency_ms"": null, ""bandwidth_mbps"": null, ""reliability"": null, ""device_count"": null, ""coverage"": null, ""objective"": ""agricultural monitoring""}, ""standards_mapping"": {""mapping_found"": true, ""mapping"": {""threegpp"": ""network-slice service profile"", ""oran"": ""RAN slice/A1 policy candidate""}, ""profile"": ""3GPP Rel-18 + O-RAN R004""}}"
+EXP2-074,Create massive machine-type communication for agricultural monitoring.,valid_mMTC,mMTC,True,proposed,Qwen/Qwen3.5-9B,True,3042.8793750015757,stop,219,68,"{
+  ""service_type"": ""mMTC"",
+  ""latency_ms"": null,
+  ""bandwidth_mbps"": null,
+  ""reliability"": null,
+  ""device_count"": null,
+  ""coverage"": null,
+  ""objective"": ""agricultural monitoring""
+}",mMTC,True,False,False,True,True,True,True,,"{""service_type"": ""mMTC"", ""latency_ms"": null, ""bandwidth_mbps"": null, ""reliability"": null, ""device_count"": null, ""coverage"": null, ""objective"": ""agricultural monitoring""}","{""service_type"": ""mMTC"", ""service_profile"": {""latency_ms"": null, ""bandwidth_mbps"": null, ""reliability"": null, ""device_count"": null, ""coverage"": null, ""objective"": ""agricultural monitoring""}, ""standards_mapping"": {""mapping_found"": true, ""mapping"": {""threegpp"": ""network-slice service profile"", ""oran"": ""RAN slice/A1 policy candidate""}, ""profile"": ""3GPP Rel-18 + O-RAN R004""}}"
+EXP2-075,Provision an mMTC slice for widespread infrastructure sensors.,valid_mMTC,mMTC,True,direct,Qwen/Qwen3.5-9B,True,1409.6347079994302,stop,108,112,"{
+  ""slices"": [
+    {
+      ""sliceType"": ""mMTC"",
+      ""useCase"": ""widespread_infrastructure_sensors"",
+      ""parameters"": {
+        ""maxMachinesPerCell"": 100000,
+        ""latencyRequirement"": ""low"",
+        ""reliabilityRequirement"": ""high"",
+        ""coverageRequirement"": ""wide"",
+        ""dataRateRequirement"": ""low""
+      }
+    }
+  ]
+}",,True,False,False,,False,True,True,,,"{""slices"": [{""sliceType"": ""mMTC"", ""useCase"": ""widespread_infrastructure_sensors"", ""parameters"": {""maxMachinesPerCell"": 100000, ""latencyRequirement"": ""low"", ""reliabilityRequirement"": ""high"", ""coverageRequirement"": ""wide"", ""dataRateRequirement"": ""low""}}]}"
+EXP2-075,Provision an mMTC slice for widespread infrastructure sensors.,valid_mMTC,mMTC,True,cir,Qwen/Qwen3.5-9B,True,4064.899338000032,stop,221,64,"{
+  ""service_type"": ""mMTC"",
+  ""latency_ms"": null,
+  ""bandwidth_mbps"": null,
+  ""reliability"": null,
+  ""device_count"": null,
+  ""coverage"": null,
+  ""objective"": null
+}",mMTC,True,False,False,,True,True,True,,"{""service_type"": ""mMTC"", ""latency_ms"": null, ""bandwidth_mbps"": null, ""reliability"": null, ""device_count"": null, ""coverage"": null, ""objective"": null}","{""service_type"": ""mMTC"", ""service_profile"": {""latency_ms"": null, ""bandwidth_mbps"": null, ""reliability"": null, ""device_count"": null, ""coverage"": null, ""objective"": null}, ""standards_mapping"": {""mapping_found"": true, ""mapping"": {""threegpp"": ""network-slice service profile"", ""oran"": ""RAN slice/A1 policy candidate""}, ""profile"": ""3GPP Rel-18 + O-RAN R004""}}"
+EXP2-075,Provision an mMTC slice for widespread infrastructure sensors.,valid_mMTC,mMTC,True,proposed,Qwen/Qwen3.5-9B,True,1745.9463159993902,stop,221,64,"{
+  ""service_type"": ""mMTC"",
+  ""latency_ms"": null,
+  ""bandwidth_mbps"": null,
+  ""reliability"": null,
+  ""device_count"": null,
+  ""coverage"": null,
+  ""objective"": null
+}",mMTC,True,False,False,True,True,True,True,,"{""service_type"": ""mMTC"", ""latency_ms"": null, ""bandwidth_mbps"": null, ""reliability"": null, ""device_count"": null, ""coverage"": null, ""objective"": null}","{""service_type"": ""mMTC"", ""service_profile"": {""latency_ms"": null, ""bandwidth_mbps"": null, ""reliability"": null, ""device_count"": null, ""coverage"": null, ""objective"": null}, ""standards_mapping"": {""mapping_found"": true, ""mapping"": {""threegpp"": ""network-slice service profile"", ""oran"": ""RAN slice/A1 policy candidate""}, ""profile"": ""3GPP Rel-18 + O-RAN R004""}}"
+EXP2-076,Provide a service for tens of thousands of low-traffic IoT endpoints.,valid_mMTC,mMTC,True,direct,Qwen/Qwen3.5-9B,True,1441.929919001268,stop,111,57,"{
+  ""rejected"": true,
+  ""reason"": ""The request lacks specific quantitative requirements (e.g., exact number of endpoints, latency, bandwidth, reliability) and does not define the network slice type or specific service characteristics needed to generate an executable configuration.""
+}",,True,False,False,,False,False,False,,,
+EXP2-076,Provide a service for tens of thousands of low-traffic IoT endpoints.,valid_mMTC,mMTC,True,cir,Qwen/Qwen3.5-9B,True,1895.516676000625,stop,224,78,"{
+  ""service_type"": ""mMTC"",
+  ""latency_ms"": null,
+  ""bandwidth_mbps"": null,
+  ""reliability"": null,
+  ""device_count"": null,
+  ""coverage"": null,
+  ""objective"": ""Provide a service for tens of thousands of low-traffic IoT endpoints""
+}",mMTC,True,False,False,,True,True,True,,"{""service_type"": ""mMTC"", ""latency_ms"": null, ""bandwidth_mbps"": null, ""reliability"": null, ""device_count"": null, ""coverage"": null, ""objective"": ""Provide a service for tens of thousands of low-traffic IoT endpoints""}","{""service_type"": ""mMTC"", ""service_profile"": {""latency_ms"": null, ""bandwidth_mbps"": null, ""reliability"": null, ""device_count"": null, ""coverage"": null, ""objective"": ""Provide a service for tens of thousands of low-traffic IoT endpoints""}, ""standards_mapping"": {""mapping_found"": true, ""mapping"": {""threegpp"": ""network-slice service profile"", ""oran"": ""RAN slice/A1 policy candidate""}, ""profile"": ""3GPP Rel-18 + O-RAN R004""}}"
+EXP2-076,Provide a service for tens of thousands of low-traffic IoT endpoints.,valid_mMTC,mMTC,True,proposed,Qwen/Qwen3.5-9B,True,1318.6644830002479,stop,224,78,"{
+  ""service_type"": ""mMTC"",
+  ""latency_ms"": null,
+  ""bandwidth_mbps"": null,
+  ""reliability"": null,
+  ""device_count"": null,
+  ""coverage"": null,
+  ""objective"": ""Provide a service for tens of thousands of low-traffic IoT endpoints""
+}",mMTC,True,False,False,True,True,True,True,,"{""service_type"": ""mMTC"", ""latency_ms"": null, ""bandwidth_mbps"": null, ""reliability"": null, ""device_count"": null, ""coverage"": null, ""objective"": ""Provide a service for tens of thousands of low-traffic IoT endpoints""}","{""service_type"": ""mMTC"", ""service_profile"": {""latency_ms"": null, ""bandwidth_mbps"": null, ""reliability"": null, ""device_count"": null, ""coverage"": null, ""objective"": ""Provide a service for tens of thousands of low-traffic IoT endpoints""}, ""standards_mapping"": {""mapping_found"": true, ""mapping"": {""threegpp"": ""network-slice service profile"", ""oran"": ""RAN slice/A1 policy candidate""}, ""profile"": ""3GPP Rel-18 + O-RAN R004""}}"
+EXP2-077,Create connectivity for a dense smart-meter deployment.,valid_mMTC,mMTC,True,direct,Qwen/Qwen3.5-9B,True,1911.7046810006286,stop,106,75,"{
+  ""rejected"": true,
+  ""reason"": ""The request is ambiguous and lacks specific network-slicing parameters (e.g., latency, bandwidth, reliability, slice type, QoS metrics) required to generate an executable configuration. Additionally, 'dense smart-meter deployment' is a use case description, not a direct intent specification for slice creation.""
+}",,True,False,False,,False,False,False,,,
+EXP2-077,Create connectivity for a dense smart-meter deployment.,valid_mMTC,mMTC,True,cir,Qwen/Qwen3.5-9B,True,2266.9198399999004,stop,219,73,"{
+  ""service_type"": ""mMTC"",
+  ""latency_ms"": null,
+  ""bandwidth_mbps"": null,
+  ""reliability"": null,
+  ""device_count"": null,
+  ""coverage"": null,
+  ""objective"": ""Create connectivity for a dense smart-meter deployment.""
+}",mMTC,True,False,False,,True,True,True,,"{""service_type"": ""mMTC"", ""latency_ms"": null, ""bandwidth_mbps"": null, ""reliability"": null, ""device_count"": null, ""coverage"": null, ""objective"": ""Create connectivity for a dense smart-meter deployment.""}","{""service_type"": ""mMTC"", ""service_profile"": {""latency_ms"": null, ""bandwidth_mbps"": null, ""reliability"": null, ""device_count"": null, ""coverage"": null, ""objective"": ""Create connectivity for a dense smart-meter deployment.""}, ""standards_mapping"": {""mapping_found"": true, ""mapping"": {""threegpp"": ""network-slice service profile"", ""oran"": ""RAN slice/A1 policy candidate""}, ""profile"": ""3GPP Rel-18 + O-RAN R004""}}"
+EXP2-077,Create connectivity for a dense smart-meter deployment.,valid_mMTC,mMTC,True,proposed,Qwen/Qwen3.5-9B,True,1405.716641998879,stop,219,73,"{
+  ""service_type"": ""mMTC"",
+  ""latency_ms"": null,
+  ""bandwidth_mbps"": null,
+  ""reliability"": null,
+  ""device_count"": null,
+  ""coverage"": null,
+  ""objective"": ""Create connectivity for a dense smart-meter deployment.""
+}",mMTC,True,False,False,True,True,True,True,,"{""service_type"": ""mMTC"", ""latency_ms"": null, ""bandwidth_mbps"": null, ""reliability"": null, ""device_count"": null, ""coverage"": null, ""objective"": ""Create connectivity for a dense smart-meter deployment.""}","{""service_type"": ""mMTC"", ""service_profile"": {""latency_ms"": null, ""bandwidth_mbps"": null, ""reliability"": null, ""device_count"": null, ""coverage"": null, ""objective"": ""Create connectivity for a dense smart-meter deployment.""}, ""standards_mapping"": {""mapping_found"": true, ""mapping"": {""threegpp"": ""network-slice service profile"", ""oran"": ""RAN slice/A1 policy candidate""}, ""profile"": ""3GPP Rel-18 + O-RAN R004""}}"
+EXP2-078,Set up massive IoT service for distributed environmental monitoring.,valid_mMTC,mMTC,True,direct,Qwen/Qwen3.5-9B,True,2939.407840000058,stop,107,81,"{
+  ""rejected"": true,
+  ""reason"": ""The request lacks specific numeric requirements (e.g., latency, bandwidth, reliability, QoS thresholds) and detailed constraints necessary to generate an executable network-slicing configuration. Additionally, 'massive IoT' is a broad category requiring specific slice parameters (e.g., connection density, data rate per device) to be defined.""
+}",,True,False,False,,False,False,False,,,
+EXP2-078,Set up massive IoT service for distributed environmental monitoring.,valid_mMTC,mMTC,True,cir,Qwen/Qwen3.5-9B,True,1823.1845939990308,stop,220,68,"{
+  ""service_type"": ""mMTC"",
+  ""latency_ms"": null,
+  ""bandwidth_mbps"": null,
+  ""reliability"": null,
+  ""device_count"": null,
+  ""coverage"": null,
+  ""objective"": ""distributed environmental monitoring""
+}",mMTC,True,False,False,,True,True,True,,"{""service_type"": ""mMTC"", ""latency_ms"": null, ""bandwidth_mbps"": null, ""reliability"": null, ""device_count"": null, ""coverage"": null, ""objective"": ""distributed environmental monitoring""}","{""service_type"": ""mMTC"", ""service_profile"": {""latency_ms"": null, ""bandwidth_mbps"": null, ""reliability"": null, ""device_count"": null, ""coverage"": null, ""objective"": ""distributed environmental monitoring""}, ""standards_mapping"": {""mapping_found"": true, ""mapping"": {""threegpp"": ""network-slice service profile"", ""oran"": ""RAN slice/A1 policy candidate""}, ""profile"": ""3GPP Rel-18 + O-RAN R004""}}"
+EXP2-078,Set up massive IoT service for distributed environmental monitoring.,valid_mMTC,mMTC,True,proposed,Qwen/Qwen3.5-9B,True,1726.8986299986864,stop,220,68,"{
+  ""service_type"": ""mMTC"",
+  ""latency_ms"": null,
+  ""bandwidth_mbps"": null,
+  ""reliability"": null,
+  ""device_count"": null,
+  ""coverage"": null,
+  ""objective"": ""distributed environmental monitoring""
+}",mMTC,True,False,False,True,True,True,True,,"{""service_type"": ""mMTC"", ""latency_ms"": null, ""bandwidth_mbps"": null, ""reliability"": null, ""device_count"": null, ""coverage"": null, ""objective"": ""distributed environmental monitoring""}","{""service_type"": ""mMTC"", ""service_profile"": {""latency_ms"": null, ""bandwidth_mbps"": null, ""reliability"": null, ""device_count"": null, ""coverage"": null, ""objective"": ""distributed environmental monitoring""}, ""standards_mapping"": {""mapping_found"": true, ""mapping"": {""threegpp"": ""network-slice service profile"", ""oran"": ""RAN slice/A1 policy candidate""}, ""profile"": ""3GPP Rel-18 + O-RAN R004""}}"
+EXP2-079,Provide an mMTC slice for low-power asset-tracking devices.,valid_mMTC,mMTC,True,direct,Qwen/Qwen3.5-9B,True,1376.4623639999627,stop,109,66,"{
+  ""rejected"": true,
+  ""reason"": ""The request lacks specific numeric requirements (e.g., latency, bandwidth, reliability, QoS thresholds) and does not define the network topology or slice isolation parameters. Without these values, an executable-like JSON configuration cannot be generated without inventing data.""
+}",,True,False,False,,False,False,False,,,
+EXP2-079,Provide an mMTC slice for low-power asset-tracking devices.,valid_mMTC,mMTC,True,cir,Qwen/Qwen3.5-9B,True,1973.871856000187,stop,222,70,"{
+  ""service_type"": ""mMTC"",
+  ""latency_ms"": null,
+  ""bandwidth_mbps"": null,
+  ""reliability"": null,
+  ""device_count"": null,
+  ""coverage"": null,
+  ""objective"": ""low-power asset-tracking devices""
+}",mMTC,True,False,False,,True,True,True,,"{""service_type"": ""mMTC"", ""latency_ms"": null, ""bandwidth_mbps"": null, ""reliability"": null, ""device_count"": null, ""coverage"": null, ""objective"": ""low-power asset-tracking devices""}","{""service_type"": ""mMTC"", ""service_profile"": {""latency_ms"": null, ""bandwidth_mbps"": null, ""reliability"": null, ""device_count"": null, ""coverage"": null, ""objective"": ""low-power asset-tracking devices""}, ""standards_mapping"": {""mapping_found"": true, ""mapping"": {""threegpp"": ""network-slice service profile"", ""oran"": ""RAN slice/A1 policy candidate""}, ""profile"": ""3GPP Rel-18 + O-RAN R004""}}"
+EXP2-079,Provide an mMTC slice for low-power asset-tracking devices.,valid_mMTC,mMTC,True,proposed,Qwen/Qwen3.5-9B,True,1542.166917999566,stop,222,70,"{
+  ""service_type"": ""mMTC"",
+  ""latency_ms"": null,
+  ""bandwidth_mbps"": null,
+  ""reliability"": null,
+  ""device_count"": null,
+  ""coverage"": null,
+  ""objective"": ""low-power asset-tracking devices""
+}",mMTC,True,False,False,True,True,True,True,,"{""service_type"": ""mMTC"", ""latency_ms"": null, ""bandwidth_mbps"": null, ""reliability"": null, ""device_count"": null, ""coverage"": null, ""objective"": ""low-power asset-tracking devices""}","{""service_type"": ""mMTC"", ""service_profile"": {""latency_ms"": null, ""bandwidth_mbps"": null, ""reliability"": null, ""device_count"": null, ""coverage"": null, ""objective"": ""low-power asset-tracking devices""}, ""standards_mapping"": {""mapping_found"": true, ""mapping"": {""threegpp"": ""network-slice service profile"", ""oran"": ""RAN slice/A1 policy candidate""}, ""profile"": ""3GPP Rel-18 + O-RAN R004""}}"
+EXP2-080,Create scalable connectivity for a large sensor population.,valid_mMTC,mMTC,True,direct,Qwen/Qwen3.5-9B,True,2038.4647680002672,stop,106,65,"{
+  ""rejected"": true,
+  ""reason"": ""The request is ambiguous and lacks specific network-slicing parameters (e.g., bandwidth, latency, reliability, slice type, or QoS metrics) required to generate an executable configuration. It describes a high-level goal rather than a concrete intent.""
+}",,True,False,False,,False,False,False,,,
+EXP2-080,Create scalable connectivity for a large sensor population.,valid_mMTC,mMTC,True,cir,Qwen/Qwen3.5-9B,True,5448.390889998336,stop,219,73,"{
+  ""service_type"": ""mMTC"",
+  ""latency_ms"": null,
+  ""bandwidth_mbps"": null,
+  ""reliability"": null,
+  ""device_count"": null,
+  ""coverage"": null,
+  ""objective"": ""Create scalable connectivity for a large sensor population""
+}",mMTC,True,False,False,,True,True,True,,"{""service_type"": ""mMTC"", ""latency_ms"": null, ""bandwidth_mbps"": null, ""reliability"": null, ""device_count"": null, ""coverage"": null, ""objective"": ""Create scalable connectivity for a large sensor population""}","{""service_type"": ""mMTC"", ""service_profile"": {""latency_ms"": null, ""bandwidth_mbps"": null, ""reliability"": null, ""device_count"": null, ""coverage"": null, ""objective"": ""Create scalable connectivity for a large sensor population""}, ""standards_mapping"": {""mapping_found"": true, ""mapping"": {""threegpp"": ""network-slice service profile"", ""oran"": ""RAN slice/A1 policy candidate""}, ""profile"": ""3GPP Rel-18 + O-RAN R004""}}"
+EXP2-080,Create scalable connectivity for a large sensor population.,valid_mMTC,mMTC,True,proposed,Qwen/Qwen3.5-9B,True,1093.1351269991865,stop,219,73,"{
+  ""service_type"": ""mMTC"",
+  ""latency_ms"": null,
+  ""bandwidth_mbps"": null,
+  ""reliability"": null,
+  ""device_count"": null,
+  ""coverage"": null,
+  ""objective"": ""Create scalable connectivity for a large sensor population""
+}",mMTC,True,False,False,True,True,True,True,,"{""service_type"": ""mMTC"", ""latency_ms"": null, ""bandwidth_mbps"": null, ""reliability"": null, ""device_count"": null, ""coverage"": null, ""objective"": ""Create scalable connectivity for a large sensor population""}","{""service_type"": ""mMTC"", ""service_profile"": {""latency_ms"": null, ""bandwidth_mbps"": null, ""reliability"": null, ""device_count"": null, ""coverage"": null, ""objective"": ""Create scalable connectivity for a large sensor population""}, ""standards_mapping"": {""mapping_found"": true, ""mapping"": {""threegpp"": ""network-slice service profile"", ""oran"": ""RAN slice/A1 policy candidate""}, ""profile"": ""3GPP Rel-18 + O-RAN R004""}}"

@@ -1,0 +1,2 @@
+id,intent,family_id,repair_id,subcategory,expected_valid,expected_service,difficulty,linguistic_form,constraint_type,control_type,notes
+E3V3-DEV-096,"For delay-critical traffic, establish a URLLC slice whose availability target is expressed as 98.75% reliability.",DEV-R5,R5,percentage_form,True,URLLC,easy,numeric,reliability,none,Percentage reliability must be converted to the canonical reliability scale without precision loss.

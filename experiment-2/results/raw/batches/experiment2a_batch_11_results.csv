@@ -1,0 +1,239 @@
+id,intent,category,expected_service,expected_valid,pipeline,model,parse_ok,latency_ms,finish_reason,prompt_tokens,completion_tokens,raw_response,predicted_service,schema_valid,hallucination_detected,unsupported_input_detected,input_audit_valid,mapping_found,descriptor_success,accepted,validation_errors,cir_json,descriptor_json
+EXP2-101,Create a fast network slice.,invalid_ambiguous,,False,direct,Qwen/Qwen3.5-9B,True,2074.0824269996665,stop,103,83,"{
+  ""rejected"": true,
+  ""reason"": ""The request 'Create a fast network slice' is ambiguous and lacks specific technical parameters (e.g., bandwidth, latency, packet loss, slice type, QoS class identifier) required to generate an executable configuration. Additionally, the request does not specify a target network infrastructure or API, making direct translation to an executable JSON format impossible.""
+}",,True,False,False,,False,False,False,,,
+EXP2-101,Create a fast network slice.,invalid_ambiguous,,False,cir,Qwen/Qwen3.5-9B,True,1273.658226000407,stop,216,67,"{
+  ""service_type"": null,
+  ""latency_ms"": null,
+  ""bandwidth_mbps"": null,
+  ""reliability"": null,
+  ""device_count"": null,
+  ""coverage"": null,
+  ""objective"": ""Create a fast network slice""
+}",,True,False,False,,False,False,False,SERVICE_TYPE_UNRESOLVED,"{""service_type"": null, ""latency_ms"": null, ""bandwidth_mbps"": null, ""reliability"": null, ""device_count"": null, ""coverage"": null, ""objective"": ""Create a fast network slice""}",
+EXP2-101,Create a fast network slice.,invalid_ambiguous,,False,proposed,Qwen/Qwen3.5-9B,True,1083.5611229995266,stop,216,67,"{
+  ""service_type"": null,
+  ""latency_ms"": null,
+  ""bandwidth_mbps"": null,
+  ""reliability"": null,
+  ""device_count"": null,
+  ""coverage"": null,
+  ""objective"": ""Create a fast network slice""
+}",,True,False,False,True,False,False,False,SERVICE_TYPE_UNRESOLVED,"{""service_type"": null, ""latency_ms"": null, ""bandwidth_mbps"": null, ""reliability"": null, ""device_count"": null, ""coverage"": null, ""objective"": ""Create a fast network slice""}",
+EXP2-102,Give me the best slice possible.,invalid_ambiguous,,False,direct,Qwen/Qwen3.5-9B,True,2007.9797109992796,stop,104,47,"{
+  ""rejected"": true,
+  ""reason"": ""The request is ambiguous and lacks specific requirements (e.g., latency, bandwidth, reliability, use case) necessary to define a valid network slice configuration.""
+}",,True,False,False,,False,False,False,,,
+EXP2-102,Give me the best slice possible.,invalid_ambiguous,,False,cir,Qwen/Qwen3.5-9B,True,3151.282677999916,stop,217,61,"{
+  ""service_type"": null,
+  ""latency_ms"": null,
+  ""bandwidth_mbps"": null,
+  ""reliability"": null,
+  ""device_count"": null,
+  ""coverage"": null,
+  ""objective"": null
+}",,True,False,False,,False,False,False,SERVICE_TYPE_UNRESOLVED,"{""service_type"": null, ""latency_ms"": null, ""bandwidth_mbps"": null, ""reliability"": null, ""device_count"": null, ""coverage"": null, ""objective"": null}",
+EXP2-102,Give me the best slice possible.,invalid_ambiguous,,False,proposed,Qwen/Qwen3.5-9B,True,1830.7719429994904,stop,217,61,"{
+  ""service_type"": null,
+  ""latency_ms"": null,
+  ""bandwidth_mbps"": null,
+  ""reliability"": null,
+  ""device_count"": null,
+  ""coverage"": null,
+  ""objective"": null
+}",,True,False,False,True,False,False,False,SERVICE_TYPE_UNRESOLVED,"{""service_type"": null, ""latency_ms"": null, ""bandwidth_mbps"": null, ""reliability"": null, ""device_count"": null, ""coverage"": null, ""objective"": null}",
+EXP2-103,Set up a high-performance network service.,invalid_ambiguous,,False,direct,Qwen/Qwen3.5-9B,True,1512.073378000423,stop,105,53,"{
+  ""rejected"": true,
+  ""reason"": ""The request is ambiguous and lacks specific network-slicing parameters (e.g., bandwidth, latency, reliability, slice type, or QoS metrics) required to generate an executable configuration.""
+}",,True,False,False,,False,False,False,,,
+EXP2-103,Set up a high-performance network service.,invalid_ambiguous,,False,cir,Qwen/Qwen3.5-9B,True,3107.9046960003325,stop,218,61,"{
+  ""service_type"": null,
+  ""latency_ms"": null,
+  ""bandwidth_mbps"": null,
+  ""reliability"": null,
+  ""device_count"": null,
+  ""coverage"": null,
+  ""objective"": null
+}",,True,False,False,,False,False,False,SERVICE_TYPE_UNRESOLVED,"{""service_type"": null, ""latency_ms"": null, ""bandwidth_mbps"": null, ""reliability"": null, ""device_count"": null, ""coverage"": null, ""objective"": null}",
+EXP2-103,Set up a high-performance network service.,invalid_ambiguous,,False,proposed,Qwen/Qwen3.5-9B,True,1017.0388669994281,stop,218,61,"{
+  ""service_type"": null,
+  ""latency_ms"": null,
+  ""bandwidth_mbps"": null,
+  ""reliability"": null,
+  ""device_count"": null,
+  ""coverage"": null,
+  ""objective"": null
+}",,True,False,False,True,False,False,False,SERVICE_TYPE_UNRESOLVED,"{""service_type"": null, ""latency_ms"": null, ""bandwidth_mbps"": null, ""reliability"": null, ""device_count"": null, ""coverage"": null, ""objective"": null}",
+EXP2-104,I need a really good connection.,invalid_ambiguous,,False,direct,Qwen/Qwen3.5-9B,True,2599.436937000064,stop,104,54,"{
+  ""rejected"": true,
+  ""reason"": ""The request 'I need a really good connection' is ambiguous and lacks specific network-slicing parameters such as bandwidth, latency, reliability, or service type required to generate an executable configuration.""
+}",,True,False,False,,False,False,False,,,
+EXP2-104,I need a really good connection.,invalid_ambiguous,,False,cir,Qwen/Qwen3.5-9B,True,2644.694344000527,stop,217,61,"{
+  ""service_type"": null,
+  ""latency_ms"": null,
+  ""bandwidth_mbps"": null,
+  ""reliability"": null,
+  ""device_count"": null,
+  ""coverage"": null,
+  ""objective"": null
+}",,True,False,False,,False,False,False,SERVICE_TYPE_UNRESOLVED,"{""service_type"": null, ""latency_ms"": null, ""bandwidth_mbps"": null, ""reliability"": null, ""device_count"": null, ""coverage"": null, ""objective"": null}",
+EXP2-104,I need a really good connection.,invalid_ambiguous,,False,proposed,Qwen/Qwen3.5-9B,True,1781.0242520008615,stop,217,61,"{
+  ""service_type"": null,
+  ""latency_ms"": null,
+  ""bandwidth_mbps"": null,
+  ""reliability"": null,
+  ""device_count"": null,
+  ""coverage"": null,
+  ""objective"": null
+}",,True,False,False,True,False,False,False,SERVICE_TYPE_UNRESOLVED,"{""service_type"": null, ""latency_ms"": null, ""bandwidth_mbps"": null, ""reliability"": null, ""device_count"": null, ""coverage"": null, ""objective"": null}",
+EXP2-105,Create a slice optimized for performance.,invalid_ambiguous,,False,direct,Qwen/Qwen3.5-9B,True,2307.330385001478,stop,104,157,"{
+  ""slice"": {
+    ""sliceType"": ""performance"",
+    ""slicingParameters"": {
+      ""resourceAllocation"": {
+        ""guaranteedBitRate"": null,
+        ""maximumBitRate"": null,
+        ""minimumLatency"": null,
+        ""maximumPacketLossRate"": null,
+        ""maximumJitter"": null
+      },
+      ""networkSlices"": [
+        {
+          ""sliceIdentifier"": ""perf-slice-001"",
+          ""sliceDescription"": ""Optimized for low latency and high throughput"",
+          ""slicingPolicy"": ""dynamic"",
+          ""resourceReservation"": ""elastic""
+        }
+      ]
+    }
+  }
+}",,True,False,False,,False,True,True,,,"{""slice"": {""sliceType"": ""performance"", ""slicingParameters"": {""resourceAllocation"": {""guaranteedBitRate"": null, ""maximumBitRate"": null, ""minimumLatency"": null, ""maximumPacketLossRate"": null, ""maximumJitter"": null}, ""networkSlices"": [{""sliceIdentifier"": ""perf-slice-001"", ""sliceDescription"": ""Optimized for low latency and high throughput"", ""slicingPolicy"": ""dynamic"", ""resourceReservation"": ""elastic""}]}}}"
+EXP2-105,Create a slice optimized for performance.,invalid_ambiguous,,False,cir,Qwen/Qwen3.5-9B,True,1536.6512299988244,stop,217,63,"{
+  ""service_type"": null,
+  ""latency_ms"": null,
+  ""bandwidth_mbps"": null,
+  ""reliability"": null,
+  ""device_count"": null,
+  ""coverage"": null,
+  ""objective"": ""performance""
+}",,True,False,False,,False,False,False,SERVICE_TYPE_UNRESOLVED,"{""service_type"": null, ""latency_ms"": null, ""bandwidth_mbps"": null, ""reliability"": null, ""device_count"": null, ""coverage"": null, ""objective"": ""performance""}",
+EXP2-105,Create a slice optimized for performance.,invalid_ambiguous,,False,proposed,Qwen/Qwen3.5-9B,True,1125.9681909996289,stop,217,63,"{
+  ""service_type"": null,
+  ""latency_ms"": null,
+  ""bandwidth_mbps"": null,
+  ""reliability"": null,
+  ""device_count"": null,
+  ""coverage"": null,
+  ""objective"": ""performance""
+}",,True,False,False,True,False,False,False,SERVICE_TYPE_UNRESOLVED,"{""service_type"": null, ""latency_ms"": null, ""bandwidth_mbps"": null, ""reliability"": null, ""device_count"": null, ""coverage"": null, ""objective"": ""performance""}",
+EXP2-106,Provide a powerful network slice.,invalid_ambiguous,,False,direct,Qwen/Qwen3.5-9B,True,1413.89326999888,stop,103,55,"{
+  ""rejected"": true,
+  ""reason"": ""The request 'Provide a powerful network slice' is ambiguous and lacks specific technical parameters (e.g., latency, bandwidth, reliability, use case) required to define a valid network slice configuration.""
+}",,True,False,False,,False,False,False,,,
+EXP2-106,Provide a powerful network slice.,invalid_ambiguous,,False,cir,Qwen/Qwen3.5-9B,True,2130.424456001492,stop,216,61,"{
+  ""service_type"": null,
+  ""latency_ms"": null,
+  ""bandwidth_mbps"": null,
+  ""reliability"": null,
+  ""device_count"": null,
+  ""coverage"": null,
+  ""objective"": null
+}",,True,False,False,,False,False,False,SERVICE_TYPE_UNRESOLVED,"{""service_type"": null, ""latency_ms"": null, ""bandwidth_mbps"": null, ""reliability"": null, ""device_count"": null, ""coverage"": null, ""objective"": null}",
+EXP2-106,Provide a powerful network slice.,invalid_ambiguous,,False,proposed,Qwen/Qwen3.5-9B,True,3769.640933000119,stop,216,61,"{
+  ""service_type"": null,
+  ""latency_ms"": null,
+  ""bandwidth_mbps"": null,
+  ""reliability"": null,
+  ""device_count"": null,
+  ""coverage"": null,
+  ""objective"": null
+}",,True,False,False,True,False,False,False,SERVICE_TYPE_UNRESOLVED,"{""service_type"": null, ""latency_ms"": null, ""bandwidth_mbps"": null, ""reliability"": null, ""device_count"": null, ""coverage"": null, ""objective"": null}",
+EXP2-107,Make the network extremely responsive.,invalid_ambiguous,,False,direct,Qwen/Qwen3.5-9B,True,1332.479337001132,stop,103,65,"{
+  ""rejected"": true,
+  ""reason"": ""The request 'Make the network extremely responsive' is ambiguous and lacks specific, measurable parameters (e.g., latency thresholds, jitter limits, packet loss tolerance, or specific service types). Network slicing requires explicit quantitative requirements to generate a valid configuration.""
+}",,True,False,False,,False,False,False,,,
+EXP2-107,Make the network extremely responsive.,invalid_ambiguous,,False,cir,Qwen/Qwen3.5-9B,True,2778.978658001506,stop,216,67,"{
+  ""service_type"": null,
+  ""latency_ms"": null,
+  ""bandwidth_mbps"": null,
+  ""reliability"": null,
+  ""device_count"": null,
+  ""coverage"": null,
+  ""objective"": ""Make the network extremely responsive.""
+}",,True,False,False,,False,False,False,SERVICE_TYPE_UNRESOLVED,"{""service_type"": null, ""latency_ms"": null, ""bandwidth_mbps"": null, ""reliability"": null, ""device_count"": null, ""coverage"": null, ""objective"": ""Make the network extremely responsive.""}",
+EXP2-107,Make the network extremely responsive.,invalid_ambiguous,,False,proposed,Qwen/Qwen3.5-9B,True,1644.8455469999317,stop,216,67,"{
+  ""service_type"": null,
+  ""latency_ms"": null,
+  ""bandwidth_mbps"": null,
+  ""reliability"": null,
+  ""device_count"": null,
+  ""coverage"": null,
+  ""objective"": ""Make the network extremely responsive.""
+}",,True,False,False,True,False,False,False,SERVICE_TYPE_UNRESOLVED,"{""service_type"": null, ""latency_ms"": null, ""bandwidth_mbps"": null, ""reliability"": null, ""device_count"": null, ""coverage"": null, ""objective"": ""Make the network extremely responsive.""}",
+EXP2-108,Set up an advanced connectivity service.,invalid_ambiguous,,False,direct,Qwen/Qwen3.5-9B,True,1722.9519529992103,stop,104,61,"{
+  ""rejected"": true,
+  ""reason"": ""The request 'Set up an advanced connectivity service' is ambiguous and lacks specific network-slicing parameters (e.g., bandwidth, latency, reliability, slice type, or QoS metrics) required to generate an executable configuration.""
+}",,True,False,False,,False,False,False,,,
+EXP2-108,Set up an advanced connectivity service.,invalid_ambiguous,,False,cir,Qwen/Qwen3.5-9B,True,1502.6367169994046,stop,217,61,"{
+  ""service_type"": null,
+  ""latency_ms"": null,
+  ""bandwidth_mbps"": null,
+  ""reliability"": null,
+  ""device_count"": null,
+  ""coverage"": null,
+  ""objective"": null
+}",,True,False,False,,False,False,False,SERVICE_TYPE_UNRESOLVED,"{""service_type"": null, ""latency_ms"": null, ""bandwidth_mbps"": null, ""reliability"": null, ""device_count"": null, ""coverage"": null, ""objective"": null}",
+EXP2-108,Set up an advanced connectivity service.,invalid_ambiguous,,False,proposed,Qwen/Qwen3.5-9B,True,1559.4915189994936,stop,217,61,"{
+  ""service_type"": null,
+  ""latency_ms"": null,
+  ""bandwidth_mbps"": null,
+  ""reliability"": null,
+  ""device_count"": null,
+  ""coverage"": null,
+  ""objective"": null
+}",,True,False,False,True,False,False,False,SERVICE_TYPE_UNRESOLVED,"{""service_type"": null, ""latency_ms"": null, ""bandwidth_mbps"": null, ""reliability"": null, ""device_count"": null, ""coverage"": null, ""objective"": null}",
+EXP2-109,Give this application premium networking.,invalid_ambiguous,,False,direct,Qwen/Qwen3.5-9B,True,1288.5971670002618,stop,103,76,"{
+  ""rejected"": true,
+  ""reason"": ""The request is ambiguous and lacks specific technical parameters required to define a network slice (e.g., bandwidth, latency, jitter, packet loss, location, or service type). Additionally, 'premium networking' is a subjective term that cannot be directly translated into executable network configuration without concrete SLA values.""
+}",,True,False,False,,False,False,False,,,
+EXP2-109,Give this application premium networking.,invalid_ambiguous,,False,cir,Qwen/Qwen3.5-9B,True,1628.6928320005245,stop,216,61,"{
+  ""service_type"": null,
+  ""latency_ms"": null,
+  ""bandwidth_mbps"": null,
+  ""reliability"": null,
+  ""device_count"": null,
+  ""coverage"": null,
+  ""objective"": null
+}",,True,False,False,,False,False,False,SERVICE_TYPE_UNRESOLVED,"{""service_type"": null, ""latency_ms"": null, ""bandwidth_mbps"": null, ""reliability"": null, ""device_count"": null, ""coverage"": null, ""objective"": null}",
+EXP2-109,Give this application premium networking.,invalid_ambiguous,,False,proposed,Qwen/Qwen3.5-9B,True,1535.3077270010544,stop,216,61,"{
+  ""service_type"": null,
+  ""latency_ms"": null,
+  ""bandwidth_mbps"": null,
+  ""reliability"": null,
+  ""device_count"": null,
+  ""coverage"": null,
+  ""objective"": null
+}",,True,False,False,True,False,False,False,SERVICE_TYPE_UNRESOLVED,"{""service_type"": null, ""latency_ms"": null, ""bandwidth_mbps"": null, ""reliability"": null, ""device_count"": null, ""coverage"": null, ""objective"": null}",
+EXP2-110,Create the most efficient slice.,invalid_ambiguous,,False,direct,Qwen/Qwen3.5-9B,True,1401.5271919997758,stop,103,63,"{
+  ""rejected"": true,
+  ""reason"": ""The request 'Create the most efficient slice' is ambiguous and lacks specific requirements (e.g., latency, bandwidth, reliability, use case). Without defined constraints, it is impossible to generate a valid, executable network-slicing configuration.""
+}",,True,False,False,,False,False,False,,,
+EXP2-110,Create the most efficient slice.,invalid_ambiguous,,False,cir,Qwen/Qwen3.5-9B,True,1601.9703219990333,stop,216,61,"{
+  ""service_type"": null,
+  ""latency_ms"": null,
+  ""bandwidth_mbps"": null,
+  ""reliability"": null,
+  ""device_count"": null,
+  ""coverage"": null,
+  ""objective"": null
+}",,True,False,False,,False,False,False,SERVICE_TYPE_UNRESOLVED,"{""service_type"": null, ""latency_ms"": null, ""bandwidth_mbps"": null, ""reliability"": null, ""device_count"": null, ""coverage"": null, ""objective"": null}",
+EXP2-110,Create the most efficient slice.,invalid_ambiguous,,False,proposed,Qwen/Qwen3.5-9B,True,2064.4962030000897,stop,216,61,"{
+  ""service_type"": null,
+  ""latency_ms"": null,
+  ""bandwidth_mbps"": null,
+  ""reliability"": null,
+  ""device_count"": null,
+  ""coverage"": null,
+  ""objective"": null
+}",,True,False,False,True,False,False,False,SERVICE_TYPE_UNRESOLVED,"{""service_type"": null, ""latency_ms"": null, ""bandwidth_mbps"": null, ""reliability"": null, ""device_count"": null, ""coverage"": null, ""objective"": null}",

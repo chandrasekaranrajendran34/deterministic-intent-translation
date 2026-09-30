@@ -1,0 +1,23 @@
+order,section,subsection,target_words,purpose
+01,Title,,15-20,"State deterministic intent translation, network slicing, 3GPP/O-RAN alignment, and hallucination resistance."
+02,Abstract,,180-220,"Problem, architecture, evaluation design, primary held-out result, and bounded conclusion."
+03,I. Introduction,,700-900,"Motivation, problem statement, research gap, objective, contributions, and paper organization."
+04,II. Related Work,A. Intent-Based Network and Slice Management,300-400,Prior intent-based networking and network-slicing lifecycle management.
+05,II. Related Work,B. LLM/AI-Based Intent Translation,350-450,"Probabilistic intent understanding, LLM-based translation, and associated reliability risks."
+06,II. Related Work,C. Research Gap,200-300,"Gap between probabilistic semantic extraction and deterministic, traceable descriptor actuation."
+07,III. Proposed Architecture,A. Design Principles,250-350,Separation of probabilistic interpretation from deterministic failure containment.
+08,III. Proposed Architecture,B. Source Analysis and Pre-LLM Guards,350-450,"Source-side audit, capability profile, control policy, and constraint consistency."
+09,III. Proposed Architecture,C. CIR Extraction and Reconciliation,300-400,"Canonical intermediate representation, normalization, reconciliation, and service-type resolution."
+10,III. Proposed Architecture,"D. Preservation, Validation and Mapping",350-450,"Source-to-CIR preservation, deterministic validation, closed-world capability checks, and descriptor mapping."
+11,IV. Experimental Methodology,A. Evaluation Sequence,300-400,"E1, E2A, E2B, and final E3-v3 roles without treating them as a common-test learning curve."
+12,IV. Experimental Methodology,B. Metrics and Statistical Analysis,250-350,"Decision accuracy, acceptance/rejection metrics, exact confidence intervals, paired tests, descriptor generation, and latency."
+13,IV. Experimental Methodology,C. Held-Out Benchmark and Integrity Controls,300-400,"Frozen held-out benchmark, pre-evaluation leakage screening, and post-evaluation expanded exposure audit."
+14,V. Results,A. Development Evidence: E1 and E2A,350-450,"Controlled feasibility, information-loss diagnosis, robustness, and failure discovery."
+15,V. Results,B. Targeted Repair Evidence: E2B,250-350,Development evidence for deterministic safeguards and trade-offs.
+16,V. Results,C. Final E3-v3 Held-Out Evaluation,450-600,"Primary final result: 101/120, exact CI, acceptance/rejection, LLM invocation, descriptors, latency, and family results."
+17,V. Results,D. Residual Failure Analysis,300-400,Nineteen retained held-out errors and T1-T6 taxonomy.
+18,VI. Discussion,A. Effect of Deterministic Failure Containment,400-500,Interpret evidence for source-aware deterministic safeguards without claiming universal superiority.
+19,VI. Discussion,B. Validity-Rejection Trade-Off,250-350,Discuss acceptance/rejection trade-offs and development-to-held-out behavior.
+20,VI. Discussion,C. Remaining Limitations,300-400,"Closed-world scope, semantic limitations, capability coverage, benchmark scope, and standards-conformance boundary."
+21,VII. Threats to Validity,,400-550,"Internal, construct, external, and conclusion validity threats."
+22,VIII. Conclusion and Future Work,,250-350,"Bounded conclusion and future external, normative, and testbed validation."

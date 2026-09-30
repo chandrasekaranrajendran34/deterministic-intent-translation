@@ -1,0 +1,102 @@
+{
+  "architecture_position": "R4_reconciliation -> R5_reliability_normalization -> source_CIR_preservation -> CIR_validation",
+  "artifacts": {
+    "analyzer": {
+      "path": "/content/experiment-1-v2-together/experiment-2b/implementation/e3_v3/src/source_analyzer_r5_final.py",
+      "sha256": "3c24b9d798b9a7694328134eac76f877aa190715d8ccd8cc1348fa49477fdab7"
+    },
+    "dataset": {
+      "path": "/content/experiment-1-v2-together/experiment-2b/data/frozen/experiment2b_e3v3_development_160_v1.csv",
+      "sha256": "133c68842716f84a703478f7904c8cdd4f10cfdba683957ce23e473e81e7196f"
+    },
+    "design": {
+      "path": "/content/experiment-1-v2-together/experiment-2b/implementation/e3_v3/experiment2b_e3v3_r5_residual_repair_design_v1.json",
+      "sha256": "5ef2ca46892c762667048fa8981bf8503e05f72ca60e4e477315b9bdebf3cb8f"
+    },
+    "development_result": {
+      "path": "/content/experiment-1-v2-together/experiment-2b/implementation/e3_v3/results/development/experiment2b_e3v3_r5_development_160_results_v1.csv",
+      "sha256": "cdda3612b69d5c9d0beb33f891d6096fe936f895aa54c758accba48ec8576c24"
+    },
+    "implementation_manifest": {
+      "path": "/content/experiment-1-v2-together/experiment-2b/implementation/e3_v3/experiment2b_e3v3_r5_final_residual_implementation_manifest_v1.json",
+      "sha256": "f04e6c69349d16cd289b6d3177d59f416ce990fe45545204498f0dec822da766"
+    },
+    "normalizer": {
+      "path": "/content/experiment-1-v2-together/experiment-2b/implementation/e3_v3/src/reliability_normalization_r5_final.py",
+      "sha256": "4e0437b732209e83b43929229f6aa012723957b1109c84e014979556c75e123d"
+    },
+    "runner": {
+      "path": "/content/experiment-1-v2-together/experiment-2b/implementation/e3_v3/run_experiment2b_e3v3_r5_dev_v6.py",
+      "sha256": "968cf2eb124023202881da6aaba2b4452ca742eb120660d7e2803b829974ce49"
+    },
+    "target_input": {
+      "path": "/content/experiment-1-v2-together/experiment-2b/implementation/e3_v3/results/diagnostic/r5_final_residual_4cases_v1.csv",
+      "sha256": "92a6c39673f6a0d62aa8b65080ad66780737613580e726b435ae4003b790ad65"
+    },
+    "target_output": {
+      "path": "/content/experiment-1-v2-together/experiment-2b/implementation/e3_v3/results/diagnostic/r5_final_residual_4cases_results_v1.csv",
+      "sha256": "bb9e2b103387dd3ee698d57603bdab399a80c09eff8559dea0adaceeec6eaaa6"
+    },
+    "unit_results": {
+      "path": "/content/experiment-1-v2-together/experiment-2b/implementation/e3_v3/results/development/experiment2b_e3v3_r5_final_residual_unit_tests_v1.json",
+      "sha256": "7d2549d382e30f8b81bd05ad3fca5c7867d85733741e34432bcf837634b01793"
+    }
+  },
+  "closure_id": "e3v3-r5-development-closure-v1.0",
+  "created_utc": "2026-09-29T15:53:39.427812+00:00",
+  "development_evidence": {
+    "deterministic_unit_tests": {
+      "passed": 8,
+      "total": 8
+    },
+    "final_residual_validation": {
+      "cases": 4,
+      "cir_validation_passed": 4,
+      "correct": 4,
+      "note": "Targeted development diagnostics after pre-specified residual-repair design freeze.",
+      "preservation_passed": 4,
+      "r5_interventions": 4
+    },
+    "full_development_run": {
+      "cases": 160,
+      "correct_to_wrong": 0,
+      "net_change_cases": 22,
+      "net_change_percentage_points": 13.75,
+      "note": "Development/tuning evidence only; not held-out performance.",
+      "r4_correct": 113,
+      "r5_v5_correct": 135,
+      "wrong_to_correct": 22
+    },
+    "r5_target_family_before_final_residual_repair": {
+      "cases": 20,
+      "correct": 16,
+      "incorrect": 4
+    }
+  },
+  "explicit_non_claims": [
+    "The final v6 implementation was not rerun on the entire 160-case development set after the last four-case residual repair.",
+    "The 4/4 targeted result must not be reported as independent held-out performance.",
+    "R5 development results do not establish generalization.",
+    "Final generalization claims require the frozen post-R7 held-out evaluation."
+  ],
+  "final_r5_scope": [
+    "canonical reliability range 0..1",
+    "explicit percentage-to-decimal normalization",
+    "canonical decimal reliability preservation",
+    "source-grounded reliability reconciliation",
+    "reverse numeric reliability forms",
+    "reliability-of numeric percentage forms",
+    "source-grounded compatible operator-bearing CIR normalization"
+  ],
+  "freeze_policy": {
+    "R5": "No further R5 tuning using the current development set.",
+    "dataset": "Frozen development dataset remains unchanged.",
+    "held_out": "Held-out evaluation occurs only after R6/R7 development closure and E3-v3 implementation freeze."
+  },
+  "next_repairs": {
+    "R6": "service_type extraction",
+    "R7": "qualitative requirement resolution"
+  },
+  "repair": "R5_reliability_normalization",
+  "status": "R5_DEVELOPMENT_CLOSED"
+}

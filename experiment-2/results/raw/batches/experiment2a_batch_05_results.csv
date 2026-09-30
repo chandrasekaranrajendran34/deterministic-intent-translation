@@ -1,0 +1,236 @@
+id,intent,category,expected_service,expected_valid,pipeline,model,parse_ok,latency_ms,finish_reason,prompt_tokens,completion_tokens,raw_response,predicted_service,schema_valid,hallucination_detected,unsupported_input_detected,input_audit_valid,mapping_found,descriptor_success,accepted,validation_errors,cir_json,descriptor_json
+EXP2-041,Set up a slice for time-critical industrial control.,valid_URLLC,URLLC,True,direct,Qwen/Qwen3.5-9B,True,1084.043312999711,stop,108,67,"{
+  ""rejected"": true,
+  ""reason"": ""The request lacks specific numeric requirements (e.g., latency, bandwidth, reliability) and network topology details necessary to generate an executable configuration. Additionally, setting up a network slice requires access to a specific network management system or API, which is not provided.""
+}",,True,False,False,,False,False,False,,,
+EXP2-041,Set up a slice for time-critical industrial control.,valid_URLLC,URLLC,True,cir,Qwen/Qwen3.5-9B,True,1182.3439210002107,stop,221,69,"{
+  ""service_type"": ""URLLC"",
+  ""latency_ms"": null,
+  ""bandwidth_mbps"": null,
+  ""reliability"": null,
+  ""device_count"": null,
+  ""coverage"": null,
+  ""objective"": ""time-critical industrial control""
+}",URLLC,True,False,False,,True,True,True,,"{""service_type"": ""URLLC"", ""latency_ms"": null, ""bandwidth_mbps"": null, ""reliability"": null, ""device_count"": null, ""coverage"": null, ""objective"": ""time-critical industrial control""}","{""service_type"": ""URLLC"", ""service_profile"": {""latency_ms"": null, ""bandwidth_mbps"": null, ""reliability"": null, ""device_count"": null, ""coverage"": null, ""objective"": ""time-critical industrial control""}, ""standards_mapping"": {""mapping_found"": true, ""mapping"": {""threegpp"": ""network-slice service profile"", ""oran"": ""RAN slice/A1 policy candidate""}, ""profile"": ""3GPP Rel-18 + O-RAN R004""}}"
+EXP2-041,Set up a slice for time-critical industrial control.,valid_URLLC,URLLC,True,proposed,Qwen/Qwen3.5-9B,True,16605.861500000174,stop,221,69,"{
+  ""service_type"": ""URLLC"",
+  ""latency_ms"": null,
+  ""bandwidth_mbps"": null,
+  ""reliability"": null,
+  ""device_count"": null,
+  ""coverage"": null,
+  ""objective"": ""time-critical industrial control""
+}",URLLC,True,False,False,True,True,True,True,,"{""service_type"": ""URLLC"", ""latency_ms"": null, ""bandwidth_mbps"": null, ""reliability"": null, ""device_count"": null, ""coverage"": null, ""objective"": ""time-critical industrial control""}","{""service_type"": ""URLLC"", ""service_profile"": {""latency_ms"": null, ""bandwidth_mbps"": null, ""reliability"": null, ""device_count"": null, ""coverage"": null, ""objective"": ""time-critical industrial control""}, ""standards_mapping"": {""mapping_found"": true, ""mapping"": {""threegpp"": ""network-slice service profile"", ""oran"": ""RAN slice/A1 policy candidate""}, ""profile"": ""3GPP Rel-18 + O-RAN R004""}}"
+EXP2-042,Provide ultra-low-delay communication for coordinated warehouse robots.,valid_URLLC,URLLC,True,direct,Qwen/Qwen3.5-9B,True,1437.6337960002274,stop,107,69,"{
+  ""rejected"": true,
+  ""reason"": ""The request lacks specific numeric requirements (e.g., maximum latency in ms, bandwidth in Mbps, reliability percentage) and does not define the network topology or slice isolation needs, making it impossible to generate a valid, executable network-slicing configuration without inventing data.""
+}",,True,False,False,,False,False,False,,,
+EXP2-042,Provide ultra-low-delay communication for coordinated warehouse robots.,valid_URLLC,URLLC,True,cir,Qwen/Qwen3.5-9B,True,31219.044776000374,stop,220,73,"{
+  ""service_type"": ""URLLC"",
+  ""latency_ms"": null,
+  ""bandwidth_mbps"": null,
+  ""reliability"": null,
+  ""device_count"": null,
+  ""coverage"": null,
+  ""objective"": ""Provide ultra-low-delay communication for coordinated warehouse robots.""
+}",URLLC,True,False,False,,True,True,True,,"{""service_type"": ""URLLC"", ""latency_ms"": null, ""bandwidth_mbps"": null, ""reliability"": null, ""device_count"": null, ""coverage"": null, ""objective"": ""Provide ultra-low-delay communication for coordinated warehouse robots.""}","{""service_type"": ""URLLC"", ""service_profile"": {""latency_ms"": null, ""bandwidth_mbps"": null, ""reliability"": null, ""device_count"": null, ""coverage"": null, ""objective"": ""Provide ultra-low-delay communication for coordinated warehouse robots.""}, ""standards_mapping"": {""mapping_found"": true, ""mapping"": {""threegpp"": ""network-slice service profile"", ""oran"": ""RAN slice/A1 policy candidate""}, ""profile"": ""3GPP Rel-18 + O-RAN R004""}}"
+EXP2-042,Provide ultra-low-delay communication for coordinated warehouse robots.,valid_URLLC,URLLC,True,proposed,Qwen/Qwen3.5-9B,True,2008.400963000895,stop,220,73,"{
+  ""service_type"": ""URLLC"",
+  ""latency_ms"": null,
+  ""bandwidth_mbps"": null,
+  ""reliability"": null,
+  ""device_count"": null,
+  ""coverage"": null,
+  ""objective"": ""Provide ultra-low-delay communication for coordinated warehouse robots""
+}",URLLC,True,False,False,True,True,True,True,,"{""service_type"": ""URLLC"", ""latency_ms"": null, ""bandwidth_mbps"": null, ""reliability"": null, ""device_count"": null, ""coverage"": null, ""objective"": ""Provide ultra-low-delay communication for coordinated warehouse robots""}","{""service_type"": ""URLLC"", ""service_profile"": {""latency_ms"": null, ""bandwidth_mbps"": null, ""reliability"": null, ""device_count"": null, ""coverage"": null, ""objective"": ""Provide ultra-low-delay communication for coordinated warehouse robots""}, ""standards_mapping"": {""mapping_found"": true, ""mapping"": {""threegpp"": ""network-slice service profile"", ""oran"": ""RAN slice/A1 policy candidate""}, ""profile"": ""3GPP Rel-18 + O-RAN R004""}}"
+EXP2-043,Create a reliable low-latency service for emergency control signaling.,valid_URLLC,URLLC,True,direct,Qwen/Qwen3.5-9B,True,1908.3542709995527,stop,109,105,"{
+  ""rejected"": true,
+  ""reason"": ""The request is ambiguous and lacks specific numeric requirements (e.g., maximum latency in ms, reliability percentage, bandwidth, or QoS class) necessary to generate an executable network-slicing configuration. Additionally, the intent does not specify the target network technology (e.g., 5G, 6G) or the specific service type (e.g., URLLC), making it impossible to construct a valid slice definition without inventing parameters.""
+}",,True,False,False,,False,False,False,,,
+EXP2-043,Create a reliable low-latency service for emergency control signaling.,valid_URLLC,URLLC,True,cir,Qwen/Qwen3.5-9B,True,1056.483278000087,stop,222,75,"{
+  ""service_type"": ""URLLC"",
+  ""latency_ms"": null,
+  ""bandwidth_mbps"": null,
+  ""reliability"": null,
+  ""device_count"": null,
+  ""coverage"": null,
+  ""objective"": ""Create a reliable low-latency service for emergency control signaling""
+}",URLLC,True,False,False,,True,True,True,,"{""service_type"": ""URLLC"", ""latency_ms"": null, ""bandwidth_mbps"": null, ""reliability"": null, ""device_count"": null, ""coverage"": null, ""objective"": ""Create a reliable low-latency service for emergency control signaling""}","{""service_type"": ""URLLC"", ""service_profile"": {""latency_ms"": null, ""bandwidth_mbps"": null, ""reliability"": null, ""device_count"": null, ""coverage"": null, ""objective"": ""Create a reliable low-latency service for emergency control signaling""}, ""standards_mapping"": {""mapping_found"": true, ""mapping"": {""threegpp"": ""network-slice service profile"", ""oran"": ""RAN slice/A1 policy candidate""}, ""profile"": ""3GPP Rel-18 + O-RAN R004""}}"
+EXP2-043,Create a reliable low-latency service for emergency control signaling.,valid_URLLC,URLLC,True,proposed,Qwen/Qwen3.5-9B,True,1146.6676870004449,stop,222,75,"{
+  ""service_type"": ""URLLC"",
+  ""latency_ms"": null,
+  ""bandwidth_mbps"": null,
+  ""reliability"": null,
+  ""device_count"": null,
+  ""coverage"": null,
+  ""objective"": ""Create a reliable low-latency service for emergency control signaling""
+}",URLLC,True,False,False,True,True,True,True,,"{""service_type"": ""URLLC"", ""latency_ms"": null, ""bandwidth_mbps"": null, ""reliability"": null, ""device_count"": null, ""coverage"": null, ""objective"": ""Create a reliable low-latency service for emergency control signaling""}","{""service_type"": ""URLLC"", ""service_profile"": {""latency_ms"": null, ""bandwidth_mbps"": null, ""reliability"": null, ""device_count"": null, ""coverage"": null, ""objective"": ""Create a reliable low-latency service for emergency control signaling""}, ""standards_mapping"": {""mapping_found"": true, ""mapping"": {""threegpp"": ""network-slice service profile"", ""oran"": ""RAN slice/A1 policy candidate""}, ""profile"": ""3GPP Rel-18 + O-RAN R004""}}"
+EXP2-044,Provision URLLC for real-time electrical grid protection.,valid_URLLC,URLLC,True,direct,Qwen/Qwen3.5-9B,True,2155.5537759995786,stop,109,148,"{
+  ""slices"": [
+    {
+      ""sliceType"": ""URLLC"",
+      ""useCase"": ""real-time-electrical-grid-protection"",
+      ""requirements"": {
+        ""maxLatency"": 1,
+        ""maxJitter"": 0.1,
+        ""reliability"": 99.999,
+        ""availability"": 99.999
+      },
+      ""networkSlicingParameters"": {
+        ""priority"": ""critical"",
+        ""resourceIsolation"": ""strict"",
+        ""qosClass"": ""5QI-68""
+      }
+    }
+  ]
+}",,True,False,False,,False,True,True,,,"{""slices"": [{""sliceType"": ""URLLC"", ""useCase"": ""real-time-electrical-grid-protection"", ""requirements"": {""maxLatency"": 1, ""maxJitter"": 0.1, ""reliability"": 99.999, ""availability"": 99.999}, ""networkSlicingParameters"": {""priority"": ""critical"", ""resourceIsolation"": ""strict"", ""qosClass"": ""5QI-68""}}]}"
+EXP2-044,Provision URLLC for real-time electrical grid protection.,valid_URLLC,URLLC,True,cir,Qwen/Qwen3.5-9B,True,938.2762830009597,stop,222,69,"{
+  ""service_type"": ""URLLC"",
+  ""latency_ms"": null,
+  ""bandwidth_mbps"": null,
+  ""reliability"": null,
+  ""device_count"": null,
+  ""coverage"": null,
+  ""objective"": ""real-time electrical grid protection""
+}",URLLC,True,False,False,,True,True,True,,"{""service_type"": ""URLLC"", ""latency_ms"": null, ""bandwidth_mbps"": null, ""reliability"": null, ""device_count"": null, ""coverage"": null, ""objective"": ""real-time electrical grid protection""}","{""service_type"": ""URLLC"", ""service_profile"": {""latency_ms"": null, ""bandwidth_mbps"": null, ""reliability"": null, ""device_count"": null, ""coverage"": null, ""objective"": ""real-time electrical grid protection""}, ""standards_mapping"": {""mapping_found"": true, ""mapping"": {""threegpp"": ""network-slice service profile"", ""oran"": ""RAN slice/A1 policy candidate""}, ""profile"": ""3GPP Rel-18 + O-RAN R004""}}"
+EXP2-044,Provision URLLC for real-time electrical grid protection.,valid_URLLC,URLLC,True,proposed,Qwen/Qwen3.5-9B,True,1011.4981189999526,stop,222,69,"{
+  ""service_type"": ""URLLC"",
+  ""latency_ms"": null,
+  ""bandwidth_mbps"": null,
+  ""reliability"": null,
+  ""device_count"": null,
+  ""coverage"": null,
+  ""objective"": ""real-time electrical grid protection""
+}",URLLC,True,False,False,True,True,True,True,,"{""service_type"": ""URLLC"", ""latency_ms"": null, ""bandwidth_mbps"": null, ""reliability"": null, ""device_count"": null, ""coverage"": null, ""objective"": ""real-time electrical grid protection""}","{""service_type"": ""URLLC"", ""service_profile"": {""latency_ms"": null, ""bandwidth_mbps"": null, ""reliability"": null, ""device_count"": null, ""coverage"": null, ""objective"": ""real-time electrical grid protection""}, ""standards_mapping"": {""mapping_found"": true, ""mapping"": {""threegpp"": ""network-slice service profile"", ""oran"": ""RAN slice/A1 policy candidate""}, ""profile"": ""3GPP Rel-18 + O-RAN R004""}}"
+EXP2-045,Provide a slice with 5 ms latency for factory automation.,valid_URLLC,URLLC,True,direct,Qwen/Qwen3.5-9B,True,1783.779843000957,stop,109,83,"{
+  ""rejected"": true,
+  ""reason"": ""The request specifies a latency of 5 ms, which is an out-of-range value for standard public network slicing services. Typical industrial automation slices support latencies between 10 ms and 50 ms. A 5 ms requirement exceeds current standard capabilities and requires specialized hardware or a different service tier not available in this context.""
+}",,True,False,False,,False,False,False,,,
+EXP2-045,Provide a slice with 5 ms latency for factory automation.,valid_URLLC,URLLC,True,cir,Qwen/Qwen3.5-9B,True,1104.4857489996502,stop,222,67,"{
+  ""service_type"": ""URLLC"",
+  ""latency_ms"": 5,
+  ""bandwidth_mbps"": null,
+  ""reliability"": null,
+  ""device_count"": null,
+  ""coverage"": null,
+  ""objective"": ""factory automation""
+}",URLLC,True,False,False,,True,True,True,,"{""service_type"": ""URLLC"", ""latency_ms"": 5, ""bandwidth_mbps"": null, ""reliability"": null, ""device_count"": null, ""coverage"": null, ""objective"": ""factory automation""}","{""service_type"": ""URLLC"", ""service_profile"": {""latency_ms"": 5, ""bandwidth_mbps"": null, ""reliability"": null, ""device_count"": null, ""coverage"": null, ""objective"": ""factory automation""}, ""standards_mapping"": {""mapping_found"": true, ""mapping"": {""threegpp"": ""network-slice service profile"", ""oran"": ""RAN slice/A1 policy candidate""}, ""profile"": ""3GPP Rel-18 + O-RAN R004""}}"
+EXP2-045,Provide a slice with 5 ms latency for factory automation.,valid_URLLC,URLLC,True,proposed,Qwen/Qwen3.5-9B,True,868.8371170010214,stop,222,67,"{
+  ""service_type"": ""URLLC"",
+  ""latency_ms"": 5,
+  ""bandwidth_mbps"": null,
+  ""reliability"": null,
+  ""device_count"": null,
+  ""coverage"": null,
+  ""objective"": ""factory automation""
+}",URLLC,True,False,False,True,True,True,True,,"{""service_type"": ""URLLC"", ""latency_ms"": 5, ""bandwidth_mbps"": null, ""reliability"": null, ""device_count"": null, ""coverage"": null, ""objective"": ""factory automation""}","{""service_type"": ""URLLC"", ""service_profile"": {""latency_ms"": 5, ""bandwidth_mbps"": null, ""reliability"": null, ""device_count"": null, ""coverage"": null, ""objective"": ""factory automation""}, ""standards_mapping"": {""mapping_found"": true, ""mapping"": {""threegpp"": ""network-slice service profile"", ""oran"": ""RAN slice/A1 policy candidate""}, ""profile"": ""3GPP Rel-18 + O-RAN R004""}}"
+EXP2-046,Create communication service for a highly time-sensitive control application.,valid_URLLC,URLLC,True,direct,Qwen/Qwen3.5-9B,True,2143.434207999235,stop,108,84,"{
+  ""rejected"": true,
+  ""reason"": ""The request is ambiguous and lacks specific numeric requirements (e.g., latency, jitter, bandwidth, reliability) necessary to define a valid network slice. Additionally, the request does not specify the target network technology (e.g., 5G, Wi-Fi 6) or the service area, making it impossible to generate an executable configuration.""
+}",,True,False,False,,False,False,False,,,
+EXP2-046,Create communication service for a highly time-sensitive control application.,valid_URLLC,URLLC,True,cir,Qwen/Qwen3.5-9B,True,1293.399390999184,stop,221,74,"{
+  ""service_type"": ""URLLC"",
+  ""latency_ms"": null,
+  ""bandwidth_mbps"": null,
+  ""reliability"": null,
+  ""device_count"": null,
+  ""coverage"": null,
+  ""objective"": ""Create communication service for a highly time-sensitive control application""
+}",URLLC,True,False,False,,True,True,True,,"{""service_type"": ""URLLC"", ""latency_ms"": null, ""bandwidth_mbps"": null, ""reliability"": null, ""device_count"": null, ""coverage"": null, ""objective"": ""Create communication service for a highly time-sensitive control application""}","{""service_type"": ""URLLC"", ""service_profile"": {""latency_ms"": null, ""bandwidth_mbps"": null, ""reliability"": null, ""device_count"": null, ""coverage"": null, ""objective"": ""Create communication service for a highly time-sensitive control application""}, ""standards_mapping"": {""mapping_found"": true, ""mapping"": {""threegpp"": ""network-slice service profile"", ""oran"": ""RAN slice/A1 policy candidate""}, ""profile"": ""3GPP Rel-18 + O-RAN R004""}}"
+EXP2-046,Create communication service for a highly time-sensitive control application.,valid_URLLC,URLLC,True,proposed,Qwen/Qwen3.5-9B,True,1149.7384409994993,stop,221,74,"{
+  ""service_type"": ""URLLC"",
+  ""latency_ms"": null,
+  ""bandwidth_mbps"": null,
+  ""reliability"": null,
+  ""device_count"": null,
+  ""coverage"": null,
+  ""objective"": ""Create communication service for a highly time-sensitive control application""
+}",URLLC,True,False,False,True,True,True,True,,"{""service_type"": ""URLLC"", ""latency_ms"": null, ""bandwidth_mbps"": null, ""reliability"": null, ""device_count"": null, ""coverage"": null, ""objective"": ""Create communication service for a highly time-sensitive control application""}","{""service_type"": ""URLLC"", ""service_profile"": {""latency_ms"": null, ""bandwidth_mbps"": null, ""reliability"": null, ""device_count"": null, ""coverage"": null, ""objective"": ""Create communication service for a highly time-sensitive control application""}, ""standards_mapping"": {""mapping_found"": true, ""mapping"": {""threegpp"": ""network-slice service profile"", ""oran"": ""RAN slice/A1 policy candidate""}, ""profile"": ""3GPP Rel-18 + O-RAN R004""}}"
+EXP2-047,Set up reliable low-delay connectivity for autonomous mobile robots.,valid_URLLC,URLLC,True,direct,Qwen/Qwen3.5-9B,True,1582.3216419994424,stop,108,91,"{
+  ""rejected"": true,
+  ""reason"": ""The request is ambiguous and lacks specific numeric requirements (e.g., maximum latency in ms, jitter tolerance, reliability percentage, bandwidth needs, or QoS class) necessary to generate an executable network-slicing configuration. Additionally, 'autonomous mobile robots' is a broad category with varying connectivity needs depending on the specific application (e.g., warehouse logistics vs. outdoor inspection).""
+}",,True,False,False,,False,False,False,,,
+EXP2-047,Set up reliable low-delay connectivity for autonomous mobile robots.,valid_URLLC,URLLC,True,cir,Qwen/Qwen3.5-9B,True,1712.9379060006613,stop,221,74,"{
+  ""service_type"": ""URLLC"",
+  ""latency_ms"": null,
+  ""bandwidth_mbps"": null,
+  ""reliability"": null,
+  ""device_count"": null,
+  ""coverage"": null,
+  ""objective"": ""Set up reliable low-delay connectivity for autonomous mobile robots.""
+}",URLLC,True,False,False,,True,True,True,,"{""service_type"": ""URLLC"", ""latency_ms"": null, ""bandwidth_mbps"": null, ""reliability"": null, ""device_count"": null, ""coverage"": null, ""objective"": ""Set up reliable low-delay connectivity for autonomous mobile robots.""}","{""service_type"": ""URLLC"", ""service_profile"": {""latency_ms"": null, ""bandwidth_mbps"": null, ""reliability"": null, ""device_count"": null, ""coverage"": null, ""objective"": ""Set up reliable low-delay connectivity for autonomous mobile robots.""}, ""standards_mapping"": {""mapping_found"": true, ""mapping"": {""threegpp"": ""network-slice service profile"", ""oran"": ""RAN slice/A1 policy candidate""}, ""profile"": ""3GPP Rel-18 + O-RAN R004""}}"
+EXP2-047,Set up reliable low-delay connectivity for autonomous mobile robots.,valid_URLLC,URLLC,True,proposed,Qwen/Qwen3.5-9B,True,1495.6674899985956,stop,221,74,"{
+  ""service_type"": ""URLLC"",
+  ""latency_ms"": null,
+  ""bandwidth_mbps"": null,
+  ""reliability"": null,
+  ""device_count"": null,
+  ""coverage"": null,
+  ""objective"": ""Set up reliable low-delay connectivity for autonomous mobile robots.""
+}",URLLC,True,False,False,True,True,True,True,,"{""service_type"": ""URLLC"", ""latency_ms"": null, ""bandwidth_mbps"": null, ""reliability"": null, ""device_count"": null, ""coverage"": null, ""objective"": ""Set up reliable low-delay connectivity for autonomous mobile robots.""}","{""service_type"": ""URLLC"", ""service_profile"": {""latency_ms"": null, ""bandwidth_mbps"": null, ""reliability"": null, ""device_count"": null, ""coverage"": null, ""objective"": ""Set up reliable low-delay connectivity for autonomous mobile robots.""}, ""standards_mapping"": {""mapping_found"": true, ""mapping"": {""threegpp"": ""network-slice service profile"", ""oran"": ""RAN slice/A1 policy candidate""}, ""profile"": ""3GPP Rel-18 + O-RAN R004""}}"
+EXP2-048,Provide URLLC service for real-time process control.,valid_URLLC,URLLC,True,direct,Qwen/Qwen3.5-9B,True,1336.7071640004724,stop,108,74,"{
+  ""rejected"": true,
+  ""reason"": ""The request lacks specific quantitative requirements (e.g., latency, jitter, reliability percentages) and technical constraints (e.g., bandwidth, slice isolation level) necessary to generate an executable network-slicing configuration. Without these, the intent is ambiguous and cannot be translated into a valid JSON specification.""
+}",,True,False,False,,False,False,False,,,
+EXP2-048,Provide URLLC service for real-time process control.,valid_URLLC,URLLC,True,cir,Qwen/Qwen3.5-9B,True,1208.5442079987843,stop,221,68,"{
+  ""service_type"": ""URLLC"",
+  ""latency_ms"": null,
+  ""bandwidth_mbps"": null,
+  ""reliability"": null,
+  ""device_count"": null,
+  ""coverage"": null,
+  ""objective"": ""real-time process control""
+}",URLLC,True,False,False,,True,True,True,,"{""service_type"": ""URLLC"", ""latency_ms"": null, ""bandwidth_mbps"": null, ""reliability"": null, ""device_count"": null, ""coverage"": null, ""objective"": ""real-time process control""}","{""service_type"": ""URLLC"", ""service_profile"": {""latency_ms"": null, ""bandwidth_mbps"": null, ""reliability"": null, ""device_count"": null, ""coverage"": null, ""objective"": ""real-time process control""}, ""standards_mapping"": {""mapping_found"": true, ""mapping"": {""threegpp"": ""network-slice service profile"", ""oran"": ""RAN slice/A1 policy candidate""}, ""profile"": ""3GPP Rel-18 + O-RAN R004""}}"
+EXP2-048,Provide URLLC service for real-time process control.,valid_URLLC,URLLC,True,proposed,Qwen/Qwen3.5-9B,True,1077.1508580000955,stop,221,68,"{
+  ""service_type"": ""URLLC"",
+  ""latency_ms"": null,
+  ""bandwidth_mbps"": null,
+  ""reliability"": null,
+  ""device_count"": null,
+  ""coverage"": null,
+  ""objective"": ""real-time process control""
+}",URLLC,True,False,False,True,True,True,True,,"{""service_type"": ""URLLC"", ""latency_ms"": null, ""bandwidth_mbps"": null, ""reliability"": null, ""device_count"": null, ""coverage"": null, ""objective"": ""real-time process control""}","{""service_type"": ""URLLC"", ""service_profile"": {""latency_ms"": null, ""bandwidth_mbps"": null, ""reliability"": null, ""device_count"": null, ""coverage"": null, ""objective"": ""real-time process control""}, ""standards_mapping"": {""mapping_found"": true, ""mapping"": {""threegpp"": ""network-slice service profile"", ""oran"": ""RAN slice/A1 policy candidate""}, ""profile"": ""3GPP Rel-18 + O-RAN R004""}}"
+EXP2-049,Create a slice for critical machine-to-machine control messages.,valid_URLLC,URLLC,True,direct,Qwen/Qwen3.5-9B,True,1138.5697959995014,stop,108,74,"{
+  ""rejected"": true,
+  ""reason"": ""The request is ambiguous and lacks specific numeric requirements (e.g., latency, reliability, bandwidth, priority) necessary to define a valid network slice configuration. Additionally, the request does not specify the target network technology (e.g., 5G, LTE) or the service provider context.""
+}",,True,False,False,,False,False,False,,,
+EXP2-049,Create a slice for critical machine-to-machine control messages.,valid_URLLC,URLLC,True,cir,Qwen/Qwen3.5-9B,True,1160.6997060007416,stop,221,70,"{
+  ""service_type"": ""URLLC"",
+  ""latency_ms"": null,
+  ""bandwidth_mbps"": null,
+  ""reliability"": null,
+  ""device_count"": null,
+  ""coverage"": null,
+  ""objective"": ""critical machine-to-machine control messages""
+}",URLLC,True,False,False,,True,True,True,,"{""service_type"": ""URLLC"", ""latency_ms"": null, ""bandwidth_mbps"": null, ""reliability"": null, ""device_count"": null, ""coverage"": null, ""objective"": ""critical machine-to-machine control messages""}","{""service_type"": ""URLLC"", ""service_profile"": {""latency_ms"": null, ""bandwidth_mbps"": null, ""reliability"": null, ""device_count"": null, ""coverage"": null, ""objective"": ""critical machine-to-machine control messages""}, ""standards_mapping"": {""mapping_found"": true, ""mapping"": {""threegpp"": ""network-slice service profile"", ""oran"": ""RAN slice/A1 policy candidate""}, ""profile"": ""3GPP Rel-18 + O-RAN R004""}}"
+EXP2-049,Create a slice for critical machine-to-machine control messages.,valid_URLLC,URLLC,True,proposed,Qwen/Qwen3.5-9B,True,1138.1665280005109,stop,221,70,"{
+  ""service_type"": ""URLLC"",
+  ""latency_ms"": null,
+  ""bandwidth_mbps"": null,
+  ""reliability"": null,
+  ""device_count"": null,
+  ""coverage"": null,
+  ""objective"": ""critical machine-to-machine control messages""
+}",URLLC,True,False,False,True,True,True,True,,"{""service_type"": ""URLLC"", ""latency_ms"": null, ""bandwidth_mbps"": null, ""reliability"": null, ""device_count"": null, ""coverage"": null, ""objective"": ""critical machine-to-machine control messages""}","{""service_type"": ""URLLC"", ""service_profile"": {""latency_ms"": null, ""bandwidth_mbps"": null, ""reliability"": null, ""device_count"": null, ""coverage"": null, ""objective"": ""critical machine-to-machine control messages""}, ""standards_mapping"": {""mapping_found"": true, ""mapping"": {""threegpp"": ""network-slice service profile"", ""oran"": ""RAN slice/A1 policy candidate""}, ""profile"": ""3GPP Rel-18 + O-RAN R004""}}"
+EXP2-050,Provision ultra-reliable communication for industrial safety systems.,valid_URLLC,URLLC,True,direct,Qwen/Qwen3.5-9B,True,1070.3379070000665,stop,108,80,"{
+  ""rejected"": true,
+  ""reason"": ""The request is ambiguous and lacks specific numeric requirements (e.g., latency, jitter, packet loss, bandwidth) necessary to define an executable network-slicing configuration. Additionally, 'ultra-reliable' is a qualitative term without a defined quantitative threshold (e.g., 99.999% reliability).""
+}",,True,False,False,,False,False,False,,,
+EXP2-050,Provision ultra-reliable communication for industrial safety systems.,valid_URLLC,URLLC,True,cir,Qwen/Qwen3.5-9B,True,1176.7571489999682,stop,221,74,"{
+  ""service_type"": ""URLLC"",
+  ""latency_ms"": null,
+  ""bandwidth_mbps"": null,
+  ""reliability"": null,
+  ""device_count"": null,
+  ""coverage"": null,
+  ""objective"": ""Provision ultra-reliable communication for industrial safety systems""
+}",URLLC,True,False,False,,True,True,True,,"{""service_type"": ""URLLC"", ""latency_ms"": null, ""bandwidth_mbps"": null, ""reliability"": null, ""device_count"": null, ""coverage"": null, ""objective"": ""Provision ultra-reliable communication for industrial safety systems""}","{""service_type"": ""URLLC"", ""service_profile"": {""latency_ms"": null, ""bandwidth_mbps"": null, ""reliability"": null, ""device_count"": null, ""coverage"": null, ""objective"": ""Provision ultra-reliable communication for industrial safety systems""}, ""standards_mapping"": {""mapping_found"": true, ""mapping"": {""threegpp"": ""network-slice service profile"", ""oran"": ""RAN slice/A1 policy candidate""}, ""profile"": ""3GPP Rel-18 + O-RAN R004""}}"
+EXP2-050,Provision ultra-reliable communication for industrial safety systems.,valid_URLLC,URLLC,True,proposed,Qwen/Qwen3.5-9B,True,1294.0774540002167,stop,221,74,"{
+  ""service_type"": ""URLLC"",
+  ""latency_ms"": null,
+  ""bandwidth_mbps"": null,
+  ""reliability"": null,
+  ""device_count"": null,
+  ""coverage"": null,
+  ""objective"": ""Provision ultra-reliable communication for industrial safety systems""
+}",URLLC,True,False,False,True,True,True,True,,"{""service_type"": ""URLLC"", ""latency_ms"": null, ""bandwidth_mbps"": null, ""reliability"": null, ""device_count"": null, ""coverage"": null, ""objective"": ""Provision ultra-reliable communication for industrial safety systems""}","{""service_type"": ""URLLC"", ""service_profile"": {""latency_ms"": null, ""bandwidth_mbps"": null, ""reliability"": null, ""device_count"": null, ""coverage"": null, ""objective"": ""Provision ultra-reliable communication for industrial safety systems""}, ""standards_mapping"": {""mapping_found"": true, ""mapping"": {""threegpp"": ""network-slice service profile"", ""oran"": ""RAN slice/A1 policy candidate""}, ""profile"": ""3GPP Rel-18 + O-RAN R004""}}"

@@ -1,0 +1,11 @@
+id,intent,category,subcategory,expected_valid,expected_service,difficulty,linguistic_form,constraint_type,notes
+EXP2B-031,Create eMBB with bandwidth at least 450 Mbps and reliability of 99.9%.,valid_compound,embb_bandwidth_reliability,True,eMBB,hard,compound_numeric,multiple_compatible,Two compatible numeric requirements.
+EXP2B-032,Provision eMBB with 500 Mbps bandwidth and latency below 40 ms.,valid_compound,embb_bandwidth_latency,True,eMBB,hard,compound_numeric,multiple_compatible,Compatible bandwidth and latency.
+EXP2B-033,Configure enhanced mobile broadband for 350 Mbps throughput with high reliability.,valid_compound,embb_numeric_semantic,True,eMBB,hard,compound_mixed,multiple_compatible,Numeric throughput plus supported semantic reliability.
+EXP2B-034,Prepare eMBB with bandwidth above 300 Mbps and wide coverage.,valid_compound,embb_numeric_coverage,True,eMBB,hard,compound_mixed,multiple_compatible,Numeric bandwidth plus coverage.
+EXP2B-035,Create eMBB with throughput of 600 Mbps and reliability at least 99%.,valid_compound,embb_bandwidth_reliability,True,eMBB,hard,compound_numeric,multiple_compatible,Compatible exact and lower-bound requirements.
+EXP2B-036,Create URLLC with latency below 6 ms and reliability at least 99.99%.,valid_compound,urllc_latency_reliability,True,URLLC,hard,compound_numeric,multiple_compatible,Compatible URLLC requirements.
+EXP2B-037,Provision URLLC with 5 ms latency and 100 Mbps bandwidth.,valid_compound,urllc_latency_bandwidth,True,URLLC,hard,compound_numeric,multiple_compatible,Compatible latency and bandwidth.
+EXP2B-038,Configure ultra-reliable low-latency connectivity with latency at most 8 ms and high reliability.,valid_compound,urllc_numeric_semantic,True,URLLC,hard,compound_mixed,multiple_compatible,Numeric latency plus semantic reliability.
+EXP2B-039,Prepare URLLC with reliability of 99.999% and bandwidth above 80 Mbps.,valid_compound,urllc_reliability_bandwidth,True,URLLC,hard,compound_numeric,multiple_compatible,Compatible reliability and bandwidth.
+EXP2B-040,Create URLLC with latency of 3 ms and reliability of 99.9%.,valid_compound,urllc_latency_reliability,True,URLLC,hard,compound_numeric,multiple_compatible,Two compatible exact constraints.

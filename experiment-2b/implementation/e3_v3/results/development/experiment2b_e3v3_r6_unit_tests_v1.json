@@ -1,0 +1,391 @@
+{
+  "created_utc": "2026-09-29T15:57:40.171351+00:00",
+  "design_sha256": "eb50866568ebc1855cd1d80d92086f0ba21c51d864fcaa083970a60a694edd7c",
+  "failed": 0,
+  "module_sha256": "164a90fc517b10b622dadeda732484ea6b9fb12fc1f7d9da55897357787bfd8f",
+  "passed": 22,
+  "suite": "e3v3-r6-service-type-unit-tests-v1",
+  "tests": [
+    {
+      "actual": "eMBB",
+      "evidence": {
+        "canonical_matches": [],
+        "combined_matches": [
+          "eMBB"
+        ],
+        "conflict": false,
+        "resolved_service_type": "eMBB",
+        "semantic_matches": [
+          "eMBB"
+        ]
+      },
+      "expected": "eMBB",
+      "passed": true,
+      "test": "embb_bandwidth_intensive_mobile",
+      "text": "Provide bandwidth-intensive mobile applications."
+    },
+    {
+      "actual": "eMBB",
+      "evidence": {
+        "canonical_matches": [],
+        "combined_matches": [
+          "eMBB"
+        ],
+        "conflict": false,
+        "resolved_service_type": "eMBB",
+        "semantic_matches": [
+          "eMBB"
+        ]
+      },
+      "expected": "eMBB",
+      "passed": true,
+      "test": "embb_high_capacity_broadband",
+      "text": "Provide high-capacity broadband access for mobile users."
+    },
+    {
+      "actual": "eMBB",
+      "evidence": {
+        "canonical_matches": [],
+        "combined_matches": [
+          "eMBB"
+        ],
+        "conflict": false,
+        "resolved_service_type": "eMBB",
+        "semantic_matches": [
+          "eMBB"
+        ]
+      },
+      "expected": "eMBB",
+      "passed": true,
+      "test": "embb_data_heavy_multimedia",
+      "text": "Support data-heavy mobile multimedia."
+    },
+    {
+      "actual": "URLLC",
+      "evidence": {
+        "canonical_matches": [],
+        "combined_matches": [
+          "URLLC"
+        ],
+        "conflict": false,
+        "resolved_service_type": "URLLC",
+        "semantic_matches": [
+          "URLLC"
+        ]
+      },
+      "expected": "URLLC",
+      "passed": true,
+      "test": "urllc_low_delay_reliability",
+      "text": "Support extremely low delay with strong reliability."
+    },
+    {
+      "actual": "URLLC",
+      "evidence": {
+        "canonical_matches": [],
+        "combined_matches": [
+          "URLLC"
+        ],
+        "conflict": false,
+        "resolved_service_type": "URLLC",
+        "semantic_matches": [
+          "URLLC"
+        ]
+      },
+      "expected": "URLLC",
+      "passed": true,
+      "test": "urllc_time_critical_control",
+      "text": "Support time-critical dependable control traffic."
+    },
+    {
+      "actual": "URLLC",
+      "evidence": {
+        "canonical_matches": [],
+        "combined_matches": [
+          "URLLC"
+        ],
+        "conflict": false,
+        "resolved_service_type": "URLLC",
+        "semantic_matches": [
+          "URLLC"
+        ]
+      },
+      "expected": "URLLC",
+      "passed": true,
+      "test": "urllc_mission_critical_realtime",
+      "text": "Provide mission-critical real-time control messages."
+    },
+    {
+      "actual": "mMTC",
+      "evidence": {
+        "canonical_matches": [],
+        "combined_matches": [
+          "mMTC"
+        ],
+        "conflict": false,
+        "resolved_service_type": "mMTC",
+        "semantic_matches": [
+          "mMTC"
+        ]
+      },
+      "expected": "mMTC",
+      "passed": true,
+      "test": "mmtc_massive_sensors",
+      "text": "Connect massive numbers of distributed sensors."
+    },
+    {
+      "actual": "mMTC",
+      "evidence": {
+        "canonical_matches": [],
+        "combined_matches": [
+          "mMTC"
+        ],
+        "conflict": false,
+        "resolved_service_type": "mMTC",
+        "semantic_matches": [
+          "mMTC"
+        ]
+      },
+      "expected": "mMTC",
+      "passed": true,
+      "test": "mmtc_large_scale_iot",
+      "text": "Provide large-scale IoT device access."
+    },
+    {
+      "actual": "mMTC",
+      "evidence": {
+        "canonical_matches": [],
+        "combined_matches": [
+          "mMTC"
+        ],
+        "conflict": false,
+        "resolved_service_type": "mMTC",
+        "semantic_matches": [
+          "mMTC"
+        ]
+      },
+      "expected": "mMTC",
+      "passed": true,
+      "test": "mmtc_dense_telemetry",
+      "text": "Support dense sensor and telemetry deployments."
+    },
+    {
+      "actual": null,
+      "evidence": {
+        "canonical_matches": [],
+        "combined_matches": [],
+        "conflict": false,
+        "resolved_service_type": null,
+        "semantic_matches": []
+      },
+      "expected": null,
+      "passed": true,
+      "test": "negative_high_throughput_only",
+      "text": "Provide high throughput."
+    },
+    {
+      "actual": null,
+      "evidence": {
+        "canonical_matches": [],
+        "combined_matches": [],
+        "conflict": false,
+        "resolved_service_type": null,
+        "semantic_matches": []
+      },
+      "expected": null,
+      "passed": true,
+      "test": "negative_high_reliability_only",
+      "text": "Provide high reliability."
+    },
+    {
+      "actual": null,
+      "evidence": {
+        "canonical_matches": [],
+        "combined_matches": [],
+        "conflict": false,
+        "resolved_service_type": null,
+        "semantic_matches": []
+      },
+      "expected": null,
+      "passed": true,
+      "test": "negative_low_latency_only",
+      "text": "Provide low latency."
+    },
+    {
+      "actual": null,
+      "evidence": {
+        "canonical_matches": [],
+        "combined_matches": [],
+        "conflict": false,
+        "resolved_service_type": null,
+        "semantic_matches": []
+      },
+      "expected": null,
+      "passed": true,
+      "test": "negative_mobile_only",
+      "text": "Provide mobile service."
+    },
+    {
+      "actual": null,
+      "evidence": {
+        "canonical_matches": [],
+        "combined_matches": [],
+        "conflict": false,
+        "resolved_service_type": null,
+        "semantic_matches": []
+      },
+      "expected": null,
+      "passed": true,
+      "test": "negative_sensor_only",
+      "text": "Provide sensor service."
+    },
+    {
+      "actual": null,
+      "evidence": {
+        "canonical_matches": [],
+        "combined_matches": [
+          "URLLC",
+          "eMBB"
+        ],
+        "conflict": true,
+        "resolved_service_type": null,
+        "semantic_matches": [
+          "URLLC",
+          "eMBB"
+        ]
+      },
+      "expected": null,
+      "passed": true,
+      "test": "conflict_embb_urllc",
+      "text": "Provide high-capacity mobile broadband with extremely low delay and strong reliability."
+    },
+    {
+      "actual": null,
+      "evidence": {
+        "canonical_matches": [],
+        "combined_matches": [
+          "URLLC",
+          "mMTC"
+        ],
+        "conflict": true,
+        "resolved_service_type": null,
+        "semantic_matches": [
+          "URLLC",
+          "mMTC"
+        ]
+      },
+      "expected": null,
+      "passed": true,
+      "test": "conflict_urllc_mmtc",
+      "text": "Support time-critical dependable control traffic for massive numbers of sensors."
+    },
+    {
+      "actual": "eMBB",
+      "evidence": {
+        "canonical_matches": [
+          "eMBB"
+        ],
+        "combined_matches": [
+          "eMBB"
+        ],
+        "conflict": false,
+        "resolved_service_type": "eMBB",
+        "semantic_matches": []
+      },
+      "expected": "eMBB",
+      "passed": true,
+      "test": "canonical_embb",
+      "text": "Create an eMBB slice."
+    },
+    {
+      "actual": "URLLC",
+      "evidence": {
+        "canonical_matches": [
+          "URLLC"
+        ],
+        "combined_matches": [
+          "URLLC"
+        ],
+        "conflict": false,
+        "resolved_service_type": "URLLC",
+        "semantic_matches": []
+      },
+      "expected": "URLLC",
+      "passed": true,
+      "test": "canonical_urllc",
+      "text": "Create a URLLC slice."
+    },
+    {
+      "actual": "mMTC",
+      "evidence": {
+        "canonical_matches": [
+          "mMTC"
+        ],
+        "combined_matches": [
+          "mMTC"
+        ],
+        "conflict": false,
+        "resolved_service_type": "mMTC",
+        "semantic_matches": []
+      },
+      "expected": "mMTC",
+      "passed": true,
+      "test": "canonical_mmtc",
+      "text": "Create an mMTC slice."
+    },
+    {
+      "actual": "eMBB",
+      "evidence": {
+        "canonical_matches": [
+          "eMBB"
+        ],
+        "combined_matches": [
+          "eMBB"
+        ],
+        "conflict": false,
+        "resolved_service_type": "eMBB",
+        "semantic_matches": []
+      },
+      "expected": "eMBB",
+      "passed": true,
+      "test": "canonical_enhanced_mobile_broadband",
+      "text": "Create enhanced mobile broadband service."
+    },
+    {
+      "actual": "URLLC",
+      "evidence": {
+        "canonical_matches": [
+          "URLLC"
+        ],
+        "combined_matches": [
+          "URLLC"
+        ],
+        "conflict": false,
+        "resolved_service_type": "URLLC",
+        "semantic_matches": []
+      },
+      "expected": "URLLC",
+      "passed": true,
+      "test": "canonical_ultra_reliable_low_latency",
+      "text": "Create ultra-reliable low-latency service."
+    },
+    {
+      "actual": "mMTC",
+      "evidence": {
+        "canonical_matches": [
+          "mMTC"
+        ],
+        "combined_matches": [
+          "mMTC"
+        ],
+        "conflict": false,
+        "resolved_service_type": "mMTC",
+        "semantic_matches": []
+      },
+      "expected": "mMTC",
+      "passed": true,
+      "test": "canonical_massive_machine_type",
+      "text": "Create massive machine-type service."
+    }
+  ],
+  "total": 22
+}

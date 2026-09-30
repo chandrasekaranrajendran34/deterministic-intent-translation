@@ -1,0 +1,71 @@
+{
+  "step": "26J-C",
+  "development_only": true,
+  "not_held_out": true,
+  "tests_total": 4,
+  "tests_passed": 4,
+  "tests": [
+    {
+      "name": "dev138_repaired_preservation_pass",
+      "passed": true,
+      "deterministic": true,
+      "accepted": true,
+      "expected_accepted": true,
+      "rejection_stage": null,
+      "expected_stage": null,
+      "repair_applied": true,
+      "expected_repair": true,
+      "error_codes": [],
+      "special_ok": true
+    },
+    {
+      "name": "service_type_preservation_conflict",
+      "passed": true,
+      "deterministic": true,
+      "accepted": false,
+      "expected_accepted": false,
+      "rejection_stage": "preservation",
+      "expected_stage": "preservation",
+      "repair_applied": true,
+      "expected_repair": true,
+      "error_codes": [
+        "SOURCE_SERVICE_CONFLICTS_WITH_CIR"
+      ],
+      "special_ok": true
+    },
+    {
+      "name": "existing_supported_eMBB",
+      "passed": true,
+      "deterministic": true,
+      "accepted": true,
+      "expected_accepted": true,
+      "rejection_stage": null,
+      "expected_stage": null,
+      "repair_applied": false,
+      "expected_repair": false,
+      "error_codes": [],
+      "special_ok": true
+    },
+    {
+      "name": "unsupported_still_fail_closed",
+      "passed": true,
+      "deterministic": true,
+      "accepted": false,
+      "expected_accepted": false,
+      "rejection_stage": "r7_qualitative_source_gate",
+      "expected_stage": "r7_qualitative_source_gate",
+      "repair_applied": false,
+      "expected_repair": false,
+      "error_codes": [
+        "UNSUPPORTED_QUALITATIVE_REQUIREMENT"
+      ],
+      "special_ok": true
+    }
+  ],
+  "llm_calls": 0,
+  "api_calls": 0,
+  "r6_runner_modified": false,
+  "r7_semantics_modified": false,
+  "validated_pre_adapter_modified": false,
+  "preservation_checker_modified": false
+}

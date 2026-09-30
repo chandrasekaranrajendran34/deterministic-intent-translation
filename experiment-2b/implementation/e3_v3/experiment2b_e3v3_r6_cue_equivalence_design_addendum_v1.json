@@ -1,0 +1,158 @@
+{
+  "additional_equivalence_tests": [
+    {
+      "left": "mission-critical",
+      "right": "mission critical",
+      "same_identity": true
+    },
+    {
+      "left": "real-time",
+      "right": "real time",
+      "same_identity": true
+    },
+    {
+      "left": "real-time",
+      "right": "mission-critical",
+      "same_identity": false
+    }
+  ],
+  "created_utc": "2026-09-29T16:23:46.824413+00:00",
+  "design_id": "e3v3-r6-orthographic-cue-equivalence-v1.0",
+  "diagnosis": {
+    "classification": "cue-identity normalization defect",
+    "delay_cues": [
+      "mission-critical",
+      "mission critical"
+    ],
+    "false_independent_pairs": [
+      [
+        "mission-critical",
+        "mission critical"
+      ],
+      [
+        "mission critical",
+        "mission-critical"
+      ]
+    ],
+    "reliability_control_cues": [
+      "mission-critical",
+      "mission critical"
+    ],
+    "root_cause": "Orthographic aliases of the same semantic cue were compared as distinct literal strings."
+  },
+  "evaluation_policy": {
+    "after_unit_validation": "Run frozen 20-case R6 deterministic evaluation.",
+    "api_calls": 0,
+    "llm_calls": 0,
+    "next_step": "Implement in a new versioned resolver.",
+    "runner_integration": "Only after frozen 20-case evaluation.",
+    "then": "Run required and safety/regression tests."
+  },
+  "implementation_scope": {
+    "allowed": [
+      "Add a deterministic cue-identity helper.",
+      "Normalize hyphen/space variants for evidence identity.",
+      "Use cue identity rather than raw cue string when testing URLLC evidence independence."
+    ],
+    "not_allowed": [
+      "Do not add service vocabulary.",
+      "Do not remove mission-critical from either group.",
+      "Do not make mission-critical alone sufficient.",
+      "Do not make real-time alone sufficient.",
+      "Do not modify eMBB matching.",
+      "Do not modify mMTC matching.",
+      "Do not modify canonical matching.",
+      "Do not modify conflict policy.",
+      "Do not modify frozen dataset.",
+      "Do not modify CIR schema.",
+      "Do not modify LLM prompt.",
+      "Do not modify R1-R5."
+    ]
+  },
+  "provenance": {
+    "addendum_v1": {
+      "path": "/content/experiment-1-v2-together/experiment-2b/implementation/e3_v3/experiment2b_e3v3_r6_independent_cue_design_addendum_v1.json",
+      "sha256": "618b67f36c77444685e2e921bcfce1e33e74ae13ff21c983657ca7701037bbe8"
+    },
+    "dataset": {
+      "path": "/content/experiment-1-v2-together/experiment-2b/data/frozen/experiment2b_e3v3_development_160_v1.csv",
+      "sha256": "133c68842716f84a703478f7904c8cdd4f10cfdba683957ce23e473e81e7196f"
+    },
+    "independent_module": {
+      "path": "/content/experiment-1-v2-together/experiment-2b/implementation/e3_v3/src/service_type_resolver_r6_independent.py",
+      "sha256": "24f5619f17290a811b14b33a695f1f3804cf8aff5a7057adced9126b244f2492"
+    },
+    "source_module": {
+      "path": "/content/experiment-1-v2-together/experiment-2b/implementation/e3_v3/src/service_type_resolver_r6_final.py",
+      "sha256": "289bdb0e884b4741268a71053a742d6b3fed75b81011420ed46acfdfdf27ed84"
+    }
+  },
+  "refinement": {
+    "cue_identity_normalization": [
+      "lowercase using existing normalization",
+      "treat hyphen as whitespace",
+      "collapse repeated whitespace"
+    ],
+    "dev126": {
+      "criticality_identity": "mission critical",
+      "expected": "URLLC",
+      "independent": true,
+      "timing_identity": "real time"
+    },
+    "examples": {
+      "mission critical": "mission critical",
+      "mission-critical": "mission critical",
+      "real time": "real time",
+      "real-time": "real time"
+    },
+    "independence_rule": "A cross-group cue pair is independent only when their normalized cue identities differ.",
+    "mission_critical_plain": {
+      "distinct_cue_identities": [
+        "mission critical"
+      ],
+      "expected": null,
+      "independent": false
+    },
+    "principle": "Independent semantic evidence must be based on distinct cue identities, not merely distinct surface strings."
+  },
+  "required_validation": [
+    {
+      "expected": "URLLC",
+      "intent": "Create connectivity suitable for mission-critical real-time exchanges."
+    },
+    {
+      "expected": null,
+      "intent": "Provide mission-critical connectivity."
+    },
+    {
+      "expected": null,
+      "intent": "Mission critical service."
+    },
+    {
+      "expected": null,
+      "intent": "Provide real-time connectivity."
+    },
+    {
+      "expected": "eMBB",
+      "intent": "Provide high-capacity mobile broadband."
+    },
+    {
+      "expected": "mMTC",
+      "intent": "Connect massive numbers of sensors."
+    },
+    {
+      "expected": null,
+      "intent": "Provide high-capacity mobile broadband for mission-critical real-time exchanges."
+    }
+  ],
+  "status": "DESIGN_FROZEN_BEFORE_IMPLEMENTATION",
+  "trigger": {
+    "expected": null,
+    "intent": "Mission critical service.",
+    "observed": "URLLC",
+    "required_tests": "6/6 PASS",
+    "safety_regression_tests": "9/10 PASS",
+    "single_failure": "mission_critical_plain",
+    "step": "25M-6H"
+  }
+}

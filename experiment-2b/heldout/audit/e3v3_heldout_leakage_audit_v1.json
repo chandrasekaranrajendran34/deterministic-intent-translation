@@ -1,0 +1,29 @@
+{
+  "audit_id": "e3v3-heldout-leakage-audit-v1.0",
+  "created_at_utc": "2026-09-30T00:34:31.658720+00:00",
+  "candidate_sha256": "136d05eec3d52c1ab3022f8d06eba65508f883ffcbeecdbcfebe69897b86c44c",
+  "prior_exposure_sha256": "d07859dea1d22e7d4eda4c10c9b75ec19329e4ee38df5491b394560cfae1a056",
+  "benchmark_specification_sha256": "74ff0d81190d343ba3cf34d8e0184e3b97a8feb19525ebb6df267a7db14c1234",
+  "implementation_freeze_sha256": "ff0d39051b4027ab8441e56dd518a6200b99f06cf2eb5faec2ce535b14ad5579",
+  "thresholds": {
+    "automatic_fail_jaccard_gte": 0.8,
+    "manual_review_jaccard_gte": 0.7,
+    "manual_review_jaccard_lt": 0.8
+  },
+  "exact_prior_duplicates": 0,
+  "normalized_prior_duplicates": 0,
+  "candidate_to_prior": {
+    "pass_lt_0_70": 116,
+    "review_0_70_to_lt_0_80": 2,
+    "fail_gte_0_80": 2,
+    "maximum_jaccard": 0.8571428571428571
+  },
+  "within_candidate": {
+    "review_pairs_0_70_to_lt_0_80": 1,
+    "fail_pairs_gte_0_80": 1
+  },
+  "structural_pass": true,
+  "automatic_leakage_pass": false,
+  "final_freeze_allowed": false,
+  "reason": "Manual inspection is required for all REVIEW cases and any high-similarity or within-held-out pairs before final dataset freeze."
+}

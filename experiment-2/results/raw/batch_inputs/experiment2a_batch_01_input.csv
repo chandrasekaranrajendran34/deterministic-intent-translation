@@ -1,0 +1,11 @@
+id,intent,category,subcategory,expected_valid,expected_service,difficulty,linguistic_form,constraint_type,notes
+EXP2-001,Create an eMBB slice for high-definition mobile video streaming.,valid_eMBB,valid,True,eMBB,easy,explicit_service,valid_requirement,
+EXP2-002,Provision enhanced mobile broadband connectivity for a 4K video service.,valid_eMBB,valid,True,eMBB,easy,semantic_paraphrase,valid_requirement,
+EXP2-003,Provide a high-throughput slice for an augmented-reality application.,valid_eMBB,valid,True,eMBB,easy,semantic_paraphrase,valid_requirement,
+EXP2-004,Set up broadband connectivity for users streaming ultra-high-definition video.,valid_eMBB,valid,True,eMBB,easy,semantic_paraphrase,valid_requirement,
+EXP2-005,Create an eMBB service with 500 Mbps bandwidth.,valid_eMBB,valid,True,eMBB,easy,explicit_service,valid_requirement,
+EXP2-006,Provision a mobile broadband slice requiring 300 Mbps throughput.,valid_eMBB,valid,True,eMBB,easy,semantic_paraphrase,valid_requirement,
+EXP2-007,Provide high-capacity connectivity for a virtual-reality entertainment service.,valid_eMBB,valid,True,eMBB,easy,semantic_paraphrase,valid_requirement,
+EXP2-008,Create a slice for bandwidth-intensive cloud gaming.,valid_eMBB,valid,True,eMBB,easy,semantic_paraphrase,valid_requirement,
+EXP2-009,Set up enhanced mobile broadband for a crowded sports venue.,valid_eMBB,valid,True,eMBB,easy,semantic_paraphrase,valid_requirement,
+EXP2-010,Provide an eMBB slice for high-speed internet access at a convention center.,valid_eMBB,valid,True,eMBB,easy,explicit_service,valid_requirement,

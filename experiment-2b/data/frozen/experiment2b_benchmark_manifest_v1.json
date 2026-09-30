@@ -1,0 +1,34 @@
+{
+  "benchmark_id": "experiment2b-unseen-v1.0",
+  "freeze_status": "FROZEN_BEFORE_PRIMARY_EXECUTION",
+  "created_utc": "2026-09-29T07:48:10.854602+00:00",
+  "dataset": {
+    "file": "experiment2b_intents_120_v1.csv",
+    "sha256": "63661df64f3e13cb323bc7089b3a14c9f5c85e4df4237643065e3f4896910409",
+    "rows": 120,
+    "unique_intents": 120,
+    "expected_valid": 45,
+    "expected_invalid": 75
+  },
+  "benchmark_specification": {
+    "file": "configs/experiment2b_benchmark_spec_v1.json",
+    "sha256": "4a6910ea9737c724fcdf88a38ba4919434524e41fa8d0a0a670312be23643fc3"
+  },
+  "prior_benchmarks_used_for_overlap_audit": [
+    "data/raw/intents_50.csv",
+    "experiment-2/data/frozen/experiment2_intents_200_v1.csv"
+  ],
+  "overlap_audit": {
+    "file": "data/draft/experiment2b_overlap_audit.csv",
+    "sha256": "78c314a3f3947d662d595a72a5b5d6229b497821b0d1f19c203df16f8350413d",
+    "exact_matches": 0,
+    "normalized_exact_matches": 0,
+    "max_token_jaccard": 0.6667
+  },
+  "frozen_system": {
+    "freeze_id": "e3v2-implementation-v1.0",
+    "implementation_manifest": "reproducibility/e3v2_implementation_v1.0/e3v2_implementation_manifest_v1.json"
+  },
+  "methodological_note": "The benchmark was constructed after Experiment 2A failure analysis but before execution of the frozen E3-v2 implementation against these 120 intents. It targets predefined failure classes using newly constructed intent sentences. It should therefore be described as an unseen controlled benchmark relative to prior benchmark instances, not as an independently sourced external benchmark.",
+  "claim_boundary": "Results characterize performance on this controlled benchmark under the frozen experimental capability profile and implementation. They do not establish universal natural-language understanding, universal hallucination prevention, or formal standards certification."
+}

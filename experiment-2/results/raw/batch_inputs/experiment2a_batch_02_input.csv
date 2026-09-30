@@ -1,0 +1,11 @@
+id,intent,category,subcategory,expected_valid,expected_service,difficulty,linguistic_form,constraint_type,notes
+EXP2-011,Create high-throughput mobile connectivity for live video broadcasting.,valid_eMBB,valid,True,eMBB,medium,semantic_paraphrase,valid_requirement,
+EXP2-012,Provision a broadband slice for immersive media delivery.,valid_eMBB,valid,True,eMBB,medium,semantic_paraphrase,valid_requirement,
+EXP2-013,Provide 400 Mbps mobile broadband connectivity for a media production team.,valid_eMBB,valid,True,eMBB,medium,semantic_paraphrase,valid_requirement,
+EXP2-014,Create an eMBB slice optimized for high-volume video traffic.,valid_eMBB,valid,True,eMBB,medium,explicit_service,valid_requirement,
+EXP2-015,Set up a high-capacity slice for simultaneous HD video sessions.,valid_eMBB,valid,True,eMBB,medium,semantic_paraphrase,valid_requirement,
+EXP2-016,Provide enhanced broadband service for passengers on a high-speed train.,valid_eMBB,valid,True,eMBB,medium,semantic_paraphrase,valid_requirement,
+EXP2-017,Create a mobile broadband slice for large-file cloud synchronization.,valid_eMBB,valid,True,eMBB,medium,semantic_paraphrase,valid_requirement,
+EXP2-018,Provision high-throughput connectivity for an interactive digital classroom.,valid_eMBB,valid,True,eMBB,medium,semantic_paraphrase,valid_requirement,
+EXP2-019,Provide an eMBB slice for real-time high-resolution video upload.,valid_eMBB,valid,True,eMBB,medium,explicit_service,valid_requirement,
+EXP2-020,Create broadband connectivity for an immersive mixed-reality application.,valid_eMBB,valid,True,eMBB,medium,semantic_paraphrase,valid_requirement,

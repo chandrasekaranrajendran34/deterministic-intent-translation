@@ -1,0 +1,109 @@
+{
+  "freeze_id": "e3v3-complete-implementation-v1.0",
+  "status": "E3_V3_IMPLEMENTATION_FROZEN",
+  "freeze_timestamp_utc": "2026-09-30T00:25:24.186163+00:00",
+  "purpose": "Authoritative E3-v3 implementation freeze before held-out evaluation.",
+  "development_status": {
+    "r7_development_closed": true,
+    "implementation_tuning_closed": true,
+    "held_out_results_seen": false
+  },
+  "executable_dependency_inventory": {
+    "python_artifact_count": 16,
+    "runtime_configuration_count": 1
+  },
+  "artifacts": [
+    {
+      "role": "runner",
+      "relative_path": "run_experiment2b_e3v3_r7_dev_v1.py",
+      "sha256": "40c035cb864978c718a72fcfdfbb164d262529960b0ae78242d5194147cd8257"
+    },
+    {
+      "role": "source_module",
+      "relative_path": "src/capability_resolver.py",
+      "sha256": "e84dcb1b4e0f2a495c48c72aac3d3963eac51ed7529829378a5b84da3df58d3a"
+    },
+    {
+      "role": "source_module",
+      "relative_path": "src/cir_reconciliation.py",
+      "sha256": "405f51e305957fb4d2364024e635b25598aab1dfff4167664ca187981d8bf99a"
+    },
+    {
+      "role": "source_module",
+      "relative_path": "src/constraint_consistency.py",
+      "sha256": "a62a5cdaf917d3d31b28415246014e1728442c0178b96ec5bcec623dd16dfcef"
+    },
+    {
+      "role": "source_module",
+      "relative_path": "src/constraint_semantics.py",
+      "sha256": "91742e13fce9683bd7ae36d771ef178ea5f40fc417ff0bab751c1c35d53185bd"
+    },
+    {
+      "role": "source_module",
+      "relative_path": "src/e3v2_guard.py",
+      "sha256": "b01a665e8d295d4d36218668a1f84f64cf29226b76edb84789e2249d1ed5dd55"
+    },
+    {
+      "role": "source_module",
+      "relative_path": "src/preservation_check.py",
+      "sha256": "7fdc76ee4e24572c0dbef13b66290b0eb28ba0036a130f102dbd41b77834fe52"
+    },
+    {
+      "role": "source_module",
+      "relative_path": "src/qualitative_post_preservation_r7.py",
+      "sha256": "1bcb136a7c0345439d47bbdcbe4d7d574e735796570f7fdf0d568838b7670545"
+    },
+    {
+      "role": "source_module",
+      "relative_path": "src/qualitative_requirement_resolver_r7.py",
+      "sha256": "7a2060cfa8a747a7cf1bbc5840854ff499e1b2c02e818483510e1a0168cf8579"
+    },
+    {
+      "role": "source_module",
+      "relative_path": "src/qualitative_source_integration_r7.py",
+      "sha256": "bba296ebe75f78e836c5f6b5c02483ebdc1dd72a9a51d3bf6bef1f93a381c79b"
+    },
+    {
+      "role": "source_module",
+      "relative_path": "src/reliability_normalization_r5_final.py",
+      "sha256": "4e0437b732209e83b43929229f6aa012723957b1109c84e014979556c75e123d"
+    },
+    {
+      "role": "source_module",
+      "relative_path": "src/service_type_integration_r6.py",
+      "sha256": "60b3f556b7d9d6765c38d6e31924c987d748b25a668f1837e3397896f964e741"
+    },
+    {
+      "role": "source_module",
+      "relative_path": "src/service_type_resolver_r6_cue_equivalent.py",
+      "sha256": "34d5b5fd02ade1bd44ea13b595e4aecfd7f8746dbd5a62dff17b223c405cb72d"
+    },
+    {
+      "role": "source_module",
+      "relative_path": "src/source_analyzer.py",
+      "sha256": "71a6f00172149f66250b3c17386eea98b18008eb65b097c327db705e94068dc8"
+    },
+    {
+      "role": "source_module",
+      "relative_path": "src/source_gate.py",
+      "sha256": "764f9fd188a4b05a78afd4db6c23f92666688bffbccad811973d2c21b2feb1af"
+    },
+    {
+      "role": "source_module",
+      "relative_path": "src/source_intent.py",
+      "sha256": "de745a90d6fb675bfbf485446ce97dbd9bb8f46f1ea1893a3252c1ed73e3e9d6"
+    },
+    {
+      "role": "runtime_configuration",
+      "relative_path": "configs/e3v2_capability_profile_v1.json",
+      "sha256": "ca7ff5c8f4292867a7a00e65bda7a083c69adb732e33ce9a56747f405065c0ba"
+    },
+    {
+      "role": "development_closure_provenance",
+      "relative_path": "provenance/e3v3_r7_development_closure_v1.0_manifest.json",
+      "sha256": "5ed112d0b9af0d13ba0b673d3aeca48423f588a83afcab6f362ce53cb3d5150b"
+    }
+  ],
+  "runtime_claim_boundary": "Frozen deterministic E3-v3 pipeline implementing the developed R1-R7 safeguards under the defined closed-world capability profile. The freeze does not constitute universal semantic correctness or formal 3GPP/O-RAN conformance certification.",
+  "evaluation_rule": "No implementation changes are permitted after this freeze based on held-out evaluation outcomes. Observed failures must be retained for analysis."
+}

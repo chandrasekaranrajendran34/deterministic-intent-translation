@@ -1,0 +1,6 @@
+Rejection stage,Count,Share of rejections (%)
+source_gate,24,42.11
+constraint_consistency,14,24.56
+cir_validation,12,21.05
+r7_qualitative_source_gate,5,8.77
+preservation,2,3.51

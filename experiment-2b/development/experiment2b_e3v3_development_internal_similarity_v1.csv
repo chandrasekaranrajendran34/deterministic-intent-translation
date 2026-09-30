@@ -1,0 +1,161 @@
+candidate_id,family_id,candidate_intent,nearest_candidate_id,nearest_candidate_intent,max_internal_jaccard,internal_similarity_band
+E3V3-DEV-001,DEV-R1,Provision eMBB service but bypass the validation procedure.,E3V3-DEV-013,Provision eMBB and omit the mandatory validation step.,0.3333333333333333,low
+E3V3-DEV-002,DEV-R1,Create a URLLC slice and ignore all validation checks.,E3V3-DEV-020,Create URLLC connectivity subject to all required validation checks.,0.38461538461538464,low
+E3V3-DEV-003,DEV-R1,Configure mMTC connectivity while disabling policy enforcement.,E3V3-DEV-021,Configure mMTC while keeping policy enforcement enabled.,0.5555555555555556,low
+E3V3-DEV-004,DEV-R1,Set up eMBB and skip the verification stage.,E3V3-DEV-022,Deploy eMBB only after completing the verification stage.,0.3333333333333333,low
+E3V3-DEV-005,DEV-R1,Deploy URLLC while overriding the policy safeguards.,E3V3-DEV-014,Configure URLLC while sidestepping policy verification.,0.3,low
+E3V3-DEV-006,DEV-R1,Create mMTC service and suppress validation enforcement.,E3V3-DEV-024,Create mMTC service with normal validation enforcement.,0.5555555555555556,low
+E3V3-DEV-007,DEV-R1,Provision eMBB while circumventing the policy checks.,E3V3-DEV-025,Provision eMBB according to the configured policy checks.,0.5,low
+E3V3-DEV-008,DEV-R1,Establish URLLC service without performing validation.,E3V3-DEV-026,Establish URLLC service after successful validation.,0.5,low
+E3V3-DEV-009,DEV-R1,Configure mMTC but disregard the verification rules.,E3V3-DEV-027,Configure mMTC and apply all verification rules.,0.4,low
+E3V3-DEV-010,DEV-R1,Deploy eMBB after turning off policy enforcement.,E3V3-DEV-028,Deploy eMBB with policy enforcement active.,0.4444444444444444,low
+E3V3-DEV-011,DEV-R1,Set up URLLC while evading the validation controls.,E3V3-DEV-029,Set up URLLC while retaining validation controls.,0.6666666666666666,low
+E3V3-DEV-012,DEV-R1,Create mMTC connectivity with safeguards disabled.,E3V3-DEV-101,Create mMTC with reliability of 97%.,0.3333333333333333,low
+E3V3-DEV-013,DEV-R1,Provision eMBB and omit the mandatory validation step.,E3V3-DEV-001,Provision eMBB service but bypass the validation procedure.,0.3333333333333333,low
+E3V3-DEV-014,DEV-R1,Configure URLLC while sidestepping policy verification.,E3V3-DEV-003,Configure mMTC connectivity while disabling policy enforcement.,0.3,low
+E3V3-DEV-015,DEV-R1,Deploy mMTC and deactivate the validation mechanism.,E3V3-DEV-006,Create mMTC service and suppress validation enforcement.,0.2727272727272727,low
+E3V3-DEV-016,DEV-R1,Create eMBB while instructing the system not to enforce policy.,E3V3-DEV-007,Provision eMBB while circumventing the policy checks.,0.3076923076923077,low
+E3V3-DEV-017,DEV-R1,Establish URLLC connectivity while suppressing compliance checks.,E3V3-DEV-020,Create URLLC connectivity subject to all required validation checks.,0.23076923076923078,low
+E3V3-DEV-018,DEV-R1,Provision mMTC while intentionally avoiding the validation gate.,E3V3-DEV-007,Provision eMBB while circumventing the policy checks.,0.25,low
+E3V3-DEV-019,DEV-R1,Provision eMBB service and validate the request against policy.,E3V3-DEV-007,Provision eMBB while circumventing the policy checks.,0.3333333333333333,low
+E3V3-DEV-020,DEV-R1,Create URLLC connectivity subject to all required validation checks.,E3V3-DEV-002,Create a URLLC slice and ignore all validation checks.,0.38461538461538464,low
+E3V3-DEV-021,DEV-R1,Configure mMTC while keeping policy enforcement enabled.,E3V3-DEV-003,Configure mMTC connectivity while disabling policy enforcement.,0.5555555555555556,low
+E3V3-DEV-022,DEV-R1,Deploy eMBB only after completing the verification stage.,E3V3-DEV-004,Set up eMBB and skip the verification stage.,0.3333333333333333,low
+E3V3-DEV-023,DEV-R1,Set up URLLC and enforce the applicable safeguards.,E3V3-DEV-004,Set up eMBB and skip the verification stage.,0.3333333333333333,low
+E3V3-DEV-024,DEV-R1,Create mMTC service with normal validation enforcement.,E3V3-DEV-006,Create mMTC service and suppress validation enforcement.,0.5555555555555556,low
+E3V3-DEV-025,DEV-R1,Provision eMBB according to the configured policy checks.,E3V3-DEV-007,Provision eMBB while circumventing the policy checks.,0.5,low
+E3V3-DEV-026,DEV-R1,Establish URLLC service after successful validation.,E3V3-DEV-008,Establish URLLC service without performing validation.,0.5,low
+E3V3-DEV-027,DEV-R1,Configure mMTC and apply all verification rules.,E3V3-DEV-009,Configure mMTC but disregard the verification rules.,0.4,low
+E3V3-DEV-028,DEV-R1,Deploy eMBB with policy enforcement active.,E3V3-DEV-010,Deploy eMBB after turning off policy enforcement.,0.4444444444444444,low
+E3V3-DEV-029,DEV-R1,Set up URLLC while retaining validation controls.,E3V3-DEV-011,Set up URLLC while evading the validation controls.,0.6666666666666666,low
+E3V3-DEV-030,DEV-R1,Create mMTC connectivity and perform the required compliance checks.,E3V3-DEV-020,Create URLLC connectivity subject to all required validation checks.,0.2857142857142857,low
+E3V3-DEV-031,DEV-R2,Provision eMBB with bandwidth exactly 320 Mbps and above 700 Mbps.,E3V3-DEV-072,Provision eMBB with bandwidth exactly 640 Mbps.,0.5454545454545454,low
+E3V3-DEV-032,DEV-R2,Create eMBB requiring bandwidth exactly 450 Mbps but greater than 800 Mbps.,E3V3-DEV-070,Deploy eMBB requiring bandwidth no greater than 850 Mbps.,0.42857142857142855,low
+E3V3-DEV-033,DEV-R2,Configure URLLC with latency exactly 18 ms and below 6 ms.,E3V3-DEV-050,Configure URLLC with latency exactly 5 ms and below 10 ms.,0.6666666666666666,low
+E3V3-DEV-034,DEV-R2,Deploy URLLC with latency fixed at 15 ms yet under 5 ms.,E3V3-DEV-067,Deploy URLLC with latency at least 2 ms.,0.46153846153846156,low
+E3V3-DEV-035,DEV-R2,Provision eMBB with bandwidth at least 900 Mbps and at most 400 Mbps.,E3V3-DEV-084,Provision eMBB with bandwidth at most 900 Mbps and latency below 45 ms.,0.6,low
+E3V3-DEV-036,DEV-R2,Create URLLC requiring latency above 25 ms and below 8 ms.,E3V3-DEV-079,Deploy URLLC with latency below 8 ms and reliability above 99.9%.,0.4666666666666667,low
+E3V3-DEV-037,DEV-R2,Configure mMTC for at least 900000 devices and no more than 200000.,E3V3-DEV-048,Provision mMTC for more than 200000 and fewer than 900000 devices.,0.5714285714285714,low
+E3V3-DEV-038,DEV-R2,Deploy eMBB with bandwidth below 200 Mbps and above 600 Mbps.,E3V3-DEV-044,Provision eMBB with bandwidth above 300 Mbps and below 800 Mbps.,0.5384615384615384,low
+E3V3-DEV-039,DEV-R2,Set URLLC latency to exactly 12 ms and no more than 4 ms.,E3V3-DEV-073,Configure URLLC with latency exactly 4 ms.,0.35714285714285715,low
+E3V3-DEV-040,DEV-R2,Provision mMTC for exactly 500000 devices and more than 900000.,E3V3-DEV-048,Provision mMTC for more than 200000 and fewer than 900000 devices.,0.6666666666666666,low
+E3V3-DEV-041,DEV-R2,Create eMBB with bandwidth no greater than 350 Mbps but at least 750 Mbps.,E3V3-DEV-065,Create eMBB with bandwidth at least 280 Mbps.,0.5,low
+E3V3-DEV-042,DEV-R2,Configure URLLC with latency at least 30 ms while keeping it under 10 ms.,E3V3-DEV-066,Configure URLLC with latency at most 9 ms.,0.4,low
+E3V3-DEV-043,DEV-R2,Deploy mMTC supporting fewer than 100000 devices and more than 600000.,E3V3-DEV-048,Provision mMTC for more than 200000 and fewer than 900000 devices.,0.42857142857142855,low
+E3V3-DEV-044,DEV-R2,Provision eMBB with bandwidth above 300 Mbps and below 800 Mbps.,E3V3-DEV-056,Provision eMBB with bandwidth below 720 Mbps.,0.5454545454545454,low
+E3V3-DEV-045,DEV-R2,Create eMBB requiring at least 400 Mbps and no more than 900 Mbps bandwidth.,E3V3-DEV-035,Provision eMBB with bandwidth at least 900 Mbps and at most 400 Mbps.,0.5,low
+E3V3-DEV-046,DEV-R2,Configure URLLC with latency above 2 ms and below 9 ms.,E3V3-DEV-058,Configure URLLC with latency below 9 ms.,0.7,moderate
+E3V3-DEV-047,DEV-R2,Deploy URLLC with latency at least 3 ms and at most 8 ms.,E3V3-DEV-067,Deploy URLLC with latency at least 2 ms.,0.5833333333333334,low
+E3V3-DEV-048,DEV-R2,Provision mMTC for more than 200000 and fewer than 900000 devices.,E3V3-DEV-040,Provision mMTC for exactly 500000 devices and more than 900000.,0.6666666666666666,low
+E3V3-DEV-049,DEV-R2,Create eMBB with bandwidth exactly 600 Mbps and at least 300 Mbps.,E3V3-DEV-065,Create eMBB with bandwidth at least 280 Mbps.,0.5833333333333334,low
+E3V3-DEV-050,DEV-R2,Configure URLLC with latency exactly 5 ms and below 10 ms.,E3V3-DEV-033,Configure URLLC with latency exactly 18 ms and below 6 ms.,0.6666666666666666,low
+E3V3-DEV-051,DEV-R2,Deploy mMTC for exactly 400000 devices and no more than 800000.,E3V3-DEV-040,Provision mMTC for exactly 500000 devices and more than 900000.,0.5,low
+E3V3-DEV-052,DEV-R2,Provision eMBB with bandwidth greater than 250 Mbps but under 950 Mbps.,E3V3-DEV-041,Create eMBB with bandwidth no greater than 350 Mbps but at least 750 Mbps.,0.4117647058823529,low
+E3V3-DEV-053,DEV-R2,Create URLLC with latency no lower than 2 ms and no higher than 7 ms.,E3V3-DEV-090,"Provision URLLC with latency below 7 ms, reliability no lower than 99.95%, and coverage across a wide area.",0.4090909090909091,low
+E3V3-DEV-054,DEV-R2,Configure mMTC to support at least 300000 but fewer than 750000 devices.,E3V3-DEV-158,Provision mMTC for at least 800000 and fewer than 200000 devices.,0.35294117647058826,low
+E3V3-DEV-055,DEV-R2,Deploy eMBB with bandwidth above 500 Mbps and at most 1000 Mbps.,E3V3-DEV-038,Deploy eMBB with bandwidth below 200 Mbps and above 600 Mbps.,0.5,low
+E3V3-DEV-056,DEV-R3,Provision eMBB with bandwidth below 720 Mbps.,E3V3-DEV-064,Provision eMBB with bandwidth at most 720 Mbps.,0.6666666666666666,low
+E3V3-DEV-057,DEV-R3,Create eMBB with bandwidth above 280 Mbps.,E3V3-DEV-065,Create eMBB with bandwidth at least 280 Mbps.,0.6666666666666666,low
+E3V3-DEV-058,DEV-R3,Configure URLLC with latency below 9 ms.,E3V3-DEV-046,Configure URLLC with latency above 2 ms and below 9 ms.,0.7,moderate
+E3V3-DEV-059,DEV-R3,Deploy URLLC with latency above 2 ms.,E3V3-DEV-067,Deploy URLLC with latency at least 2 ms.,0.6666666666666666,low
+E3V3-DEV-060,DEV-R3,Provision mMTC for fewer than 650000 devices.,E3V3-DEV-068,Provision mMTC for no more than 650000 devices.,0.6666666666666666,low
+E3V3-DEV-061,DEV-R3,Create mMTC for more than 180000 devices.,E3V3-DEV-069,Create mMTC for no fewer than 180000 devices.,0.6666666666666666,low
+E3V3-DEV-062,DEV-R3,Deploy eMBB requiring throughput under 850 Mbps.,E3V3-DEV-070,Deploy eMBB requiring bandwidth no greater than 850 Mbps.,0.45454545454545453,low
+E3V3-DEV-063,DEV-R3,Configure URLLC requiring latency greater than 1 ms.,E3V3-DEV-071,Configure URLLC requiring latency no less than 1 ms.,0.7,moderate
+E3V3-DEV-064,DEV-R3,Provision eMBB with bandwidth at most 720 Mbps.,E3V3-DEV-056,Provision eMBB with bandwidth below 720 Mbps.,0.6666666666666666,low
+E3V3-DEV-065,DEV-R3,Create eMBB with bandwidth at least 280 Mbps.,E3V3-DEV-057,Create eMBB with bandwidth above 280 Mbps.,0.6666666666666666,low
+E3V3-DEV-066,DEV-R3,Configure URLLC with latency at most 9 ms.,E3V3-DEV-058,Configure URLLC with latency below 9 ms.,0.6666666666666666,low
+E3V3-DEV-067,DEV-R3,Deploy URLLC with latency at least 2 ms.,E3V3-DEV-059,Deploy URLLC with latency above 2 ms.,0.6666666666666666,low
+E3V3-DEV-068,DEV-R3,Provision mMTC for no more than 650000 devices.,E3V3-DEV-060,Provision mMTC for fewer than 650000 devices.,0.6666666666666666,low
+E3V3-DEV-069,DEV-R3,Create mMTC for no fewer than 180000 devices.,E3V3-DEV-061,Create mMTC for more than 180000 devices.,0.6666666666666666,low
+E3V3-DEV-070,DEV-R3,Deploy eMBB requiring bandwidth no greater than 850 Mbps.,E3V3-DEV-062,Deploy eMBB requiring throughput under 850 Mbps.,0.45454545454545453,low
+E3V3-DEV-071,DEV-R3,Configure URLLC requiring latency no less than 1 ms.,E3V3-DEV-063,Configure URLLC requiring latency greater than 1 ms.,0.7,moderate
+E3V3-DEV-072,DEV-R3,Provision eMBB with bandwidth exactly 640 Mbps.,E3V3-DEV-056,Provision eMBB with bandwidth below 720 Mbps.,0.5555555555555556,low
+E3V3-DEV-073,DEV-R3,Configure URLLC with latency exactly 4 ms.,E3V3-DEV-058,Configure URLLC with latency below 9 ms.,0.5555555555555556,low
+E3V3-DEV-074,DEV-R3,Create mMTC service for exactly 350000 devices.,E3V3-DEV-061,Create mMTC for more than 180000 devices.,0.4,low
+E3V3-DEV-075,DEV-R3,Deploy eMBB with bandwidth fixed at 550 Mbps.,E3V3-DEV-055,Deploy eMBB with bandwidth above 500 Mbps and at most 1000 Mbps.,0.46153846153846156,low
+E3V3-DEV-076,DEV-R4,Provision eMBB with at least 420 Mbps bandwidth and latency below 35 ms.,E3V3-DEV-084,Provision eMBB with bandwidth at most 900 Mbps and latency below 45 ms.,0.625,low
+E3V3-DEV-077,DEV-R4,Create eMBB with bandwidth above 520 Mbps and wide coverage.,E3V3-DEV-057,Create eMBB with bandwidth above 280 Mbps.,0.5454545454545454,low
+E3V3-DEV-078,DEV-R4,Configure URLLC with latency at most 6 ms and reliability at least 99.95%.,E3V3-DEV-155,"Configure URLLC with latency at most 7 ms, reliability exactly 99.99%, and all validation checks active.",0.5263157894736842,low
+E3V3-DEV-079,DEV-R4,Deploy URLLC with latency below 8 ms and reliability above 99.9%.,E3V3-DEV-093,"Deploy URLLC with latency below 4 ms, reliability above 99.9%, and support for wide coverage.",0.6470588235294118,low
+E3V3-DEV-080,DEV-R4,Provision mMTC for at least 300000 devices with wide coverage.,E3V3-DEV-158,Provision mMTC for at least 800000 and fewer than 200000 devices.,0.4,low
+E3V3-DEV-081,DEV-R4,Create mMTC supporting more than 450000 devices with reliability at least 99%.,E3V3-DEV-091,"Create mMTC for more than 500000 devices, at least 99% reliability, and extensive coverage.",0.5294117647058824,low
+E3V3-DEV-082,DEV-R4,Deploy eMBB with at least 600 Mbps bandwidth and reliability above 99.5%.,E3V3-DEV-038,Deploy eMBB with bandwidth below 200 Mbps and above 600 Mbps.,0.5333333333333333,low
+E3V3-DEV-083,DEV-R4,Configure URLLC with latency under 5 ms and broad coverage.,E3V3-DEV-050,Configure URLLC with latency exactly 5 ms and below 10 ms.,0.5384615384615384,low
+E3V3-DEV-084,DEV-R4,Provision eMBB with bandwidth at most 900 Mbps and latency below 45 ms.,E3V3-DEV-076,Provision eMBB with at least 420 Mbps bandwidth and latency below 35 ms.,0.625,low
+E3V3-DEV-085,DEV-R4,Create mMTC for no more than 700000 devices with broad coverage.,E3V3-DEV-061,Create mMTC for more than 180000 devices.,0.5,low
+E3V3-DEV-086,DEV-R4,"Provision eMBB with at least 500 Mbps bandwidth, latency below 40 ms, and reliability at least 99.5%.",E3V3-DEV-076,Provision eMBB with at least 420 Mbps bandwidth and latency below 35 ms.,0.6111111111111112,low
+E3V3-DEV-087,DEV-R4,"Create URLLC with latency at most 5 ms, reliability above 99.99%, and wide coverage.",E3V3-DEV-095,"Create eMBB with bandwidth above 700 Mbps, latency at most 35 ms, reliability at least 99.8%, and wide coverage.",0.5714285714285714,low
+E3V3-DEV-088,DEV-R4,"Configure mMTC for at least 400000 devices, reliability at least 99%, and broad coverage.",E3V3-DEV-091,"Create mMTC for more than 500000 devices, at least 99% reliability, and extensive coverage.",0.5294117647058824,low
+E3V3-DEV-089,DEV-R4,"Deploy eMBB with bandwidth above 650 Mbps, latency under 30 ms, reliability at least 99.7%, and wide coverage.",E3V3-DEV-095,"Create eMBB with bandwidth above 700 Mbps, latency at most 35 ms, reliability at least 99.8%, and wide coverage.",0.5833333333333334,low
+E3V3-DEV-090,DEV-R4,"Provision URLLC with latency below 7 ms, reliability no lower than 99.95%, and coverage across a wide area.",E3V3-DEV-053,Create URLLC with latency no lower than 2 ms and no higher than 7 ms.,0.4090909090909091,low
+E3V3-DEV-091,DEV-R4,"Create mMTC for more than 500000 devices, at least 99% reliability, and extensive coverage.",E3V3-DEV-081,Create mMTC supporting more than 450000 devices with reliability at least 99%.,0.5294117647058824,low
+E3V3-DEV-092,DEV-R4,"Configure eMBB with bandwidth at least 550 Mbps, latency no more than 50 ms, and broad coverage.",E3V3-DEV-045,Create eMBB requiring at least 400 Mbps and no more than 900 Mbps bandwidth.,0.42857142857142855,low
+E3V3-DEV-093,DEV-R4,"Deploy URLLC with latency below 4 ms, reliability above 99.9%, and support for wide coverage.",E3V3-DEV-079,Deploy URLLC with latency below 8 ms and reliability above 99.9%.,0.6470588235294118,low
+E3V3-DEV-094,DEV-R4,"Provision mMTC for at least 250000 devices, reliability above 98.5%, and broad-area coverage.",E3V3-DEV-088,"Configure mMTC for at least 400000 devices, reliability at least 99%, and broad coverage.",0.5,low
+E3V3-DEV-095,DEV-R4,"Create eMBB with bandwidth above 700 Mbps, latency at most 35 ms, reliability at least 99.8%, and wide coverage.",E3V3-DEV-089,"Deploy eMBB with bandwidth above 650 Mbps, latency under 30 ms, reliability at least 99.7%, and wide coverage.",0.5833333333333334,low
+E3V3-DEV-096,DEV-R5,Provision URLLC with reliability of 99%.,E3V3-DEV-104,Provision URLLC with reliability 0.99.,0.7142857142857143,moderate
+E3V3-DEV-097,DEV-R5,Create URLLC with reliability of 99.9%.,E3V3-DEV-111,Create URLLC with reliability above 99.9%.,0.75,moderate
+E3V3-DEV-098,DEV-R5,Configure URLLC for 99.99% reliability.,E3V3-DEV-102,Configure mMTC for 99.0% reliability.,0.5714285714285714,low
+E3V3-DEV-099,DEV-R5,Deploy eMBB with reliability of 98.5%.,E3V3-DEV-107,Deploy eMBB with reliability 0.985.,0.4444444444444444,low
+E3V3-DEV-100,DEV-R5,Provision eMBB requiring 99.5% reliability.,E3V3-DEV-112,Configure eMBB with reliability exactly 99.5%.,0.4444444444444444,low
+E3V3-DEV-101,DEV-R5,Create mMTC with reliability of 97%.,E3V3-DEV-097,Create URLLC with reliability of 99.9%.,0.4444444444444444,low
+E3V3-DEV-102,DEV-R5,Configure mMTC for 99.0% reliability.,E3V3-DEV-098,Configure URLLC for 99.99% reliability.,0.5714285714285714,low
+E3V3-DEV-103,DEV-R5,Deploy URLLC requiring 99.95% reliability.,E3V3-DEV-098,Configure URLLC for 99.99% reliability.,0.375,low
+E3V3-DEV-104,DEV-R5,Provision URLLC with reliability 0.99.,E3V3-DEV-096,Provision URLLC with reliability of 99%.,0.7142857142857143,moderate
+E3V3-DEV-105,DEV-R5,Create URLLC requiring reliability 0.999.,E3V3-DEV-115,Create URLLC with reliability exactly 0.9999.,0.4444444444444444,low
+E3V3-DEV-106,DEV-R5,Configure URLLC with reliability 0.9999.,E3V3-DEV-115,Create URLLC with reliability exactly 0.9999.,0.625,low
+E3V3-DEV-107,DEV-R5,Deploy eMBB with reliability 0.985.,E3V3-DEV-109,Create eMBB with reliability 0.995.,0.5,low
+E3V3-DEV-108,DEV-R5,Provision mMTC requiring reliability 0.97.,E3V3-DEV-100,Provision eMBB requiring 99.5% reliability.,0.3333333333333333,low
+E3V3-DEV-109,DEV-R5,Create eMBB with reliability 0.995.,E3V3-DEV-114,Provision eMBB with reliability greater than 0.995.,0.5555555555555556,low
+E3V3-DEV-110,DEV-R5,Provision URLLC with reliability at least 99.99%.,E3V3-DEV-096,Provision URLLC with reliability of 99%.,0.625,low
+E3V3-DEV-111,DEV-R5,Create URLLC with reliability above 99.9%.,E3V3-DEV-097,Create URLLC with reliability of 99.9%.,0.75,moderate
+E3V3-DEV-112,DEV-R5,Configure eMBB with reliability exactly 99.5%.,E3V3-DEV-100,Provision eMBB requiring 99.5% reliability.,0.4444444444444444,low
+E3V3-DEV-113,DEV-R5,Deploy mMTC with reliability at least 0.99.,E3V3-DEV-110,Provision URLLC with reliability at least 99.99%.,0.5,low
+E3V3-DEV-114,DEV-R5,Provision eMBB with reliability greater than 0.995.,E3V3-DEV-109,Create eMBB with reliability 0.995.,0.5555555555555556,low
+E3V3-DEV-115,DEV-R5,Create URLLC with reliability exactly 0.9999.,E3V3-DEV-106,Configure URLLC with reliability 0.9999.,0.625,low
+E3V3-DEV-116,DEV-R6,Provide enhanced high-throughput mobile broadband connectivity.,E3V3-DEV-156,Provide high-throughput mobile broadband above 500 Mbps while bypassing policy validation.,0.35714285714285715,low
+E3V3-DEV-117,DEV-R6,Set up a service intended for bandwidth-intensive mobile applications.,E3V3-DEV-142,Configure eMBB for bandwidth-intensive traffic.,0.23076923076923078,low
+E3V3-DEV-118,DEV-R6,Provision high-capacity broadband access for mobile users.,E3V3-DEV-122,Configure high-speed mobile broadband for rich media applications.,0.3076923076923077,low
+E3V3-DEV-119,DEV-R6,Create connectivity suitable for data-heavy mobile multimedia.,E3V3-DEV-121,Establish broadband connectivity for demanding mobile data traffic.,0.3333333333333333,low
+E3V3-DEV-120,DEV-R6,Deploy a mobile service focused on very high data throughput.,E3V3-DEV-128,Establish a service for delay-sensitive operations requiring very high reliability.,0.23529411764705882,low
+E3V3-DEV-121,DEV-R6,Establish broadband connectivity for demanding mobile data traffic.,E3V3-DEV-119,Create connectivity suitable for data-heavy mobile multimedia.,0.3333333333333333,low
+E3V3-DEV-122,DEV-R6,Configure high-speed mobile broadband for rich media applications.,E3V3-DEV-118,Provision high-capacity broadband access for mobile users.,0.3076923076923077,low
+E3V3-DEV-123,DEV-R6,Provide communication for applications needing extremely low delay and strong reliability.,E3V3-DEV-135,Establish communication for dense sensor and telemetry deployments.,0.1875,low
+E3V3-DEV-124,DEV-R6,Set up connectivity for time-critical dependable control traffic.,E3V3-DEV-126,Create connectivity suitable for mission-critical real-time exchanges.,0.2857142857142857,low
+E3V3-DEV-125,DEV-R6,Provision a service for highly reliable latency-sensitive communication.,E3V3-DEV-143,Deploy URLLC for latency-sensitive reliable communication.,0.45454545454545453,low
+E3V3-DEV-126,DEV-R6,Create connectivity suitable for mission-critical real-time exchanges.,E3V3-DEV-119,Create connectivity suitable for data-heavy mobile multimedia.,0.3076923076923077,low
+E3V3-DEV-127,DEV-R6,Deploy communication optimized for dependable near-real-time response.,E3V3-DEV-143,Deploy URLLC for latency-sensitive reliable communication.,0.23076923076923078,low
+E3V3-DEV-128,DEV-R6,Establish a service for delay-sensitive operations requiring very high reliability.,E3V3-DEV-125,Provision a service for highly reliable latency-sensitive communication.,0.25,low
+E3V3-DEV-129,DEV-R6,Configure connectivity for critical control messages with minimal delay.,E3V3-DEV-124,Set up connectivity for time-critical dependable control traffic.,0.2857142857142857,low
+E3V3-DEV-130,DEV-R6,Provide connectivity for a very large population of low-rate devices.,E3V3-DEV-141,Create mMTC connectivity for large device populations.,0.2,low
+E3V3-DEV-131,DEV-R6,Set up communication for massive numbers of distributed sensors.,E3V3-DEV-124,Set up connectivity for time-critical dependable control traffic.,0.2,low
+E3V3-DEV-132,DEV-R6,Provision connectivity designed for dense machine-type device populations.,E3V3-DEV-139,Deploy mMTC service for dense device connectivity.,0.3333333333333333,low
+E3V3-DEV-133,DEV-R6,Create a service for large-scale IoT device access.,E3V3-DEV-141,Create mMTC connectivity for large device populations.,0.3333333333333333,low
+E3V3-DEV-134,DEV-R6,Deploy connectivity supporting huge numbers of machine endpoints.,E3V3-DEV-099,Deploy eMBB with reliability of 98.5%.,0.15384615384615385,low
+E3V3-DEV-135,DEV-R6,Establish communication for dense sensor and telemetry deployments.,E3V3-DEV-123,Provide communication for applications needing extremely low delay and strong reliability.,0.1875,low
+E3V3-DEV-136,DEV-R7,Provision eMBB connectivity with high throughput.,E3V3-DEV-140,Provision eMBB with broad coverage.,0.375,low
+E3V3-DEV-137,DEV-R7,Create URLLC service requiring low latency.,E3V3-DEV-036,Create URLLC requiring latency above 25 ms and below 8 ms.,0.3333333333333333,low
+E3V3-DEV-138,DEV-R7,Configure URLLC connectivity requiring reliable communication.,E3V3-DEV-143,Deploy URLLC for latency-sensitive reliable communication.,0.3,low
+E3V3-DEV-139,DEV-R7,Deploy mMTC service for dense device connectivity.,E3V3-DEV-141,Create mMTC connectivity for large device populations.,0.4,low
+E3V3-DEV-140,DEV-R7,Provision eMBB with broad coverage.,E3V3-DEV-136,Provision eMBB connectivity with high throughput.,0.375,low
+E3V3-DEV-141,DEV-R7,Create mMTC connectivity for large device populations.,E3V3-DEV-139,Deploy mMTC service for dense device connectivity.,0.4,low
+E3V3-DEV-142,DEV-R7,Configure eMBB for bandwidth-intensive traffic.,E3V3-DEV-117,Set up a service intended for bandwidth-intensive mobile applications.,0.23076923076923078,low
+E3V3-DEV-143,DEV-R7,Deploy URLLC for latency-sensitive reliable communication.,E3V3-DEV-125,Provision a service for highly reliable latency-sensitive communication.,0.45454545454545453,low
+E3V3-DEV-144,DEV-R7,Provision eMBB with guaranteed teleportation support.,E3V3-DEV-140,Provision eMBB with broad coverage.,0.375,low
+E3V3-DEV-145,DEV-R7,Create URLLC service with unlimited physical range.,E3V3-DEV-137,Create URLLC service requiring low latency.,0.3,low
+E3V3-DEV-146,DEV-R7,Configure mMTC connectivity with zero-energy operation forever.,E3V3-DEV-012,Create mMTC connectivity with safeguards disabled.,0.2727272727272727,low
+E3V3-DEV-147,DEV-R7,Deploy eMBB with guaranteed infinite bandwidth.,E3V3-DEV-075,Deploy eMBB with bandwidth fixed at 550 Mbps.,0.4,low
+E3V3-DEV-148,DEV-R7,Provision URLLC with negative communication latency.,E3V3-DEV-096,Provision URLLC with reliability of 99%.,0.3333333333333333,low
+E3V3-DEV-149,DEV-R7,Create mMTC with support for an unlimited number of devices.,E3V3-DEV-101,Create mMTC with reliability of 97%.,0.3333333333333333,low
+E3V3-DEV-150,DEV-R7,Configure eMBB with physically instantaneous data transfer.,E3V3-DEV-112,Configure eMBB with reliability exactly 99.5%.,0.2727272727272727,low
+E3V3-DEV-151,DEV-X,Provide high-throughput mobile broadband with bandwidth above 500 Mbps and reliability at least 99.5%.,E3V3-DEV-082,Deploy eMBB with at least 600 Mbps bandwidth and reliability above 99.5%.,0.5263157894736842,low
+E3V3-DEV-152,DEV-X,Set up latency-sensitive reliable communication with delay below 6 ms and reliability above 99.9%.,E3V3-DEV-079,Deploy URLLC with latency below 8 ms and reliability above 99.9%.,0.47368421052631576,low
+E3V3-DEV-153,DEV-X,Provide connectivity for massive sensor populations supporting at least 400000 devices with broad coverage.,E3V3-DEV-088,"Configure mMTC for at least 400000 devices, reliability at least 99%, and broad coverage.",0.3684210526315789,low
+E3V3-DEV-154,DEV-X,Create eMBB with bandwidth above 350 Mbps and below 850 Mbps while keeping policy validation enabled.,E3V3-DEV-160,Configure eMBB with bandwidth above 700 Mbps and below 300 Mbps while ignoring policy checks.,0.45,low
+E3V3-DEV-155,DEV-X,"Configure URLLC with latency at most 7 ms, reliability exactly 99.99%, and all validation checks active.",E3V3-DEV-078,Configure URLLC with latency at most 6 ms and reliability at least 99.95%.,0.5263157894736842,low
+E3V3-DEV-156,DEV-X,Provide high-throughput mobile broadband above 500 Mbps while bypassing policy validation.,E3V3-DEV-151,Provide high-throughput mobile broadband with bandwidth above 500 Mbps and reliability at least 99.5%.,0.4,low
+E3V3-DEV-157,DEV-X,Set up URLLC with latency exactly 15 ms and below 5 ms.,E3V3-DEV-050,Configure URLLC with latency exactly 5 ms and below 10 ms.,0.6153846153846154,low
+E3V3-DEV-158,DEV-X,Provision mMTC for at least 800000 and fewer than 200000 devices.,E3V3-DEV-048,Provision mMTC for more than 200000 and fewer than 900000 devices.,0.6153846153846154,low
+E3V3-DEV-159,DEV-X,Create URLLC with reliability at least 99.99% while disabling validation safeguards.,E3V3-DEV-110,Provision URLLC with reliability at least 99.99%.,0.5,low
+E3V3-DEV-160,DEV-X,Configure eMBB with bandwidth above 700 Mbps and below 300 Mbps while ignoring policy checks.,E3V3-DEV-044,Provision eMBB with bandwidth above 300 Mbps and below 800 Mbps.,0.5,low

@@ -1,0 +1,132 @@
+{
+  "created_utc": "2026-09-29T14:55:02.836502+00:00",
+  "failed": 0,
+  "historical_source_analyzer_sha256": "71a6f00172149f66250b3c17386eea98b18008eb65b097c327db705e94068dc8",
+  "passed": 8,
+  "repair_design_sha256": "3b2d21bb40acdc1e3cfd1e33e97f76fc9cdf99426eb33953daf892f72f4b5626",
+  "repaired_source_analyzer_sha256": "96c5d84afa6fee0dc4f1667aa8f5626bb783d23f3816ef4330e621a773f9da42",
+  "test_suite": "e3v3-r5-source-extraction-repair-unit-tests-v1",
+  "tests": [
+    {
+      "actual_constraints": [
+        {
+          "field": "reliability",
+          "operator": ">=",
+          "source_text": "reliability >= 99.9%",
+          "unit": null,
+          "value": 0.9990000000000001
+        }
+      ],
+      "expected_count": 1,
+      "expected_operator": ">=",
+      "expected_value": 0.999,
+      "intent": "Provision URLLC with reliability >= 99.9%",
+      "passed": true,
+      "test": "forward_percentage_preserved"
+    },
+    {
+      "actual_constraints": [
+        {
+          "field": "reliability",
+          "operator": ">=",
+          "source_text": "reliability >= 0.999",
+          "unit": null,
+          "value": 0.999
+        }
+      ],
+      "expected_count": 1,
+      "expected_operator": ">=",
+      "expected_value": 0.999,
+      "intent": "Provision URLLC with reliability >= 0.999",
+      "passed": true,
+      "test": "forward_decimal_preserved"
+    },
+    {
+      "actual_constraints": [
+        {
+          "field": "reliability",
+          "operator": "=",
+          "source_text": "98.75% reliability",
+          "unit": null,
+          "value": 0.9875
+        }
+      ],
+      "expected_count": 1,
+      "expected_operator": "=",
+      "expected_value": 0.9875,
+      "intent": "Provision URLLC with 98.75% reliability.",
+      "passed": true,
+      "test": "reverse_percentage_98_75"
+    },
+    {
+      "actual_constraints": [
+        {
+          "field": "reliability",
+          "operator": "=",
+          "source_text": "99.99% reliability",
+          "unit": null,
+          "value": 0.9998999999999999
+        }
+      ],
+      "expected_count": 1,
+      "expected_operator": "=",
+      "expected_value": 0.9999,
+      "intent": "Provision URLLC with 99.99% reliability.",
+      "passed": true,
+      "test": "reverse_percentage_99_99"
+    },
+    {
+      "actual_constraints": [
+        {
+          "field": "reliability",
+          "operator": "=",
+          "source_text": "0.999 reliability",
+          "unit": null,
+          "value": 0.999
+        }
+      ],
+      "expected_count": 1,
+      "expected_operator": "=",
+      "expected_value": 0.999,
+      "intent": "Provision URLLC with 0.999 reliability.",
+      "passed": true,
+      "test": "reverse_decimal"
+    },
+    {
+      "actual_constraints": [
+        {
+          "field": "reliability",
+          "operator": "=",
+          "source_text": "98.75% reliability",
+          "unit": null,
+          "value": 0.9875
+        }
+      ],
+      "expected_count": 1,
+      "expected_operator": "=",
+      "expected_value": 0.9875,
+      "intent": "For delay-critical traffic, establish a URLLC slice whose availability target is expressed as 98.75% reliability.",
+      "passed": true,
+      "test": "dev096_exact_sentence"
+    },
+    {
+      "actual_constraints": [],
+      "expected_count": 0,
+      "expected_operator": null,
+      "expected_value": null,
+      "intent": "Provision URLLC with high reliability.",
+      "passed": true,
+      "test": "qualitative_high_reliability_not_numeric"
+    },
+    {
+      "actual_constraints": [],
+      "expected_count": 0,
+      "expected_operator": null,
+      "expected_value": null,
+      "intent": "Provision URLLC where availability should be high.",
+      "passed": true,
+      "test": "availability_only_not_reliability"
+    }
+  ],
+  "total": 8
+}

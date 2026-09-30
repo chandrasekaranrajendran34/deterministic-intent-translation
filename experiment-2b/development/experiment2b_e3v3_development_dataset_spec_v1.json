@@ -1,0 +1,226 @@
+{
+  "spec_version": "1.0",
+  "experiment": "experiment-2b",
+  "pipeline_under_development": "e3_v3",
+  "created_utc": "2026-09-29T09:00:28.654443+00:00",
+  "parent_protocol": "/content/experiment-1-v2-together/experiment-2b/protocol/experiment2b_e3v3_protocol_v1.json",
+  "parent_protocol_sha256": "b01da1cd905b7f2449bd7ea14437a87d8fb5f54a0ad0ab2a38e10c21a3291e37",
+  "dataset_role": "E3-v3 development",
+  "total_cases": 160,
+  "families": [
+    {
+      "family_id": "DEV-R1",
+      "repair_id": "R1",
+      "repair_family": "control_attempt_detection",
+      "target_failure": "deterministic_detector_miss",
+      "n_cases": 30,
+      "required_subgroups": {
+        "malicious_control_attempts": 18,
+        "benign_control_language_controls": 12
+      },
+      "coverage": [
+        "bypass validation",
+        "ignore validation",
+        "disable policy checks",
+        "skip verification",
+        "override safeguards",
+        "suppress policy enforcement",
+        "circumvent validation",
+        "benign requests mentioning policy",
+        "benign requests requesting validation",
+        "benign security/control terminology"
+      ],
+      "primary_risk": "False positives caused by lexical overmatching."
+    },
+    {
+      "family_id": "DEV-R2",
+      "repair_id": "R2",
+      "repair_family": "multi_constraint_extraction",
+      "target_failure": "deterministic_constraint_extraction_miss",
+      "n_cases": 25,
+      "required_subgroups": {
+        "contradictory_same_field": 13,
+        "compatible_same_field": 12
+      },
+      "coverage": [
+        "exact value plus incompatible lower bound",
+        "exact value plus incompatible upper bound",
+        "compatible lower and upper bounds",
+        "strict interval",
+        "inclusive interval",
+        "repeated field name",
+        "field name omitted after conjunction",
+        "mixed wording order"
+      ],
+      "primary_risk": "Incorrectly splitting or combining coordinated constraints."
+    },
+    {
+      "family_id": "DEV-R3",
+      "repair_id": "R3",
+      "repair_family": "operator_preservation",
+      "target_failure": "source_cir_preservation_mismatch",
+      "n_cases": 20,
+      "required_subgroups": {
+        "strict_operator": 8,
+        "inclusive_operator": 8,
+        "exact_operator": 4
+      },
+      "coverage": [
+        "<",
+        "<=",
+        ">",
+        ">=",
+        "=",
+        "below",
+        "at most",
+        "above",
+        "at least",
+        "exactly"
+      ],
+      "primary_risk": "Collapsing threshold semantics into scalar equality."
+    },
+    {
+      "family_id": "DEV-R4",
+      "repair_id": "R4",
+      "repair_family": "semantic_cir_constraint_completion",
+      "target_failure": "llm_constraint_omission",
+      "n_cases": 20,
+      "required_subgroups": {
+        "two_constraint_compound": 10,
+        "three_or_more_constraint_compound": 10
+      },
+      "coverage": [
+        "bandwidth plus coverage",
+        "latency plus reliability",
+        "bandwidth plus latency",
+        "device count plus coverage",
+        "multi-field compound requirements",
+        "paraphrased structured requirements"
+      ],
+      "primary_risk": "Adding values not licensed by source intent."
+    },
+    {
+      "family_id": "DEV-R5",
+      "repair_id": "R5",
+      "repair_family": "reliability_normalization",
+      "target_failure": "llm_reliability_normalization_error",
+      "n_cases": 20,
+      "required_subgroups": {
+        "percentage_form": 8,
+        "decimal_form": 6,
+        "boundary_and_operator_form": 6
+      },
+      "coverage": [
+        "99%",
+        "99.9%",
+        "99.99%",
+        "0.99",
+        "0.999",
+        "0.9999",
+        "at least",
+        "above",
+        "exactly",
+        "boundary comparison"
+      ],
+      "primary_risk": "Percentage/decimal scale errors and floating-point boundaries."
+    },
+    {
+      "family_id": "DEV-R6",
+      "repair_id": "R6",
+      "repair_family": "service_semantic_extraction",
+      "target_failure": "llm_service_extraction_omission",
+      "n_cases": 20,
+      "required_subgroups": {
+        "embb_semantic_paraphrase": 7,
+        "urllc_semantic_paraphrase": 7,
+        "mmtc_semantic_paraphrase": 6
+      },
+      "coverage": [
+        "mobile broadband paraphrases",
+        "low-latency reliable communication paraphrases",
+        "massive device connectivity paraphrases",
+        "indirect service descriptions",
+        "service descriptions without acronym"
+      ],
+      "primary_risk": "Over-mapping genuinely ambiguous descriptions."
+    },
+    {
+      "family_id": "DEV-R7",
+      "repair_id": "R7",
+      "repair_family": "qualitative_requirement_resolution",
+      "target_failure": "source_requirement_resolution_false_rejection",
+      "n_cases": 15,
+      "required_subgroups": {
+        "supported_qualitative_requirement": 8,
+        "unsupported_or_unresolvable_requirement": 7
+      },
+      "coverage": [
+        "reliable service",
+        "wide coverage",
+        "high throughput",
+        "low latency",
+        "dense connectivity",
+        "unsupported capability language",
+        "ambiguous qualitative requirements"
+      ],
+      "primary_risk": "Treating unsupported capabilities as valid."
+    },
+    {
+      "family_id": "DEV-X",
+      "repair_id": "CROSS",
+      "repair_family": "cross_family_compound",
+      "target_failure": "interaction_failures",
+      "n_cases": 10,
+      "required_subgroups": {
+        "valid_cross_family": 5,
+        "invalid_cross_family": 5
+      },
+      "coverage": [
+        "service paraphrase plus constraints",
+        "reliability plus strict operator",
+        "multiple constraints plus qualitative requirement",
+        "control attempt plus otherwise valid constraints",
+        "semantic service description plus compound requirements"
+      ],
+      "primary_risk": "Repairs functioning independently but failing in combination."
+    }
+  ],
+  "construction_rules": {
+    "dataset_role": "development_only",
+    "total_cases": 160,
+    "id_prefix": "E3V3-DEV",
+    "required_columns": [
+      "id",
+      "intent",
+      "family_id",
+      "repair_id",
+      "subcategory",
+      "expected_valid",
+      "expected_service",
+      "difficulty",
+      "linguistic_form",
+      "constraint_type",
+      "control_type",
+      "notes"
+    ],
+    "original_dataset_reuse": "No original EXP2B intent may be copied.",
+    "near_duplicate_policy": "Development intents must not be near-duplicates of the frozen 120-case dataset.",
+    "case_specific_patch_policy": "No implementation rule may depend on an intent ID or memorized full intent string.",
+    "label_policy": "Expected validity and service labels must be assigned before E3-v3 execution.",
+    "execution_policy": "Dataset must be frozen and hashed before using it for E3-v3 development runs.",
+    "holdout_policy": "No future final holdout intent may be copied from this development dataset.",
+    "balancing_policy": "Balance is driven by repair-risk coverage rather than artificial 50/50 class balancing.",
+    "negative_control_policy": "Every detector-oriented repair family must contain benign negative controls.",
+    "difficulty_policy": "Include easy, medium, and hard linguistic constructions.",
+    "linguistic_diversity_policy": "Use direct, paraphrased, compound, coordinated, implicit, and adversarial forms where applicable."
+  },
+  "holdout_separation": {
+    "holdout_created_now": false,
+    "reason": "Holdout content should not influence E3-v3 development.",
+    "future_holdout_requirement": "Construct and freeze a separate unseen holdout only after E3-v3 implementation is frozen.",
+    "development_holdout_exact_overlap": "0 permitted",
+    "development_holdout_near_duplicate_overlap": "0 permitted",
+    "original120_holdout_exact_overlap": "0 permitted",
+    "final_evaluation_rule": "Run frozen E3-v2 and frozen E3-v3 on the identical new holdout dataset."
+  }
+}

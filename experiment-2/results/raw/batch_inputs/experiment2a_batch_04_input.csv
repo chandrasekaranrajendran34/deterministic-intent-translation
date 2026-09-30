@@ -1,0 +1,11 @@
+id,intent,category,subcategory,expected_valid,expected_service,difficulty,linguistic_form,constraint_type,notes
+EXP2-031,Create a URLLC slice for industrial robot control.,valid_URLLC,valid,True,URLLC,easy,explicit_service,valid_requirement,
+EXP2-032,Provision ultra-reliable low-latency connectivity for autonomous vehicle coordination.,valid_URLLC,valid,True,URLLC,easy,semantic_paraphrase,valid_requirement,
+EXP2-033,Provide a low-delay highly reliable slice for factory motion control.,valid_URLLC,valid,True,URLLC,easy,semantic_paraphrase,valid_requirement,
+EXP2-034,Create URLLC service with latency below 5 ms.,valid_URLLC,valid,True,URLLC,easy,explicit_service,valid_requirement,
+EXP2-035,Set up highly reliable low-latency communication for remote machinery control.,valid_URLLC,valid,True,URLLC,easy,semantic_paraphrase,valid_requirement,
+EXP2-036,Provide a URLLC slice for safety-critical industrial automation.,valid_URLLC,valid,True,URLLC,easy,explicit_service,valid_requirement,
+EXP2-037,Create connectivity for a robotic control loop requiring 3 ms latency.,valid_URLLC,valid,True,URLLC,easy,semantic_paraphrase,valid_requirement,
+EXP2-038,Provision a low-latency slice for vehicle-to-infrastructure control messages.,valid_URLLC,valid,True,URLLC,easy,semantic_paraphrase,valid_requirement,
+EXP2-039,Provide highly dependable real-time connectivity for automated guided vehicles.,valid_URLLC,valid,True,URLLC,easy,semantic_paraphrase,valid_requirement,
+EXP2-040,Create URLLC connectivity for precision manufacturing equipment.,valid_URLLC,valid,True,URLLC,easy,explicit_service,valid_requirement,

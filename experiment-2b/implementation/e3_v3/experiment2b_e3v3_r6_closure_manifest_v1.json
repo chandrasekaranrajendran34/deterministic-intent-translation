@@ -1,0 +1,81 @@
+{
+  "freeze_id": "e3v3-r6-development-closure-v1.0",
+  "component": "R6 deterministic service-type resolution and runner integration",
+  "status": "DEVELOPMENT_CLOSED",
+  "scope": "development evidence only; not held-out evaluation",
+  "closure_time_utc": "2026-09-29T16:56:22.353895+00:00",
+  "frozen_artifacts": {
+    "dataset": {
+      "path": "/content/experiment-1-v2-together/experiment-2b/data/frozen/experiment2b_e3v3_development_160_v1.csv",
+      "sha256": "133c68842716f84a703478f7904c8cdd4f10cfdba683957ce23e473e81e7196f"
+    },
+    "resolver": {
+      "path": "/content/experiment-1-v2-together/experiment-2b/implementation/e3_v3/src/service_type_resolver_r6_cue_equivalent.py",
+      "sha256": "34d5b5fd02ade1bd44ea13b595e4aecfd7f8746dbd5a62dff17b223c405cb72d"
+    },
+    "integration": {
+      "path": "/content/experiment-1-v2-together/experiment-2b/implementation/e3_v3/src/service_type_integration_r6.py",
+      "sha256": "60b3f556b7d9d6765c38d6e31924c987d748b25a668f1837e3397896f964e741"
+    },
+    "runner": {
+      "path": "/content/experiment-1-v2-together/experiment-2b/implementation/e3_v3/run_experiment2b_e3v3_r6_dev_v1.py",
+      "sha256": "8d1f08d4442cf26983696a0db94d8006a7efe28dd35dbb186f3861c46bf01439"
+    },
+    "runner_integration_design": {
+      "path": "/content/experiment-1-v2-together/experiment-2b/implementation/e3_v3/experiment2b_e3v3_r6_runner_integration_design_v1.json",
+      "sha256": "b1ef43840493d5923d918be66d75c32fd9ac13c13c2415f0a91fa3abe4e1dae0"
+    },
+    "cue_equivalence_design": {
+      "path": "/content/experiment-1-v2-together/experiment-2b/implementation/e3_v3/experiment2b_e3v3_r6_cue_equivalence_design_addendum_v1.json",
+      "sha256": "7829dd87841b5f767758c4ed07a64aa9ede10a121a4271cab72f013755d56a8d"
+    },
+    "resolver_validation_evidence": {
+      "path": "/content/experiment-1-v2-together/experiment-2b/implementation/e3_v3/results/development/experiment2b_e3v3_r6_cue_equivalence_tests_v1.json",
+      "sha256": "ca804cc9997f2fd794a4fec4bff4c043efc04c3cc9f3780fc3b82223ce4b3f8d"
+    },
+    "integration_test_evidence": {
+      "path": "/content/experiment-1-v2-together/experiment-2b/implementation/e3_v3/results/development/experiment2b_e3v3_r6_integration_unit_tests_v1.json",
+      "sha256": "45be3c79a971ba09564dce0804c113ff7e9fb8098206ece98f60185ee8c70af2"
+    },
+    "family_evaluation": {
+      "path": "/content/experiment-1-v2-together/experiment-2b/implementation/e3_v3/results/development/experiment2b_e3v3_r6_final_deterministic_20_results_v1.csv",
+      "sha256": "f1fda62f21c12d594dbdc7302cea636c722058b0a875849af3b2447e361e0329"
+    },
+    "family_evaluation_manifest": {
+      "path": "/content/experiment-1-v2-together/experiment-2b/implementation/e3_v3/experiment2b_e3v3_r6_final_deterministic_evaluation_manifest_v1.json",
+      "sha256": "97cbd17dd832d4c0e6d680ada321c451f90601c6e9c8c13886273db7d7675dbf"
+    },
+    "runner_integration_evidence": {
+      "path": "/content/experiment-1-v2-together/experiment-2b/implementation/e3_v3/results/development/experiment2b_e3v3_r6_runner_integration_tests_v1.json",
+      "sha256": "f29ac8384384904b01adc2414850b36f38e11fd2c476327365d90473b487dd98"
+    },
+    "cue_equivalence_implementation_manifest": {
+      "path": "/content/experiment-1-v2-together/experiment-2b/implementation/e3_v3/experiment2b_e3v3_r6_cue_equivalence_implementation_manifest_v1.json",
+      "sha256": "02f407d79e26788224ca69a7976f83edcf443586f690acb0e7952ff47e8b39f5"
+    },
+    "integration_implementation_manifest": {
+      "path": "/content/experiment-1-v2-together/experiment-2b/implementation/e3_v3/experiment2b_e3v3_r6_integration_implementation_manifest_v1.json",
+      "sha256": "70a3ce9bdc6c8185921ae82b3da0ec038764ac2ccf5e2710475335405f8dc19f"
+    }
+  },
+  "evidence_summary": {
+    "cue_identity_tests": "4/4",
+    "resolver_required_tests": "7/7",
+    "resolver_safety_regression_tests": "10/10",
+    "r6_family_deterministic_evaluation": "20/20",
+    "standalone_integration_tests": "9/9",
+    "actual_runner_integration_tests": "4/4",
+    "runner_conflict_policy": "fail closed before post-guard and mapping",
+    "external_api_calls_in_runner_test": 0,
+    "external_llm_calls_in_runner_test": 0
+  },
+  "methodological_constraints": [
+    "R6 evidence is development-set evidence only.",
+    "No held-out performance claim is made.",
+    "The full 160-row development dataset was not rerun after final R6 closure.",
+    "No further R6 semantic tuning is permitted after this closure.",
+    "Any later R6 defect must be documented as a post-freeze issue rather than silently repaired.",
+    "The R6 unresolved/no-change runner case may still be rejected by a downstream frozen stage; this is not classified as an R6 failure."
+  ],
+  "next_component": "R7 qualitative requirement resolution"
+}

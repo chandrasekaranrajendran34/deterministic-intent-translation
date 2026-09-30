@@ -1,0 +1,61 @@
+id,intent,category,subcategory,expected_valid,expected_service,failure_mechanism,mechanism_description,architectural_layer,e3_accepted,e3_llm_invoked,e3_rejection_stage,e3_error_codes_json,e3_cir_json,e3_pre_guard_json,e3_post_guard_json,e3_cir_validation_json,e3_raw_text,e3_reasoning_json,e3_v2_accepted,e3_v2_llm_invoked,e3_v2_rejection_stage,e3_v2_error_codes_json,e3_v2_cir_json,e3_v2_input_audit_json,e3_v2_pre_guard_json,e3_v2_post_guard_json,e3_v2_cir_validation_json,e3_v2_raw_text,e3_v2_reasoning_json
+EXP2B-008,Allocate eMBB connectivity requiring reliable service.,valid_semantic_paraphrase,embb_semantic_reliability,True,eMBB,source_requirement_resolution_false_rejection,valid source phrase was unresolved by closed-world resolver,deterministic_guard_layer,True,True,,[],"{""bandwidth_mbps"": null, ""coverage"": null, ""device_count"": null, ""latency_ms"": null, ""objective"": null, ""reliability"": null, ""service_type"": ""eMBB""}",,,"{""accepted"": true, ""errors"": [], ""hallucination_detected"": false, ""schema_valid"": true}","{
+  ""service_type"": ""eMBB"",
+  ""latency_ms"": null,
+  ""bandwidth_mbps"": null,
+  ""reliability"": null,
+  ""device_count"": null,
+  ""coverage"": null,
+  ""objective"": null
+}",,False,False,source_gate,"[""UNRESOLVED_SOURCE_REQUIREMENT""]",,,"{""accepted"": false, ""consistency"": {""errors"": [], ""skipped"": true, ""valid"": null}, ""error_codes"": [""UNRESOLVED_SOURCE_REQUIREMENT""], ""preservation"": null, ""rejection_stage"": ""source_gate"", ""source_gate"": {""errors"": [{""code"": ""UNRESOLVED_SOURCE_REQUIREMENT"", ""message"": ""Source requirement could not be resolved to a supported capability in the frozen experimental profile."", ""source_text"": ""reliable service""}], ""valid"": false}, ""source_intent"": {""constraints"": [], ""control_attempts"": [], ""extraction_notes"": [], ""original_text"": ""Allocate eMBB connectivity requiring reliable service."", ""requirements"": [{""normalized"": null, ""status"": ""unresolved"", ""text"": ""reliable service""}], ""service_type"": ""eMBB""}}",,,,
+EXP2B-032,Provision eMBB with 500 Mbps bandwidth and latency below 40 ms.,valid_compound,embb_bandwidth_latency,True,eMBB,source_cir_preservation_mismatch,generated CIR value did not satisfy the preserved source constraint,deterministic_guard_layer,True,True,,[],"{""bandwidth_mbps"": 500, ""coverage"": null, ""device_count"": null, ""latency_ms"": 40, ""objective"": null, ""reliability"": null, ""service_type"": ""eMBB""}",,,"{""accepted"": true, ""errors"": [], ""hallucination_detected"": false, ""schema_valid"": true}","{
+  ""service_type"": ""eMBB"",
+  ""latency_ms"": 40,
+  ""bandwidth_mbps"": 500,
+  ""reliability"": null,
+  ""device_count"": null,
+  ""coverage"": null,
+  ""objective"": null
+}",,False,True,preservation,"[""SOURCE_CONSTRAINT_NOT_PRESERVED""]","{""bandwidth_mbps"": 500, ""coverage"": null, ""device_count"": null, ""latency_ms"": 40, ""objective"": null, ""reliability"": null, ""service_type"": ""eMBB""}",,"{""accepted"": true, ""consistency"": {""errors"": [], ""valid"": true}, ""error_codes"": [], ""preservation"": null, ""rejection_stage"": null, ""source_gate"": {""errors"": [], ""valid"": true}, ""source_intent"": {""constraints"": [{""field"": ""latency_ms"", ""operator"": ""<"", ""source_text"": ""latency below 40 ms"", ""unit"": ""ms"", ""value"": 40.0}, {""field"": ""bandwidth_mbps"", ""operator"": ""="", ""source_text"": ""500 Mbps bandwidth"", ""unit"": ""Mbps"", ""value"": 500.0}], ""control_attempts"": [], ""extraction_notes"": [], ""original_text"": ""Provision eMBB with 500 Mbps bandwidth and latency below 40 ms."", ""requirements"": [], ""service_type"": ""eMBB""}}","{""accepted"": false, ""consistency"": {""errors"": [], ""valid"": true}, ""error_codes"": [""SOURCE_CONSTRAINT_NOT_PRESERVED""], ""preservation"": {""errors"": [{""code"": ""SOURCE_CONSTRAINT_NOT_PRESERVED"", ""field"": ""latency_ms"", ""message"": ""CIR value 40 does not satisfy source constraint < 40.""}], ""valid"": false}, ""rejection_stage"": ""preservation"", ""source_gate"": {""errors"": [], ""valid"": true}, ""source_intent"": {""constraints"": [{""field"": ""latency_ms"", ""operator"": ""<"", ""source_text"": ""latency below 40 ms"", ""unit"": ""ms"", ""value"": 40.0}, {""field"": ""bandwidth_mbps"", ""operator"": ""="", ""source_text"": ""500 Mbps bandwidth"", ""unit"": ""Mbps"", ""value"": 500.0}], ""control_attempts"": [], ""extraction_notes"": [], ""original_text"": ""Provision eMBB with 500 Mbps bandwidth and latency below 40 ms."", ""requirements"": [], ""service_type"": ""eMBB""}}",,"{
+  ""service_type"": ""eMBB"",
+  ""latency_ms"": 40,
+  ""bandwidth_mbps"": 500,
+  ""reliability"": null,
+  ""device_count"": null,
+  ""coverage"": null,
+  ""objective"": null
+}",
+EXP2B-034,Prepare eMBB with bandwidth above 300 Mbps and wide coverage.,valid_compound,embb_numeric_coverage,True,eMBB,llm_constraint_omission,source constraint was captured deterministically but omitted from generated CIR,probabilistic_semantic_layer,True,True,,[],"{""bandwidth_mbps"": null, ""coverage"": ""wide"", ""device_count"": null, ""latency_ms"": null, ""objective"": null, ""reliability"": null, ""service_type"": ""eMBB""}",,,"{""accepted"": true, ""errors"": [], ""hallucination_detected"": false, ""schema_valid"": true}","{
+  ""service_type"": ""eMBB"",
+  ""latency_ms"": null,
+  ""bandwidth_mbps"": null,
+  ""reliability"": null,
+  ""device_count"": null,
+  ""coverage"": ""wide"",
+  ""objective"": null
+}",,False,True,preservation,"[""SOURCE_CONSTRAINT_MISSING_FROM_CIR""]","{""bandwidth_mbps"": null, ""coverage"": ""wide"", ""device_count"": null, ""latency_ms"": null, ""objective"": null, ""reliability"": null, ""service_type"": ""eMBB""}",,"{""accepted"": true, ""consistency"": {""errors"": [], ""valid"": true}, ""error_codes"": [], ""preservation"": null, ""rejection_stage"": null, ""source_gate"": {""errors"": [], ""valid"": true}, ""source_intent"": {""constraints"": [{""field"": ""bandwidth_mbps"", ""operator"": "">"", ""source_text"": ""bandwidth above 300 Mbps"", ""unit"": ""Mbps"", ""value"": 300.0}], ""control_attempts"": [], ""extraction_notes"": [], ""original_text"": ""Prepare eMBB with bandwidth above 300 Mbps and wide coverage."", ""requirements"": [], ""service_type"": ""eMBB""}}","{""accepted"": false, ""consistency"": {""errors"": [], ""valid"": true}, ""error_codes"": [""SOURCE_CONSTRAINT_MISSING_FROM_CIR""], ""preservation"": {""errors"": [{""code"": ""SOURCE_CONSTRAINT_MISSING_FROM_CIR"", ""field"": ""bandwidth_mbps"", ""message"": ""Source contains 1 constraint(s) for bandwidth_mbps, but the CIR value is null/missing.""}], ""valid"": false}, ""rejection_stage"": ""preservation"", ""source_gate"": {""errors"": [], ""valid"": true}, ""source_intent"": {""constraints"": [{""field"": ""bandwidth_mbps"", ""operator"": "">"", ""source_text"": ""bandwidth above 300 Mbps"", ""unit"": ""Mbps"", ""value"": 300.0}], ""control_attempts"": [], ""extraction_notes"": [], ""original_text"": ""Prepare eMBB with bandwidth above 300 Mbps and wide coverage."", ""requirements"": [], ""service_type"": ""eMBB""}}",,"{
+  ""service_type"": ""eMBB"",
+  ""latency_ms"": null,
+  ""bandwidth_mbps"": null,
+  ""reliability"": null,
+  ""device_count"": null,
+  ""coverage"": ""wide"",
+  ""objective"": null
+}",
+EXP2B-036,Create URLLC with latency below 6 ms and reliability at least 99.99%.,valid_compound,urllc_latency_reliability,True,URLLC,llm_constraint_omission,source constraint was captured deterministically but omitted from generated CIR,probabilistic_semantic_layer,True,True,,[],"{""bandwidth_mbps"": null, ""coverage"": null, ""device_count"": null, ""latency_ms"": null, ""objective"": ""latency below 6 ms and reliability at least 99.99%"", ""reliability"": null, ""service_type"": ""URLLC""}",,,"{""accepted"": true, ""errors"": [], ""hallucination_detected"": false, ""schema_valid"": true}","{
+  ""service_type"": ""URLLC"",
+  ""latency_ms"": null,
+  ""bandwidth_mbps"": null,
+  ""reliability"": null,
+  ""device_count"": null,
+  ""coverage"": null,
+  ""objective"": ""latency below 6 ms and reliability at least 99.99%""
+}",,False,True,preservation,"[""SOURCE_CONSTRAINT_MISSING_FROM_CIR"", ""SOURCE_CONSTRAINT_MISSING_FROM_CIR""]","{""bandwidth_mbps"": null, ""coverage"": null, ""device_count"": null, ""latency_ms"": null, ""objective"": ""latency below 6 ms and reliability at least 99.99%"", ""reliability"": null, ""service_type"": ""URLLC""}",,"{""accepted"": true, ""consistency"": {""errors"": [], ""valid"": true}, ""error_codes"": [], ""preservation"": null, ""rejection_stage"": null, ""source_gate"": {""errors"": [], ""valid"": true}, ""source_intent"": {""constraints"": [{""field"": ""latency_ms"", ""operator"": ""<"", ""source_text"": ""latency below 6 ms"", ""unit"": ""ms"", ""value"": 6.0}, {""field"": ""reliability"", ""operator"": "">="", ""source_text"": ""reliability at least 99.99%"", ""unit"": null, ""value"": 0.9998999999999999}], ""control_attempts"": [], ""extraction_notes"": [], ""original_text"": ""Create URLLC with latency below 6 ms and reliability at least 99.99%."", ""requirements"": [], ""service_type"": ""URLLC""}}","{""accepted"": false, ""consistency"": {""errors"": [], ""valid"": true}, ""error_codes"": [""SOURCE_CONSTRAINT_MISSING_FROM_CIR"", ""SOURCE_CONSTRAINT_MISSING_FROM_CIR""], ""preservation"": {""errors"": [{""code"": ""SOURCE_CONSTRAINT_MISSING_FROM_CIR"", ""field"": ""latency_ms"", ""message"": ""Source contains 1 constraint(s) for latency_ms, but the CIR value is null/missing.""}, {""code"": ""SOURCE_CONSTRAINT_MISSING_FROM_CIR"", ""field"": ""reliability"", ""message"": ""Source contains 1 constraint(s) for reliability, but the CIR value is null/missing.""}], ""valid"": false}, ""rejection_stage"": ""preservation"", ""source_gate"": {""errors"": [], ""valid"": true}, ""source_intent"": {""constraints"": [{""field"": ""latency_ms"", ""operator"": ""<"", ""source_text"": ""latency below 6 ms"", ""unit"": ""ms"", ""value"": 6.0}, {""field"": ""reliability"", ""operator"": "">="", ""source_text"": ""reliability at least 99.99%"", ""unit"": null, ""value"": 0.9998999999999999}], ""control_attempts"": [], ""extraction_notes"": [], ""original_text"": ""Create URLLC with latency below 6 ms and reliability at least 99.99%."", ""requirements"": [], ""service_type"": ""URLLC""}}",,"{
+  ""service_type"": ""URLLC"",
+  ""latency_ms"": null,
+  ""bandwidth_mbps"": null,
+  ""reliability"": null,
+  ""device_count"": null,
+  ""coverage"": null,
+  ""objective"": ""latency below 6 ms and reliability at least 99.99%""
+}",

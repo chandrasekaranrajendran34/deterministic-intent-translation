@@ -1,0 +1,4 @@
+pipeline,accepted_valid,valid_n,valid_acceptance_rate,ci95_lower,ci95_upper
+direct,25,25,1.0,0.8628148284692875,1.0
+cir,25,25,1.0,0.8628148284692875,1.0
+proposed,25,25,1.0,0.8628148284692875,1.0

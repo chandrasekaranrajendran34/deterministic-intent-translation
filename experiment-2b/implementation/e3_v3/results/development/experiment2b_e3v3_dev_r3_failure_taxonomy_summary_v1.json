@@ -1,0 +1,19 @@
+{
+  "step": "24E-D3E",
+  "source_results": "/content/experiment-1-v2-together/experiment-2b/implementation/e3_v3/results/development/experiment2b_e3v3_dev_r3_results_v2.csv",
+  "source_results_sha256": "f7e0c0a18e436a0e1f564a2da23dbdd66400a10fef8e1685938dd2947ce8e684",
+  "failure_count": 5,
+  "classification_counts": {
+    "llm_cir_constraint_omission": 5
+  },
+  "repair_family_counts": {
+    "R4_semantic_CIR_construction": 5
+  },
+  "r3_conditional_preservation": {
+    "eligible_cases": 15,
+    "accepted_cases": 15,
+    "rate": 1.0
+  },
+  "taxonomy_csv": "/content/experiment-1-v2-together/experiment-2b/implementation/e3_v3/results/development/experiment2b_e3v3_dev_r3_failure_taxonomy_v1.csv",
+  "taxonomy_csv_sha256": "b1f9e528f885cdc17c319efee9faa1bc23e73b230d1eb8f7c74284201173f499"
+}

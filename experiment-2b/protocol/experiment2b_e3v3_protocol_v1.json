@@ -1,0 +1,145 @@
+{
+  "protocol_version": "1.0",
+  "experiment": "experiment-2b",
+  "next_pipeline": "e3_v3",
+  "created_utc": "2026-09-29T08:59:16.487637+00:00",
+  "e3_v2_status": "FROZEN",
+  "e3_v2_primary_dataset_status": "FROZEN_TEST_SET",
+  "e3_v2_frozen_dataset": "/content/experiment-1-v2-together/experiment-2b/data/frozen/experiment2b_intents_120_v1.csv",
+  "e3_v2_primary_results": "/content/experiment-1-v2-together/experiment-2b/results/raw/experiment2b_primary_results_240.csv",
+  "e3_v2_frozen_metrics": {
+    "test_cases": 120,
+    "correct_decisions": 101,
+    "overall_accuracy_pct": 84.1667,
+    "balanced_accuracy_pct": 81.5556,
+    "valid_intent_recall_pct": 71.1111,
+    "invalid_intent_rejection_rate_pct": 92.0,
+    "llm_calls": 78,
+    "llm_call_rate_pct": 65.0,
+    "deterministic_only_cases": 42,
+    "residual_errors": 19,
+    "valid_intent_false_rejections": 13,
+    "invalid_intent_false_acceptances": 6,
+    "wrong_to_correct_vs_original_e3": 51,
+    "correct_to_wrong_vs_original_e3": 4
+  },
+  "observed_e3_v2_failure_mechanisms": {
+    "deterministic_detector_miss": 4,
+    "deterministic_constraint_extraction_miss": 2,
+    "llm_constraint_omission": 3,
+    "llm_reliability_normalization_error": 5,
+    "llm_service_extraction_omission": 2,
+    "source_cir_preservation_mismatch": 2,
+    "source_requirement_resolution_false_rejection": 1
+  },
+  "dataset_policy": {
+    "original_120_case_dataset": "Historical/frozen E3-v2 evaluation set. May be used for retrospective analysis, but not as the sole unbiased evaluation set for E3-v3.",
+    "development_set": "A NEW dataset must be created for E3-v3 development.",
+    "holdout_set": "A separate NEW unseen holdout dataset must be created and frozen before final E3-v3 evaluation.",
+    "development_holdout_overlap": "PROHIBITED",
+    "copying_original_test_intents": "PROHIBITED",
+    "near_duplicate_intents": "PROHIBITED",
+    "manual_case_specific_rules": "PROHIBITED",
+    "final_holdout_inspection_before_freeze": "Dataset construction/audit only; do not tune E3-v3 against observed holdout model outcomes.",
+    "post_holdout_tuning": "PROHIBITED for the registered final evaluation."
+  },
+  "candidate_repairs": [
+    {
+      "repair_id": "R1",
+      "component": "control_attempt_detector",
+      "target_failure": "deterministic_detector_miss",
+      "objective": "Recognize bypass, disabling, ignoring, suppression, and validation/policy-control attempts.",
+      "constraint": "Must be tested against benign mentions of validation, policy, security, and control."
+    },
+    {
+      "repair_id": "R2",
+      "component": "constraint_extractor",
+      "target_failure": "deterministic_constraint_extraction_miss",
+      "objective": "Extract multiple constraints applying to the same field.",
+      "constraint": "Must distinguish compatible ranges from contradictions."
+    },
+    {
+      "repair_id": "R3",
+      "component": "constraint_representation",
+      "target_failure": "source_cir_preservation_mismatch",
+      "objective": "Preserve comparison operators and thresholds explicitly.",
+      "constraint": "Do not weaken source-preservation validation."
+    },
+    {
+      "repair_id": "R4",
+      "component": "semantic_CIR_construction",
+      "target_failure": "llm_constraint_omission",
+      "objective": "Prevent deterministic source constraints from disappearing during CIR construction.",
+      "constraint": "Do not invent unsupported source values."
+    },
+    {
+      "repair_id": "R5",
+      "component": "reliability_normalization",
+      "target_failure": "llm_reliability_normalization_error",
+      "objective": "Canonicalize percentage/probability reliability expressions.",
+      "constraint": "Use tolerance-aware or exact decimal comparison where needed."
+    },
+    {
+      "repair_id": "R6",
+      "component": "service_semantic_extraction",
+      "target_failure": "llm_service_extraction_omission",
+      "objective": "Improve preservation of service semantics across paraphrases.",
+      "constraint": "Avoid over-mapping genuinely ambiguous service descriptions."
+    },
+    {
+      "repair_id": "R7",
+      "component": "qualitative_requirement_resolver",
+      "target_failure": "source_requirement_resolution_false_rejection",
+      "objective": "Handle legitimate qualitative requirements without automatically treating every unresolved phrase as invalid.",
+      "constraint": "Unsupported capabilities must remain rejectable."
+    }
+  ],
+  "registered_metrics": [
+    "overall_accuracy",
+    "balanced_accuracy",
+    "valid_intent_recall",
+    "invalid_intent_rejection_rate",
+    "false_acceptance_count",
+    "false_rejection_count",
+    "llm_call_rate",
+    "deterministic_only_rate",
+    "end_to_end_latency",
+    "failure_mechanism_distribution"
+  ],
+  "final_comparisons": [
+    "E3-v2 vs E3-v3 on identical unseen holdout cases",
+    "paired decision transitions",
+    "category-level performance",
+    "valid-vs-invalid performance",
+    "LLM routing efficiency",
+    "residual failure taxonomy"
+  ],
+  "planned_ablations": [
+    "E3-v3 without enhanced control-attempt detector",
+    "E3-v3 without multi-constraint extraction",
+    "E3-v3 without operator-aware constraint representation",
+    "E3-v3 without deterministic semantic completion",
+    "E3-v3 without reliability normalization repair"
+  ],
+  "integrity_rules": [
+    "Never modify E3-v2 frozen primary results.",
+    "Never overwrite E3-v2 publication artifacts.",
+    "All E3-v3 artifacts must use new filenames/version identifiers.",
+    "Development data and final holdout data must remain separate.",
+    "No case-specific hardcoded rule based on EXP2B IDs.",
+    "No final performance claim may use development-set accuracy as unbiased generalization performance.",
+    "All final holdout results must be preserved before post-hoc failure analysis.",
+    "All derived artifacts must be hashed."
+  ],
+  "frozen_artifact_sha256": {
+    "/content/experiment-1-v2-together/experiment-2b/results/raw/experiment2b_primary_results_240.csv": "1055be8d9a233fa2a1736f9ea20660361157c9690c9b3bb7e03d40e8f49c154d",
+    "/content/experiment-1-v2-together/experiment-2b/data/frozen/experiment2b_intents_120_v1.csv": "63661df64f3e13cb323bc7089b3a14c9f5c85e4df4237643065e3f4896910409",
+    "/content/experiment-1-v2-together/experiment-2b/metrics/experiment2b_e3v2_final_publication_metrics_v1.csv": "ba4544bc5081dfb5acaae3144fbd3b9893022074b21d7ec63a99c8fc0bbf583b",
+    "/content/experiment-1-v2-together/experiment-2b/metrics/experiment2b_e3v2_class_metrics_v1.csv": "6892f95003c349aabc05e4c5e3ae53b659dce4c57e68f092fe8af4cddd460f98",
+    "/content/experiment-1-v2-together/experiment-2b/metrics/experiment2b_e3v2_routing_metrics_v1.csv": "badf6d14529d7ce6aa94bab143fc9ac12a7df33a11318786aef5488d4bf8e6f5",
+    "/content/experiment-1-v2-together/experiment-2b/metrics/experiment2b_e3v2_publication_manifest_v1.json": "c971c5e5f26b37fd933f3839cee0464ef3cdf1fa028856f52a9a577894c17a24",
+    "/content/experiment-1-v2-together/experiment-2b/failure_analysis/experiment2b_e3v2_residual_case_matrix_v1.csv": "0f6ccb54739206d0f77342b9d4d8e95261ac93686c6ab51dce99f5f531717829",
+    "/content/experiment-1-v2-together/experiment-2b/failure_analysis/experiment2b_e3v2_root_cause_repair_matrix_v1.csv": "4272b80cd0451a49f0594931e8d1d1b512703572ceb28f6ff78fee96822f054c",
+    "/content/experiment-1-v2-together/experiment-2b/failure_analysis/experiment2b_e3v2_root_cause_repair_summary_v1.csv": "36bc37694b8f33aab72cf16290b35478a3ed7b3ec84954fd64659f62d0e6e441"
+  }
+}

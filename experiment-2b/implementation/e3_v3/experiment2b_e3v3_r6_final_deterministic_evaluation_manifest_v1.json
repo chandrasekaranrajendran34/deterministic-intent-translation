@@ -1,0 +1,73 @@
+{
+  "accuracy": 1.0,
+  "api_calls": 0,
+  "both_correct": [
+    "E3V3-DEV-116",
+    "E3V3-DEV-117",
+    "E3V3-DEV-118",
+    "E3V3-DEV-119",
+    "E3V3-DEV-120",
+    "E3V3-DEV-121",
+    "E3V3-DEV-122",
+    "E3V3-DEV-123",
+    "E3V3-DEV-124",
+    "E3V3-DEV-125",
+    "E3V3-DEV-127",
+    "E3V3-DEV-128",
+    "E3V3-DEV-129",
+    "E3V3-DEV-130",
+    "E3V3-DEV-131",
+    "E3V3-DEV-132",
+    "E3V3-DEV-133",
+    "E3V3-DEV-134",
+    "E3V3-DEV-135"
+  ],
+  "both_wrong": [],
+  "cases": 20,
+  "conflicts": 0,
+  "correct": 20,
+  "correct_to_wrong": [],
+  "created_utc": "2026-09-29T16:29:57.704886+00:00",
+  "dataset": {
+    "path": "/content/experiment-1-v2-together/experiment-2b/data/frozen/experiment2b_e3v3_development_160_v1.csv",
+    "sha256": "133c68842716f84a703478f7904c8cdd4f10cfdba683957ce23e473e81e7196f"
+  },
+  "development_only": true,
+  "evaluation_id": "e3v3-r6-final-deterministic-family-v1.0",
+  "family_id": "DEV-R6",
+  "final_result": {
+    "path": "/content/experiment-1-v2-together/experiment-2b/implementation/e3_v3/results/development/experiment2b_e3v3_r6_final_deterministic_20_results_v1.csv",
+    "sha256": "f1fda62f21c12d594dbdc7302cea636c722058b0a875849af3b2447e361e0329"
+  },
+  "generalization_claim_allowed": false,
+  "held_out": false,
+  "historical_correct": 19,
+  "historical_result": {
+    "path": "/content/experiment-1-v2-together/experiment-2b/implementation/e3_v3/results/development/experiment2b_e3v3_r6_deterministic_20_results_v1.csv",
+    "sha256": "25df2ab8cf8dd8e695a12f938b478d9a8ba53505299cff040c4a72f5212c4d91"
+  },
+  "implementation_manifest": {
+    "path": "/content/experiment-1-v2-together/experiment-2b/implementation/e3_v3/experiment2b_e3v3_r6_cue_equivalence_implementation_manifest_v1.json",
+    "sha256": "02f407d79e26788224ca69a7976f83edcf443586f690acb0e7952ff47e8b39f5"
+  },
+  "llm_calls": 0,
+  "resolver": {
+    "path": "/content/experiment-1-v2-together/experiment-2b/implementation/e3_v3/src/service_type_resolver_r6_cue_equivalent.py",
+    "sha256": "34d5b5fd02ade1bd44ea13b595e4aecfd7f8746dbd5a62dff17b223c405cb72d"
+  },
+  "selection_rule": "repair_id == \"R6\"",
+  "service_composition": {
+    "URLLC": 7,
+    "eMBB": 7,
+    "mMTC": 6
+  },
+  "status": "DEVELOPMENT_FAMILY_EVALUATION",
+  "unresolved": 0,
+  "validation": {
+    "path": "/content/experiment-1-v2-together/experiment-2b/implementation/e3_v3/results/development/experiment2b_e3v3_r6_cue_equivalence_tests_v1.json",
+    "sha256": "ca804cc9997f2fd794a4fec4bff4c043efc04c3cc9f3780fc3b82223ce4b3f8d"
+  },
+  "wrong_to_correct": [
+    "E3V3-DEV-126"
+  ]
+}

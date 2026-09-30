@@ -1,0 +1,57 @@
+{
+  "step": "24E-D3",
+  "repair_family": "R3_constraint_representation",
+  "dataset_role": "development",
+  "dataset_sha256": "133c68842716f84a703478f7904c8cdd4f10cfdba683957ce23e473e81e7196f",
+  "runner_sha256": "8567344347834622815d915c0ee7fe62486991328d85b283ba8729e7c63d85f7",
+  "total_cases": 20,
+  "correct": 0,
+  "accuracy": 0.0,
+  "execution_exceptions": 0,
+  "llm_invoked_count": 0,
+  "parse_ok_count": null,
+  "subcategory_results": [
+    {
+      "subcategory": "exact_operator",
+      "cases": 4,
+      "correct": 0,
+      "accuracy": 0.0
+    },
+    {
+      "subcategory": "inclusive_operator",
+      "cases": 8,
+      "correct": 0,
+      "accuracy": 0.0
+    },
+    {
+      "subcategory": "strict_operator",
+      "cases": 8,
+      "correct": 0,
+      "accuracy": 0.0
+    }
+  ],
+  "failure_ids": [
+    "E3V3-DEV-056",
+    "E3V3-DEV-057",
+    "E3V3-DEV-058",
+    "E3V3-DEV-059",
+    "E3V3-DEV-060",
+    "E3V3-DEV-061",
+    "E3V3-DEV-062",
+    "E3V3-DEV-063",
+    "E3V3-DEV-064",
+    "E3V3-DEV-065",
+    "E3V3-DEV-066",
+    "E3V3-DEV-067",
+    "E3V3-DEV-068",
+    "E3V3-DEV-069",
+    "E3V3-DEV-070",
+    "E3V3-DEV-071",
+    "E3V3-DEV-072",
+    "E3V3-DEV-073",
+    "E3V3-DEV-074",
+    "E3V3-DEV-075"
+  ],
+  "raw_results_sha256": "afb7355d196ccae607e866c59418037e1666f5d97adf0a091293735827ff0d14",
+  "timestamp_utc": "2026-09-29T10:21:15.845808+00:00"
+}

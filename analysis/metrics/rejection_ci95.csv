@@ -1,0 +1,4 @@
+pipeline,correctly_rejected,invalid_n,rejection_rate,ci95_lower,ci95_upper
+direct,25,25,1.0,0.8628148284692875,1.0
+cir,22,25,0.88,0.6878096927137646,0.9745346033522668
+proposed,25,25,1.0,0.8628148284692875,1.0

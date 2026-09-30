@@ -1,0 +1,52 @@
+{
+  "corpus_id": "e3v3-prior-exposure-corpus-v1.0",
+  "created_at_utc": "2026-09-30T00:30:52.967678+00:00",
+  "purpose": "Canonical prior-exposure corpus for held-out benchmark leakage screening.",
+  "implementation_freeze_sha256": "ff0d39051b4027ab8441e56dd518a6200b99f06cf2eb5faec2ce535b14ad5579",
+  "heldout_specification_sha256": "74ff0d81190d343ba3cf34d8e0184e3b97a8feb19525ebb6df267a7db14c1234",
+  "canonical_source_datasets": [
+    {
+      "name": "experiment1",
+      "path": "/content/experiment-1-v2-together/data/raw/intents_50.csv",
+      "rows": 50,
+      "sha256": "71093b63d60aa9ebc6f9133bf89f92ed9296fcec73e0703d6c4b58ace90f2826"
+    },
+    {
+      "name": "experiment2a",
+      "path": "/content/experiment-1-v2-together/experiment-2/data/frozen/experiment2_intents_200_v1.csv",
+      "rows": 200,
+      "sha256": "96bcb4172dac8e9e499a9d9a4ac21354caf251a7a53ccbd470898fea02711753"
+    },
+    {
+      "name": "experiment2b",
+      "path": "/content/experiment-1-v2-together/experiment-2b/data/frozen/experiment2b_intents_120_v1.csv",
+      "rows": 120,
+      "sha256": "63661df64f3e13cb323bc7089b3a14c9f5c85e4df4237643065e3f4896910409"
+    },
+    {
+      "name": "e3v3_development",
+      "path": "/content/experiment-1-v2-together/experiment-2b/data/frozen/experiment2b_e3v3_development_160_v1.csv",
+      "rows": 160,
+      "sha256": "133c68842716f84a703478f7904c8cdd4f10cfdba683957ce23e473e81e7196f"
+    }
+  ],
+  "raw_exposure_rows": 530,
+  "unique_exact_intents": 490,
+  "exact_duplicate_rows": 40,
+  "unique_normalized_intents": 490,
+  "normalized_duplicate_rows": 40,
+  "normalization": {
+    "lowercase": true,
+    "trim": true,
+    "unicode_dash_normalization": true,
+    "punctuation_removed": true,
+    "whitespace_collapsed": true,
+    "semantic_paraphrase_detection": false
+  },
+  "corpus": {
+    "path": "/content/experiment-1-v2-together/experiment-2b/heldout/prior_exposure/e3v3_prior_exposure_corpus_v1.csv",
+    "rows": 490,
+    "sha256": "d07859dea1d22e7d4eda4c10c9b75ec19329e4ee38df5491b394560cfae1a056"
+  },
+  "scope_note": "The corpus uses canonical benchmark/development datasets rather than duplicated batch, result, analysis, and failure-analysis files."
+}

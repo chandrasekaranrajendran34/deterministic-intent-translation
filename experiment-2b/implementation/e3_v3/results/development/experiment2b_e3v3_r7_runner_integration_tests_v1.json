@@ -1,0 +1,123 @@
+{
+  "step": "26J-E2-R1",
+  "development_only": true,
+  "not_held_out": true,
+  "purpose": "Corrected targeted no-external-LLM integration verification of the R7 runner.",
+  "tests_total": 4,
+  "tests_passed": 4,
+  "tests": [
+    {
+      "name": "unsupported_teleportation_pre_llm_reject",
+      "passed": true,
+      "accepted": false,
+      "expected_accepted": false,
+      "llm_invoked": false,
+      "expected_llm_invoked": false,
+      "rejection_stage": "r7_qualitative_source_gate",
+      "expected_stage": "r7_qualitative_source_gate",
+      "mapping_called": false,
+      "expected_mapping_called": false,
+      "call_cir_count": 0,
+      "parse_llm_result_count": 0,
+      "mapping_count": 0,
+      "special_ok": true,
+      "error_codes": [
+        "UNSUPPORTED_QUALITATIVE_REQUIREMENT"
+      ],
+      "final_service_type": null,
+      "r6_service_type_changed": null,
+      "r6_service_type_conflict": null
+    },
+    {
+      "name": "dev138_r7_repair_end_to_end",
+      "passed": true,
+      "accepted": true,
+      "expected_accepted": true,
+      "llm_invoked": true,
+      "expected_llm_invoked": true,
+      "rejection_stage": "",
+      "expected_stage": "",
+      "mapping_called": true,
+      "expected_mapping_called": true,
+      "call_cir_count": 1,
+      "parse_llm_result_count": 1,
+      "mapping_count": 1,
+      "special_ok": true,
+      "error_codes": [],
+      "final_service_type": "URLLC",
+      "r6_service_type_changed": false,
+      "r6_service_type_conflict": false
+    },
+    {
+      "name": "r6_service_type_fill_regression",
+      "passed": true,
+      "accepted": true,
+      "expected_accepted": true,
+      "llm_invoked": true,
+      "expected_llm_invoked": true,
+      "rejection_stage": "",
+      "expected_stage": "",
+      "mapping_called": true,
+      "expected_mapping_called": true,
+      "call_cir_count": 1,
+      "parse_llm_result_count": 1,
+      "mapping_count": 1,
+      "special_ok": true,
+      "error_codes": [],
+      "final_service_type": "URLLC",
+      "r6_service_type_changed": true,
+      "r6_service_type_conflict": false
+    },
+    {
+      "name": "r6_conflict_still_fail_closed",
+      "passed": true,
+      "accepted": false,
+      "expected_accepted": false,
+      "llm_invoked": true,
+      "expected_llm_invoked": true,
+      "rejection_stage": "r6_service_type_conflict",
+      "expected_stage": "r6_service_type_conflict",
+      "mapping_called": false,
+      "expected_mapping_called": false,
+      "call_cir_count": 1,
+      "parse_llm_result_count": 1,
+      "mapping_count": 0,
+      "special_ok": true,
+      "error_codes": [
+        "R6_SERVICE_TYPE_CONFLICT"
+      ],
+      "final_service_type": "eMBB",
+      "r6_service_type_changed": false,
+      "r6_service_type_conflict": true
+    }
+  ],
+  "external_api_calls": 0,
+  "external_llm_calls": 0,
+  "stubbed_components": [
+    "call_cir",
+    "parse_llm_result",
+    "safe_map_and_compile"
+  ],
+  "real_deterministic_components": [
+    "R7 pre-LLM source boundary",
+    "R4 CIR reconciliation",
+    "R5 reliability normalization",
+    "R6 service-type integration",
+    "R7 post-CIR preservation",
+    "CIR validation"
+  ],
+  "prior_test_run": {
+    "step": "26J-E2",
+    "result": "3/4",
+    "classification": "test_harness_false_negative",
+    "affected_test": "dev138_r7_repair_end_to_end",
+    "diagnosis": "DEV-138 was accepted, invoked the controlled CIR path once, reached mapping once, retained URLLC, produced no errors, and had no R6 service-type conflict. The failed special_ok predicate assumed literal serialized keys post_guard['accepted'] and cir_validation['valid']; the runner uses generic bool_field semantics instead.",
+    "implementation_change_required": false
+  },
+  "correction": "Only the DEV-138 test predicate was corrected. No implementation source was modified.",
+  "runner_modified_during_test": false,
+  "r7_semantics_modified": false,
+  "r7_pre_adapter_modified": false,
+  "r7_post_preservation_modified": false,
+  "preservation_checker_modified": false
+}

@@ -1,0 +1,57 @@
+{
+  "artifact_id": "ieee-core-manuscript-draft-v1.0",
+  "benchmark_changed": false,
+  "claim_boundaries": [
+    "hallucination-resistant, not hallucination-free",
+    "standards-aligned/oriented, not formal conformance",
+    "controlled held-out evidence, not external real-world benchmark",
+    "E1/E2A/E2B/E3-v3 are not a common-test-set learning curve",
+    "E2B is development evidence",
+    "E3-v3 is primary final held-out evidence",
+    "19 held-out failures were not used for post-hoc tuning"
+  ],
+  "created_utc": "2026-09-30T01:49:02.341903+00:00",
+  "experiment_rerun": false,
+  "generated_sections": [
+    "Abstract",
+    "Contributions",
+    "V-A Development Evidence",
+    "V-B Targeted Repair Evidence",
+    "V-C Final E3-v3 Held-Out Evaluation",
+    "V-D Residual Failure Analysis",
+    "VIII Conclusion and Future Work"
+  ],
+  "implementation_changed": false,
+  "labels_changed": false,
+  "model_api_called": false,
+  "new_statistical_test": false,
+  "official_result_changed": false,
+  "primary_result": {
+    "accuracy_percent": 84.17,
+    "correct": 101,
+    "exact_ci95_percent": [
+      76.38,
+      90.19
+    ],
+    "invalid_rejection_percent": 80.65,
+    "n": 120,
+    "rejection_f1_percent": 84.03,
+    "rejection_precision_percent": 87.72,
+    "rejection_recall_percent": 80.65,
+    "valid_acceptance_percent": 87.93
+  },
+  "source_hashes": {
+    "blueprint_manifest": "c8ca2d27586ba88e4c17b22c6087e12735a0f1df37d325b6f8e11a713fb178d3",
+    "blueprint_md": "8d8d2ea1be83985818a0e6c9fd9bca7b042e1e7e9cebdf0cf8a7d050d924ef59",
+    "claims": "788d77cf84f9279314b15c82affc87634e8c6058a0e6b90c5559faed360abbea",
+    "cross_results": "d2c2dca5732f667e54ea4104f7ea2cdd1f0b059f9860af3f5e66c11c0c082d90",
+    "cross_synthesis": "061f0f0517d2d6633aec8a1fb1bb50a52cd28e4c4a265983f1f26df8001f6cf2",
+    "evidence_md": "437931355862496f622eacabe5bdba03b48d23c9410c8c3e8244765ddbf173f0",
+    "structure": "2651418e0a8fcb41f9af41960e57985c5f095ff54cbb29e4ef88b74d068f3537",
+    "visual_map": "8961493da7d97ddba70c963c5cca9fa3a3a303660c9d29b4885de6f2e0cda10a"
+  },
+  "word_counts": {
+    "abstract": 184,
+    "conclusion_future_work": 274
+  }
+}

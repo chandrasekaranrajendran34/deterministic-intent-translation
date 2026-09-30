@@ -1,0 +1,126 @@
+{
+  "allowed_change": "cir.service_type only when source-grounded repair is permitted",
+  "api_calls": 0,
+  "architecture": [
+    "deterministic source-side guard",
+    "LLM to CIR",
+    "R4 source-grounded CIR reconciliation",
+    "R5 source-grounded reliability normalization",
+    "R6 deterministic source-grounded service_type resolution/repair",
+    "source-to-CIR preservation guard",
+    "original CIR validation",
+    "capability/policy mapping and descriptor compilation"
+  ],
+  "conflict_policy": "fail_closed_no_silent_overwrite",
+  "created_utc": "2026-09-29T16:32:50.789393+00:00",
+  "design_id": "e3v3-r6-runner-integration-v1.0",
+  "development_evidence": {
+    "correct_to_wrong": [],
+    "final_correct": 20,
+    "generalization_claim_allowed": false,
+    "held_out": false,
+    "historical_correct": 19,
+    "r6_family_cases": 20,
+    "wrong_to_correct": [
+      "E3V3-DEV-126"
+    ]
+  },
+  "integration_position": {
+    "after": "R5 reliability normalization",
+    "before": "post-guard source-to-CIR preservation"
+  },
+  "llm_calls": 0,
+  "no_source_resolution_policy": "leave_cir_unchanged",
+  "prohibited_changes": [
+    "R6 vocabulary expansion",
+    "R6 semantic rule tuning",
+    "R1-R5 behavior changes",
+    "R4 reconciliation changes",
+    "R5 reliability changes",
+    "LLM prompt changes",
+    "LLM model/configuration changes",
+    "CIR schema changes",
+    "dataset changes",
+    "post-guard changes",
+    "validator changes",
+    "mapping changes",
+    "descriptor changes"
+  ],
+  "provenance": {
+    "dataset": {
+      "path": "/content/experiment-1-v2-together/experiment-2b/data/frozen/experiment2b_e3v3_development_160_v1.csv",
+      "sha256": "133c68842716f84a703478f7904c8cdd4f10cfdba683957ce23e473e81e7196f"
+    },
+    "r6_evaluation_manifest": {
+      "path": "/content/experiment-1-v2-together/experiment-2b/implementation/e3_v3/experiment2b_e3v3_r6_final_deterministic_evaluation_manifest_v1.json",
+      "sha256": "97cbd17dd832d4c0e6d680ada321c451f90601c6e9c8c13886273db7d7675dbf"
+    },
+    "r6_final_results": {
+      "path": "/content/experiment-1-v2-together/experiment-2b/implementation/e3_v3/results/development/experiment2b_e3v3_r6_final_deterministic_20_results_v1.csv",
+      "sha256": "f1fda62f21c12d594dbdc7302cea636c722058b0a875849af3b2447e361e0329"
+    },
+    "r6_module": {
+      "path": "/content/experiment-1-v2-together/experiment-2b/implementation/e3_v3/src/service_type_resolver_r6_cue_equivalent.py",
+      "sha256": "34d5b5fd02ade1bd44ea13b595e4aecfd7f8746dbd5a62dff17b223c405cb72d"
+    },
+    "runner": {
+      "path": "/content/experiment-1-v2-together/experiment-2b/implementation/e3_v3/run_experiment2b_e3v3_r5_dev_v6.py",
+      "sha256": "968cf2eb124023202881da6aaba2b4452ca742eb120660d7e2803b829974ce49"
+    }
+  },
+  "r6_source_of_evidence": "original natural-language intent",
+  "repair_policy": {
+    "rule_1": "Resolve service type deterministically from the original intent using the frozen R6 resolver.",
+    "rule_2": "If R6 resolves exactly one supported service type and CIR service_type is missing, null, empty, unresolved, or not one of the supported canonical service types, set CIR service_type to the R6 result.",
+    "rule_3": "If CIR already contains the same canonical service type as the R6 result, preserve it unchanged.",
+    "rule_4": "If CIR contains a different supported canonical service type from the deterministic R6 result, do not silently overwrite the conflict.",
+    "rule_5": "A deterministic R6/CIR service conflict must remain explicit for rejection or downstream consistency handling rather than being collapsed.",
+    "rule_6": "If R6 returns unresolved/None, R6 must not fabricate or modify service_type.",
+    "rule_7": "R6 must modify only the service_type field. All other CIR fields must remain byte-for-byte/value equivalent at the Python-object level."
+  },
+  "required_integration_tests": [
+    {
+      "case": "missing CIR service + deterministic eMBB source",
+      "expected": "fill eMBB"
+    },
+    {
+      "case": "missing CIR service + deterministic URLLC source",
+      "expected": "fill URLLC"
+    },
+    {
+      "case": "missing CIR service + deterministic mMTC source",
+      "expected": "fill mMTC"
+    },
+    {
+      "case": "CIR service equals deterministic source service",
+      "expected": "preserve unchanged"
+    },
+    {
+      "case": "CIR supported service conflicts with deterministic source",
+      "expected": "flag conflict and do not silently overwrite"
+    },
+    {
+      "case": "R6 unresolved source",
+      "expected": "leave CIR unchanged"
+    },
+    {
+      "case": "R6 repair occurs",
+      "expected": "no non-service_type CIR field changes"
+    }
+  ],
+  "required_runner_observability": [
+    "cir_before_r6",
+    "r6_resolved_service_type",
+    "r6_resolution_evidence",
+    "r6_service_type_changed",
+    "r6_service_type_conflict",
+    "cir_after_r6"
+  ],
+  "scope": "R6 deterministic service_type integration only",
+  "status": "FROZEN_BEFORE_RUNNER_IMPLEMENTATION",
+  "supported_service_types": [
+    "eMBB",
+    "URLLC",
+    "mMTC"
+  ]
+}

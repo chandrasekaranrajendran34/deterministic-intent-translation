@@ -1,0 +1,11 @@
+id,intent,category,subcategory,expected_valid,expected_service,difficulty,linguistic_form,constraint_type,notes
+EXP2-121,Create a quantum communication network slice.,invalid_unsupported_concept,unsupported_semantic_concept,False,,hard,semantic_unsupported,unsupported_concept,
+EXP2-122,Provision a teleportation-based network service.,invalid_unsupported_concept,unsupported_semantic_concept,False,,hard,semantic_unsupported,unsupported_concept,
+EXP2-123,Create a holographic quantum-control slice type.,invalid_unsupported_concept,unsupported_semantic_concept,False,,hard,semantic_unsupported,unsupported_concept,
+EXP2-124,Set up a neural-telepathy communication slice.,invalid_unsupported_concept,unsupported_semantic_concept,False,,hard,semantic_unsupported,unsupported_concept,
+EXP2-125,Provide an interplanetary instant-communication slice.,invalid_unsupported_concept,unsupported_semantic_concept,False,,hard,semantic_unsupported,unsupported_concept,
+EXP2-126,Create a zero-time communication network service.,invalid_unsupported_concept,unsupported_semantic_concept,False,,hard,semantic_unsupported,unsupported_concept,
+EXP2-127,Provision a quantum-entanglement slice for mobile users.,invalid_unsupported_concept,unsupported_semantic_concept,False,,hard,semantic_unsupported,unsupported_concept,
+EXP2-128,Create an imaginary 7G hyperspace slice.,invalid_unsupported_concept,unsupported_semantic_concept,False,,hard,semantic_unsupported,unsupported_concept,
+EXP2-129,Set up a teleportation QoS network service.,invalid_unsupported_concept,unsupported_semantic_concept,False,,hard,semantic_unsupported,unsupported_concept,
+EXP2-130,Provide a time-travel communication slice.,invalid_unsupported_concept,unsupported_semantic_concept,False,,hard,semantic_unsupported,unsupported_concept,

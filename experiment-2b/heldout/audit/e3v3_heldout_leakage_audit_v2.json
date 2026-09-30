@@ -1,0 +1,34 @@
+{
+  "audit_id": "e3v3-heldout-leakage-audit-v2.0",
+  "created_at_utc": "2026-09-30T00:36:41.606423+00:00",
+  "candidate_sha256": "84576e7d99a2721e61ded5a14bdafeb96707b068397243bbed32aa735496d4de",
+  "candidate_manifest_sha256": "458a39db0efab8bf021a4dc08f495a7c2f63b9349868d01ab23a6af9d791813d",
+  "remediation_log_sha256": "3a9d54feab5ff8d9ceee388d1c41fd520e587f533acfb8c98f734ca4d6547043",
+  "prior_exposure_sha256": "d07859dea1d22e7d4eda4c10c9b75ec19329e4ee38df5491b394560cfae1a056",
+  "benchmark_specification_sha256": "74ff0d81190d343ba3cf34d8e0184e3b97a8feb19525ebb6df267a7db14c1234",
+  "implementation_freeze_sha256": "ff0d39051b4027ab8441e56dd518a6200b99f06cf2eb5faec2ce535b14ad5579",
+  "thresholds": {
+    "automatic_fail_jaccard_gte": 0.8,
+    "manual_review_jaccard_gte": 0.7,
+    "manual_review_jaccard_lt": 0.8
+  },
+  "exact_prior_duplicates": 0,
+  "normalized_prior_duplicates": 0,
+  "candidate_to_prior": {
+    "pass_lt_0_70": 120,
+    "review_0_70_to_lt_0_80": 0,
+    "fail_gte_0_80": 0,
+    "maximum_jaccard": 0.6666666666666666
+  },
+  "within_candidate": {
+    "review_pairs_0_70_to_lt_0_80": 0,
+    "fail_pairs_gte_0_80": 0
+  },
+  "structural_pass": true,
+  "automatic_prior_leakage_pass": true,
+  "full_lexical_clearance": true,
+  "model_predictions_seen": false,
+  "implementation_modified": false,
+  "final_freeze_allowed": true,
+  "methodological_note": "Lexical clearance does not prove semantic independence. It establishes that the frozen predefined exact/normalized/Jaccard screening criteria were satisfied."
+}

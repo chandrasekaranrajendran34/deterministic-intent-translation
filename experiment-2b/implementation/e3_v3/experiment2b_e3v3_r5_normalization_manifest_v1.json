@@ -1,0 +1,38 @@
+{
+  "api_calls": 0,
+  "architecture_target": "R4 reconciliation -> R5 reliability normalization -> preservation -> CIR validation",
+  "created_utc": "2026-09-29T14:40:36.707078+00:00",
+  "design": {
+    "path": "/content/experiment-1-v2-together/experiment-2b/implementation/e3_v3/experiment2b_e3v3_r5_design_v1.json",
+    "sha256": "7b377b8e44864a406ce33911b49cb9e3f37def3dc1b996062513ff6d201aa4c3"
+  },
+  "diagnostic_corrections": [
+    {
+      "algorithm_modified": false,
+      "type": "dynamic_import_harness"
+    },
+    {
+      "algorithm_modified": false,
+      "new": "math.isclose(abs_tol=1e-12, rel_tol=0)",
+      "old": "exact equality",
+      "type": "floating_point_test_comparator"
+    }
+  ],
+  "implementation": {
+    "path": "/content/experiment-1-v2-together/experiment-2b/implementation/e3_v3/src/reliability_normalization.py",
+    "sha256": "43fe74225bb3c57cd145421296a91c52fb631e4f0786e9e5acbacde82b190830"
+  },
+  "llm_calls": 0,
+  "manifest_id": "e3v3-r5-reliability-normalization-implementation-v1.0",
+  "repair_id": "R5",
+  "runner_integrated": false,
+  "status": "IMPLEMENTED_ISOLATED_NOT_YET_RUNNER_INTEGRATED",
+  "unit_tests": {
+    "failed": 0,
+    "float_abs_tolerance": 1e-12,
+    "passed": 20,
+    "path": "/content/experiment-1-v2-together/experiment-2b/implementation/e3_v3/results/development/experiment2b_e3v3_r5_reliability_unit_tests_v1.json",
+    "sha256": "d556b6ae106102f87b0b7b9e2dd69dba9d0356e029547228a365fc66bba84e7d",
+    "total": 20
+  }
+}

@@ -1,0 +1,112 @@
+{
+  "step": "25B",
+  "repair_id": "R4",
+  "repair_family": "semantic_CIR_construction",
+  "status": "REGISTERED_BEFORE_IMPLEMENTATION",
+  "design_name": "deterministic_source_grounded_CIR_reconciliation",
+  "problem_statement": "The probabilistic semantic extraction layer can omit explicit source constraints from an otherwise parseable canonical CIR. R3 correctly rejects those omissions, but R3 must not invent missing CIR semantics.",
+  "development_evidence": {
+    "frozen_dev_r4_cases": 20,
+    "dev_r4_characteristics": {
+      "expected_valid": 20,
+      "multi_field": 20,
+      "two_constraint_compound": 10,
+      "three_or_more_constraint_compound": 10
+    },
+    "r3_transferred_cases": 5,
+    "r3_transferred_failure_class": "llm_cir_constraint_omission",
+    "overlap_between_dev_r4_and_transferred": 0
+  },
+  "architectural_observation": {
+    "current_cir_generation": "raw intent -> shared call_json(mode='cir') -> LLM canonical CIR",
+    "current_prompt_location": "/content/experiment-1-v2-together/src/llm/together_adapter.py",
+    "current_runner": "/content/experiment-1-v2-together/experiment-2b/implementation/e3_v3/run_experiment2b_e3v3_dev_v1.py",
+    "current_post_llm_guard": "R3 source-to-CIR preservation",
+    "shared_prompt_modified_by_r4": false
+  },
+  "registered_repair": {
+    "name": "source_grounded_CIR_reconciliation",
+    "placement": "after successful LLM CIR parsing and before R3 source-to-CIR preservation",
+    "inputs": [
+      "original user intent",
+      "deterministically extracted SourceIntent",
+      "parsed seven-field LLM CIR"
+    ],
+    "output": "seven-field canonical CIR",
+    "algorithm": [
+      "Start from a copy of the successfully parsed LLM CIR.",
+      "Read explicit numeric constraints from the deterministic SourceIntent.",
+      "Group source constraints by canonical CIR field.",
+      "For a field whose LLM CIR value is already non-null, do not overwrite it.",
+      "For a field whose LLM CIR value is null/missing, fill it only when the source representation provides one unambiguous threshold value for that field.",
+      "If source constraints for the same field contain multiple distinct threshold values, do not reconcile that field; leave it for deterministic consistency/preservation rejection.",
+      "Preserve operator identity outside canonical CIR through the already-frozen R3 source-bound sidecar.",
+      "Return only the canonical seven CIR fields."
+    ]
+  },
+  "eligible_fields": [
+    "latency_ms",
+    "bandwidth_mbps",
+    "reliability",
+    "device_count"
+  ],
+  "canonical_cir_fields": [
+    "service_type",
+    "latency_ms",
+    "bandwidth_mbps",
+    "reliability",
+    "device_count",
+    "coverage",
+    "objective"
+  ],
+  "safety_properties": {
+    "overwrite_non_null_llm_value": false,
+    "invent_numeric_value": false,
+    "case_id_specific_rules": false,
+    "benchmark_answer_lookup": false,
+    "modify_canonical_schema": false,
+    "modify_r3_operator_sidecar": false,
+    "weaken_r3_preservation": false,
+    "resolve_conflicting_source_constraints": false,
+    "modify_shared_llm_prompt": false,
+    "use_final_holdout": false
+  },
+  "conflict_policy": "fail closed: if deterministic source constraints for the same CIR field imply multiple distinct threshold values, R4 performs no fill for that field",
+  "non_null_llm_conflict_policy": "R4 never overwrites a non-null LLM value. Any disagreement remains observable and is handled by downstream preservation/validation.",
+  "operator_policy": "R4 copies only the deterministic threshold scalar into the canonical CIR. Operator identity remains exclusively in the frozen R3 source-bound sidecar.",
+  "coverage_policy": "R4-v1 is restricted to explicit numeric source constraints. Qualitative requirement resolution remains assigned to R7.",
+  "service_policy": "R4-v1 does not repair service_type extraction. Service semantic extraction remains assigned to R6.",
+  "reliability_policy": "R4 may reconcile an already normalized deterministic reliability threshold, but reliability normalization behavior itself remains assigned to R5.",
+  "evaluation_plan": {
+    "phase_1": "Implement reconciliation as an isolated E3-v3 module without modifying frozen R1/R2/R3 components.",
+    "phase_2": "Run deterministic positive/negative unit tests.",
+    "phase_3": "Verify R1/R2/R3 regression preservation.",
+    "phase_4": "Run real LLM end-to-end evaluation on frozen DEV-R4.",
+    "phase_5": "Run failure taxonomy before deciding whether R4 requires another general revision."
+  },
+  "success_criteria": {
+    "no_regression_closed_R1_R2_R3": true,
+    "canonical_schema_unchanged": true,
+    "R4_missing_explicit_constraints_recoverable": true,
+    "non_null_llm_values_never_overwritten": true,
+    "ambiguous_same_field_thresholds_not_filled": true,
+    "zero_case_specific_rules": true
+  },
+  "protected_component_hashes": {
+    "source_analyzer.py": "71a6f00172149f66250b3c17386eea98b18008eb65b097c327db705e94068dc8",
+    "constraint_semantics.py": "91742e13fce9683bd7ae36d771ef178ea5f40fc417ff0bab751c1c35d53185bd",
+    "preservation_check.py": "7fdc76ee4e24572c0dbef13b66290b0eb28ba0036a130f102dbd41b77834fe52",
+    "e3v2_guard.py": "b01a665e8d295d4d36218668a1f84f64cf29226b76edb84789e2249d1ed5dd55",
+    "development_runner": "8567344347834622815d915c0ee7fe62486991328d85b283ba8729e7c63d85f7",
+    "shared_together_adapter.py": "b11b08277578cdfd366af4e2e96862d601d7f08305dddd2c04c23e0ebc7506b3",
+    "schema.py": "f26e771cc7dab2288a78187fe407282f88acc69f9c6fec1f1e781e1a81d5ab34",
+    "validator.py": "c9e9daad54b5d31a6e4348aea168384eb841b0050fe501a633528df3770b6cb2"
+  },
+  "evidence_hashes": {
+    "frozen_development_dataset": "133c68842716f84a703478f7904c8cdd4f10cfdba683957ce23e473e81e7196f",
+    "R3_closure_manifest": "91500ae9531fe8650b0fbcc10e130ce190677ea6ae5f2a63ec2e494d9c16644f",
+    "R4_architecture_inspection": "ff0cc567492e6212b6a760f29f0c27867656b7a48d555f3bba6f104f11fb7808",
+    "R3_to_R4_failure_taxonomy": "b1f9e528f885cdc17c319efee9faa1bc23e73b230d1eb8f7c74284201173f499"
+  },
+  "timestamp_utc": "2026-09-29T11:03:43.006875+00:00"
+}

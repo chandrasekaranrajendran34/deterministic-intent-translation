@@ -1,0 +1,13 @@
+Artifact,Purpose
+Table I,Experimental configuration
+Table II,Primary pipeline performance
+Table III,Exact 95% confidence intervals
+Table IV,Invalid-category rejection
+Table V,Paired statistical tests
+Table VI,E2/E3 unsupported-input case study
+Table VII,Deterministic microbenchmark
+Fig. 1,Confusion matrices
+Fig. 2,Decision performance
+Fig. 3,Category rejection
+Fig. 4,Latency distribution
+Fig. 5,Deterministic processing cost

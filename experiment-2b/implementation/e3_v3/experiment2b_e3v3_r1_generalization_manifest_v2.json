@@ -1,0 +1,11 @@
+{
+  "repair": "R1",
+  "version": "development_v2",
+  "source_sha256": "3fb06df345ad6ead4cc88f877f09971a035f434d99abb01a286b4d798fffc56f",
+  "parent_sha256": "b62a1fb0ebfd3d2f4bcf16964dc6fa626c8b8939e7ac4aee5c10eed945bb9e04",
+  "development_refinement": true,
+  "case_specific_ids_in_implementation": false,
+  "e3v2_modified": false,
+  "frozen_dataset_modified": false,
+  "api_calls": 0
+}

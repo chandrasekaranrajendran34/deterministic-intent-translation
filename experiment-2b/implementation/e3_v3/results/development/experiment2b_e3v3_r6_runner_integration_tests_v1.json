@@ -1,0 +1,216 @@
+{
+  "step": "25M-12F",
+  "purpose": "corrected_targeted_no_llm_r6_runner_validation",
+  "runner": "/content/experiment-1-v2-together/experiment-2b/implementation/e3_v3/run_experiment2b_e3v3_r6_dev_v1.py",
+  "runner_sha256": "8d1f08d4442cf26983696a0db94d8006a7efe28dd35dbb186f3861c46bf01439",
+  "dataset": "/content/experiment-1-v2-together/experiment-2b/data/frozen/experiment2b_e3v3_development_160_v1.csv",
+  "dataset_sha256": "133c68842716f84a703478f7904c8cdd4f10cfdba683957ce23e473e81e7196f",
+  "method": {
+    "actual_runner": "run_e3_v3",
+    "stubbed_boundary": "call_cir only",
+    "external_api_calls": 0,
+    "external_llm_calls": 0,
+    "candidate_selection": "frozen development intents verified to pass pre-guard before test construction"
+  },
+  "tests_total": 4,
+  "tests_passed": 4,
+  "results": [
+    {
+      "name": "r6_source_grounded_fill_urllc",
+      "dataset_id": "E3V3-DEV-124",
+      "intent": "Set up connectivity for time-critical dependable control traffic.",
+      "input_cir": {
+        "service_type": null,
+        "latency_ms": 5,
+        "bandwidth_mbps": null,
+        "reliability": 0.9999,
+        "device_count": null,
+        "coverage": null,
+        "objective": "dependable control traffic"
+      },
+      "expected": {
+        "resolved": "URLLC",
+        "service_after": "URLLC",
+        "changed": true,
+        "conflict": false,
+        "action": "source_grounded_fill",
+        "r6_rejection": false
+      },
+      "actual": {
+        "accepted": true,
+        "rejection_stage": "",
+        "error_codes": [],
+        "resolved": "URLLC",
+        "service_after": "URLLC",
+        "changed": true,
+        "conflict": false,
+        "action": "source_grounded_fill",
+        "stub_calls": 1,
+        "mapping_calls": 1,
+        "post_guard_present": true,
+        "validation_present": true,
+        "descriptor_present": true
+      },
+      "checks": {
+        "stub_called_once": true,
+        "resolved_service": true,
+        "service_after_r6": true,
+        "changed_flag": true,
+        "conflict_flag": true,
+        "action": true,
+        "not_rejected_at_r6": true,
+        "post_guard_reached": true
+      },
+      "passed": true
+    },
+    {
+      "name": "r6_already_consistent_mmtc",
+      "dataset_id": "E3V3-DEV-130",
+      "intent": "Provide connectivity for a very large population of low-rate devices.",
+      "input_cir": {
+        "service_type": "mMTC",
+        "latency_ms": null,
+        "bandwidth_mbps": null,
+        "reliability": null,
+        "device_count": 500000,
+        "coverage": null,
+        "objective": "low-rate device connectivity"
+      },
+      "expected": {
+        "resolved": "mMTC",
+        "service_after": "mMTC",
+        "changed": false,
+        "conflict": false,
+        "action": "already_consistent",
+        "r6_rejection": false
+      },
+      "actual": {
+        "accepted": true,
+        "rejection_stage": "",
+        "error_codes": [],
+        "resolved": "mMTC",
+        "service_after": "mMTC",
+        "changed": false,
+        "conflict": false,
+        "action": "already_consistent",
+        "stub_calls": 1,
+        "mapping_calls": 1,
+        "post_guard_present": true,
+        "validation_present": true,
+        "descriptor_present": true
+      },
+      "checks": {
+        "stub_called_once": true,
+        "resolved_service": true,
+        "service_after_r6": true,
+        "changed_flag": true,
+        "conflict_flag": true,
+        "action": true,
+        "not_rejected_at_r6": true,
+        "post_guard_reached": true
+      },
+      "passed": true
+    },
+    {
+      "name": "r6_unresolved_no_change",
+      "dataset_id": "E3V3-DEV-152",
+      "intent": "Set up latency-sensitive reliable communication with delay below 6 ms and reliability above 99.9%.",
+      "input_cir": {
+        "service_type": "URLLC",
+        "latency_ms": 5,
+        "bandwidth_mbps": null,
+        "reliability": 0.9995,
+        "device_count": null,
+        "coverage": null,
+        "objective": "reliable communication"
+      },
+      "expected": {
+        "resolved": null,
+        "service_after": "URLLC",
+        "changed": false,
+        "conflict": false,
+        "action": "unresolved_no_change",
+        "r6_rejection": false
+      },
+      "actual": {
+        "accepted": false,
+        "rejection_stage": "preservation",
+        "error_codes": [
+          "SOURCE_CONSTRAINT_NOT_PRESERVED"
+        ],
+        "resolved": null,
+        "service_after": "URLLC",
+        "changed": false,
+        "conflict": false,
+        "action": "unresolved_no_change",
+        "stub_calls": 1,
+        "mapping_calls": 0,
+        "post_guard_present": true,
+        "validation_present": false,
+        "descriptor_present": false
+      },
+      "checks": {
+        "stub_called_once": true,
+        "resolved_service": true,
+        "service_after_r6": true,
+        "changed_flag": true,
+        "conflict_flag": true,
+        "action": true,
+        "not_rejected_at_r6": true,
+        "post_guard_reached": true
+      },
+      "passed": true
+    },
+    {
+      "name": "r6_supported_service_conflict",
+      "dataset_id": "E3V3-DEV-124",
+      "intent": "Set up connectivity for time-critical dependable control traffic.",
+      "input_cir": {
+        "service_type": "eMBB",
+        "latency_ms": 5,
+        "bandwidth_mbps": null,
+        "reliability": 0.9999,
+        "device_count": null,
+        "coverage": null,
+        "objective": "dependable control traffic"
+      },
+      "expected": {
+        "resolved": "URLLC",
+        "service_after": "eMBB",
+        "changed": false,
+        "conflict": true,
+        "action": "supported_service_conflict",
+        "r6_rejection": true
+      },
+      "actual": {
+        "accepted": false,
+        "rejection_stage": "r6_service_type_conflict",
+        "error_codes": [
+          "R6_SERVICE_TYPE_CONFLICT"
+        ],
+        "resolved": "URLLC",
+        "service_after": "eMBB",
+        "changed": false,
+        "conflict": true,
+        "action": "supported_service_conflict",
+        "stub_calls": 1,
+        "mapping_calls": 0,
+        "post_guard_present": false,
+        "validation_present": false,
+        "descriptor_present": false
+      },
+      "checks": {
+        "stub_called_once": true,
+        "resolved_service": true,
+        "service_after_r6": true,
+        "changed_flag": true,
+        "conflict_flag": true,
+        "action": true,
+        "fail_closed_at_r6": true,
+        "mapping_not_reached": true,
+        "post_guard_not_reached": true
+      },
+      "passed": true
+    }
+  ]
+}

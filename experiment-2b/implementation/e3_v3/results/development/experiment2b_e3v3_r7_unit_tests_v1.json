@@ -1,0 +1,934 @@
+{
+  "step": "26C-R1",
+  "component": "R7 isolated qualitative requirement resolver",
+  "design_sha256": "5ff6da96beca8e2aadb336c327c2963556338c37d682e3bb786b1d599ac8f707",
+  "failed_implementation": {
+    "archived_path": "/content/experiment-1-v2-together/experiment-2b/implementation/e3_v3/src/qualitative_requirement_resolver_r7_failed_26c.py",
+    "sha256": "b74ae1a52ed1d88eb6dae9dcfdb334454783b0c1f6a7a97cad4fa01d023ba887",
+    "observed_result": "26/27",
+    "failure": "must not require <unsupported phrase> was not recognized as negated"
+  },
+  "repair": {
+    "scope": "minimal deterministic negation-scope extension",
+    "semantic_signatures_changed": false,
+    "supported_capability_mapping_changed": false,
+    "unsupported_classes_changed": false,
+    "runner_changed": false
+  },
+  "module": "/content/experiment-1-v2-together/experiment-2b/implementation/e3_v3/src/qualitative_requirement_resolver_r7.py",
+  "module_sha256": "7a2060cfa8a747a7cf1bbc5840854ff499e1b2c02e818483510e1a0168cf8579",
+  "tests_total": 27,
+  "tests_passed": 27,
+  "properties": {
+    "deterministic": true,
+    "closed_world": true,
+    "no_numeric_invention": true,
+    "no_service_type_invention": true,
+    "input_not_mutated": true,
+    "external_api_calls": 0,
+    "external_llm_calls": 0
+  },
+  "results": [
+    {
+      "name": "supported_high_throughput",
+      "intent": "Provision eMBB connectivity with high throughput.",
+      "expected_valid": true,
+      "expected_supported": [
+        "bandwidth_mbps"
+      ],
+      "expected_unsupported": [],
+      "actual": {
+        "supported_qualitative_matches": [
+          {
+            "source_text": "high throughput",
+            "normalized": "bandwidth_mbps",
+            "status": "supported"
+          }
+        ],
+        "unsupported_qualitative_matches": [],
+        "normalized_requirements": [
+          {
+            "source_text": "high throughput",
+            "normalized": "bandwidth_mbps",
+            "status": "supported"
+          }
+        ],
+        "qualitative_valid": true,
+        "error_codes": []
+      },
+      "checks": {
+        "valid": true,
+        "supported": true,
+        "unsupported": true,
+        "deterministic": true,
+        "input_unchanged": true
+      },
+      "passed": true
+    },
+    {
+      "name": "supported_bandwidth_intensive_hyphen",
+      "intent": "Configure eMBB for bandwidth-intensive traffic.",
+      "expected_valid": true,
+      "expected_supported": [
+        "bandwidth_mbps"
+      ],
+      "expected_unsupported": [],
+      "actual": {
+        "supported_qualitative_matches": [
+          {
+            "source_text": "bandwidth intensive",
+            "normalized": "bandwidth_mbps",
+            "status": "supported"
+          }
+        ],
+        "unsupported_qualitative_matches": [],
+        "normalized_requirements": [
+          {
+            "source_text": "bandwidth intensive",
+            "normalized": "bandwidth_mbps",
+            "status": "supported"
+          }
+        ],
+        "qualitative_valid": true,
+        "error_codes": []
+      },
+      "checks": {
+        "valid": true,
+        "supported": true,
+        "unsupported": true,
+        "deterministic": true,
+        "input_unchanged": true
+      },
+      "passed": true
+    },
+    {
+      "name": "supported_rapid_response",
+      "intent": "Applications need rapid response.",
+      "expected_valid": true,
+      "expected_supported": [
+        "latency_ms"
+      ],
+      "expected_unsupported": [],
+      "actual": {
+        "supported_qualitative_matches": [
+          {
+            "source_text": "rapid response",
+            "normalized": "latency_ms",
+            "status": "supported"
+          }
+        ],
+        "unsupported_qualitative_matches": [],
+        "normalized_requirements": [
+          {
+            "source_text": "rapid response",
+            "normalized": "latency_ms",
+            "status": "supported"
+          }
+        ],
+        "qualitative_valid": true,
+        "error_codes": []
+      },
+      "checks": {
+        "valid": true,
+        "supported": true,
+        "unsupported": true,
+        "deterministic": true,
+        "input_unchanged": true
+      },
+      "passed": true
+    },
+    {
+      "name": "supported_minimal_delay",
+      "intent": "Applications need minimal communication delay.",
+      "expected_valid": true,
+      "expected_supported": [
+        "latency_ms"
+      ],
+      "expected_unsupported": [],
+      "actual": {
+        "supported_qualitative_matches": [
+          {
+            "source_text": "minimal communication delay",
+            "normalized": "latency_ms",
+            "status": "supported"
+          }
+        ],
+        "unsupported_qualitative_matches": [],
+        "normalized_requirements": [
+          {
+            "source_text": "minimal communication delay",
+            "normalized": "latency_ms",
+            "status": "supported"
+          }
+        ],
+        "qualitative_valid": true,
+        "error_codes": []
+      },
+      "checks": {
+        "valid": true,
+        "supported": true,
+        "unsupported": true,
+        "deterministic": true,
+        "input_unchanged": true
+      },
+      "passed": true
+    },
+    {
+      "name": "supported_latency_sensitive",
+      "intent": "Deploy latency-sensitive communication.",
+      "expected_valid": true,
+      "expected_supported": [
+        "latency_ms"
+      ],
+      "expected_unsupported": [],
+      "actual": {
+        "supported_qualitative_matches": [
+          {
+            "source_text": "latency sensitive",
+            "normalized": "latency_ms",
+            "status": "supported"
+          }
+        ],
+        "unsupported_qualitative_matches": [],
+        "normalized_requirements": [
+          {
+            "source_text": "latency sensitive",
+            "normalized": "latency_ms",
+            "status": "supported"
+          }
+        ],
+        "qualitative_valid": true,
+        "error_codes": []
+      },
+      "checks": {
+        "valid": true,
+        "supported": true,
+        "unsupported": true,
+        "deterministic": true,
+        "input_unchanged": true
+      },
+      "passed": true
+    },
+    {
+      "name": "supported_reliable_communication",
+      "intent": "Configure connectivity requiring reliable communication.",
+      "expected_valid": true,
+      "expected_supported": [
+        "reliability"
+      ],
+      "expected_unsupported": [],
+      "actual": {
+        "supported_qualitative_matches": [
+          {
+            "source_text": "reliable communication",
+            "normalized": "reliability",
+            "status": "supported"
+          }
+        ],
+        "unsupported_qualitative_matches": [],
+        "normalized_requirements": [
+          {
+            "source_text": "reliable communication",
+            "normalized": "reliability",
+            "status": "supported"
+          }
+        ],
+        "qualitative_valid": true,
+        "error_codes": []
+      },
+      "checks": {
+        "valid": true,
+        "supported": true,
+        "unsupported": true,
+        "deterministic": true,
+        "input_unchanged": true
+      },
+      "passed": true
+    },
+    {
+      "name": "supported_dense_devices",
+      "intent": "Deploy service for dense device connectivity.",
+      "expected_valid": true,
+      "expected_supported": [
+        "device_count"
+      ],
+      "expected_unsupported": [],
+      "actual": {
+        "supported_qualitative_matches": [
+          {
+            "source_text": "dense device connectivity",
+            "normalized": "device_count",
+            "status": "supported"
+          }
+        ],
+        "unsupported_qualitative_matches": [],
+        "normalized_requirements": [
+          {
+            "source_text": "dense device connectivity",
+            "normalized": "device_count",
+            "status": "supported"
+          }
+        ],
+        "qualitative_valid": true,
+        "error_codes": []
+      },
+      "checks": {
+        "valid": true,
+        "supported": true,
+        "unsupported": true,
+        "deterministic": true,
+        "input_unchanged": true
+      },
+      "passed": true
+    },
+    {
+      "name": "supported_large_population",
+      "intent": "Create connectivity for large device populations.",
+      "expected_valid": true,
+      "expected_supported": [
+        "device_count"
+      ],
+      "expected_unsupported": [],
+      "actual": {
+        "supported_qualitative_matches": [
+          {
+            "source_text": "large device populations",
+            "normalized": "device_count",
+            "status": "supported"
+          }
+        ],
+        "unsupported_qualitative_matches": [],
+        "normalized_requirements": [
+          {
+            "source_text": "large device populations",
+            "normalized": "device_count",
+            "status": "supported"
+          }
+        ],
+        "qualitative_valid": true,
+        "error_codes": []
+      },
+      "checks": {
+        "valid": true,
+        "supported": true,
+        "unsupported": true,
+        "deterministic": true,
+        "input_unchanged": true
+      },
+      "passed": true
+    },
+    {
+      "name": "supported_broad_coverage",
+      "intent": "Provision service with broad coverage.",
+      "expected_valid": true,
+      "expected_supported": [
+        "coverage"
+      ],
+      "expected_unsupported": [],
+      "actual": {
+        "supported_qualitative_matches": [
+          {
+            "source_text": "broad coverage",
+            "normalized": "coverage",
+            "status": "supported"
+          }
+        ],
+        "unsupported_qualitative_matches": [],
+        "normalized_requirements": [
+          {
+            "source_text": "broad coverage",
+            "normalized": "coverage",
+            "status": "supported"
+          }
+        ],
+        "qualitative_valid": true,
+        "error_codes": []
+      },
+      "checks": {
+        "valid": true,
+        "supported": true,
+        "unsupported": true,
+        "deterministic": true,
+        "input_unchanged": true
+      },
+      "passed": true
+    },
+    {
+      "name": "reject_teleportation",
+      "intent": "Provision eMBB with guaranteed teleportation support.",
+      "expected_valid": false,
+      "expected_supported": [],
+      "expected_unsupported": [
+        "teleportation"
+      ],
+      "actual": {
+        "supported_qualitative_matches": [],
+        "unsupported_qualitative_matches": [
+          {
+            "source_text": "teleportation",
+            "class": "teleportation",
+            "reason": "unsupported capability",
+            "status": "unsupported"
+          }
+        ],
+        "normalized_requirements": [],
+        "qualitative_valid": false,
+        "error_codes": [
+          {
+            "code": "UNSUPPORTED_QUALITATIVE_REQUIREMENT",
+            "message": "Source qualitative requirement is outside the frozen experimental capability profile.",
+            "source_text": "teleportation",
+            "class": "teleportation",
+            "reason": "unsupported capability"
+          }
+        ]
+      },
+      "checks": {
+        "valid": true,
+        "supported": true,
+        "unsupported": true,
+        "deterministic": true,
+        "input_unchanged": true
+      },
+      "passed": true
+    },
+    {
+      "name": "reject_unlimited_range",
+      "intent": "Create URLLC service with unlimited physical range.",
+      "expected_valid": false,
+      "expected_supported": [],
+      "expected_unsupported": [
+        "unbounded_physical_range"
+      ],
+      "actual": {
+        "supported_qualitative_matches": [],
+        "unsupported_qualitative_matches": [
+          {
+            "source_text": "unlimited physical range",
+            "class": "unbounded_physical_range",
+            "reason": "unbounded physical capability",
+            "status": "unsupported"
+          }
+        ],
+        "normalized_requirements": [],
+        "qualitative_valid": false,
+        "error_codes": [
+          {
+            "code": "UNSUPPORTED_QUALITATIVE_REQUIREMENT",
+            "message": "Source qualitative requirement is outside the frozen experimental capability profile.",
+            "source_text": "unlimited physical range",
+            "class": "unbounded_physical_range",
+            "reason": "unbounded physical capability"
+          }
+        ]
+      },
+      "checks": {
+        "valid": true,
+        "supported": true,
+        "unsupported": true,
+        "deterministic": true,
+        "input_unchanged": true
+      },
+      "passed": true
+    },
+    {
+      "name": "reject_zero_energy_forever",
+      "intent": "Configure mMTC connectivity with zero-energy operation forever.",
+      "expected_valid": false,
+      "expected_supported": [],
+      "expected_unsupported": [
+        "perpetual_zero_energy_operation"
+      ],
+      "actual": {
+        "supported_qualitative_matches": [],
+        "unsupported_qualitative_matches": [
+          {
+            "source_text": "zero energy operation forever",
+            "class": "perpetual_zero_energy_operation",
+            "reason": "unsupported perpetual zero-energy requirement",
+            "status": "unsupported"
+          }
+        ],
+        "normalized_requirements": [],
+        "qualitative_valid": false,
+        "error_codes": [
+          {
+            "code": "UNSUPPORTED_QUALITATIVE_REQUIREMENT",
+            "message": "Source qualitative requirement is outside the frozen experimental capability profile.",
+            "source_text": "zero energy operation forever",
+            "class": "perpetual_zero_energy_operation",
+            "reason": "unsupported perpetual zero-energy requirement"
+          }
+        ]
+      },
+      "checks": {
+        "valid": true,
+        "supported": true,
+        "unsupported": true,
+        "deterministic": true,
+        "input_unchanged": true
+      },
+      "passed": true
+    },
+    {
+      "name": "reject_infinite_bandwidth",
+      "intent": "Deploy eMBB with guaranteed infinite bandwidth.",
+      "expected_valid": false,
+      "expected_supported": [],
+      "expected_unsupported": [
+        "unbounded_bandwidth"
+      ],
+      "actual": {
+        "supported_qualitative_matches": [],
+        "unsupported_qualitative_matches": [
+          {
+            "source_text": "infinite bandwidth",
+            "class": "unbounded_bandwidth",
+            "reason": "unbounded resource requirement",
+            "status": "unsupported"
+          }
+        ],
+        "normalized_requirements": [],
+        "qualitative_valid": false,
+        "error_codes": [
+          {
+            "code": "UNSUPPORTED_QUALITATIVE_REQUIREMENT",
+            "message": "Source qualitative requirement is outside the frozen experimental capability profile.",
+            "source_text": "infinite bandwidth",
+            "class": "unbounded_bandwidth",
+            "reason": "unbounded resource requirement"
+          }
+        ]
+      },
+      "checks": {
+        "valid": true,
+        "supported": true,
+        "unsupported": true,
+        "deterministic": true,
+        "input_unchanged": true
+      },
+      "passed": true
+    },
+    {
+      "name": "reject_negative_latency",
+      "intent": "Provision URLLC with negative communication latency.",
+      "expected_valid": false,
+      "expected_supported": [],
+      "expected_unsupported": [
+        "negative_latency"
+      ],
+      "actual": {
+        "supported_qualitative_matches": [],
+        "unsupported_qualitative_matches": [
+          {
+            "source_text": "negative communication latency",
+            "class": "negative_latency",
+            "reason": "invalid qualitative latency requirement",
+            "status": "unsupported"
+          }
+        ],
+        "normalized_requirements": [],
+        "qualitative_valid": false,
+        "error_codes": [
+          {
+            "code": "UNSUPPORTED_QUALITATIVE_REQUIREMENT",
+            "message": "Source qualitative requirement is outside the frozen experimental capability profile.",
+            "source_text": "negative communication latency",
+            "class": "negative_latency",
+            "reason": "invalid qualitative latency requirement"
+          }
+        ]
+      },
+      "checks": {
+        "valid": true,
+        "supported": true,
+        "unsupported": true,
+        "deterministic": true,
+        "input_unchanged": true
+      },
+      "passed": true
+    },
+    {
+      "name": "reject_unlimited_devices",
+      "intent": "Create mMTC with support for an unlimited number of devices.",
+      "expected_valid": false,
+      "expected_supported": [],
+      "expected_unsupported": [
+        "unbounded_device_count"
+      ],
+      "actual": {
+        "supported_qualitative_matches": [],
+        "unsupported_qualitative_matches": [
+          {
+            "source_text": "unlimited number of devices",
+            "class": "unbounded_device_count",
+            "reason": "unbounded resource requirement",
+            "status": "unsupported"
+          }
+        ],
+        "normalized_requirements": [],
+        "qualitative_valid": false,
+        "error_codes": [
+          {
+            "code": "UNSUPPORTED_QUALITATIVE_REQUIREMENT",
+            "message": "Source qualitative requirement is outside the frozen experimental capability profile.",
+            "source_text": "unlimited number of devices",
+            "class": "unbounded_device_count",
+            "reason": "unbounded resource requirement"
+          }
+        ]
+      },
+      "checks": {
+        "valid": true,
+        "supported": true,
+        "unsupported": true,
+        "deterministic": true,
+        "input_unchanged": true
+      },
+      "passed": true
+    },
+    {
+      "name": "reject_instantaneous_transfer",
+      "intent": "Configure eMBB with physically instantaneous data transfer.",
+      "expected_valid": false,
+      "expected_supported": [],
+      "expected_unsupported": [
+        "instantaneous_data_transfer"
+      ],
+      "actual": {
+        "supported_qualitative_matches": [],
+        "unsupported_qualitative_matches": [
+          {
+            "source_text": "instantaneous data transfer",
+            "class": "instantaneous_data_transfer",
+            "reason": "unsupported zero-time transfer requirement",
+            "status": "unsupported"
+          }
+        ],
+        "normalized_requirements": [],
+        "qualitative_valid": false,
+        "error_codes": [
+          {
+            "code": "UNSUPPORTED_QUALITATIVE_REQUIREMENT",
+            "message": "Source qualitative requirement is outside the frozen experimental capability profile.",
+            "source_text": "instantaneous data transfer",
+            "class": "instantaneous_data_transfer",
+            "reason": "unsupported zero-time transfer requirement"
+          }
+        ]
+      },
+      "checks": {
+        "valid": true,
+        "supported": true,
+        "unsupported": true,
+        "deterministic": true,
+        "input_unchanged": true
+      },
+      "passed": true
+    },
+    {
+      "name": "safety_isolated_high",
+      "intent": "Provide service with high characteristics.",
+      "expected_valid": true,
+      "expected_supported": [],
+      "expected_unsupported": [],
+      "actual": {
+        "supported_qualitative_matches": [],
+        "unsupported_qualitative_matches": [],
+        "normalized_requirements": [],
+        "qualitative_valid": true,
+        "error_codes": []
+      },
+      "checks": {
+        "valid": true,
+        "supported": true,
+        "unsupported": true,
+        "deterministic": true,
+        "input_unchanged": true
+      },
+      "passed": true
+    },
+    {
+      "name": "safety_isolated_reliable",
+      "intent": "Provide service with reliable characteristics.",
+      "expected_valid": true,
+      "expected_supported": [],
+      "expected_unsupported": [],
+      "actual": {
+        "supported_qualitative_matches": [],
+        "unsupported_qualitative_matches": [],
+        "normalized_requirements": [],
+        "qualitative_valid": true,
+        "error_codes": []
+      },
+      "checks": {
+        "valid": true,
+        "supported": true,
+        "unsupported": true,
+        "deterministic": true,
+        "input_unchanged": true
+      },
+      "passed": true
+    },
+    {
+      "name": "safety_isolated_zero",
+      "intent": "Provide service with zero characteristics.",
+      "expected_valid": true,
+      "expected_supported": [],
+      "expected_unsupported": [],
+      "actual": {
+        "supported_qualitative_matches": [],
+        "unsupported_qualitative_matches": [],
+        "normalized_requirements": [],
+        "qualitative_valid": true,
+        "error_codes": []
+      },
+      "checks": {
+        "valid": true,
+        "supported": true,
+        "unsupported": true,
+        "deterministic": true,
+        "input_unchanged": true
+      },
+      "passed": true
+    },
+    {
+      "name": "safety_isolated_negative",
+      "intent": "Provide service with negative characteristics.",
+      "expected_valid": true,
+      "expected_supported": [],
+      "expected_unsupported": [],
+      "actual": {
+        "supported_qualitative_matches": [],
+        "unsupported_qualitative_matches": [],
+        "normalized_requirements": [],
+        "qualitative_valid": true,
+        "error_codes": []
+      },
+      "checks": {
+        "valid": true,
+        "supported": true,
+        "unsupported": true,
+        "deterministic": true,
+        "input_unchanged": true
+      },
+      "passed": true
+    },
+    {
+      "name": "safety_isolated_unlimited",
+      "intent": "Provide service with unlimited characteristics.",
+      "expected_valid": true,
+      "expected_supported": [],
+      "expected_unsupported": [],
+      "actual": {
+        "supported_qualitative_matches": [],
+        "unsupported_qualitative_matches": [],
+        "normalized_requirements": [],
+        "qualitative_valid": true,
+        "error_codes": []
+      },
+      "checks": {
+        "valid": true,
+        "supported": true,
+        "unsupported": true,
+        "deterministic": true,
+        "input_unchanged": true
+      },
+      "passed": true
+    },
+    {
+      "name": "safety_isolated_instant",
+      "intent": "Provide service with instant characteristics.",
+      "expected_valid": true,
+      "expected_supported": [],
+      "expected_unsupported": [],
+      "actual": {
+        "supported_qualitative_matches": [],
+        "unsupported_qualitative_matches": [],
+        "normalized_requirements": [],
+        "qualitative_valid": true,
+        "error_codes": []
+      },
+      "checks": {
+        "valid": true,
+        "supported": true,
+        "unsupported": true,
+        "deterministic": true,
+        "input_unchanged": true
+      },
+      "passed": true
+    },
+    {
+      "name": "negated_teleportation",
+      "intent": "Provide eMBB with no teleportation support.",
+      "expected_valid": true,
+      "expected_supported": [],
+      "expected_unsupported": [],
+      "actual": {
+        "supported_qualitative_matches": [],
+        "unsupported_qualitative_matches": [],
+        "normalized_requirements": [],
+        "qualitative_valid": true,
+        "error_codes": []
+      },
+      "checks": {
+        "valid": true,
+        "supported": true,
+        "unsupported": true,
+        "deterministic": true,
+        "input_unchanged": true
+      },
+      "passed": true
+    },
+    {
+      "name": "negated_infinite_bandwidth",
+      "intent": "The service must not require infinite bandwidth.",
+      "expected_valid": true,
+      "expected_supported": [],
+      "expected_unsupported": [],
+      "actual": {
+        "supported_qualitative_matches": [],
+        "unsupported_qualitative_matches": [],
+        "normalized_requirements": [],
+        "qualitative_valid": true,
+        "error_codes": []
+      },
+      "checks": {
+        "valid": true,
+        "supported": true,
+        "unsupported": true,
+        "deterministic": true,
+        "input_unchanged": true
+      },
+      "passed": true
+    },
+    {
+      "name": "negated_reliable_phrase",
+      "intent": "Provide connectivity without reliable communication.",
+      "expected_valid": true,
+      "expected_supported": [],
+      "expected_unsupported": [],
+      "actual": {
+        "supported_qualitative_matches": [],
+        "unsupported_qualitative_matches": [],
+        "normalized_requirements": [],
+        "qualitative_valid": true,
+        "error_codes": []
+      },
+      "checks": {
+        "valid": true,
+        "supported": true,
+        "unsupported": true,
+        "deterministic": true,
+        "input_unchanged": true
+      },
+      "passed": true
+    },
+    {
+      "name": "supported_unsupported_collision",
+      "intent": "Provide high throughput with infinite bandwidth.",
+      "expected_valid": false,
+      "expected_supported": [
+        "bandwidth_mbps"
+      ],
+      "expected_unsupported": [
+        "unbounded_bandwidth"
+      ],
+      "actual": {
+        "supported_qualitative_matches": [
+          {
+            "source_text": "high throughput",
+            "normalized": "bandwidth_mbps",
+            "status": "supported"
+          }
+        ],
+        "unsupported_qualitative_matches": [
+          {
+            "source_text": "infinite bandwidth",
+            "class": "unbounded_bandwidth",
+            "reason": "unbounded resource requirement",
+            "status": "unsupported"
+          }
+        ],
+        "normalized_requirements": [
+          {
+            "source_text": "high throughput",
+            "normalized": "bandwidth_mbps",
+            "status": "supported"
+          }
+        ],
+        "qualitative_valid": false,
+        "error_codes": [
+          {
+            "code": "UNSUPPORTED_QUALITATIVE_REQUIREMENT",
+            "message": "Source qualitative requirement is outside the frozen experimental capability profile.",
+            "source_text": "infinite bandwidth",
+            "class": "unbounded_bandwidth",
+            "reason": "unbounded resource requirement"
+          }
+        ]
+      },
+      "checks": {
+        "valid": true,
+        "supported": true,
+        "unsupported": true,
+        "deterministic": true,
+        "input_unchanged": true
+      },
+      "passed": true
+    },
+    {
+      "name": "multiple_unsupported",
+      "intent": "Provide infinite bandwidth and unlimited physical range.",
+      "expected_valid": false,
+      "expected_supported": [],
+      "expected_unsupported": [
+        "unbounded_physical_range",
+        "unbounded_bandwidth"
+      ],
+      "actual": {
+        "supported_qualitative_matches": [],
+        "unsupported_qualitative_matches": [
+          {
+            "source_text": "unlimited physical range",
+            "class": "unbounded_physical_range",
+            "reason": "unbounded physical capability",
+            "status": "unsupported"
+          },
+          {
+            "source_text": "infinite bandwidth",
+            "class": "unbounded_bandwidth",
+            "reason": "unbounded resource requirement",
+            "status": "unsupported"
+          }
+        ],
+        "normalized_requirements": [],
+        "qualitative_valid": false,
+        "error_codes": [
+          {
+            "code": "UNSUPPORTED_QUALITATIVE_REQUIREMENT",
+            "message": "Source qualitative requirement is outside the frozen experimental capability profile.",
+            "source_text": "unlimited physical range",
+            "class": "unbounded_physical_range",
+            "reason": "unbounded physical capability"
+          },
+          {
+            "code": "UNSUPPORTED_QUALITATIVE_REQUIREMENT",
+            "message": "Source qualitative requirement is outside the frozen experimental capability profile.",
+            "source_text": "infinite bandwidth",
+            "class": "unbounded_bandwidth",
+            "reason": "unbounded resource requirement"
+          }
+        ]
+      },
+      "checks": {
+        "valid": true,
+        "supported": true,
+        "unsupported": true,
+        "deterministic": true,
+        "input_unchanged": true
+      },
+      "passed": true
+    }
+  ]
+}

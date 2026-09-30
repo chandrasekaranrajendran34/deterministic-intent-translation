@@ -1,0 +1,27 @@
+{
+  "artifact_id": "literature-candidate-staging-v1.0",
+  "candidate_status": "EMPTY \u2014 awaiting externally discovered sources",
+  "created_utc": "2026-09-30T01:57:26.131037+00:00",
+  "evidence_domains": [
+    "L1",
+    "L2",
+    "L3",
+    "L4",
+    "L5",
+    "L6",
+    "L7",
+    "L8"
+  ],
+  "experimental_evidence_modified": false,
+  "model_api_called": false,
+  "purpose": "Stage externally discovered literature before bibliographic and technical verification.",
+  "standards_claim_introduced": false,
+  "verification_policy": {
+    "bibliographic": "Verify title, authors, year, venue and DOI against publisher or authoritative bibliographic source.",
+    "final_registry": "Only verified sources may be promoted into literature_evidence_registry.",
+    "peer_review": "Distinguish peer-reviewed publications from preprints.",
+    "standards": "Secondary papers cannot establish normative 3GPP or O-RAN requirements.",
+    "technical": "Verify that the paper actually supports the manuscript claim assigned to it."
+  },
+  "verified_registry_modified": false
+}

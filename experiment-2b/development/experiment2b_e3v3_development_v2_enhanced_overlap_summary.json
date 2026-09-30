@@ -1,0 +1,29 @@
+{
+  "experiment": "experiment-2b",
+  "step": "23F",
+  "candidate_version": "v2",
+  "candidate_sha256": "133c68842716f84a703478f7904c8cdd4f10cfdba683957ce23e473e81e7196f",
+  "frozen_original_sha256": "63661df64f3e13cb323bc7089b3a14c9f5c85e4df4237643065e3f4896910409",
+  "exact_overlap_count": 0,
+  "normalized_exact_overlap_count": 0,
+  "number_aware_similarity": {
+    "critical": 0,
+    "high": 0,
+    "moderate": 4,
+    "low": 156,
+    "maximum": 0.75,
+    "mean": 0.3817869324186418
+  },
+  "hard_freeze_gates": {
+    "exact_overlap_zero": true,
+    "normalized_overlap_zero": true,
+    "number_aware_critical_zero": true,
+    "unique_ids_160": true,
+    "unique_intents_160": true,
+    "unique_normalized_intents_160": true
+  },
+  "all_hard_freeze_gates_pass": true,
+  "api_calls": 0,
+  "model_calls": 0,
+  "pipeline_executions": 0
+}

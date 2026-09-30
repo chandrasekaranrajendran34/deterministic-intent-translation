@@ -1,0 +1,35 @@
+{
+  "experiment": "experiment-2b",
+  "step": "23D",
+  "audit_type": "development leakage and overlap audit",
+  "candidate_cases": 160,
+  "frozen_reference_cases": 120,
+  "exact_overlap_count": 0,
+  "normalized_exact_overlap_count": 0,
+  "candidate_to_frozen": {
+    "critical_ge_0_90": 1,
+    "high_ge_0_80_lt_0_90": 1,
+    "moderate_ge_0_70_lt_0_80": 4,
+    "low_lt_0_70": 154,
+    "maximum_jaccard": 1.0,
+    "mean_max_jaccard": 0.39582790946172625
+  },
+  "internal_candidate": {
+    "critical_ge_0_90": 0,
+    "maximum_jaccard": 0.75,
+    "mean_max_jaccard": 0.469729805475742
+  },
+  "threshold_policy": {
+    "critical": ">= 0.90",
+    "high": ">= 0.80 and < 0.90",
+    "moderate": ">= 0.70 and < 0.80",
+    "low": "< 0.70",
+    "interpretation": "Thresholds trigger manual review; they are not automatic exclusion rules."
+  },
+  "candidate_dataset_sha256": "ffbbd0e6a84999c9641a01285c8b165d753e4d0efd3867719774d87a68cd57e9",
+  "frozen_dataset_sha256": "63661df64f3e13cb323bc7089b3a14c9f5c85e4df4237643065e3f4896910409",
+  "api_calls": 0,
+  "model_calls": 0,
+  "pipeline_executions": 0,
+  "dataset_modified": false
+}

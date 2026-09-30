@@ -1,0 +1,8 @@
+category,rejection_stage,count
+ambiguous,cir_validation,5
+contradictory,cir_validation,3
+hallucination_probe,input_audit,3
+incomplete,cir_validation,2
+out_of_range,cir_validation,5
+prompt_injection,cir_validation,3
+unsupported,cir_validation,4

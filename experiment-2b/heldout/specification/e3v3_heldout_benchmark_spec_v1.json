@@ -1,0 +1,133 @@
+{
+  "specification_id": "e3v3-heldout-benchmark-spec-v1.0",
+  "created_at_utc": "2026-09-30T00:28:43.384120+00:00",
+  "implementation_freeze": {
+    "freeze_id": "e3v3-complete-implementation-v1.0",
+    "manifest_sha256": "ff0d39051b4027ab8441e56dd518a6200b99f06cf2eb5faec2ce535b14ad5579"
+  },
+  "benchmark": {
+    "total_cases": 120,
+    "valid_cases": 58,
+    "invalid_cases": 62,
+    "families": [
+      {
+        "family_id": "H1",
+        "name": "canonical_semantic_service_intents",
+        "valid": 18,
+        "invalid": 0,
+        "total": 18,
+        "purpose": "Evaluate service-type interpretation across explicit and semantically equivalent eMBB, URLLC, and mMTC intents."
+      },
+      {
+        "family_id": "H2",
+        "name": "numeric_single_constraints",
+        "valid": 12,
+        "invalid": 6,
+        "total": 18,
+        "purpose": "Evaluate supported single numeric requirements and invalid numeric values or forms."
+      },
+      {
+        "family_id": "H3",
+        "name": "compound_multi_constraints",
+        "valid": 12,
+        "invalid": 8,
+        "total": 20,
+        "purpose": "Evaluate preservation and consistency of multiple requirements expressed in one intent."
+      },
+      {
+        "family_id": "H4",
+        "name": "reliability_representations",
+        "valid": 8,
+        "invalid": 6,
+        "total": 14,
+        "purpose": "Evaluate source-grounded reliability normalization across decimal, percentage, and boundary forms."
+      },
+      {
+        "family_id": "H5",
+        "name": "qualitative_requirements",
+        "valid": 8,
+        "invalid": 8,
+        "total": 16,
+        "purpose": "Evaluate the frozen closed-world qualitative capability policy using unseen formulations."
+      },
+      {
+        "family_id": "H6",
+        "name": "unsupported_capabilities",
+        "valid": 0,
+        "invalid": 12,
+        "total": 12,
+        "purpose": "Evaluate deterministic rejection of unsupported requirements under the frozen capability profile."
+      },
+      {
+        "family_id": "H7",
+        "name": "contradictions_incompatible_bounds",
+        "valid": 0,
+        "invalid": 10,
+        "total": 10,
+        "purpose": "Evaluate deterministic detection of contradictory or incompatible source constraints."
+      },
+      {
+        "family_id": "H8",
+        "name": "control_adversarial_attempts",
+        "valid": 0,
+        "invalid": 12,
+        "total": 12,
+        "purpose": "Evaluate fail-closed handling of attempts to bypass validation, policy, schema, or safety controls."
+      }
+    ]
+  },
+  "metrics": {
+    "primary": [
+      "decision_accuracy",
+      "valid_acceptance_rate",
+      "invalid_rejection_rate",
+      "rejection_precision",
+      "rejection_recall",
+      "rejection_f1"
+    ],
+    "secondary": [
+      "service_type_accuracy_on_valid_cases",
+      "llm_invocation_rate",
+      "parse_success_rate_when_llm_invoked",
+      "descriptor_success_rate",
+      "rejection_stage_distribution",
+      "error_code_distribution",
+      "end_to_end_latency_ms",
+      "llm_latency_ms"
+    ],
+    "statistical_reporting": [
+      "exact_binomial_95_percent_confidence_intervals",
+      "family_level_accuracy",
+      "valid_invalid_stratified_results"
+    ]
+  },
+  "leakage_rules": {
+    "prior_exposure_scope": [
+      "Experiment 1 controlled intents",
+      "Experiment 2A benchmark intents",
+      "Experiment 2B benchmark intents",
+      "E3-v3 160-case development dataset",
+      "all derived development/smoke/diagnostic intents discovered in Step 27B-1"
+    ],
+    "exact_duplicate_allowed": false,
+    "normalized_duplicate_allowed": false,
+    "near_duplicate_policy": "Candidate held-out intents must be screened against all prior exposed intents using lexical similarity. High-similarity cases must be reviewed before freeze.",
+    "development_family_copy_policy": "Held-out cases may test the same capability dimensions but must not be direct rewrites obtained by simple token substitution from known development cases.",
+    "post_evaluation_rule": "No held-out case may be removed, relabeled, rewritten, or replaced because E3-v3 predicts it incorrectly."
+  },
+  "construction_rules": {
+    "target_size": 120,
+    "expected_valid": 58,
+    "expected_invalid": 62,
+    "service_types": [
+      "eMBB",
+      "URLLC",
+      "mMTC"
+    ],
+    "construction_boundary": "Cases are created only after the complete E3-v3 implementation freeze.",
+    "labeling_rule": "Expected validity and expected service labels are assigned from the frozen capability profile and benchmark specification before any E3-v3 held-out execution.",
+    "implementation_blindness": "No implementation modification is permitted during held-out dataset construction or after held-out results are observed.",
+    "result_blindness": "The held-out dataset must be frozen before E3-v3 predictions for these cases are generated."
+  },
+  "claim_boundary": "This benchmark evaluates generalization to a controlled held-out set constructed after implementation freeze. It is not an external real-world benchmark and does not establish universal semantic correctness or formal 3GPP/O-RAN conformance."
+}

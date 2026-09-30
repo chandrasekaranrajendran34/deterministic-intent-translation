@@ -1,0 +1,11 @@
+id,intent,category,subcategory,expected_valid,expected_service,difficulty,linguistic_form,constraint_type,notes
+EXP2-091,Create URLLC for robot control with latency 5 ms and reliability 0.99999.,valid_compound,multiple_valid_constraints,True,URLLC,hard,compound,multiple_valid_constraints,
+EXP2-092,Provision eMBB for video production with 500 Mbps bandwidth and campus-wide coverage.,valid_compound,multiple_valid_constraints,True,eMBB,hard,compound,multiple_valid_constraints,
+EXP2-093,Create mMTC connectivity for 60000 environmental sensors across a metropolitan area.,valid_compound,multiple_valid_constraints,True,mMTC,hard,compound,multiple_valid_constraints,
+EXP2-094,Provide URLLC connectivity with 4 ms latency for automated factory equipment.,valid_compound,multiple_valid_constraints,True,URLLC,hard,compound,multiple_valid_constraints,
+EXP2-095,Create eMBB service with 350 Mbps bandwidth for immersive video streaming.,valid_compound,multiple_valid_constraints,True,eMBB,hard,compound,multiple_valid_constraints,
+EXP2-096,Provision mMTC for 80000 low-power utility meters with city-wide coverage.,valid_compound,multiple_valid_constraints,True,mMTC,hard,compound,multiple_valid_constraints,
+EXP2-097,Provide a highly reliable URLLC service with 3 ms latency for robotic control.,valid_compound,multiple_valid_constraints,True,URLLC,hard,compound,multiple_valid_constraints,
+EXP2-098,Create an eMBB slice with 450 Mbps bandwidth for a large entertainment venue.,valid_compound,multiple_valid_constraints,True,eMBB,hard,compound,multiple_valid_constraints,
+EXP2-099,Provision mMTC connectivity for 90000 low-data-rate agricultural sensors.,valid_compound,multiple_valid_constraints,True,mMTC,hard,compound,multiple_valid_constraints,
+EXP2-100,Create URLLC service for industrial control with reliability 0.9999 and latency 5 ms.,valid_compound,multiple_valid_constraints,True,URLLC,hard,compound,multiple_valid_constraints,

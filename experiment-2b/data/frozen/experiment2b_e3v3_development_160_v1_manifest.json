@@ -1,0 +1,32 @@
+{
+  "experiment": "experiment-2b",
+  "artifact": "E3-v3 development dataset",
+  "version": "1.0",
+  "status": "FROZEN",
+  "frozen_utc": "2026-09-29T09:10:25.689398+00:00",
+  "n_cases": 160,
+  "source_candidate": "/content/experiment-1-v2-together/experiment-2b/development/experiment2b_e3v3_development_160_candidate_v2.csv",
+  "source_candidate_sha256": "133c68842716f84a703478f7904c8cdd4f10cfdba683957ce23e473e81e7196f",
+  "frozen_dataset": "/content/experiment-1-v2-together/experiment-2b/data/frozen/experiment2b_e3v3_development_160_v1.csv",
+  "frozen_dataset_sha256": "133c68842716f84a703478f7904c8cdd4f10cfdba683957ce23e473e81e7196f",
+  "original_120_reference": "/content/experiment-1-v2-together/experiment-2b/data/frozen/experiment2b_intents_120_v1.csv",
+  "original_120_sha256": "63661df64f3e13cb323bc7089b3a14c9f5c85e4df4237643065e3f4896910409",
+  "enhanced_audit": "/content/experiment-1-v2-together/experiment-2b/development/experiment2b_e3v3_development_v2_enhanced_overlap_audit.csv",
+  "enhanced_audit_sha256": "ab9e0f7bdc3411930fc66d522d722511307dc3b801db044983a938370b27898d",
+  "audit_summary": "/content/experiment-1-v2-together/experiment-2b/development/experiment2b_e3v3_development_v2_enhanced_overlap_summary.json",
+  "audit_summary_sha256": "2e07708d996b814a28ceb8de5df41a3435381784e64dc70702b3a09621df2505",
+  "hard_freeze_gates": {
+    "exact_overlap_zero": true,
+    "normalized_overlap_zero": true,
+    "number_aware_critical_zero": true,
+    "unique_ids_160": true,
+    "unique_intents_160": true,
+    "unique_normalized_intents_160": true
+  },
+  "development_only": true,
+  "final_holdout": false,
+  "allowed_use": "E3-v3 implementation, debugging, development evaluation and ablation.",
+  "prohibited_claim": "Performance on this dataset must not be reported as unbiased final generalization performance.",
+  "api_calls_during_freeze": 0,
+  "pipeline_executions_during_freeze": 0
+}

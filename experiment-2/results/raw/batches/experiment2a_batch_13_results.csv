@@ -1,0 +1,221 @@
+id,intent,category,expected_service,expected_valid,pipeline,model,parse_ok,latency_ms,finish_reason,prompt_tokens,completion_tokens,raw_response,predicted_service,schema_valid,hallucination_detected,unsupported_input_detected,input_audit_valid,mapping_found,descriptor_success,accepted,validation_errors,cir_json,descriptor_json
+EXP2-121,Create a quantum communication network slice.,invalid_unsupported_concept,,False,direct,Qwen/Qwen3.5-9B,True,2815.62845299959,stop,104,86,"{
+  ""rejected"": true,
+  ""reason"": ""Quantum communication networks operate on fundamentally different principles (qubits, entanglement) than classical network slicing (IP/MAC layers, bandwidth, latency). Current network slicing standards (3GPP, ETSI) do not support direct translation of quantum intent into executable classical network slice configurations. This request is unsupported by current network slicing technology.""
+}",,True,False,False,,False,False,False,,,
+EXP2-121,Create a quantum communication network slice.,invalid_unsupported_concept,,False,cir,Qwen/Qwen3.5-9B,True,1632.5160239994148,stop,217,61,"{
+  ""service_type"": null,
+  ""latency_ms"": null,
+  ""bandwidth_mbps"": null,
+  ""reliability"": null,
+  ""device_count"": null,
+  ""coverage"": null,
+  ""objective"": null
+}",,True,False,False,,False,False,False,SERVICE_TYPE_UNRESOLVED,"{""service_type"": null, ""latency_ms"": null, ""bandwidth_mbps"": null, ""reliability"": null, ""device_count"": null, ""coverage"": null, ""objective"": null}",
+EXP2-121,Create a quantum communication network slice.,invalid_unsupported_concept,,False,proposed,Qwen/Qwen3.5-9B,True,2385.46955899983,stop,217,61,"{
+  ""service_type"": null,
+  ""latency_ms"": null,
+  ""bandwidth_mbps"": null,
+  ""reliability"": null,
+  ""device_count"": null,
+  ""coverage"": null,
+  ""objective"": null
+}",,True,False,False,True,False,False,False,SERVICE_TYPE_UNRESOLVED,"{""service_type"": null, ""latency_ms"": null, ""bandwidth_mbps"": null, ""reliability"": null, ""device_count"": null, ""coverage"": null, ""objective"": null}",
+EXP2-122,Provision a teleportation-based network service.,invalid_unsupported_concept,,False,direct,Qwen/Qwen3.5-9B,True,717.0625460003066,stop,106,35,"{
+  ""rejected"": true,
+  ""reason"": ""Teleportation is a physical phenomenon not supported by current network technologies or network slicing standards.""
+}",,True,False,False,,False,False,False,,,
+EXP2-122,Provision a teleportation-based network service.,invalid_unsupported_concept,,False,cir,Qwen/Qwen3.5-9B,True,4756.881831999635,stop,219,61,"{
+  ""service_type"": null,
+  ""latency_ms"": null,
+  ""bandwidth_mbps"": null,
+  ""reliability"": null,
+  ""device_count"": null,
+  ""coverage"": null,
+  ""objective"": null
+}",,True,False,False,,False,False,False,SERVICE_TYPE_UNRESOLVED,"{""service_type"": null, ""latency_ms"": null, ""bandwidth_mbps"": null, ""reliability"": null, ""device_count"": null, ""coverage"": null, ""objective"": null}",
+EXP2-122,Provision a teleportation-based network service.,invalid_unsupported_concept,,False,proposed,Qwen/Qwen3.5-9B,True,1477.3290150005778,stop,219,61,"{
+  ""service_type"": null,
+  ""latency_ms"": null,
+  ""bandwidth_mbps"": null,
+  ""reliability"": null,
+  ""device_count"": null,
+  ""coverage"": null,
+  ""objective"": null
+}",,True,False,False,True,False,False,False,SERVICE_TYPE_UNRESOLVED,"{""service_type"": null, ""latency_ms"": null, ""bandwidth_mbps"": null, ""reliability"": null, ""device_count"": null, ""coverage"": null, ""objective"": null}",
+EXP2-123,Create a holographic quantum-control slice type.,invalid_unsupported_concept,,False,direct,Qwen/Qwen3.5-9B,True,2524.1588999997475,stop,106,90,"{
+  ""rejected"": true,
+  ""reason"": ""The requested 'holographic quantum-control' slice type is not a recognized or supported network slicing intent. Network slicing typically defines logical network resources (e.g., eMBB, uRLLC, mMTC) based on standard QoS parameters. 'Holographic' and 'quantum-control' are not valid technical specifications for current network slicing architectures.""
+}",,True,False,False,,False,False,False,,,
+EXP2-123,Create a holographic quantum-control slice type.,invalid_unsupported_concept,,False,cir,Qwen/Qwen3.5-9B,True,1179.4220299998415,stop,219,61,"{
+  ""service_type"": null,
+  ""latency_ms"": null,
+  ""bandwidth_mbps"": null,
+  ""reliability"": null,
+  ""device_count"": null,
+  ""coverage"": null,
+  ""objective"": null
+}",,True,False,False,,False,False,False,SERVICE_TYPE_UNRESOLVED,"{""service_type"": null, ""latency_ms"": null, ""bandwidth_mbps"": null, ""reliability"": null, ""device_count"": null, ""coverage"": null, ""objective"": null}",
+EXP2-123,Create a holographic quantum-control slice type.,invalid_unsupported_concept,,False,proposed,Qwen/Qwen3.5-9B,True,1407.3800810001558,stop,219,61,"{
+  ""service_type"": null,
+  ""latency_ms"": null,
+  ""bandwidth_mbps"": null,
+  ""reliability"": null,
+  ""device_count"": null,
+  ""coverage"": null,
+  ""objective"": null
+}",,True,False,False,True,False,False,False,SERVICE_TYPE_UNRESOLVED,"{""service_type"": null, ""latency_ms"": null, ""bandwidth_mbps"": null, ""reliability"": null, ""device_count"": null, ""coverage"": null, ""objective"": null}",
+EXP2-124,Set up a neural-telepathy communication slice.,invalid_unsupported_concept,,False,direct,Qwen/Qwen3.5-9B,True,2826.2933470014104,stop,108,59,"{
+  ""rejected"": true,
+  ""reason"": ""Neural-telepathy communication is not a supported network technology or service; current network slicing standards (e.g., 3GPP) do not include capabilities for direct mind-to-mind data transmission.""
+}",,True,False,False,,False,False,False,,,
+EXP2-124,Set up a neural-telepathy communication slice.,invalid_unsupported_concept,,False,cir,Qwen/Qwen3.5-9B,True,2183.179982999718,stop,221,61,"{
+  ""service_type"": null,
+  ""latency_ms"": null,
+  ""bandwidth_mbps"": null,
+  ""reliability"": null,
+  ""device_count"": null,
+  ""coverage"": null,
+  ""objective"": null
+}",,True,False,False,,False,False,False,SERVICE_TYPE_UNRESOLVED,"{""service_type"": null, ""latency_ms"": null, ""bandwidth_mbps"": null, ""reliability"": null, ""device_count"": null, ""coverage"": null, ""objective"": null}",
+EXP2-124,Set up a neural-telepathy communication slice.,invalid_unsupported_concept,,False,proposed,Qwen/Qwen3.5-9B,True,1304.8904789993685,stop,221,61,"{
+  ""service_type"": null,
+  ""latency_ms"": null,
+  ""bandwidth_mbps"": null,
+  ""reliability"": null,
+  ""device_count"": null,
+  ""coverage"": null,
+  ""objective"": null
+}",,True,False,False,True,False,False,False,SERVICE_TYPE_UNRESOLVED,"{""service_type"": null, ""latency_ms"": null, ""bandwidth_mbps"": null, ""reliability"": null, ""device_count"": null, ""coverage"": null, ""objective"": null}",
+EXP2-125,Provide an interplanetary instant-communication slice.,invalid_unsupported_concept,,False,direct,Qwen/Qwen3.5-9B,True,2456.2648409992107,stop,107,86,"{
+  ""rejected"": true,
+  ""reason"": ""The request asks for 'instant-communication' across 'interplanetary' distances. Due to the finite speed of light (approx. 300,000 km/s), instantaneous communication between planets (e.g., Earth and Mars) is physically impossible. This violates the laws of physics and cannot be implemented as a network slice.""
+}",,True,False,False,,False,False,False,,,
+EXP2-125,Provide an interplanetary instant-communication slice.,invalid_unsupported_concept,,False,cir,Qwen/Qwen3.5-9B,True,1276.590749001116,stop,220,61,"{
+  ""service_type"": null,
+  ""latency_ms"": null,
+  ""bandwidth_mbps"": null,
+  ""reliability"": null,
+  ""device_count"": null,
+  ""coverage"": null,
+  ""objective"": null
+}",,True,False,False,,False,False,False,SERVICE_TYPE_UNRESOLVED,"{""service_type"": null, ""latency_ms"": null, ""bandwidth_mbps"": null, ""reliability"": null, ""device_count"": null, ""coverage"": null, ""objective"": null}",
+EXP2-125,Provide an interplanetary instant-communication slice.,invalid_unsupported_concept,,False,proposed,Qwen/Qwen3.5-9B,True,1414.7032239998225,stop,220,61,"{
+  ""service_type"": null,
+  ""latency_ms"": null,
+  ""bandwidth_mbps"": null,
+  ""reliability"": null,
+  ""device_count"": null,
+  ""coverage"": null,
+  ""objective"": null
+}",,True,False,False,True,False,False,False,SERVICE_TYPE_UNRESOLVED,"{""service_type"": null, ""latency_ms"": null, ""bandwidth_mbps"": null, ""reliability"": null, ""device_count"": null, ""coverage"": null, ""objective"": null}",
+EXP2-126,Create a zero-time communication network service.,invalid_unsupported_concept,,False,direct,Qwen/Qwen3.5-9B,True,1424.3505379999988,stop,105,46,"{
+  ""rejected"": true,
+  ""reason"": ""Zero-time communication is physically impossible due to the finite speed of light and signal propagation delays; this requirement violates fundamental laws of physics and network constraints.""
+}",,True,False,False,,False,False,False,,,
+EXP2-126,Create a zero-time communication network service.,invalid_unsupported_concept,,False,cir,Qwen/Qwen3.5-9B,True,1022.0904510006221,stop,218,70,"{
+  ""service_type"": null,
+  ""latency_ms"": 0,
+  ""bandwidth_mbps"": null,
+  ""reliability"": null,
+  ""device_count"": null,
+  ""coverage"": null,
+  ""objective"": ""Create a zero-time communication network service""
+}",,True,False,False,,False,False,False,SERVICE_TYPE_UNRESOLVED,"{""service_type"": null, ""latency_ms"": 0, ""bandwidth_mbps"": null, ""reliability"": null, ""device_count"": null, ""coverage"": null, ""objective"": ""Create a zero-time communication network service""}",
+EXP2-126,Create a zero-time communication network service.,invalid_unsupported_concept,,False,proposed,Qwen/Qwen3.5-9B,True,980.2405640002689,stop,218,70,"{
+  ""service_type"": null,
+  ""latency_ms"": 0,
+  ""bandwidth_mbps"": null,
+  ""reliability"": null,
+  ""device_count"": null,
+  ""coverage"": null,
+  ""objective"": ""Create a zero-time communication network service""
+}",,True,False,False,True,False,False,False,SERVICE_TYPE_UNRESOLVED,"{""service_type"": null, ""latency_ms"": 0, ""bandwidth_mbps"": null, ""reliability"": null, ""device_count"": null, ""coverage"": null, ""objective"": ""Create a zero-time communication network service""}",
+EXP2-127,Provision a quantum-entanglement slice for mobile users.,invalid_unsupported_concept,,False,direct,Qwen/Qwen3.5-9B,True,2435.475835000034,stop,109,80,"{
+  ""rejected"": true,
+  ""reason"": ""Quantum entanglement is a quantum mechanical phenomenon and cannot be provisioned as a standard mobile network slice. Current 5G/6G network slicing architectures support classical data, voice, and IoT services, but do not support the distribution of quantum entanglement states over public mobile networks for general mobile users.""
+}",,True,False,False,,False,False,False,,,
+EXP2-127,Provision a quantum-entanglement slice for mobile users.,invalid_unsupported_concept,,False,cir,Qwen/Qwen3.5-9B,True,1008.6085729999468,stop,222,61,"{
+  ""service_type"": null,
+  ""latency_ms"": null,
+  ""bandwidth_mbps"": null,
+  ""reliability"": null,
+  ""device_count"": null,
+  ""coverage"": null,
+  ""objective"": null
+}",,True,False,False,,False,False,False,SERVICE_TYPE_UNRESOLVED,"{""service_type"": null, ""latency_ms"": null, ""bandwidth_mbps"": null, ""reliability"": null, ""device_count"": null, ""coverage"": null, ""objective"": null}",
+EXP2-127,Provision a quantum-entanglement slice for mobile users.,invalid_unsupported_concept,,False,proposed,Qwen/Qwen3.5-9B,True,1393.3326740007033,stop,222,61,"{
+  ""service_type"": null,
+  ""latency_ms"": null,
+  ""bandwidth_mbps"": null,
+  ""reliability"": null,
+  ""device_count"": null,
+  ""coverage"": null,
+  ""objective"": null
+}",,True,False,False,True,False,False,False,SERVICE_TYPE_UNRESOLVED,"{""service_type"": null, ""latency_ms"": null, ""bandwidth_mbps"": null, ""reliability"": null, ""device_count"": null, ""coverage"": null, ""objective"": null}",
+EXP2-128,Create an imaginary 7G hyperspace slice.,invalid_unsupported_concept,,False,direct,Qwen/Qwen3.5-9B,True,1991.7031789991597,stop,107,96,"{
+  ""rejected"": true,
+  ""reason"": ""The request asks for a '7G hyperspace slice', which involves non-existent technology (7G) and fictional concepts (hyperspace). Current network slicing standards are defined for 5G and 6G research, and 'hyperspace' is a science fiction concept incompatible with real-world network engineering specifications. Therefore, this request cannot be translated into a valid, executable network configuration.""
+}",,True,False,False,,False,False,False,,,
+EXP2-128,Create an imaginary 7G hyperspace slice.,invalid_unsupported_concept,,False,cir,Qwen/Qwen3.5-9B,True,1417.473883000639,stop,220,61,"{
+  ""service_type"": null,
+  ""latency_ms"": null,
+  ""bandwidth_mbps"": null,
+  ""reliability"": null,
+  ""device_count"": null,
+  ""coverage"": null,
+  ""objective"": null
+}",,True,False,False,,False,False,False,SERVICE_TYPE_UNRESOLVED,"{""service_type"": null, ""latency_ms"": null, ""bandwidth_mbps"": null, ""reliability"": null, ""device_count"": null, ""coverage"": null, ""objective"": null}",
+EXP2-128,Create an imaginary 7G hyperspace slice.,invalid_unsupported_concept,,False,proposed,Qwen/Qwen3.5-9B,True,1271.3227040003403,stop,220,61,"{
+  ""service_type"": null,
+  ""latency_ms"": null,
+  ""bandwidth_mbps"": null,
+  ""reliability"": null,
+  ""device_count"": null,
+  ""coverage"": null,
+  ""objective"": null
+}",,True,False,False,True,False,False,False,SERVICE_TYPE_UNRESOLVED,"{""service_type"": null, ""latency_ms"": null, ""bandwidth_mbps"": null, ""reliability"": null, ""device_count"": null, ""coverage"": null, ""objective"": null}",
+EXP2-129,Set up a teleportation QoS network service.,invalid_unsupported_concept,,False,direct,Qwen/Qwen3.5-9B,True,1066.91408900042,stop,107,39,"{
+  ""rejected"": true,
+  ""reason"": ""Teleportation is a fictional concept and not a supported network service or QoS requirement in real-world telecommunications.""
+}",,True,False,False,,False,False,False,,,
+EXP2-129,Set up a teleportation QoS network service.,invalid_unsupported_concept,,False,cir,Qwen/Qwen3.5-9B,True,2407.806688001074,stop,220,61,"{
+  ""service_type"": null,
+  ""latency_ms"": null,
+  ""bandwidth_mbps"": null,
+  ""reliability"": null,
+  ""device_count"": null,
+  ""coverage"": null,
+  ""objective"": null
+}",,True,False,False,,False,False,False,SERVICE_TYPE_UNRESOLVED,"{""service_type"": null, ""latency_ms"": null, ""bandwidth_mbps"": null, ""reliability"": null, ""device_count"": null, ""coverage"": null, ""objective"": null}",
+EXP2-129,Set up a teleportation QoS network service.,invalid_unsupported_concept,,False,proposed,Qwen/Qwen3.5-9B,True,1877.1378439996624,stop,220,61,"{
+  ""service_type"": null,
+  ""latency_ms"": null,
+  ""bandwidth_mbps"": null,
+  ""reliability"": null,
+  ""device_count"": null,
+  ""coverage"": null,
+  ""objective"": null
+}",,True,False,False,True,False,False,False,SERVICE_TYPE_UNRESOLVED,"{""service_type"": null, ""latency_ms"": null, ""bandwidth_mbps"": null, ""reliability"": null, ""device_count"": null, ""coverage"": null, ""objective"": null}",
+EXP2-130,Provide a time-travel communication slice.,invalid_unsupported_concept,,False,direct,Qwen/Qwen3.5-9B,True,673.2003319993964,stop,105,40,"{
+  ""rejected"": true,
+  ""reason"": ""Time travel is physically impossible and violates causality; therefore, a network slice for it cannot be defined or implemented.""
+}",,True,False,False,,False,False,False,,,
+EXP2-130,Provide a time-travel communication slice.,invalid_unsupported_concept,,False,cir,Qwen/Qwen3.5-9B,True,1610.935046999657,stop,218,61,"{
+  ""service_type"": null,
+  ""latency_ms"": null,
+  ""bandwidth_mbps"": null,
+  ""reliability"": null,
+  ""device_count"": null,
+  ""coverage"": null,
+  ""objective"": null
+}",,True,False,False,,False,False,False,SERVICE_TYPE_UNRESOLVED,"{""service_type"": null, ""latency_ms"": null, ""bandwidth_mbps"": null, ""reliability"": null, ""device_count"": null, ""coverage"": null, ""objective"": null}",
+EXP2-130,Provide a time-travel communication slice.,invalid_unsupported_concept,,False,proposed,Qwen/Qwen3.5-9B,True,1444.079562999832,stop,218,61,"{
+  ""service_type"": null,
+  ""latency_ms"": null,
+  ""bandwidth_mbps"": null,
+  ""reliability"": null,
+  ""device_count"": null,
+  ""coverage"": null,
+  ""objective"": null
+}",,True,False,False,True,False,False,False,SERVICE_TYPE_UNRESOLVED,"{""service_type"": null, ""latency_ms"": null, ""bandwidth_mbps"": null, ""reliability"": null, ""device_count"": null, ""coverage"": null, ""objective"": null}",

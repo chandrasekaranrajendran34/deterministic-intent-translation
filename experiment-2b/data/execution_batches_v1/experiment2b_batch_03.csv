@@ -1,0 +1,11 @@
+id,intent,category,subcategory,expected_valid,expected_service,difficulty,linguistic_form,constraint_type,notes
+EXP2B-021,Set up an mMTC slice.,valid_semantic_paraphrase,mmtc_service,True,mMTC,easy,direct,service_only,Valid explicit mMTC request.
+EXP2B-022,Provision massive machine type connectivity.,valid_semantic_paraphrase,mmtc_service_alias,True,mMTC,medium,paraphrase,service_only,Supported mMTC alias.
+EXP2B-023,Create massive IoT connectivity.,valid_semantic_paraphrase,mmtc_service_alias,True,mMTC,medium,paraphrase,service_only,Supported massive IoT alias.
+EXP2B-024,Configure mMTC for 18000 devices.,valid_semantic_paraphrase,mmtc_device_count,True,mMTC,easy,numeric,exact,Valid device count.
+EXP2B-025,Prepare mMTC for at least 25000 devices.,valid_semantic_paraphrase,mmtc_device_count,True,mMTC,medium,numeric_paraphrase,lower_bound,Valid device-count lower bound.
+EXP2B-026,I need massive machine type connectivity for 32000 connected devices.,valid_semantic_paraphrase,mmtc_device_count,True,mMTC,medium,conversational,exact,Conversational mMTC request.
+EXP2B-027,Create mMTC requiring broad coverage.,valid_semantic_paraphrase,mmtc_semantic_coverage,True,mMTC,medium,semantic_requirement,semantic,Supported coverage concept.
+EXP2B-028,Provision massive IoT with high reliability.,valid_semantic_paraphrase,mmtc_semantic_reliability,True,mMTC,medium,semantic_requirement,semantic,Supported reliability concept.
+EXP2B-029,Establish mMTC connectivity for a sensor deployment.,valid_semantic_paraphrase,mmtc_objective,True,mMTC,medium,application_context,objective,Valid sensor application objective.
+EXP2B-030,Allocate massive machine type connectivity with wide area coverage.,valid_semantic_paraphrase,mmtc_semantic_coverage,True,mMTC,medium,paraphrase,semantic,Valid coverage-oriented mMTC request.

@@ -1,0 +1,4 @@
+a_correct_b_wrong,a_wrong_b_correct,discordant_pairs,p_value,note,comparison
+0,3,3,0.25,,cir vs proposed
+0,0,0,1.0,No discordant pairs,direct vs proposed
+3,0,3,0.25,,direct vs cir

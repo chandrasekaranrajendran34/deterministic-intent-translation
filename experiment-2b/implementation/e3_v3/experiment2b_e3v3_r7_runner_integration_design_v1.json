@@ -1,0 +1,108 @@
+{
+  "design_id": "e3v3-r7-runner-integration-design-v1.0",
+  "status": "DESIGN_FROZEN_BEFORE_RUNNER_MODIFICATION",
+  "component": "R7 qualitative requirement runner integration",
+  "purpose": "Integrate the frozen R7 qualitative analyzer at the source boundary so unsupported qualitative requirements are rejected before LLM/CIR generation and supported qualitative requirements can repair unresolved source requirements without inventing numeric values.",
+  "architecture": {
+    "required_order": [
+      "existing deterministic pre-guard/source analysis",
+      "R7 qualitative analysis",
+      "R7 source-decision reconciliation",
+      "LLM CIR generation only if source accepted",
+      "R4 CIR reconciliation",
+      "R5 reliability normalization",
+      "R6 service-type resolution",
+      "existing post-guard/preservation",
+      "existing CIR validation",
+      "existing mapping/descriptor compilation"
+    ],
+    "r7_position": "after existing source analysis but before call_cir",
+    "reason": "Unsupported qualitative source semantics must be contained before probabilistic CIR generation.",
+    "r4_r5_r6_unchanged": true
+  },
+  "supported_behavior": {
+    "principle": "R7 may repair only an existing unresolved source requirement when the source text is recognized by the frozen R7 supported qualitative mapping.",
+    "example": "reliable communication -> reliability",
+    "must_not_create_numeric_value": true,
+    "must_not_create_threshold": true,
+    "must_not_modify_service_type": true,
+    "must_not_delete_unrelated_source_errors": true,
+    "must_not_override_consistency_failure": true,
+    "must_not_override_control_policy_failure": true
+  },
+  "unsupported_behavior": {
+    "principle": "Any non-negated R7 unsupported qualitative match fails closed before call_cir.",
+    "rejection_stage": "r7_qualitative_source_gate",
+    "error_code": "UNSUPPORTED_QUALITATIVE_REQUIREMENT",
+    "llm_invoked": false,
+    "mapping_reachable": false
+  },
+  "pre_guard_reconciliation": {
+    "case_1_pre_guard_accepts_r7_valid": "continue",
+    "case_2_pre_guard_accepts_r7_unsupported": "reject at R7 before call_cir",
+    "case_3_pre_guard_rejects_only_due_to_unresolved_requirement_that_r7_resolves": "remove only the matching unresolved-requirement error and continue if no other source error remains",
+    "case_4_pre_guard_rejects_for_other_reason": "preserve rejection",
+    "case_5_r7_unresolved": "preserve existing pre-guard decision",
+    "fail_closed": true
+  },
+  "repair_restriction": {
+    "removable_error_code": "UNRESOLVED_SOURCE_REQUIREMENT",
+    "removal_requires": [
+      "R7 supported qualitative match exists",
+      "the unresolved source_text corresponds to the matched R7 source phrase after frozen normalization"
+    ],
+    "never_remove": [
+      "unsupported-field errors",
+      "control-policy errors",
+      "consistency errors",
+      "contradiction errors",
+      "numeric feasibility errors",
+      "any unrelated unresolved requirement"
+    ]
+  },
+  "duplicate_capability_policy": {
+    "example": "rapid response + minimal communication delay both normalize to latency_ms",
+    "evidence": "retain individual matched source phrases",
+    "normalized_capabilities": "deduplicate capability names for reconciliation",
+    "numeric_constraint_interpretation": "none",
+    "reason": "Multiple qualitative phrases mapping to one capability must not be interpreted as multiple numeric constraints."
+  },
+  "required_record_fields": [
+    "r7_supported_qualitative_matches",
+    "r7_unsupported_qualitative_matches",
+    "r7_normalized_capabilities",
+    "r7_qualitative_valid",
+    "r7_source_repair_applied",
+    "r7_repaired_source_requirements",
+    "r7_removed_source_errors",
+    "r7_rejection_stage"
+  ],
+  "required_integration_tests": {
+    "supported_existing_accept": "R7-supported source already accepted by pre-guard continues to call_cir.",
+    "supported_repair_dev138": "DEV-138 pre-guard unresolved reliable communication is repaired and reaches call_cir.",
+    "unsupported_pre_llm_rejection": "R7 unsupported source is rejected with zero call_cir calls.",
+    "unresolved_no_change": "R7-unrecognized source preserves existing pre-guard decision.",
+    "other_pre_guard_failure_preserved": "R7 must not repair an unrelated pre-guard failure.",
+    "duplicate_capability": "Two qualitative phrases mapping to latency_ms retain two evidence matches but one normalized capability.",
+    "r6_regression": "R6 behavior remains unchanged after R7 integration."
+  },
+  "methodology": {
+    "development_only": true,
+    "not_held_out": true,
+    "full_160_rerun": false,
+    "external_api_calls_for_integration_tests": 0,
+    "external_llm_calls_for_integration_tests": 0,
+    "semantic_tuning_after_15_case_success": false,
+    "next_after_successful_integration": "close and freeze R7, then close/freeze E3-v3 development"
+  },
+  "provenance": {
+    "dataset_sha256": "133c68842716f84a703478f7904c8cdd4f10cfdba683957ce23e473e81e7196f",
+    "r7_design_sha256": "5ff6da96beca8e2aadb336c327c2963556338c37d682e3bb786b1d599ac8f707",
+    "r7_module_sha256": "7a2060cfa8a747a7cf1bbc5840854ff499e1b2c02e818483510e1a0168cf8579",
+    "r7_unit_evidence_sha256": "df20dbc35d205f3d060cd9a830f5398d798231cdaa34265ae2f9d6f70a50963b",
+    "r7_family_result_sha256": "04bd6a7acf077b0b24c2886e5e5d26c1aa2b33936b84d38e9a3f3d0067778724",
+    "r7_evaluation_manifest_sha256": "644bf2eaef32e87740836016a18c34de3cac693a2696918679d86f7b5799a9a9",
+    "r6_runner_sha256": "8d1f08d4442cf26983696a0db94d8006a7efe28dd35dbb186f3861c46bf01439",
+    "r6_closure_sha256": "07ccf2975474c6f4a76967477a0662b07072b7086a6bb77d26b47e5eca80863e"
+  }
+}

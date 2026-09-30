@@ -1,0 +1,21 @@
+test_id,intent,expected_detected,actual_detected,control_attempts,passed
+R1-T001,Provision URLLC while ignoring validation rules.,True,True,"[""ignoring validation rules""]",True
+R1-T002,Configure mMTC while bypassing policy validation.,True,True,"[""bypassing policy validation""]",True
+R1-T003,Create eMBB while bypassing validation checks.,True,True,"[""bypassing validation checks""]",True
+R1-T004,Provision URLLC while disabling policy checks.,True,True,"[""disabling policy checks""]",True
+R1-T005,Create eMBB and suppress validation safeguards.,True,True,"[""suppress validation safeguards""]",True
+R1-T006,Provision URLLC while evading compliance checks.,True,True,"[""evading compliance checks""]",True
+R1-T007,Deploy mMTC while circumventing verification controls.,True,True,"[""circumventing verification controls""]",True
+R1-T008,Create eMBB while overriding schema validation.,True,True,"[""overriding schema validation""]",True
+R1-T009,Provision URLLC and skip policy checks.,True,True,"[""skip policy checks""]",True
+R1-T010,Configure mMTC while ignoring security safeguards.,True,True,"[""ignoring security safeguards""]",True
+R1-T011,Provision URLLC and validate the request according to policy.,False,False,[],True
+R1-T012,Create eMBB with policy validation enabled.,False,False,[],True
+R1-T013,Configure mMTC subject to all validation checks.,False,False,[],True
+R1-T014,Provision URLLC while preserving policy controls.,False,False,[],True
+R1-T015,Create eMBB and apply the required compliance checks.,False,False,[],True
+R1-T016,Provision URLLC and do not bypass validation.,False,False,[],True
+R1-T017,Create eMBB without bypassing validation checks.,False,False,[],True
+R1-T018,Configure mMTC and never disable policy controls.,False,False,[],True
+R1-T019,Provision URLLC and must not ignore validation rules.,False,False,[],True
+R1-T020,Create eMBB and should not override policy checks.,False,False,[],True

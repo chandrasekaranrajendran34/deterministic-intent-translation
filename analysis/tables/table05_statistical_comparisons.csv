@@ -1,0 +1,6 @@
+Comparison,Test,Effect,p-value
+E2 vs. E3 decision correctness,Exact paired McNemar/binomial,3 E2 errors corrected; 0 E3 regressions,0.250
+E1 vs. E3 decision correctness,Paired binary comparison,No discordant decisions,1.000
+E3 vs. E2 latency,Wilcoxon signed-rank,+74.16 ms mean; +39.46 ms median,0.449
+E3 vs. E1 latency,Wilcoxon signed-rank,-389.83 ms mean; -349.76 ms median,2.97e-5
+E2 vs. E1 latency,Wilcoxon signed-rank,-463.98 ms mean; -421.20 ms median,1.13e-6

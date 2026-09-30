@@ -1,0 +1,7 @@
+Metric,Result,Rate (%),Exact 95% CI (%)
+Decision accuracy,101/120,84.17,76.38–90.19
+Valid-intent acceptance,51/58,87.93,76.70–95.01
+Invalid-intent rejection,50/62,80.65,68.63–89.58
+Rejection precision,50/57,87.72,76.32–94.92
+Rejection recall,50/62,80.65,68.63–89.58
+Rejection F1,—,84.03,—

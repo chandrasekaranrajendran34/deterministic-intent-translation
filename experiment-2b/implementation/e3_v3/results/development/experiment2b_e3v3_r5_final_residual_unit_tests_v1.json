@@ -1,0 +1,108 @@
+{
+  "created_utc": "2026-09-29T15:49:17.286587+00:00",
+  "design_sha256": "5ef2ca46892c762667048fa8981bf8503e05f72ca60e4e477315b9bdebf3cb8f",
+  "failed": 0,
+  "final_analyzer_sha256": "3c24b9d798b9a7694328134eac76f877aa190715d8ccd8cc1348fa49477fdab7",
+  "final_normalizer_sha256": "4e0437b732209e83b43929229f6aa012723957b1109c84e014979556c75e123d",
+  "passed": 8,
+  "suite": "e3v3-r5-final-residual-unit-tests-v1",
+  "tests": [
+    {
+      "evidence": [
+        {
+          "field": "reliability",
+          "operator": "=",
+          "source_text": "reliability of 99.9%",
+          "unit": null,
+          "value": 0.9990000000000001
+        }
+      ],
+      "passed": true,
+      "test": "reliability_of_99_9"
+    },
+    {
+      "evidence": [
+        {
+          "field": "reliability",
+          "operator": "=",
+          "source_text": "reliability of 98.5%",
+          "unit": null,
+          "value": 0.985
+        }
+      ],
+      "passed": true,
+      "test": "reliability_of_98_5"
+    },
+    {
+      "evidence": [
+        {
+          "field": "reliability",
+          "operator": "=",
+          "source_text": "reliability of 97%",
+          "unit": null,
+          "value": 0.97
+        }
+      ],
+      "passed": true,
+      "test": "reliability_of_97"
+    },
+    {
+      "evidence": [],
+      "passed": true,
+      "test": "qualitative_reliability_no_numeric_constraint"
+    },
+    {
+      "evidence": {
+        "bandwidth_mbps": null,
+        "coverage": null,
+        "device_count": null,
+        "latency_ms": null,
+        "objective": null,
+        "reliability": 0.999,
+        "service_type": "URLLC"
+      },
+      "passed": true,
+      "test": "compatible_operator_text_normalized"
+    },
+    {
+      "evidence": {
+        "bandwidth_mbps": null,
+        "coverage": null,
+        "device_count": null,
+        "latency_ms": null,
+        "objective": null,
+        "reliability": "below 99.9%",
+        "service_type": "URLLC"
+      },
+      "passed": true,
+      "test": "conflicting_operator_not_normalized"
+    },
+    {
+      "evidence": {
+        "bandwidth_mbps": null,
+        "coverage": null,
+        "device_count": null,
+        "latency_ms": null,
+        "objective": null,
+        "reliability": "above 99.9%",
+        "service_type": "URLLC"
+      },
+      "passed": true,
+      "test": "operator_text_without_source_not_normalized"
+    },
+    {
+      "evidence": {
+        "bandwidth_mbps": null,
+        "coverage": null,
+        "device_count": null,
+        "latency_ms": null,
+        "objective": null,
+        "reliability": 0.999,
+        "service_type": "URLLC"
+      },
+      "passed": true,
+      "test": "canonical_value_preserved"
+    }
+  ],
+  "total": 8
+}

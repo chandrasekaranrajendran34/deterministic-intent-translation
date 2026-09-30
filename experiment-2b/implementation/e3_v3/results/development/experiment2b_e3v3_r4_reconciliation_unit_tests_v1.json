@@ -1,0 +1,336 @@
+{
+  "step": "25C",
+  "repair_id": "R4",
+  "module": "/content/experiment-1-v2-together/experiment-2b/implementation/e3_v3/src/cir_reconciliation.py",
+  "module_sha256": "405f51e305957fb4d2364024e635b25598aab1dfff4167664ca187981d8bf99a",
+  "total_tests": 20,
+  "passed": 20,
+  "failed": 0,
+  "tests": [
+    {
+      "test": "fill_missing_bandwidth",
+      "passed": true,
+      "input_unchanged": true,
+      "diff_fields": [
+        "bandwidth_mbps"
+      ],
+      "result": {
+        "service_type": "eMBB",
+        "latency_ms": null,
+        "bandwidth_mbps": 720.0,
+        "reliability": null,
+        "device_count": null,
+        "coverage": null,
+        "objective": null
+      }
+    },
+    {
+      "test": "fill_missing_latency",
+      "passed": true,
+      "input_unchanged": true,
+      "diff_fields": [
+        "latency_ms"
+      ],
+      "result": {
+        "service_type": "URLLC",
+        "latency_ms": 5.0,
+        "bandwidth_mbps": null,
+        "reliability": null,
+        "device_count": null,
+        "coverage": null,
+        "objective": null
+      }
+    },
+    {
+      "test": "fill_missing_reliability",
+      "passed": true,
+      "input_unchanged": true,
+      "diff_fields": [
+        "reliability"
+      ],
+      "result": {
+        "service_type": "URLLC",
+        "latency_ms": null,
+        "bandwidth_mbps": null,
+        "reliability": 0.9995,
+        "device_count": null,
+        "coverage": null,
+        "objective": null
+      }
+    },
+    {
+      "test": "fill_missing_device_count",
+      "passed": true,
+      "input_unchanged": true,
+      "diff_fields": [
+        "device_count"
+      ],
+      "result": {
+        "service_type": "mMTC",
+        "latency_ms": null,
+        "bandwidth_mbps": null,
+        "reliability": null,
+        "device_count": 300000,
+        "coverage": null,
+        "objective": null
+      }
+    },
+    {
+      "test": "fill_multiple_missing_fields",
+      "passed": true,
+      "input_unchanged": true,
+      "diff_fields": [
+        "latency_ms",
+        "bandwidth_mbps",
+        "reliability"
+      ],
+      "result": {
+        "service_type": "eMBB",
+        "latency_ms": 40.0,
+        "bandwidth_mbps": 500.0,
+        "reliability": 0.995,
+        "device_count": null,
+        "coverage": null,
+        "objective": null
+      }
+    },
+    {
+      "test": "never_overwrite_non_null_llm_value",
+      "passed": true,
+      "input_unchanged": true,
+      "diff_fields": [],
+      "result": {
+        "service_type": "eMBB",
+        "latency_ms": null,
+        "bandwidth_mbps": 999.0,
+        "reliability": null,
+        "device_count": null,
+        "coverage": null,
+        "objective": null
+      }
+    },
+    {
+      "test": "conflicting_thresholds_fail_closed",
+      "passed": true,
+      "input_unchanged": true,
+      "diff_fields": [],
+      "result": {
+        "service_type": "eMBB",
+        "latency_ms": null,
+        "bandwidth_mbps": null,
+        "reliability": null,
+        "device_count": null,
+        "coverage": null,
+        "objective": null
+      }
+    },
+    {
+      "test": "duplicate_same_threshold_allowed",
+      "passed": true,
+      "input_unchanged": true,
+      "diff_fields": [
+        "bandwidth_mbps"
+      ],
+      "result": {
+        "service_type": "eMBB",
+        "latency_ms": null,
+        "bandwidth_mbps": 500.0,
+        "reliability": null,
+        "device_count": null,
+        "coverage": null,
+        "objective": null
+      }
+    },
+    {
+      "test": "no_source_constraint_no_fill",
+      "passed": true,
+      "input_unchanged": true,
+      "diff_fields": [],
+      "result": {
+        "service_type": "eMBB",
+        "latency_ms": null,
+        "bandwidth_mbps": null,
+        "reliability": null,
+        "device_count": null,
+        "coverage": null,
+        "objective": null
+      }
+    },
+    {
+      "test": "service_type_out_of_scope",
+      "passed": true,
+      "input_unchanged": true,
+      "diff_fields": [],
+      "result": {
+        "service_type": null,
+        "latency_ms": null,
+        "bandwidth_mbps": null,
+        "reliability": null,
+        "device_count": null,
+        "coverage": null,
+        "objective": null
+      }
+    },
+    {
+      "test": "coverage_out_of_scope",
+      "passed": true,
+      "input_unchanged": true,
+      "diff_fields": [],
+      "result": {
+        "service_type": "eMBB",
+        "latency_ms": null,
+        "bandwidth_mbps": null,
+        "reliability": null,
+        "device_count": null,
+        "coverage": null,
+        "objective": null
+      }
+    },
+    {
+      "test": "canonical_schema_only",
+      "passed": true,
+      "input_unchanged": true,
+      "diff_fields": [],
+      "result": {
+        "service_type": "eMBB",
+        "latency_ms": null,
+        "bandwidth_mbps": null,
+        "reliability": null,
+        "device_count": null,
+        "coverage": null,
+        "objective": null
+      }
+    },
+    {
+      "test": "malformed_threshold_ignored",
+      "passed": true,
+      "input_unchanged": true,
+      "diff_fields": [],
+      "result": {
+        "service_type": "eMBB",
+        "latency_ms": null,
+        "bandwidth_mbps": null,
+        "reliability": null,
+        "device_count": null,
+        "coverage": null,
+        "objective": null
+      }
+    },
+    {
+      "test": "non_integral_device_count_ignored",
+      "passed": true,
+      "input_unchanged": true,
+      "diff_fields": [],
+      "result": {
+        "service_type": "mMTC",
+        "latency_ms": null,
+        "bandwidth_mbps": null,
+        "reliability": null,
+        "device_count": null,
+        "coverage": null,
+        "objective": null
+      }
+    },
+    {
+      "test": "input_cir_not_mutated",
+      "passed": true,
+      "input_unchanged": true,
+      "diff_fields": [],
+      "result": {
+        "service_type": "eMBB",
+        "latency_ms": null,
+        "bandwidth_mbps": null,
+        "reliability": null,
+        "device_count": null,
+        "coverage": null,
+        "objective": null
+      }
+    },
+    {
+      "test": "transferred_bandwidth_lt",
+      "passed": true,
+      "input_unchanged": true,
+      "diff_fields": [
+        "bandwidth_mbps"
+      ],
+      "result": {
+        "service_type": "eMBB",
+        "latency_ms": null,
+        "bandwidth_mbps": 720.0,
+        "reliability": null,
+        "device_count": null,
+        "coverage": null,
+        "objective": null
+      }
+    },
+    {
+      "test": "transferred_bandwidth_gt",
+      "passed": true,
+      "input_unchanged": true,
+      "diff_fields": [
+        "bandwidth_mbps"
+      ],
+      "result": {
+        "service_type": "eMBB",
+        "latency_ms": null,
+        "bandwidth_mbps": 280.0,
+        "reliability": null,
+        "device_count": null,
+        "coverage": null,
+        "objective": null
+      }
+    },
+    {
+      "test": "transferred_latency_gt_2",
+      "passed": true,
+      "input_unchanged": true,
+      "diff_fields": [
+        "latency_ms"
+      ],
+      "result": {
+        "service_type": "URLLC",
+        "latency_ms": 2.0,
+        "bandwidth_mbps": null,
+        "reliability": null,
+        "device_count": null,
+        "coverage": null,
+        "objective": null
+      }
+    },
+    {
+      "test": "transferred_latency_gt_1",
+      "passed": true,
+      "input_unchanged": true,
+      "diff_fields": [
+        "latency_ms"
+      ],
+      "result": {
+        "service_type": "URLLC",
+        "latency_ms": 1.0,
+        "bandwidth_mbps": null,
+        "reliability": null,
+        "device_count": null,
+        "coverage": null,
+        "objective": null
+      }
+    },
+    {
+      "test": "transferred_latency_ge_1",
+      "passed": true,
+      "input_unchanged": true,
+      "diff_fields": [
+        "latency_ms"
+      ],
+      "result": {
+        "service_type": "URLLC",
+        "latency_ms": 1.0,
+        "bandwidth_mbps": null,
+        "reliability": null,
+        "device_count": null,
+        "coverage": null,
+        "objective": null
+      }
+    }
+  ],
+  "timestamp_utc": "2026-09-29T11:05:55.624761+00:00"
+}

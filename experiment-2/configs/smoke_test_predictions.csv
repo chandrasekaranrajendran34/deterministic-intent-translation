@@ -1,0 +1,4 @@
+case,category,expected_ground_truth,E1_expected,E2_expected,E3_expected
+EXP2-002,valid_eMBB,ACCEPT,ACCEPT,ACCEPT,ACCEPT
+EXP2-133,invalid_explicit_unsupported_parameter,REJECT,UNKNOWN,MAY_ACCEPT_IF_CIR_OMITS_UNSUPPORTED_FIELD,REJECT_BY_INPUT_AUDIT
+EXP2-145,invalid_implicit_unsupported_parameter,REJECT,UNKNOWN,UNKNOWN,UNKNOWN_CURRENT_AUDIT_ONLY_HANDLES_EXPLICIT_NAME_VALUE

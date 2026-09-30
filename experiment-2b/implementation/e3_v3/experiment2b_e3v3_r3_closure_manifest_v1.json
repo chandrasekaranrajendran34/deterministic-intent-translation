@@ -1,0 +1,90 @@
+{
+  "step": "24E-D5",
+  "repair_family": "R3_constraint_representation",
+  "status": "CLOSED",
+  "closure_reason": "Operator-aware source-bound sidecar preserves strict, inclusive and exact source constraint semantics without modifying the canonical seven-field CIR schema.",
+  "methodological_boundary": {
+    "canonical_cir_modified": false,
+    "canonical_schema_modified": false,
+    "strict_operator_semantics_weakened": false,
+    "guard_api_modified": false,
+    "historical_runner_modified": false,
+    "frozen_development_dataset_modified": false,
+    "llm_omission_compensated_by_r3": false
+  },
+  "r3_design": {
+    "representation": "source_bound_operator_sidecar",
+    "supported_operators": [
+      "=",
+      "<",
+      "<=",
+      ">",
+      ">="
+    ],
+    "canonical_cir_role": "threshold_scalar",
+    "sidecar_role": "preserve_source_operator_identity",
+    "preservation_interpretation": "representation-level threshold preservation; CIR scalar is not interpreted as an achieved runtime measurement"
+  },
+  "development_evidence": {
+    "dev_r3_cases": 20,
+    "end_to_end_correct": 15,
+    "end_to_end_total": 20,
+    "end_to_end_rate": 0.75,
+    "conditional_preservation_eligible": 15,
+    "conditional_preservation_pass": 15,
+    "conditional_preservation_rate": 1.0,
+    "remaining_failures": 5,
+    "remaining_failure_class": "llm_cir_constraint_omission",
+    "remaining_failure_owner": "R4_semantic_CIR_construction"
+  },
+  "regression_evidence": {
+    "R1": {
+      "pass": 30,
+      "total": 30
+    },
+    "R2": {
+      "pass": 25,
+      "total": 25
+    },
+    "combined": {
+      "pass": 55,
+      "total": 55
+    },
+    "registered_differential": {
+      "pass": 55,
+      "total": 55
+    }
+  },
+  "active_component_hashes": {
+    "source_analyzer.py": "71a6f00172149f66250b3c17386eea98b18008eb65b097c327db705e94068dc8",
+    "constraint_semantics.py": "91742e13fce9683bd7ae36d771ef178ea5f40fc417ff0bab751c1c35d53185bd",
+    "preservation_check.py": "7fdc76ee4e24572c0dbef13b66290b0eb28ba0036a130f102dbd41b77834fe52",
+    "e3v2_guard.py": "b01a665e8d295d4d36218668a1f84f64cf29226b76edb84789e2249d1ed5dd55",
+    "capability_resolver.py": "e84dcb1b4e0f2a495c48c72aac3d3963eac51ed7529829378a5b84da3df58d3a",
+    "e3v2_capability_profile_v1.json": "ca7ff5c8f4292867a7a00e65bda7a083c69adb732e33ce9a56747f405065c0ba",
+    "development_runner": "8567344347834622815d915c0ee7fe62486991328d85b283ba8729e7c63d85f7"
+  },
+  "evidence_hashes": {
+    "frozen_dev": "133c68842716f84a703478f7904c8cdd4f10cfdba683957ce23e473e81e7196f",
+    "analyzer": "71a6f00172149f66250b3c17386eea98b18008eb65b097c327db705e94068dc8",
+    "sidecar": "91742e13fce9683bd7ae36d771ef178ea5f40fc417ff0bab751c1c35d53185bd",
+    "preservation": "7fdc76ee4e24572c0dbef13b66290b0eb28ba0036a130f102dbd41b77834fe52",
+    "guard": "b01a665e8d295d4d36218668a1f84f64cf29226b76edb84789e2249d1ed5dd55",
+    "resolver": "e84dcb1b4e0f2a495c48c72aac3d3963eac51ed7529829378a5b84da3df58d3a",
+    "capability_profile": "ca7ff5c8f4292867a7a00e65bda7a083c69adb732e33ce9a56747f405065c0ba",
+    "dev_runner": "8567344347834622815d915c0ee7fe62486991328d85b283ba8729e7c63d85f7",
+    "d3d_raw": "f7e0c0a18e436a0e1f564a2da23dbdd66400a10fef8e1685938dd2947ce8e684",
+    "d3d_summary": "c89450a3c6f09eec811cb5dd56ae10f70ed2354a20c1ce82b49b01d4d322165a",
+    "d3d_manifest": "a74e0421a16a734d43c0f7ac6aa558bda6d35d6cc98d1013ae5ec22919ec70ea",
+    "d3e_taxonomy": "b1f9e528f885cdc17c319efee9faa1bc23e73b230d1eb8f7c74284201173f499",
+    "d3e_summary": "ffc8990cced6ba128b170ddcdb4ea94b9d636c273a61ccaa0b29bc7cf99e349c",
+    "d4_regression": "1817e3ee4cddaa66efe135ccf0d63fadb779ef94439cf8e2ac7989b7fd0881d0",
+    "d4_summary": "62d2ad22a65601458e9003652eb8119671554ac630ef8d6d9373ca1b74e37e6b",
+    "registered_diff": "1a2852178fb4f00a91400af5a821c8f91f1b94698042308eda454ef58468b2d9",
+    "resource_manifest": "8ff4594843b2fccad9dcd7d5b5a63c83e5798e787fd46820b25bc88ab61f8065",
+    "runner_freeze": "d92caaee32f622c8a0e380b12ff9b499eb16a4c8a05b72b3e0760721d0259b4d"
+  },
+  "next_repair_family": "R4_semantic_CIR_construction",
+  "r4_entry_condition": "Five DEV-R3 end-to-end failures were caused by LLM omission of source-constrained CIR fields. R3 must remain unchanged while R4 addresses semantic CIR completeness.",
+  "timestamp_utc": "2026-09-29T10:51:48.779883+00:00"
+}

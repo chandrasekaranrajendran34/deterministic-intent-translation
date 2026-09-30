@@ -1,0 +1,8 @@
+section,claim_ids,role
+Abstract,C01;C02;C03;C10;C13;C14,Primary result and bounded conclusion
+Contributions,C07;C09;C10;C11;C13;C14,Technical and empirical contributions
+Results V-A,C07;C08,E1 information-loss and E2A robustness evidence
+Results V-B,C09,E2B targeted repair/development evidence
+Results V-C,C01;C02;C03;C04;C05;C06;C11,Primary frozen held-out evidence
+Results V-D,C10,Residual failure evidence
+Conclusion,C01;C02;C10;C13;C14,Bounded evidence-supported conclusion

@@ -1,0 +1,142 @@
+{
+  "architecture_position": [
+    "natural_language_intent",
+    "deterministic_source_analysis",
+    "source_gate_and_consistency",
+    "LLM_to_CIR",
+    "R4_source_grounded_CIR_reconciliation",
+    "R5_reliability_normalization",
+    "source_to_CIR_preservation",
+    "CIR_validation",
+    "capability_policy",
+    "mapping_and_descriptor"
+  ],
+  "cir_repair_policy": {
+    "cir_percentage_like_numeric": "normalize to canonical 0-to-1 only when source evidence unambiguously establishes the corresponding reliability percentage",
+    "cir_percentage_string": "normalize only when deterministic parsing is unambiguous and source evidence confirms the same reliability value",
+    "conflicting_source_constraints": "do not collapse conflicts; existing consistency logic remains authoritative",
+    "fabrication": "forbidden",
+    "missing_cir_reliability": "fill from exactly one unambiguous normalized deterministic source reliability constraint",
+    "source_grounded_only": true,
+    "valid_existing_canonical_value": "preserve unless source-bound consistency logic establishes that it is a representation-scale mismatch"
+  },
+  "created_utc": "2026-09-29T14:33:02.236700+00:00",
+  "design_id": "e3v3-r5-reliability-normalization-v1.0",
+  "development_only": true,
+  "evaluation_policy": {
+    "development_family": "DEV-R5",
+    "do_not_tune_R6_or_R7_from_R5": true,
+    "primary_development_question": "Does deterministic R5 normalization correctly preserve or reconstruct explicit reliability constraints without introducing unsupported values?",
+    "use_final_holdout": false
+  },
+  "frozen_dev_r5_family": {
+    "cases": 20,
+    "expected_valid_cases": 20,
+    "subcategories": {
+      "boundary_operator_form": 6,
+      "decimal_form": 6,
+      "percentage_form": 8
+    }
+  },
+  "future_repairs_preserved": {
+    "R6": "service semantic extraction",
+    "R7": "qualitative requirement resolution"
+  },
+  "non_overwrite_principle": {
+    "exception": "A representation-only scale correction may be performed when deterministic source evidence proves that the CIR value represents the same source reliability percentage on the wrong scale.",
+    "general_rule": "R5 must not replace an arbitrary semantically different LLM reliability value merely to make validation pass."
+  },
+  "normalization_policy": {
+    "invalid_source_value": {
+      "condition": "normalized deterministic source reliability lies outside [0,1]",
+      "operation": "fail closed; do not fabricate a replacement"
+    },
+    "source_decimal": {
+      "condition": "explicit reliability value already within [0,1] and not expressed as a percentage",
+      "operation": "preserve value unchanged"
+    },
+    "source_percentage": {
+      "condition": "explicit percent sign associated with reliability",
+      "examples": {
+        "97%": 0.97,
+        "98.75%": 0.9875,
+        "99.9%": 0.999,
+        "99.95%": 0.9995,
+        "99.99%": 0.9999
+      },
+      "operation": "divide numeric percentage by 100"
+    }
+  },
+  "operator_policy": {
+    "canonical_cir_storage": "scalar reliability threshold only",
+    "do_not_encode_operator_into_cir": true,
+    "operator_storage": "existing source-bound constraint representation",
+    "preserve_source_operator": true
+  },
+  "problem_definition": {
+    "canonical_reliability_domain": "[0,1]",
+    "decimal_example": "0.999 -> 0.999",
+    "percentage_example": "99.9% -> 0.999",
+    "primary_goal": "Ensure explicitly stated reliability constraints are represented on the canonical 0-to-1 CIR scale without precision loss while preserving source-bound comparison operator semantics."
+  },
+  "provenance": {
+    "cir_reconciliation": {
+      "path": "/content/experiment-1-v2-together/experiment-2b/implementation/e3_v3/src/cir_reconciliation.py",
+      "sha256": "405f51e305957fb4d2364024e635b25598aab1dfff4167664ca187981d8bf99a"
+    },
+    "dataset": {
+      "path": "/content/experiment-1-v2-together/experiment-2b/data/frozen/experiment2b_e3v3_development_160_v1.csv",
+      "sha256": "133c68842716f84a703478f7904c8cdd4f10cfdba683957ce23e473e81e7196f"
+    },
+    "r4_closure": {
+      "path": "/content/experiment-1-v2-together/experiment-2b/implementation/e3_v3/experiment2b_e3v3_r4_closure_manifest_v1.json",
+      "sha256": "15eca6e7435e5c724cb7d48ac86f4d5d76db03e5ef3858af2190cd2f193b1971"
+    },
+    "r4_design": {
+      "path": "/content/experiment-1-v2-together/experiment-2b/implementation/e3_v3/experiment2b_e3v3_r4_design_v1.json",
+      "sha256": "861fd001d79f56e163c85f75005e321d2df7f3c7d4ffdb2540bcebe583f45ca1"
+    },
+    "source_analyzer": {
+      "path": "/content/experiment-1-v2-together/experiment-2b/implementation/e3_v3/src/source_analyzer.py",
+      "sha256": "71a6f00172149f66250b3c17386eea98b18008eb65b097c327db705e94068dc8"
+    }
+  },
+  "repair_id": "R5",
+  "repair_name": "deterministic_reliability_normalization",
+  "required_unit_test_classes": [
+    "percentage_to_decimal_conversion",
+    "percentage_precision_preservation",
+    "canonical_decimal_unchanged",
+    "missing_reliability_source_grounded_fill",
+    "operator_preserved_in_source_sidecar",
+    "percentage_like_CIR_value_corrected_only_with_source_evidence",
+    "percentage_string_corrected_only_with_source_evidence",
+    "unrelated_fields_unchanged",
+    "no_source_reliability_no_repair",
+    "conflicting_source_constraints_fail_closed",
+    "out_of_range_normalized_value_fail_closed",
+    "input_CIR_not_mutated"
+  ],
+  "scope": {
+    "in_scope": [
+      "explicit numeric reliability percentages",
+      "explicit numeric reliability decimal fractions",
+      "reliability constraints with comparison operators",
+      "normalization of percentage source values to 0-to-1",
+      "preservation of already canonical decimal reliability",
+      "source-grounded repair of missing or malformed CIR reliability"
+    ],
+    "out_of_scope": [
+      "service_type semantic extraction",
+      "qualitative reliability inference without numeric evidence",
+      "coverage semantic resolution",
+      "general capability resolution",
+      "latency normalization",
+      "bandwidth normalization",
+      "device_count normalization",
+      "modification of R1/R2/R3 behavior",
+      "modification of R4 numeric reconciliation policy"
+    ]
+  },
+  "status": "DESIGN_FROZEN_BEFORE_IMPLEMENTATION"
+}

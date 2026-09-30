@@ -1,0 +1,25 @@
+{
+  "step": "24E-D1",
+  "purpose": "E3-v3 end-to-end runner preflight",
+  "active_hashes": {
+    "source_analyzer": "71a6f00172149f66250b3c17386eea98b18008eb65b097c327db705e94068dc8",
+    "constraint_semantics": "91742e13fce9683bd7ae36d771ef178ea5f40fc417ff0bab751c1c35d53185bd",
+    "preservation_check": "7fdc76ee4e24572c0dbef13b66290b0eb28ba0036a130f102dbd41b77834fe52",
+    "e3v2_guard": "b01a665e8d295d4d36218668a1f84f64cf29226b76edb84789e2249d1ed5dd55",
+    "frozen_dev": "133c68842716f84a703478f7904c8cdd4f10cfdba683957ce23e473e81e7196f",
+    "primary_results": "1055be8d9a233fa2a1736f9ea20660361157c9690c9b3bb7e03d40e8f49c154d"
+  },
+  "runner_candidates": [
+    "/content/experiment-1-v2-together/experiment-2b/implementation/e3_v3/src/run_experiment2b.py",
+    "/content/experiment-1-v2-together/experiment-2b/reproducibility/experiment2b_execution_v1.0/run_experiment2b_v1.py",
+    "/content/experiment-1-v2-together/experiment-2b/src/run_experiment2b.py"
+  ],
+  "e3v3_runner_candidates": [
+    "/content/experiment-1-v2-together/experiment-2b/implementation/e3_v3/src/run_experiment2b.py"
+  ],
+  "dev_r3_cases": 20,
+  "api_calls": 0,
+  "llm_calls": 0,
+  "source_files_modified": false,
+  "timestamp_utc": "2026-09-29T10:14:41.495336+00:00"
+}

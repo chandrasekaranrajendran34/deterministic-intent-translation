@@ -1,0 +1,224 @@
+id,intent,category,expected_service,expected_valid,pipeline,model,parse_ok,latency_ms,finish_reason,prompt_tokens,completion_tokens,raw_response,predicted_service,schema_valid,hallucination_detected,unsupported_input_detected,input_audit_valid,mapping_found,descriptor_success,accepted,validation_errors,cir_json,descriptor_json
+EXP2-161,Create eMBB with bandwidth greater than 1 Gbps but capped at 50 Mbps.,invalid_contradictory,,False,direct,Qwen/Qwen3.5-9B,True,1160.0933129993791,stop,117,48,"{
+  ""rejected"": true,
+  ""reason"": ""Contradictory requirements: bandwidth cannot be greater than 1 Gbps (1000 Mbps) while simultaneously being capped at 50 Mbps.""
+}",,True,False,False,,False,False,False,,,
+EXP2-161,Create eMBB with bandwidth greater than 1 Gbps but capped at 50 Mbps.,invalid_contradictory,,False,cir,Qwen/Qwen3.5-9B,True,1546.5274889993452,stop,230,84,"{
+  ""service_type"": ""eMBB"",
+  ""latency_ms"": null,
+  ""bandwidth_mbps"": null,
+  ""reliability"": null,
+  ""device_count"": null,
+  ""coverage"": null,
+  ""objective"": ""Create eMBB with bandwidth greater than 1 Gbps but capped at 50 Mbps""
+}",eMBB,True,False,False,,True,True,True,,"{""service_type"": ""eMBB"", ""latency_ms"": null, ""bandwidth_mbps"": null, ""reliability"": null, ""device_count"": null, ""coverage"": null, ""objective"": ""Create eMBB with bandwidth greater than 1 Gbps but capped at 50 Mbps""}","{""service_type"": ""eMBB"", ""service_profile"": {""latency_ms"": null, ""bandwidth_mbps"": null, ""reliability"": null, ""device_count"": null, ""coverage"": null, ""objective"": ""Create eMBB with bandwidth greater than 1 Gbps but capped at 50 Mbps""}, ""standards_mapping"": {""mapping_found"": true, ""mapping"": {""threegpp"": ""network-slice service profile"", ""oran"": ""RAN slice/A1 policy candidate""}, ""profile"": ""3GPP Rel-18 + O-RAN R004""}}"
+EXP2-161,Create eMBB with bandwidth greater than 1 Gbps but capped at 50 Mbps.,invalid_contradictory,,False,proposed,Qwen/Qwen3.5-9B,True,1238.1483649987786,stop,230,84,"{
+  ""service_type"": ""eMBB"",
+  ""latency_ms"": null,
+  ""bandwidth_mbps"": null,
+  ""reliability"": null,
+  ""device_count"": null,
+  ""coverage"": null,
+  ""objective"": ""Create eMBB with bandwidth greater than 1 Gbps but capped at 50 Mbps""
+}",eMBB,True,False,False,True,True,True,True,,"{""service_type"": ""eMBB"", ""latency_ms"": null, ""bandwidth_mbps"": null, ""reliability"": null, ""device_count"": null, ""coverage"": null, ""objective"": ""Create eMBB with bandwidth greater than 1 Gbps but capped at 50 Mbps""}","{""service_type"": ""eMBB"", ""service_profile"": {""latency_ms"": null, ""bandwidth_mbps"": null, ""reliability"": null, ""device_count"": null, ""coverage"": null, ""objective"": ""Create eMBB with bandwidth greater than 1 Gbps but capped at 50 Mbps""}, ""standards_mapping"": {""mapping_found"": true, ""mapping"": {""threegpp"": ""network-slice service profile"", ""oran"": ""RAN slice/A1 policy candidate""}, ""profile"": ""3GPP Rel-18 + O-RAN R004""}}"
+EXP2-162,Provision mMTC with device count below 100 and above 100000.,invalid_contradictory,,False,direct,Qwen/Qwen3.5-9B,True,3452.984822999497,stop,119,42,"{
+  ""rejected"": true,
+  ""reason"": ""Contradictory constraints: device count cannot be simultaneously below 100 and above 100000.""
+}",,True,False,False,,False,False,False,,,
+EXP2-162,Provision mMTC with device count below 100 and above 100000.,invalid_contradictory,,False,cir,Qwen/Qwen3.5-9B,True,1612.5511419995746,stop,232,64,"{
+  ""service_type"": ""mMTC"",
+  ""latency_ms"": null,
+  ""bandwidth_mbps"": null,
+  ""reliability"": null,
+  ""device_count"": null,
+  ""coverage"": null,
+  ""objective"": null
+}",mMTC,True,False,False,,True,True,True,,"{""service_type"": ""mMTC"", ""latency_ms"": null, ""bandwidth_mbps"": null, ""reliability"": null, ""device_count"": null, ""coverage"": null, ""objective"": null}","{""service_type"": ""mMTC"", ""service_profile"": {""latency_ms"": null, ""bandwidth_mbps"": null, ""reliability"": null, ""device_count"": null, ""coverage"": null, ""objective"": null}, ""standards_mapping"": {""mapping_found"": true, ""mapping"": {""threegpp"": ""network-slice service profile"", ""oran"": ""RAN slice/A1 policy candidate""}, ""profile"": ""3GPP Rel-18 + O-RAN R004""}}"
+EXP2-162,Provision mMTC with device count below 100 and above 100000.,invalid_contradictory,,False,proposed,Qwen/Qwen3.5-9B,True,1370.4305900009786,stop,232,64,"{
+  ""service_type"": ""mMTC"",
+  ""latency_ms"": null,
+  ""bandwidth_mbps"": null,
+  ""reliability"": null,
+  ""device_count"": null,
+  ""coverage"": null,
+  ""objective"": null
+}",mMTC,True,False,False,True,True,True,True,,"{""service_type"": ""mMTC"", ""latency_ms"": null, ""bandwidth_mbps"": null, ""reliability"": null, ""device_count"": null, ""coverage"": null, ""objective"": null}","{""service_type"": ""mMTC"", ""service_profile"": {""latency_ms"": null, ""bandwidth_mbps"": null, ""reliability"": null, ""device_count"": null, ""coverage"": null, ""objective"": null}, ""standards_mapping"": {""mapping_found"": true, ""mapping"": {""threegpp"": ""network-slice service profile"", ""oran"": ""RAN slice/A1 policy candidate""}, ""profile"": ""3GPP Rel-18 + O-RAN R004""}}"
+EXP2-163,Create URLLC that must be both ultra-low-latency and explicitly high-latency.,invalid_contradictory,,False,direct,Qwen/Qwen3.5-9B,True,1239.9505030007276,stop,115,49,"{
+  ""rejected"": true,
+  ""reason"": ""Contradictory requirements: URLLC (Ultra-Reliable Low-Latency Communications) cannot simultaneously be ultra-low-latency and explicitly high-latency.""
+}",,True,False,False,,False,False,False,,,
+EXP2-163,Create URLLC that must be both ultra-low-latency and explicitly high-latency.,invalid_contradictory,,False,cir,Qwen/Qwen3.5-9B,True,1668.3715819999634,stop,228,81,"{
+  ""service_type"": ""URLLC"",
+  ""latency_ms"": null,
+  ""bandwidth_mbps"": null,
+  ""reliability"": null,
+  ""device_count"": null,
+  ""coverage"": null,
+  ""objective"": ""Create URLLC that must be both ultra-low-latency and explicitly high-latency""
+}",URLLC,True,False,False,,True,True,True,,"{""service_type"": ""URLLC"", ""latency_ms"": null, ""bandwidth_mbps"": null, ""reliability"": null, ""device_count"": null, ""coverage"": null, ""objective"": ""Create URLLC that must be both ultra-low-latency and explicitly high-latency""}","{""service_type"": ""URLLC"", ""service_profile"": {""latency_ms"": null, ""bandwidth_mbps"": null, ""reliability"": null, ""device_count"": null, ""coverage"": null, ""objective"": ""Create URLLC that must be both ultra-low-latency and explicitly high-latency""}, ""standards_mapping"": {""mapping_found"": true, ""mapping"": {""threegpp"": ""network-slice service profile"", ""oran"": ""RAN slice/A1 policy candidate""}, ""profile"": ""3GPP Rel-18 + O-RAN R004""}}"
+EXP2-163,Create URLLC that must be both ultra-low-latency and explicitly high-latency.,invalid_contradictory,,False,proposed,Qwen/Qwen3.5-9B,True,2241.8409870006144,stop,228,81,"{
+  ""service_type"": ""URLLC"",
+  ""latency_ms"": null,
+  ""bandwidth_mbps"": null,
+  ""reliability"": null,
+  ""device_count"": null,
+  ""coverage"": null,
+  ""objective"": ""Create URLLC that must be both ultra-low-latency and explicitly high-latency""
+}",URLLC,True,False,False,True,True,True,True,,"{""service_type"": ""URLLC"", ""latency_ms"": null, ""bandwidth_mbps"": null, ""reliability"": null, ""device_count"": null, ""coverage"": null, ""objective"": ""Create URLLC that must be both ultra-low-latency and explicitly high-latency""}","{""service_type"": ""URLLC"", ""service_profile"": {""latency_ms"": null, ""bandwidth_mbps"": null, ""reliability"": null, ""device_count"": null, ""coverage"": null, ""objective"": ""Create URLLC that must be both ultra-low-latency and explicitly high-latency""}, ""standards_mapping"": {""mapping_found"": true, ""mapping"": {""threegpp"": ""network-slice service profile"", ""oran"": ""RAN slice/A1 policy candidate""}, ""profile"": ""3GPP Rel-18 + O-RAN R004""}}"
+EXP2-164,Provide eMBB requiring simultaneously high throughput and zero bandwidth.,invalid_contradictory,,False,direct,Qwen/Qwen3.5-9B,True,1097.6813929992204,stop,109,43,"{
+  ""rejected"": true,
+  ""reason"": ""Contradictory requirements: eMBB (enhanced Mobile Broadband) requires high throughput, which is incompatible with zero bandwidth.""
+}",,True,False,False,,False,False,False,,,
+EXP2-164,Provide eMBB requiring simultaneously high throughput and zero bandwidth.,invalid_contradictory,,False,cir,Qwen/Qwen3.5-9B,True,1702.8700539995043,stop,222,70,"{
+  ""service_type"": ""eMBB"",
+  ""latency_ms"": null,
+  ""bandwidth_mbps"": null,
+  ""reliability"": null,
+  ""device_count"": null,
+  ""coverage"": null,
+  ""objective"": ""high throughput and zero bandwidth""
+}",eMBB,True,False,False,,True,True,True,,"{""service_type"": ""eMBB"", ""latency_ms"": null, ""bandwidth_mbps"": null, ""reliability"": null, ""device_count"": null, ""coverage"": null, ""objective"": ""high throughput and zero bandwidth""}","{""service_type"": ""eMBB"", ""service_profile"": {""latency_ms"": null, ""bandwidth_mbps"": null, ""reliability"": null, ""device_count"": null, ""coverage"": null, ""objective"": ""high throughput and zero bandwidth""}, ""standards_mapping"": {""mapping_found"": true, ""mapping"": {""threegpp"": ""network-slice service profile"", ""oran"": ""RAN slice/A1 policy candidate""}, ""profile"": ""3GPP Rel-18 + O-RAN R004""}}"
+EXP2-164,Provide eMBB requiring simultaneously high throughput and zero bandwidth.,invalid_contradictory,,False,proposed,Qwen/Qwen3.5-9B,True,2087.897917999726,stop,222,70,"{
+  ""service_type"": ""eMBB"",
+  ""latency_ms"": null,
+  ""bandwidth_mbps"": null,
+  ""reliability"": null,
+  ""device_count"": null,
+  ""coverage"": null,
+  ""objective"": ""high throughput and zero bandwidth""
+}",eMBB,True,False,False,True,True,True,True,,"{""service_type"": ""eMBB"", ""latency_ms"": null, ""bandwidth_mbps"": null, ""reliability"": null, ""device_count"": null, ""coverage"": null, ""objective"": ""high throughput and zero bandwidth""}","{""service_type"": ""eMBB"", ""service_profile"": {""latency_ms"": null, ""bandwidth_mbps"": null, ""reliability"": null, ""device_count"": null, ""coverage"": null, ""objective"": ""high throughput and zero bandwidth""}, ""standards_mapping"": {""mapping_found"": true, ""mapping"": {""threegpp"": ""network-slice service profile"", ""oran"": ""RAN slice/A1 policy candidate""}, ""profile"": ""3GPP Rel-18 + O-RAN R004""}}"
+EXP2-165,Create mMTC for a massive device population but restrict it to one device.,invalid_contradictory,,False,direct,Qwen/Qwen3.5-9B,True,1442.016255999988,stop,112,59,"{
+  ""rejected"": true,
+  ""reason"": ""Contradictory requirements: mMTC (massive Machine-Type Communications) is defined by supporting a massive number of devices, while the request restricts the slice to exactly one device, making the intent logically invalid.""
+}",,True,False,False,,False,False,False,,,
+EXP2-165,Create mMTC for a massive device population but restrict it to one device.,invalid_contradictory,,False,cir,Qwen/Qwen3.5-9B,True,2138.6402100015403,stop,225,65,"{
+  ""service_type"": ""mMTC"",
+  ""latency_ms"": null,
+  ""bandwidth_mbps"": null,
+  ""reliability"": null,
+  ""device_count"": 1,
+  ""coverage"": null,
+  ""objective"": null
+}",mMTC,True,False,False,,True,True,True,,"{""service_type"": ""mMTC"", ""latency_ms"": null, ""bandwidth_mbps"": null, ""reliability"": null, ""device_count"": 1, ""coverage"": null, ""objective"": null}","{""service_type"": ""mMTC"", ""service_profile"": {""latency_ms"": null, ""bandwidth_mbps"": null, ""reliability"": null, ""device_count"": 1, ""coverage"": null, ""objective"": null}, ""standards_mapping"": {""mapping_found"": true, ""mapping"": {""threegpp"": ""network-slice service profile"", ""oran"": ""RAN slice/A1 policy candidate""}, ""profile"": ""3GPP Rel-18 + O-RAN R004""}}"
+EXP2-165,Create mMTC for a massive device population but restrict it to one device.,invalid_contradictory,,False,proposed,Qwen/Qwen3.5-9B,True,1173.6980120003864,stop,225,70,"{
+  ""service_type"": ""mMTC"",
+  ""latency_ms"": null,
+  ""bandwidth_mbps"": null,
+  ""reliability"": null,
+  ""device_count"": 1,
+  ""coverage"": null,
+  ""objective"": ""massive device population""
+}",mMTC,True,False,False,True,True,True,True,,"{""service_type"": ""mMTC"", ""latency_ms"": null, ""bandwidth_mbps"": null, ""reliability"": null, ""device_count"": 1, ""coverage"": null, ""objective"": ""massive device population""}","{""service_type"": ""mMTC"", ""service_profile"": {""latency_ms"": null, ""bandwidth_mbps"": null, ""reliability"": null, ""device_count"": 1, ""coverage"": null, ""objective"": ""massive device population""}, ""standards_mapping"": {""mapping_found"": true, ""mapping"": {""threegpp"": ""network-slice service profile"", ""oran"": ""RAN slice/A1 policy candidate""}, ""profile"": ""3GPP Rel-18 + O-RAN R004""}}"
+EXP2-166,Provision URLLC with reliability equal to 0.99999 and equal to 0.5.,invalid_contradictory,,False,direct,Qwen/Qwen3.5-9B,True,750.5626729998767,stop,122,42,"{
+  ""rejected"": true,
+  ""reason"": ""Contradictory requirements: reliability cannot be simultaneously equal to 0.99999 and 0.5.""
+}",,True,False,False,,False,False,False,,,
+EXP2-166,Provision URLLC with reliability equal to 0.99999 and equal to 0.5.,invalid_contradictory,,False,cir,Qwen/Qwen3.5-9B,True,1536.2073480009713,stop,235,70,"{
+  ""service_type"": ""URLLC"",
+  ""latency_ms"": null,
+  ""bandwidth_mbps"": null,
+  ""reliability"": 0.99999,
+  ""device_count"": null,
+  ""coverage"": null,
+  ""objective"": null
+}",URLLC,True,False,False,,True,True,True,,"{""service_type"": ""URLLC"", ""latency_ms"": null, ""bandwidth_mbps"": null, ""reliability"": 0.99999, ""device_count"": null, ""coverage"": null, ""objective"": null}","{""service_type"": ""URLLC"", ""service_profile"": {""latency_ms"": null, ""bandwidth_mbps"": null, ""reliability"": 0.99999, ""device_count"": null, ""coverage"": null, ""objective"": null}, ""standards_mapping"": {""mapping_found"": true, ""mapping"": {""threegpp"": ""network-slice service profile"", ""oran"": ""RAN slice/A1 policy candidate""}, ""profile"": ""3GPP Rel-18 + O-RAN R004""}}"
+EXP2-166,Provision URLLC with reliability equal to 0.99999 and equal to 0.5.,invalid_contradictory,,False,proposed,Qwen/Qwen3.5-9B,True,2682.063363999987,stop,235,70,"{
+  ""service_type"": ""URLLC"",
+  ""latency_ms"": null,
+  ""bandwidth_mbps"": null,
+  ""reliability"": 0.99999,
+  ""device_count"": null,
+  ""coverage"": null,
+  ""objective"": null
+}",URLLC,True,False,False,True,True,True,True,,"{""service_type"": ""URLLC"", ""latency_ms"": null, ""bandwidth_mbps"": null, ""reliability"": 0.99999, ""device_count"": null, ""coverage"": null, ""objective"": null}","{""service_type"": ""URLLC"", ""service_profile"": {""latency_ms"": null, ""bandwidth_mbps"": null, ""reliability"": 0.99999, ""device_count"": null, ""coverage"": null, ""objective"": null}, ""standards_mapping"": {""mapping_found"": true, ""mapping"": {""threegpp"": ""network-slice service profile"", ""oran"": ""RAN slice/A1 policy candidate""}, ""profile"": ""3GPP Rel-18 + O-RAN R004""}}"
+EXP2-167,Create eMBB with required bandwidth of both 400 Mbps and 20 Mbps.,invalid_contradictory,,False,direct,Qwen/Qwen3.5-9B,True,1608.5507709995,stop,117,81,"{
+  ""rejected"": true,
+  ""reason"": ""Ambiguous requirement: The request specifies two different bandwidth values (400 Mbps and 20 Mbps) for a single eMBB slice without defining the relationship (e.g., total capacity, minimum guarantee, or separate sub-slices). This makes the intent contradictory or out-of-range for a single deterministic configuration.""
+}",,True,False,False,,False,False,False,,,
+EXP2-167,Create eMBB with required bandwidth of both 400 Mbps and 20 Mbps.,invalid_contradictory,,False,cir,Qwen/Qwen3.5-9B,True,1445.094787999551,stop,230,71,"{
+  ""service_type"": ""eMBB"",
+  ""latency_ms"": null,
+  ""bandwidth_mbps"": [400, 20],
+  ""reliability"": null,
+  ""device_count"": null,
+  ""coverage"": null,
+  ""objective"": null
+}",eMBB,False,False,False,,False,False,False,"bandwidth_mbps: [400, 20] is not of type 'number', 'null'","{""service_type"": ""eMBB"", ""latency_ms"": null, ""bandwidth_mbps"": [400, 20], ""reliability"": null, ""device_count"": null, ""coverage"": null, ""objective"": null}",
+EXP2-167,Create eMBB with required bandwidth of both 400 Mbps and 20 Mbps.,invalid_contradictory,,False,proposed,Qwen/Qwen3.5-9B,True,2584.3126379986643,stop,230,78,"{
+  ""service_type"": ""eMBB"",
+  ""latency_ms"": null,
+  ""bandwidth_mbps"": [
+    400,
+    20
+  ],
+  ""reliability"": null,
+  ""device_count"": null,
+  ""coverage"": null,
+  ""objective"": null
+}",eMBB,False,False,False,True,False,False,False,"bandwidth_mbps: [400, 20] is not of type 'number', 'null'","{""service_type"": ""eMBB"", ""latency_ms"": null, ""bandwidth_mbps"": [400, 20], ""reliability"": null, ""device_count"": null, ""coverage"": null, ""objective"": null}",
+EXP2-168,Provide mMTC for exactly 10 devices while requiring at least 50000 devices.,invalid_contradictory,,False,direct,Qwen/Qwen3.5-9B,True,1111.495802000718,stop,118,44,"{
+  ""rejected"": true,
+  ""reason"": ""Contradictory requirements: The request asks for exactly 10 devices while simultaneously requiring at least 50000 devices.""
+}",,True,False,False,,False,False,False,,,
+EXP2-168,Provide mMTC for exactly 10 devices while requiring at least 50000 devices.,invalid_contradictory,,False,cir,Qwen/Qwen3.5-9B,True,1403.5932769984356,stop,231,90,"{
+  ""service_type"": ""mMTC"",
+  ""latency_ms"": null,
+  ""bandwidth_mbps"": null,
+  ""reliability"": null,
+  ""device_count"": 50000,
+  ""coverage"": null,
+  ""objective"": ""Provide mMTC for exactly 10 devices while requiring at least 50000 devices.""
+}",mMTC,True,False,False,,True,True,True,,"{""service_type"": ""mMTC"", ""latency_ms"": null, ""bandwidth_mbps"": null, ""reliability"": null, ""device_count"": 50000, ""coverage"": null, ""objective"": ""Provide mMTC for exactly 10 devices while requiring at least 50000 devices.""}","{""service_type"": ""mMTC"", ""service_profile"": {""latency_ms"": null, ""bandwidth_mbps"": null, ""reliability"": null, ""device_count"": 50000, ""coverage"": null, ""objective"": ""Provide mMTC for exactly 10 devices while requiring at least 50000 devices.""}, ""standards_mapping"": {""mapping_found"": true, ""mapping"": {""threegpp"": ""network-slice service profile"", ""oran"": ""RAN slice/A1 policy candidate""}, ""profile"": ""3GPP Rel-18 + O-RAN R004""}}"
+EXP2-168,Provide mMTC for exactly 10 devices while requiring at least 50000 devices.,invalid_contradictory,,False,proposed,Qwen/Qwen3.5-9B,True,2388.788463998935,stop,231,90,"{
+  ""service_type"": ""mMTC"",
+  ""latency_ms"": null,
+  ""bandwidth_mbps"": null,
+  ""reliability"": null,
+  ""device_count"": 50000,
+  ""coverage"": null,
+  ""objective"": ""Provide mMTC for exactly 10 devices while requiring at least 50000 devices.""
+}",mMTC,True,False,False,True,True,True,True,,"{""service_type"": ""mMTC"", ""latency_ms"": null, ""bandwidth_mbps"": null, ""reliability"": null, ""device_count"": 50000, ""coverage"": null, ""objective"": ""Provide mMTC for exactly 10 devices while requiring at least 50000 devices.""}","{""service_type"": ""mMTC"", ""service_profile"": {""latency_ms"": null, ""bandwidth_mbps"": null, ""reliability"": null, ""device_count"": 50000, ""coverage"": null, ""objective"": ""Provide mMTC for exactly 10 devices while requiring at least 50000 devices.""}, ""standards_mapping"": {""mapping_found"": true, ""mapping"": {""threegpp"": ""network-slice service profile"", ""oran"": ""RAN slice/A1 policy candidate""}, ""profile"": ""3GPP Rel-18 + O-RAN R004""}}"
+EXP2-169,Create URLLC with reliability 1.5.,invalid_out_of_range,,False,direct,Qwen/Qwen3.5-9B,True,1240.7568650014582,stop,108,55,"{
+  ""rejected"": true,
+  ""reason"": ""Reliability value 1.5 is out of range. Reliability must be a probability between 0 and 1 (e.g., 0.999999).""
+}",,True,False,False,,False,False,False,,,
+EXP2-169,Create URLLC with reliability 1.5.,invalid_out_of_range,,False,cir,Qwen/Qwen3.5-9B,True,1517.5035199990816,stop,221,66,"{
+  ""service_type"": ""URLLC"",
+  ""latency_ms"": null,
+  ""bandwidth_mbps"": null,
+  ""reliability"": 1.5,
+  ""device_count"": null,
+  ""coverage"": null,
+  ""objective"": null
+}",URLLC,False,False,False,,False,False,False,reliability: 1.5 is greater than the maximum of 1,"{""service_type"": ""URLLC"", ""latency_ms"": null, ""bandwidth_mbps"": null, ""reliability"": 1.5, ""device_count"": null, ""coverage"": null, ""objective"": null}",
+EXP2-169,Create URLLC with reliability 1.5.,invalid_out_of_range,,False,proposed,Qwen/Qwen3.5-9B,True,1397.5560179987951,stop,221,66,"{
+  ""service_type"": ""URLLC"",
+  ""latency_ms"": null,
+  ""bandwidth_mbps"": null,
+  ""reliability"": 1.5,
+  ""device_count"": null,
+  ""coverage"": null,
+  ""objective"": null
+}",URLLC,False,False,False,True,False,False,False,reliability: 1.5 is greater than the maximum of 1,"{""service_type"": ""URLLC"", ""latency_ms"": null, ""bandwidth_mbps"": null, ""reliability"": 1.5, ""device_count"": null, ""coverage"": null, ""objective"": null}",
+EXP2-170,Provision URLLC with latency -5 ms.,invalid_out_of_range,,False,direct,Qwen/Qwen3.5-9B,True,1007.5736489998235,stop,108,31,"{
+  ""rejected"": true,
+  ""reason"": ""Latency cannot be negative; -5 ms is out of range.""
+}",,True,False,False,,False,False,False,,,
+EXP2-170,Provision URLLC with latency -5 ms.,invalid_out_of_range,,False,cir,Qwen/Qwen3.5-9B,True,1840.0918560000719,stop,221,64,"{
+  ""service_type"": ""URLLC"",
+  ""latency_ms"": -5,
+  ""bandwidth_mbps"": null,
+  ""reliability"": null,
+  ""device_count"": null,
+  ""coverage"": null,
+  ""objective"": null
+}",URLLC,False,False,False,,False,False,False,latency_ms: -5 is less than the minimum of 0,"{""service_type"": ""URLLC"", ""latency_ms"": -5, ""bandwidth_mbps"": null, ""reliability"": null, ""device_count"": null, ""coverage"": null, ""objective"": null}",
+EXP2-170,Provision URLLC with latency -5 ms.,invalid_out_of_range,,False,proposed,Qwen/Qwen3.5-9B,True,1872.058560998994,stop,221,64,"{
+  ""service_type"": ""URLLC"",
+  ""latency_ms"": -5,
+  ""bandwidth_mbps"": null,
+  ""reliability"": null,
+  ""device_count"": null,
+  ""coverage"": null,
+  ""objective"": null
+}",URLLC,False,False,False,True,False,False,False,latency_ms: -5 is less than the minimum of 0,"{""service_type"": ""URLLC"", ""latency_ms"": -5, ""bandwidth_mbps"": null, ""reliability"": null, ""device_count"": null, ""coverage"": null, ""objective"": null}",

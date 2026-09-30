@@ -1,0 +1,42 @@
+{
+  "artifact_id": "ieee-manuscript-blueprint-v1.0",
+  "claim_boundaries": [
+    "hallucination-resistant, not hallucination-free",
+    "standards-aligned/oriented, not formal conformance",
+    "controlled held-out evidence, not external real-world benchmark",
+    "different experiment benchmarks are not a common-test learning curve"
+  ],
+  "created_utc": "2026-09-30T01:43:34.900922+00:00",
+  "experiment_modified": false,
+  "experiment_roles": {
+    "E1": "controlled feasibility/information-loss diagnosis",
+    "E2A": "robustness/failure discovery",
+    "E2B": "targeted repair/development evidence",
+    "E3-v3": "primary final frozen held-out evidence"
+  },
+  "model_called": false,
+  "primary_evidence": "E3-v3 final frozen held-out evaluation",
+  "primary_result": {
+    "accuracy_percent": 84.17,
+    "correct": 101,
+    "exact_ci95_percent": [
+      76.38,
+      90.19
+    ],
+    "invalid_rejection_percent": 80.65,
+    "n": 120,
+    "rejection_f1_percent": 84.03,
+    "valid_acceptance_percent": 87.93
+  },
+  "result_changed": false,
+  "source_hashes": {
+    "claims": "788d77cf84f9279314b15c82affc87634e8c6058a0e6b90c5559faed360abbea",
+    "cross_results": "d2c2dca5732f667e54ea4104f7ea2cdd1f0b059f9860af3f5e66c11c0c082d90",
+    "cross_synthesis": "061f0f0517d2d6633aec8a1fb1bb50a52cd28e4c4a265983f1f26df8001f6cf2",
+    "evidence_json": "980436916e60b7965f652ec5160fec1a982e726a646057c1ef48d4f77f9eead6",
+    "evidence_md": "437931355862496f622eacabe5bdba03b48d23c9410c8c3e8244765ddbf173f0"
+  },
+  "structure_entries": 22,
+  "visual_mapping_entries": 13,
+  "working_title": "Deterministic Intent Translation for 3GPP- and O-RAN-Aligned Network Slicing: A Hallucination-Resistant Pipeline"
+}

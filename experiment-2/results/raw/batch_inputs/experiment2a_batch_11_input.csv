@@ -1,0 +1,11 @@
+id,intent,category,subcategory,expected_valid,expected_service,difficulty,linguistic_form,constraint_type,notes
+EXP2-101,Create a fast network slice.,invalid_ambiguous,ambiguous_service,False,,medium,underspecified,ambiguity,
+EXP2-102,Give me the best slice possible.,invalid_ambiguous,ambiguous_service,False,,medium,underspecified,ambiguity,
+EXP2-103,Set up a high-performance network service.,invalid_ambiguous,ambiguous_service,False,,medium,underspecified,ambiguity,
+EXP2-104,I need a really good connection.,invalid_ambiguous,ambiguous_service,False,,medium,underspecified,ambiguity,
+EXP2-105,Create a slice optimized for performance.,invalid_ambiguous,ambiguous_service,False,,medium,underspecified,ambiguity,
+EXP2-106,Provide a powerful network slice.,invalid_ambiguous,ambiguous_service,False,,medium,underspecified,ambiguity,
+EXP2-107,Make the network extremely responsive.,invalid_ambiguous,ambiguous_service,False,,medium,underspecified,ambiguity,
+EXP2-108,Set up an advanced connectivity service.,invalid_ambiguous,ambiguous_service,False,,medium,underspecified,ambiguity,
+EXP2-109,Give this application premium networking.,invalid_ambiguous,ambiguous_service,False,,medium,underspecified,ambiguity,
+EXP2-110,Create the most efficient slice.,invalid_ambiguous,ambiguous_service,False,,medium,underspecified,ambiguity,

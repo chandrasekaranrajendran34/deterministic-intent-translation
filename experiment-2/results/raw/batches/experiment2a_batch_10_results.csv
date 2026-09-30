@@ -1,0 +1,295 @@
+id,intent,category,expected_service,expected_valid,pipeline,model,parse_ok,latency_ms,finish_reason,prompt_tokens,completion_tokens,raw_response,predicted_service,schema_valid,hallucination_detected,unsupported_input_detected,input_audit_valid,mapping_found,descriptor_success,accepted,validation_errors,cir_json,descriptor_json
+EXP2-091,Create URLLC for robot control with latency 5 ms and reliability 0.99999.,valid_compound,URLLC,True,direct,Qwen/Qwen3.5-9B,True,1628.7150059997657,stop,120,87,"{
+  ""slices"": [
+    {
+      ""sliceType"": ""URLLC"",
+      ""useCase"": ""robotControl"",
+      ""latencyRequirement"": 5,
+      ""reliabilityRequirement"": 0.99999,
+      ""unitLatency"": ""ms"",
+      ""unitReliability"": ""probability""
+    }
+  ]
+}",,True,False,False,,False,True,True,,,"{""slices"": [{""sliceType"": ""URLLC"", ""useCase"": ""robotControl"", ""latencyRequirement"": 5, ""reliabilityRequirement"": 0.99999, ""unitLatency"": ""ms"", ""unitReliability"": ""probability""}]}"
+EXP2-091,Create URLLC for robot control with latency 5 ms and reliability 0.99999.,valid_compound,URLLC,True,cir,Qwen/Qwen3.5-9B,True,1649.5819129995652,stop,233,71,"{
+  ""service_type"": ""URLLC"",
+  ""latency_ms"": 5,
+  ""bandwidth_mbps"": null,
+  ""reliability"": 0.99999,
+  ""device_count"": null,
+  ""coverage"": null,
+  ""objective"": null
+}",URLLC,True,False,False,,True,True,True,,"{""service_type"": ""URLLC"", ""latency_ms"": 5, ""bandwidth_mbps"": null, ""reliability"": 0.99999, ""device_count"": null, ""coverage"": null, ""objective"": null}","{""service_type"": ""URLLC"", ""service_profile"": {""latency_ms"": 5, ""bandwidth_mbps"": null, ""reliability"": 0.99999, ""device_count"": null, ""coverage"": null, ""objective"": null}, ""standards_mapping"": {""mapping_found"": true, ""mapping"": {""threegpp"": ""network-slice service profile"", ""oran"": ""RAN slice/A1 policy candidate""}, ""profile"": ""3GPP Rel-18 + O-RAN R004""}}"
+EXP2-091,Create URLLC for robot control with latency 5 ms and reliability 0.99999.,valid_compound,URLLC,True,proposed,Qwen/Qwen3.5-9B,True,3938.6264069999015,stop,233,71,"{
+  ""service_type"": ""URLLC"",
+  ""latency_ms"": 5,
+  ""bandwidth_mbps"": null,
+  ""reliability"": 0.99999,
+  ""device_count"": null,
+  ""coverage"": null,
+  ""objective"": null
+}",URLLC,True,False,False,True,True,True,True,,"{""service_type"": ""URLLC"", ""latency_ms"": 5, ""bandwidth_mbps"": null, ""reliability"": 0.99999, ""device_count"": null, ""coverage"": null, ""objective"": null}","{""service_type"": ""URLLC"", ""service_profile"": {""latency_ms"": 5, ""bandwidth_mbps"": null, ""reliability"": 0.99999, ""device_count"": null, ""coverage"": null, ""objective"": null}, ""standards_mapping"": {""mapping_found"": true, ""mapping"": {""threegpp"": ""network-slice service profile"", ""oran"": ""RAN slice/A1 policy candidate""}, ""profile"": ""3GPP Rel-18 + O-RAN R004""}}"
+EXP2-092,Provision eMBB for video production with 500 Mbps bandwidth and campus-wide coverage.,valid_compound,eMBB,True,direct,Qwen/Qwen3.5-9B,True,1501.0991420003847,stop,117,74,"{
+  ""slices"": [
+    {
+      ""sliceType"": ""eMBB"",
+      ""useCase"": ""video_production"",
+      ""bandwidth"": 500,
+      ""bandwidthUnit"": ""Mbps"",
+      ""coverageArea"": ""campus_wide""
+    }
+  ]
+}",,True,False,False,,False,True,True,,,"{""slices"": [{""sliceType"": ""eMBB"", ""useCase"": ""video_production"", ""bandwidth"": 500, ""bandwidthUnit"": ""Mbps"", ""coverageArea"": ""campus_wide""}]}"
+EXP2-092,Provision eMBB for video production with 500 Mbps bandwidth and campus-wide coverage.,valid_compound,eMBB,True,cir,Qwen/Qwen3.5-9B,True,1305.20743300076,stop,230,73,"{
+  ""service_type"": ""eMBB"",
+  ""latency_ms"": null,
+  ""bandwidth_mbps"": 500,
+  ""reliability"": null,
+  ""device_count"": null,
+  ""coverage"": ""campus-wide"",
+  ""objective"": ""video production""
+}",eMBB,True,False,False,,True,True,True,,"{""service_type"": ""eMBB"", ""latency_ms"": null, ""bandwidth_mbps"": 500, ""reliability"": null, ""device_count"": null, ""coverage"": ""campus-wide"", ""objective"": ""video production""}","{""service_type"": ""eMBB"", ""service_profile"": {""latency_ms"": null, ""bandwidth_mbps"": 500, ""reliability"": null, ""device_count"": null, ""coverage"": ""campus-wide"", ""objective"": ""video production""}, ""standards_mapping"": {""mapping_found"": true, ""mapping"": {""threegpp"": ""network-slice service profile"", ""oran"": ""RAN slice/A1 policy candidate""}, ""profile"": ""3GPP Rel-18 + O-RAN R004""}}"
+EXP2-092,Provision eMBB for video production with 500 Mbps bandwidth and campus-wide coverage.,valid_compound,eMBB,True,proposed,Qwen/Qwen3.5-9B,True,1337.137865000841,stop,230,73,"{
+  ""service_type"": ""eMBB"",
+  ""latency_ms"": null,
+  ""bandwidth_mbps"": 500,
+  ""reliability"": null,
+  ""device_count"": null,
+  ""coverage"": ""campus-wide"",
+  ""objective"": ""video production""
+}",eMBB,True,False,False,True,True,True,True,,"{""service_type"": ""eMBB"", ""latency_ms"": null, ""bandwidth_mbps"": 500, ""reliability"": null, ""device_count"": null, ""coverage"": ""campus-wide"", ""objective"": ""video production""}","{""service_type"": ""eMBB"", ""service_profile"": {""latency_ms"": null, ""bandwidth_mbps"": 500, ""reliability"": null, ""device_count"": null, ""coverage"": ""campus-wide"", ""objective"": ""video production""}, ""standards_mapping"": {""mapping_found"": true, ""mapping"": {""threegpp"": ""network-slice service profile"", ""oran"": ""RAN slice/A1 policy candidate""}, ""profile"": ""3GPP Rel-18 + O-RAN R004""}}"
+EXP2-093,Create mMTC connectivity for 60000 environmental sensors across a metropolitan area.,valid_compound,mMTC,True,direct,Qwen/Qwen3.5-9B,True,2085.8754069995484,stop,115,127,"{
+  ""slices"": [
+    {
+      ""sliceType"": ""mMTC"",
+      ""description"": ""Environmental Sensor Network"",
+      ""parameters"": {
+        ""totalDevices"": 60000,
+        ""coverageArea"": ""metropolitan"",
+        ""deviceType"": ""environmental_sensor"",
+        ""trafficProfile"": ""low_data_rate"",
+        ""latencyRequirement"": ""non_critical"",
+        ""reliabilityRequirement"": ""high"",
+        ""energyEfficiency"": ""optimized""
+      }
+    }
+  ]
+}",,True,False,False,,False,True,True,,,"{""slices"": [{""sliceType"": ""mMTC"", ""description"": ""Environmental Sensor Network"", ""parameters"": {""totalDevices"": 60000, ""coverageArea"": ""metropolitan"", ""deviceType"": ""environmental_sensor"", ""trafficProfile"": ""low_data_rate"", ""latencyRequirement"": ""non_critical"", ""reliabilityRequirement"": ""high"", ""energyEfficiency"": ""optimized""}}]}"
+EXP2-093,Create mMTC connectivity for 60000 environmental sensors across a metropolitan area.,valid_compound,mMTC,True,cir,Qwen/Qwen3.5-9B,True,1433.2314719995338,stop,228,86,"{
+  ""service_type"": ""mMTC"",
+  ""latency_ms"": null,
+  ""bandwidth_mbps"": null,
+  ""reliability"": null,
+  ""device_count"": 60000,
+  ""coverage"": ""metropolitan area"",
+  ""objective"": ""Create mMTC connectivity for 60000 environmental sensors""
+}",mMTC,True,False,False,,True,True,True,,"{""service_type"": ""mMTC"", ""latency_ms"": null, ""bandwidth_mbps"": null, ""reliability"": null, ""device_count"": 60000, ""coverage"": ""metropolitan area"", ""objective"": ""Create mMTC connectivity for 60000 environmental sensors""}","{""service_type"": ""mMTC"", ""service_profile"": {""latency_ms"": null, ""bandwidth_mbps"": null, ""reliability"": null, ""device_count"": 60000, ""coverage"": ""metropolitan area"", ""objective"": ""Create mMTC connectivity for 60000 environmental sensors""}, ""standards_mapping"": {""mapping_found"": true, ""mapping"": {""threegpp"": ""network-slice service profile"", ""oran"": ""RAN slice/A1 policy candidate""}, ""profile"": ""3GPP Rel-18 + O-RAN R004""}}"
+EXP2-093,Create mMTC connectivity for 60000 environmental sensors across a metropolitan area.,valid_compound,mMTC,True,proposed,Qwen/Qwen3.5-9B,True,2090.017048998561,stop,228,86,"{
+  ""service_type"": ""mMTC"",
+  ""latency_ms"": null,
+  ""bandwidth_mbps"": null,
+  ""reliability"": null,
+  ""device_count"": 60000,
+  ""coverage"": ""metropolitan area"",
+  ""objective"": ""Create mMTC connectivity for 60000 environmental sensors""
+}",mMTC,True,False,False,True,True,True,True,,"{""service_type"": ""mMTC"", ""latency_ms"": null, ""bandwidth_mbps"": null, ""reliability"": null, ""device_count"": 60000, ""coverage"": ""metropolitan area"", ""objective"": ""Create mMTC connectivity for 60000 environmental sensors""}","{""service_type"": ""mMTC"", ""service_profile"": {""latency_ms"": null, ""bandwidth_mbps"": null, ""reliability"": null, ""device_count"": 60000, ""coverage"": ""metropolitan area"", ""objective"": ""Create mMTC connectivity for 60000 environmental sensors""}, ""standards_mapping"": {""mapping_found"": true, ""mapping"": {""threegpp"": ""network-slice service profile"", ""oran"": ""RAN slice/A1 policy candidate""}, ""profile"": ""3GPP Rel-18 + O-RAN R004""}}"
+EXP2-094,Provide URLLC connectivity with 4 ms latency for automated factory equipment.,valid_compound,URLLC,True,direct,Qwen/Qwen3.5-9B,True,2377.3464579990105,stop,112,63,"{
+  ""slices"": [
+    {
+      ""sliceType"": ""URLLC"",
+      ""useCase"": ""automated_factory_equipment"",
+      ""latencyRequirement"": 4,
+      ""latencyUnit"": ""ms""
+    }
+  ]
+}",,True,False,False,,False,True,True,,,"{""slices"": [{""sliceType"": ""URLLC"", ""useCase"": ""automated_factory_equipment"", ""latencyRequirement"": 4, ""latencyUnit"": ""ms""}]}"
+EXP2-094,Provide URLLC connectivity with 4 ms latency for automated factory equipment.,valid_compound,URLLC,True,cir,Qwen/Qwen3.5-9B,True,1677.6462060006452,stop,225,69,"{
+  ""service_type"": ""URLLC"",
+  ""latency_ms"": 4,
+  ""bandwidth_mbps"": null,
+  ""reliability"": null,
+  ""device_count"": null,
+  ""coverage"": null,
+  ""objective"": ""automated factory equipment""
+}",URLLC,True,False,False,,True,True,True,,"{""service_type"": ""URLLC"", ""latency_ms"": 4, ""bandwidth_mbps"": null, ""reliability"": null, ""device_count"": null, ""coverage"": null, ""objective"": ""automated factory equipment""}","{""service_type"": ""URLLC"", ""service_profile"": {""latency_ms"": 4, ""bandwidth_mbps"": null, ""reliability"": null, ""device_count"": null, ""coverage"": null, ""objective"": ""automated factory equipment""}, ""standards_mapping"": {""mapping_found"": true, ""mapping"": {""threegpp"": ""network-slice service profile"", ""oran"": ""RAN slice/A1 policy candidate""}, ""profile"": ""3GPP Rel-18 + O-RAN R004""}}"
+EXP2-094,Provide URLLC connectivity with 4 ms latency for automated factory equipment.,valid_compound,URLLC,True,proposed,Qwen/Qwen3.5-9B,True,1285.3762499998993,stop,225,69,"{
+  ""service_type"": ""URLLC"",
+  ""latency_ms"": 4,
+  ""bandwidth_mbps"": null,
+  ""reliability"": null,
+  ""device_count"": null,
+  ""coverage"": null,
+  ""objective"": ""automated factory equipment""
+}",URLLC,True,False,False,True,True,True,True,,"{""service_type"": ""URLLC"", ""latency_ms"": 4, ""bandwidth_mbps"": null, ""reliability"": null, ""device_count"": null, ""coverage"": null, ""objective"": ""automated factory equipment""}","{""service_type"": ""URLLC"", ""service_profile"": {""latency_ms"": 4, ""bandwidth_mbps"": null, ""reliability"": null, ""device_count"": null, ""coverage"": null, ""objective"": ""automated factory equipment""}, ""standards_mapping"": {""mapping_found"": true, ""mapping"": {""threegpp"": ""network-slice service profile"", ""oran"": ""RAN slice/A1 policy candidate""}, ""profile"": ""3GPP Rel-18 + O-RAN R004""}}"
+EXP2-095,Create eMBB service with 350 Mbps bandwidth for immersive video streaming.,valid_compound,eMBB,True,direct,Qwen/Qwen3.5-9B,True,2155.2823910005827,stop,114,65,"{
+  ""slices"": [
+    {
+      ""sliceType"": ""eMBB"",
+      ""serviceDescription"": ""Immersive video streaming"",
+      ""bandwidth"": 350,
+      ""bandwidthUnit"": ""Mbps""
+    }
+  ]
+}",,True,False,False,,False,True,True,,,"{""slices"": [{""sliceType"": ""eMBB"", ""serviceDescription"": ""Immersive video streaming"", ""bandwidth"": 350, ""bandwidthUnit"": ""Mbps""}]}"
+EXP2-095,Create eMBB service with 350 Mbps bandwidth for immersive video streaming.,valid_compound,eMBB,True,cir,Qwen/Qwen3.5-9B,True,1996.091130999048,stop,227,72,"{
+  ""service_type"": ""eMBB"",
+  ""latency_ms"": null,
+  ""bandwidth_mbps"": 350,
+  ""reliability"": null,
+  ""device_count"": null,
+  ""coverage"": null,
+  ""objective"": ""immersive video streaming""
+}",eMBB,True,False,False,,True,True,True,,"{""service_type"": ""eMBB"", ""latency_ms"": null, ""bandwidth_mbps"": 350, ""reliability"": null, ""device_count"": null, ""coverage"": null, ""objective"": ""immersive video streaming""}","{""service_type"": ""eMBB"", ""service_profile"": {""latency_ms"": null, ""bandwidth_mbps"": 350, ""reliability"": null, ""device_count"": null, ""coverage"": null, ""objective"": ""immersive video streaming""}, ""standards_mapping"": {""mapping_found"": true, ""mapping"": {""threegpp"": ""network-slice service profile"", ""oran"": ""RAN slice/A1 policy candidate""}, ""profile"": ""3GPP Rel-18 + O-RAN R004""}}"
+EXP2-095,Create eMBB service with 350 Mbps bandwidth for immersive video streaming.,valid_compound,eMBB,True,proposed,Qwen/Qwen3.5-9B,True,1684.9906990009913,stop,227,72,"{
+  ""service_type"": ""eMBB"",
+  ""latency_ms"": null,
+  ""bandwidth_mbps"": 350,
+  ""reliability"": null,
+  ""device_count"": null,
+  ""coverage"": null,
+  ""objective"": ""immersive video streaming""
+}",eMBB,True,False,False,True,True,True,True,,"{""service_type"": ""eMBB"", ""latency_ms"": null, ""bandwidth_mbps"": 350, ""reliability"": null, ""device_count"": null, ""coverage"": null, ""objective"": ""immersive video streaming""}","{""service_type"": ""eMBB"", ""service_profile"": {""latency_ms"": null, ""bandwidth_mbps"": 350, ""reliability"": null, ""device_count"": null, ""coverage"": null, ""objective"": ""immersive video streaming""}, ""standards_mapping"": {""mapping_found"": true, ""mapping"": {""threegpp"": ""network-slice service profile"", ""oran"": ""RAN slice/A1 policy candidate""}, ""profile"": ""3GPP Rel-18 + O-RAN R004""}}"
+EXP2-096,Provision mMTC for 80000 low-power utility meters with city-wide coverage.,valid_compound,mMTC,True,direct,Qwen/Qwen3.5-9B,True,2046.9583590002003,stop,117,87,"{
+  ""rejected"": true,
+  ""reason"": ""The request lacks specific technical parameters required for network slicing configuration, such as QoS metrics (latency, jitter, packet loss), bandwidth requirements, slice isolation level, and specific geographic coordinates or cell IDs for 'city-wide coverage'. Additionally, the exact device type and protocol (e.g., NB-IoT, LTE-M) are not specified.""
+}",,True,False,False,,False,False,False,,,
+EXP2-096,Provision mMTC for 80000 low-power utility meters with city-wide coverage.,valid_compound,mMTC,True,cir,Qwen/Qwen3.5-9B,True,1536.7693029984366,stop,230,71,"{
+  ""service_type"": ""mMTC"",
+  ""latency_ms"": null,
+  ""bandwidth_mbps"": null,
+  ""reliability"": null,
+  ""device_count"": 80000,
+  ""coverage"": ""city-wide"",
+  ""objective"": null
+}",mMTC,True,False,False,,True,True,True,,"{""service_type"": ""mMTC"", ""latency_ms"": null, ""bandwidth_mbps"": null, ""reliability"": null, ""device_count"": 80000, ""coverage"": ""city-wide"", ""objective"": null}","{""service_type"": ""mMTC"", ""service_profile"": {""latency_ms"": null, ""bandwidth_mbps"": null, ""reliability"": null, ""device_count"": 80000, ""coverage"": ""city-wide"", ""objective"": null}, ""standards_mapping"": {""mapping_found"": true, ""mapping"": {""threegpp"": ""network-slice service profile"", ""oran"": ""RAN slice/A1 policy candidate""}, ""profile"": ""3GPP Rel-18 + O-RAN R004""}}"
+EXP2-096,Provision mMTC for 80000 low-power utility meters with city-wide coverage.,valid_compound,mMTC,True,proposed,Qwen/Qwen3.5-9B,True,1299.6247190003487,stop,230,71,"{
+  ""service_type"": ""mMTC"",
+  ""latency_ms"": null,
+  ""bandwidth_mbps"": null,
+  ""reliability"": null,
+  ""device_count"": 80000,
+  ""coverage"": ""city-wide"",
+  ""objective"": null
+}",mMTC,True,False,False,True,True,True,True,,"{""service_type"": ""mMTC"", ""latency_ms"": null, ""bandwidth_mbps"": null, ""reliability"": null, ""device_count"": 80000, ""coverage"": ""city-wide"", ""objective"": null}","{""service_type"": ""mMTC"", ""service_profile"": {""latency_ms"": null, ""bandwidth_mbps"": null, ""reliability"": null, ""device_count"": 80000, ""coverage"": ""city-wide"", ""objective"": null}, ""standards_mapping"": {""mapping_found"": true, ""mapping"": {""threegpp"": ""network-slice service profile"", ""oran"": ""RAN slice/A1 policy candidate""}, ""profile"": ""3GPP Rel-18 + O-RAN R004""}}"
+EXP2-097,Provide a highly reliable URLLC service with 3 ms latency for robotic control.,valid_compound,URLLC,True,direct,Qwen/Qwen3.5-9B,True,1359.4530159989517,stop,114,83,"{
+  ""slices"": [
+    {
+      ""sliceType"": ""URLLC"",
+      ""serviceLevelObjectives"": {
+        ""maxLatency"": 3,
+        ""latencyUnit"": ""ms"",
+        ""reliability"": ""high"",
+        ""useCase"": ""robotic_control""
+      }
+    }
+  ]
+}",,True,False,False,,False,True,True,,,"{""slices"": [{""sliceType"": ""URLLC"", ""serviceLevelObjectives"": {""maxLatency"": 3, ""latencyUnit"": ""ms"", ""reliability"": ""high"", ""useCase"": ""robotic_control""}}]}"
+EXP2-097,Provide a highly reliable URLLC service with 3 ms latency for robotic control.,valid_compound,URLLC,True,cir,Qwen/Qwen3.5-9B,True,1938.4079399987968,stop,227,68,"{
+  ""service_type"": ""URLLC"",
+  ""latency_ms"": 3,
+  ""bandwidth_mbps"": null,
+  ""reliability"": null,
+  ""device_count"": null,
+  ""coverage"": null,
+  ""objective"": ""robotic control""
+}",URLLC,True,False,False,,True,True,True,,"{""service_type"": ""URLLC"", ""latency_ms"": 3, ""bandwidth_mbps"": null, ""reliability"": null, ""device_count"": null, ""coverage"": null, ""objective"": ""robotic control""}","{""service_type"": ""URLLC"", ""service_profile"": {""latency_ms"": 3, ""bandwidth_mbps"": null, ""reliability"": null, ""device_count"": null, ""coverage"": null, ""objective"": ""robotic control""}, ""standards_mapping"": {""mapping_found"": true, ""mapping"": {""threegpp"": ""network-slice service profile"", ""oran"": ""RAN slice/A1 policy candidate""}, ""profile"": ""3GPP Rel-18 + O-RAN R004""}}"
+EXP2-097,Provide a highly reliable URLLC service with 3 ms latency for robotic control.,valid_compound,URLLC,True,proposed,Qwen/Qwen3.5-9B,True,923.8066070010973,stop,227,68,"{
+  ""service_type"": ""URLLC"",
+  ""latency_ms"": 3,
+  ""bandwidth_mbps"": null,
+  ""reliability"": null,
+  ""device_count"": null,
+  ""coverage"": null,
+  ""objective"": ""robotic control""
+}",URLLC,True,False,False,True,True,True,True,,"{""service_type"": ""URLLC"", ""latency_ms"": 3, ""bandwidth_mbps"": null, ""reliability"": null, ""device_count"": null, ""coverage"": null, ""objective"": ""robotic control""}","{""service_type"": ""URLLC"", ""service_profile"": {""latency_ms"": 3, ""bandwidth_mbps"": null, ""reliability"": null, ""device_count"": null, ""coverage"": null, ""objective"": ""robotic control""}, ""standards_mapping"": {""mapping_found"": true, ""mapping"": {""threegpp"": ""network-slice service profile"", ""oran"": ""RAN slice/A1 policy candidate""}, ""profile"": ""3GPP Rel-18 + O-RAN R004""}}"
+EXP2-098,Create an eMBB slice with 450 Mbps bandwidth for a large entertainment venue.,valid_compound,eMBB,True,direct,Qwen/Qwen3.5-9B,True,1556.3947650007321,stop,116,84,"{
+  ""slices"": [
+    {
+      ""sliceType"": ""eMBB"",
+      ""sliceName"": ""entertainment-venue-450mbps"",
+      ""bandwidth"": 450,
+      ""bandwidthUnit"": ""Mbps"",
+      ""useCase"": ""large-entertainment-venue""
+    }
+  ]
+}",,True,False,False,,False,True,True,,,"{""slices"": [{""sliceType"": ""eMBB"", ""sliceName"": ""entertainment-venue-450mbps"", ""bandwidth"": 450, ""bandwidthUnit"": ""Mbps"", ""useCase"": ""large-entertainment-venue""}]}"
+EXP2-098,Create an eMBB slice with 450 Mbps bandwidth for a large entertainment venue.,valid_compound,eMBB,True,cir,Qwen/Qwen3.5-9B,True,2621.2074539998866,stop,229,67,"{
+  ""service_type"": ""eMBB"",
+  ""latency_ms"": null,
+  ""bandwidth_mbps"": 450,
+  ""reliability"": null,
+  ""device_count"": null,
+  ""coverage"": null,
+  ""objective"": null
+}",eMBB,True,False,False,,True,True,True,,"{""service_type"": ""eMBB"", ""latency_ms"": null, ""bandwidth_mbps"": 450, ""reliability"": null, ""device_count"": null, ""coverage"": null, ""objective"": null}","{""service_type"": ""eMBB"", ""service_profile"": {""latency_ms"": null, ""bandwidth_mbps"": 450, ""reliability"": null, ""device_count"": null, ""coverage"": null, ""objective"": null}, ""standards_mapping"": {""mapping_found"": true, ""mapping"": {""threegpp"": ""network-slice service profile"", ""oran"": ""RAN slice/A1 policy candidate""}, ""profile"": ""3GPP Rel-18 + O-RAN R004""}}"
+EXP2-098,Create an eMBB slice with 450 Mbps bandwidth for a large entertainment venue.,valid_compound,eMBB,True,proposed,Qwen/Qwen3.5-9B,True,1485.5573109998659,stop,229,67,"{
+  ""service_type"": ""eMBB"",
+  ""latency_ms"": null,
+  ""bandwidth_mbps"": 450,
+  ""reliability"": null,
+  ""device_count"": null,
+  ""coverage"": null,
+  ""objective"": null
+}",eMBB,True,False,False,True,True,True,True,,"{""service_type"": ""eMBB"", ""latency_ms"": null, ""bandwidth_mbps"": 450, ""reliability"": null, ""device_count"": null, ""coverage"": null, ""objective"": null}","{""service_type"": ""eMBB"", ""service_profile"": {""latency_ms"": null, ""bandwidth_mbps"": 450, ""reliability"": null, ""device_count"": null, ""coverage"": null, ""objective"": null}, ""standards_mapping"": {""mapping_found"": true, ""mapping"": {""threegpp"": ""network-slice service profile"", ""oran"": ""RAN slice/A1 policy candidate""}, ""profile"": ""3GPP Rel-18 + O-RAN R004""}}"
+EXP2-099,Provision mMTC connectivity for 90000 low-data-rate agricultural sensors.,valid_compound,mMTC,True,direct,Qwen/Qwen3.5-9B,True,1904.8863740008528,stop,115,126,"{
+  ""slices"": [
+    {
+      ""sliceType"": ""mMTC"",
+      ""sliceIdentifier"": ""AGRI-SENSORS-001"",
+      ""serviceLevelAgreement"": {
+        ""maxDataRate"": ""low"",
+        ""maxLatency"": ""flexible"",
+        ""availability"": ""99.9%"",
+        ""connectionDensity"": 90000
+      },
+      ""targetDevices"": ""agricultural_sensors"",
+      ""status"": ""provisioned""
+    }
+  ]
+}",,True,False,False,,False,True,True,,,"{""slices"": [{""sliceType"": ""mMTC"", ""sliceIdentifier"": ""AGRI-SENSORS-001"", ""serviceLevelAgreement"": {""maxDataRate"": ""low"", ""maxLatency"": ""flexible"", ""availability"": ""99.9%"", ""connectionDensity"": 90000}, ""targetDevices"": ""agricultural_sensors"", ""status"": ""provisioned""}]}"
+EXP2-099,Provision mMTC connectivity for 90000 low-data-rate agricultural sensors.,valid_compound,mMTC,True,cir,Qwen/Qwen3.5-9B,True,1573.8801280003827,stop,228,87,"{
+  ""service_type"": ""mMTC"",
+  ""latency_ms"": null,
+  ""bandwidth_mbps"": null,
+  ""reliability"": null,
+  ""device_count"": 90000,
+  ""coverage"": null,
+  ""objective"": ""Provision mMTC connectivity for 90000 low-data-rate agricultural sensors.""
+}",mMTC,True,False,False,,True,True,True,,"{""service_type"": ""mMTC"", ""latency_ms"": null, ""bandwidth_mbps"": null, ""reliability"": null, ""device_count"": 90000, ""coverage"": null, ""objective"": ""Provision mMTC connectivity for 90000 low-data-rate agricultural sensors.""}","{""service_type"": ""mMTC"", ""service_profile"": {""latency_ms"": null, ""bandwidth_mbps"": null, ""reliability"": null, ""device_count"": 90000, ""coverage"": null, ""objective"": ""Provision mMTC connectivity for 90000 low-data-rate agricultural sensors.""}, ""standards_mapping"": {""mapping_found"": true, ""mapping"": {""threegpp"": ""network-slice service profile"", ""oran"": ""RAN slice/A1 policy candidate""}, ""profile"": ""3GPP Rel-18 + O-RAN R004""}}"
+EXP2-099,Provision mMTC connectivity for 90000 low-data-rate agricultural sensors.,valid_compound,mMTC,True,proposed,Qwen/Qwen3.5-9B,True,4543.452002999402,stop,228,87,"{
+  ""service_type"": ""mMTC"",
+  ""latency_ms"": null,
+  ""bandwidth_mbps"": null,
+  ""reliability"": null,
+  ""device_count"": 90000,
+  ""coverage"": null,
+  ""objective"": ""Provision mMTC connectivity for 90000 low-data-rate agricultural sensors.""
+}",mMTC,True,False,False,True,True,True,True,,"{""service_type"": ""mMTC"", ""latency_ms"": null, ""bandwidth_mbps"": null, ""reliability"": null, ""device_count"": 90000, ""coverage"": null, ""objective"": ""Provision mMTC connectivity for 90000 low-data-rate agricultural sensors.""}","{""service_type"": ""mMTC"", ""service_profile"": {""latency_ms"": null, ""bandwidth_mbps"": null, ""reliability"": null, ""device_count"": 90000, ""coverage"": null, ""objective"": ""Provision mMTC connectivity for 90000 low-data-rate agricultural sensors.""}, ""standards_mapping"": {""mapping_found"": true, ""mapping"": {""threegpp"": ""network-slice service profile"", ""oran"": ""RAN slice/A1 policy candidate""}, ""profile"": ""3GPP Rel-18 + O-RAN R004""}}"
+EXP2-100,Create URLLC service for industrial control with reliability 0.9999 and latency 5 ms.,valid_compound,URLLC,True,direct,Qwen/Qwen3.5-9B,True,4081.487368001035,stop,120,63,"{
+  ""slices"": [
+    {
+      ""sliceType"": ""URLLC"",
+      ""serviceDescription"": ""Industrial Control"",
+      ""reliability"": 0.9999,
+      ""latency"": 5
+    }
+  ]
+}",,True,False,False,,False,True,True,,,"{""slices"": [{""sliceType"": ""URLLC"", ""serviceDescription"": ""Industrial Control"", ""reliability"": 0.9999, ""latency"": 5}]}"
+EXP2-100,Create URLLC service for industrial control with reliability 0.9999 and latency 5 ms.,valid_compound,URLLC,True,cir,Qwen/Qwen3.5-9B,True,1956.6010979997372,stop,233,70,"{
+  ""service_type"": ""URLLC"",
+  ""latency_ms"": 5,
+  ""bandwidth_mbps"": null,
+  ""reliability"": 0.9999,
+  ""device_count"": null,
+  ""coverage"": null,
+  ""objective"": null
+}",URLLC,True,False,False,,True,True,True,,"{""service_type"": ""URLLC"", ""latency_ms"": 5, ""bandwidth_mbps"": null, ""reliability"": 0.9999, ""device_count"": null, ""coverage"": null, ""objective"": null}","{""service_type"": ""URLLC"", ""service_profile"": {""latency_ms"": 5, ""bandwidth_mbps"": null, ""reliability"": 0.9999, ""device_count"": null, ""coverage"": null, ""objective"": null}, ""standards_mapping"": {""mapping_found"": true, ""mapping"": {""threegpp"": ""network-slice service profile"", ""oran"": ""RAN slice/A1 policy candidate""}, ""profile"": ""3GPP Rel-18 + O-RAN R004""}}"
+EXP2-100,Create URLLC service for industrial control with reliability 0.9999 and latency 5 ms.,valid_compound,URLLC,True,proposed,Qwen/Qwen3.5-9B,True,3187.030806999246,stop,233,70,"{
+  ""service_type"": ""URLLC"",
+  ""latency_ms"": 5,
+  ""bandwidth_mbps"": null,
+  ""reliability"": 0.9999,
+  ""device_count"": null,
+  ""coverage"": null,
+  ""objective"": null
+}",URLLC,True,False,False,True,True,True,True,,"{""service_type"": ""URLLC"", ""latency_ms"": 5, ""bandwidth_mbps"": null, ""reliability"": 0.9999, ""device_count"": null, ""coverage"": null, ""objective"": null}","{""service_type"": ""URLLC"", ""service_profile"": {""latency_ms"": 5, ""bandwidth_mbps"": null, ""reliability"": 0.9999, ""device_count"": null, ""coverage"": null, ""objective"": null}, ""standards_mapping"": {""mapping_found"": true, ""mapping"": {""threegpp"": ""network-slice service profile"", ""oran"": ""RAN slice/A1 policy candidate""}, ""profile"": ""3GPP Rel-18 + O-RAN R004""}}"

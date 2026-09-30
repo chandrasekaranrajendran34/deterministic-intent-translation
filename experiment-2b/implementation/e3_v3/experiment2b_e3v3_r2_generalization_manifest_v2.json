@@ -1,0 +1,19 @@
+{
+  "step": "24D-C",
+  "repair": "R2-v2",
+  "base": "clean R1-v2 source",
+  "base_sha256": "3fb06df345ad6ead4cc88f877f09971a035f434d99abb01a286b4d798fffc56f",
+  "failed_r2_v1_archived": "/content/experiment-1-v2-together/experiment-2b/implementation/e3_v3/source_analyzer_r2_v1_failed.py",
+  "failed_r2_v1_sha256": "a4fb4023a73ccee41a4249120bce2e569092b95ab49c9439dfd75c098510d485",
+  "r2_v2_source": "/content/experiment-1-v2-together/experiment-2b/implementation/e3_v3/src/source_analyzer.py",
+  "r2_v2_sha256": "6511d24248fc5a22af6d468dd2a5d090ce8046e28fd3da05592e730727669fbb",
+  "protected_artifacts": {
+    "e3_v2": "05208f192c402a09a24a9db239aeb3a03e2e99f82c586f747dcac970df09970d",
+    "frozen_development": "133c68842716f84a703478f7904c8cdd4f10cfdba683957ce23e473e81e7196f",
+    "constraint_consistency": "a62a5cdaf917d3d31b28415246014e1728442c0178b96ec5bcec623dd16dfcef",
+    "source_intent": "de745a90d6fb675bfbf485446ce97dbd9bb8f46f1ea1893a3252c1ed73e3e9d6"
+  },
+  "case_specific_ids_in_code": false,
+  "api_calls": 0,
+  "llm_calls": 0
+}

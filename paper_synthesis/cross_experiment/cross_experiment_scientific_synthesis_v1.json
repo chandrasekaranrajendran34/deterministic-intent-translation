@@ -1,0 +1,45 @@
+{
+  "artifact_id": "cross-experiment-scientific-synthesis-v1.0",
+  "benchmark_changed": false,
+  "claim_boundary": "Controlled benchmark evidence only. No universal semantic-correctness guarantee, no hallucination-free guarantee, no formal 3GPP/O-RAN conformance claim, and no real-world deployment-performance claim.",
+  "created_utc": "2026-09-30T01:24:40.400172+00:00",
+  "experiment_rerun": false,
+  "experimental_roles": {
+    "E1": "controlled feasibility and information-loss diagnosis",
+    "E2A": "robustness/generalization and failure discovery",
+    "E2B": "targeted repair evaluation / development evidence",
+    "E3-v3": "final frozen held-out controlled generalization evidence"
+  },
+  "implementation_changed": false,
+  "labels_changed": false,
+  "model_called": false,
+  "official_result_changed": false,
+  "primary_final_result": {
+    "accuracy": 0.8416666666666667,
+    "correct": 101,
+    "exact_ci95": [
+      0.763836,
+      0.901898
+    ],
+    "experiment": "E3-v3",
+    "invalid_rejection_rate": 0.8064516129032258,
+    "n": 120,
+    "rejection_f1": 0.840336,
+    "rejection_precision": 0.8771929824561403,
+    "valid_acceptance_rate": 0.8793103448275862
+  },
+  "source_hashes": {
+    "e2a_paired": "46be6298f4a84665b4026f21ce231b624122f75189364f2cf4f4126668612366",
+    "e2b_results": "1055be8d9a233fa2a1736f9ea20660361157c9690c9b3bb7e03d40e8f49c154d",
+    "e3_exact_ci": "c8f3e2bf1cd468702c420e5ca9dd6b939fca1340690ff0aa424289f3fe45414e",
+    "e3_failure_taxonomy": "8e5ce453ce57a663a8c809fab63723ca38b61d732ec2695a99b8750dc3f35b83",
+    "integrity_manifest": "aa7dad7cf11f08628c2750d0470cf6159b3f75bf87ee3060ef7d8431129f5292",
+    "results": "d2c2dca5732f667e54ea4104f7ea2cdd1f0b059f9860af3f5e66c11c0c082d90"
+  },
+  "statistical_policy": {
+    "cross_benchmark_accuracy_ranking_interpretation": false,
+    "cross_benchmark_significance_tests_performed": false,
+    "within_benchmark_paired_tests_allowed": true
+  },
+  "synthesis_records": 6
+}

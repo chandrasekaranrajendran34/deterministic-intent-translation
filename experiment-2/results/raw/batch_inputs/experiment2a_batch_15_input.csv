@@ -1,0 +1,11 @@
+id,intent,category,subcategory,expected_valid,expected_service,difficulty,linguistic_form,constraint_type,notes
+EXP2-141,Set up mMTC with quantum_mode=active.,invalid_explicit_unsupported_parameter,unknown_name_value_parameter,False,,medium,explicit_assignment,unsupported_parameter,
+EXP2-142,Create URLLC with impossible_feature=enabled.,invalid_explicit_unsupported_parameter,unknown_name_value_parameter,False,,medium,explicit_assignment,unsupported_parameter,
+EXP2-143,Provision eMBB with hyperspace_route=1.,invalid_explicit_unsupported_parameter,unknown_name_value_parameter,False,,medium,explicit_assignment,unsupported_parameter,
+EXP2-144,Create mMTC with fictional_parameter=42.,invalid_explicit_unsupported_parameter,unknown_name_value_parameter,False,,medium,explicit_assignment,unsupported_parameter,
+EXP2-145,Create URLLC and give it quantum priority.,invalid_implicit_unsupported_parameter,unsupported_natural_language_parameter,False,,hard,implicit_unsupported,unsupported_parameter,
+EXP2-146,Provision eMBB using teleportation-based bandwidth acceleration.,invalid_implicit_unsupported_parameter,unsupported_natural_language_parameter,False,,hard,implicit_unsupported,unsupported_parameter,
+EXP2-147,Create mMTC with magical reliability enhancement.,invalid_implicit_unsupported_parameter,unsupported_natural_language_parameter,False,,hard,implicit_unsupported,unsupported_parameter,
+EXP2-148,Give this URLLC slice hyperspace scheduling priority.,invalid_implicit_unsupported_parameter,unsupported_natural_language_parameter,False,,hard,implicit_unsupported,unsupported_parameter,
+EXP2-149,Create eMBB using a quantum bandwidth mode.,invalid_implicit_unsupported_parameter,unsupported_natural_language_parameter,False,,hard,implicit_unsupported,unsupported_parameter,
+EXP2-150,Provision mMTC with teleportation coverage enhancement.,invalid_implicit_unsupported_parameter,unsupported_natural_language_parameter,False,,hard,implicit_unsupported,unsupported_parameter,

@@ -1,0 +1,29 @@
+{
+  "experiment": "experiment-2b",
+  "analysis_step": "22I",
+  "primary_results_frozen": true,
+  "api_calls": 0,
+  "input_artifacts": {
+    "/content/experiment-1-v2-together/experiment-2b/results/raw/experiment2b_primary_results_240.csv": "1055be8d9a233fa2a1736f9ea20660361157c9690c9b3bb7e03d40e8f49c154d",
+    "/content/experiment-1-v2-together/experiment-2b/metrics/experiment2b_category_comparison_v1.csv": "bf2e019114b545dd0b674fb37e87934e6f6ff78d8e4905482fe75eb97c6297c7",
+    "/content/experiment-1-v2-together/experiment-2b/failure_analysis/experiment2b_e3v2_residual_case_matrix_v1.csv": "0f6ccb54739206d0f77342b9d4d8e95261ac93686c6ab51dce99f5f531717829",
+    "/content/experiment-1-v2-together/experiment-2b/failure_analysis/experiment2b_e3v2_root_cause_repair_summary_v1.csv": "36bc37694b8f33aab72cf16290b35478a3ed7b3ec84954fd64659f62d0e6e441"
+  },
+  "primary_results": {
+    "e3_original_correct": 54,
+    "e3_v2_correct": 101,
+    "e3_original_accuracy_pct": 45.0,
+    "e3_v2_accuracy_pct": 84.1667,
+    "absolute_gain_pp": 39.1667,
+    "relative_error_reduction_pct": 71.2121,
+    "wrong_to_correct": 51,
+    "correct_to_wrong": 4,
+    "both_correct": 50,
+    "both_wrong": 15,
+    "e3_v2_llm_calls": 78,
+    "e3_v2_deterministic_only": 42,
+    "e3_v2_residual_errors": 19,
+    "e3_v2_valid_residual_errors": 13,
+    "e3_v2_invalid_residual_errors": 6
+  }
+}

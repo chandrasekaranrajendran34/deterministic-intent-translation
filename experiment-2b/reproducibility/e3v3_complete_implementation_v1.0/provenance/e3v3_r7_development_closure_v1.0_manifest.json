@@ -1,0 +1,88 @@
+{
+  "freeze_id": "e3v3-r7-development-closure-v1.0",
+  "status": "R7_DEVELOPMENT_CLOSED",
+  "development_only": true,
+  "closure_timestamp_utc": "2026-09-29T17:45:55.511689+00:00",
+  "scope": {
+    "repair_stage": "R7",
+    "name": "closed-world qualitative requirement handling",
+    "supported_qualitative_dimensions": [
+      "throughput/bandwidth",
+      "latency/response",
+      "reliability",
+      "device density/scale",
+      "coverage"
+    ],
+    "claim_boundary": "Closed-world deterministic qualitative capability policy for the explicitly defined R7 phrase/signature set. This is not a universal semantic impossibility detector."
+  },
+  "authoritative_artifacts": {
+    "runner": {
+      "source_path": "/content/experiment-1-v2-together/experiment-2b/implementation/e3_v3/run_experiment2b_e3v3_r7_dev_v1.py",
+      "snapshot_path": "/content/experiment-1-v2-together/experiment-2b/reproducibility/e3v3_r7_development_closure_v1.0/run_experiment2b_e3v3_r7_dev_v1.py",
+      "sha256": "40c035cb864978c718a72fcfdfbb164d262529960b0ae78242d5194147cd8257"
+    },
+    "r7_semantic": {
+      "source_path": "/content/experiment-1-v2-together/experiment-2b/implementation/e3_v3/src/qualitative_requirement_resolver_r7.py",
+      "snapshot_path": "/content/experiment-1-v2-together/experiment-2b/reproducibility/e3v3_r7_development_closure_v1.0/qualitative_requirement_resolver_r7.py",
+      "sha256": "7a2060cfa8a747a7cf1bbc5840854ff499e1b2c02e818483510e1a0168cf8579"
+    },
+    "r7_pre": {
+      "source_path": "/content/experiment-1-v2-together/experiment-2b/implementation/e3_v3/src/qualitative_source_integration_r7.py",
+      "snapshot_path": "/content/experiment-1-v2-together/experiment-2b/reproducibility/e3v3_r7_development_closure_v1.0/qualitative_source_integration_r7.py",
+      "sha256": "bba296ebe75f78e836c5f6b5c02483ebdc1dd72a9a51d3bf6bef1f93a381c79b"
+    },
+    "r7_post": {
+      "source_path": "/content/experiment-1-v2-together/experiment-2b/implementation/e3_v3/src/qualitative_post_preservation_r7.py",
+      "snapshot_path": "/content/experiment-1-v2-together/experiment-2b/reproducibility/e3v3_r7_development_closure_v1.0/qualitative_post_preservation_r7.py",
+      "sha256": "1bcb136a7c0345439d47bbdcbe4d7d574e735796570f7fdf0d568838b7670545"
+    },
+    "preservation": {
+      "source_path": "/content/experiment-1-v2-together/experiment-2b/implementation/e3_v3/src/preservation_check.py",
+      "snapshot_path": "/content/experiment-1-v2-together/experiment-2b/reproducibility/e3v3_r7_development_closure_v1.0/preservation_check.py",
+      "sha256": "7fdc76ee4e24572c0dbef13b66290b0eb28ba0036a130f102dbd41b77834fe52"
+    },
+    "post_tests": {
+      "source_path": "/content/experiment-1-v2-together/experiment-2b/implementation/e3_v3/results/development/experiment2b_e3v3_r7_post_preservation_tests_v1.json",
+      "snapshot_path": "/content/experiment-1-v2-together/experiment-2b/reproducibility/e3v3_r7_development_closure_v1.0/experiment2b_e3v3_r7_post_preservation_tests_v1.json",
+      "sha256": "16973670c5adf159a76237e893e2e82aefd02fbf0d70be2cbfa101d7865419a4"
+    },
+    "runner_tests": {
+      "source_path": "/content/experiment-1-v2-together/experiment-2b/implementation/e3_v3/results/development/experiment2b_e3v3_r7_runner_integration_tests_v1.json",
+      "snapshot_path": "/content/experiment-1-v2-together/experiment-2b/reproducibility/e3v3_r7_development_closure_v1.0/experiment2b_e3v3_r7_runner_integration_tests_v1.json",
+      "sha256": "a6c7625ba8f755a3aaf2f788eb7a27a2968fc606724c4e3a6bcb7eaa9650173b"
+    }
+  },
+  "validation_summary": {
+    "r7_semantic_family_evaluation": "15/15",
+    "r7_supported_cases": "8/8",
+    "r7_unsupported_cases": "7/7",
+    "r7_post_preservation_tests": "4/4",
+    "r7_runner_integration_tests": "4/4",
+    "initial_runner_test": "3/4",
+    "initial_runner_test_classification": "test_harness_false_negative",
+    "implementation_change_after_false_negative": false,
+    "external_api_calls_in_runner_tests": 0,
+    "external_llm_calls_in_runner_tests": 0
+  },
+  "runner_architecture": [
+    "R7 pre-LLM source boundary",
+    "controlled/production CIR generation boundary",
+    "R4 CIR reconciliation",
+    "R5 reliability normalization",
+    "R6 service-type integration",
+    "R7 post-CIR preservation",
+    "original CIR validation",
+    "standards-oriented mapping",
+    "descriptor compilation"
+  ],
+  "development_constraints": {
+    "frozen_r6_runner_modified": false,
+    "r7_semantic_module_modified_during_final_runner_test": false,
+    "r7_pre_adapter_modified_during_final_runner_test": false,
+    "r7_post_preservation_modified_during_final_runner_test": false,
+    "preservation_checker_modified": false,
+    "held_out_data_used": false,
+    "full_160_rerun_after_r7": false
+  },
+  "next_phase": "Freeze complete E3-v3 implementation before held-out evaluation."
+}

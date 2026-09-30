@@ -1,0 +1,153 @@
+{
+  "experiment_id": "experiment2b-primary-v1.0",
+  "freeze_id": "experiment2b-execution-v1.0",
+  "created_utc": "2026-09-29T08:08:11.641905+00:00",
+  "model": "Qwen/Qwen3.5-9B",
+  "temperature": 0,
+  "reasoning_enabled": false,
+  "pipelines": [
+    "e3_original",
+    "e3_v2"
+  ],
+  "runner": {
+    "source": "/content/experiment-1-v2-together/experiment-2b/src/run_experiment2b.py",
+    "frozen_copy": "/content/experiment-1-v2-together/experiment-2b/reproducibility/experiment2b_execution_v1.0/run_experiment2b_v1.py",
+    "sha256": "08f67ab2261f37137f2f9b4d295833886be50298767678f4896f908405851042"
+  },
+  "dataset": {
+    "file": "/content/experiment-1-v2-together/experiment-2b/data/frozen/experiment2b_intents_120_v1.csv",
+    "sha256": "63661df64f3e13cb323bc7089b3a14c9f5c85e4df4237643065e3f4896910409",
+    "rows": 120,
+    "valid": 45,
+    "invalid": 75
+  },
+  "execution": {
+    "batch_count": 12,
+    "rows_per_batch": 10,
+    "order": "frozen_dataset_row_order",
+    "results_policy": "Each batch written separately before combination.",
+    "no_post_result_tuning": true
+  },
+  "batches": [
+    {
+      "batch_number": 1,
+      "start_row_zero_based": 0,
+      "end_row_zero_based_exclusive": 10,
+      "first_id": "EXP2B-001",
+      "last_id": "EXP2B-010",
+      "rows": 10,
+      "sha256": "3844f1dd5c5cf7e6fa202d27be29ba38c7f9c42be397882f75dc05df53823b1d",
+      "file": "/content/experiment-1-v2-together/experiment-2b/data/execution_batches_v1/experiment2b_batch_01.csv"
+    },
+    {
+      "batch_number": 2,
+      "start_row_zero_based": 10,
+      "end_row_zero_based_exclusive": 20,
+      "first_id": "EXP2B-011",
+      "last_id": "EXP2B-020",
+      "rows": 10,
+      "sha256": "fe1ce6cb2b51ceccf80c7bd08e3df9e1d56cef2ac8e971667b8ab8e0baeae9a4",
+      "file": "/content/experiment-1-v2-together/experiment-2b/data/execution_batches_v1/experiment2b_batch_02.csv"
+    },
+    {
+      "batch_number": 3,
+      "start_row_zero_based": 20,
+      "end_row_zero_based_exclusive": 30,
+      "first_id": "EXP2B-021",
+      "last_id": "EXP2B-030",
+      "rows": 10,
+      "sha256": "8e1b4a388e68c4a8ce9168f50a09901206b3d1fa7623dd697bec178417041281",
+      "file": "/content/experiment-1-v2-together/experiment-2b/data/execution_batches_v1/experiment2b_batch_03.csv"
+    },
+    {
+      "batch_number": 4,
+      "start_row_zero_based": 30,
+      "end_row_zero_based_exclusive": 40,
+      "first_id": "EXP2B-031",
+      "last_id": "EXP2B-040",
+      "rows": 10,
+      "sha256": "91b44adb914948e616969fb7293dcbfbb02a9436e3be20df8af9d7057ddcdcc8",
+      "file": "/content/experiment-1-v2-together/experiment-2b/data/execution_batches_v1/experiment2b_batch_04.csv"
+    },
+    {
+      "batch_number": 5,
+      "start_row_zero_based": 40,
+      "end_row_zero_based_exclusive": 50,
+      "first_id": "EXP2B-041",
+      "last_id": "EXP2B-050",
+      "rows": 10,
+      "sha256": "0c57bfab9530a9995b1b00cc1511dcf5ec7efe58f1c9942dcef265949521a661",
+      "file": "/content/experiment-1-v2-together/experiment-2b/data/execution_batches_v1/experiment2b_batch_05.csv"
+    },
+    {
+      "batch_number": 6,
+      "start_row_zero_based": 50,
+      "end_row_zero_based_exclusive": 60,
+      "first_id": "EXP2B-051",
+      "last_id": "EXP2B-060",
+      "rows": 10,
+      "sha256": "44f2666424e486a2df4108d4781ff6e8a3aaf9348ab115f9ae21dc9dc4889f6e",
+      "file": "/content/experiment-1-v2-together/experiment-2b/data/execution_batches_v1/experiment2b_batch_06.csv"
+    },
+    {
+      "batch_number": 7,
+      "start_row_zero_based": 60,
+      "end_row_zero_based_exclusive": 70,
+      "first_id": "EXP2B-061",
+      "last_id": "EXP2B-070",
+      "rows": 10,
+      "sha256": "4c7abf0faf775f9662b3d72fde71ea7fcbb61315420157d7b09d48f50bdd8011",
+      "file": "/content/experiment-1-v2-together/experiment-2b/data/execution_batches_v1/experiment2b_batch_07.csv"
+    },
+    {
+      "batch_number": 8,
+      "start_row_zero_based": 70,
+      "end_row_zero_based_exclusive": 80,
+      "first_id": "EXP2B-071",
+      "last_id": "EXP2B-080",
+      "rows": 10,
+      "sha256": "9c7a66b240c5487ba35c18e65e37638998915ab5c1f7e7b6da233433f2eede2b",
+      "file": "/content/experiment-1-v2-together/experiment-2b/data/execution_batches_v1/experiment2b_batch_08.csv"
+    },
+    {
+      "batch_number": 9,
+      "start_row_zero_based": 80,
+      "end_row_zero_based_exclusive": 90,
+      "first_id": "EXP2B-081",
+      "last_id": "EXP2B-090",
+      "rows": 10,
+      "sha256": "dc68712e2af05caa1b0395ba2d3d3a2eb6cc49e211776adfcab3b4ac84e3d4cb",
+      "file": "/content/experiment-1-v2-together/experiment-2b/data/execution_batches_v1/experiment2b_batch_09.csv"
+    },
+    {
+      "batch_number": 10,
+      "start_row_zero_based": 90,
+      "end_row_zero_based_exclusive": 100,
+      "first_id": "EXP2B-091",
+      "last_id": "EXP2B-100",
+      "rows": 10,
+      "sha256": "fb6ff4bbfaac6a343888e4acd450d520eedbdb2ecbfa95185ff5f34dd72cecc7",
+      "file": "/content/experiment-1-v2-together/experiment-2b/data/execution_batches_v1/experiment2b_batch_10.csv"
+    },
+    {
+      "batch_number": 11,
+      "start_row_zero_based": 100,
+      "end_row_zero_based_exclusive": 110,
+      "first_id": "EXP2B-101",
+      "last_id": "EXP2B-110",
+      "rows": 10,
+      "sha256": "5c63927a26170402fa1cec66670e927db7fba655de68076046e48bf66dcefd1d",
+      "file": "/content/experiment-1-v2-together/experiment-2b/data/execution_batches_v1/experiment2b_batch_11.csv"
+    },
+    {
+      "batch_number": 12,
+      "start_row_zero_based": 110,
+      "end_row_zero_based_exclusive": 120,
+      "first_id": "EXP2B-111",
+      "last_id": "EXP2B-120",
+      "rows": 10,
+      "sha256": "88957c7118536f069113b0041b768c7f95939437c4c986ef3787f1bb53e3057f",
+      "file": "/content/experiment-1-v2-together/experiment-2b/data/execution_batches_v1/experiment2b_batch_12.csv"
+    }
+  ]
+}

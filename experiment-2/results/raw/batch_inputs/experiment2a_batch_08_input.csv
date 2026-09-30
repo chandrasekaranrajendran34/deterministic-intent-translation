@@ -1,0 +1,11 @@
+id,intent,category,subcategory,expected_valid,expected_service,difficulty,linguistic_form,constraint_type,notes
+EXP2-071,Create a slice for 50000 low-power industrial monitoring sensors.,valid_mMTC,valid,True,mMTC,medium,semantic_paraphrase,valid_requirement,
+EXP2-072,Set up mMTC connectivity for smart-building telemetry devices.,valid_mMTC,valid,True,mMTC,medium,explicit_service,valid_requirement,
+EXP2-073,Provide connectivity for a large fleet of battery-powered IoT sensors.,valid_mMTC,valid,True,mMTC,medium,semantic_paraphrase,valid_requirement,
+EXP2-074,Create massive machine-type communication for agricultural monitoring.,valid_mMTC,valid,True,mMTC,medium,semantic_paraphrase,valid_requirement,
+EXP2-075,Provision an mMTC slice for widespread infrastructure sensors.,valid_mMTC,valid,True,mMTC,medium,explicit_service,valid_requirement,
+EXP2-076,Provide a service for tens of thousands of low-traffic IoT endpoints.,valid_mMTC,valid,True,mMTC,medium,semantic_paraphrase,valid_requirement,
+EXP2-077,Create connectivity for a dense smart-meter deployment.,valid_mMTC,valid,True,mMTC,medium,semantic_paraphrase,valid_requirement,
+EXP2-078,Set up massive IoT service for distributed environmental monitoring.,valid_mMTC,valid,True,mMTC,medium,semantic_paraphrase,valid_requirement,
+EXP2-079,Provide an mMTC slice for low-power asset-tracking devices.,valid_mMTC,valid,True,mMTC,medium,explicit_service,valid_requirement,
+EXP2-080,Create scalable connectivity for a large sensor population.,valid_mMTC,valid,True,mMTC,medium,semantic_paraphrase,valid_requirement,

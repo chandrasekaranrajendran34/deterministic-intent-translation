@@ -1,0 +1,68 @@
+{
+  "freeze_id": "e3v3-heldout-benchmark-v1.0",
+  "created_at_utc": "2026-09-30T00:37:45.226024+00:00",
+  "status": "FINAL_HELDOUT_BENCHMARK_FROZEN",
+  "dataset": {
+    "path": "/content/experiment-1-v2-together/experiment-2b/reproducibility/e3v3_heldout_benchmark_v1.0/e3v3_heldout_benchmark_120_v1.csv",
+    "sha256": "84576e7d99a2721e61ded5a14bdafeb96707b068397243bbed32aa735496d4de",
+    "rows": 120,
+    "valid": 58,
+    "invalid": 62,
+    "family_counts": {
+      "H1": 18,
+      "H2": 18,
+      "H3": 20,
+      "H4": 14,
+      "H5": 16,
+      "H6": 12,
+      "H7": 10,
+      "H8": 12
+    }
+  },
+  "implementation": {
+    "freeze_id": "e3v3-complete-implementation-v1.0",
+    "manifest_sha256": "ff0d39051b4027ab8441e56dd518a6200b99f06cf2eb5faec2ce535b14ad5579"
+  },
+  "benchmark_specification_sha256": "74ff0d81190d343ba3cf34d8e0184e3b97a8feb19525ebb6df267a7db14c1234",
+  "prior_exposure_corpus_sha256": "d07859dea1d22e7d4eda4c10c9b75ec19329e4ee38df5491b394560cfae1a056",
+  "candidate_v2_sha256": "84576e7d99a2721e61ded5a14bdafeb96707b068397243bbed32aa735496d4de",
+  "candidate_v2_manifest_sha256": "458a39db0efab8bf021a4dc08f495a7c2f63b9349868d01ab23a6af9d791813d",
+  "pre_evaluation_remediation_log_sha256": "3a9d54feab5ff8d9ceee388d1c41fd520e587f533acfb8c98f734ca4d6547043",
+  "leakage_audit": {
+    "summary_sha256": "c01ccdc8fd5dff44d49fc50ddccd9577d158f629b7c26ac8869c75107dc0aaef",
+    "prior_similarity_sha256": "3225713452696a3d38dd001ff3a36447f57e26274e17c144a6b298fa5eb2df30",
+    "within_similarity_sha256": "5b1418d8491b70c939e9613b8cee4478757abfe9cf330e0d3696f3c50414d1a2",
+    "exact_prior_duplicates": 0,
+    "normalized_prior_duplicates": 0,
+    "review_cases_remaining": 0,
+    "high_similarity_failures_remaining": 0,
+    "maximum_candidate_to_prior_jaccard": 0.6666666666666666,
+    "full_lexical_clearance": true
+  },
+  "supporting_frozen_artifacts": {
+    "benchmark_specification.json": "74ff0d81190d343ba3cf34d8e0184e3b97a8feb19525ebb6df267a7db14c1234",
+    "candidate_v2_manifest.json": "458a39db0efab8bf021a4dc08f495a7c2f63b9349868d01ab23a6af9d791813d",
+    "pre_evaluation_remediation_log.csv": "3a9d54feab5ff8d9ceee388d1c41fd520e587f533acfb8c98f734ca4d6547043",
+    "prior_exposure_manifest.json": "e53c4b3fed4619d2ac803dbfb561f4ada41d0a5e703519b4396bbe7e9ca31561",
+    "prior_similarity_audit_v2.csv": "3225713452696a3d38dd001ff3a36447f57e26274e17c144a6b298fa5eb2df30",
+    "within_similarity_audit_v2.csv": "5b1418d8491b70c939e9613b8cee4478757abfe9cf330e0d3696f3c50414d1a2",
+    "leakage_audit_summary_v2.json": "c01ccdc8fd5dff44d49fc50ddccd9577d158f629b7c26ac8869c75107dc0aaef",
+    "implementation_freeze_manifest.json": "ff0d39051b4027ab8441e56dd518a6200b99f06cf2eb5faec2ce535b14ad5579"
+  },
+  "evaluation_lock": {
+    "dataset_changes_after_freeze": false,
+    "label_changes_after_freeze": false,
+    "case_removal_after_freeze": false,
+    "case_replacement_after_freeze": false,
+    "implementation_changes_after_freeze": false,
+    "rerun_to_improve_results": false,
+    "failure_handling": "Any failure observed during held-out evaluation must be retained and reported in failure analysis. The frozen benchmark and frozen E3-v3 implementation must not be modified in response."
+  },
+  "evaluation_protocol": {
+    "predictions_seen_before_freeze": false,
+    "api_calls_during_dataset_freeze": false,
+    "llm_calls_during_dataset_freeze": false,
+    "planned_execution": "One held-out benchmark execution using the frozen E3-v3 implementation."
+  },
+  "claim_boundary": "This is a controlled held-out benchmark constructed after implementation freeze and screened against the canonical prior-exposure corpus using predefined lexical criteria. It is not an externally authored real-world benchmark. Lexical clearance does not establish semantic independence, universal correctness, or formal 3GPP/O-RAN conformance."
+}

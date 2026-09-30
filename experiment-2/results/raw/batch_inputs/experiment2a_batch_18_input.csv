@@ -1,0 +1,11 @@
+id,intent,category,subcategory,expected_valid,expected_service,difficulty,linguistic_form,constraint_type,notes
+EXP2-171,Create eMBB with bandwidth -100 Mbps.,invalid_out_of_range,numeric_domain_violation,False,,medium,explicit_numeric,out_of_range,
+EXP2-172,Provision mMTC for -500 devices.,invalid_out_of_range,numeric_domain_violation,False,,medium,explicit_numeric,out_of_range,
+EXP2-173,Create URLLC with reliability -0.2.,invalid_out_of_range,numeric_domain_violation,False,,medium,explicit_numeric,out_of_range,
+EXP2-174,Provide eMBB with bandwidth -1 Mbps.,invalid_out_of_range,numeric_domain_violation,False,,medium,explicit_numeric,out_of_range,
+EXP2-175,Create mMTC with device_count=0.,invalid_out_of_range,numeric_domain_violation,False,,medium,explicit_numeric,out_of_range,
+EXP2-176,Provision URLLC with latency -0.1 ms.,invalid_out_of_range,numeric_domain_violation,False,,medium,explicit_numeric,out_of_range,
+EXP2-177,Create URLLC with reliability 2.0.,invalid_out_of_range,numeric_domain_violation,False,,medium,explicit_numeric,out_of_range,
+EXP2-178,Provide mMTC for zero devices.,invalid_out_of_range,numeric_domain_violation,False,,medium,explicit_numeric,out_of_range,
+EXP2-179,Create eMBB requiring -250 Mbps bandwidth.,invalid_out_of_range,numeric_domain_violation,False,,medium,explicit_numeric,out_of_range,
+EXP2-180,Provision URLLC with reliability 1.01.,invalid_out_of_range,numeric_domain_violation,False,,medium,explicit_numeric,out_of_range,

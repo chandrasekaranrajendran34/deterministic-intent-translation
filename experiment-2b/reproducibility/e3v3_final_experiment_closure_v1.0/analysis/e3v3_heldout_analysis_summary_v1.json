@@ -1,0 +1,57 @@
+{
+  "accepted_cases": 63,
+  "analysis_id": "e3v3-heldout-analysis-v1.0",
+  "cases": 120,
+  "confusion_matrix_invalid_as_positive": {
+    "fn": 12,
+    "fp": 7,
+    "tn": 51,
+    "tp": 50
+  },
+  "descriptor_success_count": 63,
+  "descriptor_success_rate_on_accepted": 1.0,
+  "descriptor_success_rate_overall": 0.525,
+  "end_to_end_latency": {
+    "max_ms": 4544.888812999943,
+    "mean_ms": 1050.1634767083335,
+    "median_ms": 944.8645535001106,
+    "min_ms": 0.5674959998032136,
+    "n": 120,
+    "p95_ms": 3434.81971804988,
+    "p99_ms": 3704.4591250902877
+  },
+  "llm_invocation_rate": 0.6416666666666667,
+  "llm_invocations": 77,
+  "llm_latency": {
+    "max_ms": 4488.25547999968,
+    "mean_ms": 1587.387450012976,
+    "median_ms": 1191.8335339996702,
+    "min_ms": 687.7693820001696,
+    "n": 77,
+    "p95_ms": 3524.540184200032,
+    "p99_ms": 3866.405504479913
+  },
+  "parse_success_rate_when_invoked": 1.0,
+  "parse_success_when_invoked": 77,
+  "primary_metrics": {
+    "decision_accuracy": 0.8416666666666667,
+    "invalid_rejection_rate": 0.8064516129032258,
+    "rejection_f1": 0.8403361344537815,
+    "rejection_precision": 0.8771929824561403,
+    "rejection_recall": 0.8064516129032258,
+    "valid_acceptance_rate": 0.8793103448275862
+  },
+  "rejection_stage_distribution": {
+    "cir_validation": 12,
+    "constraint_consistency": 14,
+    "preservation": 2,
+    "r7_qualitative_source_gate": 5,
+    "source_gate": 24
+  },
+  "run_manifest_sha256": "7d3ed06d31ce61cb5535a3acafcb572c6ed99d27e5cc2bb58fc433b2742704af",
+  "service_type_accuracy": 0.896551724137931,
+  "service_type_correct": 52,
+  "service_type_evaluable_cases": 58,
+  "source_result": "/content/experiment-1-v2-together/experiment-2b/heldout/results/e3v3_heldout_benchmark_run_v1.csv",
+  "source_result_sha256": "12c3a82bd8cde2d07de352155e9ee14913c821fb745d401c7ffe2f207e850e5e"
+}

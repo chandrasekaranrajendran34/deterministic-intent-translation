@@ -1,0 +1,70 @@
+{
+  "artifacts": [
+    {
+      "bytes": 27900,
+      "path": "expanded_exposure_overlap_audit_v2.csv",
+      "sha256": "5eff00e5c8822bae01022b352ce8c5c030ca90a7e3b6c3678b813f50eb7c52be"
+    },
+    {
+      "bytes": 1192,
+      "path": "expanded_exposure_overlap_audit_v2.json",
+      "sha256": "566297ec6eadaf8000a1c70a9d84f398867788a0c81999d6893f7f0bbb874997"
+    },
+    {
+      "bytes": 475908,
+      "path": "expanded_prior_exposure_corpus_v2.csv",
+      "sha256": "5040ed297697cb095e52a8a000040329ee8df0b1d3756c2d977228dc8730f269"
+    },
+    {
+      "bytes": 38854,
+      "path": "expanded_prior_exposure_inventory_v1.csv",
+      "sha256": "aee80b24ea4ee859c7c4f2b713752719a13715fdfd3c22d06faa06183decf320"
+    },
+    {
+      "bytes": 12132,
+      "path": "expanded_prior_exposure_inventory_v1.json",
+      "sha256": "d49d2dfe16496d7acad08a91fa652c2df3e28519164c7310e411ce8317a5b3df"
+    },
+    {
+      "bytes": 23537,
+      "path": "expanded_prior_exposure_sources_v2.csv",
+      "sha256": "f830055bfcb0340ba722c46315d88f5dde5251140e78aaa19b07c193497dc3c8"
+    }
+  ],
+  "audit_type": "post_evaluation_read_only_integrity_audit",
+  "benchmark_modified": false,
+  "claim_boundary": "Absence of lexical overlap does not establish semantic independence or external real-world generalization. The benchmark remains a controlled held-out benchmark.",
+  "created_utc": "2026-09-30T01:17:03.495458+00:00",
+  "expanded_exposure": {
+    "eligible_prior_exposure_csvs": 136,
+    "excluded_heldout_or_post_evaluation_csvs": 11,
+    "intent_bearing_csvs_before_temporal_filter": 147,
+    "raw_prior_intent_occurrences": 6507,
+    "unique_exact_prior_intents": 528,
+    "unique_normalized_prior_intents": 528
+  },
+  "freeze_id": "e3v3-post-evaluation-integrity-audit-v1.0",
+  "implementation_modified": false,
+  "integrity_interpretation": "The expanded post-evaluation audit found no exact, normalized, or >=0.70 token-Jaccard overlap between the frozen 120-case held-out benchmark and the temporally eligible expanded prior-exposure corpus.",
+  "labels_modified": false,
+  "linked_final_experiment_manifest_sha256": "d169fad487c654cc818889f2b424ad8ee1d83e79196c0adc6d801655b3cd9a98",
+  "linked_heldout_benchmark_sha256": "84576e7d99a2721e61ded5a14bdafeb96707b068397243bbed32aa735496d4de",
+  "methodological_status": "This audit was performed after the official held-out evaluation and therefore supplements rather than replaces the original pre-evaluation leakage screening.",
+  "model_called": false,
+  "model_rerun": false,
+  "official_result_modified": false,
+  "official_scientific_result_unchanged": {
+    "correct": 101,
+    "decision_accuracy": 0.8416666666666667,
+    "total": 120
+  },
+  "overlap_results": {
+    "exact_overlap": 0,
+    "heldout_cases": 120,
+    "lexical_fail_ge_0_80": 0,
+    "lexical_pass_lt_0_70": 120,
+    "lexical_review_0_70_0_80": 0,
+    "maximum_token_jaccard": 0.6923076923076923,
+    "normalized_overlap": 0
+  }
+}

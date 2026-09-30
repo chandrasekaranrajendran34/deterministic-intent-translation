@@ -1,0 +1,26 @@
+{
+  "candidate_id": "e3v3-heldout-candidates-v1.0",
+  "created_at_utc": "2026-09-30T00:33:20.038423+00:00",
+  "status": "CANDIDATE_NOT_YET_FROZEN_FOR_EVALUATION",
+  "benchmark_specification_sha256": "74ff0d81190d343ba3cf34d8e0184e3b97a8feb19525ebb6df267a7db14c1234",
+  "prior_exposure_corpus_sha256": "d07859dea1d22e7d4eda4c10c9b75ec19329e4ee38df5491b394560cfae1a056",
+  "implementation_freeze_sha256": "ff0d39051b4027ab8441e56dd518a6200b99f06cf2eb5faec2ce535b14ad5579",
+  "rows": 120,
+  "valid": 58,
+  "invalid": 62,
+  "family_counts": {
+    "H1": 18,
+    "H2": 18,
+    "H3": 20,
+    "H4": 14,
+    "H5": 16,
+    "H6": 12,
+    "H7": 10,
+    "H8": 12
+  },
+  "candidate_dataset": {
+    "path": "/content/experiment-1-v2-together/experiment-2b/heldout/candidates/e3v3_heldout_candidates_120_v1.csv",
+    "sha256": "136d05eec3d52c1ab3022f8d06eba65508f883ffcbeecdbcfebe69897b86c44c"
+  },
+  "important_boundary": "These are held-out candidates only. They must pass leakage, duplicate, labeling, and structural audits before the final held-out dataset is frozen. No E3-v3 predictions have been generated."
+}

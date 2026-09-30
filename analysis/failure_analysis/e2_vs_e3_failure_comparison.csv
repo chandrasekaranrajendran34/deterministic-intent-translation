@@ -1,0 +1,4 @@
+id,intent,E2_accepted,E2_schema_valid,E2_mapping_found,E2_descriptor_success,E3_input_audit_valid,E3_unsupported_detected,E3_accepted,E3_mapping_found,E3_descriptor_success
+I043,Create URLLC and add quantum_priority=10.,True,True,True,True,False,True,False,False,False
+I044,Create URLLC and add quantum_priority=10.,True,True,True,True,False,True,False,False,False
+I045,Create URLLC and add quantum_priority=10.,True,True,True,True,False,True,False,False,False

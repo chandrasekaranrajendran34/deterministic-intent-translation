@@ -1,0 +1,5 @@
+id,intent,family_id,repair_id,subcategory,expected_valid,expected_service,difficulty,linguistic_form,constraint_type,control_type,notes
+E3V3-DEV-097,Create URLLC with reliability of 99.9%.,DEV-R5,R5,percentage_form,True,URLLC,easy,numeric,reliability,none,Percentage reliability must be converted to the canonical reliability scale without precision loss.
+E3V3-DEV-099,Deploy eMBB with reliability of 98.5%.,DEV-R5,R5,percentage_form,True,eMBB,easy,numeric,reliability,none,Percentage reliability must be converted to the canonical reliability scale without precision loss.
+E3V3-DEV-101,Create mMTC with reliability of 97%.,DEV-R5,R5,percentage_form,True,mMTC,easy,numeric,reliability,none,Percentage reliability must be converted to the canonical reliability scale without precision loss.
+E3V3-DEV-111,Create URLLC with reliability above 99.9%.,DEV-R5,R5,boundary_operator_form,True,URLLC,hard,numeric_threshold,reliability_operator,none,Reliability normalization and comparison operator must both be preserved.

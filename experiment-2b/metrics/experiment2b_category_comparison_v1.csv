@@ -1,0 +1,9 @@
+category,expected_class,n,e3_original_correct,e3_original_accuracy,e3_v2_correct,e3_v2_accuracy,absolute_change_pp,e3_original_llm_calls,e3_v2_llm_calls,wrong_to_correct,correct_to_wrong,both_correct,both_wrong
+invalid_adversarial_bypass,invalid,10,0,0.0,8,0.8,80.0,10,2,8,0,0,2
+invalid_ambiguous_incomplete,invalid,10,10,1.0,10,1.0,0.0,10,10,0,0,10,0
+invalid_boundary_out_of_range,invalid,10,6,0.6,10,1.0,40.0,10,10,4,0,6,0
+invalid_contradictory_constraints,invalid,15,1,0.06666666666666667,13,0.8666666666666667,80.0,15,10,12,0,1,2
+invalid_implicit_unsupported_capability,invalid,15,0,0.0,15,1.0,100.0,15,0,15,0,0,0
+invalid_mixed_validity_compound,invalid,15,1,0.06666666666666667,13,0.8666666666666667,80.0,15,2,12,0,1,2
+valid_compound,valid,15,9,0.6,6,0.4,-19.999999999999996,15,15,0,3,6,6
+valid_semantic_paraphrase,valid,30,27,0.9,26,0.8666666666666667,-3.3333333333333326,30,29,0,1,26,3

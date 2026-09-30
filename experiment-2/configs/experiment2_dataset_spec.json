@@ -1,0 +1,33 @@
+{
+  "experiment": "Experiment 2",
+  "version": "draft-v1",
+  "objective": "Evaluate generalization, robustness, information preservation, and deterministic failure containment on diverse unseen intents.",
+  "total_intents": 200,
+  "valid_intents": 100,
+  "invalid_intents": 100,
+  "valid_categories": {
+    "eMBB": 30,
+    "URLLC": 30,
+    "mMTC": 30,
+    "compound_valid": 10
+  },
+  "invalid_categories": {
+    "ambiguous": 12,
+    "incomplete": 8,
+    "unsupported_concept": 12,
+    "explicit_unsupported_parameter": 12,
+    "implicit_unsupported_parameter": 12,
+    "contradictory": 12,
+    "out_of_range": 12,
+    "prompt_adversarial": 10,
+    "compound_mixed_validity": 10
+  },
+  "pipelines": [
+    "E1_direct",
+    "E2_CIR",
+    "E3_proposed"
+  ],
+  "planned_model_invocations": 600,
+  "important_rule": "Freeze dataset and expected labels before full model execution.",
+  "audit_rule": "Do not modify the Experiment 1 input audit before Experiment 2A."
+}

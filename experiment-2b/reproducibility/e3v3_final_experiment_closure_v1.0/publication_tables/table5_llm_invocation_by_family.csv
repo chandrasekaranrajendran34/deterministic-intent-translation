@@ -1,0 +1,9 @@
+Family,Category,Cases,LLM invocations,Invocation rate (%)
+H1,Canonical / semantic service intents,18,13,72.22
+H2,Single numeric constraints,18,18,100.0
+H3,Compound / multi-constraints,20,14,70.0
+H4,Reliability representations,14,14,100.0
+H5,Qualitative requirements,16,10,62.5
+H6,Unsupported capabilities,12,6,50.0
+H7,Contradictions / incompatible bounds,10,2,20.0
+H8,Control / adversarial attempts,12,0,0.0

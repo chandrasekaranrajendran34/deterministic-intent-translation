@@ -1,0 +1,45 @@
+{
+  "experiment": "experiment-2b",
+  "step": "24D-B",
+  "repair": "R2",
+  "repair_name": "multi_constraint_extraction",
+  "parent_r1_v2_sha256": "3fb06df345ad6ead4cc88f877f09971a035f434d99abb01a286b4d798fffc56f",
+  "r2_source_sha256": "a4fb4023a73ccee41a4249120bce2e569092b95ab49c9439dfd75c098510d485",
+  "frozen_development_sha256": "133c68842716f84a703478f7904c8cdd4f10cfdba683957ce23e473e81e7196f",
+  "constraint_consistency_sha256": "a62a5cdaf917d3d31b28415246014e1728442c0178b96ec5bcec623dd16dfcef",
+  "source_intent_sha256": "de745a90d6fb675bfbf485446ce97dbd9bb8f46f1ea1893a3252c1ed73e3e9d6",
+  "targeted_unit_tests": {
+    "passed": 9,
+    "total": 10
+  },
+  "pre_r2": {
+    "correct": 12,
+    "total": 25,
+    "accuracy": 0.48
+  },
+  "r2": {
+    "correct": 18,
+    "total": 25,
+    "accuracy": 0.72,
+    "contradictory_correct": 8,
+    "contradictory_total": 13,
+    "compatible_correct": 10,
+    "compatible_total": 12
+  },
+  "paired_transitions": {
+    "wrong_to_correct": 8,
+    "correct_to_wrong": 2,
+    "both_correct": 10,
+    "both_wrong": 5
+  },
+  "r1_preservation": {
+    "passed": 20,
+    "total": 20
+  },
+  "development_gate_pass": false,
+  "interpretation": "Development-set validation only. Not an unbiased estimate of final holdout generalization.",
+  "api_calls": 0,
+  "model_calls": 0,
+  "full_pipeline_executions": 0,
+  "created_utc": "2026-09-29T09:37:57.702094+00:00"
+}

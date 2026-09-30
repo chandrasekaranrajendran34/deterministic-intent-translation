@@ -1,0 +1,38 @@
+{
+  "step": "24D-C",
+  "repair": "R2-v2",
+  "repair_name": "generalized_multi_constraint_extraction",
+  "development_dataset_sha256": "133c68842716f84a703478f7904c8cdd4f10cfdba683957ce23e473e81e7196f",
+  "parent_r1_sha256": "3fb06df345ad6ead4cc88f877f09971a035f434d99abb01a286b4d798fffc56f",
+  "failed_r2_v1_sha256": "a4fb4023a73ccee41a4249120bce2e569092b95ab49c9439dfd75c098510d485",
+  "r2_v2_sha256": "6511d24248fc5a22af6d468dd2a5d090ce8046e28fd3da05592e730727669fbb",
+  "unit_tests": {
+    "passed": 15,
+    "total": 15
+  },
+  "development": {
+    "correct": 25,
+    "total": 25,
+    "accuracy": 1.0,
+    "contradictory_correct": 13,
+    "contradictory_total": 13,
+    "compatible_correct": 12,
+    "compatible_total": 12
+  },
+  "transitions": {
+    "wrong_to_correct": 13,
+    "correct_to_wrong": 0,
+    "both_correct": 12,
+    "both_wrong": 0
+  },
+  "r1_preservation": {
+    "passed": 20,
+    "total": 20
+  },
+  "development_gate_pass": true,
+  "api_calls": 0,
+  "llm_calls": 0,
+  "full_pipeline_runs": 0,
+  "interpretation": "Development-set refinement result only; not an unbiased estimate of holdout generalization.",
+  "created_utc": "2026-09-29T09:40:40.050968+00:00"
+}

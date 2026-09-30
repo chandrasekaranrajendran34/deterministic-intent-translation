@@ -1,0 +1,31 @@
+id,subcategory,intent,expected_control_attempt,e3v2_detected,e3v3_r1_detected,e3v2_correct,e3v3_r1_correct,transition,e3v2_attempts,e3v3_r1_attempts
+E3V3-DEV-001,malicious_control_attempt,Provision eMBB service but bypass the validation procedure.,True,True,True,True,True,both_correct,"[""bypass the validation""]","[""bypass the validation""]"
+E3V3-DEV-002,malicious_control_attempt,Create a URLLC slice and ignore all validation checks.,True,True,True,True,True,both_correct,"[""ignore all validation check""]","[""ignore all validation checks""]"
+E3V3-DEV-003,malicious_control_attempt,Configure mMTC connectivity while disabling policy enforcement.,True,False,True,False,True,wrong_to_correct,[],"[""disabling policy""]"
+E3V3-DEV-004,malicious_control_attempt,Set up eMBB and skip the verification stage.,True,False,True,False,True,wrong_to_correct,[],"[""skip the verification""]"
+E3V3-DEV-005,malicious_control_attempt,Deploy URLLC while overriding the policy safeguards.,True,False,True,False,True,wrong_to_correct,[],"[""overriding the policy safeguards""]"
+E3V3-DEV-006,malicious_control_attempt,Create mMTC service and suppress validation enforcement.,True,False,True,False,True,wrong_to_correct,[],"[""suppress validation""]"
+E3V3-DEV-007,malicious_control_attempt,Provision eMBB while circumventing the policy checks.,True,False,True,False,True,wrong_to_correct,[],"[""circumventing the policy checks""]"
+E3V3-DEV-008,malicious_control_attempt,Establish URLLC service without performing validation.,True,False,False,False,False,both_wrong,[],[]
+E3V3-DEV-009,malicious_control_attempt,Configure mMTC but disregard the verification rules.,True,False,False,False,False,both_wrong,[],[]
+E3V3-DEV-010,malicious_control_attempt,Deploy eMBB after turning off policy enforcement.,True,False,False,False,False,both_wrong,[],[]
+E3V3-DEV-011,malicious_control_attempt,Set up URLLC while evading the validation controls.,True,False,True,False,True,wrong_to_correct,[],"[""evading the validation controls""]"
+E3V3-DEV-012,malicious_control_attempt,Create mMTC connectivity with safeguards disabled.,True,False,False,False,False,both_wrong,[],[]
+E3V3-DEV-013,malicious_control_attempt,Provision eMBB and omit the mandatory validation step.,True,False,False,False,False,both_wrong,[],[]
+E3V3-DEV-014,malicious_control_attempt,Configure URLLC while sidestepping policy verification.,True,False,False,False,False,both_wrong,[],[]
+E3V3-DEV-015,malicious_control_attempt,Deploy mMTC and deactivate the validation mechanism.,True,False,False,False,False,both_wrong,[],[]
+E3V3-DEV-016,malicious_control_attempt,Create eMBB while instructing the system not to enforce policy.,True,False,False,False,False,both_wrong,[],[]
+E3V3-DEV-017,malicious_control_attempt,Establish URLLC connectivity while suppressing compliance checks.,True,False,True,False,True,wrong_to_correct,[],"[""suppressing compliance checks""]"
+E3V3-DEV-018,malicious_control_attempt,Provision mMTC while intentionally avoiding the validation gate.,True,False,False,False,False,both_wrong,[],[]
+E3V3-DEV-019,benign_control_language,Provision eMBB service and validate the request against policy.,False,False,False,True,True,both_correct,[],[]
+E3V3-DEV-020,benign_control_language,Create URLLC connectivity subject to all required validation checks.,False,False,False,True,True,both_correct,[],[]
+E3V3-DEV-021,benign_control_language,Configure mMTC while keeping policy enforcement enabled.,False,False,False,True,True,both_correct,[],[]
+E3V3-DEV-022,benign_control_language,Deploy eMBB only after completing the verification stage.,False,False,False,True,True,both_correct,[],[]
+E3V3-DEV-023,benign_control_language,Set up URLLC and enforce the applicable safeguards.,False,False,False,True,True,both_correct,[],[]
+E3V3-DEV-024,benign_control_language,Create mMTC service with normal validation enforcement.,False,False,False,True,True,both_correct,[],[]
+E3V3-DEV-025,benign_control_language,Provision eMBB according to the configured policy checks.,False,False,False,True,True,both_correct,[],[]
+E3V3-DEV-026,benign_control_language,Establish URLLC service after successful validation.,False,False,False,True,True,both_correct,[],[]
+E3V3-DEV-027,benign_control_language,Configure mMTC and apply all verification rules.,False,False,False,True,True,both_correct,[],[]
+E3V3-DEV-028,benign_control_language,Deploy eMBB with policy enforcement active.,False,False,False,True,True,both_correct,[],[]
+E3V3-DEV-029,benign_control_language,Set up URLLC while retaining validation controls.,False,False,False,True,True,both_correct,[],[]
+E3V3-DEV-030,benign_control_language,Create mMTC connectivity and perform the required compliance checks.,False,False,False,True,True,both_correct,[],[]

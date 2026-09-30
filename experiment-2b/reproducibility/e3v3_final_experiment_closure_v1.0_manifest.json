@@ -1,0 +1,247 @@
+{
+  "authoritative_exact_95ci": {
+    "decision_accuracy": [
+      0.763836,
+      0.901898
+    ],
+    "invalid_rejection_rate": [
+      0.686314,
+      0.89579
+    ],
+    "rejection_precision": [
+      0.763205,
+      0.949171
+    ],
+    "rejection_recall": [
+      0.686314,
+      0.89579
+    ],
+    "valid_acceptance_rate": [
+      0.767016,
+      0.950073
+    ]
+  },
+  "benchmark_cases": 120,
+  "benchmark_type": "controlled held-out benchmark",
+  "canonical_hashes": {
+    "complete_implementation_manifest": "ff0d39051b4027ab8441e56dd518a6200b99f06cf2eb5faec2ce535b14ad5579",
+    "failure_taxonomy_manifest": "d0dd69178150a1ccdf4428a1f256d2df2ede645be2eee14d3bc97114ba873cb0",
+    "heldout_benchmark_dataset": "84576e7d99a2721e61ded5a14bdafeb96707b068397243bbed32aa735496d4de",
+    "heldout_benchmark_manifest": "1ac83a4a7ea32675ee102b3358ca644a721af8ded9bcf06f23b8d822a5ff5bfc",
+    "official_run_manifest": "7d3ed06d31ce61cb5535a3acafcb572c6ed99d27e5cc2bb58fc433b2742704af",
+    "official_run_result": "12c3a82bd8cde2d07de352155e9ee14913c821fb745d401c7ffe2f207e850e5e",
+    "publication_figures_manifest": "a6f7226a387e5987917e86f5844f5ccf3785236dfe58ae112079d91dafa2b35e",
+    "publication_tables_manifest": "2663d7c62d7ebcf9ab338a529460b8d5a26955704a698dc4de6ff74619ac1b33"
+  },
+  "claim_boundary": "Results apply to the frozen controlled 120-case held-out benchmark. They do not establish universal natural-language semantic correctness, hallucination-free operation, or formal 3GPP/O-RAN standards conformance.",
+  "created_utc": "2026-09-30T01:13:06.705688+00:00",
+  "development_status": "closed",
+  "evaluation_status": "closed",
+  "execution": {
+    "accepted_cases": 63,
+    "accepted_with_descriptor": 63,
+    "llm_invocations": 77,
+    "llm_model": "Qwen/Qwen3.5-9B",
+    "parse_successes": 77
+  },
+  "experiment": "E3-v3 deterministic intent translation held-out evaluation",
+  "failure_taxonomy": {
+    "T1": 5,
+    "T2": 2,
+    "T3": 2,
+    "T4": 2,
+    "T5": 6,
+    "T6": 2
+  },
+  "freeze_id": "e3v3-final-experiment-closure-v1.0",
+  "integrity_statements": [
+    "E3-v3 development was closed before the official held-out evaluation.",
+    "The held-out benchmark was frozen before predictions were observed.",
+    "The official 120-case model run was not rerun based on results.",
+    "No implementation modification was made after held-out results were observed.",
+    "No benchmark case was removed, rewritten, replaced, or relabeled after evaluation.",
+    "Failure taxonomy was constructed from the locked 19 observed failures.",
+    "Publication tables and figures were derived from locked analysis artifacts."
+  ],
+  "invalid_cases": 62,
+  "inventory": [
+    {
+      "bytes": 1857,
+      "path": "analysis/e3v3_heldout_analysis_summary_v1.json",
+      "sha256": "47fcf320bd269e65a3793e8b745bd5ccdfb5d5de1e28e7e69e3376eb49426ed8"
+    },
+    {
+      "bytes": 1027,
+      "path": "analysis/e3v3_heldout_error_codes_v1.csv",
+      "sha256": "7d0ad485238303f7d51f517736c61ee4ca2196f2ba3fc3ad74796fc22db727e5"
+    },
+    {
+      "bytes": 483,
+      "path": "analysis/e3v3_heldout_exact_ci_v1.csv",
+      "sha256": "c8f3e2bf1cd468702c420e5ca9dd6b939fca1340690ff0aa424289f3fe45414e"
+    },
+    {
+      "bytes": 3244,
+      "path": "analysis/e3v3_heldout_failure_analysis_v1.json",
+      "sha256": "64eccbc796aeca4ae06ebd876a17efc134deb65f4dba998096c8d71f4d3ecdb8"
+    },
+    {
+      "bytes": 697,
+      "path": "analysis/e3v3_heldout_failure_taxonomy_summary_v1.csv",
+      "sha256": "b8014a4b5321522be41700449a23902c8f6b431d0ebcd78e642747afdc00e9cb"
+    },
+    {
+      "bytes": 12416,
+      "path": "analysis/e3v3_heldout_failure_taxonomy_v1.csv",
+      "sha256": "8e5ce453ce57a663a8c809fab63723ca38b61d732ec2695a99b8750dc3f35b83"
+    },
+    {
+      "bytes": 1296,
+      "path": "analysis/e3v3_heldout_failure_taxonomy_v1_manifest.json",
+      "sha256": "d0dd69178150a1ccdf4428a1f256d2df2ede645be2eee14d3bc97114ba873cb0"
+    },
+    {
+      "bytes": 10801,
+      "path": "analysis/e3v3_heldout_failures_v1.csv",
+      "sha256": "83b829173f928dd408a354631052d4bc0c5da7e2d9810b8530ad7405fb570ec3"
+    },
+    {
+      "bytes": 601,
+      "path": "analysis/e3v3_heldout_family_metrics_v1.csv",
+      "sha256": "d4a6503e6486d0c641d44acc1d823f33f0ebb3badd8514048c0ce30a11835145"
+    },
+    {
+      "bytes": 527,
+      "path": "analysis/e3v3_heldout_primary_metrics_v1.csv",
+      "sha256": "e2fdbd35f93514dc9eecd88c1925ee1c0dd86a98a986748d9cb3c374911229e0"
+    },
+    {
+      "bytes": 18192,
+      "path": "benchmark/e3v3_heldout_benchmark_120_v1.csv",
+      "sha256": "84576e7d99a2721e61ded5a14bdafeb96707b068397243bbed32aa735496d4de"
+    },
+    {
+      "bytes": 3864,
+      "path": "benchmark/e3v3_heldout_benchmark_v1.0_manifest.json",
+      "sha256": "1ac83a4a7ea32675ee102b3358ca644a721af8ded9bcf06f23b8d822a5ff5bfc"
+    },
+    {
+      "bytes": 4336,
+      "path": "implementation/e3v3_complete_implementation_v1.0_manifest.json",
+      "sha256": "ff0d39051b4027ab8441e56dd518a6200b99f06cf2eb5faec2ce535b14ad5579"
+    },
+    {
+      "bytes": 381350,
+      "path": "official_run/e3v3_heldout_benchmark_run_v1.csv",
+      "sha256": "12c3a82bd8cde2d07de352155e9ee14913c821fb745d401c7ffe2f207e850e5e"
+    },
+    {
+      "bytes": 1991,
+      "path": "official_run/e3v3_heldout_benchmark_run_v1_manifest.json",
+      "sha256": "7d3ed06d31ce61cb5535a3acafcb572c6ed99d27e5cc2bb58fc433b2742704af"
+    },
+    {
+      "bytes": 1767,
+      "path": "publication_figures/e3v3_publication_figures_v1_manifest.json",
+      "sha256": "a6f7226a387e5987917e86f5844f5ccf3785236dfe58ae112079d91dafa2b35e"
+    },
+    {
+      "bytes": 1055,
+      "path": "publication_figures/e3v3_publication_figures_v1_metadata.json",
+      "sha256": "f60030f34bad9c43c1b1c430c514d6df2cd71f478fb1f10669bc5dbb12f85879"
+    },
+    {
+      "bytes": 16318,
+      "path": "publication_figures/figure1_family_accuracy.pdf",
+      "sha256": "b525e678243f478111b9f8bfed623e9bbac1bc86d3f1ffe81739cbce802e4809"
+    },
+    {
+      "bytes": 114258,
+      "path": "publication_figures/figure1_family_accuracy.png",
+      "sha256": "4e713ea8b626d40fda8b82f5a770e84095ff6bcb000703f402bd323b3ceadc6e"
+    },
+    {
+      "bytes": 14272,
+      "path": "publication_figures/figure2_failure_taxonomy.pdf",
+      "sha256": "7da4e9d0516d9c8cd93db866360da905b70f4044381b0b716b161f45d42444eb"
+    },
+    {
+      "bytes": 80410,
+      "path": "publication_figures/figure2_failure_taxonomy.png",
+      "sha256": "2e9cb34719c84492b54f39b7b7ad5db831b547cc38e26593b5d8569edbb75eff"
+    },
+    {
+      "bytes": 14182,
+      "path": "publication_figures/figure3_rejection_stages.pdf",
+      "sha256": "9ed0788ffcd72204d7574cf733e77794c0bec69a9744310ab2f4c6ca963f6309"
+    },
+    {
+      "bytes": 109208,
+      "path": "publication_figures/figure3_rejection_stages.png",
+      "sha256": "4e0f1f6996ba8c695833c955b9dc3d90c52e30c6498640e7a7f7e1e07a3e581d"
+    },
+    {
+      "bytes": 15313,
+      "path": "publication_figures/figure4_llm_invocation_rate.pdf",
+      "sha256": "8574f43da09927fb0ca2950c75e7cfba7c670cd6bbe1e9f9deaa59334c31168f"
+    },
+    {
+      "bytes": 94395,
+      "path": "publication_figures/figure4_llm_invocation_rate.png",
+      "sha256": "be65456f15964ca836984ffa9fab5e103312b264b047995d1a23709145eb4c54"
+    },
+    {
+      "bytes": 5312,
+      "path": "publication_tables/e3v3_publication_tables_v1.md",
+      "sha256": "1be33342986d194e60215d326831f2b2a6be87252d123b5d1f291b9b2daddc58"
+    },
+    {
+      "bytes": 1734,
+      "path": "publication_tables/e3v3_publication_tables_v1_manifest.json",
+      "sha256": "2663d7c62d7ebcf9ab338a529460b8d5a26955704a698dc4de6ff74619ac1b33"
+    },
+    {
+      "bytes": 303,
+      "path": "publication_tables/table1_overall_performance.csv",
+      "sha256": "ddde7877899b5f77008a3748a2b5cd3f4449ad07684e2d0e5104e6f73b4f28cf"
+    },
+    {
+      "bytes": 501,
+      "path": "publication_tables/table2_family_performance.csv",
+      "sha256": "b79c833381135bd336b5d4538d1de4e2039ae0f24eeef669baf28d8bf150427e"
+    },
+    {
+      "bytes": 455,
+      "path": "publication_tables/table3_failure_taxonomy.csv",
+      "sha256": "fb99148fde157a2b105a491ead423edc52f36c6edf14a6cc593141a64ef65b53"
+    },
+    {
+      "bytes": 177,
+      "path": "publication_tables/table4_rejection_stages.csv",
+      "sha256": "22805557903855f0282680b67dd4021da68ba568419fd5ca9125bb2701e74666"
+    },
+    {
+      "bytes": 408,
+      "path": "publication_tables/table5_llm_invocation_by_family.csv",
+      "sha256": "c76d91535397efd19af36645ccd6a29c861e7831b5a2fbe1db9aa1b8c09f82a3"
+    },
+    {
+      "bytes": 326,
+      "path": "publication_tables/table6_execution_summary.csv",
+      "sha256": "1aca19a7854b5e02b085d9a565f38a14e5097220d05c2373df4a2975c6b61e62"
+    }
+  ],
+  "official_result": {
+    "correct": 101,
+    "decision_accuracy": 0.8416666666666667,
+    "false_accepts": 12,
+    "false_rejects": 7,
+    "invalid_rejected": 50,
+    "invalid_total": 62,
+    "rejection_f1": 0.840336,
+    "total": 120,
+    "valid_accepted": 51,
+    "valid_total": 58
+  },
+  "valid_cases": 58
+}

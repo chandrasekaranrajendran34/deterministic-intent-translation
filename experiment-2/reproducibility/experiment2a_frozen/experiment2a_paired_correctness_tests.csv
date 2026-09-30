@@ -1,0 +1,4 @@
+pipeline_a,pipeline_b,a_wrong_b_right,a_right_b_wrong,discordant_pairs,exact_p
+cir,proposed,14,0,14,0.0001220703125
+direct,proposed,59,32,91,0.00610552107452477
+direct,cir,58,45,103,0.23690187778029279

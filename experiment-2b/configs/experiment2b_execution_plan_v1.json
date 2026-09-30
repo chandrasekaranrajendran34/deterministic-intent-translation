@@ -1,0 +1,79 @@
+{
+  "experiment_id": "experiment2b-primary-v1.0",
+  "created_utc": "2026-09-29T07:49:56.102199+00:00",
+  "status": "REGISTERED_BEFORE_EXECUTION",
+  "research_question": "Does the frozen E3-v2 deterministic guard improve decision robustness relative to the original E3 pipeline on the frozen Experiment 2B unseen controlled benchmark?",
+  "benchmark": {
+    "benchmark_id": "experiment2b-unseen-v1.0",
+    "dataset": "data/frozen/experiment2b_intents_120_v1.csv",
+    "sha256": "63661df64f3e13cb323bc7089b3a14c9f5c85e4df4237643065e3f4896910409",
+    "n": 120,
+    "valid": 45,
+    "invalid": 75
+  },
+  "pipelines": [
+    {
+      "id": "e3_original",
+      "description": "Original Experiment 1/2A proposed E3 pipeline using the original deterministic input audit and CIR validation path."
+    },
+    {
+      "id": "e3_v2",
+      "description": "Frozen E3-v2 architecture incorporating source analysis, capability resolution, source gate, constraint consistency, and source-to-CIR preservation safeguards.",
+      "freeze_id": "e3v2-implementation-v1.0"
+    }
+  ],
+  "controlled_llm_configuration": {
+    "provider": "Together",
+    "model": "Qwen/Qwen3.5-9B",
+    "temperature": 0,
+    "reasoning": "disabled",
+    "principle": "Both compared pipelines use the same model configuration and CIR-generation mechanism."
+  },
+  "primary_metrics": [
+    "decision_accuracy",
+    "valid_acceptance_rate",
+    "invalid_rejection_rate",
+    "rejection_precision",
+    "rejection_recall",
+    "rejection_f1"
+  ],
+  "secondary_metrics": [
+    "parse_success_rate",
+    "category_rejection_rate",
+    "false_accept_count",
+    "false_reject_count",
+    "rejection_stage_distribution",
+    "error_code_distribution",
+    "end_to_end_latency_ms"
+  ],
+  "paired_analysis": {
+    "unit": "intent",
+    "comparison": "e3_original_vs_e3_v2",
+    "primary_test": "exact_McNemar",
+    "report": [
+      "original_wrong_v2_right",
+      "original_right_v2_wrong",
+      "discordant_pairs",
+      "two_sided_exact_p_value"
+    ]
+  },
+  "confidence_intervals": {
+    "method": "Clopper-Pearson exact",
+    "confidence_level": 0.95
+  },
+  "failure_analysis": [
+    "false_accepts",
+    "false_rejects",
+    "category_specific_failures",
+    "rejection_stage",
+    "error_codes"
+  ],
+  "execution_policy": [
+    "Do not modify the frozen E3-v2 implementation after observing Experiment 2B results.",
+    "Do not modify benchmark intents or ground-truth labels after execution begins.",
+    "Preserve raw model responses and parsed CIRs.",
+    "Preserve parse status, finish reason, token usage, latency, decisions, rejection stages, and errors.",
+    "Any discovered implementation defect must be reported separately rather than silently patched.",
+    "Results apply to this controlled benchmark and must not be generalized to universal natural-language understanding or formal standards certification."
+  ]
+}

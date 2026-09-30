@@ -1,0 +1,221 @@
+id,intent,category,expected_service,expected_valid,pipeline,model,parse_ok,latency_ms,finish_reason,prompt_tokens,completion_tokens,raw_response,predicted_service,schema_valid,hallucination_detected,unsupported_input_detected,input_audit_valid,mapping_found,descriptor_success,accepted,validation_errors,cir_json,descriptor_json
+EXP2-131,Create a fictional quantum-native slice class.,invalid_unsupported_concept,,False,direct,Qwen/Qwen3.5-9B,True,2232.4419480009965,stop,105,96,"{
+  ""rejected"": true,
+  ""reason"": ""The request asks to create a 'fictional' class, which implies inventing arbitrary specifications or bypassing the constraint to not invent numeric requirements. Additionally, 'quantum-native slice' is not a standard, supported network slicing intent that can be directly translated into executable JSON without defining specific, validated parameters (e.g., latency, bandwidth, reliability) which the prompt explicitly forbids inventing.""
+}",,True,False,False,,False,False,False,,,
+EXP2-131,Create a fictional quantum-native slice class.,invalid_unsupported_concept,,False,cir,Qwen/Qwen3.5-9B,True,1467.29994099951,stop,218,61,"{
+  ""service_type"": null,
+  ""latency_ms"": null,
+  ""bandwidth_mbps"": null,
+  ""reliability"": null,
+  ""device_count"": null,
+  ""coverage"": null,
+  ""objective"": null
+}",,True,False,False,,False,False,False,SERVICE_TYPE_UNRESOLVED,"{""service_type"": null, ""latency_ms"": null, ""bandwidth_mbps"": null, ""reliability"": null, ""device_count"": null, ""coverage"": null, ""objective"": null}",
+EXP2-131,Create a fictional quantum-native slice class.,invalid_unsupported_concept,,False,proposed,Qwen/Qwen3.5-9B,True,2817.469400999471,stop,218,61,"{
+  ""service_type"": null,
+  ""latency_ms"": null,
+  ""bandwidth_mbps"": null,
+  ""reliability"": null,
+  ""device_count"": null,
+  ""coverage"": null,
+  ""objective"": null
+}",,True,False,False,True,False,False,False,SERVICE_TYPE_UNRESOLVED,"{""service_type"": null, ""latency_ms"": null, ""bandwidth_mbps"": null, ""reliability"": null, ""device_count"": null, ""coverage"": null, ""objective"": null}",
+EXP2-132,Provision an unsupported hyperspeed service type.,invalid_unsupported_concept,,False,direct,Qwen/Qwen3.5-9B,True,1038.742741000533,stop,106,44,"{
+  ""rejected"": true,
+  ""reason"": ""The request asks to provision an unsupported service type ('hyperspeed'), which violates the constraint to not invent requirements or support undefined capabilities.""
+}",,True,False,False,,False,False,False,,,
+EXP2-132,Provision an unsupported hyperspeed service type.,invalid_unsupported_concept,,False,cir,Qwen/Qwen3.5-9B,True,3192.763756998829,stop,219,61,"{
+  ""service_type"": null,
+  ""latency_ms"": null,
+  ""bandwidth_mbps"": null,
+  ""reliability"": null,
+  ""device_count"": null,
+  ""coverage"": null,
+  ""objective"": null
+}",,True,False,False,,False,False,False,SERVICE_TYPE_UNRESOLVED,"{""service_type"": null, ""latency_ms"": null, ""bandwidth_mbps"": null, ""reliability"": null, ""device_count"": null, ""coverage"": null, ""objective"": null}",
+EXP2-132,Provision an unsupported hyperspeed service type.,invalid_unsupported_concept,,False,proposed,Qwen/Qwen3.5-9B,True,1804.1250919995946,stop,219,61,"{
+  ""service_type"": null,
+  ""latency_ms"": null,
+  ""bandwidth_mbps"": null,
+  ""reliability"": null,
+  ""device_count"": null,
+  ""coverage"": null,
+  ""objective"": null
+}",,True,False,False,True,False,False,False,SERVICE_TYPE_UNRESOLVED,"{""service_type"": null, ""latency_ms"": null, ""bandwidth_mbps"": null, ""reliability"": null, ""device_count"": null, ""coverage"": null, ""objective"": null}",
+EXP2-133,Create URLLC with quantum_priority=10.,invalid_explicit_unsupported_parameter,,False,direct,Qwen/Qwen3.5-9B,True,1200.7544759999291,stop,108,63,"{
+  ""rejected"": true,
+  ""reason"": ""The parameter 'quantum_priority' is not a standard or supported attribute for URLLC network slicing. Valid parameters typically include latency, reliability, and bandwidth, but 'quantum_priority' is undefined in current network slicing specifications.""
+}",,True,False,False,,False,False,False,,,
+EXP2-133,Create URLLC with quantum_priority=10.,invalid_explicit_unsupported_parameter,,False,cir,Qwen/Qwen3.5-9B,True,1517.5255510002899,stop,221,63,"{
+  ""service_type"": ""URLLC"",
+  ""latency_ms"": null,
+  ""bandwidth_mbps"": null,
+  ""reliability"": null,
+  ""device_count"": null,
+  ""coverage"": null,
+  ""objective"": null
+}",URLLC,True,False,False,,True,True,True,,"{""service_type"": ""URLLC"", ""latency_ms"": null, ""bandwidth_mbps"": null, ""reliability"": null, ""device_count"": null, ""coverage"": null, ""objective"": null}","{""service_type"": ""URLLC"", ""service_profile"": {""latency_ms"": null, ""bandwidth_mbps"": null, ""reliability"": null, ""device_count"": null, ""coverage"": null, ""objective"": null}, ""standards_mapping"": {""mapping_found"": true, ""mapping"": {""threegpp"": ""network-slice service profile"", ""oran"": ""RAN slice/A1 policy candidate""}, ""profile"": ""3GPP Rel-18 + O-RAN R004""}}"
+EXP2-133,Create URLLC with quantum_priority=10.,invalid_explicit_unsupported_parameter,,False,proposed,Qwen/Qwen3.5-9B,True,2331.996994000292,stop,221,63,"{
+  ""service_type"": ""URLLC"",
+  ""latency_ms"": null,
+  ""bandwidth_mbps"": null,
+  ""reliability"": null,
+  ""device_count"": null,
+  ""coverage"": null,
+  ""objective"": null
+}",URLLC,True,False,True,False,False,False,False,UNSUPPORTED_INPUT_PARAMETER: quantum_priority,"{""service_type"": ""URLLC"", ""latency_ms"": null, ""bandwidth_mbps"": null, ""reliability"": null, ""device_count"": null, ""coverage"": null, ""objective"": null}",
+EXP2-134,Create eMBB with teleport_mode=enabled.,invalid_explicit_unsupported_parameter,,False,direct,Qwen/Qwen3.5-9B,True,1515.8259620002354,stop,107,57,"{
+  ""rejected"": true,
+  ""reason"": ""The parameter 'teleport_mode' is not a valid network-slicing attribute. Network slicing configurations typically include parameters such as bandwidth, latency, reliability, and mobility support, but not teleportation modes.""
+}",,True,False,False,,False,False,False,,,
+EXP2-134,Create eMBB with teleport_mode=enabled.,invalid_explicit_unsupported_parameter,,False,cir,Qwen/Qwen3.5-9B,True,1888.8562439988164,stop,220,64,"{
+  ""service_type"": ""eMBB"",
+  ""latency_ms"": null,
+  ""bandwidth_mbps"": null,
+  ""reliability"": null,
+  ""device_count"": null,
+  ""coverage"": null,
+  ""objective"": null
+}",eMBB,True,False,False,,True,True,True,,"{""service_type"": ""eMBB"", ""latency_ms"": null, ""bandwidth_mbps"": null, ""reliability"": null, ""device_count"": null, ""coverage"": null, ""objective"": null}","{""service_type"": ""eMBB"", ""service_profile"": {""latency_ms"": null, ""bandwidth_mbps"": null, ""reliability"": null, ""device_count"": null, ""coverage"": null, ""objective"": null}, ""standards_mapping"": {""mapping_found"": true, ""mapping"": {""threegpp"": ""network-slice service profile"", ""oran"": ""RAN slice/A1 policy candidate""}, ""profile"": ""3GPP Rel-18 + O-RAN R004""}}"
+EXP2-134,Create eMBB with teleport_mode=enabled.,invalid_explicit_unsupported_parameter,,False,proposed,Qwen/Qwen3.5-9B,True,2024.1241860003356,stop,220,64,"{
+  ""service_type"": ""eMBB"",
+  ""latency_ms"": null,
+  ""bandwidth_mbps"": null,
+  ""reliability"": null,
+  ""device_count"": null,
+  ""coverage"": null,
+  ""objective"": null
+}",eMBB,True,False,True,False,False,False,False,UNSUPPORTED_INPUT_PARAMETER: teleport_mode,"{""service_type"": ""eMBB"", ""latency_ms"": null, ""bandwidth_mbps"": null, ""reliability"": null, ""device_count"": null, ""coverage"": null, ""objective"": null}",
+EXP2-135,Provision mMTC with magic_reliability=1.,invalid_explicit_unsupported_parameter,,False,direct,Qwen/Qwen3.5-9B,True,1768.4518229998503,stop,109,60,"{
+  ""rejected"": true,
+  ""reason"": ""The parameter 'magic_reliability' is not a valid network slicing attribute. Valid parameters typically include 'reliability', 'latency', 'throughput', 'mobility', and 'data_volume'.""
+}",,True,False,False,,False,False,False,,,
+EXP2-135,Provision mMTC with magic_reliability=1.,invalid_explicit_unsupported_parameter,,False,cir,Qwen/Qwen3.5-9B,True,1075.40963899919,stop,222,65,"{
+  ""service_type"": ""mMTC"",
+  ""latency_ms"": null,
+  ""bandwidth_mbps"": null,
+  ""reliability"": 1,
+  ""device_count"": null,
+  ""coverage"": null,
+  ""objective"": null
+}",mMTC,True,False,False,,True,True,True,,"{""service_type"": ""mMTC"", ""latency_ms"": null, ""bandwidth_mbps"": null, ""reliability"": 1, ""device_count"": null, ""coverage"": null, ""objective"": null}","{""service_type"": ""mMTC"", ""service_profile"": {""latency_ms"": null, ""bandwidth_mbps"": null, ""reliability"": 1, ""device_count"": null, ""coverage"": null, ""objective"": null}, ""standards_mapping"": {""mapping_found"": true, ""mapping"": {""threegpp"": ""network-slice service profile"", ""oran"": ""RAN slice/A1 policy candidate""}, ""profile"": ""3GPP Rel-18 + O-RAN R004""}}"
+EXP2-135,Provision mMTC with magic_reliability=1.,invalid_explicit_unsupported_parameter,,False,proposed,Qwen/Qwen3.5-9B,True,4740.222010999787,stop,222,65,"{
+  ""service_type"": ""mMTC"",
+  ""latency_ms"": null,
+  ""bandwidth_mbps"": null,
+  ""reliability"": 1,
+  ""device_count"": null,
+  ""coverage"": null,
+  ""objective"": null
+}",mMTC,True,False,True,False,False,False,False,UNSUPPORTED_INPUT_PARAMETER: magic_reliability,"{""service_type"": ""mMTC"", ""latency_ms"": null, ""bandwidth_mbps"": null, ""reliability"": 1, ""device_count"": null, ""coverage"": null, ""objective"": null}",
+EXP2-136,Create URLLC with hyperspeed_level=9.,invalid_explicit_unsupported_parameter,,False,direct,Qwen/Qwen3.5-9B,True,1386.1512020012015,stop,108,74,"{
+  ""rejected"": true,
+  ""reason"": ""hyperspeed_level=9 is out of range; valid URLLC parameters must adhere to standard 3GPP specifications (e.g., latency < 1ms, reliability > 99.999%) and do not support arbitrary 'hyperspeed' values.""
+}",,True,False,False,,False,False,False,,,
+EXP2-136,Create URLLC with hyperspeed_level=9.,invalid_explicit_unsupported_parameter,,False,cir,Qwen/Qwen3.5-9B,True,2651.221784999507,stop,221,63,"{
+  ""service_type"": ""URLLC"",
+  ""latency_ms"": null,
+  ""bandwidth_mbps"": null,
+  ""reliability"": null,
+  ""device_count"": null,
+  ""coverage"": null,
+  ""objective"": null
+}",URLLC,True,False,False,,True,True,True,,"{""service_type"": ""URLLC"", ""latency_ms"": null, ""bandwidth_mbps"": null, ""reliability"": null, ""device_count"": null, ""coverage"": null, ""objective"": null}","{""service_type"": ""URLLC"", ""service_profile"": {""latency_ms"": null, ""bandwidth_mbps"": null, ""reliability"": null, ""device_count"": null, ""coverage"": null, ""objective"": null}, ""standards_mapping"": {""mapping_found"": true, ""mapping"": {""threegpp"": ""network-slice service profile"", ""oran"": ""RAN slice/A1 policy candidate""}, ""profile"": ""3GPP Rel-18 + O-RAN R004""}}"
+EXP2-136,Create URLLC with hyperspeed_level=9.,invalid_explicit_unsupported_parameter,,False,proposed,Qwen/Qwen3.5-9B,True,1246.8531539998366,stop,221,63,"{
+  ""service_type"": ""URLLC"",
+  ""latency_ms"": null,
+  ""bandwidth_mbps"": null,
+  ""reliability"": null,
+  ""device_count"": null,
+  ""coverage"": null,
+  ""objective"": null
+}",URLLC,True,False,True,False,False,False,False,UNSUPPORTED_INPUT_PARAMETER: hyperspeed_level,"{""service_type"": ""URLLC"", ""latency_ms"": null, ""bandwidth_mbps"": null, ""reliability"": null, ""device_count"": null, ""coverage"": null, ""objective"": null}",
+EXP2-137,Provide eMBB with quantum_bandwidth=500.,invalid_explicit_unsupported_parameter,,False,direct,Qwen/Qwen3.5-9B,True,2072.574326999529,stop,110,84,"{
+  ""rejected"": true,
+  ""reason"": ""The parameter 'quantum_bandwidth' is not a valid network slicing metric. Network slicing typically uses standard units like 'bandwidth' (e.g., Mbps, Gbps) or 'throughput'. Additionally, the value '500' lacks a specified unit, making the requirement ambiguous and out-of-range for standard configuration.""
+}",,True,False,False,,False,False,False,,,
+EXP2-137,Provide eMBB with quantum_bandwidth=500.,invalid_explicit_unsupported_parameter,,False,cir,Qwen/Qwen3.5-9B,True,1760.143004999918,stop,223,64,"{
+  ""service_type"": ""eMBB"",
+  ""latency_ms"": null,
+  ""bandwidth_mbps"": null,
+  ""reliability"": null,
+  ""device_count"": null,
+  ""coverage"": null,
+  ""objective"": null
+}",eMBB,True,False,False,,True,True,True,,"{""service_type"": ""eMBB"", ""latency_ms"": null, ""bandwidth_mbps"": null, ""reliability"": null, ""device_count"": null, ""coverage"": null, ""objective"": null}","{""service_type"": ""eMBB"", ""service_profile"": {""latency_ms"": null, ""bandwidth_mbps"": null, ""reliability"": null, ""device_count"": null, ""coverage"": null, ""objective"": null}, ""standards_mapping"": {""mapping_found"": true, ""mapping"": {""threegpp"": ""network-slice service profile"", ""oran"": ""RAN slice/A1 policy candidate""}, ""profile"": ""3GPP Rel-18 + O-RAN R004""}}"
+EXP2-137,Provide eMBB with quantum_bandwidth=500.,invalid_explicit_unsupported_parameter,,False,proposed,Qwen/Qwen3.5-9B,True,1341.7497430000367,stop,223,64,"{
+  ""service_type"": ""eMBB"",
+  ""latency_ms"": null,
+  ""bandwidth_mbps"": null,
+  ""reliability"": null,
+  ""device_count"": null,
+  ""coverage"": null,
+  ""objective"": null
+}",eMBB,True,False,True,False,False,False,False,UNSUPPORTED_INPUT_PARAMETER: quantum_bandwidth,"{""service_type"": ""eMBB"", ""latency_ms"": null, ""bandwidth_mbps"": null, ""reliability"": null, ""device_count"": null, ""coverage"": null, ""objective"": null}",
+EXP2-138,Create mMTC with teleport_range=100.,invalid_explicit_unsupported_parameter,,False,direct,Qwen/Qwen3.5-9B,True,1599.5977429993218,stop,108,57,"{
+  ""rejected"": true,
+  ""reason"": ""The parameter 'teleport_range' is not a valid attribute for an mMTC (Massive Machine Type Communications) network slice. Valid parameters typically include bandwidth, latency, reliability, and connection density.""
+}",,True,False,False,,False,False,False,,,
+EXP2-138,Create mMTC with teleport_range=100.,invalid_explicit_unsupported_parameter,,False,cir,Qwen/Qwen3.5-9B,True,2421.3118290008424,stop,221,64,"{
+  ""service_type"": ""mMTC"",
+  ""latency_ms"": null,
+  ""bandwidth_mbps"": null,
+  ""reliability"": null,
+  ""device_count"": null,
+  ""coverage"": null,
+  ""objective"": null
+}",mMTC,True,False,False,,True,True,True,,"{""service_type"": ""mMTC"", ""latency_ms"": null, ""bandwidth_mbps"": null, ""reliability"": null, ""device_count"": null, ""coverage"": null, ""objective"": null}","{""service_type"": ""mMTC"", ""service_profile"": {""latency_ms"": null, ""bandwidth_mbps"": null, ""reliability"": null, ""device_count"": null, ""coverage"": null, ""objective"": null}, ""standards_mapping"": {""mapping_found"": true, ""mapping"": {""threegpp"": ""network-slice service profile"", ""oran"": ""RAN slice/A1 policy candidate""}, ""profile"": ""3GPP Rel-18 + O-RAN R004""}}"
+EXP2-138,Create mMTC with teleport_range=100.,invalid_explicit_unsupported_parameter,,False,proposed,Qwen/Qwen3.5-9B,True,1948.4994719987299,stop,221,64,"{
+  ""service_type"": ""mMTC"",
+  ""latency_ms"": null,
+  ""bandwidth_mbps"": null,
+  ""reliability"": null,
+  ""device_count"": null,
+  ""coverage"": null,
+  ""objective"": null
+}",mMTC,True,False,True,False,False,False,False,UNSUPPORTED_INPUT_PARAMETER: teleport_range,"{""service_type"": ""mMTC"", ""latency_ms"": null, ""bandwidth_mbps"": null, ""reliability"": null, ""device_count"": null, ""coverage"": null, ""objective"": null}",
+EXP2-139,Provision URLLC with fictional_qos=7.,invalid_explicit_unsupported_parameter,,False,direct,Qwen/Qwen3.5-9B,True,2430.6149060012103,stop,108,82,"{
+  ""rejected"": true,
+  ""reason"": ""The parameter 'fictional_qos' is not a standard or recognized network slicing attribute. Valid QoS parameters typically include '5qi' (5G QoS Identifier), 'priority', 'guaranteed_bit_rate', or 'maximum_bit_rate'. The value '7' is ambiguous without a defined scale or standard mapping.""
+}",,True,False,False,,False,False,False,,,
+EXP2-139,Provision URLLC with fictional_qos=7.,invalid_explicit_unsupported_parameter,,False,cir,Qwen/Qwen3.5-9B,True,2402.727081998819,stop,221,63,"{
+  ""service_type"": ""URLLC"",
+  ""latency_ms"": null,
+  ""bandwidth_mbps"": null,
+  ""reliability"": null,
+  ""device_count"": null,
+  ""coverage"": null,
+  ""objective"": null
+}",URLLC,True,False,False,,True,True,True,,"{""service_type"": ""URLLC"", ""latency_ms"": null, ""bandwidth_mbps"": null, ""reliability"": null, ""device_count"": null, ""coverage"": null, ""objective"": null}","{""service_type"": ""URLLC"", ""service_profile"": {""latency_ms"": null, ""bandwidth_mbps"": null, ""reliability"": null, ""device_count"": null, ""coverage"": null, ""objective"": null}, ""standards_mapping"": {""mapping_found"": true, ""mapping"": {""threegpp"": ""network-slice service profile"", ""oran"": ""RAN slice/A1 policy candidate""}, ""profile"": ""3GPP Rel-18 + O-RAN R004""}}"
+EXP2-139,Provision URLLC with fictional_qos=7.,invalid_explicit_unsupported_parameter,,False,proposed,Qwen/Qwen3.5-9B,True,2073.87729400034,stop,221,63,"{
+  ""service_type"": ""URLLC"",
+  ""latency_ms"": null,
+  ""bandwidth_mbps"": null,
+  ""reliability"": null,
+  ""device_count"": null,
+  ""coverage"": null,
+  ""objective"": null
+}",URLLC,True,False,True,False,False,False,False,UNSUPPORTED_INPUT_PARAMETER: fictional_qos,"{""service_type"": ""URLLC"", ""latency_ms"": null, ""bandwidth_mbps"": null, ""reliability"": null, ""device_count"": null, ""coverage"": null, ""objective"": null}",
+EXP2-140,Create eMBB with imaginary_priority=high.,invalid_explicit_unsupported_parameter,,False,direct,Qwen/Qwen3.5-9B,True,1459.7059879997687,stop,107,68,"{
+  ""rejected"": true,
+  ""reason"": ""The parameter 'imaginary_priority' is not a valid network-slicing attribute. Valid priority levels are typically 'low', 'medium', or 'high' (or specific QoS Class Identifiers), but 'imaginary' is not a recognized value.""
+}",,True,False,False,,False,False,False,,,
+EXP2-140,Create eMBB with imaginary_priority=high.,invalid_explicit_unsupported_parameter,,False,cir,Qwen/Qwen3.5-9B,True,1221.5064609990804,stop,220,64,"{
+  ""service_type"": ""eMBB"",
+  ""latency_ms"": null,
+  ""bandwidth_mbps"": null,
+  ""reliability"": null,
+  ""device_count"": null,
+  ""coverage"": null,
+  ""objective"": null
+}",eMBB,True,False,False,,True,True,True,,"{""service_type"": ""eMBB"", ""latency_ms"": null, ""bandwidth_mbps"": null, ""reliability"": null, ""device_count"": null, ""coverage"": null, ""objective"": null}","{""service_type"": ""eMBB"", ""service_profile"": {""latency_ms"": null, ""bandwidth_mbps"": null, ""reliability"": null, ""device_count"": null, ""coverage"": null, ""objective"": null}, ""standards_mapping"": {""mapping_found"": true, ""mapping"": {""threegpp"": ""network-slice service profile"", ""oran"": ""RAN slice/A1 policy candidate""}, ""profile"": ""3GPP Rel-18 + O-RAN R004""}}"
+EXP2-140,Create eMBB with imaginary_priority=high.,invalid_explicit_unsupported_parameter,,False,proposed,Qwen/Qwen3.5-9B,True,1639.9220949988376,stop,220,64,"{
+  ""service_type"": ""eMBB"",
+  ""latency_ms"": null,
+  ""bandwidth_mbps"": null,
+  ""reliability"": null,
+  ""device_count"": null,
+  ""coverage"": null,
+  ""objective"": null
+}",eMBB,True,False,True,False,False,False,False,UNSUPPORTED_INPUT_PARAMETER: imaginary_priority,"{""service_type"": ""eMBB"", ""latency_ms"": null, ""bandwidth_mbps"": null, ""reliability"": null, ""device_count"": null, ""coverage"": null, ""objective"": null}",

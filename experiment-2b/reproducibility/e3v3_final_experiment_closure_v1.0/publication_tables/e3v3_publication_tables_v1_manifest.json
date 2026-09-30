@@ -1,0 +1,27 @@
+{
+  "artifact_id": "e3v3-publication-tables-v1.0",
+  "cases": 120,
+  "correct": 101,
+  "failures": 19,
+  "llm_invocations": 77,
+  "notes": [
+    "Exact Clopper-Pearson 95% confidence intervals are used for binomial performance metrics.",
+    "No confidence interval is assigned to rejection F1.",
+    "Family-level table reports descriptive held-out performance and is not a ranking.",
+    "Failure taxonomy describes observed failure mechanisms on the controlled held-out benchmark.",
+    "No model rerun or implementation modification was performed during table generation."
+  ],
+  "source_exact_ci_sha256": "c8f3e2bf1cd468702c420e5ca9dd6b939fca1340690ff0aa424289f3fe45414e",
+  "source_family_metrics_sha256": "d4a6503e6486d0c641d44acc1d823f33f0ebb3badd8514048c0ce30a11835145",
+  "source_result_sha256": "12c3a82bd8cde2d07de352155e9ee14913c821fb745d401c7ffe2f207e850e5e",
+  "source_taxonomy_summary_sha256": "b8014a4b5321522be41700449a23902c8f6b431d0ebcd78e642747afdc00e9cb",
+  "tables": {
+    "e3v3_publication_tables_v1.md": "1be33342986d194e60215d326831f2b2a6be87252d123b5d1f291b9b2daddc58",
+    "table1_overall_performance.csv": "ddde7877899b5f77008a3748a2b5cd3f4449ad07684e2d0e5104e6f73b4f28cf",
+    "table2_family_performance.csv": "b79c833381135bd336b5d4538d1de4e2039ae0f24eeef669baf28d8bf150427e",
+    "table3_failure_taxonomy.csv": "fb99148fde157a2b105a491ead423edc52f36c6edf14a6cc593141a64ef65b53",
+    "table4_rejection_stages.csv": "22805557903855f0282680b67dd4021da68ba568419fd5ca9125bb2701e74666",
+    "table5_llm_invocation_by_family.csv": "c76d91535397efd19af36645ccd6a29c861e7831b5a2fbe1db9aa1b8c09f82a3",
+    "table6_execution_summary.csv": "1aca19a7854b5e02b085d9a565f38a14e5097220d05c2373df4a2975c6b61e62"
+  }
+}

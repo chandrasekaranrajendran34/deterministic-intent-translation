@@ -1,0 +1,41 @@
+check_id,category,description,passed,evidence
+N01,numerical,Final correct decisions,True,101/120
+N02,numerical,Final decision accuracy,True,84.17%
+N03,numerical,Exact 95% CI,True,76.38–90.19%
+N04,numerical,Valid acceptance,True,87.93%
+N05,numerical,Invalid rejection/recall,True,80.65%
+N06,numerical,Rejection precision,True,87.72%
+N07,numerical,Rejection F1,True,84.03%
+N08,numerical,LLM invocation,True,77/120
+N09,numerical,Mean E2E latency,True,1050.16 ms
+N10,numerical,Median E2E latency,True,944.86 ms
+N11,numerical,P95 E2E latency,True,3434.82 ms
+D01,development_evidence,E1 perfect decision count,True,50/50
+D02,development_evidence,E1 CIR result,True,47/50
+D03,development_evidence,E2A direct result,True,138/200
+D04,development_evidence,E2A CIR result,True,151/200
+D05,development_evidence,E2A proposed result,True,165/200
+D06,development_evidence,E2A CIR-vs-E3 paired p-value,True,0.000122
+D07,development_evidence,E2A direct-vs-E3 paired p-value,True,0.006106
+D08,development_evidence,E2A direct-vs-CIR paired p-value,True,0.236902
+D09,development_evidence,E2B original E3 result,True,54/120
+D10,development_evidence,E2B paired p-value,True,2.05 × 10^-11
+B01,claim_boundary,hallucination-resistant language present,True,hallucination-resistant
+B02,claim_boundary,closed-world scope present,True,closed-world
+B03,claim_boundary,formal standards-conformance limitation present,True,does not establish ... formal ... conformance
+B04,claim_boundary,production-network limitation present,True,production-network limitation
+B05,claim_boundary,different benchmark populations explicitly stated,True,different benchmark populations
+B06,claim_boundary,E2B explicitly treated as development evidence,True,development evidence
+B07,claim_boundary,held-out failures not used for rerun/tuning,True,no post-hoc held-out tuning
+P01,prohibited_claim,No positive claim of hallucination-free operation; all occurrences are explicitly negated limitations,True,2 occurrences; 2/2 classified as explicit negated limitations
+P02,prohibited_claim,Must not claim a hallucination guarantee,True,matches=[]
+P03,prohibited_claim,Must not claim formal standards compliance,True,matches=[]
+P04,prohibited_claim,Must not claim standards compliance,True,matches=[]
+P05,prohibited_claim,Must not claim production readiness,True,matches=[]
+P06,prohibited_claim,Must not claim demonstrated real-world generalization,True,matches=[]
+P07,prohibited_claim,Must not claim universal correctness/safety/reliability,True,matches=[]
+T01,traceability,No unknown claim IDs in traceability table,True,[]
+T02,traceability,Core draft maps to at least 70% of locked claim IDs,True,13/14 = 92.86%
+R01,experiment_role,E1 characterized as controlled/development evidence,True,E1 controlled experiment
+R02,experiment_role,E2B characterized as development evidence,True,E2B development evidence
+R03,experiment_role,E3-v3 characterized as primary/final held-out evaluation,True,E3-v3 primary held-out evaluation

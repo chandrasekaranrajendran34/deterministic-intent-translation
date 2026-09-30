@@ -1,0 +1,259 @@
+{
+  "artifact_id": "ieee-results-discussion-evidence-v1.0",
+  "benchmark_changed": false,
+  "claim_count": 14,
+  "created_utc": "2026-09-30T01:26:27.333609+00:00",
+  "experiment_rerun": false,
+  "implementation_changed": false,
+  "labels_changed": false,
+  "model_called": false,
+  "new_statistical_test": false,
+  "official_result_changed": false,
+  "paper_interpretation": {
+    "E1": "controlled initial evaluation and information-loss diagnosis",
+    "E2A": "robustness evaluation and failure discovery",
+    "E2B": "targeted repair/development evidence",
+    "E3-v3": "primary frozen held-out evaluation"
+  },
+  "primary_result": {
+    "accuracy": 0.8416666666666667,
+    "correct": 101,
+    "exact_ci95": [
+      0.763836,
+      0.901898
+    ],
+    "invalid_rejection_rate": 0.8064516129032258,
+    "n": 120,
+    "rejection_f1": 0.840336,
+    "rejection_precision": 0.8771929824561403,
+    "valid_acceptance_rate": 0.8793103448275862
+  },
+  "prohibited_claims": [
+    "common-test-set learning curve across E1/E2A/E2B/E3-v3",
+    "hallucination-free operation",
+    "universal semantic correctness",
+    "formal 3GPP/O-RAN conformance",
+    "production-network performance",
+    "universal unsafe-intent prevention"
+  ],
+  "publication_support_artifacts": [
+    {
+      "bytes": 5312,
+      "path": "experiment-2b/heldout/analysis/publication_tables/e3v3_publication_tables_v1.md",
+      "sha256": "1be33342986d194e60215d326831f2b2a6be87252d123b5d1f291b9b2daddc58"
+    },
+    {
+      "bytes": 1734,
+      "path": "experiment-2b/heldout/analysis/publication_tables/e3v3_publication_tables_v1_manifest.json",
+      "sha256": "2663d7c62d7ebcf9ab338a529460b8d5a26955704a698dc4de6ff74619ac1b33"
+    },
+    {
+      "bytes": 303,
+      "path": "experiment-2b/heldout/analysis/publication_tables/table1_overall_performance.csv",
+      "sha256": "ddde7877899b5f77008a3748a2b5cd3f4449ad07684e2d0e5104e6f73b4f28cf"
+    },
+    {
+      "bytes": 501,
+      "path": "experiment-2b/heldout/analysis/publication_tables/table2_family_performance.csv",
+      "sha256": "b79c833381135bd336b5d4538d1de4e2039ae0f24eeef669baf28d8bf150427e"
+    },
+    {
+      "bytes": 455,
+      "path": "experiment-2b/heldout/analysis/publication_tables/table3_failure_taxonomy.csv",
+      "sha256": "fb99148fde157a2b105a491ead423edc52f36c6edf14a6cc593141a64ef65b53"
+    },
+    {
+      "bytes": 177,
+      "path": "experiment-2b/heldout/analysis/publication_tables/table4_rejection_stages.csv",
+      "sha256": "22805557903855f0282680b67dd4021da68ba568419fd5ca9125bb2701e74666"
+    },
+    {
+      "bytes": 408,
+      "path": "experiment-2b/heldout/analysis/publication_tables/table5_llm_invocation_by_family.csv",
+      "sha256": "c76d91535397efd19af36645ccd6a29c861e7831b5a2fbe1db9aa1b8c09f82a3"
+    },
+    {
+      "bytes": 326,
+      "path": "experiment-2b/heldout/analysis/publication_tables/table6_execution_summary.csv",
+      "sha256": "1aca19a7854b5e02b085d9a565f38a14e5097220d05c2373df4a2975c6b61e62"
+    },
+    {
+      "bytes": 1767,
+      "path": "experiment-2b/heldout/analysis/publication_figures/e3v3_publication_figures_v1_manifest.json",
+      "sha256": "a6f7226a387e5987917e86f5844f5ccf3785236dfe58ae112079d91dafa2b35e"
+    },
+    {
+      "bytes": 1055,
+      "path": "experiment-2b/heldout/analysis/publication_figures/e3v3_publication_figures_v1_metadata.json",
+      "sha256": "f60030f34bad9c43c1b1c430c514d6df2cd71f478fb1f10669bc5dbb12f85879"
+    },
+    {
+      "bytes": 16318,
+      "path": "experiment-2b/heldout/analysis/publication_figures/figure1_family_accuracy.pdf",
+      "sha256": "b525e678243f478111b9f8bfed623e9bbac1bc86d3f1ffe81739cbce802e4809"
+    },
+    {
+      "bytes": 114258,
+      "path": "experiment-2b/heldout/analysis/publication_figures/figure1_family_accuracy.png",
+      "sha256": "4e713ea8b626d40fda8b82f5a770e84095ff6bcb000703f402bd323b3ceadc6e"
+    },
+    {
+      "bytes": 14272,
+      "path": "experiment-2b/heldout/analysis/publication_figures/figure2_failure_taxonomy.pdf",
+      "sha256": "7da4e9d0516d9c8cd93db866360da905b70f4044381b0b716b161f45d42444eb"
+    },
+    {
+      "bytes": 80410,
+      "path": "experiment-2b/heldout/analysis/publication_figures/figure2_failure_taxonomy.png",
+      "sha256": "2e9cb34719c84492b54f39b7b7ad5db831b547cc38e26593b5d8569edbb75eff"
+    },
+    {
+      "bytes": 14182,
+      "path": "experiment-2b/heldout/analysis/publication_figures/figure3_rejection_stages.pdf",
+      "sha256": "9ed0788ffcd72204d7574cf733e77794c0bec69a9744310ab2f4c6ca963f6309"
+    },
+    {
+      "bytes": 109208,
+      "path": "experiment-2b/heldout/analysis/publication_figures/figure3_rejection_stages.png",
+      "sha256": "4e0f1f6996ba8c695833c955b9dc3d90c52e30c6498640e7a7f7e1e07a3e581d"
+    },
+    {
+      "bytes": 15313,
+      "path": "experiment-2b/heldout/analysis/publication_figures/figure4_llm_invocation_rate.pdf",
+      "sha256": "8574f43da09927fb0ca2950c75e7cfba7c670cd6bbe1e9f9deaa59334c31168f"
+    },
+    {
+      "bytes": 94395,
+      "path": "experiment-2b/heldout/analysis/publication_figures/figure4_llm_invocation_rate.png",
+      "sha256": "be65456f15964ca836984ffa9fab5e103312b264b047995d1a23709145eb4c54"
+    },
+    {
+      "bytes": 3244,
+      "path": "experiment-2b/reproducibility/e3v3_final_experiment_closure_v1.0/analysis/e3v3_heldout_failure_analysis_v1.json",
+      "sha256": "64eccbc796aeca4ae06ebd876a17efc134deb65f4dba998096c8d71f4d3ecdb8"
+    },
+    {
+      "bytes": 697,
+      "path": "experiment-2b/reproducibility/e3v3_final_experiment_closure_v1.0/analysis/e3v3_heldout_failure_taxonomy_summary_v1.csv",
+      "sha256": "b8014a4b5321522be41700449a23902c8f6b431d0ebcd78e642747afdc00e9cb"
+    },
+    {
+      "bytes": 12416,
+      "path": "experiment-2b/reproducibility/e3v3_final_experiment_closure_v1.0/analysis/e3v3_heldout_failure_taxonomy_v1.csv",
+      "sha256": "8e5ce453ce57a663a8c809fab63723ca38b61d732ec2695a99b8750dc3f35b83"
+    },
+    {
+      "bytes": 1296,
+      "path": "experiment-2b/reproducibility/e3v3_final_experiment_closure_v1.0/analysis/e3v3_heldout_failure_taxonomy_v1_manifest.json",
+      "sha256": "d0dd69178150a1ccdf4428a1f256d2df2ede645be2eee14d3bc97114ba873cb0"
+    },
+    {
+      "bytes": 10801,
+      "path": "experiment-2b/reproducibility/e3v3_final_experiment_closure_v1.0/analysis/e3v3_heldout_failures_v1.csv",
+      "sha256": "83b829173f928dd408a354631052d4bc0c5da7e2d9810b8530ad7405fb570ec3"
+    },
+    {
+      "bytes": 601,
+      "path": "experiment-2b/reproducibility/e3v3_final_experiment_closure_v1.0/analysis/e3v3_heldout_family_metrics_v1.csv",
+      "sha256": "d4a6503e6486d0c641d44acc1d823f33f0ebb3badd8514048c0ce30a11835145"
+    },
+    {
+      "bytes": 1767,
+      "path": "experiment-2b/reproducibility/e3v3_final_experiment_closure_v1.0/publication_figures/e3v3_publication_figures_v1_manifest.json",
+      "sha256": "a6f7226a387e5987917e86f5844f5ccf3785236dfe58ae112079d91dafa2b35e"
+    },
+    {
+      "bytes": 1055,
+      "path": "experiment-2b/reproducibility/e3v3_final_experiment_closure_v1.0/publication_figures/e3v3_publication_figures_v1_metadata.json",
+      "sha256": "f60030f34bad9c43c1b1c430c514d6df2cd71f478fb1f10669bc5dbb12f85879"
+    },
+    {
+      "bytes": 16318,
+      "path": "experiment-2b/reproducibility/e3v3_final_experiment_closure_v1.0/publication_figures/figure1_family_accuracy.pdf",
+      "sha256": "b525e678243f478111b9f8bfed623e9bbac1bc86d3f1ffe81739cbce802e4809"
+    },
+    {
+      "bytes": 114258,
+      "path": "experiment-2b/reproducibility/e3v3_final_experiment_closure_v1.0/publication_figures/figure1_family_accuracy.png",
+      "sha256": "4e713ea8b626d40fda8b82f5a770e84095ff6bcb000703f402bd323b3ceadc6e"
+    },
+    {
+      "bytes": 14272,
+      "path": "experiment-2b/reproducibility/e3v3_final_experiment_closure_v1.0/publication_figures/figure2_failure_taxonomy.pdf",
+      "sha256": "7da4e9d0516d9c8cd93db866360da905b70f4044381b0b716b161f45d42444eb"
+    },
+    {
+      "bytes": 80410,
+      "path": "experiment-2b/reproducibility/e3v3_final_experiment_closure_v1.0/publication_figures/figure2_failure_taxonomy.png",
+      "sha256": "2e9cb34719c84492b54f39b7b7ad5db831b547cc38e26593b5d8569edbb75eff"
+    },
+    {
+      "bytes": 14182,
+      "path": "experiment-2b/reproducibility/e3v3_final_experiment_closure_v1.0/publication_figures/figure3_rejection_stages.pdf",
+      "sha256": "9ed0788ffcd72204d7574cf733e77794c0bec69a9744310ab2f4c6ca963f6309"
+    },
+    {
+      "bytes": 109208,
+      "path": "experiment-2b/reproducibility/e3v3_final_experiment_closure_v1.0/publication_figures/figure3_rejection_stages.png",
+      "sha256": "4e0f1f6996ba8c695833c955b9dc3d90c52e30c6498640e7a7f7e1e07a3e581d"
+    },
+    {
+      "bytes": 15313,
+      "path": "experiment-2b/reproducibility/e3v3_final_experiment_closure_v1.0/publication_figures/figure4_llm_invocation_rate.pdf",
+      "sha256": "8574f43da09927fb0ca2950c75e7cfba7c670cd6bbe1e9f9deaa59334c31168f"
+    },
+    {
+      "bytes": 94395,
+      "path": "experiment-2b/reproducibility/e3v3_final_experiment_closure_v1.0/publication_figures/figure4_llm_invocation_rate.png",
+      "sha256": "be65456f15964ca836984ffa9fab5e103312b264b047995d1a23709145eb4c54"
+    },
+    {
+      "bytes": 5312,
+      "path": "experiment-2b/reproducibility/e3v3_final_experiment_closure_v1.0/publication_tables/e3v3_publication_tables_v1.md",
+      "sha256": "1be33342986d194e60215d326831f2b2a6be87252d123b5d1f291b9b2daddc58"
+    },
+    {
+      "bytes": 1734,
+      "path": "experiment-2b/reproducibility/e3v3_final_experiment_closure_v1.0/publication_tables/e3v3_publication_tables_v1_manifest.json",
+      "sha256": "2663d7c62d7ebcf9ab338a529460b8d5a26955704a698dc4de6ff74619ac1b33"
+    },
+    {
+      "bytes": 303,
+      "path": "experiment-2b/reproducibility/e3v3_final_experiment_closure_v1.0/publication_tables/table1_overall_performance.csv",
+      "sha256": "ddde7877899b5f77008a3748a2b5cd3f4449ad07684e2d0e5104e6f73b4f28cf"
+    },
+    {
+      "bytes": 501,
+      "path": "experiment-2b/reproducibility/e3v3_final_experiment_closure_v1.0/publication_tables/table2_family_performance.csv",
+      "sha256": "b79c833381135bd336b5d4538d1de4e2039ae0f24eeef669baf28d8bf150427e"
+    },
+    {
+      "bytes": 455,
+      "path": "experiment-2b/reproducibility/e3v3_final_experiment_closure_v1.0/publication_tables/table3_failure_taxonomy.csv",
+      "sha256": "fb99148fde157a2b105a491ead423edc52f36c6edf14a6cc593141a64ef65b53"
+    },
+    {
+      "bytes": 177,
+      "path": "experiment-2b/reproducibility/e3v3_final_experiment_closure_v1.0/publication_tables/table4_rejection_stages.csv",
+      "sha256": "22805557903855f0282680b67dd4021da68ba568419fd5ca9125bb2701e74666"
+    },
+    {
+      "bytes": 408,
+      "path": "experiment-2b/reproducibility/e3v3_final_experiment_closure_v1.0/publication_tables/table5_llm_invocation_by_family.csv",
+      "sha256": "c76d91535397efd19af36645ccd6a29c861e7831b5a2fbe1db9aa1b8c09f82a3"
+    },
+    {
+      "bytes": 326,
+      "path": "experiment-2b/reproducibility/e3v3_final_experiment_closure_v1.0/publication_tables/table6_execution_summary.csv",
+      "sha256": "1aca19a7854b5e02b085d9a565f38a14e5097220d05c2373df4a2975c6b61e62"
+    }
+  ],
+  "source_hashes": {
+    "final_closure_manifest": "d169fad487c654cc818889f2b424ad8ee1d83e79196c0adc6d801655b3cd9a98",
+    "integrity_manifest": "aa7dad7cf11f08628c2750d0470cf6159b3f75bf87ee3060ef7d8431129f5292",
+    "results": "d2c2dca5732f667e54ea4104f7ea2cdd1f0b059f9860af3f5e66c11c0c082d90",
+    "synthesis": "061f0f0517d2d6633aec8a1fb1bb50a52cd28e4c4a265983f1f26df8001f6cf2",
+    "synthesis_manifest": "1c719180145f91cf3a914bda6bb09d84e210271aa431fda4a739a3ec4e9b97eb",
+    "synthesis_md": "e9a960c30e9b69f03a95a1b2261c58852a5a87b489e62fb12b81b6673ce6f82d"
+  }
+}

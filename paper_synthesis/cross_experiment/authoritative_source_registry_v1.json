@@ -1,0 +1,183 @@
+{
+  "comparison_warning": "Metrics across E1, E2A, E2B, and E3-v3 are not assumed to be directly exchangeable because benchmark populations and experimental purposes differ. Cross-experiment synthesis must report benchmark size and role alongside performance.",
+  "created_utc": "2026-09-30T01:20:33.879431+00:00",
+  "experiment_rerun": false,
+  "model_called": false,
+  "registry_id": "cross-experiment-authoritative-source-registry-v1.0",
+  "selection_policy": "Frozen/reproducibility evidence is preferred where available. E3-v3 publication synthesis uses only the official frozen held-out evaluation, not development results. E2B/E3-v2 uses the frozen 120-case comparison. E2A uses the frozen 200-case robustness evaluation. E1 uses the original controlled 50-intent evaluation.",
+  "source_count": 19,
+  "source_evidence_modified": false,
+  "sources": [
+    {
+      "experiment": "E1",
+      "path": "analysis/data/experiment_results_150_analysis.csv",
+      "records": 150,
+      "role": "raw_results",
+      "schema": "id|intent|category|expected_service|expected_valid|pipeline|model|parse_ok|latency_ms|finish_reason|prompt_tokens|completion_tokens|raw_response|predicted_service|schema_valid|hallucination_detected|unsupported_input_detected|input_audit_valid|mapping_found|descriptor_success|accepted|validation_errors|cir_json|descriptor_json",
+      "sha256": "284d54e726697d2216fbcb0b8c9f3ea73c7944cd0e2d53ea52eba906e190c008",
+      "source_id": "E1_raw"
+    },
+    {
+      "experiment": "E1",
+      "path": "analysis/tables/table02_primary_results.csv",
+      "records": 11,
+      "role": "primary_results",
+      "schema": "Metric|E1 Direct|E2 CIR|E3 Proposed",
+      "sha256": "317779f31b75a1d12a80bce4655cd7379c53c67010d60011ac8b034993b3418b",
+      "source_id": "E1_primary"
+    },
+    {
+      "experiment": "E1",
+      "path": "analysis/metrics/final_pipeline_metrics.csv",
+      "records": 3,
+      "role": "pipeline_metrics",
+      "schema": "pipeline|n|TP_invalid_rejected|TN_valid_accepted|FP_valid_rejected|FN_invalid_accepted|decision_accuracy|rejection_precision|rejection_recall|rejection_f1|valid_acceptance_rate|invalid_rejection_rate|parse_success_rate|mean_latency_ms|median_latency_ms|p95_latency_ms",
+      "sha256": "89bb74382227c04649b593839e3f442e464731867a1be43b55d8b3807aa88b73",
+      "source_id": "E1_metrics"
+    },
+    {
+      "experiment": "E1",
+      "path": "analysis/metrics/accuracy_ci95.csv",
+      "records": 3,
+      "role": "confidence_intervals",
+      "schema": "pipeline|correct|n|accuracy|ci95_lower|ci95_upper",
+      "sha256": "a52280008fab0656c8efa241df6ae652364d46df69eb4458d4fdb6692a850563",
+      "source_id": "E1_ci"
+    },
+    {
+      "experiment": "E2A",
+      "path": "experiment-2/reproducibility/experiment2a_frozen/experiment2a_freeze_manifest.json",
+      "records": 10,
+      "role": "freeze_manifest",
+      "schema": "release|created_utc|benchmark_intents|raw_observations|pipelines|primary_results|e3_false_accepts|e3_false_rejects|architecture_status|files",
+      "sha256": "7b4ce6225dbb7795328ec5239cfa3983b14a8992d9fc2679cd5453554a6db1e1",
+      "source_id": "E2A_manifest"
+    },
+    {
+      "experiment": "E2A",
+      "path": "experiment-2/reproducibility/experiment2a_frozen/experiment2a_primary_metrics.csv",
+      "records": 3,
+      "role": "primary_metrics",
+      "schema": "pipeline|n|correct|accuracy|rejection_precision|rejection_recall|rejection_f1|valid_acceptance_rate|invalid_rejection_rate|TP_invalid_rejected|FP_valid_rejected|FN_invalid_accepted|TN_valid_accepted",
+      "sha256": "d9b908d86e252f3c06f362f5c677595fe85bda1ec39dbe61f2549f5bd4e3ad51",
+      "source_id": "E2A_primary"
+    },
+    {
+      "experiment": "E2A",
+      "path": "experiment-2/reproducibility/experiment2a_frozen/experiment2a_accuracy_exact_ci.csv",
+      "records": 3,
+      "role": "exact_confidence_intervals",
+      "schema": "pipeline|correct|n|accuracy|ci95_lower|ci95_upper",
+      "sha256": "932b94b9c5afd5d5c82604b221c29971ef0f5a94fead4c952ed780ac7f8500b1",
+      "source_id": "E2A_ci"
+    },
+    {
+      "experiment": "E2A",
+      "path": "experiment-2/reproducibility/experiment2a_frozen/experiment2a_results_600.csv",
+      "records": 600,
+      "role": "raw_results",
+      "schema": "id|intent|category|expected_service|expected_valid|pipeline|model|parse_ok|latency_ms|finish_reason|prompt_tokens|completion_tokens|raw_response|predicted_service|schema_valid|hallucination_detected|unsupported_input_detected|input_audit_valid|mapping_found|descriptor_success|accepted|validation_errors|cir_json|descriptor_json|execution_batch",
+      "sha256": "8c705c41b98b1f32f45fe914f34f9de16898e9e7a7e8de1e50710946356e7417",
+      "source_id": "E2A_raw"
+    },
+    {
+      "experiment": "E2A",
+      "path": "experiment-2/reproducibility/experiment2a_frozen/experiment2a_latency_summary.csv",
+      "records": 3,
+      "role": "latency_summary",
+      "schema": "pipeline|n|mean|median|std|min|max|p95|p99",
+      "sha256": "0d1c88acdfa8ab3b09e5f5c495b6dc34d3b40d8058270e8c83c14ecb53f39de3",
+      "source_id": "E2A_latency"
+    },
+    {
+      "experiment": "E2A",
+      "path": "experiment-2/reproducibility/experiment2a_frozen/experiment2a_paired_correctness_tests.csv",
+      "records": 3,
+      "role": "paired_correctness_tests",
+      "schema": "pipeline_a|pipeline_b|a_wrong_b_right|a_right_b_wrong|discordant_pairs|exact_p",
+      "sha256": "46be6298f4a84665b4026f21ce231b624122f75189364f2cf4f4126668612366",
+      "source_id": "E2A_paired"
+    },
+    {
+      "experiment": "E2B_E3-v2",
+      "path": "experiment-2b/reproducibility/experiment2b_results_v1.0/experiment2b_primary_results_240.csv",
+      "records": 240,
+      "role": "primary_results",
+      "schema": "id|intent|category|subcategory|expected_valid|expected_service|difficulty|linguistic_form|constraint_type|pipeline|accepted|decision_correct|llm_invoked|parse_ok|llm_latency_ms|end_to_end_latency_ms|finish_reason|rejection_stage|error_codes_json|cir_json|input_audit_json|pre_guard_json|post_guard_json|cir_validation_json|standards_mapping_json|descriptor_json|raw_text|reasoning_json|prompt_tokens|completion_tokens|adapter_result_json|exception",
+      "sha256": "1055be8d9a233fa2a1736f9ea20660361157c9690c9b3bb7e03d40e8f49c154d",
+      "source_id": "E2B_results"
+    },
+    {
+      "experiment": "E2B_E3-v2",
+      "path": "experiment-2b/reproducibility/experiment2b_results_v1.0/experiment2b_results_manifest_v1.json",
+      "records": 6,
+      "role": "results_manifest",
+      "schema": "experiment_id|results_freeze_id|created_utc|benchmark|results|batch_hashes",
+      "sha256": "e1900778aa413a502bbafc61f4ed3caf3c2496dfd13147868afeb8e1dea46f3b",
+      "source_id": "E2B_manifest"
+    },
+    {
+      "experiment": "E2B_E3-v2",
+      "path": "experiment-2b/reproducibility/experiment2b_execution_v1.0/experiment2b_execution_manifest_v1.json",
+      "records": 11,
+      "role": "execution_manifest",
+      "schema": "experiment_id|freeze_id|created_utc|model|temperature|reasoning_enabled|pipelines|runner|dataset|execution|batches",
+      "sha256": "5abd414e54196b8eec98447a47c45951c224b2e81551c0760d4e84d0adf8c89e",
+      "source_id": "E2B_execution_manifest"
+    },
+    {
+      "experiment": "E3-v3",
+      "path": "experiment-2b/reproducibility/e3v3_final_experiment_closure_v1.0_manifest.json",
+      "records": 17,
+      "role": "final_closure_manifest",
+      "schema": "authoritative_exact_95ci|benchmark_cases|benchmark_type|canonical_hashes|claim_boundary|created_utc|development_status|evaluation_status|execution|experiment|failure_taxonomy|freeze_id|integrity_statements|invalid_cases|inventory|official_result|valid_cases",
+      "sha256": "d169fad487c654cc818889f2b424ad8ee1d83e79196c0adc6d801655b3cd9a98",
+      "source_id": "E3V3_closure"
+    },
+    {
+      "experiment": "E3-v3",
+      "path": "experiment-2b/reproducibility/e3v3_final_experiment_closure_v1.0/analysis/e3v3_heldout_primary_metrics_v1.csv",
+      "records": 6,
+      "role": "heldout_primary_metrics",
+      "schema": "metric|numerator|denominator|value|ci95_low|ci95_high",
+      "sha256": "e2fdbd35f93514dc9eecd88c1925ee1c0dd86a98a986748d9cb3c374911229e0",
+      "source_id": "E3V3_primary"
+    },
+    {
+      "experiment": "E3-v3",
+      "path": "experiment-2b/reproducibility/e3v3_final_experiment_closure_v1.0/analysis/e3v3_heldout_exact_ci_v1.csv",
+      "records": 5,
+      "role": "heldout_exact_confidence_intervals",
+      "schema": "metric|numerator|denominator|value|ci95_low_exact|ci95_high_exact",
+      "sha256": "c8f3e2bf1cd468702c420e5ca9dd6b939fca1340690ff0aa424289f3fe45414e",
+      "source_id": "E3V3_ci"
+    },
+    {
+      "experiment": "E3-v3",
+      "path": "experiment-2b/reproducibility/e3v3_final_experiment_closure_v1.0/analysis/e3v3_heldout_family_metrics_v1.csv",
+      "records": 8,
+      "role": "heldout_family_metrics",
+      "schema": "family_id|n|correct|accuracy|ci95_low|ci95_high|valid_cases|valid_accepted|invalid_cases|invalid_rejected",
+      "sha256": "d4a6503e6486d0c641d44acc1d823f33f0ebb3badd8514048c0ce30a11835145",
+      "source_id": "E3V3_family"
+    },
+    {
+      "experiment": "E3-v3",
+      "path": "experiment-2b/reproducibility/e3v3_final_experiment_closure_v1.0/official_run/e3v3_heldout_benchmark_run_v1.csv",
+      "records": 120,
+      "role": "official_heldout_results",
+      "schema": "id|intent|family_id|repair_id|subcategory|difficulty|linguistic_form|constraint_type|control_type|notes|expected_valid|expected_service|pipeline|accepted|decision_correct|llm_invoked|parse_ok|llm_latency_ms|end_to_end_latency_ms|finish_reason|rejection_stage|error_codes_json|cir_json|input_audit_json|pre_guard_json|post_guard_json|cir_before_reconciliation_json|cir_after_reconciliation_json|reconciliation_json|cir_before_r5_json|cir_after_r5_json|r5_reliability_changed|cir_validation_json|standards_mapping_json|descriptor_json|raw_text|reasoning_json|prompt_tokens|completion_tokens|adapter_result_json|exception",
+      "sha256": "12c3a82bd8cde2d07de352155e9ee14913c821fb745d401c7ffe2f207e850e5e",
+      "source_id": "E3V3_raw"
+    },
+    {
+      "experiment": "E3-v3",
+      "path": "experiment-2b/reproducibility/e3v3_post_evaluation_integrity_audit_v1.0_manifest.json",
+      "records": 18,
+      "role": "post_evaluation_integrity_manifest",
+      "schema": "artifacts|audit_type|benchmark_modified|claim_boundary|created_utc|expanded_exposure|freeze_id|implementation_modified|integrity_interpretation|labels_modified|linked_final_experiment_manifest_sha256|linked_heldout_benchmark_sha256|methodological_status|model_called|model_rerun|official_result_modified|official_scientific_result_unchanged|overlap_results",
+      "sha256": "aa7dad7cf11f08628c2750d0470cf6159b3f75bf87ee3060ef7d8431129f5292",
+      "source_id": "E3V3_integrity"
+    }
+  ]
+}

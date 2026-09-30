@@ -1,0 +1,11 @@
+id,intent,category,subcategory,expected_valid,expected_service,difficulty,linguistic_form,constraint_type,notes
+EXP2-081,Provision massive machine connectivity for smart-city telemetry.,valid_mMTC,valid,True,mMTC,medium,semantic_paraphrase,valid_requirement,
+EXP2-082,Provide an mMTC service for 75000 remote sensing devices.,valid_mMTC,valid,True,mMTC,medium,explicit_service,valid_requirement,
+EXP2-083,Create connectivity for numerous low-bandwidth utility sensors.,valid_mMTC,valid,True,mMTC,medium,semantic_paraphrase,valid_requirement,
+EXP2-084,Set up an IoT slice for a large population of infrequently transmitting devices.,valid_mMTC,valid,True,mMTC,medium,semantic_paraphrase,valid_requirement,
+EXP2-085,Provide massive connectivity for distributed temperature sensors.,valid_mMTC,valid,True,mMTC,medium,semantic_paraphrase,valid_requirement,
+EXP2-086,Create an mMTC slice for city-scale infrastructure monitoring.,valid_mMTC,valid,True,mMTC,medium,explicit_service,valid_requirement,
+EXP2-087,Provision connectivity for thousands of battery-operated field sensors.,valid_mMTC,valid,True,mMTC,medium,semantic_paraphrase,valid_requirement,
+EXP2-088,Provide a massive IoT service for smart waste-management sensors.,valid_mMTC,valid,True,mMTC,medium,semantic_paraphrase,valid_requirement,
+EXP2-089,Create scalable machine-type connectivity for a nationwide meter network.,valid_mMTC,valid,True,mMTC,medium,semantic_paraphrase,valid_requirement,
+EXP2-090,Set up mMTC service for a dense deployment of low-power monitoring nodes.,valid_mMTC,valid,True,mMTC,medium,explicit_service,valid_requirement,

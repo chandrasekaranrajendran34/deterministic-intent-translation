@@ -1,0 +1,35 @@
+{
+  "experiment_id": "experiment2b-primary-v1.0",
+  "results_freeze_id": "experiment2b-results-v1.0",
+  "created_utc": "2026-09-29T08:20:09.450955+00:00",
+  "benchmark": {
+    "file": "/content/experiment-1-v2-together/experiment-2b/data/frozen/experiment2b_intents_120_v1.csv",
+    "sha256": "63661df64f3e13cb323bc7089b3a14c9f5c85e4df4237643065e3f4896910409",
+    "intents": 120
+  },
+  "results": {
+    "master_file": "/content/experiment-1-v2-together/experiment-2b/reproducibility/experiment2b_results_v1.0/experiment2b_primary_results_240.csv",
+    "sha256": "1055be8d9a233fa2a1736f9ea20660361157c9690c9b3bb7e03d40e8f49c154d",
+    "rows": 240,
+    "unique_intents": 120,
+    "pipelines": {
+      "e3_original": 120,
+      "e3_v2": 120
+    },
+    "execution_exceptions": 0
+  },
+  "batch_hashes": {
+    "batch_01": "fcb77bd53407d84512e7930d9e6995378efaf5ea8dcac8751caa6316d30b561f",
+    "batch_02": "e7b082687c27bdada42a9390270777cef496ff76f199439319d22fee10d1840a",
+    "batch_03": "bb4aae20c0ef1dda3f5be7cfa145a49e497dcfc4015a9cf52ac24fef2421dbff",
+    "batch_04": "2b2145cda649a576d58afdf723559420ccf02c0e5905c59fd165b2981b1e0c09",
+    "batch_05": "c7650a9c78851c375cae0504d148fb25afe81f536f0709d58755b131e86de376",
+    "batch_06": "0d658a9b844412867efeacd821f7ab12a1be351674cef980fb38edce7972b009",
+    "batch_07": "3f39dd678f0918f0fa133cfdd7094014b86c527b1d49d85982cad9cd89733582",
+    "batch_08": "57f9a68bd345087fabf8a940b9adac3afe51a8f2523c38929f04d79ab75e34a1",
+    "batch_09": "6ee190ac4be4c2f86446dec844b170408481314887571da688d291da4f9b408c",
+    "batch_10": "14928b039c4db01aae0b0297a8ed479f56969360b3fa55be00a8de25fa04e301",
+    "batch_11": "4c73e2702f295f2fdf28ccc5b3bafb910edd43434969bd5ec5d581cf97d48bc6",
+    "batch_12": "4bc7bf60535a433284166aa3928d8e91c91691f2edd8c9c85f3bd4d10e5207dc"
+  }
+}

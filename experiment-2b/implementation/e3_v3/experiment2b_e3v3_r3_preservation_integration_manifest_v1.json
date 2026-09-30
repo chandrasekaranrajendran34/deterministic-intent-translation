@@ -1,0 +1,32 @@
+{
+  "step": "24E-C2",
+  "repair_family": "R3_constraint_representation",
+  "status": "PRESERVATION_INTEGRATED",
+  "analyzer_sha256": "71a6f00172149f66250b3c17386eea98b18008eb65b097c327db705e94068dc8",
+  "sidecar_sha256": "91742e13fce9683bd7ae36d771ef178ea5f40fc417ff0bab751c1c35d53185bd",
+  "preservation_pre_r3_sha256": "b580ebfbef3736b10a2bcdcdc810b08a6afd1c99cfe4618b77770564f5d777d3",
+  "preservation_r3_sha256": "7fdc76ee4e24572c0dbef13b66290b0eb28ba0036a130f102dbd41b77834fe52",
+  "guard_sha256": "b01a665e8d295d4d36218668a1f84f64cf29226b76edb84789e2249d1ed5dd55",
+  "frozen_dev_sha256": "133c68842716f84a703478f7904c8cdd4f10cfdba683957ce23e473e81e7196f",
+  "unit_tests": {
+    "passed": 12,
+    "total": 12
+  },
+  "negative_safety_tests": {
+    "passed": 4,
+    "total": 4
+  },
+  "dev_r3_threshold_representation": {
+    "passed": 20,
+    "total": 20
+  },
+  "exp2b_032_repaired": true,
+  "guard_modified": false,
+  "runner_modified": false,
+  "canonical_cir_modified": false,
+  "sidecar_modified": false,
+  "frozen_dev_modified": false,
+  "api_calls": 0,
+  "llm_calls": 0,
+  "timestamp_utc": "2026-09-29T10:12:39.885130+00:00"
+}

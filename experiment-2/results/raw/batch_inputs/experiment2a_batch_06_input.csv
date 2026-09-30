@@ -1,0 +1,11 @@
+id,intent,category,subcategory,expected_valid,expected_service,difficulty,linguistic_form,constraint_type,notes
+EXP2-051,Provide a low-latency service for closed-loop robotic control.,valid_URLLC,valid,True,URLLC,medium,semantic_paraphrase,valid_requirement,
+EXP2-052,Create URLLC connectivity requiring reliability of 0.99999.,valid_URLLC,valid,True,URLLC,medium,explicit_service,valid_requirement,
+EXP2-053,Set up a dependable real-time slice for coordinated drone control.,valid_URLLC,valid,True,URLLC,medium,semantic_paraphrase,valid_requirement,
+EXP2-054,Provide low-delay connectivity for an automated port control system.,valid_URLLC,valid,True,URLLC,medium,semantic_paraphrase,valid_requirement,
+EXP2-055,Create a URLLC slice for real-time railway control signaling.,valid_URLLC,valid,True,URLLC,medium,explicit_service,valid_requirement,
+EXP2-056,Provision highly reliable connectivity with a 4 ms latency requirement.,valid_URLLC,valid,True,URLLC,medium,semantic_paraphrase,valid_requirement,
+EXP2-057,Provide a time-critical slice for smart-grid protection commands.,valid_URLLC,valid,True,URLLC,medium,semantic_paraphrase,valid_requirement,
+EXP2-058,Create low-latency reliable communication for collaborative robots.,valid_URLLC,valid,True,URLLC,medium,semantic_paraphrase,valid_requirement,
+EXP2-059,Set up URLLC service for real-time remote equipment operation.,valid_URLLC,valid,True,URLLC,medium,explicit_service,valid_requirement,
+EXP2-060,Provide highly dependable low-delay connectivity for industrial control traffic.,valid_URLLC,valid,True,URLLC,medium,semantic_paraphrase,valid_requirement,

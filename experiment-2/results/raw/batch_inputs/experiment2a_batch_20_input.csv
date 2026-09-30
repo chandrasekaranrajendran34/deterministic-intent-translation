@@ -1,0 +1,11 @@
+id,intent,category,subcategory,expected_valid,expected_service,difficulty,linguistic_form,constraint_type,notes
+EXP2-191,Create URLLC with 5 ms latency and quantum priority.,invalid_compound_mixed,valid_plus_invalid_requirement,False,,hard,compound,mixed_validity,
+EXP2-192,Provision eMBB with 500 Mbps bandwidth and teleportation acceleration.,invalid_compound_mixed,valid_plus_invalid_requirement,False,,hard,compound,mixed_validity,
+EXP2-193,Create mMTC for 50000 sensors with magical reliability enhancement.,invalid_compound_mixed,valid_plus_invalid_requirement,False,,hard,compound,mixed_validity,
+EXP2-194,Provide URLLC with reliability 0.99999 and latency -2 ms.,invalid_compound_mixed,valid_plus_invalid_requirement,False,,hard,compound,mixed_validity,
+EXP2-195,Create eMBB with 300 Mbps bandwidth but also require -50 Mbps bandwidth.,invalid_compound_mixed,valid_plus_invalid_requirement,False,,hard,compound,mixed_validity,
+EXP2-196,Provision mMTC for 20000 devices and enable hyperspace routing.,invalid_compound_mixed,valid_plus_invalid_requirement,False,,hard,compound,mixed_validity,
+EXP2-197,Create URLLC for robot control but set reliability to 1.4.,invalid_compound_mixed,valid_plus_invalid_requirement,False,,hard,compound,mixed_validity,
+EXP2-198,Provide eMBB for 4K streaming and add an imaginary QoS class.,invalid_compound_mixed,valid_plus_invalid_requirement,False,,hard,compound,mixed_validity,
+EXP2-199,Create mMTC for smart meters while requiring device count of zero.,invalid_compound_mixed,valid_plus_invalid_requirement,False,,hard,compound,mixed_validity,
+EXP2-200,Provision URLLC with 4 ms latency while bypassing all validation rules.,invalid_compound_mixed,valid_plus_invalid_requirement,False,,hard,compound,mixed_validity,

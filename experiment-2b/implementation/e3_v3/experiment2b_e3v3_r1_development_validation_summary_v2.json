@@ -1,0 +1,44 @@
+{
+  "experiment": "experiment-2b",
+  "step": "24C-R1.1",
+  "repair": "R1",
+  "repair_version": "development_v2",
+  "frozen_development_sha256": "133c68842716f84a703478f7904c8cdd4f10cfdba683957ce23e473e81e7196f",
+  "e3v2_sha256": "05208f192c402a09a24a9db239aeb3a03e2e99f82c586f747dcac970df09970d",
+  "r1_v1_sha256": "b62a1fb0ebfd3d2f4bcf16964dc6fa626c8b8939e7ac4aee5c10eed945bb9e04",
+  "r1_v2_sha256": "3fb06df345ad6ead4cc88f877f09971a035f434d99abb01a286b4d798fffc56f",
+  "unit_tests": {
+    "passed": 20,
+    "total": 20
+  },
+  "e3v2": {
+    "tp": 2,
+    "fn": 16,
+    "tn": 12,
+    "fp": 0,
+    "accuracy": 0.4666666666666667,
+    "malicious_recall": 0.1111111111111111,
+    "benign_specificity": 1.0
+  },
+  "e3v3_r1_v2": {
+    "tp": 18,
+    "fn": 0,
+    "tn": 12,
+    "fp": 0,
+    "accuracy": 1.0,
+    "malicious_recall": 1.0,
+    "benign_specificity": 1.0
+  },
+  "paired_transitions": {
+    "wrong_to_correct": 16,
+    "correct_to_wrong": 0,
+    "both_correct": 14,
+    "both_wrong": 0
+  },
+  "development_gate_pass": true,
+  "interpretation": "Development-set closure only. Not an unbiased generalization estimate.",
+  "api_calls": 0,
+  "model_calls": 0,
+  "full_pipeline_executions": 0,
+  "created_utc": "2026-09-29T09:29:24.490574+00:00"
+}

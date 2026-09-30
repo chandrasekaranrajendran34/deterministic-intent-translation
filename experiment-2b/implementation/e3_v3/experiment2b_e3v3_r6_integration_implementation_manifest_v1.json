@@ -1,0 +1,32 @@
+{
+  "api_calls": 0,
+  "created_utc": "2026-09-29T16:37:03.218477+00:00",
+  "dataset_modified": false,
+  "design": {
+    "path": "/content/experiment-1-v2-together/experiment-2b/implementation/e3_v3/experiment2b_e3v3_r6_runner_integration_design_v1.json",
+    "sha256": "b1ef43840493d5923d918be66d75c32fd9ac13c13c2415f0a91fa3abe4e1dae0"
+  },
+  "field_isolation_passed": true,
+  "integration_module": {
+    "path": "/content/experiment-1-v2-together/experiment-2b/implementation/e3_v3/src/service_type_integration_r6.py",
+    "sha256": "60b3f556b7d9d6765c38d6e31924c987d748b25a668f1837e3397896f964e741"
+  },
+  "integration_module_modified_after_failure": false,
+  "llm_calls": 0,
+  "llm_prompt_modified": false,
+  "manifest_id": "e3v3-r6-cir-integration-implementation-v1.0",
+  "resolver": {
+    "path": "/content/experiment-1-v2-together/experiment-2b/implementation/e3_v3/src/service_type_resolver_r6_cue_equivalent.py",
+    "sha256": "34d5b5fd02ade1bd44ea13b595e4aecfd7f8746dbd5a62dff17b223c405cb72d"
+  },
+  "resolver_modified": false,
+  "runner_modified": false,
+  "status": "UNIT_VALIDATED_NOT_YET_RUNNER_INTEGRATED",
+  "test_harness_corrected": true,
+  "unit_test_evidence": {
+    "path": "/content/experiment-1-v2-together/experiment-2b/implementation/e3_v3/results/development/experiment2b_e3v3_r6_integration_unit_tests_v1.json",
+    "sha256": "45be3c79a971ba09564dce0804c113ff7e9fb8098206ece98f60185ee8c70af2"
+  },
+  "unit_tests_passed": 9,
+  "unit_tests_total": 9
+}

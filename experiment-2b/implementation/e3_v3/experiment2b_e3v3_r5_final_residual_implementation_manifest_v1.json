@@ -1,0 +1,26 @@
+{
+  "api_calls": 0,
+  "created_utc": "2026-09-29T15:49:17.288092+00:00",
+  "dataset_modified": false,
+  "design_sha256": "5ef2ca46892c762667048fa8981bf8503e05f72ca60e4e477315b9bdebf3cb8f",
+  "final_analyzer": {
+    "path": "/content/experiment-1-v2-together/experiment-2b/implementation/e3_v3/src/source_analyzer_r5_final.py",
+    "sha256": "3c24b9d798b9a7694328134eac76f877aa190715d8ccd8cc1348fa49477fdab7"
+  },
+  "final_normalizer": {
+    "path": "/content/experiment-1-v2-together/experiment-2b/implementation/e3_v3/src/reliability_normalization_r5_final.py",
+    "sha256": "4e0437b732209e83b43929229f6aa012723957b1109c84e014979556c75e123d"
+  },
+  "historical_analyzer_sha256": "96c5d84afa6fee0dc4f1667aa8f5626bb783d23f3816ef4330e621a773f9da42",
+  "historical_normalizer_sha256": "43fe74225bb3c57cd145421296a91c52fb631e4f0786e9e5acbacde82b190830",
+  "llm_calls": 0,
+  "manifest_id": "e3v3-r5-final-residual-implementation-v1.0",
+  "runner_modified": false,
+  "status": "IMPLEMENTED_ISOLATED_NOT_YET_RUNNER_INTEGRATED",
+  "unit_tests": {
+    "passed": 8,
+    "path": "/content/experiment-1-v2-together/experiment-2b/implementation/e3_v3/results/development/experiment2b_e3v3_r5_final_residual_unit_tests_v1.json",
+    "sha256": "7d2549d382e30f8b81bd05ad3fca5c7867d85733741e34432bcf837634b01793",
+    "total": 8
+  }
+}

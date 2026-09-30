@@ -1,0 +1,4 @@
+pipeline,count,sum,mean
+cir,50,47,0.94
+direct,50,50,1.0
+proposed,50,50,1.0

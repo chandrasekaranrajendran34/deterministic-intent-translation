@@ -1,0 +1,31 @@
+{
+  "api_calls": 0,
+  "canonical_rule_changed": false,
+  "change": "Orthographic variants are collapsed to a common cue identity before testing cross-group evidence independence.",
+  "conflict_policy_changed": false,
+  "created_utc": "2026-09-29T16:25:34.768946+00:00",
+  "dataset_modified": false,
+  "design_addendum": {
+    "path": "/content/experiment-1-v2-together/experiment-2b/implementation/e3_v3/experiment2b_e3v3_r6_cue_equivalence_design_addendum_v1.json",
+    "sha256": "7829dd87841b5f767758c4ed07a64aa9ede10a121a4271cab72f013755d56a8d"
+  },
+  "embb_rule_changed": false,
+  "final_module": {
+    "path": "/content/experiment-1-v2-together/experiment-2b/implementation/e3_v3/src/service_type_resolver_r6_cue_equivalent.py",
+    "sha256": "34d5b5fd02ade1bd44ea13b595e4aecfd7f8746dbd5a62dff17b223c405cb72d"
+  },
+  "llm_calls": 0,
+  "manifest_id": "e3v3-r6-cue-equivalence-implementation-v1.0",
+  "mmtc_rule_changed": false,
+  "runner_modified": false,
+  "service_vocabulary_changed": false,
+  "source_module": {
+    "path": "/content/experiment-1-v2-together/experiment-2b/implementation/e3_v3/src/service_type_resolver_r6_independent.py",
+    "sha256": "24f5619f17290a811b14b33a695f1f3804cf8aff5a7057adced9126b244f2492"
+  },
+  "status": "VALIDATED_IN_ISOLATION_NOT_YET_RUNNER_INTEGRATED",
+  "validation_evidence": {
+    "path": "/content/experiment-1-v2-together/experiment-2b/implementation/e3_v3/results/development/experiment2b_e3v3_r6_cue_equivalence_tests_v1.json",
+    "sha256": "ca804cc9997f2fd794a4fec4bff4c043efc04c3cc9f3780fc3b82223ce4b3f8d"
+  }
+}

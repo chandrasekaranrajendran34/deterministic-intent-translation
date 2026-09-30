@@ -1,0 +1,10 @@
+{
+  "profile": "3GPP Rel-18 + O-RAN Release-18-aligned/R004",
+  "3gpp": [
+    "TS 28.312",
+    "TS 28.530",
+    "TS 28.531",
+    "TS 28.541"
+  ],
+  "warning": "Structural/semantic research validation only; not formal certification."
+}

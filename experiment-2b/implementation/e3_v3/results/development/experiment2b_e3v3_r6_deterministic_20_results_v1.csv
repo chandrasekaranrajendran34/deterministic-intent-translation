@@ -1,0 +1,21 @@
+id,intent,subcategory,linguistic_form,expected_service,resolved_service,correct,canonical_matches_json,semantic_matches_json,combined_matches_json,conflict
+E3V3-DEV-116,Provide enhanced high-throughput mobile broadband connectivity.,embb_semantic_paraphrase,semantic_paraphrase,eMBB,eMBB,True,[],"[""eMBB""]","[""eMBB""]",False
+E3V3-DEV-117,Set up a service intended for bandwidth-intensive mobile applications.,embb_semantic_paraphrase,semantic_paraphrase,eMBB,eMBB,True,[],"[""eMBB""]","[""eMBB""]",False
+E3V3-DEV-118,Provision high-capacity broadband access for mobile users.,embb_semantic_paraphrase,semantic_paraphrase,eMBB,eMBB,True,[],"[""eMBB""]","[""eMBB""]",False
+E3V3-DEV-119,Create connectivity suitable for data-heavy mobile multimedia.,embb_semantic_paraphrase,semantic_paraphrase,eMBB,eMBB,True,[],"[""eMBB""]","[""eMBB""]",False
+E3V3-DEV-120,Deploy a mobile service focused on very high data throughput.,embb_semantic_paraphrase,semantic_paraphrase,eMBB,eMBB,True,[],"[""eMBB""]","[""eMBB""]",False
+E3V3-DEV-121,Establish broadband connectivity for demanding mobile data traffic.,embb_semantic_paraphrase,semantic_paraphrase,eMBB,eMBB,True,[],"[""eMBB""]","[""eMBB""]",False
+E3V3-DEV-122,Configure high-speed mobile broadband for rich media applications.,embb_semantic_paraphrase,semantic_paraphrase,eMBB,eMBB,True,[],"[""eMBB""]","[""eMBB""]",False
+E3V3-DEV-123,Provide communication for applications needing extremely low delay and strong reliability.,urllc_semantic_paraphrase,semantic_paraphrase,URLLC,URLLC,True,[],"[""URLLC""]","[""URLLC""]",False
+E3V3-DEV-124,Set up connectivity for time-critical dependable control traffic.,urllc_semantic_paraphrase,semantic_paraphrase,URLLC,URLLC,True,[],"[""URLLC""]","[""URLLC""]",False
+E3V3-DEV-125,Provision a service for highly reliable latency-sensitive communication.,urllc_semantic_paraphrase,semantic_paraphrase,URLLC,URLLC,True,[],"[""URLLC""]","[""URLLC""]",False
+E3V3-DEV-126,Create connectivity suitable for mission-critical real-time exchanges.,urllc_semantic_paraphrase,semantic_paraphrase,URLLC,,False,[],[],[],False
+E3V3-DEV-127,Deploy communication optimized for dependable near-real-time response.,urllc_semantic_paraphrase,semantic_paraphrase,URLLC,URLLC,True,[],"[""URLLC""]","[""URLLC""]",False
+E3V3-DEV-128,Establish a service for delay-sensitive operations requiring very high reliability.,urllc_semantic_paraphrase,semantic_paraphrase,URLLC,URLLC,True,[],"[""URLLC""]","[""URLLC""]",False
+E3V3-DEV-129,Configure connectivity for critical control messages with minimal delay.,urllc_semantic_paraphrase,semantic_paraphrase,URLLC,URLLC,True,[],"[""URLLC""]","[""URLLC""]",False
+E3V3-DEV-130,Provide connectivity for a very large population of low-rate devices.,mmtc_semantic_paraphrase,semantic_paraphrase,mMTC,mMTC,True,[],"[""mMTC""]","[""mMTC""]",False
+E3V3-DEV-131,Set up communication for massive numbers of distributed sensors.,mmtc_semantic_paraphrase,semantic_paraphrase,mMTC,mMTC,True,[],"[""mMTC""]","[""mMTC""]",False
+E3V3-DEV-132,Provision connectivity designed for dense machine-type device populations.,mmtc_semantic_paraphrase,semantic_paraphrase,mMTC,mMTC,True,[],"[""mMTC""]","[""mMTC""]",False
+E3V3-DEV-133,Create a service for large-scale IoT device access.,mmtc_semantic_paraphrase,semantic_paraphrase,mMTC,mMTC,True,[],"[""mMTC""]","[""mMTC""]",False
+E3V3-DEV-134,Deploy connectivity supporting huge numbers of machine endpoints.,mmtc_semantic_paraphrase,semantic_paraphrase,mMTC,mMTC,True,[],"[""mMTC""]","[""mMTC""]",False
+E3V3-DEV-135,Establish communication for dense sensor and telemetry deployments.,mmtc_semantic_paraphrase,semantic_paraphrase,mMTC,mMTC,True,[],"[""mMTC""]","[""mMTC""]",False

@@ -1,0 +1,84 @@
+{
+  "release": "experiment2a-frozen-v1.0",
+  "created_utc": "2026-09-28T17:38:48.429950+00:00",
+  "benchmark_intents": 200,
+  "raw_observations": 600,
+  "pipelines": [
+    "direct",
+    "cir",
+    "proposed"
+  ],
+  "primary_results": {
+    "direct_accuracy": 0.69,
+    "cir_accuracy": 0.755,
+    "proposed_accuracy": 0.825,
+    "proposed_valid_acceptance": 0.97,
+    "proposed_invalid_rejection": 0.68
+  },
+  "e3_false_accepts": {
+    "implicit_unsupported": 12,
+    "contradictory": 11,
+    "compound_mixed": 7,
+    "prompt_adversarial": 2
+  },
+  "e3_false_rejects": 3,
+  "architecture_status": "Experiment 2A evaluated the frozen Experiment 1 implementation without post-test modification.",
+  "files": {
+    "experiment2_intents_200_v1.csv": {
+      "sha256": "96bcb4172dac8e9e499a9d9a4ac21354caf251a7a53ccbd470898fea02711753",
+      "bytes": 32584
+    },
+    "experiment2a_accuracy_exact_ci.csv": {
+      "sha256": "932b94b9c5afd5d5c82604b221c29971ef0f5a94fead4c952ed780ac7f8500b1",
+      "bytes": 223
+    },
+    "experiment2a_all_failures.csv": {
+      "sha256": "f9512c7739d7894bc1871e88f89573253dff38081f7bb0edf07e3dc924b36038",
+      "bytes": 132675
+    },
+    "experiment2a_false_accepts.csv": {
+      "sha256": "488af62f5b0a276548a506bf030de7709ac9becc4053329800b4e12655f85d52",
+      "bytes": 84041
+    },
+    "experiment2a_false_rejects.csv": {
+      "sha256": "534b915faa7ef96a79988d7da15f3593d57b50fcd2260786c55d1ebb8665e10e",
+      "bytes": 49051
+    },
+    "experiment2a_invalid_category_rejection_long.csv": {
+      "sha256": "5ec6ce293aeb4551e02ebeca40065e57bd094fbe0969eeed2bc8302e6d80d15c",
+      "bytes": 1249
+    },
+    "experiment2a_invalid_category_rejection_pivot.csv": {
+      "sha256": "0f7c2d22ece4bebd9415d00cb91eb1f5041d153654652f77cf85ebe304c162d1",
+      "bytes": 435
+    },
+    "experiment2a_latency_summary.csv": {
+      "sha256": "0d1c88acdfa8ab3b09e5f5c495b6dc34d3b40d8058270e8c83c14ecb53f39de3",
+      "bytes": 461
+    },
+    "experiment2a_latency_wilcoxon.csv": {
+      "sha256": "2741b1ef5ce2d522f52ef7d603edd515526df764fe5932127c04f255fa4beb63",
+      "bytes": 324
+    },
+    "experiment2a_paired_correctness_tests.csv": {
+      "sha256": "46be6298f4a84665b4026f21ce231b624122f75189364f2cf4f4126668612366",
+      "bytes": 202
+    },
+    "experiment2a_primary_metrics.csv": {
+      "sha256": "d9b908d86e252f3c06f362f5c677595fe85bda1ec39dbe61f2549f5bd4e3ad51",
+      "bytes": 441
+    },
+    "experiment2a_results_600.csv": {
+      "sha256": "8c705c41b98b1f32f45fe914f34f9de16898e9e7a7e8de1e50710946356e7417",
+      "bytes": 478727
+    },
+    "experiment2a_service_accuracy.csv": {
+      "sha256": "c935b67d7d27fad5c7c5ac9833503f2e7afbbe41178a1598ba58df27466f1d50",
+      "bytes": 65
+    },
+    "experiment2a_subcategory_rejection.csv": {
+      "sha256": "da48621120dc4d83ad577da69bf7f03094509e5adce5ba0cce8648fbe9e38629",
+      "bytes": 1993
+    }
+  }
+}

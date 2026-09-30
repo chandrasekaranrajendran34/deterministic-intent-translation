@@ -1,0 +1,4 @@
+Case,Unsupported input,Retained in E2 CIR?,E2 validation,E2 descriptor,E3 input audit,E3 descriptor
+I043,quantum_priority=10,No,Pass,Generated,Reject,Blocked
+I044,quantum_priority=10,No,Pass,Generated,Reject,Blocked
+I045,quantum_priority=10,No,Pass,Generated,Reject,Blocked

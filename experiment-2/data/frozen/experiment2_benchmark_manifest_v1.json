@@ -1,0 +1,35 @@
+{
+  "experiment": "Experiment 2",
+  "benchmark_version": "v1",
+  "dataset_file": "experiment2_intents_200_v1.csv",
+  "sha256": "96bcb4172dac8e9e499a9d9a4ac21354caf251a7a53ccbd470898fea02711753",
+  "rows": 200,
+  "valid": 100,
+  "invalid": 100,
+  "unique_ids": 200,
+  "unique_intents": 200,
+  "category_counts": {
+    "invalid_ambiguous": 12,
+    "invalid_compound_mixed": 10,
+    "invalid_contradictory": 12,
+    "invalid_explicit_unsupported_parameter": 12,
+    "invalid_implicit_unsupported_parameter": 12,
+    "invalid_incomplete": 8,
+    "invalid_out_of_range": 12,
+    "invalid_prompt_adversarial": 10,
+    "invalid_unsupported_concept": 12,
+    "valid_URLLC": 30,
+    "valid_compound": 10,
+    "valid_eMBB": 30,
+    "valid_mMTC": 30
+  },
+  "evaluation_pipelines": [
+    "E1_direct",
+    "E2_CIR",
+    "E3_proposed"
+  ],
+  "planned_model_calls": 600,
+  "freeze_rule": "Dataset and expected labels must not be changed after evaluation results are observed.",
+  "architecture_rule": "Experiment 2A uses the Experiment 1 E3 input audit without adaptation to Experiment 2 failures.",
+  "interpretation_rule": "Observed benchmark performance does not establish universal correctness, hallucination freedom, prompt-injection immunity, or formal standards compliance."
+}

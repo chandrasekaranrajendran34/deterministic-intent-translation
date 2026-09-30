@@ -1,0 +1,4 @@
+id,intent,category,subcategory,expected_valid,expected_service,difficulty,linguistic_form,constraint_type,notes
+EXP2-002,Provision enhanced mobile broadband connectivity for a 4K video service.,valid_eMBB,valid,True,eMBB,easy,semantic_paraphrase,valid_requirement,
+EXP2-133,Create URLLC with quantum_priority=10.,invalid_explicit_unsupported_parameter,unknown_name_value_parameter,False,,medium,explicit_assignment,unsupported_parameter,
+EXP2-145,Create URLLC and give it quantum priority.,invalid_implicit_unsupported_parameter,unsupported_natural_language_parameter,False,,hard,implicit_unsupported,unsupported_parameter,

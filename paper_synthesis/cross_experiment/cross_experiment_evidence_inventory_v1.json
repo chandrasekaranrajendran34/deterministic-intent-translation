@@ -1,0 +1,19 @@
+{
+  "artifact_counts_by_experiment": {
+    "E1": 42,
+    "E2A": 72,
+    "E2B_E3-v2": 51,
+    "E3-v3": 129
+  },
+  "artifact_id": "cross-experiment-evidence-inventory-v1.0",
+  "benchmark_modified": false,
+  "experiment_rerun": false,
+  "final_e3v3_experiment_manifest_sha256": "d169fad487c654cc818889f2b424ad8ee1d83e79196c0adc6d801655b3cd9a98",
+  "implementation_modified": false,
+  "methodological_rule": "Authoritative cross-experiment metrics will be derived from frozen/reproducibility artifacts where available rather than manually copied from prior conversation text.",
+  "model_called": false,
+  "post_evaluation_integrity_audit_manifest_sha256": "aa7dad7cf11f08628c2750d0470cf6159b3f75bf87ee3060ef7d8431129f5292",
+  "purpose": "Read-only inventory of candidate authoritative evidence for E1, E2A, E2B/E3-v2, and E3-v3 cross-experiment paper synthesis.",
+  "result_modified": false,
+  "total_candidate_artifacts": 294
+}

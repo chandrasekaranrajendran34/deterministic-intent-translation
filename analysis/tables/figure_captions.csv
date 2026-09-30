@@ -1,0 +1,6 @@
+Figure,File,Caption
+Fig. 1,fig01_confusion_matrices.pdf,"Confusion matrices for E1 (Direct), E2 (CIR), and E3 (Proposed) on the 50-intent benchmark. Invalid intent is treated as the positive class."
+Fig. 2,fig02_decision_performance.pdf,Observed decision accuracy and invalid-intent rejection recall across the three pipelines.
+Fig. 3,fig03_category_rejection.pdf,"Observed rejection rate by invalid-intent category. E2 accepted the three explicit unsupported-parameter probe instances, whereas E1 and E3 rejected them."
+Fig. 4,fig04_latency_distribution.pdf,Distribution of observed end-to-end latency across 50 independent model invocations per pipeline.
+Fig. 5,fig05_deterministic_stage_overhead.pdf,Local execution-time microbenchmark for the deterministic E3 stages. Stage execution counts differ because rejected requests terminate before later stages.

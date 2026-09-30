@@ -1,0 +1,31 @@
+{
+  "step": "24E-D3C",
+  "status": "E3V3_CAPABILITY_RESOURCE_REGISTERED",
+  "repair_class": "execution_packaging_dependency",
+  "algorithmic_change": false,
+  "source_profile": {
+    "path": "/content/experiment-1-v2-together/experiment-2b/configs/e3v2_capability_profile_v1.json",
+    "sha256": "ca7ff5c8f4292867a7a00e65bda7a083c69adb732e33ce9a56747f405065c0ba"
+  },
+  "reproducibility_profile": {
+    "path": "/content/experiment-1-v2-together/experiment-2b/reproducibility/e3v2_implementation_v1.0/configs/e3v2_capability_profile_v1.json",
+    "sha256": "ca7ff5c8f4292867a7a00e65bda7a083c69adb732e33ce9a56747f405065c0ba"
+  },
+  "e3v3_profile": {
+    "path": "/content/experiment-1-v2-together/experiment-2b/implementation/e3_v3/configs/e3v2_capability_profile_v1.json",
+    "sha256": "ca7ff5c8f4292867a7a00e65bda7a083c69adb732e33ce9a56747f405065c0ba"
+  },
+  "resolver": {
+    "path": "/content/experiment-1-v2-together/experiment-2b/implementation/e3_v3/src/capability_resolver.py",
+    "sha256": "e84dcb1b4e0f2a495c48c72aac3d3963eac51ed7529829378a5b84da3df58d3a",
+    "modified": false
+  },
+  "verification": {
+    "byte_identical": true,
+    "load_profile_pass": true,
+    "pre_guard_pass": true,
+    "llm_boundary_reached": true,
+    "api_calls": 0
+  },
+  "timestamp_utc": "2026-09-29T10:29:05.943980+00:00"
+}

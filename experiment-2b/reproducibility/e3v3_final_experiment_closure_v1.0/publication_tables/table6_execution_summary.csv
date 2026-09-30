@@ -1,0 +1,8 @@
+Measure,Result,Value
+LLM invocation,77/120,64.17%
+Parse success when LLM invoked,77/77,100.00%
+Descriptor success on accepted cases,63/63,100.00%
+Mean end-to-end latency,120 cases,1050.16 ms
+Median end-to-end latency,120 cases,944.86 ms
+P95 end-to-end latency,120 cases,3434.82 ms
+Mean LLM latency,77 invoked cases,1587.39 ms

@@ -1,0 +1,30 @@
+{
+  "artifact_id": "e3v3-publication-figures-v1.0",
+  "artifacts": {
+    "e3v3_publication_figures_v1_metadata.json": "f60030f34bad9c43c1b1c430c514d6df2cd71f478fb1f10669bc5dbb12f85879",
+    "figure1_family_accuracy.pdf": "b525e678243f478111b9f8bfed623e9bbac1bc86d3f1ffe81739cbce802e4809",
+    "figure1_family_accuracy.png": "4e713ea8b626d40fda8b82f5a770e84095ff6bcb000703f402bd323b3ceadc6e",
+    "figure2_failure_taxonomy.pdf": "7da4e9d0516d9c8cd93db866360da905b70f4044381b0b716b161f45d42444eb",
+    "figure2_failure_taxonomy.png": "2e9cb34719c84492b54f39b7b7ad5db831b547cc38e26593b5d8569edbb75eff",
+    "figure3_rejection_stages.pdf": "9ed0788ffcd72204d7574cf733e77794c0bec69a9744310ab2f4c6ca963f6309",
+    "figure3_rejection_stages.png": "4e0f1f6996ba8c695833c955b9dc3d90c52e30c6498640e7a7f7e1e07a3e581d",
+    "figure4_llm_invocation_rate.pdf": "8574f43da09927fb0ca2950c75e7cfba7c670cd6bbe1e9f9deaa59334c31168f",
+    "figure4_llm_invocation_rate.png": "be65456f15964ca836984ffa9fab5e103312b264b047995d1a23709145eb4c54"
+  },
+  "benchmark_modified": false,
+  "claim_boundary": "Figures describe performance on the frozen 120-case controlled held-out benchmark only.",
+  "figure_count": 4,
+  "formats": [
+    "PDF",
+    "PNG"
+  ],
+  "implementation_modified": false,
+  "model_rerun": false,
+  "png_resolution_dpi": 300,
+  "source_tables": {
+    "table2_family_performance.csv": "b79c833381135bd336b5d4538d1de4e2039ae0f24eeef669baf28d8bf150427e",
+    "table3_failure_taxonomy.csv": "fb99148fde157a2b105a491ead423edc52f36c6edf14a6cc593141a64ef65b53",
+    "table4_rejection_stages.csv": "22805557903855f0282680b67dd4021da68ba568419fd5ca9125bb2701e74666",
+    "table5_llm_invocation_by_family.csv": "c76d91535397efd19af36645ccd6a29c861e7831b5a2fbe1db9aa1b8c09f82a3"
+  }
+}

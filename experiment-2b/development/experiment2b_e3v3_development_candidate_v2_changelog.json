@@ -1,0 +1,51 @@
+{
+  "experiment": "experiment-2b",
+  "step": "23E",
+  "source_candidate": "/content/experiment-1-v2-together/experiment-2b/development/experiment2b_e3v3_development_160_candidate_v1.csv",
+  "source_candidate_sha256": "ffbbd0e6a84999c9641a01285c8b165d753e4d0efd3867719774d87a68cd57e9",
+  "source_overlap_audit": "/content/experiment-1-v2-together/experiment-2b/development/experiment2b_e3v3_development_overlap_audit_v1.csv",
+  "source_overlap_audit_sha256": "5853f22a57d4d62e4ec4fb14d792d9e3b208dacca87df502f85df7ec0973f694",
+  "output_candidate": "/content/experiment-1-v2-together/experiment-2b/development/experiment2b_e3v3_development_160_candidate_v2.csv",
+  "status": "UNFROZEN_CANDIDATE_V2",
+  "n_cases": 160,
+  "n_revised": 4,
+  "revised_case_ids": [
+    "E3V3-DEV-035",
+    "E3V3-DEV-073",
+    "E3V3-DEV-096",
+    "E3V3-DEV-137"
+  ],
+  "changes": [
+    {
+      "id": "E3V3-DEV-096",
+      "old_intent": "Provision URLLC with reliability of 99%.",
+      "new_intent": "For delay-critical traffic, establish a URLLC slice whose availability target is expressed as 98.75% reliability.",
+      "reason": "Replace critical candidate-to-frozen similarity while retaining percentage-form reliability normalization coverage."
+    },
+    {
+      "id": "E3V3-DEV-035",
+      "old_intent": "Provision eMBB with bandwidth at least 900 Mbps and at most 400 Mbps.",
+      "new_intent": "Create an eMBB slice capped below 450 Mbps while also requiring its bandwidth to exceed 780 Mbps.",
+      "reason": "Replace high-similarity contradiction template while retaining incompatible same-field constraints."
+    },
+    {
+      "id": "E3V3-DEV-073",
+      "old_intent": "Configure URLLC with latency exactly 4 ms.",
+      "new_intent": "For URLLC operation, fix the one-way latency target at precisely 4 milliseconds.",
+      "reason": "Increase linguistic independence while retaining exact latency/equality semantics."
+    },
+    {
+      "id": "E3V3-DEV-137",
+      "old_intent": "Create URLLC service requiring low latency.",
+      "new_intent": "Establish a URLLC slice intended for applications that need rapid response with minimal communication delay.",
+      "reason": "Increase linguistic diversity while retaining a supported qualitative low-latency requirement."
+    }
+  ],
+  "unchanged_cases": 156,
+  "labels_modified": false,
+  "metadata_modified": false,
+  "api_calls": 0,
+  "model_calls": 0,
+  "pipeline_executions": 0,
+  "next_required_step": "23F re-audit candidate v2 before freeze"
+}

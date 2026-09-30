@@ -1,0 +1,44 @@
+{
+  "artifact_id": "cross-experiment-authoritative-results-v1.0",
+  "benchmark_changed": false,
+  "created_utc": "2026-09-30T01:21:55.955841+00:00",
+  "experiment_rerun": false,
+  "experiments": [
+    "E1",
+    "E2A",
+    "E2B",
+    "E3-v3"
+  ],
+  "final_heldout": {
+    "accuracy": 0.8416666666666667,
+    "correct": 101,
+    "exact_ci95": [
+      0.763836,
+      0.901898
+    ],
+    "n": 120
+  },
+  "implementation_changed": false,
+  "interpretation_policy": {
+    "cross_benchmark_ranking_prohibited": true,
+    "development_evidence": [
+      "E1",
+      "E2A",
+      "E2B"
+    ],
+    "final_generalization_evidence": "E3-v3 frozen held-out evaluation",
+    "reason": "Benchmarks differ in population, construction, difficulty and experimental purpose."
+  },
+  "model_called": false,
+  "result_changed": false,
+  "rows": 9,
+  "source_hashes": {
+    "E1_ci": "a52280008fab0656c8efa241df6ae652364d46df69eb4458d4fdb6692a850563",
+    "E1_metrics": "89bb74382227c04649b593839e3f442e464731867a1be43b55d8b3807aa88b73",
+    "E2A_ci": "932b94b9c5afd5d5c82604b221c29971ef0f5a94fead4c952ed780ac7f8500b1",
+    "E2A_primary": "d9b908d86e252f3c06f362f5c677595fe85bda1ec39dbe61f2549f5bd4e3ad51",
+    "E2B_results": "1055be8d9a233fa2a1736f9ea20660361157c9690c9b3bb7e03d40e8f49c154d",
+    "E3V3_ci": "c8f3e2bf1cd468702c420e5ca9dd6b939fca1340690ff0aa424289f3fe45414e",
+    "E3V3_primary": "e2fdbd35f93514dc9eecd88c1925ee1c0dd86a98a986748d9cb3c374911229e0"
+  }
+}

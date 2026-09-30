@@ -1,0 +1,110 @@
+{
+  "created_utc": "2026-09-29T14:53:43.358286+00:00",
+  "design_id": "e3v3-r5-reliability-source-extraction-repair-v1.0",
+  "evidence": {
+    "dataset_sha256": "133c68842716f84a703478f7904c8cdd4f10cfdba683957ce23e473e81e7196f",
+    "dev096_diagnostic_sha256": "2bbf2a3308f7397db1baa1e9a5f4a5c9e158c8c133c4a1a490a9c6a8c383fe3b",
+    "r5_module_sha256": "43fe74225bb3c57cd145421296a91c52fb631e4f0786e9e5acbacde82b190830",
+    "runner_sha256": "f31a77275ab8fa1254cde0446bbc11659fa9072df5048e1806bb48d6d0145f6f",
+    "source_analyzer_sha256": "71a6f00172149f66250b3c17386eea98b18008eb65b097c327db705e94068dc8"
+  },
+  "existing_behavior": {
+    "canonical_range": "[0,1]",
+    "normalization": "percentage divided by 100",
+    "supported_example": "reliability >= 99.9%"
+  },
+  "implementation_constraints": [
+    "Patch source_analyzer only after this design is frozen.",
+    "Do not modify the R5 normalizer.",
+    "Do not modify the R4 reconciler.",
+    "Do not modify the frozen dataset.",
+    "Preserve historical source_analyzer before repair.",
+    "Run deterministic unit tests before any additional LLM call.",
+    "Re-run DEV-096 only after deterministic tests pass."
+  ],
+  "non_goals": [
+    "Do not interpret the word availability itself as reliability.",
+    "Do not create reliability constraints from qualitative phrases.",
+    "Do not broaden R5 into general semantic requirement resolution."
+  ],
+  "operator_policy": {
+    "explicit_operator": "Preserve the operator when explicitly present.",
+    "no_explicit_operator": "Treat a bare explicit numeric reliability target as an exact source threshold using '='.",
+    "prohibition": "Do not invent inequality semantics when the source contains no inequality operator."
+  },
+  "phase": "development",
+  "problem_statement": {
+    "case_id": "E3V3-DEV-096",
+    "observed_intent": "For delay-critical traffic, establish a URLLC slice whose availability target is expressed as 98.75% reliability.",
+    "observed_llm_reliability": "98.75%",
+    "observed_r5_changed": false,
+    "observed_rejection_stage": "cir_validation",
+    "observed_source_constraints": [],
+    "root_cause": "The deterministic source analyzer recognizes numeric reliability only when the lexical field precedes the numeric value. It does not currently recognize the reverse-order surface form '<percentage> reliability'."
+  },
+  "repair_id": "R5",
+  "repair_scope": {
+    "in_scope": [
+      "Explicit numeric percentage followed by the lexical field reliability",
+      "Explicit numeric decimal followed by the lexical field reliability where unambiguous",
+      "Reverse-order reliability surface forms such as '98.75% reliability'",
+      "Deterministic normalization of explicit percentage source evidence to the canonical 0-to-1 scale"
+    ],
+    "out_of_scope": [
+      "Qualitative reliability inference",
+      "Availability-to-reliability semantic equivalence inference",
+      "Service-type extraction",
+      "Coverage interpretation",
+      "R6 service extraction",
+      "R7 qualitative requirement resolution",
+      "LLM prompt changes",
+      "CIR schema changes",
+      "R4 reconciliation changes",
+      "R5 normalization algorithm changes",
+      "Frozen development dataset changes"
+    ]
+  },
+  "required_tests": [
+    {
+      "expected": "existing forward-order behavior remains supported",
+      "input": "reliability >= 99.9%"
+    },
+    {
+      "expected_field": "reliability",
+      "expected_operator": "=",
+      "expected_value": 0.9875,
+      "input": "98.75% reliability"
+    },
+    {
+      "expected_value": 0.9999,
+      "input": "99.99% reliability"
+    },
+    {
+      "expected_value": 0.999,
+      "input": "0.999 reliability"
+    },
+    {
+      "expected_value": 0.999,
+      "input": "reliability >= 0.999"
+    },
+    {
+      "expected": "no numeric reliability constraint",
+      "input": "high reliability"
+    },
+    {
+      "expected": "no numeric reliability constraint",
+      "input": "availability should be high"
+    }
+  ],
+  "source_grounding_policy": {
+    "percentage_example": {
+      "canonical_value": 0.9875,
+      "field": "reliability",
+      "operator": "=",
+      "source": "98.75% reliability",
+      "source_numeric_value": 98.75
+    },
+    "principle": "Only explicit numeric evidence in the source text may create a numeric reliability constraint."
+  },
+  "status": "DESIGN_FROZEN_BEFORE_IMPLEMENTATION"
+}

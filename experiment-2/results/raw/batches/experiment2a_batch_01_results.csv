@@ -1,0 +1,294 @@
+id,intent,category,expected_service,expected_valid,pipeline,model,parse_ok,latency_ms,finish_reason,prompt_tokens,completion_tokens,raw_response,predicted_service,schema_valid,hallucination_detected,unsupported_input_detected,input_audit_valid,mapping_found,descriptor_success,accepted,validation_errors,cir_json,descriptor_json
+EXP2-001,Create an eMBB slice for high-definition mobile video streaming.,valid_eMBB,eMBB,True,direct,Qwen/Qwen3.5-9B,True,1535.585846999311,stop,110,81,"{
+  ""rejected"": true,
+  ""reason"": ""The request lacks specific numeric requirements (e.g., bandwidth, latency, reliability) and network topology details necessary to generate an executable configuration. Additionally, the request does not specify the target network vendor or API standard (e.g., 3GPP, O-RAN) required to translate intent into a valid JSON schema.""
+}",,True,False,False,,False,False,False,,,
+EXP2-001,Create an eMBB slice for high-definition mobile video streaming.,valid_eMBB,eMBB,True,cir,Qwen/Qwen3.5-9B,True,1145.0500449991523,stop,223,70,"{
+  ""service_type"": ""eMBB"",
+  ""latency_ms"": null,
+  ""bandwidth_mbps"": null,
+  ""reliability"": null,
+  ""device_count"": null,
+  ""coverage"": null,
+  ""objective"": ""high-definition mobile video streaming""
+}",eMBB,True,False,False,,True,True,True,,"{""service_type"": ""eMBB"", ""latency_ms"": null, ""bandwidth_mbps"": null, ""reliability"": null, ""device_count"": null, ""coverage"": null, ""objective"": ""high-definition mobile video streaming""}","{""service_type"": ""eMBB"", ""service_profile"": {""latency_ms"": null, ""bandwidth_mbps"": null, ""reliability"": null, ""device_count"": null, ""coverage"": null, ""objective"": ""high-definition mobile video streaming""}, ""standards_mapping"": {""mapping_found"": true, ""mapping"": {""threegpp"": ""network-slice service profile"", ""oran"": ""RAN slice/A1 policy candidate""}, ""profile"": ""3GPP Rel-18 + O-RAN R004""}}"
+EXP2-001,Create an eMBB slice for high-definition mobile video streaming.,valid_eMBB,eMBB,True,proposed,Qwen/Qwen3.5-9B,True,996.9166330010921,stop,223,70,"{
+  ""service_type"": ""eMBB"",
+  ""latency_ms"": null,
+  ""bandwidth_mbps"": null,
+  ""reliability"": null,
+  ""device_count"": null,
+  ""coverage"": null,
+  ""objective"": ""high-definition mobile video streaming""
+}",eMBB,True,False,False,True,True,True,True,,"{""service_type"": ""eMBB"", ""latency_ms"": null, ""bandwidth_mbps"": null, ""reliability"": null, ""device_count"": null, ""coverage"": null, ""objective"": ""high-definition mobile video streaming""}","{""service_type"": ""eMBB"", ""service_profile"": {""latency_ms"": null, ""bandwidth_mbps"": null, ""reliability"": null, ""device_count"": null, ""coverage"": null, ""objective"": ""high-definition mobile video streaming""}, ""standards_mapping"": {""mapping_found"": true, ""mapping"": {""threegpp"": ""network-slice service profile"", ""oran"": ""RAN slice/A1 policy candidate""}, ""profile"": ""3GPP Rel-18 + O-RAN R004""}}"
+EXP2-002,Provision enhanced mobile broadband connectivity for a 4K video service.,valid_eMBB,eMBB,True,direct,Qwen/Qwen3.5-9B,True,1334.874131000106,stop,111,113,"{
+  ""slices"": [
+    {
+      ""sliceType"": ""eMBB"",
+      ""serviceDescription"": ""4K video streaming"",
+      ""requirements"": {
+        ""minBandwidth"": ""100 Mbps"",
+        ""maxLatency"": ""50 ms"",
+        ""jitter"": ""10 ms"",
+        ""reliability"": ""99.999%""
+      },
+      ""status"": ""provisioned""
+    }
+  ]
+}",,True,False,False,,False,True,True,,,"{""slices"": [{""sliceType"": ""eMBB"", ""serviceDescription"": ""4K video streaming"", ""requirements"": {""minBandwidth"": ""100 Mbps"", ""maxLatency"": ""50 ms"", ""jitter"": ""10 ms"", ""reliability"": ""99.999%""}, ""status"": ""provisioned""}]}"
+EXP2-002,Provision enhanced mobile broadband connectivity for a 4K video service.,valid_eMBB,eMBB,True,cir,Qwen/Qwen3.5-9B,True,1217.665770000167,stop,224,78,"{
+  ""service_type"": ""eMBB"",
+  ""latency_ms"": null,
+  ""bandwidth_mbps"": null,
+  ""reliability"": null,
+  ""device_count"": null,
+  ""coverage"": null,
+  ""objective"": ""Provision enhanced mobile broadband connectivity for a 4K video service.""
+}",eMBB,True,False,False,,True,True,True,,"{""service_type"": ""eMBB"", ""latency_ms"": null, ""bandwidth_mbps"": null, ""reliability"": null, ""device_count"": null, ""coverage"": null, ""objective"": ""Provision enhanced mobile broadband connectivity for a 4K video service.""}","{""service_type"": ""eMBB"", ""service_profile"": {""latency_ms"": null, ""bandwidth_mbps"": null, ""reliability"": null, ""device_count"": null, ""coverage"": null, ""objective"": ""Provision enhanced mobile broadband connectivity for a 4K video service.""}, ""standards_mapping"": {""mapping_found"": true, ""mapping"": {""threegpp"": ""network-slice service profile"", ""oran"": ""RAN slice/A1 policy candidate""}, ""profile"": ""3GPP Rel-18 + O-RAN R004""}}"
+EXP2-002,Provision enhanced mobile broadband connectivity for a 4K video service.,valid_eMBB,eMBB,True,proposed,Qwen/Qwen3.5-9B,True,1012.4190579990682,stop,224,78,"{
+  ""service_type"": ""eMBB"",
+  ""latency_ms"": null,
+  ""bandwidth_mbps"": null,
+  ""reliability"": null,
+  ""device_count"": null,
+  ""coverage"": null,
+  ""objective"": ""Provision enhanced mobile broadband connectivity for a 4K video service.""
+}",eMBB,True,False,False,True,True,True,True,,"{""service_type"": ""eMBB"", ""latency_ms"": null, ""bandwidth_mbps"": null, ""reliability"": null, ""device_count"": null, ""coverage"": null, ""objective"": ""Provision enhanced mobile broadband connectivity for a 4K video service.""}","{""service_type"": ""eMBB"", ""service_profile"": {""latency_ms"": null, ""bandwidth_mbps"": null, ""reliability"": null, ""device_count"": null, ""coverage"": null, ""objective"": ""Provision enhanced mobile broadband connectivity for a 4K video service.""}, ""standards_mapping"": {""mapping_found"": true, ""mapping"": {""threegpp"": ""network-slice service profile"", ""oran"": ""RAN slice/A1 policy candidate""}, ""profile"": ""3GPP Rel-18 + O-RAN R004""}}"
+EXP2-003,Provide a high-throughput slice for an augmented-reality application.,valid_eMBB,eMBB,True,direct,Qwen/Qwen3.5-9B,True,2172.650988000896,stop,110,164,"{
+  ""slices"": [
+    {
+      ""slice_id"": ""ar-high-throughput-001"",
+      ""slice_type"": ""enhanced-mobile-broadband"",
+      ""service_level_objective"": {
+        ""throughput_mbps"": 1000,
+        ""latency_ms"": 20,
+        ""jitter_ms"": 5,
+        ""reliability_percent"": 99.999
+      },
+      ""application_profile"": ""augmented-reality"",
+      ""priority"": ""high"",
+      ""resource_allocation"": {
+        ""compute_units"": ""auto-scale"",
+        ""bandwidth_guarantee"": ""dynamic""
+      }
+    }
+  ]
+}",,True,False,False,,False,True,True,,,"{""slices"": [{""slice_id"": ""ar-high-throughput-001"", ""slice_type"": ""enhanced-mobile-broadband"", ""service_level_objective"": {""throughput_mbps"": 1000, ""latency_ms"": 20, ""jitter_ms"": 5, ""reliability_percent"": 99.999}, ""application_profile"": ""augmented-reality"", ""priority"": ""high"", ""resource_allocation"": {""compute_units"": ""auto-scale"", ""bandwidth_guarantee"": ""dynamic""}}]}"
+EXP2-003,Provide a high-throughput slice for an augmented-reality application.,valid_eMBB,eMBB,True,cir,Qwen/Qwen3.5-9B,True,1470.3022279991274,stop,223,68,"{
+  ""service_type"": ""eMBB"",
+  ""latency_ms"": null,
+  ""bandwidth_mbps"": null,
+  ""reliability"": null,
+  ""device_count"": null,
+  ""coverage"": null,
+  ""objective"": ""high-throughput""
+}",eMBB,True,False,False,,True,True,True,,"{""service_type"": ""eMBB"", ""latency_ms"": null, ""bandwidth_mbps"": null, ""reliability"": null, ""device_count"": null, ""coverage"": null, ""objective"": ""high-throughput""}","{""service_type"": ""eMBB"", ""service_profile"": {""latency_ms"": null, ""bandwidth_mbps"": null, ""reliability"": null, ""device_count"": null, ""coverage"": null, ""objective"": ""high-throughput""}, ""standards_mapping"": {""mapping_found"": true, ""mapping"": {""threegpp"": ""network-slice service profile"", ""oran"": ""RAN slice/A1 policy candidate""}, ""profile"": ""3GPP Rel-18 + O-RAN R004""}}"
+EXP2-003,Provide a high-throughput slice for an augmented-reality application.,valid_eMBB,eMBB,True,proposed,Qwen/Qwen3.5-9B,True,1692.3382580007456,stop,223,75,"{
+  ""service_type"": ""eMBB"",
+  ""latency_ms"": null,
+  ""bandwidth_mbps"": null,
+  ""reliability"": null,
+  ""device_count"": null,
+  ""coverage"": null,
+  ""objective"": ""high-throughput slice for an augmented-reality application""
+}",eMBB,True,False,False,True,True,True,True,,"{""service_type"": ""eMBB"", ""latency_ms"": null, ""bandwidth_mbps"": null, ""reliability"": null, ""device_count"": null, ""coverage"": null, ""objective"": ""high-throughput slice for an augmented-reality application""}","{""service_type"": ""eMBB"", ""service_profile"": {""latency_ms"": null, ""bandwidth_mbps"": null, ""reliability"": null, ""device_count"": null, ""coverage"": null, ""objective"": ""high-throughput slice for an augmented-reality application""}, ""standards_mapping"": {""mapping_found"": true, ""mapping"": {""threegpp"": ""network-slice service profile"", ""oran"": ""RAN slice/A1 policy candidate""}, ""profile"": ""3GPP Rel-18 + O-RAN R004""}}"
+EXP2-004,Set up broadband connectivity for users streaming ultra-high-definition video.,valid_eMBB,eMBB,True,direct,Qwen/Qwen3.5-9B,True,1152.3750759988616,stop,109,77,"{
+  ""rejected"": true,
+  ""reason"": ""The request is ambiguous and lacks specific network-slicing parameters (e.g., bandwidth in Mbps, latency in ms, jitter limits, slice type, or user count) required to generate an executable configuration. Additionally, 'broadband connectivity' is a general service offering, not a specific slice intent.""
+}",,True,False,False,,False,False,False,,,
+EXP2-004,Set up broadband connectivity for users streaming ultra-high-definition video.,valid_eMBB,eMBB,True,cir,Qwen/Qwen3.5-9B,True,1257.2505430016463,stop,222,76,"{
+  ""service_type"": ""eMBB"",
+  ""latency_ms"": null,
+  ""bandwidth_mbps"": null,
+  ""reliability"": null,
+  ""device_count"": null,
+  ""coverage"": null,
+  ""objective"": ""Set up broadband connectivity for users streaming ultra-high-definition video.""
+}",eMBB,True,False,False,,True,True,True,,"{""service_type"": ""eMBB"", ""latency_ms"": null, ""bandwidth_mbps"": null, ""reliability"": null, ""device_count"": null, ""coverage"": null, ""objective"": ""Set up broadband connectivity for users streaming ultra-high-definition video.""}","{""service_type"": ""eMBB"", ""service_profile"": {""latency_ms"": null, ""bandwidth_mbps"": null, ""reliability"": null, ""device_count"": null, ""coverage"": null, ""objective"": ""Set up broadband connectivity for users streaming ultra-high-definition video.""}, ""standards_mapping"": {""mapping_found"": true, ""mapping"": {""threegpp"": ""network-slice service profile"", ""oran"": ""RAN slice/A1 policy candidate""}, ""profile"": ""3GPP Rel-18 + O-RAN R004""}}"
+EXP2-004,Set up broadband connectivity for users streaming ultra-high-definition video.,valid_eMBB,eMBB,True,proposed,Qwen/Qwen3.5-9B,True,5728.636813000776,stop,222,76,"{
+  ""service_type"": ""eMBB"",
+  ""latency_ms"": null,
+  ""bandwidth_mbps"": null,
+  ""reliability"": null,
+  ""device_count"": null,
+  ""coverage"": null,
+  ""objective"": ""Set up broadband connectivity for users streaming ultra-high-definition video.""
+}",eMBB,True,False,False,True,True,True,True,,"{""service_type"": ""eMBB"", ""latency_ms"": null, ""bandwidth_mbps"": null, ""reliability"": null, ""device_count"": null, ""coverage"": null, ""objective"": ""Set up broadband connectivity for users streaming ultra-high-definition video.""}","{""service_type"": ""eMBB"", ""service_profile"": {""latency_ms"": null, ""bandwidth_mbps"": null, ""reliability"": null, ""device_count"": null, ""coverage"": null, ""objective"": ""Set up broadband connectivity for users streaming ultra-high-definition video.""}, ""standards_mapping"": {""mapping_found"": true, ""mapping"": {""threegpp"": ""network-slice service profile"", ""oran"": ""RAN slice/A1 policy candidate""}, ""profile"": ""3GPP Rel-18 + O-RAN R004""}}"
+EXP2-005,Create an eMBB service with 500 Mbps bandwidth.,valid_eMBB,eMBB,True,direct,Qwen/Qwen3.5-9B,True,15997.564682000302,stop,111,50,"{
+  ""slices"": [
+    {
+      ""sliceType"": ""eMBB"",
+      ""bandwidth"": 500,
+      ""unit"": ""Mbps""
+    }
+  ]
+}",,True,False,False,,False,True,True,,,"{""slices"": [{""sliceType"": ""eMBB"", ""bandwidth"": 500, ""unit"": ""Mbps""}]}"
+EXP2-005,Create an eMBB service with 500 Mbps bandwidth.,valid_eMBB,eMBB,True,cir,Qwen/Qwen3.5-9B,True,947.3287989985693,stop,224,67,"{
+  ""service_type"": ""eMBB"",
+  ""latency_ms"": null,
+  ""bandwidth_mbps"": 500,
+  ""reliability"": null,
+  ""device_count"": null,
+  ""coverage"": null,
+  ""objective"": null
+}",eMBB,True,False,False,,True,True,True,,"{""service_type"": ""eMBB"", ""latency_ms"": null, ""bandwidth_mbps"": 500, ""reliability"": null, ""device_count"": null, ""coverage"": null, ""objective"": null}","{""service_type"": ""eMBB"", ""service_profile"": {""latency_ms"": null, ""bandwidth_mbps"": 500, ""reliability"": null, ""device_count"": null, ""coverage"": null, ""objective"": null}, ""standards_mapping"": {""mapping_found"": true, ""mapping"": {""threegpp"": ""network-slice service profile"", ""oran"": ""RAN slice/A1 policy candidate""}, ""profile"": ""3GPP Rel-18 + O-RAN R004""}}"
+EXP2-005,Create an eMBB service with 500 Mbps bandwidth.,valid_eMBB,eMBB,True,proposed,Qwen/Qwen3.5-9B,True,1673.6784479999187,stop,224,67,"{
+  ""service_type"": ""eMBB"",
+  ""latency_ms"": null,
+  ""bandwidth_mbps"": 500,
+  ""reliability"": null,
+  ""device_count"": null,
+  ""coverage"": null,
+  ""objective"": null
+}",eMBB,True,False,False,True,True,True,True,,"{""service_type"": ""eMBB"", ""latency_ms"": null, ""bandwidth_mbps"": 500, ""reliability"": null, ""device_count"": null, ""coverage"": null, ""objective"": null}","{""service_type"": ""eMBB"", ""service_profile"": {""latency_ms"": null, ""bandwidth_mbps"": 500, ""reliability"": null, ""device_count"": null, ""coverage"": null, ""objective"": null}, ""standards_mapping"": {""mapping_found"": true, ""mapping"": {""threegpp"": ""network-slice service profile"", ""oran"": ""RAN slice/A1 policy candidate""}, ""profile"": ""3GPP Rel-18 + O-RAN R004""}}"
+EXP2-006,Provision a mobile broadband slice requiring 300 Mbps throughput.,valid_eMBB,eMBB,True,direct,Qwen/Qwen3.5-9B,True,999.2733190010767,stop,111,64,"{
+  ""rejected"": true,
+  ""reason"": ""The request lacks critical parameters required to define a network slice, such as latency, jitter, packet loss, reliability, geographic scope, and user count. Additionally, the request does not specify the target network infrastructure or API context for execution.""
+}",,True,False,False,,False,False,False,,,
+EXP2-006,Provision a mobile broadband slice requiring 300 Mbps throughput.,valid_eMBB,eMBB,True,cir,Qwen/Qwen3.5-9B,True,855.2117919989541,stop,224,64,"{
+  ""service_type"": null,
+  ""latency_ms"": null,
+  ""bandwidth_mbps"": 300,
+  ""reliability"": null,
+  ""device_count"": null,
+  ""coverage"": null,
+  ""objective"": null
+}",,True,False,False,,False,False,False,SERVICE_TYPE_UNRESOLVED,"{""service_type"": null, ""latency_ms"": null, ""bandwidth_mbps"": 300, ""reliability"": null, ""device_count"": null, ""coverage"": null, ""objective"": null}",
+EXP2-006,Provision a mobile broadband slice requiring 300 Mbps throughput.,valid_eMBB,eMBB,True,proposed,Qwen/Qwen3.5-9B,True,1532.6167330003955,stop,224,64,"{
+  ""service_type"": null,
+  ""latency_ms"": null,
+  ""bandwidth_mbps"": 300,
+  ""reliability"": null,
+  ""device_count"": null,
+  ""coverage"": null,
+  ""objective"": null
+}",,True,False,False,True,False,False,False,SERVICE_TYPE_UNRESOLVED,"{""service_type"": null, ""latency_ms"": null, ""bandwidth_mbps"": 300, ""reliability"": null, ""device_count"": null, ""coverage"": null, ""objective"": null}",
+EXP2-007,Provide high-capacity connectivity for a virtual-reality entertainment service.,valid_eMBB,eMBB,True,direct,Qwen/Qwen3.5-9B,True,916.4449720010452,stop,110,71,"{
+  ""rejected"": true,
+  ""reason"": ""The request is ambiguous and lacks specific technical parameters required to generate an executable network-slicing configuration. Missing details include: required bandwidth (e.g., Gbps), latency thresholds (e.g., ms), jitter limits, number of users, service area, and priority level.""
+}",,True,False,False,,False,False,False,,,
+EXP2-007,Provide high-capacity connectivity for a virtual-reality entertainment service.,valid_eMBB,eMBB,True,cir,Qwen/Qwen3.5-9B,True,1007.2324030006712,stop,223,77,"{
+  ""service_type"": ""eMBB"",
+  ""latency_ms"": null,
+  ""bandwidth_mbps"": null,
+  ""reliability"": null,
+  ""device_count"": null,
+  ""coverage"": null,
+  ""objective"": ""Provide high-capacity connectivity for a virtual-reality entertainment service.""
+}",eMBB,True,False,False,,True,True,True,,"{""service_type"": ""eMBB"", ""latency_ms"": null, ""bandwidth_mbps"": null, ""reliability"": null, ""device_count"": null, ""coverage"": null, ""objective"": ""Provide high-capacity connectivity for a virtual-reality entertainment service.""}","{""service_type"": ""eMBB"", ""service_profile"": {""latency_ms"": null, ""bandwidth_mbps"": null, ""reliability"": null, ""device_count"": null, ""coverage"": null, ""objective"": ""Provide high-capacity connectivity for a virtual-reality entertainment service.""}, ""standards_mapping"": {""mapping_found"": true, ""mapping"": {""threegpp"": ""network-slice service profile"", ""oran"": ""RAN slice/A1 policy candidate""}, ""profile"": ""3GPP Rel-18 + O-RAN R004""}}"
+EXP2-007,Provide high-capacity connectivity for a virtual-reality entertainment service.,valid_eMBB,eMBB,True,proposed,Qwen/Qwen3.5-9B,True,1328.5877990001609,stop,223,77,"{
+  ""service_type"": ""eMBB"",
+  ""latency_ms"": null,
+  ""bandwidth_mbps"": null,
+  ""reliability"": null,
+  ""device_count"": null,
+  ""coverage"": null,
+  ""objective"": ""Provide high-capacity connectivity for a virtual-reality entertainment service.""
+}",eMBB,True,False,False,True,True,True,True,,"{""service_type"": ""eMBB"", ""latency_ms"": null, ""bandwidth_mbps"": null, ""reliability"": null, ""device_count"": null, ""coverage"": null, ""objective"": ""Provide high-capacity connectivity for a virtual-reality entertainment service.""}","{""service_type"": ""eMBB"", ""service_profile"": {""latency_ms"": null, ""bandwidth_mbps"": null, ""reliability"": null, ""device_count"": null, ""coverage"": null, ""objective"": ""Provide high-capacity connectivity for a virtual-reality entertainment service.""}, ""standards_mapping"": {""mapping_found"": true, ""mapping"": {""threegpp"": ""network-slice service profile"", ""oran"": ""RAN slice/A1 policy candidate""}, ""profile"": ""3GPP Rel-18 + O-RAN R004""}}"
+EXP2-008,Create a slice for bandwidth-intensive cloud gaming.,valid_eMBB,eMBB,True,direct,Qwen/Qwen3.5-9B,True,3843.3694040013506,stop,106,278,"{
+  ""slice"": {
+    ""sliceId"": ""cloud-gaming-001"",
+    ""sliceType"": ""enhanced-mobile-broadband"",
+    ""servedNetworkSlices"": [
+      {
+        ""sliceIdentifier"": ""5g-ee"",
+        ""sliceType"": ""eMBB"",
+        ""sliceSubType"": ""cloud-gaming""
+      }
+    ],
+    ""sliceCharacteristics"": {
+      ""bandwidth"": {
+        ""guaranteedBitRate"": 50000000,
+        ""maximumBitRate"": 100000000,
+        ""unit"": ""bits per second""
+      },
+      ""latency"": {
+        ""maximumPacketLossRate"": 0.001,
+        ""maximumPacketDelayBudget"": 20,
+        ""maximumPacketDelayVariation"": 5,
+        ""unit"": ""milliseconds""
+      },
+      ""reliability"": {
+        ""maximumPacketErrorRate"": 0.0001
+      }
+    },
+    ""networkSlicingPolicy"": {
+      ""sliceIsolation"": ""logical"",
+      ""resourceReservation"": ""dynamic""
+    }
+  }
+}",,True,False,False,,False,True,True,,,"{""slice"": {""sliceId"": ""cloud-gaming-001"", ""sliceType"": ""enhanced-mobile-broadband"", ""servedNetworkSlices"": [{""sliceIdentifier"": ""5g-ee"", ""sliceType"": ""eMBB"", ""sliceSubType"": ""cloud-gaming""}], ""sliceCharacteristics"": {""bandwidth"": {""guaranteedBitRate"": 50000000, ""maximumBitRate"": 100000000, ""unit"": ""bits per second""}, ""latency"": {""maximumPacketLossRate"": 0.001, ""maximumPacketDelayBudget"": 20, ""maximumPacketDelayVariation"": 5, ""unit"": ""milliseconds""}, ""reliability"": {""maximumPacketErrorRate"": 0.0001}}, ""networkSlicingPolicy"": {""sliceIsolation"": ""logical"", ""resourceReservation"": ""dynamic""}}}"
+EXP2-008,Create a slice for bandwidth-intensive cloud gaming.,valid_eMBB,eMBB,True,cir,Qwen/Qwen3.5-9B,True,1242.5378670013743,stop,219,70,"{
+  ""service_type"": ""eMBB"",
+  ""latency_ms"": null,
+  ""bandwidth_mbps"": null,
+  ""reliability"": null,
+  ""device_count"": null,
+  ""coverage"": null,
+  ""objective"": ""bandwidth-intensive cloud gaming""
+}",eMBB,True,False,False,,True,True,True,,"{""service_type"": ""eMBB"", ""latency_ms"": null, ""bandwidth_mbps"": null, ""reliability"": null, ""device_count"": null, ""coverage"": null, ""objective"": ""bandwidth-intensive cloud gaming""}","{""service_type"": ""eMBB"", ""service_profile"": {""latency_ms"": null, ""bandwidth_mbps"": null, ""reliability"": null, ""device_count"": null, ""coverage"": null, ""objective"": ""bandwidth-intensive cloud gaming""}, ""standards_mapping"": {""mapping_found"": true, ""mapping"": {""threegpp"": ""network-slice service profile"", ""oran"": ""RAN slice/A1 policy candidate""}, ""profile"": ""3GPP Rel-18 + O-RAN R004""}}"
+EXP2-008,Create a slice for bandwidth-intensive cloud gaming.,valid_eMBB,eMBB,True,proposed,Qwen/Qwen3.5-9B,True,1770.4067539998505,stop,219,70,"{
+  ""service_type"": ""eMBB"",
+  ""latency_ms"": null,
+  ""bandwidth_mbps"": null,
+  ""reliability"": null,
+  ""device_count"": null,
+  ""coverage"": null,
+  ""objective"": ""bandwidth-intensive cloud gaming""
+}",eMBB,True,False,False,True,True,True,True,,"{""service_type"": ""eMBB"", ""latency_ms"": null, ""bandwidth_mbps"": null, ""reliability"": null, ""device_count"": null, ""coverage"": null, ""objective"": ""bandwidth-intensive cloud gaming""}","{""service_type"": ""eMBB"", ""service_profile"": {""latency_ms"": null, ""bandwidth_mbps"": null, ""reliability"": null, ""device_count"": null, ""coverage"": null, ""objective"": ""bandwidth-intensive cloud gaming""}, ""standards_mapping"": {""mapping_found"": true, ""mapping"": {""threegpp"": ""network-slice service profile"", ""oran"": ""RAN slice/A1 policy candidate""}, ""profile"": ""3GPP Rel-18 + O-RAN R004""}}"
+EXP2-009,Set up enhanced mobile broadband for a crowded sports venue.,valid_eMBB,eMBB,True,direct,Qwen/Qwen3.5-9B,True,1541.8261240010906,stop,108,77,"{
+  ""rejected"": true,
+  ""reason"": ""The request is ambiguous and lacks specific numeric requirements (e.g., bandwidth, latency, user count, QoS thresholds) necessary to generate an executable network-slicing configuration. Additionally, setting up infrastructure for a physical venue is an operational task, not a direct translation of intent into a static JSON configuration.""
+}",,True,False,False,,False,False,False,,,
+EXP2-009,Set up enhanced mobile broadband for a crowded sports venue.,valid_eMBB,eMBB,True,cir,Qwen/Qwen3.5-9B,True,1259.8294859999442,stop,221,64,"{
+  ""service_type"": ""eMBB"",
+  ""latency_ms"": null,
+  ""bandwidth_mbps"": null,
+  ""reliability"": null,
+  ""device_count"": null,
+  ""coverage"": null,
+  ""objective"": null
+}",eMBB,True,False,False,,True,True,True,,"{""service_type"": ""eMBB"", ""latency_ms"": null, ""bandwidth_mbps"": null, ""reliability"": null, ""device_count"": null, ""coverage"": null, ""objective"": null}","{""service_type"": ""eMBB"", ""service_profile"": {""latency_ms"": null, ""bandwidth_mbps"": null, ""reliability"": null, ""device_count"": null, ""coverage"": null, ""objective"": null}, ""standards_mapping"": {""mapping_found"": true, ""mapping"": {""threegpp"": ""network-slice service profile"", ""oran"": ""RAN slice/A1 policy candidate""}, ""profile"": ""3GPP Rel-18 + O-RAN R004""}}"
+EXP2-009,Set up enhanced mobile broadband for a crowded sports venue.,valid_eMBB,eMBB,True,proposed,Qwen/Qwen3.5-9B,True,926.7775689986593,stop,221,64,"{
+  ""service_type"": ""eMBB"",
+  ""latency_ms"": null,
+  ""bandwidth_mbps"": null,
+  ""reliability"": null,
+  ""device_count"": null,
+  ""coverage"": null,
+  ""objective"": null
+}",eMBB,True,False,False,True,True,True,True,,"{""service_type"": ""eMBB"", ""latency_ms"": null, ""bandwidth_mbps"": null, ""reliability"": null, ""device_count"": null, ""coverage"": null, ""objective"": null}","{""service_type"": ""eMBB"", ""service_profile"": {""latency_ms"": null, ""bandwidth_mbps"": null, ""reliability"": null, ""device_count"": null, ""coverage"": null, ""objective"": null}, ""standards_mapping"": {""mapping_found"": true, ""mapping"": {""threegpp"": ""network-slice service profile"", ""oran"": ""RAN slice/A1 policy candidate""}, ""profile"": ""3GPP Rel-18 + O-RAN R004""}}"
+EXP2-010,Provide an eMBB slice for high-speed internet access at a convention center.,valid_eMBB,eMBB,True,direct,Qwen/Qwen3.5-9B,True,1760.3746860004321,stop,113,126,"{
+  ""slices"": [
+    {
+      ""sliceType"": ""eMBB"",
+      ""serviceArea"": ""convention_center"",
+      ""useCase"": ""high_speed_internet_access"",
+      ""parameters"": {
+        ""maxDataRate"": ""1000Mbps"",
+        ""minDataRate"": ""100Mbps"",
+        ""latency"": ""10ms"",
+        ""reliability"": ""99.999%"",
+        ""userDensity"": ""high""
+      }
+    }
+  ]
+}",,True,False,False,,False,True,True,,,"{""slices"": [{""sliceType"": ""eMBB"", ""serviceArea"": ""convention_center"", ""useCase"": ""high_speed_internet_access"", ""parameters"": {""maxDataRate"": ""1000Mbps"", ""minDataRate"": ""100Mbps"", ""latency"": ""10ms"", ""reliability"": ""99.999%"", ""userDensity"": ""high""}}]}"
+EXP2-010,Provide an eMBB slice for high-speed internet access at a convention center.,valid_eMBB,eMBB,True,cir,Qwen/Qwen3.5-9B,True,1240.8701200001815,stop,226,73,"{
+  ""service_type"": ""eMBB"",
+  ""latency_ms"": null,
+  ""bandwidth_mbps"": null,
+  ""reliability"": null,
+  ""device_count"": null,
+  ""coverage"": null,
+  ""objective"": ""high-speed internet access at a convention center""
+}",eMBB,True,False,False,,True,True,True,,"{""service_type"": ""eMBB"", ""latency_ms"": null, ""bandwidth_mbps"": null, ""reliability"": null, ""device_count"": null, ""coverage"": null, ""objective"": ""high-speed internet access at a convention center""}","{""service_type"": ""eMBB"", ""service_profile"": {""latency_ms"": null, ""bandwidth_mbps"": null, ""reliability"": null, ""device_count"": null, ""coverage"": null, ""objective"": ""high-speed internet access at a convention center""}, ""standards_mapping"": {""mapping_found"": true, ""mapping"": {""threegpp"": ""network-slice service profile"", ""oran"": ""RAN slice/A1 policy candidate""}, ""profile"": ""3GPP Rel-18 + O-RAN R004""}}"
+EXP2-010,Provide an eMBB slice for high-speed internet access at a convention center.,valid_eMBB,eMBB,True,proposed,Qwen/Qwen3.5-9B,True,1021.7708300006052,stop,226,73,"{
+  ""service_type"": ""eMBB"",
+  ""latency_ms"": null,
+  ""bandwidth_mbps"": null,
+  ""reliability"": null,
+  ""device_count"": null,
+  ""coverage"": null,
+  ""objective"": ""high-speed internet access at a convention center""
+}",eMBB,True,False,False,True,True,True,True,,"{""service_type"": ""eMBB"", ""latency_ms"": null, ""bandwidth_mbps"": null, ""reliability"": null, ""device_count"": null, ""coverage"": null, ""objective"": ""high-speed internet access at a convention center""}","{""service_type"": ""eMBB"", ""service_profile"": {""latency_ms"": null, ""bandwidth_mbps"": null, ""reliability"": null, ""device_count"": null, ""coverage"": null, ""objective"": ""high-speed internet access at a convention center""}, ""standards_mapping"": {""mapping_found"": true, ""mapping"": {""threegpp"": ""network-slice service profile"", ""oran"": ""RAN slice/A1 policy candidate""}, ""profile"": ""3GPP Rel-18 + O-RAN R004""}}"

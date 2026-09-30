@@ -1,0 +1,23 @@
+{
+  "artifact_id": "core-manuscript-claim-audit-v2.0",
+  "claim_id_coverage": 0.9286,
+  "created_utc": "2026-09-30T01:51:53.007863+00:00",
+  "experiment_modified": false,
+  "failed_checks": 0,
+  "hallucination_free_negated_occurrences": 2,
+  "hallucination_free_occurrences": 2,
+  "input_hashes": {
+    "core": "572fc596c8f2bedcb4f44dac6b3a5bfcd176d38fd4f58a9efa88b65d51d52fa2",
+    "v1_csv": "69a2c9396f515d63b1c1f6d06442a7a5f4c017f066ed789da41ef4e0c1b798b5",
+    "v1_json": "9bb2a0e9a796db9630c4be98874c8a69c2eb98ea8e043dbbc14d5e9eff54b28e",
+    "v1_md": "b398208d86be965ec9527558b0bab715521b3d6aadf1534d43a89ecba33e23b8"
+  },
+  "manuscript_modified": false,
+  "model_api_called": false,
+  "official_result_changed": false,
+  "passed_checks": 40,
+  "reason": "P01 false-positive correction for explicitly negated hallucination-free limitation statements",
+  "supersedes": "core-manuscript-claim-audit-v1.0",
+  "total_checks": 40,
+  "v1_audit_modified": false
+}

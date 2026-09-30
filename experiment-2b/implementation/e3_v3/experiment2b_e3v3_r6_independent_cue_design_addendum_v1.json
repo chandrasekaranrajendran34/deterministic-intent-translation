@@ -1,0 +1,115 @@
+{
+  "created_utc": "2026-09-29T16:14:14.495834+00:00",
+  "design_id": "e3v3-r6-independent-cue-refinement-v1.0",
+  "diagnosis": {
+    "URLLC_DELAY": true,
+    "URLLC_RELIABILITY_CONTROL": true,
+    "cause": "The same lexical cue, mission-critical, occurs in both required URLLC semantic groups. Therefore one phrase can satisfy both sides of the two-group rule.",
+    "classification": "semantic-signature evidence-independence defect"
+  },
+  "evaluation_policy": {
+    "api_calls": 0,
+    "family_evaluation": "Re-evaluate frozen 20-case R6 family only after unit tests pass.",
+    "llm_calls": 0,
+    "next_step": "Implement in a new versioned resolver module.",
+    "runner_integration": "Only after deterministic family evaluation passes.",
+    "then": "Run deterministic residual and regression tests."
+  },
+  "implementation_scope": {
+    "allowed": [
+      "Add deterministic cue-match helper that returns matched lexical cues rather than only a boolean.",
+      "Require distinct matched cues across the two URLLC semantic groups.",
+      "Preserve the previously added mission-critical entries in URLLC_RELIABILITY_CONTROL."
+    ],
+    "not_allowed": [
+      "Do not weaken the two-group rule.",
+      "Do not make mission-critical alone sufficient.",
+      "Do not make real-time alone sufficient.",
+      "Do not add new service vocabulary.",
+      "Do not modify eMBB semantics.",
+      "Do not modify mMTC semantics.",
+      "Do not modify canonical patterns.",
+      "Do not modify conflict handling.",
+      "Do not modify frozen dataset.",
+      "Do not modify CIR schema.",
+      "Do not modify LLM prompt.",
+      "Do not modify R1-R5."
+    ]
+  },
+  "provenance": {
+    "dataset": {
+      "path": "/content/experiment-1-v2-together/experiment-2b/data/frozen/experiment2b_e3v3_development_160_v1.csv",
+      "sha256": "133c68842716f84a703478f7904c8cdd4f10cfdba683957ce23e473e81e7196f"
+    },
+    "final_module": {
+      "path": "/content/experiment-1-v2-together/experiment-2b/implementation/e3_v3/src/service_type_resolver_r6_final.py",
+      "sha256": "289bdb0e884b4741268a71053a742d6b3fed75b81011420ed46acfdfdf27ed84"
+    },
+    "old_module": {
+      "path": "/content/experiment-1-v2-together/experiment-2b/implementation/e3_v3/src/service_type_resolver_r6.py",
+      "sha256": "164a90fc517b10b622dadeda732484ea6b9fb12fc1f7d9da55897357787bfd8f"
+    },
+    "old_results": {
+      "path": "/content/experiment-1-v2-together/experiment-2b/implementation/e3_v3/results/development/experiment2b_e3v3_r6_deterministic_20_results_v1.csv",
+      "sha256": "25df2ab8cf8dd8e695a12f938b478d9a8ba53505299cff040c4a72f5212c4d91"
+    },
+    "repair_design": {
+      "path": "/content/experiment-1-v2-together/experiment-2b/implementation/e3_v3/experiment2b_e3v3_r6_residual_repair_design_v1.json",
+      "sha256": "664fedde300a60633afa912b8bd5330ed22c4765cdda0902290805d59d77d02b"
+    }
+  },
+  "refinement": {
+    "URLLC_rule": "Require at least one delay/criticality cue and at least one reliability/control cue whose matched normalized cue strings are distinct.",
+    "canonical_resolution_unchanged": true,
+    "conflict_policy_unchanged": true,
+    "expected_dev126_evidence": {
+      "criticality_cue": "mission-critical",
+      "resolution": "URLLC",
+      "timing_cue": "real-time"
+    },
+    "expected_negative_evidence": {
+      "available_distinct_cues": [
+        "mission-critical"
+      ],
+      "intent": "Provide mission-critical connectivity.",
+      "resolution": null
+    },
+    "principle": "A semantic service signature requiring multiple cue groups must be supported by distinct matched lexical evidence. The same matched cue must not independently satisfy two required groups."
+  },
+  "required_tests": [
+    {
+      "expected": "URLLC",
+      "intent": "Create connectivity suitable for mission-critical real-time exchanges."
+    },
+    {
+      "expected": null,
+      "intent": "Provide mission-critical connectivity."
+    },
+    {
+      "expected": null,
+      "intent": "Provide real-time connectivity."
+    },
+    {
+      "expected": "eMBB",
+      "intent": "Provide high-capacity mobile broadband."
+    },
+    {
+      "expected": "mMTC",
+      "intent": "Connect massive numbers of sensors."
+    },
+    {
+      "expected": null,
+      "intent": "Provide high-capacity mobile broadband for mission-critical real-time exchanges.",
+      "reason": "eMBB and URLLC signatures conflict"
+    }
+  ],
+  "status": "DESIGN_FROZEN_BEFORE_IMPLEMENTATION",
+  "trigger": {
+    "expected": null,
+    "failed_test": "mission_critical_alone",
+    "intent": "Provide mission-critical connectivity.",
+    "observed": "URLLC",
+    "residual_dev126": "PASS",
+    "step": "25M-6C"
+  }
+}

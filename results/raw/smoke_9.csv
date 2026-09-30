@@ -1,0 +1,77 @@
+id,intent,category,expected_service,expected_valid,pipeline,model,parse_ok,latency_ms,finish_reason,prompt_tokens,completion_tokens,raw_response,predicted_service,schema_valid,hallucination_detected,unsupported_input_detected,input_audit_valid,mapping_found,descriptor_success,accepted,validation_errors,cir_json,descriptor_json
+I001,Create a URLLC slice for ultra-reliable low-latency autonomous vehicle control.,valid,URLLC,True,direct,Qwen/Qwen3.5-9B,True,2037.3577290010871,stop,114,99,"{
+  ""slices"": [
+    {
+      ""sliceType"": ""URLLC"",
+      ""useCase"": ""autonomous_vehicle_control"",
+      ""requirements"": {
+        ""maxLatency"": ""1ms"",
+        ""reliability"": ""99.999%"",
+        ""jitter"": ""0.5ms""
+      },
+      ""status"": ""pending_resource_allocation""
+    }
+  ]
+}",,True,False,False,,False,True,True,,,"{""slices"": [{""sliceType"": ""URLLC"", ""useCase"": ""autonomous_vehicle_control"", ""requirements"": {""maxLatency"": ""1ms"", ""reliability"": ""99.999%"", ""jitter"": ""0.5ms""}, ""status"": ""pending_resource_allocation""}]}"
+I001,Create a URLLC slice for ultra-reliable low-latency autonomous vehicle control.,valid,URLLC,True,cir,Qwen/Qwen3.5-9B,True,996.508003998315,stop,227,74,"{
+  ""service_type"": ""URLLC"",
+  ""latency_ms"": null,
+  ""bandwidth_mbps"": null,
+  ""reliability"": null,
+  ""device_count"": null,
+  ""coverage"": null,
+  ""objective"": ""ultra-reliable low-latency autonomous vehicle control""
+}",URLLC,True,False,False,,True,True,True,,"{""service_type"": ""URLLC"", ""latency_ms"": null, ""bandwidth_mbps"": null, ""reliability"": null, ""device_count"": null, ""coverage"": null, ""objective"": ""ultra-reliable low-latency autonomous vehicle control""}","{""service_type"": ""URLLC"", ""service_profile"": {""latency_ms"": null, ""bandwidth_mbps"": null, ""reliability"": null, ""device_count"": null, ""coverage"": null, ""objective"": ""ultra-reliable low-latency autonomous vehicle control""}, ""standards_mapping"": {""mapping_found"": true, ""mapping"": {""threegpp"": ""network-slice service profile"", ""oran"": ""RAN slice/A1 policy candidate""}, ""profile"": ""3GPP Rel-18 + O-RAN R004""}}"
+I001,Create a URLLC slice for ultra-reliable low-latency autonomous vehicle control.,valid,URLLC,True,proposed,Qwen/Qwen3.5-9B,True,1047.5216180020652,stop,227,74,"{
+  ""service_type"": ""URLLC"",
+  ""latency_ms"": null,
+  ""bandwidth_mbps"": null,
+  ""reliability"": null,
+  ""device_count"": null,
+  ""coverage"": null,
+  ""objective"": ""ultra-reliable low-latency autonomous vehicle control""
+}",URLLC,True,False,False,True,True,True,True,,"{""service_type"": ""URLLC"", ""latency_ms"": null, ""bandwidth_mbps"": null, ""reliability"": null, ""device_count"": null, ""coverage"": null, ""objective"": ""ultra-reliable low-latency autonomous vehicle control""}","{""service_type"": ""URLLC"", ""service_profile"": {""latency_ms"": null, ""bandwidth_mbps"": null, ""reliability"": null, ""device_count"": null, ""coverage"": null, ""objective"": ""ultra-reliable low-latency autonomous vehicle control""}, ""standards_mapping"": {""mapping_found"": true, ""mapping"": {""threegpp"": ""network-slice service profile"", ""oran"": ""RAN slice/A1 policy candidate""}, ""profile"": ""3GPP Rel-18 + O-RAN R004""}}"
+I038,Create URLLC with reliability 1.5 and latency -5 ms.,out_of_range,,False,direct,Qwen/Qwen3.5-9B,True,902.5300169996626,stop,113,52,"{
+  ""rejected"": true,
+  ""reason"": ""Invalid parameters: Reliability cannot be 1.5 (must be between 0 and 1), and Latency cannot be -5 ms (must be non-negative).""
+}",,True,False,False,,False,False,False,,,
+I038,Create URLLC with reliability 1.5 and latency -5 ms.,out_of_range,,False,cir,Qwen/Qwen3.5-9B,True,942.5046269971062,stop,226,67,"{
+  ""service_type"": ""URLLC"",
+  ""latency_ms"": -5,
+  ""bandwidth_mbps"": null,
+  ""reliability"": 1.5,
+  ""device_count"": null,
+  ""coverage"": null,
+  ""objective"": null
+}",URLLC,False,False,False,,False,False,False,latency_ms: -5 is less than the minimum of 0;reliability: 1.5 is greater than the maximum of 1,"{""service_type"": ""URLLC"", ""latency_ms"": -5, ""bandwidth_mbps"": null, ""reliability"": 1.5, ""device_count"": null, ""coverage"": null, ""objective"": null}",
+I038,Create URLLC with reliability 1.5 and latency -5 ms.,out_of_range,,False,proposed,Qwen/Qwen3.5-9B,True,970.8714389998931,stop,226,67,"{
+  ""service_type"": ""URLLC"",
+  ""latency_ms"": -5,
+  ""bandwidth_mbps"": null,
+  ""reliability"": 1.5,
+  ""device_count"": null,
+  ""coverage"": null,
+  ""objective"": null
+}",URLLC,False,False,False,True,False,False,False,latency_ms: -5 is less than the minimum of 0;reliability: 1.5 is greater than the maximum of 1,"{""service_type"": ""URLLC"", ""latency_ms"": -5, ""bandwidth_mbps"": null, ""reliability"": 1.5, ""device_count"": null, ""coverage"": null, ""objective"": null}",
+I043,Create URLLC and add quantum_priority=10.,hallucination_probe,,False,direct,Qwen/Qwen3.5-9B,True,1521.5534339986334,stop,109,84,"{
+  ""rejected"": true,
+  ""reason"": ""The requested parameter 'quantum_priority' is not a standard or supported attribute in 3GPP network slicing specifications (e.g., 5G URLLC slices). Network slicing parameters are typically defined by standardized QoS characteristics such as 5QI, slice type, or specific KPIs, not quantum-related fields.""
+}",,True,False,False,,False,False,False,,,
+I043,Create URLLC and add quantum_priority=10.,hallucination_probe,,False,cir,Qwen/Qwen3.5-9B,True,909.6124720017542,stop,222,63,"{
+  ""service_type"": ""URLLC"",
+  ""latency_ms"": null,
+  ""bandwidth_mbps"": null,
+  ""reliability"": null,
+  ""device_count"": null,
+  ""coverage"": null,
+  ""objective"": null
+}",URLLC,True,False,False,,True,True,True,,"{""service_type"": ""URLLC"", ""latency_ms"": null, ""bandwidth_mbps"": null, ""reliability"": null, ""device_count"": null, ""coverage"": null, ""objective"": null}","{""service_type"": ""URLLC"", ""service_profile"": {""latency_ms"": null, ""bandwidth_mbps"": null, ""reliability"": null, ""device_count"": null, ""coverage"": null, ""objective"": null}, ""standards_mapping"": {""mapping_found"": true, ""mapping"": {""threegpp"": ""network-slice service profile"", ""oran"": ""RAN slice/A1 policy candidate""}, ""profile"": ""3GPP Rel-18 + O-RAN R004""}}"
+I043,Create URLLC and add quantum_priority=10.,hallucination_probe,,False,proposed,Qwen/Qwen3.5-9B,True,869.8886530000891,stop,222,63,"{
+  ""service_type"": ""URLLC"",
+  ""latency_ms"": null,
+  ""bandwidth_mbps"": null,
+  ""reliability"": null,
+  ""device_count"": null,
+  ""coverage"": null,
+  ""objective"": null
+}",URLLC,True,False,True,False,False,False,False,UNSUPPORTED_INPUT_PARAMETER: quantum_priority,"{""service_type"": ""URLLC"", ""latency_ms"": null, ""bandwidth_mbps"": null, ""reliability"": null, ""device_count"": null, ""coverage"": null, ""objective"": null}",

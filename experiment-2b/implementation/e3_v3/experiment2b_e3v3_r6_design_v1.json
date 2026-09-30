@@ -1,0 +1,184 @@
+{
+  "conflict_policy": {
+    "explicit_canonical_service": "Existing explicit canonical acronym/name matching remains authoritative unless contradictory explicit service evidence is detected.",
+    "multiple_service_signatures": "Do not guess. Return unresolved/None when more than one distinct service signature satisfies its decision rule.",
+    "no_signature": "Return unresolved/None."
+  },
+  "created_utc": "2026-09-29T15:56:12.405229+00:00",
+  "design_id": "e3v3-r6-service-type-extraction-v1.0",
+  "evaluation_policy": {
+    "development": "Use the frozen R6 family for development diagnostics only.",
+    "held_out": "Generalization must be evaluated only after R6/R7 closure and final E3-v3 implementation freeze.",
+    "no_claim": "Development-family success must not be described as independent generalization."
+  },
+  "implementation_constraints": [
+    "Create a new versioned analyzer; do not overwrite the R5 analyzer.",
+    "Do not modify the frozen development dataset.",
+    "Do not modify R1-R5 behavior outside service extraction.",
+    "Do not modify the LLM prompt.",
+    "Do not modify the CIR schema.",
+    "Do not use an embedding model or another LLM for R6.",
+    "Do not infer unsupported service classes.",
+    "Run deterministic unit tests before any LLM execution."
+  ],
+  "negative_boundaries": [
+    "high throughput alone must not imply eMBB",
+    "mobile alone must not imply eMBB",
+    "low latency alone must not imply URLLC",
+    "high reliability alone must not imply URLLC",
+    "sensors alone must not imply mMTC",
+    "many devices without a sufficiently explicit scale/device signature must not be broadened arbitrarily",
+    "generic objective or QoS language must not force a service type"
+  ],
+  "out_of_scope": [
+    "R7 qualitative requirement resolution",
+    "numeric constraint extraction",
+    "reliability normalization",
+    "R4 reconciliation",
+    "standards mapping",
+    "descriptor generation"
+  ],
+  "principle": "Closed-world deterministic semantic-signature matching. Classification requires a sufficiently specific combination of lexical cues; isolated generic QoS words are insufficient.",
+  "problem": {
+    "current_deterministic_matches": 2,
+    "current_deterministic_misses": 18,
+    "development_family_cases": 20,
+    "target": "Resolve supported service types from explicit semantic paraphrases without requiring eMBB/URLLC/mMTC acronyms."
+  },
+  "provenance": {
+    "analyzer": {
+      "path": "/content/experiment-1-v2-together/experiment-2b/implementation/e3_v3/src/source_analyzer_r5_final.py",
+      "sha256": "3c24b9d798b9a7694328134eac76f877aa190715d8ccd8cc1348fa49477fdab7"
+    },
+    "closure": {
+      "path": "/content/experiment-1-v2-together/experiment-2b/implementation/e3_v3/experiment2b_e3v3_r5_closure_manifest_v1.json",
+      "sha256": "166952c86151ac67fcd1d975f4d453cd1965a1454f82478aa40fec393b2c5875"
+    },
+    "dataset": {
+      "path": "/content/experiment-1-v2-together/experiment-2b/data/frozen/experiment2b_e3v3_development_160_v1.csv",
+      "sha256": "133c68842716f84a703478f7904c8cdd4f10cfdba683957ce23e473e81e7196f"
+    },
+    "normalizer": {
+      "path": "/content/experiment-1-v2-together/experiment-2b/implementation/e3_v3/src/reliability_normalization_r5_final.py",
+      "sha256": "4e0437b732209e83b43929229f6aa012723957b1109c84e014979556c75e123d"
+    },
+    "runner": {
+      "path": "/content/experiment-1-v2-together/experiment-2b/implementation/e3_v3/run_experiment2b_e3v3_r5_dev_v6.py",
+      "sha256": "968cf2eb124023202881da6aaba2b4452ca742eb120660d7e2803b829974ce49"
+    }
+  },
+  "repair_id": "R6",
+  "required_deterministic_tests": {
+    "conflict": [
+      "text satisfying both eMBB and URLLC signatures -> unresolved",
+      "text satisfying both URLLC and mMTC signatures -> unresolved"
+    ],
+    "negative": [
+      "high throughput -> unresolved",
+      "high reliability -> unresolved",
+      "low latency -> unresolved",
+      "mobile service -> unresolved",
+      "sensor service -> unresolved"
+    ],
+    "positive": [
+      "bandwidth-intensive mobile applications -> eMBB",
+      "high-capacity broadband access for mobile users -> eMBB",
+      "data-heavy mobile multimedia -> eMBB",
+      "extremely low delay and strong reliability -> URLLC",
+      "time-critical dependable control traffic -> URLLC",
+      "mission-critical real-time exchanges -> URLLC",
+      "massive numbers of distributed sensors -> mMTC",
+      "large-scale IoT device access -> mMTC",
+      "dense sensor and telemetry deployments -> mMTC"
+    ],
+    "regression": [
+      "explicit eMBB remains eMBB",
+      "explicit URLLC remains URLLC",
+      "explicit mMTC remains mMTC",
+      "enhanced mobile broadband remains eMBB",
+      "ultra-reliable low-latency remains URLLC",
+      "massive machine-type remains mMTC"
+    ]
+  },
+  "semantic_signatures": {
+    "URLLC": {
+      "concept_groups": {
+        "delay_or_criticality": [
+          "extremely low delay",
+          "low delay",
+          "minimal delay",
+          "latency-sensitive",
+          "delay-sensitive",
+          "time-critical",
+          "mission-critical",
+          "real-time",
+          "near-real-time",
+          "critical control"
+        ],
+        "reliability_or_control": [
+          "strong reliability",
+          "highly reliable",
+          "very high reliability",
+          "dependable",
+          "control traffic",
+          "control messages",
+          "critical control"
+        ]
+      },
+      "decision_rule": "Require evidence spanning delay/criticality and reliability/control semantics. A generic latency or reliability term alone must not classify URLLC."
+    },
+    "eMBB": {
+      "concept_groups": {
+        "capacity_or_rate": [
+          "high-throughput",
+          "high throughput",
+          "high-capacity",
+          "high capacity",
+          "high-speed",
+          "high speed",
+          "very high data throughput",
+          "bandwidth-intensive",
+          "data-heavy",
+          "demanding mobile data"
+        ],
+        "mobile_or_broadband_media": [
+          "mobile",
+          "mobile users",
+          "mobile applications",
+          "mobile multimedia",
+          "mobile data",
+          "broadband",
+          "rich media",
+          "multimedia"
+        ]
+      },
+      "decision_rule": "Require evidence spanning both high-capacity/rate and mobile/broadband/media semantics, except existing canonical eMBB/mobile-broadband patterns remain valid."
+    },
+    "mMTC": {
+      "concept_groups": {
+        "machine_or_iot": [
+          "devices",
+          "sensors",
+          "machine-type",
+          "machine endpoints",
+          "iot",
+          "telemetry"
+        ],
+        "scale_or_density": [
+          "very large population",
+          "massive numbers",
+          "dense",
+          "large-scale",
+          "huge numbers"
+        ]
+      },
+      "decision_rule": "Require evidence spanning scale/density and machine/device/IoT semantics, except existing canonical mMTC patterns remain valid."
+    }
+  },
+  "status": "DESIGN_FROZEN_BEFORE_IMPLEMENTATION",
+  "supported_services": [
+    "eMBB",
+    "URLLC",
+    "mMTC"
+  ]
+}

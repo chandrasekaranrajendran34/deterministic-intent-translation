@@ -1,0 +1,14 @@
+item,priority,title,paper_location,purpose
+Fig. 1,MAIN,Proposed deterministic intent-translation architecture,III,Show NL intent → source analysis → LLM/CIR → reconciliation → preservation → validation → mapping/descriptor.
+Table I,MAIN,Experimental evaluation sequence,IV-A,"Define E1, E2A, E2B, and E3-v3 roles and benchmark sizes."
+Table II,MAIN,Cross-experiment decision results,V-A/V-B,Summarize authoritative decision metrics while warning that benchmarks differ.
+Table III,MAIN,Final E3-v3 held-out performance,V-C,Primary final metrics including exact confidence interval.
+Fig. 2,MAIN,Held-out decision accuracy by family H1-H8,V-C,Show variation across held-out benchmark families.
+Fig. 3,MAIN,Residual held-out failure taxonomy T1-T6,V-D,Visualize the 19 retained held-out errors.
+Table IV,MAIN,Residual failure classes,V-D,"Describe T1-T6, counts, and interpretation."
+Fig. 4,OPTIONAL_MAIN,Rejection-stage distribution,V-C,Show where deterministic rejection occurred in the final pipeline.
+Fig. 5,SUPPLEMENTARY,LLM invocation by held-out family,Supplement,Show how deterministic pre-gates reduce LLM invocation.
+Table S1,SUPPLEMENTARY,Detailed held-out family results,Supplement,Provide per-family counts and accuracy.
+Table S2,SUPPLEMENTARY,Final rejection-stage counts,Supplement,"Provide source gate, consistency, CIR validation, R7, and preservation counts."
+Table S3,SUPPLEMENTARY,LLM invocation and parsing details,Supplement,"Provide invocation, parse-success, and related execution counts."
+Table S4,SUPPLEMENTARY,Runtime and descriptor-generation details,Supplement,Provide end-to-end latency and descriptor-generation measurements.

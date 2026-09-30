@@ -1,0 +1,84 @@
+{
+  "benchmark_id": "experiment2b-unseen-v1.0",
+  "purpose": "Primary unseen evaluation of the frozen E3-v2 deterministic guard architecture.",
+  "created_utc": "2026-09-29T07:01:27.781126+00:00",
+  "total_intents": 120,
+  "expected_valid_total": 45,
+  "expected_invalid_total": 75,
+  "categories": [
+    {
+      "category": "valid_semantic_paraphrase",
+      "count": 30,
+      "expected_valid": true,
+      "purpose": "Evaluate generalization to valid linguistic forms and semantic paraphrases."
+    },
+    {
+      "category": "valid_compound",
+      "count": 15,
+      "expected_valid": true,
+      "purpose": "Evaluate valid intents containing multiple compatible service requirements."
+    },
+    {
+      "category": "invalid_implicit_unsupported_capability",
+      "count": 15,
+      "expected_valid": false,
+      "purpose": "Evaluate closed-world rejection of captured requirements that cannot be resolved against the frozen capability profile."
+    },
+    {
+      "category": "invalid_contradictory_constraints",
+      "count": 15,
+      "expected_valid": false,
+      "purpose": "Evaluate deterministic detection of mutually incompatible source constraints."
+    },
+    {
+      "category": "invalid_mixed_validity_compound",
+      "count": 15,
+      "expected_valid": false,
+      "purpose": "Evaluate failure containment when a valid requirement is combined with an invalid, unsupported, or conflicting requirement."
+    },
+    {
+      "category": "invalid_boundary_out_of_range",
+      "count": 10,
+      "expected_valid": false,
+      "purpose": "Evaluate deterministic handling of invalid numeric boundaries and out-of-range values."
+    },
+    {
+      "category": "invalid_adversarial_bypass",
+      "count": 10,
+      "expected_valid": false,
+      "purpose": "Evaluate source-boundary rejection of attempts to bypass, disable, ignore, or manipulate validation and policy controls."
+    },
+    {
+      "category": "invalid_ambiguous_incomplete",
+      "count": 10,
+      "expected_valid": false,
+      "purpose": "Evaluate handling of unresolved or materially incomplete slice intents."
+    }
+  ],
+  "dataset_fields": [
+    "id",
+    "intent",
+    "category",
+    "subcategory",
+    "expected_valid",
+    "expected_service",
+    "difficulty",
+    "linguistic_form",
+    "constraint_type",
+    "notes"
+  ],
+  "construction_rules": [
+    "Do not copy Experiment 1 or Experiment 2A intent sentences.",
+    "Do not create simple lexical substitutions of Experiment 2A failure examples.",
+    "Use new sentence structures and combinations.",
+    "Unsupported means unsupported by the frozen experimental capability profile, not universally impossible or prohibited by standards.",
+    "Ground-truth labels must be assigned before any E3-v2 execution.",
+    "The frozen E3-v2 implementation must not be modified in response to benchmark outcomes.",
+    "Any implementation defect discovered after benchmark execution must be documented and versioned separately."
+  ],
+  "claim_boundary": "Experiment 2B evaluates robustness and generalization within the controlled benchmark and frozen experimental capability profile. Results must not be interpreted as universal natural-language understanding, universal hallucination prevention, or formal 3GPP/O-RAN standards certification.",
+  "frozen_implementation": {
+    "freeze_id": "e3v2-implementation-v1.0",
+    "manifest": "reproducibility/e3v2_implementation_v1.0/e3v2_implementation_manifest_v1.json"
+  }
+}

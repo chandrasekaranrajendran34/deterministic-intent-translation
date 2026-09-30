@@ -1,0 +1,28 @@
+{
+  "experiment": "experiment-2b",
+  "step": "23C",
+  "dataset_role": "E3-v3 development candidate",
+  "status": "UNFROZEN_CANDIDATE",
+  "n_cases": 160,
+  "valid_cases": 117,
+  "invalid_cases": 43,
+  "family_counts": {
+    "DEV-R1": 30,
+    "DEV-R2": 25,
+    "DEV-R3": 20,
+    "DEV-R4": 20,
+    "DEV-R5": 20,
+    "DEV-R6": 20,
+    "DEV-R7": 15,
+    "DEV-X": 10
+  },
+  "specification_file": "/content/experiment-1-v2-together/experiment-2b/development/experiment2b_e3v3_development_dataset_spec_v1.json",
+  "specification_sha256": "a4992748baec846210bb368007c2ed3951126c063267aed6a9e11c2ff95dae4b",
+  "candidate_dataset_file": "/content/experiment-1-v2-together/experiment-2b/development/experiment2b_e3v3_development_160_candidate_v1.csv",
+  "candidate_dataset_sha256": "ffbbd0e6a84999c9641a01285c8b165d753e4d0efd3867719774d87a68cd57e9",
+  "api_calls": 0,
+  "model_calls": 0,
+  "pipeline_executions": 0,
+  "next_required_step": "23D overlap/leakage audit",
+  "warning": "Do not use this candidate for E3-v3 development until Step 23D leakage audit and subsequent freeze."
+}

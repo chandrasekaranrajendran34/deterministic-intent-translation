@@ -1,0 +1,2 @@
+id,intent,family_id,repair_id,subcategory,expected_valid,expected_service,difficulty,linguistic_form,constraint_type,control_type,notes
+E3V3-DEV-076,Provision eMBB with at least 420 Mbps bandwidth and latency below 35 ms.,DEV-R4,R4,two_constraint_compound,True,eMBB,medium,compound,multi_field,none,All explicitly stated source constraints should survive CIR construction.

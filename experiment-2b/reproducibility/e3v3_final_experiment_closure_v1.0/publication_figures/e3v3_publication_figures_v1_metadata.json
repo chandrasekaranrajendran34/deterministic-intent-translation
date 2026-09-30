@@ -1,0 +1,22 @@
+{
+  "figure1_family_accuracy": {
+    "interpretation": "Descriptive family-level performance on the frozen controlled held-out benchmark.",
+    "source": "table2_family_performance.csv",
+    "title": "E3-v3 Decision Accuracy by Held-Out Benchmark Family"
+  },
+  "figure2_failure_taxonomy": {
+    "interpretation": "Distribution of the 19 observed held-out failures across frozen taxonomy T1-T6.",
+    "source": "table3_failure_taxonomy.csv",
+    "title": "Observed Failure Taxonomy on the Held-Out Benchmark"
+  },
+  "figure3_rejection_stages": {
+    "interpretation": "Distribution of all 57 rejected held-out cases by pipeline rejection stage.",
+    "source": "table4_rejection_stages.csv",
+    "title": "Distribution of Rejections Across Deterministic Pipeline Stages"
+  },
+  "figure4_llm_invocation_rate": {
+    "interpretation": "Fraction of cases reaching probabilistic CIR extraction after deterministic pre-LLM processing.",
+    "source": "table5_llm_invocation_by_family.csv",
+    "title": "LLM Invocation Rate by Held-Out Benchmark Family"
+  }
+}

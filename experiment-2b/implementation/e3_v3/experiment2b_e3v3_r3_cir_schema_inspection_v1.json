@@ -1,0 +1,14 @@
+{
+  "step": "24E-B1",
+  "purpose": "R3 CIR schema/adapter/preservation inspection",
+  "source_analyzer_sha256": "6511d24248fc5a22af6d468dd2a5d090ce8046e28fd3da05592e730727669fbb",
+  "source_intent_sha256": "de745a90d6fb675bfbf485446ce97dbd9bb8f46f1ea1893a3252c1ed73e3e9d6",
+  "preservation_check_sha256": "b580ebfbef3736b10a2bcdcdc810b08a6afd1c99cfe4618b77770564f5d777d3",
+  "constraint_consistency_sha256": "a62a5cdaf917d3d31b28415246014e1728442c0178b96ec5bcec623dd16dfcef",
+  "runner_sha256": "08f67ab2261f37137f2f9b4d295833886be50298767678f4896f908405851042",
+  "frozen_development_sha256": "133c68842716f84a703478f7904c8cdd4f10cfdba683957ce23e473e81e7196f",
+  "api_calls": 0,
+  "llm_calls": 0,
+  "full_pipeline_runs": 0,
+  "source_modifications": 0
+}

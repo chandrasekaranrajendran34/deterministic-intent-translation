@@ -1,0 +1,123 @@
+{
+  "algorithm_policy": {
+    "fills_only_missing_numeric_cir_fields": true,
+    "never_overwrites_non_null_llm_values": true,
+    "source_grounded": true,
+    "supported_fields": [
+      "latency_ms",
+      "bandwidth_mbps",
+      "reliability",
+      "device_count"
+    ]
+  },
+  "architecture_position": "LLM_CIR -> R4_reconciliation -> preservation -> CIR_validation",
+  "artifacts": {
+    "dataset": {
+      "path": "/content/experiment-1-v2-together/experiment-2b/data/frozen/experiment2b_e3v3_development_160_v1.csv",
+      "sha256": "133c68842716f84a703478f7904c8cdd4f10cfdba683957ce23e473e81e7196f"
+    },
+    "r4_module": {
+      "path": "/content/experiment-1-v2-together/experiment-2b/implementation/e3_v3/src/cir_reconciliation.py",
+      "sha256": "405f51e305957fb4d2364024e635b25598aab1dfff4167664ca187981d8bf99a"
+    },
+    "result_v2": {
+      "path": "/content/experiment-1-v2-together/experiment-2b/implementation/e3_v3/results/development/experiment2b_e3v3_r4_development_160_results_v2.csv",
+      "sha256": "cc1c02af3a22f513d31255c2e28f0267472c3ca2caf09c00d647b34c87b105a2"
+    },
+    "result_v3": {
+      "path": "/content/experiment-1-v2-together/experiment-2b/implementation/e3_v3/results/development/experiment2b_e3v3_r4_development_160_results_v3.csv",
+      "sha256": "0999f62f0b7697d8a5055a5fcfd2128ca024f3e7cb94d3cce9bc3cccc4795d93"
+    },
+    "runner_v2": {
+      "path": "/content/experiment-1-v2-together/experiment-2b/implementation/e3_v3/run_experiment2b_e3v3_r4_dev_v2.py",
+      "sha256": "db0d4121f8d2ae0f8d9ee48e6c1906ef5bab2b222bcc6a3ba56bc7d3b52ca20a"
+    },
+    "runner_v3": {
+      "path": "/content/experiment-1-v2-together/experiment-2b/implementation/e3_v3/run_experiment2b_e3v3_r4_dev_v3.py",
+      "sha256": "6d44c2a28c51d1abe7a4784c8a94152518042577d3fddba361efe4a4387a83b0"
+    },
+    "unit_tests": {
+      "path": "/content/experiment-1-v2-together/experiment-2b/implementation/e3_v3/results/development/experiment2b_e3v3_r4_reconciliation_unit_tests_v1.json",
+      "sha256": "6660071173c28b1c93aaae4b689cd6df8c1a4e193dbea85f8424773a14297038"
+    }
+  },
+  "closure_decision": {
+    "next_phase": "E3-v3 development closure and implementation freeze",
+    "r4_algorithm_further_tuning": false,
+    "reason": "R4 reconciliation is functioning after correction of the runner integration defect. Further tuning against the same development results would increase development-set adaptation and weaken subsequent held-out evaluation."
+  },
+  "closure_id": "e3v3-r4-development-closure-v1.0",
+  "created_utc": "2026-09-29T14:12:35.034904+00:00",
+  "development_results": {
+    "cases": 160,
+    "corrected_v3": {
+      "accuracy": 0.70625,
+      "correct": 113
+    },
+    "historical_miswired_v2": {
+      "accuracy": 0.65625,
+      "correct": 105
+    },
+    "paired_transitions": {
+      "both_correct": 103,
+      "both_wrong": 45,
+      "correct_to_wrong": 2,
+      "wrong_to_correct": 10
+    },
+    "r4_target_family": {
+      "cases": 20,
+      "correct_to_wrong": 1,
+      "reconciled_cases": 2,
+      "v2_correct": 7,
+      "v3_correct": 9,
+      "wrong_to_correct": 3
+    },
+    "reconciliation_activity": {
+      "cir_reconciled_cases": 8,
+      "correct_after_reconciliation": 8,
+      "correct_to_wrong": 0,
+      "wrong_to_correct": 8
+    }
+  },
+  "integration_defect": {
+    "algorithm_changed": false,
+    "corrective_action": "Created runner v3 and passed pre_guard.source_intent to reconcile_cir().",
+    "dataset_changed": false,
+    "description": "R4 development runner v2 passed the raw natural-language intent to reconcile_cir() instead of the structured SourceIntent produced by deterministic source analysis.",
+    "historical_v2_preserved": true,
+    "observed": true
+  },
+  "interpretation": {
+    "all_reconciled_cases_correct": true,
+    "development_evidence_only": true,
+    "held_out_generalization_claim": false,
+    "r4_reconciliation_functional": true,
+    "remaining_errors_exist": true,
+    "remaining_errors_used_to_modify_r4": false
+  },
+  "repair": "R4_source_grounded_cir_reconciliation",
+  "scope": "development_only",
+  "status": "R4_DEVELOPMENT_CLOSED",
+  "targeted_verification": {
+    "accepted_after_reconciliation": true,
+    "case_id": "E3V3-DEV-076",
+    "cir_after": {
+      "bandwidth_mbps": 420,
+      "latency_ms": 35.0
+    },
+    "cir_before": {
+      "bandwidth_mbps": 420,
+      "latency_ms": null
+    },
+    "decision_correct": true,
+    "source_constraints": [
+      "bandwidth_mbps >= 420",
+      "latency_ms < 35"
+    ]
+  },
+  "unit_tests": {
+    "artifact_sha256": "6660071173c28b1c93aaae4b689cd6df8c1a4e193dbea85f8424773a14297038",
+    "passed": 20,
+    "total": 20
+  }
+}

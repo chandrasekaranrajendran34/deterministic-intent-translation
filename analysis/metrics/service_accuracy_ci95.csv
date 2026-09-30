@@ -1,0 +1,3 @@
+pipeline,correct,n,service_accuracy,ci95_lower,ci95_upper
+cir,25,25,1.0,0.8628148284692875,1.0
+proposed,25,25,1.0,0.8628148284692875,1.0

@@ -1,0 +1,8 @@
+Invalid-intent category,E1 Direct,E2 CIR,E3 Proposed
+ambiguous,100%,100%,100%
+contradictory,100%,100%,100%
+hallucination_probe,100%,0%,100%
+incomplete,100%,100%,100%
+out_of_range,100%,100%,100%
+prompt_injection,100%,100%,100%
+unsupported,100%,100%,100%

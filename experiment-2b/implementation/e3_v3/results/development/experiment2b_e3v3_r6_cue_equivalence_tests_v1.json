@@ -1,0 +1,237 @@
+{
+  "created_utc": "2026-09-29T16:25:34.767292+00:00",
+  "design_addendum_sha256": "7829dd87841b5f767758c4ed07a64aa9ede10a121a4271cab72f013755d56a8d",
+  "final_module_sha256": "34d5b5fd02ade1bd44ea13b595e4aecfd7f8746dbd5a62dff17b223c405cb72d",
+  "identity_tests": {
+    "passed": 4,
+    "results": [
+      {
+        "actual_same": true,
+        "expected_same": true,
+        "left": "mission-critical",
+        "left_identity": "mission critical",
+        "passed": true,
+        "right": "mission critical",
+        "right_identity": "mission critical"
+      },
+      {
+        "actual_same": true,
+        "expected_same": true,
+        "left": "real-time",
+        "left_identity": "real time",
+        "passed": true,
+        "right": "real time",
+        "right_identity": "real time"
+      },
+      {
+        "actual_same": false,
+        "expected_same": false,
+        "left": "mission-critical",
+        "left_identity": "mission critical",
+        "passed": true,
+        "right": "real-time",
+        "right_identity": "real time"
+      },
+      {
+        "actual_same": false,
+        "expected_same": false,
+        "left": "critical control",
+        "left_identity": "critical control",
+        "passed": true,
+        "right": "mission-critical",
+        "right_identity": "mission critical"
+      }
+    ],
+    "total": 4
+  },
+  "required_tests": {
+    "passed": 7,
+    "results": [
+      {
+        "actual": "URLLC",
+        "delay_cues": [
+          "mission-critical",
+          "real-time"
+        ],
+        "expected": "URLLC",
+        "independent_pairs": [
+          {
+            "delay_cue": "real-time",
+            "delay_identity": "real time",
+            "reliability_cue": "mission-critical",
+            "reliability_identity": "mission critical"
+          }
+        ],
+        "intent": "Create connectivity suitable for mission-critical real-time exchanges.",
+        "passed": true,
+        "reliability_cues": [
+          "mission-critical"
+        ],
+        "test": "residual_dev126"
+      },
+      {
+        "actual": null,
+        "delay_cues": [
+          "mission-critical"
+        ],
+        "expected": null,
+        "independent_pairs": [],
+        "intent": "Provide mission-critical connectivity.",
+        "passed": true,
+        "reliability_cues": [
+          "mission-critical"
+        ],
+        "test": "mission_critical_hyphen"
+      },
+      {
+        "actual": null,
+        "delay_cues": [
+          "mission-critical",
+          "mission critical"
+        ],
+        "expected": null,
+        "independent_pairs": [],
+        "intent": "Mission critical service.",
+        "passed": true,
+        "reliability_cues": [
+          "mission-critical",
+          "mission critical"
+        ],
+        "test": "mission_critical_space"
+      },
+      {
+        "actual": null,
+        "delay_cues": [
+          "real-time"
+        ],
+        "expected": null,
+        "independent_pairs": [],
+        "intent": "Provide real-time connectivity.",
+        "passed": true,
+        "reliability_cues": [],
+        "test": "real_time_alone"
+      },
+      {
+        "actual": "eMBB",
+        "delay_cues": [],
+        "expected": "eMBB",
+        "independent_pairs": [],
+        "intent": "Provide high-capacity mobile broadband.",
+        "passed": true,
+        "reliability_cues": [],
+        "test": "embb_regression"
+      },
+      {
+        "actual": "mMTC",
+        "delay_cues": [],
+        "expected": "mMTC",
+        "independent_pairs": [],
+        "intent": "Connect massive numbers of sensors.",
+        "passed": true,
+        "reliability_cues": [],
+        "test": "mmtc_regression"
+      },
+      {
+        "actual": null,
+        "delay_cues": [
+          "mission-critical",
+          "real-time"
+        ],
+        "expected": null,
+        "independent_pairs": [
+          {
+            "delay_cue": "real-time",
+            "delay_identity": "real time",
+            "reliability_cue": "mission-critical",
+            "reliability_identity": "mission critical"
+          }
+        ],
+        "intent": "Provide high-capacity mobile broadband for mission-critical real-time exchanges.",
+        "passed": true,
+        "reliability_cues": [
+          "mission-critical"
+        ],
+        "test": "embb_urllc_conflict"
+      }
+    ],
+    "total": 7
+  },
+  "safety_regression_tests": {
+    "passed": 10,
+    "results": [
+      {
+        "actual": null,
+        "expected": null,
+        "intent": "Mission-critical business application.",
+        "passed": true,
+        "test": "mission_critical_business"
+      },
+      {
+        "actual": null,
+        "expected": null,
+        "intent": "Mission critical service.",
+        "passed": true,
+        "test": "mission_critical_plain"
+      },
+      {
+        "actual": null,
+        "expected": null,
+        "intent": "Real-time video streaming.",
+        "passed": true,
+        "test": "realtime_video"
+      },
+      {
+        "actual": null,
+        "expected": null,
+        "intent": "High reliability service.",
+        "passed": true,
+        "test": "high_reliability_only"
+      },
+      {
+        "actual": null,
+        "expected": null,
+        "intent": "Low latency service.",
+        "passed": true,
+        "test": "low_latency_only"
+      },
+      {
+        "actual": "eMBB",
+        "expected": "eMBB",
+        "intent": "Create an eMBB slice.",
+        "passed": true,
+        "test": "canonical_embb"
+      },
+      {
+        "actual": "URLLC",
+        "expected": "URLLC",
+        "intent": "Create a URLLC slice.",
+        "passed": true,
+        "test": "canonical_urllc"
+      },
+      {
+        "actual": "mMTC",
+        "expected": "mMTC",
+        "intent": "Create an mMTC slice.",
+        "passed": true,
+        "test": "canonical_mmtc"
+      },
+      {
+        "actual": "eMBB",
+        "expected": "eMBB",
+        "intent": "Provide high-throughput mobile broadband.",
+        "passed": true,
+        "test": "embb_semantic"
+      },
+      {
+        "actual": "mMTC",
+        "expected": "mMTC",
+        "intent": "Connect massive numbers of sensors.",
+        "passed": true,
+        "test": "mmtc_semantic"
+      }
+    ],
+    "total": 10
+  },
+  "source_module_sha256": "24f5619f17290a811b14b33a695f1f3804cf8aff5a7057adced9126b244f2492",
+  "suite": "e3v3-r6-cue-equivalence-validation-v1"
+}

@@ -1,0 +1,11 @@
+id,intent,category,subcategory,expected_valid,expected_service,difficulty,linguistic_form,constraint_type,notes
+EXP2-041,Set up a slice for time-critical industrial control.,valid_URLLC,valid,True,URLLC,medium,semantic_paraphrase,valid_requirement,
+EXP2-042,Provide ultra-low-delay communication for coordinated warehouse robots.,valid_URLLC,valid,True,URLLC,medium,semantic_paraphrase,valid_requirement,
+EXP2-043,Create a reliable low-latency service for emergency control signaling.,valid_URLLC,valid,True,URLLC,medium,semantic_paraphrase,valid_requirement,
+EXP2-044,Provision URLLC for real-time electrical grid protection.,valid_URLLC,valid,True,URLLC,medium,explicit_service,valid_requirement,
+EXP2-045,Provide a slice with 5 ms latency for factory automation.,valid_URLLC,valid,True,URLLC,medium,semantic_paraphrase,valid_requirement,
+EXP2-046,Create communication service for a highly time-sensitive control application.,valid_URLLC,valid,True,URLLC,medium,semantic_paraphrase,valid_requirement,
+EXP2-047,Set up reliable low-delay connectivity for autonomous mobile robots.,valid_URLLC,valid,True,URLLC,medium,semantic_paraphrase,valid_requirement,
+EXP2-048,Provide URLLC service for real-time process control.,valid_URLLC,valid,True,URLLC,medium,explicit_service,valid_requirement,
+EXP2-049,Create a slice for critical machine-to-machine control messages.,valid_URLLC,valid,True,URLLC,medium,semantic_paraphrase,valid_requirement,
+EXP2-050,Provision ultra-reliable communication for industrial safety systems.,valid_URLLC,valid,True,URLLC,medium,semantic_paraphrase,valid_requirement,

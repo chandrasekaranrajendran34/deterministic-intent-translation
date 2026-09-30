@@ -1,0 +1,10 @@
+{
+  "provider": "Together AI",
+  "model": "Qwen/Qwen3.5-9B",
+  "api_key_env": "TOGETHER_API_KEY",
+  "pipelines": [
+    "direct",
+    "cir",
+    "proposed"
+  ]
+}

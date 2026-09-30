@@ -1,0 +1,39 @@
+{
+  "api_calls": 0,
+  "archive": {
+    "path": "/content/experiment-1-v2-together/experiment-2b/implementation/e3_v3/source_analyzer_pre_r5_source_extraction_repair.py",
+    "sha256": "71a6f00172149f66250b3c17386eea98b18008eb65b097c327db705e94068dc8"
+  },
+  "created_utc": "2026-09-29T14:55:02.838463+00:00",
+  "historical_source_analyzer": {
+    "path": "/content/experiment-1-v2-together/experiment-2b/implementation/e3_v3/src/source_analyzer.py",
+    "sha256": "71a6f00172149f66250b3c17386eea98b18008eb65b097c327db705e94068dc8"
+  },
+  "llm_calls": 0,
+  "manifest_id": "e3v3-r5-source-extraction-repair-v1.0",
+  "repair_design": {
+    "path": "/content/experiment-1-v2-together/experiment-2b/implementation/e3_v3/experiment2b_e3v3_r5_source_extraction_repair_design_v1.json",
+    "sha256": "3b2d21bb40acdc1e3cfd1e33e97f76fc9cdf99426eb33953daf892f72f4b5626"
+  },
+  "repair_id": "R5",
+  "repaired_source_analyzer": {
+    "path": "/content/experiment-1-v2-together/experiment-2b/implementation/e3_v3/src/source_analyzer_r5_repaired.py",
+    "sha256": "96c5d84afa6fee0dc4f1667aa8f5626bb783d23f3816ef4330e621a773f9da42"
+  },
+  "scope": {
+    "added": "reverse-order explicit numeric reliability extraction",
+    "dataset_modified": false,
+    "example": "98.75% reliability -> reliability = 0.9875",
+    "r4_modified": false,
+    "r5_normalizer_modified": false,
+    "runner_modified": false
+  },
+  "status": "IMPLEMENTED_ISOLATED_NOT_YET_RUNNER_INTEGRATED",
+  "unit_tests": {
+    "failed": 0,
+    "passed": 8,
+    "path": "/content/experiment-1-v2-together/experiment-2b/implementation/e3_v3/results/development/experiment2b_e3v3_r5_source_extraction_unit_tests_v1.json",
+    "sha256": "2b6c4dad433bb2ef85ffb26cd307a75ccb42f82142a6e05b83d3929c1a61bde8",
+    "total": 8
+  }
+}

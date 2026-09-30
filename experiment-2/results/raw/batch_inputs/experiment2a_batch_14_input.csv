@@ -1,0 +1,11 @@
+id,intent,category,subcategory,expected_valid,expected_service,difficulty,linguistic_form,constraint_type,notes
+EXP2-131,Create a fictional quantum-native slice class.,invalid_unsupported_concept,unsupported_semantic_concept,False,,hard,semantic_unsupported,unsupported_concept,
+EXP2-132,Provision an unsupported hyperspeed service type.,invalid_unsupported_concept,unsupported_semantic_concept,False,,hard,semantic_unsupported,unsupported_concept,
+EXP2-133,Create URLLC with quantum_priority=10.,invalid_explicit_unsupported_parameter,unknown_name_value_parameter,False,,medium,explicit_assignment,unsupported_parameter,
+EXP2-134,Create eMBB with teleport_mode=enabled.,invalid_explicit_unsupported_parameter,unknown_name_value_parameter,False,,medium,explicit_assignment,unsupported_parameter,
+EXP2-135,Provision mMTC with magic_reliability=1.,invalid_explicit_unsupported_parameter,unknown_name_value_parameter,False,,medium,explicit_assignment,unsupported_parameter,
+EXP2-136,Create URLLC with hyperspeed_level=9.,invalid_explicit_unsupported_parameter,unknown_name_value_parameter,False,,medium,explicit_assignment,unsupported_parameter,
+EXP2-137,Provide eMBB with quantum_bandwidth=500.,invalid_explicit_unsupported_parameter,unknown_name_value_parameter,False,,medium,explicit_assignment,unsupported_parameter,
+EXP2-138,Create mMTC with teleport_range=100.,invalid_explicit_unsupported_parameter,unknown_name_value_parameter,False,,medium,explicit_assignment,unsupported_parameter,
+EXP2-139,Provision URLLC with fictional_qos=7.,invalid_explicit_unsupported_parameter,unknown_name_value_parameter,False,,medium,explicit_assignment,unsupported_parameter,
+EXP2-140,Create eMBB with imaginary_priority=high.,invalid_explicit_unsupported_parameter,unknown_name_value_parameter,False,,medium,explicit_assignment,unsupported_parameter,

@@ -1,0 +1,33 @@
+{
+  "step": "24E-D3",
+  "status": "EXECUTION_COMPLETE",
+  "scientific_role": "R3 development end-to-end evaluation",
+  "development_only": true,
+  "holdout_used": false,
+  "historical_primary_dataset_used": false,
+  "runner": {
+    "path": "/content/experiment-1-v2-together/experiment-2b/implementation/e3_v3/run_experiment2b_e3v3_dev_v1.py",
+    "sha256": "8567344347834622815d915c0ee7fe62486991328d85b283ba8729e7c63d85f7"
+  },
+  "components": {
+    "source_analyzer": "71a6f00172149f66250b3c17386eea98b18008eb65b097c327db705e94068dc8",
+    "constraint_semantics": "91742e13fce9683bd7ae36d771ef178ea5f40fc417ff0bab751c1c35d53185bd",
+    "preservation_check": "7fdc76ee4e24572c0dbef13b66290b0eb28ba0036a130f102dbd41b77834fe52",
+    "guard": "b01a665e8d295d4d36218668a1f84f64cf29226b76edb84789e2249d1ed5dd55"
+  },
+  "dataset": {
+    "path": "/content/experiment-1-v2-together/experiment-2b/data/frozen/experiment2b_e3v3_development_160_v1.csv",
+    "sha256": "133c68842716f84a703478f7904c8cdd4f10cfdba683957ce23e473e81e7196f",
+    "family": "DEV-R3",
+    "cases": 20
+  },
+  "results": {
+    "checkpoint": "/content/experiment-1-v2-together/experiment-2b/implementation/e3_v3/results/development/experiment2b_e3v3_dev_r3_checkpoint_v1.csv",
+    "raw": "/content/experiment-1-v2-together/experiment-2b/implementation/e3_v3/results/development/experiment2b_e3v3_dev_r3_results_v1.csv",
+    "raw_sha256": "afb7355d196ccae607e866c59418037e1666f5d97adf0a091293735827ff0d14",
+    "summary": "/content/experiment-1-v2-together/experiment-2b/implementation/e3_v3/results/development/experiment2b_e3v3_dev_r3_summary_v1.json",
+    "summary_sha256": "e7069bb971ae41c72edfb78706213ec5107188c564f65d0e24d158009bbfc649"
+  },
+  "execution_exceptions": 0,
+  "timestamp_utc": "2026-09-29T10:21:15.849876+00:00"
+}

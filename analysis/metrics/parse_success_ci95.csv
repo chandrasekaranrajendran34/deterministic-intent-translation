@@ -1,0 +1,4 @@
+pipeline,parse_success,n,parse_rate,ci95_lower,ci95_upper
+direct,50,50,1.0,0.9288782635358024,1.0
+cir,50,50,1.0,0.9288782635358024,1.0
+proposed,50,50,1.0,0.9288782635358024,1.0

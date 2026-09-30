@@ -1,0 +1,22 @@
+{
+  "audit_id": "e3v3-post-evaluation-expanded-exposure-audit-v2.0",
+  "audit_type": "post_evaluation_read_only",
+  "created_utc": "2026-09-30T01:15:55.334816+00:00",
+  "eligible_prior_exposure_csvs": 136,
+  "exact_overlap_count": 0,
+  "excluded_heldout_or_post_evaluation_csvs": 11,
+  "final_experiment_manifest_sha256": "d169fad487c654cc818889f2b424ad8ee1d83e79196c0adc6d801655b3cd9a98",
+  "heldout_benchmark_sha256": "84576e7d99a2721e61ded5a14bdafeb96707b068397243bbed32aa735496d4de",
+  "heldout_cases": 120,
+  "intent_bearing_csvs_before_temporal_filter": 147,
+  "interpretation_boundary": "This is a post-evaluation read-only sensitivity audit. Its findings do not modify the frozen benchmark, predictions, labels, or official 101/120 result. Lexical similarity is not equivalent to semantic identity.",
+  "inventory_sha256": "aee80b24ea4ee859c7c4f2b713752719a13715fdfd3c22d06faa06183decf320",
+  "lexical_fail_ge_0_80": 0,
+  "lexical_pass_lt_0_70": 120,
+  "lexical_review_0_70_0_80": 0,
+  "maximum_token_jaccard": 0.6923076923076923,
+  "normalized_overlap_count": 0,
+  "raw_prior_intent_occurrences": 6507,
+  "unique_exact_prior_intents": 528,
+  "unique_normalized_prior_intents": 528
+}

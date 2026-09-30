@@ -1,0 +1,38 @@
+{
+  "step": "24E-D2F",
+  "status": "DEVELOPMENT_RUNNER_FROZEN",
+  "scientific_role": "development-only E3-v3 evaluation",
+  "development_runner": {
+    "path": "/content/experiment-1-v2-together/experiment-2b/implementation/e3_v3/run_experiment2b_e3v3_dev_v1.py",
+    "sha256": "8567344347834622815d915c0ee7fe62486991328d85b283ba8729e7c63d85f7",
+    "pipeline": "e3_v3"
+  },
+  "active_components": {
+    "source_analyzer_sha256": "71a6f00172149f66250b3c17386eea98b18008eb65b097c327db705e94068dc8",
+    "constraint_semantics_sha256": "91742e13fce9683bd7ae36d771ef178ea5f40fc417ff0bab751c1c35d53185bd",
+    "preservation_check_sha256": "7fdc76ee4e24572c0dbef13b66290b0eb28ba0036a130f102dbd41b77834fe52",
+    "guard_sha256": "b01a665e8d295d4d36218668a1f84f64cf29226b76edb84789e2249d1ed5dd55"
+  },
+  "development_dataset": {
+    "path": "/content/experiment-1-v2-together/experiment-2b/data/frozen/experiment2b_e3v3_development_160_v1.csv",
+    "sha256": "133c68842716f84a703478f7904c8cdd4f10cfdba683957ce23e473e81e7196f",
+    "total_cases": 160,
+    "r3_cases": 20
+  },
+  "historical_runner": {
+    "path": "/content/experiment-1-v2-together/experiment-2b/src/run_experiment2b.py",
+    "sha256": "08f67ab2261f37137f2f9b4d295833886be50298767678f4896f908405851042",
+    "modified": false
+  },
+  "execution_policy": {
+    "development_only": true,
+    "holdout": false,
+    "historical_primary_dataset": false,
+    "pipeline_dispatch": [
+      "e3_v3"
+    ],
+    "api_calls_during_freeze": 0,
+    "llm_calls_during_freeze": 0
+  },
+  "timestamp_utc": "2026-09-29T10:19:24.451145+00:00"
+}

@@ -1,0 +1,233 @@
+{
+  "design_id": "e3v3-r7-qualitative-requirement-design-v1.0",
+  "component": "R7 qualitative requirement resolution",
+  "status": "DESIGN_FROZEN_BEFORE_IMPLEMENTATION",
+  "development_basis": {
+    "family": "DEV-R7",
+    "repair_id": "R7",
+    "cases": 15,
+    "expected_valid": 8,
+    "expected_invalid": 7,
+    "observed_pre_r7_behavior": {
+      "pre_guard_accepted": 14,
+      "pre_guard_rejected": 1,
+      "r6_service_resolved": 15,
+      "source_requirements_present": 2,
+      "source_constraints_present": 0
+    }
+  },
+  "problem_statement": {
+    "supported_qualitative_gap": "A supported qualitative requirement can be represented as unresolved source semantics and therefore rejected before CIR generation.",
+    "unsupported_qualitative_gap": "Qualitative requests outside the frozen capability profile can escape source analysis when they are not represented as numeric constraints or recognized requirements.",
+    "development_examples": {
+      "supported_false_rejection": [
+        "reliable communication"
+      ],
+      "unsupported_or_unresolvable": [
+        "guaranteed teleportation support",
+        "unlimited physical range",
+        "zero-energy operation forever",
+        "guaranteed infinite bandwidth",
+        "negative communication latency",
+        "support for an unlimited number of devices",
+        "physically instantaneous data transfer"
+      ]
+    }
+  },
+  "scope": {
+    "supported_qualitative_dimensions": [
+      "throughput_or_bandwidth",
+      "latency_or_response",
+      "reliability",
+      "device_density_or_scale",
+      "coverage"
+    ],
+    "unsupported_semantic_classes": [
+      "teleportation",
+      "unbounded_physical_range",
+      "perpetual_zero_energy_operation",
+      "unbounded_bandwidth",
+      "negative_latency",
+      "unbounded_device_count",
+      "instantaneous_data_transfer"
+    ],
+    "out_of_scope": [
+      "open-world semantic understanding",
+      "general physical-law theorem proving",
+      "standards certification",
+      "new service-type resolution",
+      "numeric constraint extraction changes",
+      "R4 reconciliation changes",
+      "R5 reliability normalization changes",
+      "R6 service-type resolver changes",
+      "LLM prompt changes",
+      "dataset changes"
+    ]
+  },
+  "closed_world_policy": {
+    "principle": "R7 operates only on explicitly defined qualitative capabilities and unsupported semantic classes in the frozen experimental profile.",
+    "supported_behavior": "Recognized supported qualitative phrases are normalized to an existing supported capability dimension.",
+    "unsupported_behavior": "Recognized unsupported or impossible qualitative phrases are rejected deterministically before actuation.",
+    "unknown_behavior": "Unknown qualitative semantics are not silently converted into a supported capability.",
+    "no_numeric_invention": true,
+    "no_threshold_invention": true,
+    "no_service_type_invention": true
+  },
+  "supported_normalization": {
+    "high throughput": "bandwidth_mbps",
+    "bandwidth-intensive": "bandwidth_mbps",
+    "rapid response": "latency_ms",
+    "minimal communication delay": "latency_ms",
+    "latency-sensitive": "latency_ms",
+    "reliable communication": "reliability",
+    "dense device connectivity": "device_count",
+    "large device populations": "device_count",
+    "broad coverage": "coverage"
+  },
+  "unsupported_signatures": {
+    "teleportation": {
+      "class": "teleportation",
+      "reason": "unsupported capability"
+    },
+    "unlimited physical range": {
+      "class": "unbounded_physical_range",
+      "reason": "unbounded physical capability"
+    },
+    "zero-energy operation forever": {
+      "class": "perpetual_zero_energy_operation",
+      "reason": "unsupported perpetual zero-energy requirement"
+    },
+    "infinite bandwidth": {
+      "class": "unbounded_bandwidth",
+      "reason": "unbounded resource requirement"
+    },
+    "negative communication latency": {
+      "class": "negative_latency",
+      "reason": "invalid qualitative latency requirement"
+    },
+    "unlimited number of devices": {
+      "class": "unbounded_device_count",
+      "reason": "unbounded resource requirement"
+    },
+    "instantaneous data transfer": {
+      "class": "instantaneous_data_transfer",
+      "reason": "unsupported zero-time transfer requirement"
+    }
+  },
+  "matching_safeguards": {
+    "normalization": [
+      "lowercase",
+      "hyphen-to-space",
+      "collapse-whitespace"
+    ],
+    "require_phrase_or_signature": true,
+    "isolated_generic_tokens_must_not_reject": [
+      "unlimited",
+      "instant",
+      "zero",
+      "negative",
+      "reliable",
+      "broad",
+      "dense",
+      "high"
+    ],
+    "negation_awareness_required": true,
+    "supported_and_unsupported_collision": "unsupported/fail-closed",
+    "multiple_unsupported_matches": "reject and preserve all matched evidence",
+    "deterministic": true
+  },
+  "architecture": {
+    "required_order": [
+      "existing deterministic source analysis",
+      "R7 qualitative source resolution",
+      "source gate / consistency decision",
+      "LLM CIR generation if source accepted",
+      "R4 CIR reconciliation",
+      "R5 reliability normalization",
+      "R6 service-type resolution",
+      "post-guard preservation",
+      "CIR validation",
+      "mapping and descriptor generation"
+    ],
+    "rationale": "R7 must resolve or reject qualitative source semantics before an unsupported request can reach CIR generation.",
+    "r6_relationship": "R7 does not modify R6 and does not perform service-type resolution."
+  },
+  "result_contract": {
+    "input": "original natural-language intent",
+    "output_fields": [
+      "supported_qualitative_matches",
+      "unsupported_qualitative_matches",
+      "normalized_requirements",
+      "qualitative_valid",
+      "error_codes"
+    ],
+    "supported_error_code": null,
+    "unsupported_error_code": "UNSUPPORTED_QUALITATIVE_REQUIREMENT",
+    "unsupported_rejection_stage": "r7_qualitative_source_gate"
+  },
+  "field_isolation": {
+    "may_change": [
+      "source qualitative requirement resolution",
+      "source-gate decision for R7 qualitative semantics"
+    ],
+    "must_not_change": [
+      "CIR numeric values",
+      "CIR service_type",
+      "R4 behavior",
+      "R5 behavior",
+      "R6 behavior",
+      "standards mapper",
+      "descriptor compiler",
+      "dataset labels"
+    ]
+  },
+  "required_tests": {
+    "positive_supported": [
+      "high throughput",
+      "reliable communication",
+      "broad coverage",
+      "dense device connectivity",
+      "large device populations",
+      "latency-sensitive communication"
+    ],
+    "negative_unsupported": [
+      "teleportation support",
+      "unlimited physical range",
+      "zero-energy operation forever",
+      "infinite bandwidth",
+      "negative communication latency",
+      "unlimited number of devices",
+      "instantaneous data transfer"
+    ],
+    "safety_boundaries": [
+      "high alone must not invent bandwidth",
+      "reliable alone must not invent a numeric reliability value",
+      "zero alone must not imply zero-energy operation",
+      "negative alone must not imply negative latency",
+      "unlimited alone must not imply a specific unsupported class",
+      "instant alone must not imply instantaneous data transfer"
+    ],
+    "required_properties": [
+      "deterministic repeated output",
+      "no numeric invention",
+      "no service-type modification",
+      "no input mutation",
+      "evidence retained for every rejection"
+    ]
+  },
+  "evaluation_policy": {
+    "development_family": "R7 only",
+    "target_cases": 15,
+    "development_goal": "Correct deterministic treatment of the frozen R7 qualitative requirement family.",
+    "not_a_held_out_claim": true,
+    "full_160_rerun_after_repair": false,
+    "reason": "Avoid repeated whole-development-set tuning after each repair.",
+    "after_r7": "Close E3-v3 development, freeze implementation, then evaluate once on held-out data without repair."
+  },
+  "predecessor": {
+    "r6_freeze_id": "e3v3-r6-development-closure-v1.0",
+    "r6_closure_sha256": "07ccf2975474c6f4a76967477a0662b07072b7086a6bb77d26b47e5eca80863e",
+    "r6_runner_sha256": "8d1f08d4442cf26983696a0db94d8006a7efe28dd35dbb186f3861c46bf01439",
+    "development_dataset_sha256": "133c68842716f84a703478f7904c8cdd4f10cfdba683957ce23e473e81e7196f"
+  }
+}

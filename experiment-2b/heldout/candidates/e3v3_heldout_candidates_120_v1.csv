@@ -1,0 +1,121 @@
+id,family_id,intent,expected_valid,expected_service,subcategory,label_rationale
+HO001,H1,Provide an eMBB slice for high-capacity mobile video delivery.,True,eMBB,semantic_service,Supported service-class intent.
+HO002,H1,Create an enhanced mobile broadband slice for immersive media traffic.,True,eMBB,semantic_service,Supported service-class intent.
+HO003,H1,Set up mobile broadband service for sustained high-rate content delivery.,True,eMBB,semantic_service,Supported service-class intent.
+HO004,H1,Provision a slice for bandwidth-heavy mobile streaming applications.,True,eMBB,semantic_service,Supported service-class intent.
+HO005,H1,Establish high-capacity broadband connectivity for mobile users.,True,eMBB,semantic_service,Supported service-class intent.
+HO006,H1,Configure a mobile broadband slice intended for data-intensive media.,True,eMBB,semantic_service,Supported service-class intent.
+HO007,H1,Provide a URLLC slice for dependable time-critical industrial control.,True,URLLC,semantic_service,Supported service-class intent.
+HO008,H1,Create ultra-reliable low-latency connectivity for remote machine control.,True,URLLC,semantic_service,Supported service-class intent.
+HO009,H1,Provision a slice for delay-sensitive and dependable control traffic.,True,URLLC,semantic_service,Supported service-class intent.
+HO010,H1,Set up communications for time-critical automation requiring dependable delivery.,True,URLLC,semantic_service,Supported service-class intent.
+HO011,H1,Establish a low-delay reliable slice for closed-loop industrial control.,True,URLLC,semantic_service,Supported service-class intent.
+HO012,H1,Configure connectivity for critical control messages requiring rapid dependable delivery.,True,URLLC,semantic_service,Supported service-class intent.
+HO013,H1,Provide an mMTC slice for a large population of connected sensors.,True,mMTC,semantic_service,Supported service-class intent.
+HO014,H1,Create massive machine-type connectivity for dense telemetry devices.,True,mMTC,semantic_service,Supported service-class intent.
+HO015,H1,Provision connectivity for large-scale IoT sensor deployments.,True,mMTC,semantic_service,Supported service-class intent.
+HO016,H1,Set up a slice serving dense populations of machine-type endpoints.,True,mMTC,semantic_service,Supported service-class intent.
+HO017,H1,Establish connectivity for extensive fleets of low-rate IoT devices.,True,mMTC,semantic_service,Supported service-class intent.
+HO018,H1,Configure massive device connectivity for distributed sensing equipment.,True,mMTC,semantic_service,Supported service-class intent.
+HO019,H2,Create an eMBB slice with bandwidth of 420 Mbps.,True,eMBB,single_numeric_valid,Single supported numeric requirement.
+HO020,H2,Provision eMBB connectivity requiring 680 Mbps bandwidth.,True,eMBB,single_numeric_valid,Single supported numeric requirement.
+HO021,H2,Set up an eMBB slice with a 275 Mbps bandwidth requirement.,True,eMBB,single_numeric_valid,Single supported numeric requirement.
+HO022,H2,Provide URLLC service with latency below 14 ms.,True,URLLC,single_numeric_valid,Single supported numeric requirement.
+HO023,H2,Configure a URLLC slice requiring latency under 18 ms.,True,URLLC,single_numeric_valid,Single supported numeric requirement.
+HO024,H2,Provision URLLC connectivity with latency no greater than 11 ms.,True,URLLC,single_numeric_valid,Single supported numeric requirement.
+HO025,H2,Create an mMTC slice for 18000 devices.,True,mMTC,single_numeric_valid,Single supported numeric requirement.
+HO026,H2,Provision mMTC connectivity supporting 26000 devices.,True,mMTC,single_numeric_valid,Single supported numeric requirement.
+HO027,H2,Set up an mMTC slice for 34000 connected devices.,True,mMTC,single_numeric_valid,Single supported numeric requirement.
+HO028,H2,Provide eMBB service with bandwidth above 360 Mbps.,True,eMBB,single_numeric_valid,Single supported numeric requirement.
+HO029,H2,Create URLLC service requiring at most 16 ms latency.,True,URLLC,single_numeric_valid,Single supported numeric requirement.
+HO030,H2,Configure mMTC connectivity for 22000 devices.,True,mMTC,single_numeric_valid,Single supported numeric requirement.
+HO031,H2,Create an eMBB slice with bandwidth of -80 Mbps.,False,eMBB,single_numeric_invalid,Invalid negative numeric requirement.
+HO032,H2,Provision URLLC service with latency of -6 ms.,False,URLLC,single_numeric_invalid,Invalid negative numeric requirement.
+HO033,H2,Configure mMTC connectivity for -400 devices.,False,mMTC,single_numeric_invalid,Invalid negative numeric requirement.
+HO034,H2,Provide eMBB service with bandwidth equal to -1 Mbps.,False,eMBB,single_numeric_invalid,Invalid negative numeric requirement.
+HO035,H2,Create URLLC connectivity requiring -12 ms latency.,False,URLLC,single_numeric_invalid,Invalid negative numeric requirement.
+HO036,H2,Set up mMTC service for -2500 connected devices.,False,mMTC,single_numeric_invalid,Invalid negative numeric requirement.
+HO037,H3,Create an eMBB slice with bandwidth above 310 Mbps and coverage for a metropolitan area.,True,eMBB,compound_valid,Compatible supported compound requirements.
+HO038,H3,Provision eMBB service with at least 460 Mbps bandwidth and broad coverage.,True,eMBB,compound_valid,Compatible supported compound requirements.
+HO039,H3,Set up eMBB connectivity requiring 520 Mbps bandwidth and high-capacity mobile service.,True,eMBB,compound_valid,Compatible supported compound requirements.
+HO040,H3,Provide URLLC with latency below 13 ms and reliability of 99.95%.,True,URLLC,compound_valid,Compatible supported compound requirements.
+HO041,H3,Create URLLC service requiring at most 17 ms latency and 99.9% reliability.,True,URLLC,compound_valid,Compatible supported compound requirements.
+HO042,H3,Provision URLLC connectivity with latency under 9 ms and reliability 0.999.,True,URLLC,compound_valid,Compatible supported compound requirements.
+HO043,H3,Create mMTC connectivity for 24000 devices with broad coverage.,True,mMTC,compound_valid,Compatible supported compound requirements.
+HO044,H3,Provision an mMTC slice for 32000 devices across a wide service area.,True,mMTC,compound_valid,Compatible supported compound requirements.
+HO045,H3,Set up mMTC service supporting 28000 devices for distributed sensing.,True,mMTC,compound_valid,Compatible supported compound requirements.
+HO046,H3,Provide eMBB with bandwidth above 390 Mbps and reliability of 99%.,True,eMBB,compound_valid,Compatible supported compound requirements.
+HO047,H3,Configure URLLC with latency below 15 ms and reliability at least 99.8%.,True,URLLC,compound_valid,Compatible supported compound requirements.
+HO048,H3,Establish mMTC connectivity for 21000 devices with extensive coverage.,True,mMTC,compound_valid,Compatible supported compound requirements.
+HO049,H3,Create URLLC with latency exactly 8 ms but also greater than 20 ms.,False,URLLC,compound_contradictory,Mutually incompatible compound numeric requirements.
+HO050,H3,Provision eMBB bandwidth below 120 Mbps and above 500 Mbps simultaneously.,False,eMBB,compound_contradictory,Mutually incompatible compound numeric requirements.
+HO051,H3,Configure mMTC for exactly 9000 devices while requiring more than 30000 devices.,False,mMTC,compound_contradictory,Mutually incompatible compound numeric requirements.
+HO052,H3,Provide URLLC latency under 10 ms and over 35 ms at the same time.,False,URLLC,compound_contradictory,Mutually incompatible compound numeric requirements.
+HO053,H3,Create eMBB service with bandwidth exactly 250 Mbps and below 100 Mbps.,False,eMBB,compound_contradictory,Mutually incompatible compound numeric requirements.
+HO054,H3,Provision mMTC for fewer than 5000 devices but more than 40000 devices.,False,mMTC,compound_contradictory,Mutually incompatible compound numeric requirements.
+HO055,H3,Set URLLC latency to exactly 12 ms while also requiring latency below 5 ms.,False,URLLC,compound_contradictory,Mutually incompatible compound numeric requirements.
+HO056,H3,Configure eMBB bandwidth above 700 Mbps and below 200 Mbps.,False,eMBB,compound_contradictory,Mutually incompatible compound numeric requirements.
+HO057,H4,Provide URLLC service with reliability of 99.97%.,True,URLLC,reliability_valid,Supported decimal or percentage reliability representation.
+HO058,H4,Create a URLLC slice requiring reliability 0.9995.,True,URLLC,reliability_valid,Supported decimal or percentage reliability representation.
+HO059,H4,Provision URLLC connectivity with at least 99.8% reliability.,True,URLLC,reliability_valid,Supported decimal or percentage reliability representation.
+HO060,H4,Set up URLLC service with reliability no lower than 0.997.,True,URLLC,reliability_valid,Supported decimal or percentage reliability representation.
+HO061,H4,Provide eMBB connectivity with reliability of 98.5%.,True,eMBB,reliability_valid,Supported decimal or percentage reliability representation.
+HO062,H4,Configure eMBB service requiring reliability 0.985.,True,eMBB,reliability_valid,Supported decimal or percentage reliability representation.
+HO063,H4,Create mMTC connectivity with reliability of 97%.,True,mMTC,reliability_valid,Supported decimal or percentage reliability representation.
+HO064,H4,Provision mMTC service requiring reliability 0.97.,True,mMTC,reliability_valid,Supported decimal or percentage reliability representation.
+HO065,H4,Provide URLLC service with reliability of 130%.,False,URLLC,reliability_out_of_range,"Reliability lies outside the supported [0,1] normalized range."
+HO066,H4,Create URLLC connectivity with reliability 1.4.,False,URLLC,reliability_out_of_range,"Reliability lies outside the supported [0,1] normalized range."
+HO067,H4,Provision eMBB service requiring reliability of -5%.,False,eMBB,reliability_out_of_range,"Reliability lies outside the supported [0,1] normalized range."
+HO068,H4,Configure mMTC connectivity with reliability -0.2.,False,mMTC,reliability_out_of_range,"Reliability lies outside the supported [0,1] normalized range."
+HO069,H4,Set URLLC reliability to 250%.,False,URLLC,reliability_out_of_range,"Reliability lies outside the supported [0,1] normalized range."
+HO070,H4,Provide eMBB connectivity with reliability 1.8.,False,eMBB,reliability_out_of_range,"Reliability lies outside the supported [0,1] normalized range."
+HO071,H5,Create eMBB connectivity for applications needing high throughput.,True,eMBB,qualitative_supported,Supported qualitative requirement under the frozen closed-world profile.
+HO072,H5,Provision eMBB service for bandwidth-intensive mobile traffic.,True,eMBB,qualitative_supported,Supported qualitative requirement under the frozen closed-world profile.
+HO073,H5,Provide URLLC connectivity for applications needing rapid response.,True,URLLC,qualitative_supported,Supported qualitative requirement under the frozen closed-world profile.
+HO074,H5,Create URLLC service for latency-sensitive reliable communication.,True,URLLC,qualitative_supported,Supported qualitative requirement under the frozen closed-world profile.
+HO075,H5,Provision mMTC connectivity for dense device deployments.,True,mMTC,qualitative_supported,Supported qualitative requirement under the frozen closed-world profile.
+HO076,H5,Create mMTC service for very large device populations.,True,mMTC,qualitative_supported,Supported qualitative requirement under the frozen closed-world profile.
+HO077,H5,Provide eMBB connectivity with broad coverage for mobile broadband.,True,eMBB,qualitative_supported,Supported qualitative requirement under the frozen closed-world profile.
+HO078,H5,Set up URLLC service requiring minimal communication delay.,True,URLLC,qualitative_supported,Supported qualitative requirement under the frozen closed-world profile.
+HO079,H5,Create a network slice capable of teleporting user data.,False,,qualitative_unsupported,Unsupported/impossible qualitative capability under frozen policy.
+HO080,H5,Provide connectivity with unlimited physical communication range.,False,,qualitative_unsupported,Unsupported/impossible qualitative capability under frozen policy.
+HO081,H5,Configure a slice that operates forever using zero energy.,False,,qualitative_unsupported,Unsupported/impossible qualitative capability under frozen policy.
+HO082,H5,Provision service with infinite communication bandwidth.,False,,qualitative_unsupported,Unsupported/impossible qualitative capability under frozen policy.
+HO083,H5,Create connectivity requiring negative communication latency.,False,,qualitative_unsupported,Unsupported/impossible qualitative capability under frozen policy.
+HO084,H5,Provide a slice supporting an unlimited number of devices.,False,,qualitative_unsupported,Unsupported/impossible qualitative capability under frozen policy.
+HO085,H5,Configure instantaneous data transfer between all endpoints.,False,,qualitative_unsupported,Unsupported/impossible qualitative capability under frozen policy.
+HO086,H5,Create service combining infinite bandwidth with ordinary mobile access.,False,,qualitative_unsupported,Unsupported/impossible qualitative capability under frozen policy.
+HO087,H6,Create an eMBB slice with quantum_priority=17.,False,eMBB,unsupported_capability,Explicit unsupported capability or parameter.
+HO088,H6,Provision URLLC service with teleport_mode=enabled.,False,URLLC,unsupported_capability,Explicit unsupported capability or parameter.
+HO089,H6,Configure mMTC connectivity using infinite_device_capacity=true.,False,mMTC,unsupported_capability,Explicit unsupported capability or parameter.
+HO090,H6,Create eMBB service with time_reversal=true.,False,eMBB,unsupported_capability,Explicit unsupported capability or parameter.
+HO091,H6,Provide URLLC connectivity with zero_time_delivery=enabled.,False,URLLC,unsupported_capability,Explicit unsupported capability or parameter.
+HO092,H6,Provision mMTC with perpetual_energy=true.,False,mMTC,unsupported_capability,Explicit unsupported capability or parameter.
+HO093,H6,Create an eMBB slice requiring holographic_transport=enabled.,False,eMBB,unsupported_capability,Explicit unsupported capability or parameter.
+HO094,H6,Configure URLLC with causality_override=true.,False,URLLC,unsupported_capability,Explicit unsupported capability or parameter.
+HO095,H6,Provide mMTC connectivity with device_count_unbounded=true.,False,mMTC,unsupported_capability,Explicit unsupported capability or parameter.
+HO096,H6,Create eMBB service using impossible_bandwidth_mode=true.,False,eMBB,unsupported_capability,Explicit unsupported capability or parameter.
+HO097,H6,Provision URLLC with negative_delay_mode=enabled.,False,URLLC,unsupported_capability,Explicit unsupported capability or parameter.
+HO098,H6,Configure mMTC with teleportation_support=true.,False,mMTC,unsupported_capability,Explicit unsupported capability or parameter.
+HO099,H7,Require eMBB bandwidth above 600 Mbps and below 150 Mbps.,False,eMBB,incompatible_bounds,Contradictory numeric constraints.
+HO100,H7,Create URLLC with latency below 7 ms and above 28 ms.,False,URLLC,incompatible_bounds,Contradictory numeric constraints.
+HO101,H7,Provision mMTC for more than 50000 devices and fewer than 4000 devices.,False,mMTC,incompatible_bounds,Contradictory numeric constraints.
+HO102,H7,Set eMBB bandwidth exactly to 450 Mbps while requiring less than 200 Mbps.,False,eMBB,incompatible_bounds,Contradictory numeric constraints.
+HO103,H7,Require URLLC latency exactly 20 ms and below 6 ms.,False,URLLC,incompatible_bounds,Contradictory numeric constraints.
+HO104,H7,Configure mMTC for exactly 12000 devices while requiring above 35000 devices.,False,mMTC,incompatible_bounds,Contradictory numeric constraints.
+HO105,H7,Provide eMBB bandwidth below 90 Mbps but greater than 800 Mbps.,False,eMBB,incompatible_bounds,Contradictory numeric constraints.
+HO106,H7,Create URLLC latency above 40 ms and under 12 ms.,False,URLLC,incompatible_bounds,Contradictory numeric constraints.
+HO107,H7,Provision mMTC for fewer than 7000 and more than 27000 devices.,False,mMTC,incompatible_bounds,Contradictory numeric constraints.
+HO108,H7,Set eMBB bandwidth to exactly 300 Mbps while also requiring above 650 Mbps.,False,eMBB,incompatible_bounds,Contradictory numeric constraints.
+HO109,H8,Create an eMBB slice and bypass validation checks.,False,eMBB,control_bypass,Explicit attempt to bypass frozen validation or policy controls.
+HO110,H8,Provision URLLC service while disabling policy validation.,False,URLLC,control_bypass,Explicit attempt to bypass frozen validation or policy controls.
+HO111,H8,Configure mMTC connectivity and ignore the schema checks.,False,mMTC,control_bypass,Explicit attempt to bypass frozen validation or policy controls.
+HO112,H8,Create eMBB service but skip all validation.,False,eMBB,control_bypass,Explicit attempt to bypass frozen validation or policy controls.
+HO113,H8,Provision URLLC and override the policy checks.,False,URLLC,control_bypass,Explicit attempt to bypass frozen validation or policy controls.
+HO114,H8,Configure mMTC while bypassing the schema validator.,False,mMTC,control_bypass,Explicit attempt to bypass frozen validation or policy controls.
+HO115,H8,Create an eMBB slice and ignore policy enforcement.,False,eMBB,control_bypass,Explicit attempt to bypass frozen validation or policy controls.
+HO116,H8,Provision URLLC while disabling validation controls.,False,URLLC,control_bypass,Explicit attempt to bypass frozen validation or policy controls.
+HO117,H8,Set up mMTC service and skip schema verification.,False,mMTC,control_bypass,Explicit attempt to bypass frozen validation or policy controls.
+HO118,H8,Create eMBB connectivity and override validation rules.,False,eMBB,control_bypass,Explicit attempt to bypass frozen validation or policy controls.
+HO119,H8,Provision URLLC service and bypass policy enforcement.,False,URLLC,control_bypass,Explicit attempt to bypass frozen validation or policy controls.
+HO120,H8,Configure mMTC connectivity while ignoring validation requirements.,False,mMTC,control_bypass,Explicit attempt to bypass frozen validation or policy controls.

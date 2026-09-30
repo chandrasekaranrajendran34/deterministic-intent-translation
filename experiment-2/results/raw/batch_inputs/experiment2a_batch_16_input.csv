@@ -1,0 +1,11 @@
+id,intent,category,subcategory,expected_valid,expected_service,difficulty,linguistic_form,constraint_type,notes
+EXP2-151,Apply a fictional QoS class to this URLLC service.,invalid_implicit_unsupported_parameter,unsupported_natural_language_parameter,False,,hard,implicit_unsupported,unsupported_parameter,
+EXP2-152,Create eMBB with an imaginary ultra-priority mechanism.,invalid_implicit_unsupported_parameter,unsupported_natural_language_parameter,False,,hard,implicit_unsupported,unsupported_parameter,
+EXP2-153,Enable quantum scheduling for this mMTC slice.,invalid_implicit_unsupported_parameter,unsupported_natural_language_parameter,False,,hard,implicit_unsupported,unsupported_parameter,
+EXP2-154,Create URLLC using an impossible reliability enhancement feature.,invalid_implicit_unsupported_parameter,unsupported_natural_language_parameter,False,,hard,implicit_unsupported,unsupported_parameter,
+EXP2-155,Route this eMBB slice through hyperspace.,invalid_implicit_unsupported_parameter,unsupported_natural_language_parameter,False,,hard,implicit_unsupported,unsupported_parameter,
+EXP2-156,Give this mMTC service a fictional device-priority mechanism.,invalid_implicit_unsupported_parameter,unsupported_natural_language_parameter,False,,hard,implicit_unsupported,unsupported_parameter,
+EXP2-157,Create URLLC with latency below 5 ms but also above 100 ms.,invalid_contradictory,conflicting_constraints,False,,hard,compound_conflict,contradiction,
+EXP2-158,Provision eMBB with bandwidth at least 500 Mbps and no more than 100 Mbps.,invalid_contradictory,conflicting_constraints,False,,hard,compound_conflict,contradiction,
+EXP2-159,Create mMTC for exactly 1000 devices and exactly 50000 devices.,invalid_contradictory,conflicting_constraints,False,,hard,compound_conflict,contradiction,
+EXP2-160,Provide URLLC requiring both 1 ms latency and minimum latency of 200 ms.,invalid_contradictory,conflicting_constraints,False,,hard,compound_conflict,contradiction,

@@ -1,0 +1,44 @@
+{
+  "evaluation_id": "e3v3-r7-deterministic-development-evaluation-v1.0",
+  "component": "R7 qualitative requirement resolution",
+  "scope": "15-case frozen R7 development family only",
+  "development_only": true,
+  "not_held_out": true,
+  "input_dataset": {
+    "path": "/content/experiment-1-v2-together/experiment-2b/data/frozen/experiment2b_e3v3_development_160_v1.csv",
+    "sha256": "133c68842716f84a703478f7904c8cdd4f10cfdba683957ce23e473e81e7196f",
+    "full_dataset_rows": 160,
+    "selected_repair_id": "R7",
+    "selected_rows": 15
+  },
+  "implementation": {
+    "path": "/content/experiment-1-v2-together/experiment-2b/implementation/e3_v3/src/qualitative_requirement_resolver_r7.py",
+    "sha256": "7a2060cfa8a747a7cf1bbc5840854ff499e1b2c02e818483510e1a0168cf8579",
+    "design_sha256": "5ff6da96beca8e2aadb336c327c2963556338c37d682e3bb786b1d599ac8f707",
+    "unit_test_evidence_sha256": "df20dbc35d205f3d060cd9a830f5398d798231cdaa34265ae2f9d6f70a50963b"
+  },
+  "results": {
+    "correct": 15,
+    "total": 15,
+    "accuracy": 1.0,
+    "supported_qualitative_correct": 8,
+    "supported_qualitative_total": 8,
+    "unsupported_qualitative_correct": 7,
+    "unsupported_qualitative_total": 7,
+    "deterministic_repeated_output": 15
+  },
+  "method": {
+    "runner_executed": false,
+    "cir_generation": false,
+    "external_api_calls": 0,
+    "external_llm_calls": 0,
+    "r6_modified": false,
+    "dataset_modified": false
+  },
+  "interpretation": [
+    "This is development-family evidence, not held-out evidence.",
+    "The result evaluates only the deterministic R7 qualitative analyzer.",
+    "It does not establish open-world impossibility detection.",
+    "It does not establish end-to-end runner performance."
+  ]
+}

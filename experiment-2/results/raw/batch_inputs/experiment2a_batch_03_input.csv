@@ -1,0 +1,11 @@
+id,intent,category,subcategory,expected_valid,expected_service,difficulty,linguistic_form,constraint_type,notes
+EXP2-021,Set up an eMBB slice requiring 250 Mbps bandwidth.,valid_eMBB,valid,True,eMBB,medium,explicit_service,valid_requirement,
+EXP2-022,Provide high-data-rate service for a mobile content distribution application.,valid_eMBB,valid,True,eMBB,medium,semantic_paraphrase,valid_requirement,
+EXP2-023,Create a high-capacity slice for a large public entertainment event.,valid_eMBB,valid,True,eMBB,medium,semantic_paraphrase,valid_requirement,
+EXP2-024,Provision enhanced broadband connectivity for remote media editing.,valid_eMBB,valid,True,eMBB,medium,semantic_paraphrase,valid_requirement,
+EXP2-025,Provide an eMBB service for high-resolution telepresence video.,valid_eMBB,valid,True,eMBB,medium,explicit_service,valid_requirement,
+EXP2-026,Create a broadband slice supporting data-intensive mobile applications.,valid_eMBB,valid,True,eMBB,medium,semantic_paraphrase,valid_requirement,
+EXP2-027,Set up enhanced mobile broadband with 600 Mbps requested bandwidth.,valid_eMBB,valid,True,eMBB,medium,semantic_paraphrase,valid_requirement,
+EXP2-028,Provide high-throughput connectivity for panoramic live-streaming cameras.,valid_eMBB,valid,True,eMBB,medium,semantic_paraphrase,valid_requirement,
+EXP2-029,Create an eMBB slice for a mobile virtual-reality platform.,valid_eMBB,valid,True,eMBB,medium,explicit_service,valid_requirement,
+EXP2-030,Provision a high-bandwidth service for interactive multimedia delivery.,valid_eMBB,valid,True,eMBB,medium,semantic_paraphrase,valid_requirement,

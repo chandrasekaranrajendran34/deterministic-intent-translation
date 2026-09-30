@@ -1,0 +1,10 @@
+category,cir,direct,proposed
+invalid_ambiguous,1.0,0.9166666666666666,1.0
+invalid_compound_mixed,0.3,1.0,0.3
+invalid_contradictory,0.08333333333333333,1.0,0.08333333333333333
+invalid_explicit_unsupported_parameter,0.0,1.0,1.0
+invalid_implicit_unsupported_parameter,0.0,1.0,0.0
+invalid_incomplete,1.0,1.0,1.0
+invalid_out_of_range,0.9166666666666666,1.0,1.0
+invalid_prompt_adversarial,0.8,1.0,0.8
+invalid_unsupported_concept,1.0,1.0,1.0

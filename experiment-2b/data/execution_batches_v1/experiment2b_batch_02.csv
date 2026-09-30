@@ -1,0 +1,11 @@
+id,intent,category,subcategory,expected_valid,expected_service,difficulty,linguistic_form,constraint_type,notes
+EXP2B-011,Set up an URLLC slice.,valid_semantic_paraphrase,urllc_service,True,URLLC,easy,direct,service_only,Valid explicit URLLC request.
+EXP2B-012,Provision ultra-reliable low-latency connectivity.,valid_semantic_paraphrase,urllc_service_alias,True,URLLC,medium,paraphrase,service_only,Supported URLLC alias.
+EXP2B-013,Create URLLC requiring very low latency.,valid_semantic_paraphrase,urllc_semantic_latency,True,URLLC,medium,semantic_requirement,semantic,Supported latency requirement.
+EXP2B-014,Configure URLLC with latency of 4 ms.,valid_semantic_paraphrase,urllc_numeric_latency,True,URLLC,easy,numeric,exact,Valid positive latency.
+EXP2B-015,Prepare URLLC with latency at most 7 ms.,valid_semantic_paraphrase,urllc_numeric_latency,True,URLLC,medium,numeric_paraphrase,upper_bound,Valid latency upper bound.
+EXP2B-016,I need ultra-reliable low-latency service with 6 ms latency.,valid_semantic_paraphrase,urllc_numeric_latency,True,URLLC,medium,conversational,exact,Conversational URLLC request.
+EXP2B-017,Create URLLC requiring high reliability.,valid_semantic_paraphrase,urllc_semantic_reliability,True,URLLC,medium,semantic_requirement,semantic,Supported reliability requirement.
+EXP2B-018,Provision URLLC with reliability of 99.99%.,valid_semantic_paraphrase,urllc_numeric_reliability,True,URLLC,medium,numeric,exact,Valid reliability fraction after conversion.
+EXP2B-019,Establish URLLC connectivity for a real-time control application.,valid_semantic_paraphrase,urllc_objective,True,URLLC,medium,application_context,objective,Valid real-time application objective.
+EXP2B-020,Allocate an ultra-reliable low-latency slice with dependable connectivity.,valid_semantic_paraphrase,urllc_semantic_reliability,True,URLLC,medium,paraphrase,semantic,Valid semantic reliability request.

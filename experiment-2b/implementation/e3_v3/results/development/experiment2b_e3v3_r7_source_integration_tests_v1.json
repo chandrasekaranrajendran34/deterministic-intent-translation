@@ -1,0 +1,123 @@
+{
+  "step": "26I-R2",
+  "artifact": "R7 source-boundary integration deterministic tests",
+  "repair_scope": "adapter schema handling only",
+  "failed_candidate_sha256": "525a5c2b7dcd9d860869094336a708ac70579adec8205fe76eb3ff4143f0f5bc",
+  "development_only": true,
+  "not_held_out": true,
+  "tests_total": 5,
+  "tests_passed": 5,
+  "tests": [
+    {
+      "name": "existing_supported_unchanged",
+      "passed": true,
+      "deterministic": true,
+      "accepted": true,
+      "expected_accepted": true,
+      "repair_applied": false,
+      "expected_repair": false,
+      "rejection_stage": null,
+      "normalized_capabilities": [
+        "bandwidth_mbps"
+      ],
+      "supported_matches": [
+        {
+          "source_text": "high throughput",
+          "normalized": "bandwidth_mbps",
+          "status": "supported"
+        }
+      ],
+      "unsupported_matches": [],
+      "special_ok": true
+    },
+    {
+      "name": "dev138_supported_repair",
+      "passed": true,
+      "deterministic": true,
+      "accepted": true,
+      "expected_accepted": true,
+      "repair_applied": true,
+      "expected_repair": true,
+      "rejection_stage": null,
+      "normalized_capabilities": [
+        "reliability"
+      ],
+      "supported_matches": [
+        {
+          "source_text": "reliable communication",
+          "normalized": "reliability",
+          "status": "supported"
+        }
+      ],
+      "unsupported_matches": [],
+      "special_ok": true
+    },
+    {
+      "name": "unsupported_pre_llm_teleportation",
+      "passed": true,
+      "deterministic": true,
+      "accepted": false,
+      "expected_accepted": false,
+      "repair_applied": false,
+      "expected_repair": false,
+      "rejection_stage": "r7_qualitative_source_gate",
+      "normalized_capabilities": [],
+      "supported_matches": [],
+      "unsupported_matches": [
+        {
+          "source_text": "teleportation",
+          "class": "teleportation",
+          "reason": "unsupported capability",
+          "status": "unsupported"
+        }
+      ],
+      "special_ok": true
+    },
+    {
+      "name": "negated_unsupported_not_rejected",
+      "passed": true,
+      "deterministic": true,
+      "accepted": true,
+      "expected_accepted": true,
+      "repair_applied": false,
+      "expected_repair": false,
+      "rejection_stage": null,
+      "normalized_capabilities": [],
+      "supported_matches": [],
+      "unsupported_matches": [],
+      "special_ok": true
+    },
+    {
+      "name": "duplicate_capability_deduplicated",
+      "passed": true,
+      "deterministic": true,
+      "accepted": true,
+      "expected_accepted": true,
+      "repair_applied": false,
+      "expected_repair": false,
+      "rejection_stage": null,
+      "normalized_capabilities": [
+        "latency_ms"
+      ],
+      "supported_matches": [
+        {
+          "source_text": "rapid response",
+          "normalized": "latency_ms",
+          "status": "supported"
+        },
+        {
+          "source_text": "minimal communication delay",
+          "normalized": "latency_ms",
+          "status": "supported"
+        }
+      ],
+      "unsupported_matches": [],
+      "special_ok": true
+    }
+  ],
+  "api_calls": 0,
+  "llm_calls": 0,
+  "cir_generation": false,
+  "runner_modified": false,
+  "r7_semantics_modified": false
+}

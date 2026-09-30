@@ -1,0 +1,23 @@
+{
+  "experiment": "experiment-2b",
+  "step": "24A",
+  "purpose": "Read-only inventory of existing E3-v2 implementation surfaces before E3-v3 modification.",
+  "frozen_development_dataset": "/content/experiment-1-v2-together/experiment-2b/data/frozen/experiment2b_e3v3_development_160_v1.csv",
+  "frozen_development_dataset_sha256": "133c68842716f84a703478f7904c8cdd4f10cfdba683957ce23e473e81e7196f",
+  "python_source_files": 16,
+  "source_inventory": "/content/experiment-1-v2-together/experiment-2b/implementation/e3_v3/experiment2b_e3v2_source_inventory_v1.csv",
+  "repair_surface_matches": "/content/experiment-1-v2-together/experiment-2b/implementation/e3_v3/experiment2b_e3v2_repair_surface_matches_v1.csv",
+  "repairs_registered": [
+    "R1_control_attempt_detector",
+    "R2_constraint_extractor",
+    "R3_constraint_representation",
+    "R4_semantic_CIR_construction",
+    "R5_reliability_normalization",
+    "R6_service_semantic_extraction",
+    "R7_qualitative_requirement_resolver"
+  ],
+  "implementation_files_modified": false,
+  "pipeline_executions": 0,
+  "api_calls": 0,
+  "model_calls": 0
+}

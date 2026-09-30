@@ -1,0 +1,574 @@
+{
+  "created_utc": "2026-09-29T14:40:36.703027+00:00",
+  "design_sha256": "7b377b8e44864a406ce33911b49cb9e3f37def3dc1b996062513ff6d201aa4c3",
+  "diagnostic_history": {
+    "initial_exact_float_comparison": {
+      "algorithm_failure": false,
+      "cause": "Exact binary floating-point equality used by test harness.",
+      "failed": 2,
+      "failed_tests": [
+        "numeric_percentage_like_cir_corrected",
+        "percentage_string_cir_corrected"
+      ],
+      "passed": 18
+    },
+    "initial_import_harness_failure": {
+      "algorithm_failure": false,
+      "cause": "Dynamic module not registered in sys.modules before dataclass execution."
+    }
+  },
+  "failed": 0,
+  "module": "/content/experiment-1-v2-together/experiment-2b/implementation/e3_v3/src/reliability_normalization.py",
+  "module_sha256": "43fe74225bb3c57cd145421296a91c52fb631e4f0786e9e5acbacde82b190830",
+  "numeric_comparison_policy": {
+    "absolute_tolerance": 1e-12,
+    "method": "math.isclose",
+    "reason": "Percentage-to-decimal conversion may produce binary floating-point representation differences.",
+    "relative_tolerance": 0.0
+  },
+  "passed": 20,
+  "test_suite": "e3v3-r5-reliability-normalization-unit-tests-v1",
+  "tests": [
+    {
+      "actual_changed": true,
+      "after": {
+        "bandwidth_mbps": null,
+        "coverage": null,
+        "device_count": null,
+        "latency_ms": null,
+        "objective": null,
+        "reliability": 0.999,
+        "service_type": "URLLC"
+      },
+      "before": {
+        "bandwidth_mbps": null,
+        "coverage": null,
+        "device_count": null,
+        "latency_ms": null,
+        "objective": null,
+        "reliability": null,
+        "service_type": "URLLC"
+      },
+      "expected_changed": true,
+      "expected_reliability": 0.999,
+      "original_exact_equality_passed": true,
+      "passed": true,
+      "test": "percentage_99_9_missing",
+      "tolerance_value_match": true
+    },
+    {
+      "actual_changed": true,
+      "after": {
+        "bandwidth_mbps": null,
+        "coverage": null,
+        "device_count": null,
+        "latency_ms": null,
+        "objective": null,
+        "reliability": 0.9875,
+        "service_type": "URLLC"
+      },
+      "before": {
+        "bandwidth_mbps": null,
+        "coverage": null,
+        "device_count": null,
+        "latency_ms": null,
+        "objective": null,
+        "reliability": null,
+        "service_type": "URLLC"
+      },
+      "expected_changed": true,
+      "expected_reliability": 0.9875,
+      "original_exact_equality_passed": true,
+      "passed": true,
+      "test": "percentage_98_75_precision",
+      "tolerance_value_match": true
+    },
+    {
+      "actual_changed": true,
+      "after": {
+        "bandwidth_mbps": null,
+        "coverage": null,
+        "device_count": null,
+        "latency_ms": null,
+        "objective": null,
+        "reliability": 0.9999,
+        "service_type": "URLLC"
+      },
+      "before": {
+        "bandwidth_mbps": null,
+        "coverage": null,
+        "device_count": null,
+        "latency_ms": null,
+        "objective": null,
+        "reliability": null,
+        "service_type": "URLLC"
+      },
+      "expected_changed": true,
+      "expected_reliability": 0.9999,
+      "original_exact_equality_passed": true,
+      "passed": true,
+      "test": "percentage_99_99_precision",
+      "tolerance_value_match": true
+    },
+    {
+      "actual_changed": false,
+      "after": {
+        "bandwidth_mbps": null,
+        "coverage": null,
+        "device_count": null,
+        "latency_ms": null,
+        "objective": null,
+        "reliability": 0.999,
+        "service_type": "URLLC"
+      },
+      "before": {
+        "bandwidth_mbps": null,
+        "coverage": null,
+        "device_count": null,
+        "latency_ms": null,
+        "objective": null,
+        "reliability": 0.999,
+        "service_type": "URLLC"
+      },
+      "expected_changed": false,
+      "expected_reliability": 0.999,
+      "original_exact_equality_passed": true,
+      "passed": true,
+      "test": "canonical_decimal_unchanged",
+      "tolerance_value_match": true
+    },
+    {
+      "actual_changed": true,
+      "after": {
+        "bandwidth_mbps": null,
+        "coverage": null,
+        "device_count": null,
+        "latency_ms": null,
+        "objective": null,
+        "reliability": 0.9990000000000001,
+        "service_type": "URLLC"
+      },
+      "before": {
+        "bandwidth_mbps": null,
+        "coverage": null,
+        "device_count": null,
+        "latency_ms": null,
+        "objective": null,
+        "reliability": 99.9,
+        "service_type": "URLLC"
+      },
+      "expected_changed": true,
+      "expected_reliability": 0.999,
+      "original_exact_equality_passed": false,
+      "passed": true,
+      "test": "numeric_percentage_like_cir_corrected",
+      "tolerance_value_match": true
+    },
+    {
+      "actual_changed": true,
+      "after": {
+        "bandwidth_mbps": null,
+        "coverage": null,
+        "device_count": null,
+        "latency_ms": null,
+        "objective": null,
+        "reliability": 0.9998999999999999,
+        "service_type": "URLLC"
+      },
+      "before": {
+        "bandwidth_mbps": null,
+        "coverage": null,
+        "device_count": null,
+        "latency_ms": null,
+        "objective": null,
+        "reliability": "99.99%",
+        "service_type": "URLLC"
+      },
+      "expected_changed": true,
+      "expected_reliability": 0.9999,
+      "original_exact_equality_passed": false,
+      "passed": true,
+      "test": "percentage_string_cir_corrected",
+      "tolerance_value_match": true
+    },
+    {
+      "actual_changed": true,
+      "after": {
+        "bandwidth_mbps": null,
+        "coverage": null,
+        "device_count": null,
+        "latency_ms": null,
+        "objective": null,
+        "reliability": 0.99,
+        "service_type": "URLLC"
+      },
+      "before": {
+        "bandwidth_mbps": null,
+        "coverage": null,
+        "device_count": null,
+        "latency_ms": null,
+        "objective": null,
+        "reliability": "0.99",
+        "service_type": "URLLC"
+      },
+      "expected_changed": true,
+      "expected_reliability": 0.99,
+      "original_exact_equality_passed": true,
+      "passed": true,
+      "test": "canonical_numeric_string_corrected",
+      "tolerance_value_match": true
+    },
+    {
+      "actual_changed": false,
+      "after": {
+        "bandwidth_mbps": null,
+        "coverage": null,
+        "device_count": null,
+        "latency_ms": null,
+        "objective": null,
+        "reliability": 0.95,
+        "service_type": "URLLC"
+      },
+      "before": {
+        "bandwidth_mbps": null,
+        "coverage": null,
+        "device_count": null,
+        "latency_ms": null,
+        "objective": null,
+        "reliability": 0.95,
+        "service_type": "URLLC"
+      },
+      "expected_changed": false,
+      "expected_reliability": 0.95,
+      "original_exact_equality_passed": true,
+      "passed": true,
+      "test": "different_semantic_value_not_overwritten",
+      "tolerance_value_match": true
+    },
+    {
+      "actual_changed": false,
+      "after": {
+        "bandwidth_mbps": null,
+        "coverage": null,
+        "device_count": null,
+        "latency_ms": null,
+        "objective": null,
+        "reliability": 98.5,
+        "service_type": "URLLC"
+      },
+      "before": {
+        "bandwidth_mbps": null,
+        "coverage": null,
+        "device_count": null,
+        "latency_ms": null,
+        "objective": null,
+        "reliability": 98.5,
+        "service_type": "URLLC"
+      },
+      "expected_changed": false,
+      "expected_reliability": 98.5,
+      "original_exact_equality_passed": true,
+      "passed": true,
+      "test": "percentage_like_without_matching_source_not_overwritten",
+      "tolerance_value_match": true
+    },
+    {
+      "actual_changed": false,
+      "after": {
+        "bandwidth_mbps": null,
+        "coverage": null,
+        "device_count": null,
+        "latency_ms": null,
+        "objective": null,
+        "reliability": 99.9,
+        "service_type": "URLLC"
+      },
+      "before": {
+        "bandwidth_mbps": null,
+        "coverage": null,
+        "device_count": null,
+        "latency_ms": null,
+        "objective": null,
+        "reliability": 99.9,
+        "service_type": "URLLC"
+      },
+      "expected_changed": false,
+      "expected_reliability": 99.9,
+      "original_exact_equality_passed": true,
+      "passed": true,
+      "test": "no_source_reliability_no_repair",
+      "tolerance_value_match": true
+    },
+    {
+      "actual_changed": false,
+      "after": {
+        "bandwidth_mbps": null,
+        "coverage": null,
+        "device_count": null,
+        "latency_ms": null,
+        "objective": null,
+        "reliability": null,
+        "service_type": "URLLC"
+      },
+      "before": {
+        "bandwidth_mbps": null,
+        "coverage": null,
+        "device_count": null,
+        "latency_ms": null,
+        "objective": null,
+        "reliability": null,
+        "service_type": "URLLC"
+      },
+      "expected_changed": false,
+      "expected_reliability": null,
+      "original_exact_equality_passed": true,
+      "passed": true,
+      "test": "unrelated_source_constraint_no_repair",
+      "tolerance_value_match": true
+    },
+    {
+      "actual_changed": true,
+      "after": {
+        "bandwidth_mbps": null,
+        "coverage": null,
+        "device_count": null,
+        "latency_ms": null,
+        "objective": null,
+        "reliability": 0.9999,
+        "service_type": "URLLC"
+      },
+      "before": {
+        "bandwidth_mbps": null,
+        "coverage": null,
+        "device_count": null,
+        "latency_ms": null,
+        "objective": null,
+        "reliability": null,
+        "service_type": "URLLC"
+      },
+      "expected_changed": true,
+      "expected_reliability": 0.9999,
+      "original_exact_equality_passed": true,
+      "passed": true,
+      "test": "operator_at_least_preserved_source_sidecar",
+      "tolerance_value_match": true
+    },
+    {
+      "actual_changed": true,
+      "after": {
+        "bandwidth_mbps": null,
+        "coverage": null,
+        "device_count": null,
+        "latency_ms": null,
+        "objective": null,
+        "reliability": 0.999,
+        "service_type": "URLLC"
+      },
+      "before": {
+        "bandwidth_mbps": null,
+        "coverage": null,
+        "device_count": null,
+        "latency_ms": null,
+        "objective": null,
+        "reliability": null,
+        "service_type": "URLLC"
+      },
+      "expected_changed": true,
+      "expected_reliability": 0.999,
+      "original_exact_equality_passed": true,
+      "passed": true,
+      "test": "operator_above_preserved_source_sidecar",
+      "tolerance_value_match": true
+    },
+    {
+      "actual_changed": true,
+      "after": {
+        "bandwidth_mbps": null,
+        "coverage": null,
+        "device_count": null,
+        "latency_ms": null,
+        "objective": null,
+        "reliability": 0.995,
+        "service_type": "URLLC"
+      },
+      "before": {
+        "bandwidth_mbps": null,
+        "coverage": null,
+        "device_count": null,
+        "latency_ms": null,
+        "objective": null,
+        "reliability": null,
+        "service_type": "URLLC"
+      },
+      "expected_changed": true,
+      "expected_reliability": 0.995,
+      "original_exact_equality_passed": true,
+      "passed": true,
+      "test": "operator_exact_preserved_source_sidecar",
+      "tolerance_value_match": true
+    },
+    {
+      "actual_changed": false,
+      "after": {
+        "bandwidth_mbps": null,
+        "coverage": null,
+        "device_count": null,
+        "latency_ms": null,
+        "objective": null,
+        "reliability": null,
+        "service_type": "URLLC"
+      },
+      "before": {
+        "bandwidth_mbps": null,
+        "coverage": null,
+        "device_count": null,
+        "latency_ms": null,
+        "objective": null,
+        "reliability": null,
+        "service_type": "URLLC"
+      },
+      "expected_changed": false,
+      "expected_reliability": null,
+      "original_exact_equality_passed": true,
+      "passed": true,
+      "test": "conflicting_source_thresholds_fail_closed",
+      "tolerance_value_match": true
+    },
+    {
+      "actual_changed": true,
+      "after": {
+        "bandwidth_mbps": null,
+        "coverage": null,
+        "device_count": null,
+        "latency_ms": null,
+        "objective": null,
+        "reliability": 0.999,
+        "service_type": "URLLC"
+      },
+      "before": {
+        "bandwidth_mbps": null,
+        "coverage": null,
+        "device_count": null,
+        "latency_ms": null,
+        "objective": null,
+        "reliability": null,
+        "service_type": "URLLC"
+      },
+      "expected_changed": true,
+      "expected_reliability": 0.999,
+      "original_exact_equality_passed": true,
+      "passed": true,
+      "test": "duplicate_same_threshold_allowed",
+      "tolerance_value_match": true
+    },
+    {
+      "actual_changed": true,
+      "after": {
+        "bandwidth_mbps": null,
+        "coverage": null,
+        "device_count": null,
+        "latency_ms": null,
+        "objective": null,
+        "reliability": 0.9990000000000001,
+        "service_type": "URLLC"
+      },
+      "before": {
+        "bandwidth_mbps": null,
+        "coverage": null,
+        "device_count": null,
+        "latency_ms": null,
+        "objective": null,
+        "reliability": null,
+        "service_type": "URLLC"
+      },
+      "expected_changed": true,
+      "expected_reliability": 0.9990000000000001,
+      "original_exact_equality_passed": true,
+      "passed": true,
+      "test": "source_percentage_magnitude_defensive_normalization",
+      "tolerance_value_match": true
+    },
+    {
+      "actual_changed": false,
+      "after": {
+        "bandwidth_mbps": null,
+        "coverage": null,
+        "device_count": null,
+        "latency_ms": null,
+        "objective": null,
+        "reliability": null,
+        "service_type": "URLLC"
+      },
+      "before": {
+        "bandwidth_mbps": null,
+        "coverage": null,
+        "device_count": null,
+        "latency_ms": null,
+        "objective": null,
+        "reliability": null,
+        "service_type": "URLLC"
+      },
+      "expected_changed": false,
+      "expected_reliability": null,
+      "original_exact_equality_passed": true,
+      "passed": true,
+      "test": "out_of_range_source_no_repair",
+      "tolerance_value_match": true
+    },
+    {
+      "actual_changed": true,
+      "after": {
+        "bandwidth_mbps": 500,
+        "coverage": null,
+        "device_count": null,
+        "latency_ms": 7,
+        "objective": null,
+        "reliability": 0.9995,
+        "service_type": "URLLC"
+      },
+      "before": {
+        "bandwidth_mbps": 500,
+        "coverage": null,
+        "device_count": null,
+        "latency_ms": 7,
+        "objective": null,
+        "reliability": null,
+        "service_type": "URLLC"
+      },
+      "expected_changed": true,
+      "expected_reliability": 0.9995,
+      "original_exact_equality_passed": true,
+      "passed": true,
+      "test": "unrelated_cir_fields_unchanged",
+      "tolerance_value_match": true
+    },
+    {
+      "actual_changed": false,
+      "after": {
+        "bandwidth_mbps": null,
+        "coverage": null,
+        "device_count": null,
+        "latency_ms": null,
+        "objective": null,
+        "reliability": "approximately ninety-nine percent",
+        "service_type": "URLLC"
+      },
+      "before": {
+        "bandwidth_mbps": null,
+        "coverage": null,
+        "device_count": null,
+        "latency_ms": null,
+        "objective": null,
+        "reliability": "approximately ninety-nine percent",
+        "service_type": "URLLC"
+      },
+      "expected_changed": false,
+      "expected_reliability": "approximately ninety-nine percent",
+      "original_exact_equality_passed": true,
+      "passed": true,
+      "test": "malformed_reliability_string_left_unchanged",
+      "tolerance_value_match": true
+    }
+  ],
+  "total": 20
+}

@@ -1,0 +1,7 @@
+Class,Observed failure mechanism,Error type,Count,Share of failures (%)
+T1,Source semantic-resolution false rejection,False reject,5,26.32
+T2,Reliability representation normalization miss,False reject,2,10.53
+T3,Numeric capability-boundary omission,False accept,2,10.53
+T4,Compound constraint contradiction miss,False accept,2,10.53
+T5,Unsupported named-capability escape,False accept,6,31.58
+T6,Relational contradiction parsing miss,False accept,2,10.53

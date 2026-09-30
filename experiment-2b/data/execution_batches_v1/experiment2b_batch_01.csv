@@ -1,0 +1,11 @@
+id,intent,category,subcategory,expected_valid,expected_service,difficulty,linguistic_form,constraint_type,notes
+EXP2B-001,Set up enhanced mobile broadband service.,valid_semantic_paraphrase,embb_service_alias,True,eMBB,easy,direct,service_only,Valid eMBB service request.
+EXP2B-002,Provision mobile broadband connectivity for this application.,valid_semantic_paraphrase,embb_service_paraphrase,True,eMBB,medium,paraphrase,service_only,Mobile broadband paraphrase of eMBB.
+EXP2B-003,Create an eMBB slice requiring high throughput.,valid_semantic_paraphrase,embb_semantic_bandwidth,True,eMBB,medium,semantic_requirement,semantic,Supported throughput requirement.
+EXP2B-004,Establish enhanced mobile broadband with high bandwidth.,valid_semantic_paraphrase,embb_semantic_bandwidth,True,eMBB,medium,semantic_requirement,semantic,Supported bandwidth requirement.
+EXP2B-005,Configure eMBB with bandwidth of 420 Mbps.,valid_semantic_paraphrase,embb_numeric_bandwidth,True,eMBB,easy,numeric,exact,Positive exact bandwidth constraint.
+EXP2B-006,Prepare an eMBB slice with throughput at least 350 Mbps.,valid_semantic_paraphrase,embb_numeric_bandwidth,True,eMBB,medium,numeric_paraphrase,lower_bound,Valid positive throughput lower bound.
+EXP2B-007,I need enhanced mobile broadband with 275 Mbps bandwidth.,valid_semantic_paraphrase,embb_numeric_bandwidth,True,eMBB,medium,conversational,exact,Conversational valid eMBB request.
+EXP2B-008,Allocate eMBB connectivity requiring reliable service.,valid_semantic_paraphrase,embb_semantic_reliability,True,eMBB,medium,semantic_requirement,semantic,Supported reliability concept.
+EXP2B-009,Provide mobile broadband service with wide coverage.,valid_semantic_paraphrase,embb_semantic_coverage,True,eMBB,medium,paraphrase,semantic,Supported coverage concept.
+EXP2B-010,Create enhanced mobile broadband connectivity for a video application.,valid_semantic_paraphrase,embb_objective,True,eMBB,medium,application_context,objective,Valid application-oriented eMBB request.

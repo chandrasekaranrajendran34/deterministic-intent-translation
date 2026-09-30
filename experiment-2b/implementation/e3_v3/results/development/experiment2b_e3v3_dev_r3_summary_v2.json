@@ -1,0 +1,45 @@
+{
+  "step": "24E-D3D",
+  "status": "ANALYSIS_REQUIRED",
+  "dataset": "/content/experiment-1-v2-together/experiment-2b/data/frozen/experiment2b_e3v3_development_160_v1.csv",
+  "dataset_sha256": "133c68842716f84a703478f7904c8cdd4f10cfdba683957ce23e473e81e7196f",
+  "family": "DEV-R3",
+  "cases": 20,
+  "correct": 15,
+  "accuracy": 0.75,
+  "execution_exceptions": 0,
+  "llm_invoked": 20,
+  "parse_ok": 20,
+  "model": "Qwen/Qwen3.5-9B",
+  "subcategory_results": [
+    {
+      "subcategory": "exact_operator",
+      "cases": 4,
+      "correct": 4,
+      "accuracy": 1.0
+    },
+    {
+      "subcategory": "inclusive_operator",
+      "cases": 8,
+      "correct": 7,
+      "accuracy": 0.875
+    },
+    {
+      "subcategory": "strict_operator",
+      "cases": 8,
+      "correct": 4,
+      "accuracy": 0.5
+    }
+  ],
+  "failure_ids": [
+    "E3V3-DEV-056",
+    "E3V3-DEV-057",
+    "E3V3-DEV-059",
+    "E3V3-DEV-063",
+    "E3V3-DEV-071"
+  ],
+  "raw_results": "/content/experiment-1-v2-together/experiment-2b/implementation/e3_v3/results/development/experiment2b_e3v3_dev_r3_results_v2.csv",
+  "raw_results_sha256": "f7e0c0a18e436a0e1f564a2da23dbdd66400a10fef8e1685938dd2947ce8e684",
+  "failed_d3_v1_preserved": true,
+  "timestamp_utc": "2026-09-29T10:31:36.233255+00:00"
+}

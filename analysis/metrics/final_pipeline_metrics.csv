@@ -1,0 +1,4 @@
+pipeline,n,TP_invalid_rejected,TN_valid_accepted,FP_valid_rejected,FN_invalid_accepted,decision_accuracy,rejection_precision,rejection_recall,rejection_f1,valid_acceptance_rate,invalid_rejection_rate,parse_success_rate,mean_latency_ms,median_latency_ms,p95_latency_ms
+direct,50,25,25,0,0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1561.4901572597591,1504.7919120006554,2580.9758435490935
+cir,50,22,25,0,3,0.94,1.0,0.88,0.9361702127659575,1.0,0.88,1.0,1097.5071921799827,997.1622999983083,1557.0619329530016
+proposed,50,25,25,0,0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1171.662845579558,1012.8584915000829,1553.909268249299

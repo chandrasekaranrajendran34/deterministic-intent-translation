@@ -1,0 +1,62 @@
+{
+  "artifact_id": "literature-search-scope-v1.0",
+  "claim_policy": {
+    "experimental_results": "Must remain grounded in the frozen experimental evidence, not literature sources.",
+    "first_or_novel_claims": "Do not make priority claims unless literature evidence supports them.",
+    "research_gap": "State only after systematic comparison of retrieved prior work.",
+    "standards_compliance": "Do not claim formal 3GPP/O-RAN compliance."
+  },
+  "created_utc": "2026-09-30T01:54:56.915012+00:00",
+  "evidence_domains": [
+    {
+      "domain": "Intent-based networking and intent-based management",
+      "domain_id": "L1",
+      "purpose": "Establish foundations of intent abstraction, translation, assurance, and lifecycle management."
+    },
+    {
+      "domain": "AI/ML for network slicing",
+      "domain_id": "L2",
+      "purpose": "Establish AI-supported slice preparation, orchestration, resource management, and assurance."
+    },
+    {
+      "domain": "LLM and generative-AI intent translation for networks",
+      "domain_id": "L3",
+      "purpose": "Identify recent approaches using natural-language or LLM-based intent interpretation and network automation."
+    },
+    {
+      "domain": "LLM hallucination, reliability, and structured generation",
+      "domain_id": "L4",
+      "purpose": "Ground the risks of probabilistic generation and the need for validation, constrained outputs, or external safeguards."
+    },
+    {
+      "domain": "Intermediate representations and deterministic validation",
+      "domain_id": "L5",
+      "purpose": "Ground structured representations, schema validation, constraint checking, and policy enforcement."
+    },
+    {
+      "domain": "3GPP network slicing management and intent management",
+      "domain_id": "L6",
+      "purpose": "Provide standards-related background. Normative claims must later be checked against official 3GPP specifications."
+    },
+    {
+      "domain": "O-RAN intelligent control, SMO, Non-RT RIC, and policy",
+      "domain_id": "L7",
+      "purpose": "Provide O-RAN architecture background. Normative claims must later be checked against official O-RAN specifications."
+    },
+    {
+      "domain": "Cross-domain intent-to-action research gap",
+      "domain_id": "L8",
+      "purpose": "Determine whether prior work provides an end-to-end, source-preserving, deterministic failure-containment path from natural-language intent to executable slice artifacts."
+    }
+  ],
+  "experiment_modified": false,
+  "inclusion_policy": {
+    "preferred": "Peer-reviewed journal/conference papers and authoritative standards/technical specifications.",
+    "secondary_surveys": "Allowed for landscape discovery but primary papers should support specific technical claims where available.",
+    "standards": "Official 3GPP and O-RAN sources required for normative claims.",
+    "unverified_web_sources": "Not sufficient as final evidence for technical or normative claims."
+  },
+  "model_api_called": false,
+  "registry_status": "EMPTY \u2014 awaiting verified literature sources",
+  "research_topic": "Deterministic natural-language intent translation for 3GPP- and O-RAN-aligned network slicing"
+}

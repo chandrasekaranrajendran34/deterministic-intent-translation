@@ -1,0 +1,269 @@
+{
+  "step": "25A",
+  "repair_family": "R4_semantic_CIR_construction",
+  "status": "READ_ONLY_BASELINE_INSPECTION",
+  "api_calls": 0,
+  "source_modifications": false,
+  "data_modifications": false,
+  "frozen_dev": {
+    "path": "/content/experiment-1-v2-together/experiment-2b/data/frozen/experiment2b_e3v3_development_160_v1.csv",
+    "sha256": "133c68842716f84a703478f7904c8cdd4f10cfdba683957ce23e473e81e7196f",
+    "rows": 160,
+    "dev_r4_cases": 20
+  },
+  "r3_closure": {
+    "path": "/content/experiment-1-v2-together/experiment-2b/implementation/e3_v3/experiment2b_e3v3_r3_closure_manifest_v1.json",
+    "sha256": "91500ae9531fe8650b0fbcc10e130ce190677ea6ae5f2a63ec2e494d9c16644f",
+    "status": "CLOSED"
+  },
+  "r3_transferred_failures": {
+    "count": 5,
+    "ids": [
+      "E3V3-DEV-056",
+      "E3V3-DEV-057",
+      "E3V3-DEV-059",
+      "E3V3-DEV-063",
+      "E3V3-DEV-071"
+    ],
+    "classification": "llm_cir_constraint_omission",
+    "repair_family": "R4_semantic_CIR_construction"
+  },
+  "dev_r4_overlap_with_transferred": [],
+  "development_runner": {
+    "path": "/content/experiment-1-v2-together/experiment-2b/implementation/e3_v3/run_experiment2b_e3v3_dev_v1.py",
+    "sha256": "8567344347834622815d915c0ee7fe62486991328d85b283ba8729e7c63d85f7"
+  },
+  "dev_r4_cases": [
+    {
+      "id": "E3V3-DEV-076",
+      "intent": "Provision eMBB with at least 420 Mbps bandwidth and latency below 35 ms.",
+      "subcategory": "two_constraint_compound",
+      "expected_valid": true,
+      "expected_service": "eMBB",
+      "constraint_type": "multi_field",
+      "difficulty": "medium",
+      "linguistic_form": "compound"
+    },
+    {
+      "id": "E3V3-DEV-077",
+      "intent": "Create eMBB with bandwidth above 520 Mbps and wide coverage.",
+      "subcategory": "two_constraint_compound",
+      "expected_valid": true,
+      "expected_service": "eMBB",
+      "constraint_type": "multi_field",
+      "difficulty": "medium",
+      "linguistic_form": "compound"
+    },
+    {
+      "id": "E3V3-DEV-078",
+      "intent": "Configure URLLC with latency at most 6 ms and reliability at least 99.95%.",
+      "subcategory": "two_constraint_compound",
+      "expected_valid": true,
+      "expected_service": "URLLC",
+      "constraint_type": "multi_field",
+      "difficulty": "medium",
+      "linguistic_form": "compound"
+    },
+    {
+      "id": "E3V3-DEV-079",
+      "intent": "Deploy URLLC with latency below 8 ms and reliability above 99.9%.",
+      "subcategory": "two_constraint_compound",
+      "expected_valid": true,
+      "expected_service": "URLLC",
+      "constraint_type": "multi_field",
+      "difficulty": "medium",
+      "linguistic_form": "compound"
+    },
+    {
+      "id": "E3V3-DEV-080",
+      "intent": "Provision mMTC for at least 300000 devices with wide coverage.",
+      "subcategory": "two_constraint_compound",
+      "expected_valid": true,
+      "expected_service": "mMTC",
+      "constraint_type": "multi_field",
+      "difficulty": "medium",
+      "linguistic_form": "compound"
+    },
+    {
+      "id": "E3V3-DEV-081",
+      "intent": "Create mMTC supporting more than 450000 devices with reliability at least 99%.",
+      "subcategory": "two_constraint_compound",
+      "expected_valid": true,
+      "expected_service": "mMTC",
+      "constraint_type": "multi_field",
+      "difficulty": "medium",
+      "linguistic_form": "compound"
+    },
+    {
+      "id": "E3V3-DEV-082",
+      "intent": "Deploy eMBB with at least 600 Mbps bandwidth and reliability above 99.5%.",
+      "subcategory": "two_constraint_compound",
+      "expected_valid": true,
+      "expected_service": "eMBB",
+      "constraint_type": "multi_field",
+      "difficulty": "medium",
+      "linguistic_form": "compound"
+    },
+    {
+      "id": "E3V3-DEV-083",
+      "intent": "Configure URLLC with latency under 5 ms and broad coverage.",
+      "subcategory": "two_constraint_compound",
+      "expected_valid": true,
+      "expected_service": "URLLC",
+      "constraint_type": "multi_field",
+      "difficulty": "medium",
+      "linguistic_form": "compound"
+    },
+    {
+      "id": "E3V3-DEV-084",
+      "intent": "Provision eMBB with bandwidth at most 900 Mbps and latency below 45 ms.",
+      "subcategory": "two_constraint_compound",
+      "expected_valid": true,
+      "expected_service": "eMBB",
+      "constraint_type": "multi_field",
+      "difficulty": "medium",
+      "linguistic_form": "compound"
+    },
+    {
+      "id": "E3V3-DEV-085",
+      "intent": "Create mMTC for no more than 700000 devices with broad coverage.",
+      "subcategory": "two_constraint_compound",
+      "expected_valid": true,
+      "expected_service": "mMTC",
+      "constraint_type": "multi_field",
+      "difficulty": "medium",
+      "linguistic_form": "compound"
+    },
+    {
+      "id": "E3V3-DEV-086",
+      "intent": "Provision eMBB with at least 500 Mbps bandwidth, latency below 40 ms, and reliability at least 99.5%.",
+      "subcategory": "three_or_more_constraint_compound",
+      "expected_valid": true,
+      "expected_service": "eMBB",
+      "constraint_type": "multi_field",
+      "difficulty": "hard",
+      "linguistic_form": "compound"
+    },
+    {
+      "id": "E3V3-DEV-087",
+      "intent": "Create URLLC with latency at most 5 ms, reliability above 99.99%, and wide coverage.",
+      "subcategory": "three_or_more_constraint_compound",
+      "expected_valid": true,
+      "expected_service": "URLLC",
+      "constraint_type": "multi_field",
+      "difficulty": "hard",
+      "linguistic_form": "compound"
+    },
+    {
+      "id": "E3V3-DEV-088",
+      "intent": "Configure mMTC for at least 400000 devices, reliability at least 99%, and broad coverage.",
+      "subcategory": "three_or_more_constraint_compound",
+      "expected_valid": true,
+      "expected_service": "mMTC",
+      "constraint_type": "multi_field",
+      "difficulty": "hard",
+      "linguistic_form": "compound"
+    },
+    {
+      "id": "E3V3-DEV-089",
+      "intent": "Deploy eMBB with bandwidth above 650 Mbps, latency under 30 ms, reliability at least 99.7%, and wide coverage.",
+      "subcategory": "three_or_more_constraint_compound",
+      "expected_valid": true,
+      "expected_service": "eMBB",
+      "constraint_type": "multi_field",
+      "difficulty": "hard",
+      "linguistic_form": "compound"
+    },
+    {
+      "id": "E3V3-DEV-090",
+      "intent": "Provision URLLC with latency below 7 ms, reliability no lower than 99.95%, and coverage across a wide area.",
+      "subcategory": "three_or_more_constraint_compound",
+      "expected_valid": true,
+      "expected_service": "URLLC",
+      "constraint_type": "multi_field",
+      "difficulty": "hard",
+      "linguistic_form": "compound"
+    },
+    {
+      "id": "E3V3-DEV-091",
+      "intent": "Create mMTC for more than 500000 devices, at least 99% reliability, and extensive coverage.",
+      "subcategory": "three_or_more_constraint_compound",
+      "expected_valid": true,
+      "expected_service": "mMTC",
+      "constraint_type": "multi_field",
+      "difficulty": "hard",
+      "linguistic_form": "compound"
+    },
+    {
+      "id": "E3V3-DEV-092",
+      "intent": "Configure eMBB with bandwidth at least 550 Mbps, latency no more than 50 ms, and broad coverage.",
+      "subcategory": "three_or_more_constraint_compound",
+      "expected_valid": true,
+      "expected_service": "eMBB",
+      "constraint_type": "multi_field",
+      "difficulty": "hard",
+      "linguistic_form": "compound"
+    },
+    {
+      "id": "E3V3-DEV-093",
+      "intent": "Deploy URLLC with latency below 4 ms, reliability above 99.9%, and support for wide coverage.",
+      "subcategory": "three_or_more_constraint_compound",
+      "expected_valid": true,
+      "expected_service": "URLLC",
+      "constraint_type": "multi_field",
+      "difficulty": "hard",
+      "linguistic_form": "compound"
+    },
+    {
+      "id": "E3V3-DEV-094",
+      "intent": "Provision mMTC for at least 250000 devices, reliability above 98.5%, and broad-area coverage.",
+      "subcategory": "three_or_more_constraint_compound",
+      "expected_valid": true,
+      "expected_service": "mMTC",
+      "constraint_type": "multi_field",
+      "difficulty": "hard",
+      "linguistic_form": "compound"
+    },
+    {
+      "id": "E3V3-DEV-095",
+      "intent": "Create eMBB with bandwidth above 700 Mbps, latency at most 35 ms, reliability at least 99.8%, and wide coverage.",
+      "subcategory": "three_or_more_constraint_compound",
+      "expected_valid": true,
+      "expected_service": "eMBB",
+      "constraint_type": "multi_field",
+      "difficulty": "hard",
+      "linguistic_form": "compound"
+    }
+  ],
+  "candidate_source_hashes": {
+    "experiment-2b/implementation/e3_v3/src/capability_resolver.py": "e84dcb1b4e0f2a495c48c72aac3d3963eac51ed7529829378a5b84da3df58d3a",
+    "experiment-2b/implementation/e3_v3/src/preservation_check.py": "7fdc76ee4e24572c0dbef13b66290b0eb28ba0036a130f102dbd41b77834fe52",
+    "experiment-2b/implementation/e3_v3/src/run_experiment2b.py": "08f67ab2261f37137f2f9b4d295833886be50298767678f4896f908405851042",
+    "experiment-2b/implementation/e3_v3/src/source_analyzer.py": "71a6f00172149f66250b3c17386eea98b18008eb65b097c327db705e94068dc8",
+    "experiment-2b/implementation/e3_v3/src/source_intent.py": "de745a90d6fb675bfbf485446ce97dbd9bb8f46f1ea1893a3252c1ed73e3e9d6",
+    "experiment-2b/src/capability_resolver.py": "e84dcb1b4e0f2a495c48c72aac3d3963eac51ed7529829378a5b84da3df58d3a",
+    "experiment-2b/src/run_experiment2b.py": "08f67ab2261f37137f2f9b4d295833886be50298767678f4896f908405851042",
+    "experiment-2b/src/source_analyzer.py": "05208f192c402a09a24a9db239aeb3a03e2e99f82c586f747dcac970df09970d",
+    "experiment-2b/src/source_intent.py": "de745a90d6fb675bfbf485446ce97dbd9bb8f46f1ea1893a3252c1ed73e3e9d6",
+    "src/descriptor.py": "05abcdbfdb15a1e6dcdf4a7986382bbd55eefae062473949cfca785effdbce5f",
+    "src/experiments/run_all.py": "9caf14e350d70d1d7cc7321209893c4ef1d8893d31c4973a885fc482553cdc11",
+    "src/input_audit.py": "02dc8dd293bf12f2ceb02873eccd79a9aec7ce6207af418f6bfe9e629d5ad93e",
+    "src/llm/together_adapter.py": "b11b08277578cdfd366af4e2e96862d601d7f08305dddd2c04c23e0ebc7506b3",
+    "src/metrics.py": "a773a53812bb64c0ddd5adfc55473ffd2b846ea376ce96e81883464120682fa5",
+    "src/plots/ieee_plots.py": "5780fbf3f8e10f2a40c4c00dbadb92bc370ae528fbef19535bca7d5bdafabfc0",
+    "src/schema.py": "f26e771cc7dab2288a78187fe407282f88acc69f9c6fec1f1e781e1a81d5ab34",
+    "src/validator.py": "c9e9daad54b5d31a6e4348aea168384eb841b0050fe501a633528df3770b6cb2"
+  },
+  "methodological_constraints": [
+    "R1, R2 and R3 are closed and must not be weakened.",
+    "Do not weaken source-to-CIR preservation checks.",
+    "Do not modify the canonical seven-field CIR schema.",
+    "Do not modify the frozen development dataset.",
+    "Do not tune against the final unseen holdout.",
+    "Do not create case-ID-specific repair rules.",
+    "Do not copy observed answers from development cases into code.",
+    "R4 repair must generalize to semantic CIR construction.",
+    "Preserve the same model for fair development comparison.",
+    "Any deterministic reconciliation must be source-bound and architecturally justified, not benchmark-specific."
+  ]
+}

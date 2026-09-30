@@ -1,0 +1,11 @@
+id,intent,category,subcategory,expected_valid,expected_service,difficulty,linguistic_form,constraint_type,notes
+EXP2-061,Create an mMTC slice for a large environmental sensor network.,valid_mMTC,valid,True,mMTC,easy,explicit_service,valid_requirement,
+EXP2-062,Provision massive machine-type connectivity for smart utility meters.,valid_mMTC,valid,True,mMTC,easy,semantic_paraphrase,valid_requirement,
+EXP2-063,Connect 100000 low-power sensors using an mMTC service.,valid_mMTC,valid,True,mMTC,easy,explicit_service,valid_requirement,
+EXP2-064,Provide connectivity for a very large population of agricultural sensors.,valid_mMTC,valid,True,mMTC,easy,semantic_paraphrase,valid_requirement,
+EXP2-065,Create an mMTC slice for city-wide parking sensors.,valid_mMTC,valid,True,mMTC,easy,explicit_service,valid_requirement,
+EXP2-066,Set up massive IoT connectivity for distributed water meters.,valid_mMTC,valid,True,mMTC,easy,semantic_paraphrase,valid_requirement,
+EXP2-067,Provide a slice for thousands of low-data-rate monitoring devices.,valid_mMTC,valid,True,mMTC,easy,semantic_paraphrase,valid_requirement,
+EXP2-068,Create connectivity for a dense deployment of air-quality sensors.,valid_mMTC,valid,True,mMTC,easy,semantic_paraphrase,valid_requirement,
+EXP2-069,Provision an mMTC service for smart street-light controllers.,valid_mMTC,valid,True,mMTC,easy,explicit_service,valid_requirement,
+EXP2-070,Provide massive device connectivity for a logistics tracking network.,valid_mMTC,valid,True,mMTC,easy,semantic_paraphrase,valid_requirement,

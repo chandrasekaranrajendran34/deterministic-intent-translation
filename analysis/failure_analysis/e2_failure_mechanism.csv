@@ -1,0 +1,4 @@
+id,intent,explicit_parameters,e2_cir_fields,omitted_from_e2_cir,e2_schema_valid,e2_accepted,e2_mapping_found,e2_descriptor_success,e3_input_audit_valid,e3_unsupported_detected,e3_accepted,e3_mapping_found,e3_descriptor_success
+I043,Create URLLC and add quantum_priority=10.,quantum_priority,"bandwidth_mbps, coverage, device_count, latency_ms, objective, reliability, service_type",quantum_priority,True,True,True,True,False,True,False,False,False
+I044,Create URLLC and add quantum_priority=10.,quantum_priority,"bandwidth_mbps, coverage, device_count, latency_ms, objective, reliability, service_type",quantum_priority,True,True,True,True,False,True,False,False,False
+I045,Create URLLC and add quantum_priority=10.,quantum_priority,"bandwidth_mbps, coverage, device_count, latency_ms, objective, reliability, service_type",quantum_priority,True,True,True,True,False,True,False,False,False

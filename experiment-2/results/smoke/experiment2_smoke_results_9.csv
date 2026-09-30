@@ -1,0 +1,78 @@
+id,intent,category,expected_service,expected_valid,pipeline,model,parse_ok,latency_ms,finish_reason,prompt_tokens,completion_tokens,raw_response,predicted_service,schema_valid,hallucination_detected,unsupported_input_detected,input_audit_valid,mapping_found,descriptor_success,accepted,validation_errors,cir_json,descriptor_json
+EXP2-002,Provision enhanced mobile broadband connectivity for a 4K video service.,valid_eMBB,eMBB,True,direct,Qwen/Qwen3.5-9B,True,2485.5175060001784,stop,111,111,"{
+  ""slices"": [
+    {
+      ""sliceType"": ""eMBB"",
+      ""serviceDescription"": ""4K video streaming"",
+      ""requirements"": {
+        ""minThroughput"": ""100 Mbps"",
+        ""maxLatency"": ""50 ms"",
+        ""reliability"": ""99.999%"",
+        ""mobility"": ""high""
+      },
+      ""status"": ""provisioned""
+    }
+  ]
+}",,True,False,False,,False,True,True,,,"{""slices"": [{""sliceType"": ""eMBB"", ""serviceDescription"": ""4K video streaming"", ""requirements"": {""minThroughput"": ""100 Mbps"", ""maxLatency"": ""50 ms"", ""reliability"": ""99.999%"", ""mobility"": ""high""}, ""status"": ""provisioned""}]}"
+EXP2-002,Provision enhanced mobile broadband connectivity for a 4K video service.,valid_eMBB,eMBB,True,cir,Qwen/Qwen3.5-9B,True,1127.4072119995253,stop,224,78,"{
+  ""service_type"": ""eMBB"",
+  ""latency_ms"": null,
+  ""bandwidth_mbps"": null,
+  ""reliability"": null,
+  ""device_count"": null,
+  ""coverage"": null,
+  ""objective"": ""Provision enhanced mobile broadband connectivity for a 4K video service.""
+}",eMBB,True,False,False,,True,True,True,,"{""service_type"": ""eMBB"", ""latency_ms"": null, ""bandwidth_mbps"": null, ""reliability"": null, ""device_count"": null, ""coverage"": null, ""objective"": ""Provision enhanced mobile broadband connectivity for a 4K video service.""}","{""service_type"": ""eMBB"", ""service_profile"": {""latency_ms"": null, ""bandwidth_mbps"": null, ""reliability"": null, ""device_count"": null, ""coverage"": null, ""objective"": ""Provision enhanced mobile broadband connectivity for a 4K video service.""}, ""standards_mapping"": {""mapping_found"": true, ""mapping"": {""threegpp"": ""network-slice service profile"", ""oran"": ""RAN slice/A1 policy candidate""}, ""profile"": ""3GPP Rel-18 + O-RAN R004""}}"
+EXP2-002,Provision enhanced mobile broadband connectivity for a 4K video service.,valid_eMBB,eMBB,True,proposed,Qwen/Qwen3.5-9B,True,1650.164451000819,stop,224,78,"{
+  ""service_type"": ""eMBB"",
+  ""latency_ms"": null,
+  ""bandwidth_mbps"": null,
+  ""reliability"": null,
+  ""device_count"": null,
+  ""coverage"": null,
+  ""objective"": ""Provision enhanced mobile broadband connectivity for a 4K video service.""
+}",eMBB,True,False,False,True,True,True,True,,"{""service_type"": ""eMBB"", ""latency_ms"": null, ""bandwidth_mbps"": null, ""reliability"": null, ""device_count"": null, ""coverage"": null, ""objective"": ""Provision enhanced mobile broadband connectivity for a 4K video service.""}","{""service_type"": ""eMBB"", ""service_profile"": {""latency_ms"": null, ""bandwidth_mbps"": null, ""reliability"": null, ""device_count"": null, ""coverage"": null, ""objective"": ""Provision enhanced mobile broadband connectivity for a 4K video service.""}, ""standards_mapping"": {""mapping_found"": true, ""mapping"": {""threegpp"": ""network-slice service profile"", ""oran"": ""RAN slice/A1 policy candidate""}, ""profile"": ""3GPP Rel-18 + O-RAN R004""}}"
+EXP2-133,Create URLLC with quantum_priority=10.,invalid_explicit_unsupported_parameter,,False,direct,Qwen/Qwen3.5-9B,True,1676.1352120010997,stop,108,50,"{
+  ""rejected"": true,
+  ""reason"": ""The parameter 'quantum_priority' is not a standard or supported attribute for URLLC network slicing. Valid parameters typically include latency, reliability, and bandwidth requirements.""
+}",,True,False,False,,False,False,False,,,
+EXP2-133,Create URLLC with quantum_priority=10.,invalid_explicit_unsupported_parameter,,False,cir,Qwen/Qwen3.5-9B,True,2965.049165999517,stop,221,63,"{
+  ""service_type"": ""URLLC"",
+  ""latency_ms"": null,
+  ""bandwidth_mbps"": null,
+  ""reliability"": null,
+  ""device_count"": null,
+  ""coverage"": null,
+  ""objective"": null
+}",URLLC,True,False,False,,True,True,True,,"{""service_type"": ""URLLC"", ""latency_ms"": null, ""bandwidth_mbps"": null, ""reliability"": null, ""device_count"": null, ""coverage"": null, ""objective"": null}","{""service_type"": ""URLLC"", ""service_profile"": {""latency_ms"": null, ""bandwidth_mbps"": null, ""reliability"": null, ""device_count"": null, ""coverage"": null, ""objective"": null}, ""standards_mapping"": {""mapping_found"": true, ""mapping"": {""threegpp"": ""network-slice service profile"", ""oran"": ""RAN slice/A1 policy candidate""}, ""profile"": ""3GPP Rel-18 + O-RAN R004""}}"
+EXP2-133,Create URLLC with quantum_priority=10.,invalid_explicit_unsupported_parameter,,False,proposed,Qwen/Qwen3.5-9B,True,923.1570659994759,stop,221,63,"{
+  ""service_type"": ""URLLC"",
+  ""latency_ms"": null,
+  ""bandwidth_mbps"": null,
+  ""reliability"": null,
+  ""device_count"": null,
+  ""coverage"": null,
+  ""objective"": null
+}",URLLC,True,False,True,False,False,False,False,UNSUPPORTED_INPUT_PARAMETER: quantum_priority,"{""service_type"": ""URLLC"", ""latency_ms"": null, ""bandwidth_mbps"": null, ""reliability"": null, ""device_count"": null, ""coverage"": null, ""objective"": null}",
+EXP2-145,Create URLLC and give it quantum priority.,invalid_implicit_unsupported_parameter,,False,direct,Qwen/Qwen3.5-9B,True,1652.597631999015,stop,107,73,"{
+  ""rejected"": true,
+  ""reason"": ""Quantum priority is not a valid network slicing parameter or QoS metric. Network slicing supports standard QoS classes (e.g., eMBB, URLLC, mMTC) and metrics like latency, reliability, and throughput, but 'quantum priority' is unsupported.""
+}",,True,False,False,,False,False,False,,,
+EXP2-145,Create URLLC and give it quantum priority.,invalid_implicit_unsupported_parameter,,False,cir,Qwen/Qwen3.5-9B,True,1223.2716859998618,stop,220,67,"{
+  ""service_type"": ""URLLC"",
+  ""latency_ms"": null,
+  ""bandwidth_mbps"": null,
+  ""reliability"": null,
+  ""device_count"": null,
+  ""coverage"": null,
+  ""objective"": ""quantum priority""
+}",URLLC,True,False,False,,True,True,True,,"{""service_type"": ""URLLC"", ""latency_ms"": null, ""bandwidth_mbps"": null, ""reliability"": null, ""device_count"": null, ""coverage"": null, ""objective"": ""quantum priority""}","{""service_type"": ""URLLC"", ""service_profile"": {""latency_ms"": null, ""bandwidth_mbps"": null, ""reliability"": null, ""device_count"": null, ""coverage"": null, ""objective"": ""quantum priority""}, ""standards_mapping"": {""mapping_found"": true, ""mapping"": {""threegpp"": ""network-slice service profile"", ""oran"": ""RAN slice/A1 policy candidate""}, ""profile"": ""3GPP Rel-18 + O-RAN R004""}}"
+EXP2-145,Create URLLC and give it quantum priority.,invalid_implicit_unsupported_parameter,,False,proposed,Qwen/Qwen3.5-9B,True,1095.5590720004693,stop,220,63,"{
+  ""service_type"": ""URLLC"",
+  ""latency_ms"": null,
+  ""bandwidth_mbps"": null,
+  ""reliability"": null,
+  ""device_count"": null,
+  ""coverage"": null,
+  ""objective"": null
+}",URLLC,True,False,False,True,True,True,True,,"{""service_type"": ""URLLC"", ""latency_ms"": null, ""bandwidth_mbps"": null, ""reliability"": null, ""device_count"": null, ""coverage"": null, ""objective"": null}","{""service_type"": ""URLLC"", ""service_profile"": {""latency_ms"": null, ""bandwidth_mbps"": null, ""reliability"": null, ""device_count"": null, ""coverage"": null, ""objective"": null}, ""standards_mapping"": {""mapping_found"": true, ""mapping"": {""threegpp"": ""network-slice service profile"", ""oran"": ""RAN slice/A1 policy candidate""}, ""profile"": ""3GPP Rel-18 + O-RAN R004""}}"

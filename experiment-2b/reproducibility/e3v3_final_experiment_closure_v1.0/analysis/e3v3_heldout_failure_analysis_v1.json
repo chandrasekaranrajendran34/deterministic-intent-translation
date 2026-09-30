@@ -1,0 +1,140 @@
+{
+  "analysis_id": "e3v3-heldout-failure-analysis-v1.0",
+  "cases": 120,
+  "confusion_matrix_invalid_as_positive": {
+    "fn": 12,
+    "fp": 7,
+    "tn": 51,
+    "tp": 50
+  },
+  "correct": 101,
+  "exact_binomial_95ci": [
+    {
+      "ci95_high_exact": 0.9018977052594082,
+      "ci95_low_exact": 0.7638364439717876,
+      "denominator": 120,
+      "metric": "decision_accuracy",
+      "numerator": 101,
+      "value": 0.8416666666666667
+    },
+    {
+      "ci95_high_exact": 0.9500733839765193,
+      "ci95_low_exact": 0.7670163622920063,
+      "denominator": 58,
+      "metric": "valid_acceptance_rate",
+      "numerator": 51,
+      "value": 0.8793103448275862
+    },
+    {
+      "ci95_high_exact": 0.8957903707378236,
+      "ci95_low_exact": 0.6863140483005372,
+      "denominator": 62,
+      "metric": "invalid_rejection_rate",
+      "numerator": 50,
+      "value": 0.8064516129032258
+    },
+    {
+      "ci95_high_exact": 0.9491710598414328,
+      "ci95_low_exact": 0.7632050006375726,
+      "denominator": 57,
+      "metric": "rejection_precision",
+      "numerator": 50,
+      "value": 0.8771929824561403
+    },
+    {
+      "ci95_high_exact": 0.8957903707378236,
+      "ci95_low_exact": 0.6863140483005372,
+      "denominator": 62,
+      "metric": "rejection_recall",
+      "numerator": 50,
+      "value": 0.8064516129032258
+    }
+  ],
+  "failures": 19,
+  "family_failure_counts": [
+    {
+      "count": 5,
+      "failure_type": "VALID_FALSE_REJECT",
+      "family_id": "H1"
+    },
+    {
+      "count": 2,
+      "failure_type": "INVALID_FALSE_ACCEPT",
+      "family_id": "H2"
+    },
+    {
+      "count": 2,
+      "failure_type": "INVALID_FALSE_ACCEPT",
+      "family_id": "H3"
+    },
+    {
+      "count": 2,
+      "failure_type": "VALID_FALSE_REJECT",
+      "family_id": "H4"
+    },
+    {
+      "count": 6,
+      "failure_type": "INVALID_FALSE_ACCEPT",
+      "family_id": "H6"
+    },
+    {
+      "count": 2,
+      "failure_type": "INVALID_FALSE_ACCEPT",
+      "family_id": "H7"
+    }
+  ],
+  "invalid_false_accepts": 12,
+  "llm_invocation_by_family": [
+    {
+      "cases": 18,
+      "family_id": "H1",
+      "llm_invocation_rate": 0.7222222222222222,
+      "llm_invocations": 13
+    },
+    {
+      "cases": 18,
+      "family_id": "H2",
+      "llm_invocation_rate": 1.0,
+      "llm_invocations": 18
+    },
+    {
+      "cases": 20,
+      "family_id": "H3",
+      "llm_invocation_rate": 0.7,
+      "llm_invocations": 14
+    },
+    {
+      "cases": 14,
+      "family_id": "H4",
+      "llm_invocation_rate": 1.0,
+      "llm_invocations": 14
+    },
+    {
+      "cases": 16,
+      "family_id": "H5",
+      "llm_invocation_rate": 0.625,
+      "llm_invocations": 10
+    },
+    {
+      "cases": 12,
+      "family_id": "H6",
+      "llm_invocation_rate": 0.5,
+      "llm_invocations": 6
+    },
+    {
+      "cases": 10,
+      "family_id": "H7",
+      "llm_invocation_rate": 0.2,
+      "llm_invocations": 2
+    },
+    {
+      "cases": 12,
+      "family_id": "H8",
+      "llm_invocation_rate": 0.0,
+      "llm_invocations": 0
+    }
+  ],
+  "run_manifest_sha256": "7d3ed06d31ce61cb5535a3acafcb572c6ed99d27e5cc2bb58fc433b2742704af",
+  "source_result_sha256": "12c3a82bd8cde2d07de352155e9ee14913c821fb745d401c7ffe2f207e850e5e",
+  "valid_false_rejects": 7
+}

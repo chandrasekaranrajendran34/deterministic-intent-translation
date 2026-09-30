@@ -1,0 +1,11 @@
+id,intent,category,subcategory,expected_valid,expected_service,difficulty,linguistic_form,constraint_type,notes
+EXP2-161,Create eMBB with bandwidth greater than 1 Gbps but capped at 50 Mbps.,invalid_contradictory,conflicting_constraints,False,,hard,compound_conflict,contradiction,
+EXP2-162,Provision mMTC with device count below 100 and above 100000.,invalid_contradictory,conflicting_constraints,False,,hard,compound_conflict,contradiction,
+EXP2-163,Create URLLC that must be both ultra-low-latency and explicitly high-latency.,invalid_contradictory,conflicting_constraints,False,,hard,compound_conflict,contradiction,
+EXP2-164,Provide eMBB requiring simultaneously high throughput and zero bandwidth.,invalid_contradictory,conflicting_constraints,False,,hard,compound_conflict,contradiction,
+EXP2-165,Create mMTC for a massive device population but restrict it to one device.,invalid_contradictory,conflicting_constraints,False,,hard,compound_conflict,contradiction,
+EXP2-166,Provision URLLC with reliability equal to 0.99999 and equal to 0.5.,invalid_contradictory,conflicting_constraints,False,,hard,compound_conflict,contradiction,
+EXP2-167,Create eMBB with required bandwidth of both 400 Mbps and 20 Mbps.,invalid_contradictory,conflicting_constraints,False,,hard,compound_conflict,contradiction,
+EXP2-168,Provide mMTC for exactly 10 devices while requiring at least 50000 devices.,invalid_contradictory,conflicting_constraints,False,,hard,compound_conflict,contradiction,
+EXP2-169,Create URLLC with reliability 1.5.,invalid_out_of_range,numeric_domain_violation,False,,medium,explicit_numeric,out_of_range,
+EXP2-170,Provision URLLC with latency -5 ms.,invalid_out_of_range,numeric_domain_violation,False,,medium,explicit_numeric,out_of_range,

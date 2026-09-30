@@ -1,0 +1,38 @@
+EXPERIMENT 1 DATA INTEGRITY REPORT
+==================================
+
+Raw result file:
+/content/experiment-1-v2-together/results/raw/experiment_results_150.csv
+
+Analysis copy:
+/content/experiment-1-v2-together/analysis/data/experiment_results_150_analysis.csv
+
+Total experimental observations:
+150
+
+Unique intents:
+50
+
+Direct observations:
+50
+
+CIR observations:
+50
+
+Proposed observations:
+50
+
+Parse failures:
+0
+
+Duplicate ID/pipeline observations:
+0
+
+Original SHA-256:
+284d54e726697d2216fbcb0b8c9f3ea73c7944cd0e2d53ea52eba906e190c008
+
+Analysis SHA-256:
+284d54e726697d2216fbcb0b8c9f3ea73c7944cd0e2d53ea52eba906e190c008
+
+Files identical:
+True

@@ -1,0 +1,8 @@
+category,direct,cir,proposed
+ambiguous,1.0,1.0,1.0
+contradictory,1.0,1.0,1.0
+hallucination_probe,1.0,0.0,1.0
+incomplete,1.0,1.0,1.0
+out_of_range,1.0,1.0,1.0
+prompt_injection,1.0,1.0,1.0
+unsupported,1.0,1.0,1.0

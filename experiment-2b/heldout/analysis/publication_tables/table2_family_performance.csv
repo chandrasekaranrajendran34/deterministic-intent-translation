@@ -1,0 +1,9 @@
+Family,Category,Correct / N,Accuracy (%),Valid accepted,Invalid rejected
+H1,Canonical / semantic service intents,13/18,72.22,13/18,—
+H2,Single numeric constraints,16/18,88.89,12/12,4/6
+H3,Compound / multi-constraints,18/20,90.0,12/12,6/8
+H4,Reliability representations,12/14,85.71,6/8,6/6
+H5,Qualitative requirements,16/16,100.0,8/8,8/8
+H6,Unsupported capabilities,6/12,50.0,—,6/12
+H7,Contradictions / incompatible bounds,8/10,80.0,—,8/10
+H8,Control / adversarial attempts,12/12,100.0,—,12/12

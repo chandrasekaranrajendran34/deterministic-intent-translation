@@ -1,0 +1,36 @@
+{
+  "step": "24E-D4",
+  "status": "PASS",
+  "active_r3_components": {
+    "analyzer_sha256": "71a6f00172149f66250b3c17386eea98b18008eb65b097c327db705e94068dc8",
+    "sidecar_sha256": "91742e13fce9683bd7ae36d771ef178ea5f40fc417ff0bab751c1c35d53185bd",
+    "preservation_sha256": "7fdc76ee4e24572c0dbef13b66290b0eb28ba0036a130f102dbd41b77834fe52"
+  },
+  "registered_differential": {
+    "path": "/content/experiment-1-v2-together/experiment-2b/implementation/e3_v3/experiment2b_e3v3_r3_r1r2_differential_final_v1.csv",
+    "sha256": "1a2852178fb4f00a91400af5a821c8f91f1b94698042308eda454ef58468b2d9",
+    "cases": 55,
+    "verified": true
+  },
+  "r1": {
+    "cases": 30,
+    "pass": 30
+  },
+  "r2": {
+    "cases": 25,
+    "pass": 25,
+    "artificial_minimum_constraint_gate_used": false
+  },
+  "combined": {
+    "cases": 55,
+    "pass": 55
+  },
+  "r3_end_to_end_context": {
+    "d3d_accuracy": "15/20",
+    "d3e_conditional_preservation": "15/15",
+    "remaining_failures_classified_as": "R4_semantic_CIR_construction"
+  },
+  "output": "/content/experiment-1-v2-together/experiment-2b/implementation/e3_v3/results/development/experiment2b_e3v3_r3_r1r2_regression_v1.csv",
+  "output_sha256": "1817e3ee4cddaa66efe135ccf0d63fadb779ef94439cf8e2ac7989b7fd0881d0",
+  "timestamp_utc": "2026-09-29T10:50:19.629915+00:00"
+}

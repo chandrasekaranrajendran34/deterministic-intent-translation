@@ -1,0 +1,29 @@
+{
+  "claim_boundary": "Failure taxonomy describes observed behavior on the frozen controlled held-out benchmark. It does not establish universal semantic failure classes or formal standards non-conformance.",
+  "development_status": "closed",
+  "invalid_false_accepts": 12,
+  "result_driven_tuning": false,
+  "source_failures": "/content/experiment-1-v2-together/experiment-2b/heldout/analysis/e3v3_heldout_failures_v1.csv",
+  "source_failures_sha256": "83b829173f928dd408a354631052d4bc0c5da7e2d9810b8530ad7405fb570ec3",
+  "source_result": "/content/experiment-1-v2-together/experiment-2b/heldout/results/e3v3_heldout_benchmark_run_v1.csv",
+  "source_result_sha256": "12c3a82bd8cde2d07de352155e9ee14913c821fb745d401c7ffe2f207e850e5e",
+  "taxonomy_counts": {
+    "T1": 5,
+    "T2": 2,
+    "T3": 2,
+    "T4": 2,
+    "T5": 6,
+    "T6": 2
+  },
+  "taxonomy_definition": {
+    "T1": "source_semantic_resolution_false_rejection",
+    "T2": "reliability_representation_normalization_miss",
+    "T3": "numeric_capability_boundary_omission",
+    "T4": "compound_constraint_contradiction_miss",
+    "T5": "unsupported_named_capability_escape",
+    "T6": "relational_contradiction_parsing_miss"
+  },
+  "taxonomy_id": "e3v3-heldout-failure-taxonomy-v1.0",
+  "total_failures": 19,
+  "valid_false_rejects": 7
+}
