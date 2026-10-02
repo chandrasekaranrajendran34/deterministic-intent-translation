@@ -1,0 +1,56 @@
+{
+  "created_utc": "2026-10-02T16:04:57.844422+00:00",
+  "interpretation_boundaries": [
+    "Experiment A demonstrates observed performance variation across six evaluable models while the tested containment violation count remained zero; it does not prove universal model independence.",
+    "B-Review is the reviewer-requested constrained-decoding experiment.",
+    "The E2A constrained treatment did not improve aggregate decision accuracy relative to historical CIR in the frozen comparison.",
+    "Exact paired McNemar p=0.1796875; do not characterize the observed E2A difference as statistically significant.",
+    "Provider-side structural constrained generation is distinct from downstream semantic/range validation.",
+    "B-E3 is supplementary and must not be represented as the reviewer-requested Experiment B.",
+    "No hallucination-free, zero-risk, universal-equivalence, or formal standards-conformance claim is supported."
+  ],
+  "manifest_id": "journal_C4_publication_tables_manifest_v1",
+  "parent_master_manifest": {
+    "path": "journal_experiments/journal_final_evidence/manifests/journal_master_frozen_evidence_manifest_v1.json",
+    "sha256": "80555895d6b3c3c877455f252c9924ad7c7d35d68ebcc8bed1f74f9622d1884c"
+  },
+  "scientific_execution_during_C4": {
+    "api_calls": 0,
+    "benchmark_executions": 0,
+    "experiment_reruns": 0,
+    "model_calls": 0
+  },
+  "status": "PUBLICATION_TABLES_DERIVED_FROM_FROZEN_EVIDENCE",
+  "tables": {
+    "T1_experiment_A_model_robustness": {
+      "path": "journal_experiments/journal_final_evidence/publication_tables/Table_C4_T1_experiment_A_model_robustness.csv",
+      "sha256": "b868cdb8d4fe5ad52b48906aaa74dbb5ff84d59aa76567b0a473ed42a8cc6b0a"
+    },
+    "T2_B_review_constrained_results": {
+      "path": "journal_experiments/journal_final_evidence/publication_tables/Table_C4_T2_B_review_constrained_results.csv",
+      "sha256": "5eeec0e8bc49354d32614d4010938f89e21fa52bfc9debb19033e94bc3297345"
+    },
+    "T3_E2A_constrained_vs_historical_CIR": {
+      "path": "journal_experiments/journal_final_evidence/publication_tables/Table_C4_T3_E2A_constrained_vs_historical_CIR.csv",
+      "sha256": "c92dc4a7fd89ae169e697a3f4e09db14914c092e5048b10215961bbec9bb54ee"
+    },
+    "T4_E2A_paired_correctness": {
+      "exact_mcnemar_p": 0.1796875,
+      "path": "journal_experiments/journal_final_evidence/publication_tables/Table_C4_T4_E2A_paired_correctness.csv",
+      "sha256": "97bd4a70593a482501bc43646a154a09b9f961cf7fa2631f2397ead38848b1e4"
+    },
+    "T5_unsupported_requirement_forensics": {
+      "invalid_requests_accepted": 47,
+      "path": "journal_experiments/journal_final_evidence/publication_tables/Table_C4_T5_unsupported_requirement_forensics.csv",
+      "sha256": "3c8cc652814006f095cfee18d8093b1258730122b7af7e63cef3c212a8da8411",
+      "structurally_valid_but_decision_wrong": 54,
+      "unsupported_cases": 24,
+      "unsupported_cases_accepted": 24
+    },
+    "T6_B_E3_supplementary": {
+      "path": "journal_experiments/journal_final_evidence/publication_tables/Table_C4_T6_B_E3_supplementary.csv",
+      "role": "SUPPLEMENTARY",
+      "sha256": "6a706602eded4922f15bedd7ec1be55ae1a2a3124064dc5e364ecb8418e08d0e"
+    }
+  }
+}

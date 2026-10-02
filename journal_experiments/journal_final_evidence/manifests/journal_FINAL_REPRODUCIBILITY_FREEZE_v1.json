@@ -1,0 +1,119 @@
+{
+  "allowed_next_operations": [
+    "Manuscript revision from frozen evidence.",
+    "Reviewer-response drafting from frozen evidence.",
+    "Publication-table formatting.",
+    "Figure preparation.",
+    "Supplementary-material preparation.",
+    "Reproducibility documentation."
+  ],
+  "authoritative_artifacts": {
+    "B_E3_final_freeze": {
+      "path": "journal_experiments/experiment_B_schema_constrained_decoding/manifests/experiment_B_E3_FINAL_FREEZE_v1.json",
+      "sha256": "e3e5dee967eeb233f1e583624d204b26c648040938715d41ff7cd4102d6d77bb"
+    },
+    "B_review_final_freeze": {
+      "path": "journal_experiments/experiment_B_review_requested_constrained_decoding/manifests/experiment_B_review_FINAL_FREEZE_v1.json",
+      "sha256": "63fa99c81477eb7d2c3136b67f72ac3d4673f7d081d7b332ef8d634c68faf3dd"
+    },
+    "C1_inventory": {
+      "path": "journal_experiments/journal_final_evidence/inventory/C1_frozen_evidence_inventory_v1.json",
+      "sha256": "550446bdd7f70481e0eb1a512af4e8d3fddb62eec7272f227d1c192514e7ced2"
+    },
+    "C3_master_manifest": {
+      "path": "journal_experiments/journal_final_evidence/manifests/journal_master_frozen_evidence_manifest_v1.json",
+      "sha256": "80555895d6b3c3c877455f252c9924ad7c7d35d68ebcc8bed1f74f9622d1884c"
+    },
+    "C4_T1": {
+      "path": "journal_experiments/journal_final_evidence/publication_tables/Table_C4_T1_experiment_A_model_robustness.csv",
+      "sha256": "b868cdb8d4fe5ad52b48906aaa74dbb5ff84d59aa76567b0a473ed42a8cc6b0a"
+    },
+    "C4_T2": {
+      "path": "journal_experiments/journal_final_evidence/publication_tables/Table_C4_T2_B_review_constrained_results.csv",
+      "sha256": "5eeec0e8bc49354d32614d4010938f89e21fa52bfc9debb19033e94bc3297345"
+    },
+    "C4_T3": {
+      "path": "journal_experiments/journal_final_evidence/publication_tables/Table_C4_T3_E2A_constrained_vs_historical_CIR.csv",
+      "sha256": "c92dc4a7fd89ae169e697a3f4e09db14914c092e5048b10215961bbec9bb54ee"
+    },
+    "C4_T4": {
+      "path": "journal_experiments/journal_final_evidence/publication_tables/Table_C4_T4_E2A_paired_correctness.csv",
+      "sha256": "97bd4a70593a482501bc43646a154a09b9f961cf7fa2631f2397ead38848b1e4"
+    },
+    "C4_T5": {
+      "path": "journal_experiments/journal_final_evidence/publication_tables/Table_C4_T5_unsupported_requirement_forensics.csv",
+      "sha256": "3c8cc652814006f095cfee18d8093b1258730122b7af7e63cef3c212a8da8411"
+    },
+    "C4_T6": {
+      "path": "journal_experiments/journal_final_evidence/publication_tables/Table_C4_T6_B_E3_supplementary.csv",
+      "sha256": "6a706602eded4922f15bedd7ec1be55ae1a2a3124064dc5e364ecb8418e08d0e"
+    },
+    "C4_manifest": {
+      "path": "journal_experiments/journal_final_evidence/manifests/journal_C4_publication_tables_manifest_v1.json",
+      "sha256": "b5dde308ca53757a48ba9e14fe34551855fdecd7eda5ee2dd74d30c371532eca"
+    },
+    "C5_claim_evidence_map": {
+      "path": "journal_experiments/journal_final_evidence/paper_ready/C5_claim_evidence_map_v1.json",
+      "sha256": "356c4a9de1d5387fa1d95af08743d1b001cdeb05d0757bbdc98f3361dbe1d56e"
+    },
+    "C5_manifest": {
+      "path": "journal_experiments/journal_final_evidence/manifests/journal_C5_paper_ready_results_manifest_v1.json",
+      "sha256": "464c863d070ef29b2308e5cecbce15d45772e2793bb5a212c6322b596f9d558f"
+    },
+    "C5_results_discussion": {
+      "path": "journal_experiments/journal_final_evidence/paper_ready/C5_paper_ready_results_discussion_v1.md",
+      "sha256": "dc340dbd24d4dd3c817b10ca95c5711c5a5833cd255ab726cbcd82652f47fe49"
+    },
+    "experiment_A_final_freeze": {
+      "path": "journal_experiments/experiment_A_model_sweep/manifests/experiment_A_FINAL_FREEZE_v1.json",
+      "sha256": "667cfd8b1e693c0ba2f7107a877c695181b273985adc976e43f124313e8d892a"
+    }
+  },
+  "claim_boundaries": [
+    "No hallucination-free claim.",
+    "No universal model-independence claim.",
+    "No universal safety claim.",
+    "No zero-risk claim.",
+    "No formal arbitrary-input guarantee.",
+    "No formal 3GPP/O-RAN conformance claim.",
+    "No universal cleaner-equivalence claim.",
+    "B-E3 is supplementary and must not be represented as the reviewer-requested Experiment B."
+  ],
+  "consolidation_status": {
+    "C1": "COMPLETE",
+    "C2": "COMPLETE",
+    "C3": "COMPLETE",
+    "C4": "COMPLETE",
+    "C5": "COMPLETE",
+    "C6": "FINAL_FREEZE"
+  },
+  "created_utc": "2026-10-02T16:10:03.879085+00:00",
+  "experiment_status": {
+    "B_E3": "FINAL_FROZEN_SUPPLEMENTARY",
+    "B_Review": "FINAL_FROZEN",
+    "Experiment_A": "FINAL_FROZEN"
+  },
+  "freeze_id": "journal_FINAL_REPRODUCIBILITY_FREEZE_v1",
+  "future_scientific_execution": {
+    "current_reviewer_plan_requires_additional_model_experiments": false,
+    "frozen_evidence_must_not_be_modified": true,
+    "frozen_experiments_must_not_be_rerun": true
+  },
+  "reproducibility_index": {
+    "path": "journal_experiments/journal_final_evidence/reproducibility/journal_FINAL_reproducibility_index_v1.json",
+    "sha256": "4f41c6656f0d836b03991c67046c56e64a55013564c13a7216008b72e3cb8402"
+  },
+  "reproducibility_readme": {
+    "path": "journal_experiments/journal_final_evidence/reproducibility/README_FINAL_REPRODUCIBILITY_FREEZE.md",
+    "sha256": "405219d333ff8c3a645dbd7a83883b44ad4c5f1f618b51cd1385c61ed55bf3a6"
+  },
+  "scientific_execution_during_C6": {
+    "api_calls": 0,
+    "benchmark_executions": 0,
+    "experiment_reruns": 0,
+    "model_calls": 0,
+    "new_scientific_results": 0,
+    "new_statistical_tests": 0
+  },
+  "status": "FINAL_FROZEN"
+}

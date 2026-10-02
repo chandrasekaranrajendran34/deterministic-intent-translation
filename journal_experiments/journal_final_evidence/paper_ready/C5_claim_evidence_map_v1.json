@@ -1,0 +1,35 @@
+{
+  "claim_1_cross_model_variation": {
+    "boundary": "Empirical result for six evaluated models and the frozen benchmark only.",
+    "evidence": "journal_experiments/journal_final_evidence/publication_tables/Table_C4_T1_experiment_A_model_robustness.csv",
+    "statement": "Across six evaluable models, accuracy ranged from 60.00% to 84.17%."
+  },
+  "claim_2_containment": {
+    "boundary": "Observed zero violations are not a universal formal guarantee.",
+    "evidence": "journal_experiments/journal_final_evidence/publication_tables/Table_C4_T1_experiment_A_model_robustness.csv",
+    "statement": "Zero containment violations were observed in every evaluable Experiment A arm."
+  },
+  "claim_3_B_review_E2A": {
+    "evidence": "journal_experiments/journal_final_evidence/publication_tables/Table_C4_T2_B_review_constrained_results.csv",
+    "statement": "E2A CIR-constrained accuracy was 73.00%, VAR 93.00%, and IRR 53.00%."
+  },
+  "claim_4_historical_comparison": {
+    "boundary": "Describe as no observed improvement; do not claim significant degradation.",
+    "evidence": "journal_experiments/journal_final_evidence/publication_tables/Table_C4_T3_E2A_constrained_vs_historical_CIR.csv",
+    "statement": "Historical CIR accuracy was 75.50% versus 73.00% for CIR constrained."
+  },
+  "claim_5_paired_test": {
+    "evidence": "journal_experiments/journal_final_evidence/publication_tables/Table_C4_T4_E2A_paired_correctness.csv",
+    "statement": "E2A paired counts were 144 both correct, 2 constrained-only, 7 historical-only, and 47 both wrong; exact McNemar p=0.1796875."
+  },
+  "claim_6_unsupported_requirements": {
+    "boundary": "This forensic classifier is specific to the frozen synthetic benchmark and is not a general semantic-equivalence detector.",
+    "evidence": "journal_experiments/journal_final_evidence/publication_tables/Table_C4_T5_unsupported_requirement_forensics.csv",
+    "statement": "All 24 unsupported-requirement E2A cases were accepted by the CIR-constrained branch; 17 were dropped, 3 mapped to supported fields, and 4 preserved as free text."
+  },
+  "claim_7_B_E3": {
+    "boundary": "Supplementary only; does not replace reviewer-requested B-Review.",
+    "evidence": "journal_experiments/journal_final_evidence/publication_tables/Table_C4_T6_B_E3_supplementary.csv",
+    "statement": "Supplementary B-E3 achieved 84.17% accuracy, 87.93% VAR, 80.65% IRR, with 77/77 invoked responses parsing successfully."
+  }
+}

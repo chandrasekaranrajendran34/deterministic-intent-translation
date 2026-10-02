@@ -1,0 +1,27 @@
+{
+  "manifest_id": "experiment-A-colab-reset-recovery-manifest-v1",
+  "created_utc": "2026-10-02T11:45:18.669210+00:00",
+  "recovery_record": {
+    "path": "journal_experiments/experiment_A_model_sweep/recovery/experiment_A_colab_reset_recovery_v1.json",
+    "sha256": "21947d0a7b84c249af08ec62f72b54cf2ea7614108eac26cfab1f0acaad22ac3"
+  },
+  "recovered_A1_result": {
+    "path": "experiment-2b/heldout/results/e3v3_heldout_benchmark_run_v1.csv",
+    "sha256": "12c3a82bd8cde2d07de352155e9ee14913c821fb745d401c7ffe2f207e850e5e"
+  },
+  "recovered_A1_manifest": {
+    "path": "experiment-2b/heldout/results/e3v3_heldout_benchmark_run_v1_manifest.json",
+    "sha256": "7d3ed06d31ce61cb5535a3acafcb572c6ed99d27e5cc2bb58fc433b2742704af"
+  },
+  "frozen_runner": {
+    "path": "experiment-2b/implementation/e3_v3/run_experiment2b_e3v3_r7_dev_v1.py",
+    "sha256": "40c035cb864978c718a72fcfdfbb164d262529960b0ae78242d5194147cd8257"
+  },
+  "frozen_benchmark": {
+    "path": "experiment-2b/reproducibility/e3v3_heldout_benchmark_v1.0/e3v3_heldout_benchmark_120_v1.csv",
+    "sha256": "84576e7d99a2721e61ded5a14bdafeb96707b068397243bbed32aa735496d4de"
+  },
+  "no_model_call": true,
+  "no_completed_arm_rerun": true,
+  "A10_executed": false
+}

@@ -1,0 +1,41 @@
+{
+  "BR5_probe_sha256": "d08119bff0c20c5b735c5eb1f743a65a5beb622088d565f5bfb9a8acf47fd208",
+  "adapter_sha256": "7d12ff7dfe671fbfcc82dbfcad242d9cdbeb114d7fc1b4aed78c887a5756bfad",
+  "benchmark": "E1",
+  "benchmark_cases": 50,
+  "dataset_sha256": "71093b63d60aa9ebc6f9133bf89f92ed9296fcec73e0703d6c4b58ace90f2826",
+  "execution_environment_correction": {
+    "adapter_modified": false,
+    "change": "repository root prepended to child process PYTHONPATH",
+    "runner_modified": false,
+    "scientific_code_modified": false,
+    "type": "PYTHONPATH"
+  },
+  "expected_provider_calls": 50,
+  "experiment": "B-Review",
+  "finished_utc": "2026-10-02T13:46:58.775058+00:00",
+  "log": {
+    "path": "journal_experiments/experiment_B_review_requested_constrained_decoding/logs/experiment_B_review_E1_cir_constrained_50_BR7R1_v1.log",
+    "sha256": "b4cc7295a00d4d9946dc0042b1eafd87e97b134fc506667c9ccfcc50d9656bbf"
+  },
+  "model": "Qwen/Qwen3.5-9B",
+  "preregistration_sha256": "30554d4811bed51a0c1476514f49c0a31c9301c338bdd7ec2c2a9017b2f525ba",
+  "prior_failed_launch": {
+    "log_sha256": "ce567a5d8fb4fae209465247c286d56e369b0f92015f2fb28911c9d1ae77834d",
+    "provider_calls": 0,
+    "record_sha256": "25ccd208edce6d5321c9a15da182641169471797d952c4800b36a10f7e3a05b8",
+    "scientific_observations": 0,
+    "status": "FAILED_BEFORE_BENCHMARK_EXECUTION"
+  },
+  "process_return_code": 0,
+  "result": {
+    "path": "journal_experiments/experiment_B_review_requested_constrained_decoding/results/E1/experiment_B_review_E1_cir_constrained_50_v1.csv",
+    "rows": 50,
+    "sha256": "21ef335ea6218edb01b30dccc1461520767a7d1e9ea2e6956e7ba267dc29ed68"
+  },
+  "runner_sha256": "1549e032eaed0441be441a2a7fe1a2e0defb3977efbb7968686eef3cf6b74851",
+  "started_utc": "2026-10-02T13:45:22.112066+00:00",
+  "status": "COMPLETED_AND_FROZEN_DO_NOT_RERUN",
+  "step": "BR7-R1",
+  "treatment": "cir_constrained"
+}

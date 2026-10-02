@@ -1,0 +1,27 @@
+{
+  "benchmark_cases_used": 0,
+  "capability_status": "SUPPORTED_AND_PROBE_VALID",
+  "completion_tokens": 91,
+  "created_utc": "2026-10-02T13:40:51.889104+00:00",
+  "experiment": "B-Review",
+  "finish_reason": "stop",
+  "latency_ms": 1419.3938839998737,
+  "model": "Qwen/Qwen3.5-9B",
+  "parse_ok": true,
+  "parsed_json": {
+    "bandwidth_mbps": 321,
+    "coverage": "Test-Zone-BR5",
+    "device_count": 43,
+    "latency_ms": 17,
+    "objective": "synthetic-structured-output-capability-check",
+    "reliability": 0.987,
+    "service_type": "eMBB"
+  },
+  "prompt_tokens": 268,
+  "provider_calls": 1,
+  "purpose": "single synthetic non-benchmark provider capability probe",
+  "raw": "{\n  \"bandwidth_mbps\": 321,\n  \"coverage\": \"Test-Zone-BR5\",\n  \"device_count\": 43,\n  \"latency_ms\": 17,\n  \"objective\": \"synthetic-structured-output-capability-check\",\n  \"reliability\": 0.987,\n  \"service_type\": \"eMBB\"\n}",
+  "step": "BR5",
+  "structural_schema_valid": true,
+  "synthetic_intent": "Synthetic capability probe BR5: create an eMBB slice with latency 17 ms, bandwidth 321 Mbps, reliability 0.987, 43 devices, coverage Test-Zone-BR5, and objective synthetic-structured-output-capability-check."
+}

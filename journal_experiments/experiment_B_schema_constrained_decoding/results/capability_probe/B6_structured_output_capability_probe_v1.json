@@ -1,0 +1,112 @@
+{
+  "api_success": true,
+  "benchmark_case": false,
+  "capability_status": "SUPPORTED_AND_PROBE_VALID",
+  "completion_tokens": 87,
+  "exception_message": null,
+  "exception_type": null,
+  "experiment": "Experiment B",
+  "finish_reason": "stop",
+  "finished_utc": "2026-10-02T12:22:07.736211+00:00",
+  "latency_ms": 4682.403540999985,
+  "model": "Qwen/Qwen3.5-9B",
+  "parse_ok": true,
+  "parsed_json": {
+    "bandwidth_mbps": 321,
+    "coverage": "Test-Zone-B6",
+    "device_count": 43,
+    "latency_ms": 17,
+    "objective": "synthetic-capability-check",
+    "reliability": 0.987,
+    "service_type": "eMBB"
+  },
+  "preregistration_sha256": "d6e6db1bf6248ac211f4ef925ba940254e765e6eedc51c0b67353f897a50a2f5",
+  "prompt_tokens": 266,
+  "provider_calls_attempted": 1,
+  "purpose": "single non-benchmark structured-output capability probe",
+  "raw_text": "{\n  \"service_type\": \"eMBB\",\n  \"latency_ms\": 17,\n  \"bandwidth_mbps\": 321,\n  \"reliability\": 0.987,\n  \"device_count\": 43,\n  \"coverage\": \"Test-Zone-B6\",\n  \"objective\": \"synthetic-capability-check\"\n}",
+  "rerun_allowed": false,
+  "response_format": {
+    "schema": {
+      "name": "network_slice_cir",
+      "schema": {
+        "additionalProperties": false,
+        "properties": {
+          "bandwidth_mbps": {
+            "type": [
+              "number",
+              "null"
+            ]
+          },
+          "coverage": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "device_count": {
+            "type": [
+              "integer",
+              "null"
+            ]
+          },
+          "latency_ms": {
+            "type": [
+              "number",
+              "null"
+            ]
+          },
+          "objective": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "reliability": {
+            "type": [
+              "number",
+              "null"
+            ]
+          },
+          "service_type": {
+            "type": [
+              "string",
+              "null"
+            ]
+          }
+        },
+        "required": [
+          "service_type",
+          "latency_ms",
+          "bandwidth_mbps",
+          "reliability",
+          "device_count",
+          "coverage",
+          "objective"
+        ],
+        "type": "object"
+      }
+    },
+    "type": "json_schema"
+  },
+  "started_utc": "2026-10-02T12:22:03.053574+00:00",
+  "step": "B6",
+  "structural_checks": {
+    "additional_keys": [],
+    "all_required_keys_present": true,
+    "exact_key_set": true,
+    "is_object": true
+  },
+  "structural_schema_valid": true,
+  "synthetic_prompt": "Synthetic capability probe only: create a network slice for eMBB with latency 17 ms and bandwidth 321 Mbps, reliability 0.987, device count 43, coverage Test-Zone-B6, with objective synthetic-capability-check.",
+  "together_sdk_version": "2.39.0",
+  "type_checks": {
+    "bandwidth_mbps": true,
+    "coverage": true,
+    "device_count": true,
+    "latency_ms": true,
+    "objective": true,
+    "reliability": true,
+    "service_type": true
+  }
+}

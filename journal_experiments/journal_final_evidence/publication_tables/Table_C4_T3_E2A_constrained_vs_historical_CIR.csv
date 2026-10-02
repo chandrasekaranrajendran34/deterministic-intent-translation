@@ -1,0 +1,3 @@
+configuration,accuracy_pct,valid_acceptance_rate_pct,invalid_rejection_rate_pct,accuracy_delta_vs_historical_pp,var_delta_vs_historical_pp,irr_delta_vs_historical_pp
+Historical CIR,75.5,96.0,55.0,0.0,0.0,0.0
+CIR constrained,73.0,93.0,53.0,-2.5,-3.0,-2.0

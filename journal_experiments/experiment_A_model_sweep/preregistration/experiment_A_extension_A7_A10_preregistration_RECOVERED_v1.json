@@ -1,0 +1,80 @@
+{
+  "record_type": "RECOVERED_PREREGISTRATION_REPRESENTATION",
+  "created_after_colab_reset_utc": "2026-10-02T11:49:16.094142+00:00",
+  "historical_event": "Experiment A A7-A10 extension preregistration",
+  "historical_original_artifacts": {
+    "json_sha256": "5568bf925a7b1de1e561820673bb15d89e818d08f2c2662f4c577fb9aa626f90",
+    "markdown_sha256": "2708091a86ab9f3432fceea31a4ddf26becd635d24c3605c46bec68a67218e54",
+    "manifest_sha256": "7867181975990e1c46359dedda988e129b09a9aa1c35165e13f1c6cb5f8c3b8a",
+    "recovery_status": "ORIGINAL_BYTES_LOST_AFTER_COLAB_RUNTIME_RESET"
+  },
+  "research_question": "With the deterministic E3-v3 cascade and 120-case benchmark held fixed, how sensitive are decision performance and deterministic containment to the semantic parser model?",
+  "selection_basis": "A7-A10 were prospective extension arms selected using non-benchmark endpoint accessibility screening and predefined model-diversity criteria. No held-out benchmark performance was used to select these arms.",
+  "relationship_to_A3_A6": "A7-A10 are prospective extension arms and are not replacements for unavailable original arms A3-A6.",
+  "arms": [
+    {
+      "arm": "A7",
+      "model": "arize-ai/qwen-2-1.5b-instruct",
+      "role": "small Qwen-derived / scale sensitivity"
+    },
+    {
+      "arm": "A8",
+      "model": "Prism-ML/Ternary-Bonsai-27B",
+      "role": "medium-scale independent family"
+    },
+    {
+      "arm": "A9",
+      "model": "deepseek-ai/DeepSeek-V4.1-Flash",
+      "role": "DeepSeek family"
+    },
+    {
+      "arm": "A10",
+      "model": "openai/gpt-oss-120b",
+      "role": "GPT-OSS family / large model"
+    }
+  ],
+  "execution_order": [
+    "A7",
+    "A8",
+    "A9",
+    "A10"
+  ],
+  "frozen_variables": {
+    "runner_sha256": "40c035cb864978c718a72fcfdfbb164d262529960b0ae78242d5194147cd8257",
+    "benchmark_sha256": "84576e7d99a2721e61ded5a14bdafeb96707b068397243bbed32aa735496d4de",
+    "variable_allowed_to_change": "semantic parser model only",
+    "runner_changes_allowed": false,
+    "benchmark_changes_allowed": false,
+    "prompt_changes_allowed": false,
+    "gate_changes_allowed": false,
+    "threshold_changes_allowed": false,
+    "label_changes_allowed": false,
+    "case_removal_allowed": false
+  },
+  "execution_policy": {
+    "A1_A2_rerun": false,
+    "result_driven_substitution": false,
+    "result_driven_removal": false,
+    "performance_driven_rerun": false,
+    "failed_extension_arm_silently_replaced": false,
+    "report_all_extension_arms": true
+  },
+  "primary_metrics": [
+    "decision_accuracy",
+    "valid_acceptance_rate_VAR",
+    "invalid_rejection_rate_IRR",
+    "containment_violations"
+  ],
+  "containment_definition": "accepted == False AND descriptor_json is present",
+  "containment_prediction": "Decision metrics may vary by semantic parser model; containment violations are expected to remain zero.",
+  "recovery_disclosure": "This JSON was created after the Colab runtime reset from historical preregistration facts and hashes recorded before the reset. It is not represented as byte-identical to the lost original preregistration artifact.",
+  "completed_before_reset": [
+    "A7",
+    "A8",
+    "A9"
+  ],
+  "not_executed_before_reset": [
+    "A10"
+  ],
+  "model_or_api_call_during_reconstruction": false
+}

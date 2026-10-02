@@ -1,0 +1,5 @@
+forensic_outcome,n,pct_of_unsupported_cases
+Dropped,17,70.83
+Mapped to supported field,3,12.5
+Preserved as free text,4,16.67
+Other / ambiguous,0,0.0

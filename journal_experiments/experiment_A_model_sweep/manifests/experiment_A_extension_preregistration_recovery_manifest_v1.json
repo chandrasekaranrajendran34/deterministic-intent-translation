@@ -1,0 +1,19 @@
+{
+  "manifest_id": "experiment-A-extension-preregistration-recovery-v1",
+  "created_utc": "2026-10-02T11:49:16.105472+00:00",
+  "recovered_representation": {
+    "local_path": "/content/deterministic-intent-translation-journal/journal_experiments/experiment_A_model_sweep/preregistration/experiment_A_extension_A7_A10_preregistration_RECOVERED_v1.json",
+    "drive_path": "/content/drive/MyDrive/PhD_Research/Deterministic_Intent_Translation/journal_experiments_persistent/experiment_A_model_sweep/preregistration/experiment_A_extension_A7_A10_preregistration_RECOVERED_v1.json",
+    "sha256": "9cd89b9f2937f686405f954628f77f7f44cc08ac79ea9499d3d98d8c1d8dd980"
+  },
+  "historical_original_hashes": {
+    "original_json_sha256": "5568bf925a7b1de1e561820673bb15d89e818d08f2c2662f4c577fb9aa626f90",
+    "original_markdown_sha256": "2708091a86ab9f3432fceea31a4ddf26becd635d24c3605c46bec68a67218e54",
+    "original_manifest_sha256": "7867181975990e1c46359dedda988e129b09a9aa1c35165e13f1c6cb5f8c3b8a"
+  },
+  "byte_identical_to_original": false,
+  "reason_not_byte_identical": "Original transient preregistration files were lost in the Colab runtime reset.",
+  "historical_facts_changed": false,
+  "model_or_api_call": false,
+  "A10_executed": false
+}

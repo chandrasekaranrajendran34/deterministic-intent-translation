@@ -1,0 +1,2 @@
+benchmark,n,valid_n,invalid_n,model,accuracy_pct,valid_acceptance_rate_pct,invalid_rejection_rate_pct,llm_invoked,pre_llm_no_call,parse_success,parse_failure,schema_valid_metric,role
+E3-v3,120,58,62,Qwen/Qwen3.5-9B,84.17,87.93,80.65,77,43,77,0,NOT_AVAILABLE_IN_FROZEN_RESULT_SCHEMA,SUPPLEMENTARY

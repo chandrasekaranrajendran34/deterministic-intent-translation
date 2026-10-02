@@ -1,0 +1,20 @@
+{
+  "B6_probe_sha256": "fc509b6ca254882935ac30c32333ac510d465024a32bf9cbf48ed92239a36392",
+  "B7B_treatment_adapter_sha256": "3e2a1cac6c2427eab9a28b69dc67b9a659ff9c83fd3d7bacb84222c51a21b4b6",
+  "artifact": "isolated structured-decoding treatment execution harness",
+  "benchmark_executed": false,
+  "experiment": "Experiment B",
+  "experimental_binding": "frozen_runner.call_json -> treatment_adapter.call_json_structured",
+  "frozen_benchmark_sha256": "84576e7d99a2721e61ded5a14bdafeb96707b068397243bbed32aa735496d4de",
+  "frozen_run_e3_v3_reimplemented": false,
+  "frozen_runner_sha256": "40c035cb864978c718a72fcfdfbb164d262529960b0ae78242d5194147cd8257",
+  "harness_path": "/content/deterministic-intent-translation-journal/journal_experiments/experiment_B_schema_constrained_decoding/implementation/run_experiment_B_structured_treatment_v1.py",
+  "harness_sha256": "10314f909693820d6a997a35680eb9366a40af97ba79e67e752568a92cbc7cca",
+  "historical_adapter_sha256": "b11b08277578cdfd366af4e2e96862d601d7f08305dddd2c04c23e0ebc7506b3",
+  "historical_files_modified": false,
+  "preregistration_sha256": "d6e6db1bf6248ac211f4ef925ba940254e765e6eedc51c0b67353f897a50a2f5",
+  "provider_calls": 0,
+  "schema_sha256": "f26e771cc7dab2288a78187fe407282f88acc69f9c6fec1f1e781e1a81d5ab34",
+  "step": "B8",
+  "validator_sha256": "c9e9daad54b5d31a6e4348aea168384eb841b0050fe501a633528df3770b6cb2"
+}

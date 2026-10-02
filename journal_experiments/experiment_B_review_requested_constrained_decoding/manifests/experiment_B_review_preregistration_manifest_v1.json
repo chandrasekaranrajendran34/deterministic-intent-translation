@@ -1,0 +1,19 @@
+{
+  "artifact": "prospective_preregistration",
+  "created_utc": "2026-10-02T13:34:25.847102+00:00",
+  "execution_status": "NO_B_REVIEW_MODEL_CALLS_OR_BENCHMARK_EXECUTION_AT_TIME_OF_PREREGISTRATION",
+  "experiment": "B-Review",
+  "historical_frozen_hashes": {
+    "data/raw/intents_50.csv": "71093b63d60aa9ebc6f9133bf89f92ed9296fcec73e0703d6c4b58ace90f2826",
+    "experiment-2/data/frozen/experiment2_intents_200_v1.csv": "96bcb4172dac8e9e499a9d9a4ac21354caf251a7a53ccbd470898fea02711753",
+    "experiment-2/reproducibility/experiment2a_frozen/experiment2a_freeze_manifest.json": "7b4ce6225dbb7795328ec5239cfa3983b14a8992d9fc2679cd5453554a6db1e1",
+    "experiment-2/reproducibility/experiment2a_frozen/experiment2a_primary_metrics.csv": "d9b908d86e252f3c06f362f5c677595fe85bda1ec39dbe61f2549f5bd4e3ad51",
+    "experiment-2/reproducibility/experiment2a_frozen/experiment2a_results_600.csv": "8c705c41b98b1f32f45fe914f34f9de16898e9e7a7e8de1e50710946356e7417",
+    "src/experiments/run_all.py": "9caf14e350d70d1d7cc7321209893c4ef1d8893d31c4973a885fc482553cdc11",
+    "src/llm/together_adapter.py": "b11b08277578cdfd366af4e2e96862d601d7f08305dddd2c04c23e0ebc7506b3"
+  },
+  "preregistration": {
+    "path": "journal_experiments/experiment_B_review_requested_constrained_decoding/preregistration/experiment_B_review_preregistration_v1.json",
+    "sha256": "30554d4811bed51a0c1476514f49c0a31c9301c338bdd7ec2c2a9017b2f525ba"
+  }
+}

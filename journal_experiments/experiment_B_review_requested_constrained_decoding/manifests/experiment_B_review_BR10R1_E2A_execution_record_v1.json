@@ -1,0 +1,32 @@
+{
+  "adapter_sha256": "7d12ff7dfe671fbfcc82dbfcad242d9cdbeb114d7fc1b4aed78c887a5756bfad",
+  "benchmark": "E2A",
+  "benchmark_cases": 200,
+  "dataset_sha256": "96bcb4172dac8e9e499a9d9a4ac21354caf251a7a53ccbd470898fea02711753",
+  "execution_resilience_change": "bounded transient-provider retry only",
+  "experiment": "B-Review",
+  "finished_utc": "2026-10-02T14:04:06.096071+00:00",
+  "interrupted_BR10_record_sha256": "21514eb08dcf63d6742acbfb4e80bb0ec7416b332b4f6b5d681fe57912cf091d",
+  "log": {
+    "path": "journal_experiments/experiment_B_review_requested_constrained_decoding/logs/experiment_B_review_E2A_cir_constrained_200_BR10R1_v1.log",
+    "sha256": "bf9d2dcef55c089a0eb2deee179ec4fe33d36dd69d3e43301d0c748b040436dc"
+  },
+  "model": "Qwen/Qwen3.5-9B",
+  "original_runner_sha256": "1549e032eaed0441be441a2a7fe1a2e0defb3977efbb7968686eef3cf6b74851",
+  "process_return_code": 0,
+  "recovery_manifest_sha256": "6923681077b6d47a3e7862989ef660dcdef2efdefb2829336de2fcef20ae2398",
+  "recovery_runner_sha256": "8b1acb6862cf967c4dd7ad75802caac9c2219efcbe42d3f6431a41c2275d0b16",
+  "result": {
+    "path": "journal_experiments/experiment_B_review_requested_constrained_decoding/results/E2A/experiment_B_review_E2A_cir_constrained_200_BR10R1_v1.csv",
+    "sha256": "257ff892912988b10d9abe11f24b2d746d1422d0ab06e96a39d2141b250532c6"
+  },
+  "result_rows": 200,
+  "role": "complete replacement for interrupted BR10 run",
+  "scientific_observations_from_interrupted_BR10_used": 0,
+  "scientific_treatment_changed": false,
+  "started_utc": "2026-10-02T13:59:03.243169+00:00",
+  "status": "COMPLETED_AND_FROZEN_DO_NOT_RERUN",
+  "step": "BR10-R1",
+  "transient_retry_events": 0,
+  "treatment": "cir_constrained"
+}

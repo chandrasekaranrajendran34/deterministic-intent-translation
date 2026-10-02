@@ -1,0 +1,113 @@
+{
+  "E1": {
+    "FN": 3,
+    "FP": 0,
+    "IRR": 0.88,
+    "IRR_ci95": [
+      0.6878096927137646,
+      0.9745346033522668
+    ],
+    "TN": 25,
+    "TP": 22,
+    "VAR": 1.0,
+    "VAR_ci95": [
+      0.8628148284692875,
+      1.0
+    ],
+    "accuracy": 0.94,
+    "accuracy_ci95": [
+      0.8345180533962271,
+      0.9874514121646659
+    ],
+    "cases": 50
+  },
+  "E2A_cir_constrained": {
+    "FN": 47,
+    "FP": 7,
+    "IRR": 0.53,
+    "IRR_ci95": [
+      0.4275814848900453,
+      0.6305948358056055
+    ],
+    "TN": 93,
+    "TP": 53,
+    "VAR": 0.93,
+    "VAR_ci95": [
+      0.8610802715441427,
+      0.9713947110925613
+    ],
+    "accuracy": 0.73,
+    "accuracy_ci95": [
+      0.6628474093126694,
+      0.7901966625338547
+    ],
+    "cases": 200,
+    "parse_success": 1.0,
+    "schema_valid_rate": 0.925
+  },
+  "E2A_delta_constrained_minus_historical": {
+    "IRR_pp": -2.0000000000000018,
+    "VAR_pp": -2.9999999999999916,
+    "accuracy_pp": -2.500000000000002
+  },
+  "E2A_historical_CIR": {
+    "FN": 45,
+    "FP": 4,
+    "IRR": 0.55,
+    "TN": 96,
+    "TP": 55,
+    "VAR": 0.96,
+    "accuracy": 0.755,
+    "cases": 200
+  },
+  "benchmark_executions_in_BR13": 0,
+  "claim_boundaries": [
+    "Do not claim that constrained decoding universally fails; results apply to the tested model, prompt, schema, and frozen benchmarks.",
+    "Do not claim hallucination-free behavior.",
+    "Do not claim formal standards conformance.",
+    "Do not interpret the deterministic BR12 lexical/numeric classifier as a general semantic-equivalence detector."
+  ],
+  "experiment": "B-Review",
+  "interruption_provenance": {
+    "completed_progress_markers_before_interruption": 79,
+    "lost_in_memory_outputs_reconstructed": false,
+    "original_BR10_status": "INTERRUPTED_PROVIDER_HTTP_503",
+    "partial_result_artifact_survived": false,
+    "replacement_cases": 200,
+    "replacement_run": "BR10-R1",
+    "replacement_transient_retry_events": 0,
+    "scientific_treatment_changed": false
+  },
+  "model": "Qwen/Qwen3.5-9B",
+  "model_calls_in_BR13": 0,
+  "model_running_experiments_remaining": 0,
+  "paired_E2A": {
+    "both_correct": 144,
+    "both_wrong": 47,
+    "constrained_only_correct": 2,
+    "discordant_pairs": 9,
+    "exact_mcnemar_p": 0.1796875,
+    "historical_only_correct": 7
+  },
+  "paper_safe_interpretation": "On the frozen E2A benchmark, structural constrained decoding produced fully parseable outputs but did not improve decision accuracy relative to the historical CIR control and did not eliminate semantic omission, mis-mapping, or unsupported-requirement acceptance. These results support retaining deterministic semantic validation beyond provider-side structural decoding.",
+  "purpose": "Reviewer-requested schema-constrained decoding comparison on frozen E1 and E2A benchmarks.",
+  "scientific_change": "Provider-side structural JSON-schema constrained generation only; historical CIR prompt, model, temperature and downstream validation/mapping/descriptor path retained.",
+  "semantic_safety": {
+    "invalid_requests_accepted": 47,
+    "invalid_requests_total": 100,
+    "structurally_valid_but_decision_wrong": 54,
+    "total_cases": 200
+  },
+  "status": "COMPLETE_AND_FROZEN",
+  "treatment": "cir_constrained",
+  "unsupported_constraint_forensics": {
+    "accepted": 24,
+    "cases": 24,
+    "dropped": 17,
+    "mapped_to_supported_field": 3,
+    "other_ambiguous": 0,
+    "preserved_as_text": 4,
+    "same_acceptance_as_historical": 24,
+    "same_cir_as_historical": 20
+  }
+}

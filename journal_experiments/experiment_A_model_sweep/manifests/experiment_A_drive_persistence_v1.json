@@ -1,0 +1,13 @@
+{
+  "manifest_id": "experiment-A-drive-persistence-v1",
+  "created_utc": "2026-10-02T11:46:17.737348+00:00",
+  "local_workspace": "/content/deterministic-intent-translation-journal/journal_experiments/experiment_A_model_sweep",
+  "persistent_drive_workspace": "/content/drive/MyDrive/PhD_Research/Deterministic_Intent_Translation/journal_experiments_persistent/experiment_A_model_sweep",
+  "files_verified_before_manifest": 2,
+  "recovery_record_sha256": "21947d0a7b84c249af08ec62f72b54cf2ea7614108eac26cfab1f0acaad22ac3",
+  "recovery_manifest_sha256": "65a7203297009292fd2fc4430ea92d9bf6b379559a356410272cf7a54ac3773c",
+  "verification": "BYTE_IDENTICAL_RELATIVE_PATH_SIZE_SHA256",
+  "authoritative_629_file_master_modified": false,
+  "model_or_api_call": false,
+  "purpose": "Persist Experiment A recovery/provenance state so that subsequent Colab runtime resets do not erase the journal experiment workspace."
+}

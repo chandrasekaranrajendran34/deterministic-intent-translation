@@ -1,0 +1,43 @@
+{
+  "allowed_execution_changes": [
+    "bounded retry of transient provider failures",
+    "retry wait between transient failures"
+  ],
+  "dataset_sha256": "96bcb4172dac8e9e499a9d9a4ac21354caf251a7a53ccbd470898fea02711753",
+  "experiment": "B-Review",
+  "interrupted_attempt_record_sha256": "21514eb08dcf63d6742acbfb4e80bb0ec7416b332b4f6b5d681fe57912cf091d",
+  "original_runner": {
+    "path": "journal_experiments/experiment_B_review_requested_constrained_decoding/implementation/run_experiment_B_review_cir_constrained_v1.py",
+    "sha256": "1549e032eaed0441be441a2a7fe1a2e0defb3977efbb7968686eef3cf6b74851"
+  },
+  "purpose": "Recover from provider HTTP 503 without changing scientific treatment.",
+  "recovery_runner": {
+    "path": "journal_experiments/experiment_B_review_requested_constrained_decoding/implementation/run_experiment_B_review_cir_constrained_recovery_v1.py",
+    "sha256": "8b1acb6862cf967c4dd7ad75802caac9c2219efcbe42d3f6431a41c2275d0b16"
+  },
+  "retry_policy": {
+    "maximum_attempts_per_case": 5,
+    "transient_indicators": [
+      "HTTP 503",
+      "service unavailable",
+      "timeout",
+      "temporarily unavailable",
+      "rate limit",
+      "HTTP 429"
+    ]
+  },
+  "scientific_changes": {
+    "benchmark": false,
+    "descriptor_logic": false,
+    "mapping": false,
+    "model": false,
+    "prompt": false,
+    "reasoning_setting": false,
+    "structural_schema": false,
+    "temperature": false,
+    "validation": false
+  },
+  "status": "RECOVERY_IMPLEMENTATION_FROZEN",
+  "step": "BR10-R0",
+  "treatment_adapter_sha256": "7d12ff7dfe671fbfcc82dbfcad242d9cdbeb114d7fc1b4aed78c887a5756bfad"
+}

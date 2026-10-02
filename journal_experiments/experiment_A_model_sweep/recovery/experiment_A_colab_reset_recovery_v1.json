@@ -1,0 +1,147 @@
+{
+  "record_id": "experiment-A-colab-reset-recovery-v1",
+  "created_utc": "2026-10-02T11:45:18.665565+00:00",
+  "event": {
+    "type": "COLAB_RUNTIME_RESET",
+    "description": "The transient /content filesystem was lost after Google Colab disconnected/reset. The authoritative 629-file project archive on Google Drive remained intact."
+  },
+  "restoration": {
+    "authoritative_source": "/content/drive/MyDrive/PhD_Research/Deterministic_Intent_Translation/experiment-1-v2-together_FINAL",
+    "restored_working_root": "/content/deterministic-intent-translation-journal",
+    "source_file_count": 629,
+    "restored_file_count": 629,
+    "runner_sha256": "40c035cb864978c718a72fcfdfbb164d262529960b0ae78242d5194147cd8257",
+    "benchmark_sha256": "84576e7d99a2721e61ded5a14bdafeb96707b068397243bbed32aa735496d4de"
+  },
+  "recovery_search": {
+    "files_scanned": 629,
+    "byte_identical_raw_results_recovered": [
+      "A1"
+    ],
+    "recorded_raw_results_not_found": [
+      "A2",
+      "A3",
+      "A4",
+      "A5",
+      "A7",
+      "A8",
+      "A9"
+    ],
+    "A6_note": "A6 benchmark was never executed; only a prebenchmark availability probe was performed.",
+    "A10_note": "A10 had not been executed before the runtime reset."
+  },
+  "arms": {
+    "A1": {
+      "model": "Qwen/Qwen3.5-9B",
+      "execution_status": "COMPLETED",
+      "evidence_status": "RAW_RESULT_RECOVERED_BYTE_IDENTICAL",
+      "raw_sha256": "12c3a82bd8cde2d07de352155e9ee14913c821fb745d401c7ffe2f207e850e5e",
+      "evaluable": true,
+      "accuracy": 0.8416666666666667,
+      "VAR": 0.8793103448275862,
+      "IRR": 0.8064516129032258,
+      "containment_violations": 0
+    },
+    "A2": {
+      "model": "meta-llama/Llama-3.3-70B-Instruct-Turbo",
+      "execution_status": "COMPLETED_BEFORE_RESET",
+      "evidence_status": "RAW_RESULT_LOST_AFTER_COLAB_RESET",
+      "raw_sha256": "5eba3be64426c14ac1a917be5392e4b6a0a487f3bf9be81c076d7f4b429380d7",
+      "evaluable": true,
+      "accuracy": 0.8333333333333334,
+      "VAR": 0.8275862068965517,
+      "IRR": 0.8387096774193549,
+      "containment_violations": 0
+    },
+    "A3": {
+      "model": "Qwen/Qwen2.5-7B-Instruct-Turbo",
+      "execution_status": "COMPLETED_BEFORE_RESET",
+      "evidence_status": "RAW_RESULT_LOST_AFTER_COLAB_RESET",
+      "raw_sha256": "fa4c9a0e57103768d06d370983a70a76516800bd0d57ec3d965445d35daf440a",
+      "evaluable": false,
+      "classification": "UNAVAILABLE_ON_ACCESSIBLE_SERVERLESS_ENDPOINT",
+      "llm_attempts": 77,
+      "model_responses": 0,
+      "containment_violations": 0
+    },
+    "A4": {
+      "model": "mistralai/Mistral-Small-24B-Instruct-2501",
+      "execution_status": "COMPLETED_BEFORE_RESET",
+      "evidence_status": "RAW_RESULT_LOST_AFTER_COLAB_RESET",
+      "raw_sha256": "6babc2b2492473e5ee737e182dd338be2bc23c0cb0f72b5de8b70864d8757125",
+      "evaluable": false,
+      "classification": "UNAVAILABLE_ON_ACCESSIBLE_SERVERLESS_ENDPOINT",
+      "llm_attempts": 77,
+      "model_responses": 0,
+      "containment_violations": 0
+    },
+    "A5": {
+      "model": "deepseek-ai/DeepSeek-V3.1",
+      "execution_status": "COMPLETED_BEFORE_RESET",
+      "evidence_status": "RAW_RESULT_LOST_AFTER_COLAB_RESET",
+      "raw_sha256": "8d6c561218991dc1d3a0f47601bd5a8c01bce918be0b3c1133333de5eb702f41",
+      "evaluable": false,
+      "classification": "UNAVAILABLE_ON_ACCESSIBLE_SERVERLESS_ENDPOINT",
+      "llm_attempts": 77,
+      "model_responses": 0,
+      "containment_violations": 0
+    },
+    "A6": {
+      "model": "openai/gpt-oss-20b",
+      "execution_status": "BENCHMARK_NOT_EXECUTED_PREBENCHMARK_PROBE_ONLY",
+      "evidence_status": "PROBE_ARTIFACT_LOST_AFTER_COLAB_RESET",
+      "evaluable": false,
+      "classification": "UNAVAILABLE_ON_ACCESSIBLE_SERVERLESS_ENDPOINT",
+      "benchmark_cases_submitted": 0
+    },
+    "A7": {
+      "model": "arize-ai/qwen-2-1.5b-instruct",
+      "execution_status": "COMPLETED_BEFORE_RESET",
+      "evidence_status": "RAW_RESULT_LOST_AFTER_COLAB_RESET",
+      "raw_sha256": "2c41287e4cab5680e5031fb9252b003d7bdf5412a76b42a8856c9ce700a70e7c",
+      "evaluable": true,
+      "accuracy": 0.6,
+      "VAR": 0.1896551724137931,
+      "IRR": 0.9838709677419355,
+      "containment_violations": 0
+    },
+    "A8": {
+      "model": "Prism-ML/Ternary-Bonsai-27B",
+      "execution_status": "COMPLETED_BEFORE_RESET",
+      "evidence_status": "RAW_RESULT_LOST_AFTER_COLAB_RESET",
+      "raw_sha256": "1507e111876a27801fbd03998cfa8f8390b663be954479386f01bf2ae242b082",
+      "evaluable": true,
+      "accuracy": 0.7583333333333333,
+      "VAR": 0.7068965517241379,
+      "IRR": 0.8064516129032258,
+      "containment_violations": 0
+    },
+    "A9": {
+      "model": "deepseek-ai/DeepSeek-V4.1-Flash",
+      "execution_status": "COMPLETED_BEFORE_RESET",
+      "evidence_status": "RAW_RESULT_LOST_AFTER_COLAB_RESET",
+      "raw_sha256": "b4b02483db7021c43e2e406d0ea4811f7f22f72258957613bbfcd96b11ec12aa",
+      "evaluable": true,
+      "accuracy": 0.8416666666666667,
+      "VAR": 0.8793103448275862,
+      "IRR": 0.8064516129032258,
+      "containment_violations": 0
+    },
+    "A10": {
+      "model": "openai/gpt-oss-120b",
+      "execution_status": "NOT_YET_EXECUTED",
+      "evidence_status": "NONE_YET",
+      "evaluable": null
+    }
+  },
+  "recovery_policy": {
+    "rerun_completed_arms_to_recreate_lost_files": false,
+    "reason": "A second execution would not be byte-identical evidence of the original completed run and could introduce post-observation rerun bias.",
+    "manufacture_raw_results_from_recorded_metrics": false,
+    "treat_recorded_metrics_as_raw_files": false,
+    "continue_never_executed_A10": true,
+    "preserve_loss_disclosure": true
+  },
+  "claim_boundary": "Recovered A1 retains byte-identical raw evidence. For A2-A5 and A7-A9, execution outcomes and hashes were recorded before the reset, but the transient raw files are no longer locally available. Those records must not be represented as recovered raw outputs.",
+  "model_or_api_call_made_during_recovery": false
+}

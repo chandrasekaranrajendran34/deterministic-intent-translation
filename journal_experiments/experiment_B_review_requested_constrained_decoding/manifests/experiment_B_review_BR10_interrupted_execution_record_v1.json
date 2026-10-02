@@ -1,0 +1,28 @@
+{
+  "adapter_sha256": "7d12ff7dfe671fbfcc82dbfcad242d9cdbeb114d7fc1b4aed78c887a5756bfad",
+  "benchmark": "E2A",
+  "completed_marker_range": [
+    "EXP2-001",
+    "EXP2-079"
+  ],
+  "completed_progress_markers": 79,
+  "dataset_sha256": "96bcb4172dac8e9e499a9d9a4ac21354caf251a7a53ccbd470898fea02711753",
+  "experiment": "B-Review",
+  "important_interpretation": "The first 79 provider calls completed sufficiently for the runner to emit progress markers, but their generated outputs were retained only in process memory. Because the frozen runner writes the result CSV only after the full loop, those outputs were lost when the provider returned HTTP 503 during EXP2-080.",
+  "interrupted_log": {
+    "path": "journal_experiments/experiment_B_review_requested_constrained_decoding/logs/experiment_B_review_E2A_cir_constrained_200_v1.log",
+    "sha256": "1aefd5022a637bb57775794c248e3d757a7086889d7c8caf0d383715464c85da"
+  },
+  "original_runner_sha256": "1549e032eaed0441be441a2a7fe1a2e0defb3977efbb7968686eef3cf6b74851",
+  "partial_result_artifact": false,
+  "provider_failure": {
+    "failed_case_boundary": "EXP2-080",
+    "http_status": 503,
+    "type": "service_unavailable"
+  },
+  "recorded_utc": "2026-10-02T13:57:44.350028+00:00",
+  "recovery_policy": "Do not reconstruct or fabricate the lost outputs. A complete replacement E2A treatment run is required. The interrupted attempt remains part of provenance and is excluded from scientific outcome analysis.",
+  "scientific_observations_available_for_analysis": 0,
+  "status": "INTERRUPTED_PROVIDER_503_NO_RESULT_ARTIFACT",
+  "step": "BR10"
+}

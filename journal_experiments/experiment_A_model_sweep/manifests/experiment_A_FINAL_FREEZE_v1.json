@@ -1,0 +1,163 @@
+{
+  "freeze_id": "experiment-A-final-freeze-v1",
+  "created_utc": "2026-10-02T12:02:42.445217+00:00",
+  "experiment": "Experiment A \u2014 semantic-parser model variation under a frozen deterministic E3-v3 cascade",
+  "status": "COMPLETE_AND_FROZEN",
+  "research_question": "When the deterministic pipeline and benchmark are held fixed, how much does semantic-parser model choice affect decision performance, and does the deterministic containment boundary remain intact across tested models?",
+  "frozen_inputs": {
+    "runner_sha256": "40c035cb864978c718a72fcfdfbb164d262529960b0ae78242d5194147cd8257",
+    "benchmark_sha256": "84576e7d99a2721e61ded5a14bdafeb96707b068397243bbed32aa735496d4de",
+    "benchmark_cases": 120,
+    "valid_cases": 58,
+    "invalid_cases": 62
+  },
+  "original_preregistration": {
+    "arms": [
+      "A1",
+      "A2",
+      "A3",
+      "A4",
+      "A5",
+      "A6"
+    ],
+    "evaluable": [
+      "A1",
+      "A2"
+    ],
+    "endpoint_unavailable": [
+      "A3",
+      "A4",
+      "A5",
+      "A6"
+    ],
+    "substitutions": 0,
+    "removals": 0
+  },
+  "prospective_extension": {
+    "arms": [
+      "A7",
+      "A8",
+      "A9",
+      "A10"
+    ],
+    "evaluable": [
+      "A7",
+      "A8",
+      "A9",
+      "A10"
+    ],
+    "replacement_for_original_unavailable_arms": false,
+    "selection_used_heldout_performance": false
+  },
+  "all_evaluable_arms": [
+    "A1",
+    "A2",
+    "A7",
+    "A8",
+    "A9",
+    "A10"
+  ],
+  "evaluable_model_count": 6,
+  "final_results": {
+    "A1": {
+      "model": "Qwen/Qwen3.5-9B",
+      "accuracy_pct": 84.17,
+      "VAR_pct": 87.93,
+      "IRR_pct": 80.65,
+      "containment_violations": 0
+    },
+    "A2": {
+      "model": "meta-llama/Llama-3.3-70B-Instruct-Turbo",
+      "accuracy_pct": 83.33,
+      "VAR_pct": 82.76,
+      "IRR_pct": 83.87,
+      "containment_violations": 0
+    },
+    "A7": {
+      "model": "arize-ai/qwen-2-1.5b-instruct",
+      "accuracy_pct": 60.0,
+      "VAR_pct": 18.97,
+      "IRR_pct": 98.39,
+      "containment_violations": 0
+    },
+    "A8": {
+      "model": "Prism-ML/Ternary-Bonsai-27B",
+      "accuracy_pct": 75.83,
+      "VAR_pct": 70.69,
+      "IRR_pct": 80.65,
+      "containment_violations": 0
+    },
+    "A9": {
+      "model": "deepseek-ai/DeepSeek-V4.1-Flash",
+      "accuracy_pct": 84.17,
+      "VAR_pct": 87.93,
+      "IRR_pct": 80.65,
+      "containment_violations": 0
+    },
+    "A10": {
+      "model": "openai/gpt-oss-120b",
+      "accuracy_pct": 74.17,
+      "VAR_pct": 65.52,
+      "IRR_pct": 82.26,
+      "containment_violations": 0
+    }
+  },
+  "descriptive_cross_model_result": {
+    "accuracy_range_pct": [
+      60.0,
+      84.17
+    ],
+    "accuracy_spread_percentage_points": 24.17,
+    "VAR_range_pct": [
+      18.97,
+      87.93
+    ],
+    "VAR_spread_percentage_points": 68.97,
+    "IRR_range_pct": [
+      80.65,
+      98.39
+    ],
+    "IRR_spread_percentage_points": 17.74,
+    "containment_violations_each_arm": 0,
+    "total_observed_containment_violations": 0
+  },
+  "containment_definition": "A containment violation occurs when a rejected case (accepted == False) nevertheless contains descriptor_json.",
+  "primary_empirical_observation": "Decision performance varied substantially across the six evaluable semantic-parser arms, while zero observed containment violations occurred in every tested evaluable arm under the frozen deterministic cascade.",
+  "publication_claim_boundary": {
+    "supported_wording": "Across six evaluable semantic-parser models tested on the frozen 120-case benchmark, decision accuracy ranged from 60.00% to 84.17%, while the deterministic failure-containment mechanism produced zero observed containment violations in every evaluable arm.",
+    "supported_interpretation": "The experiment provides empirical evidence that semantic-model-dependent decision performance can vary substantially while the tested deterministic downstream containment boundary remains stable.",
+    "must_not_claim": [
+      "universal model independence",
+      "hallucination-free operation",
+      "formal guarantee for arbitrary models",
+      "zero-risk operation",
+      "formal 3GPP conformance from this experiment",
+      "formal O-RAN conformance from this experiment",
+      "causal attribution of metric differences solely to model size",
+      "causal attribution of metric differences solely to model architecture",
+      "case-level identity between A1 and A9"
+    ]
+  },
+  "recovery_disclosure": {
+    "colab_reset_occurred": true,
+    "A1": "The official frozen E3-v3 baseline raw result remains available byte-identically. The later Experiment-A reproduction raw CSV was lost in the reset; its pre-reset result had reproduced the official aggregate metrics exactly.",
+    "A2_A7_A8_A9": "Transient raw CSVs were lost in the Colab runtime reset. Their outcome counts, aggregate metrics, containment results, and raw-file SHA-256 values had been recorded before the reset. Lost raw files were not reconstructed or represented as recovered.",
+    "A10": "A10 had never been executed before the reset. After recovery provenance was frozen, A10 was executed exactly once and its raw evidence was immediately persisted to Drive."
+  },
+  "historical_original_extension_preregistration_hashes": {
+    "json_sha256": "5568bf925a7b1de1e561820673bb15d89e818d08f2c2662f4c577fb9aa626f90",
+    "markdown_sha256": "2708091a86ab9f3432fceea31a4ddf26becd635d24c3605c46bec68a67218e54",
+    "manifest_sha256": "7867181975990e1c46359dedda988e129b09a9aa1c35165e13f1c6cb5f8c3b8a"
+  },
+  "consolidation_artifacts": {
+    "csv_sha256": "36380008c7bd7ed1158666d4f0c8e9d31708863164b4f2551fea7f5238d2c880",
+    "json_sha256": "c055cad3071ad923978d7a180f5c811974a726104360ae7e715766083477e448",
+    "manifest_sha256": "3e30e74ea2558819c42d9c2b9ef4dfc7bd9187404b7779884aa5b6c67ad8c01a"
+  },
+  "experiment_closed": true,
+  "further_model_runs_part_of_experiment_A": false,
+  "further_parameter_tuning_part_of_experiment_A": false,
+  "further_threshold_tuning_part_of_experiment_A": false,
+  "model_or_api_call_during_final_freeze": false,
+  "benchmark_rerun_during_final_freeze": false
+}

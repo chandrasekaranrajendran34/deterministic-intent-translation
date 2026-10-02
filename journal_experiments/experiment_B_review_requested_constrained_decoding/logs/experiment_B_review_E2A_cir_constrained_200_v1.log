@@ -1,0 +1,124 @@
+[1/200] EXP2-001
+[2/200] EXP2-002
+[3/200] EXP2-003
+[4/200] EXP2-004
+[5/200] EXP2-005
+[6/200] EXP2-006
+[7/200] EXP2-007
+[8/200] EXP2-008
+[9/200] EXP2-009
+[10/200] EXP2-010
+[11/200] EXP2-011
+[12/200] EXP2-012
+[13/200] EXP2-013
+[14/200] EXP2-014
+[15/200] EXP2-015
+[16/200] EXP2-016
+[17/200] EXP2-017
+[18/200] EXP2-018
+[19/200] EXP2-019
+[20/200] EXP2-020
+[21/200] EXP2-021
+[22/200] EXP2-022
+[23/200] EXP2-023
+[24/200] EXP2-024
+[25/200] EXP2-025
+[26/200] EXP2-026
+[27/200] EXP2-027
+[28/200] EXP2-028
+[29/200] EXP2-029
+[30/200] EXP2-030
+[31/200] EXP2-031
+[32/200] EXP2-032
+[33/200] EXP2-033
+[34/200] EXP2-034
+[35/200] EXP2-035
+[36/200] EXP2-036
+[37/200] EXP2-037
+[38/200] EXP2-038
+[39/200] EXP2-039
+[40/200] EXP2-040
+[41/200] EXP2-041
+[42/200] EXP2-042
+[43/200] EXP2-043
+[44/200] EXP2-044
+[45/200] EXP2-045
+[46/200] EXP2-046
+[47/200] EXP2-047
+[48/200] EXP2-048
+[49/200] EXP2-049
+[50/200] EXP2-050
+[51/200] EXP2-051
+[52/200] EXP2-052
+[53/200] EXP2-053
+[54/200] EXP2-054
+[55/200] EXP2-055
+[56/200] EXP2-056
+[57/200] EXP2-057
+[58/200] EXP2-058
+[59/200] EXP2-059
+[60/200] EXP2-060
+[61/200] EXP2-061
+[62/200] EXP2-062
+[63/200] EXP2-063
+[64/200] EXP2-064
+[65/200] EXP2-065
+[66/200] EXP2-066
+[67/200] EXP2-067
+[68/200] EXP2-068
+[69/200] EXP2-069
+[70/200] EXP2-070
+[71/200] EXP2-071
+[72/200] EXP2-072
+[73/200] EXP2-073
+[74/200] EXP2-074
+[75/200] EXP2-075
+[76/200] EXP2-076
+[77/200] EXP2-077
+[78/200] EXP2-078
+[79/200] EXP2-079
+Traceback (most recent call last):
+  File "/content/deterministic-intent-translation-journal/journal_experiments/experiment_B_review_requested_constrained_decoding/implementation/run_experiment_B_review_cir_constrained_v1.py", line 246, in <module>
+    main()
+    ~~~~^^
+  File "/content/deterministic-intent-translation-journal/journal_experiments/experiment_B_review_requested_constrained_decoding/implementation/run_experiment_B_review_cir_constrained_v1.py", line 238, in main
+    run(
+    ~~~^
+        args.dataset,
+        ^^^^^^^^^^^^^
+        args.out,
+        ^^^^^^^^^
+        args.model
+        ^^^^^^^^^^
+    )
+    ^
+  File "/content/deterministic-intent-translation-journal/journal_experiments/experiment_B_review_requested_constrained_decoding/implementation/run_experiment_B_review_cir_constrained_v1.py", line 27, in run
+    llm = call_json_structured(
+        r.intent,
+        mode="cir",
+        model=model
+    )
+  File "/content/deterministic-intent-translation-journal/journal_experiments/experiment_B_review_requested_constrained_decoding/implementation/experiment_B_review_structured_adapter_v1.py", line 69, in call_json_structured
+    response = client.chat.completions.create(
+        model=model,
+    ...<28 lines>...
+        }
+    )
+  File "/usr/local/lib/python3.13/dist-packages/together/_utils/_utils.py", line 294, in wrapper
+    return func(*args, **kwargs)
+  File "/usr/local/lib/python3.13/dist-packages/together/resources/chat/completions.py", line 523, in create
+    return self._post(
+           ~~~~~~~~~~^
+        "/chat/completions",
+        ^^^^^^^^^^^^^^^^^^^^
+    ...<39 lines>...
+        stream_cls=Stream[ChatCompletionChunk],
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/usr/local/lib/python3.13/dist-packages/together/_base_client.py", line 1292, in post
+    return cast(ResponseT, self.request(cast_to, opts, stream=stream, stream_cls=stream_cls))
+                           ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.13/dist-packages/together/_base_client.py", line 1079, in request
+    raise self._make_status_error_from_response(err.response) from None
+together.InternalServerError: Error code: 503 - {'id': 'p3d3nKW-fdNmn-a44431501c7bbd34', 'error': {'message': 'Service unavailable', 'type': 'service_unavailable', 'param': None, 'code': None}}

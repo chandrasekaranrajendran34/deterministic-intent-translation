@@ -1,0 +1,41 @@
+{
+  "created_utc": "2026-10-02T13:39:34.755621+00:00",
+  "execution_status": "ZERO_API_CALLS_ZERO_BENCHMARK_CASES",
+  "experiment": "B-Review",
+  "historical_provenance": {
+    "E1_dataset_sha256": "71093b63d60aa9ebc6f9133bf89f92ed9296fcec73e0703d6c4b58ace90f2826",
+    "E2A_dataset_sha256": "96bcb4172dac8e9e499a9d9a4ac21354caf251a7a53ccbd470898fea02711753",
+    "adapter_sha256": "b11b08277578cdfd366af4e2e96862d601d7f08305dddd2c04c23e0ebc7506b3",
+    "runner_sha256": "9caf14e350d70d1d7cc7321209893c4ef1d8893d31c4973a885fc482553cdc11"
+  },
+  "preregistration": {
+    "path": "journal_experiments/experiment_B_review_requested_constrained_decoding/preregistration/experiment_B_review_preregistration_v1.json",
+    "sha256": "30554d4811bed51a0c1476514f49c0a31c9301c338bdd7ec2c2a9017b2f525ba"
+  },
+  "static_equivalence_checks": {
+    "historical_CIR_prompt_exact": true,
+    "historical_CIR_validation_retained": true,
+    "historical_cir_arm_not_rerun": true,
+    "historical_cleaner_exact": true,
+    "historical_descriptor_compilation_retained": true,
+    "historical_direct_arm_not_rerun": true,
+    "historical_mapping_retained": true,
+    "historical_proposed_arm_not_rerun": true,
+    "historical_response_format_absent": true,
+    "same_model": true,
+    "same_reasoning_disabled": true,
+    "same_temperature_zero": true,
+    "structural_schema_only": true,
+    "treatment_response_format_present": true
+  },
+  "status": "IMPLEMENTATION_BUILT_STATIC_ONLY_NO_MODEL_CALL",
+  "step": "BR4",
+  "treatment_adapter": {
+    "path": "journal_experiments/experiment_B_review_requested_constrained_decoding/implementation/experiment_B_review_structured_adapter_v1.py",
+    "sha256": "7d12ff7dfe671fbfcc82dbfcad242d9cdbeb114d7fc1b4aed78c887a5756bfad"
+  },
+  "treatment_runner": {
+    "path": "journal_experiments/experiment_B_review_requested_constrained_decoding/implementation/run_experiment_B_review_cir_constrained_v1.py",
+    "sha256": "1549e032eaed0441be441a2a7fe1a2e0defb3977efbb7968686eef3cf6b74851"
+  }
+}

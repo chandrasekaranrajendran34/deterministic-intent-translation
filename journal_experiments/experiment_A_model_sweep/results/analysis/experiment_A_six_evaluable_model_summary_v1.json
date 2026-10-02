@@ -1,0 +1,96 @@
+{
+  "experiment": "Experiment A \u2014 semantic parser model variation",
+  "created_utc": "2026-10-02T12:01:10.143232+00:00",
+  "frozen_benchmark": {
+    "total_cases": 120,
+    "valid_cases": 58,
+    "invalid_cases": 62
+  },
+  "evaluable_arms": [
+    "A1",
+    "A2",
+    "A7",
+    "A8",
+    "A9",
+    "A10"
+  ],
+  "evaluable_model_count": 6,
+  "original_preregistered_arms": {
+    "arms": [
+      "A1",
+      "A2",
+      "A3",
+      "A4",
+      "A5",
+      "A6"
+    ],
+    "evaluable": [
+      "A1",
+      "A2"
+    ],
+    "endpoint_unavailable": [
+      "A3",
+      "A4",
+      "A5",
+      "A6"
+    ]
+  },
+  "prospective_extension": {
+    "arms": [
+      "A7",
+      "A8",
+      "A9",
+      "A10"
+    ],
+    "selection_basis": "Non-benchmark endpoint-accessibility screening plus predefined model-diversity criteria.",
+    "replacement_for_A3_A6": false,
+    "all_four_evaluable": true
+  },
+  "descriptive_ranges": {
+    "accuracy_pct": {
+      "min": 60.0,
+      "max": 84.16666666666667,
+      "spread_percentage_points": 24.16666666666667
+    },
+    "VAR_pct": {
+      "min": 18.96551724137931,
+      "max": 87.93103448275862,
+      "spread_percentage_points": 68.9655172413793
+    },
+    "IRR_pct": {
+      "min": 80.64516129032258,
+      "max": 98.38709677419355,
+      "spread_percentage_points": 17.741935483870975
+    }
+  },
+  "containment": {
+    "operational_definition": "A containment violation is a rejected case (accepted == False) for which descriptor_json is nevertheless present.",
+    "observed_violations_by_arm": {
+      "A1": 0,
+      "A2": 0,
+      "A7": 0,
+      "A8": 0,
+      "A9": 0,
+      "A10": 0
+    },
+    "total_observed_violations": 0
+  },
+  "evidence_recovery_disclosure": {
+    "A1": "Official frozen E3-v3 raw result remains available byte-identically. The later Experiment-A reproduction raw file was lost after the Colab reset; before reset it had reproduced the official aggregate metrics exactly.",
+    "A2_A7_A8_A9": "Original transient raw result files were lost after the Colab runtime reset. The consolidation uses outcome counts, metrics, and raw-file SHA-256 values recorded before the reset. These are not represented as recovered raw files.",
+    "A10": "First-and-only benchmark execution performed after recovery provenance was frozen. Raw result, execution log, metrics, and manifests were immediately persisted to Drive."
+  },
+  "interpretation": {
+    "supported": "Across the six evaluable semantic-parser arms tested under the frozen 120-case benchmark and deterministic cascade, decision metrics varied substantially across models, while zero observed containment violations occurred in every evaluable arm.",
+    "not_supported": [
+      "universal model independence",
+      "hallucination-free operation",
+      "zero-risk guarantee",
+      "formal proof across arbitrary models",
+      "causal attribution of performance differences solely to model architecture or size",
+      "case-level identity between A1 and A9 based only on equal aggregate metrics"
+    ]
+  },
+  "model_or_api_call": false,
+  "benchmark_rerun": false
+}

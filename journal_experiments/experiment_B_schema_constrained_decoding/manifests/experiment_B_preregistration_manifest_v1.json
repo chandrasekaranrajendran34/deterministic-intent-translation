@@ -1,0 +1,33 @@
+{
+  "artifact": "Experiment B preregistration manifest",
+  "execution_state": "NO MODEL/API CALL — BENCHMARK NOT EXECUTED",
+  "frozen_inputs": {
+    "adapter": {
+      "path": "/content/deterministic-intent-translation-journal/src/llm/together_adapter.py",
+      "sha256": "b11b08277578cdfd366af4e2e96862d601d7f08305dddd2c04c23e0ebc7506b3"
+    },
+    "benchmark": {
+      "path": "/content/deterministic-intent-translation-journal/experiment-2b/reproducibility/e3v3_heldout_benchmark_v1.0/e3v3_heldout_benchmark_120_v1.csv",
+      "sha256": "84576e7d99a2721e61ded5a14bdafeb96707b068397243bbed32aa735496d4de"
+    },
+    "experiment_A_final_freeze": {
+      "path": "/content/deterministic-intent-translation-journal/journal_experiments/experiment_A_model_sweep/manifests/experiment_A_FINAL_FREEZE_v1.json",
+      "sha256": "667cfd8b1e693c0ba2f7107a877c695181b273985adc976e43f124313e8d892a"
+    },
+    "runner": {
+      "path": "/content/deterministic-intent-translation-journal/experiment-2b/implementation/e3_v3/run_experiment2b_e3v3_r7_dev_v1.py",
+      "sha256": "40c035cb864978c718a72fcfdfbb164d262529960b0ae78242d5194147cd8257"
+    },
+    "schema": {
+      "path": "/content/deterministic-intent-translation-journal/src/schema.py",
+      "sha256": "f26e771cc7dab2288a78187fe407282f88acc69f9c6fec1f1e781e1a81d5ab34"
+    },
+    "validator": {
+      "path": "/content/deterministic-intent-translation-journal/src/validator.py",
+      "sha256": "c9e9daad54b5d31a6e4348aea168384eb841b0050fe501a633528df3770b6cb2"
+    }
+  },
+  "preregistration_path": "/content/deterministic-intent-translation-journal/journal_experiments/experiment_B_schema_constrained_decoding/preregistration/experiment_B_preregistration_v1.json",
+  "preregistration_sha256": "d6e6db1bf6248ac211f4ef925ba940254e765e6eedc51c0b67353f897a50a2f5",
+  "version": "v1"
+}

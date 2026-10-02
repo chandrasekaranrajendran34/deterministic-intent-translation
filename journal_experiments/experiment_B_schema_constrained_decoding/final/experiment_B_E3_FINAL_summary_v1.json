@@ -1,0 +1,100 @@
+{
+  "benchmark": {
+    "invalid_n": 62,
+    "n": 120,
+    "name": "E3-v3 frozen held-out benchmark",
+    "sha256": "84576e7d99a2721e61ded5a14bdafeb96707b068397243bbed32aa735496d4de",
+    "valid_n": 58
+  },
+  "claim_boundaries": [
+    "Do not claim universal model independence.",
+    "Do not claim hallucination-free behavior.",
+    "Do not claim universal cleaner equivalence.",
+    "Do not claim formal standards conformance.",
+    "Do not claim zero risk.",
+    "Do not represent B-E3 as satisfying the original reviewer-requested Experiment B."
+  ],
+  "decision_results": {
+    "accuracy": 0.8416666666666667,
+    "accuracy_cp95": [
+      0.7638364439717876,
+      0.9018977052594082
+    ],
+    "accuracy_pct": 84.16666666666667,
+    "f1": 0.8403361344537815,
+    "fn_invalid_accepted": 12,
+    "fp_valid_rejected": 7,
+    "invalid_rejection_cp95": [
+      0.6863140483005372,
+      0.8957903707378236
+    ],
+    "invalid_rejection_pct": 80.64516129032258,
+    "invalid_rejection_rate": 0.8064516129032258,
+    "precision": 0.8771929824561403,
+    "recall": 0.8064516129032258,
+    "tn_valid_accepted": 51,
+    "tp_invalid_rejected": 50,
+    "valid_acceptance_cp95": [
+      0.7670163622920063,
+      0.9500733839765193
+    ],
+    "valid_acceptance_pct": 87.93103448275862,
+    "valid_acceptance_rate": 0.8793103448275862
+  },
+  "experiment_id": "B-E3",
+  "frozen_source_artifacts": {
+    "experiment-2b/reproducibility/e3v3_heldout_benchmark_v1.0/e3v3_heldout_benchmark_120_v1.csv": "84576e7d99a2721e61ded5a14bdafeb96707b068397243bbed32aa735496d4de",
+    "journal_experiments/experiment_B_schema_constrained_decoding/implementation/experiment_B_structured_adapter_v1.py": "3e2a1cac6c2427eab9a28b69dc67b9a659ff9c83fd3d7bacb84222c51a21b4b6",
+    "journal_experiments/experiment_B_schema_constrained_decoding/implementation/run_experiment_B_structured_treatment_v1.py": "10314f909693820d6a997a35680eb9366a40af97ba79e67e752568a92cbc7cca",
+    "journal_experiments/experiment_B_schema_constrained_decoding/manifests/experiment_B_B9B_execution_record_v1.json": "4654ea991d50f65089f5be68d5bd565004a8bb768f5e106072fd6c50facfd7d5",
+    "journal_experiments/experiment_B_schema_constrained_decoding/preregistration/experiment_B_preregistration_v1.json": "d6e6db1bf6248ac211f4ef925ba940254e765e6eedc51c0b67353f897a50a2f5",
+    "journal_experiments/experiment_B_schema_constrained_decoding/results/treatment_B1/experiment_B_B1_structured_treatment_120_v1.json": "40b39653bf055022895cbad6755d90d329d10b7e9aaaf244075a1ecdf76bb1c1",
+    "src/llm/together_adapter.py": "b11b08277578cdfd366af4e2e96862d601d7f08305dddd2c04c23e0ebc7506b3"
+  },
+  "methodological_notes": [
+    "B-E3 is a supplementary E3-v3 structured-generation follow-up and must not be represented as the original reviewer-requested constrained-decoding Experiment B.",
+    "The original reviewer-requested Experiment B is the separately frozen B-Review E1/E2A experiment.",
+    "The treatment cleaner was not verified as source-identical to the historical cleaner before B-E3 execution.",
+    "Corrected retrospective C2-D3 analysis found no cleaner-induced difference on any of the 77 actually observed B-E3 LLM responses.",
+    "No schema_valid metric is reported because that field does not exist in the frozen B-E3 result schema.",
+    "The 43 cases that did not invoke the LLM have parse status N/A and are not counted as parse failures."
+  ],
+  "model": "Qwen/Qwen3.5-9B",
+  "paper_safe_interpretation": "On the frozen 120-case E3-v3 benchmark, the B-E3 structured-generation treatment achieved 84.17% decision accuracy, 87.93% valid-acceptance rate, and 80.65% invalid-rejection rate. All 77 cases that reached the LLM parsed successfully, while 43 cases were handled without invoking the LLM. This supplementary result does not replace the reviewer-requested E1/E2A constrained-decoding experiment and does not establish universal equivalence across models or benchmarks.",
+  "rejection_stage_distribution": {
+    "accepted_no_rejection_stage": 63,
+    "cir_validation": 12,
+    "constraint_consistency": 14,
+    "preservation": 2,
+    "r7_qualitative_source_gate": 5,
+    "source_gate": 24
+  },
+  "retrospective_cleaner_analysis": {
+    "ast_implementation_equivalent": false,
+    "claim_limit": "This is an observed behavioral-equivalence result for the 77 frozen B-E3 model responses only; it is not a universal proof that the two cleaner implementations are behaviorally equivalent for arbitrary strings.",
+    "corrected_behavioral_analysis": {
+      "actual_llm_outputs_compared": 77,
+      "b_e3_cleaner_json_failures": 0,
+      "cleaned_text_differences": 0,
+      "historical_cleaner_json_failures": 0,
+      "parsed_json_semantic_differences": 0
+    },
+    "diagnostic_correction": "An earlier retrospective diagnostic (C2-D2) omitted Python's `re` module from the isolated historical-cleaner namespace, causing diagnostic-only NameError failures. C2-D3 corrected the namespace and repeated the comparison.",
+    "interpretation": "The cleaner implementations are not source/AST identical, but the corrected retrospective comparison found identical cleaned text and identical parsed JSON on all 77 actually observed frozen B-E3 LLM responses. Therefore no observed B-E3 case was affected by the cleaner implementation difference.",
+    "reason": "B-E3 treatment cleaner was manually implemented rather than being verified as source-identical to the historical cleaner before benchmark execution.",
+    "source_implementation_equivalent": false,
+    "timing": "RETROSPECTIVE_POST_EXECUTION"
+  },
+  "reviewer_requested_B_satisfied_by": "Separate B-Review experiment on frozen E1 (50 cases) and E2A (200 cases).",
+  "role": "SUPPLEMENTARY_FOLLOW_UP_NOT_REVIEWER_REQUESTED_B",
+  "status": "FINAL_FROZEN",
+  "structured_generation": {
+    "llm_invoked": 77,
+    "parse_failure": 0,
+    "parse_status_for_non_invoked_cases": "N/A",
+    "parse_success": 77,
+    "parse_success_pct_of_invoked": 100.0,
+    "pre_llm_no_call": 43,
+    "schema_valid_metric": "NOT_AVAILABLE_IN_FROZEN_RESULT_SCHEMA"
+  }
+}

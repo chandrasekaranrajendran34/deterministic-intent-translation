@@ -1,0 +1,4 @@
+benchmark,configuration,n,accuracy,VAR,IRR,parse_success,schema_valid_rate,TP,FP,FN,TN
+E1,cir_constrained,50,0.94,1.0,0.88,1.0,0.9,22,0,3,25
+E2A,historical_cir,200,0.755,0.96,0.55,,,55,4,45,96
+E2A,cir_constrained,200,0.73,0.93,0.53,1.0,0.925,53,7,47,93

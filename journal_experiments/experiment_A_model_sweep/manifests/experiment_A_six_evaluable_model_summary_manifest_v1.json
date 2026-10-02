@@ -1,0 +1,22 @@
+{
+  "manifest_id": "experiment-A-six-evaluable-model-summary-v1",
+  "created_utc": "2026-10-02T12:01:10.144502+00:00",
+  "csv": {
+    "path": "journal_experiments/experiment_A_model_sweep/results/analysis/experiment_A_six_evaluable_model_summary_v1.csv",
+    "sha256": "36380008c7bd7ed1158666d4f0c8e9d31708863164b4f2551fea7f5238d2c880"
+  },
+  "json": {
+    "path": "journal_experiments/experiment_A_model_sweep/results/analysis/experiment_A_six_evaluable_model_summary_v1.json",
+    "sha256": "c055cad3071ad923978d7a180f5c811974a726104360ae7e715766083477e448"
+  },
+  "source_evidence": {
+    "recovery_record_sha256": "21947d0a7b84c249af08ec62f72b54cf2ea7614108eac26cfab1f0acaad22ac3",
+    "A10_raw_result_sha256": "998e68f0f484c929864f6a35cb6ae018ee2d22c2cf795c34b6279e6264895207",
+    "A10_metrics_sha256": "701f313d8f53934e59bb291534ef822e3a3791382528a15087bc91e6672f13e3",
+    "A10_analysis_manifest_sha256": "1f01fc6e707a5275789975949ee3a38435a3f405e89017ca642412c8d4acc1d2"
+  },
+  "evaluable_model_count": 6,
+  "total_containment_violations": 0,
+  "model_or_api_call": false,
+  "rerun_performed": false
+}

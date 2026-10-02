@@ -1,0 +1,152 @@
+{
+  "benchmarks": {
+    "E1": {
+      "cases": 50,
+      "dataset": "data/raw/intents_50.csv",
+      "sha256": "71093b63d60aa9ebc6f9133bf89f92ed9296fcec73e0703d6c4b58ace90f2826"
+    },
+    "E2A": {
+      "cases": 200,
+      "dataset": "experiment-2/data/frozen/experiment2_intents_200_v1.csv",
+      "sha256": "96bcb4172dac8e9e499a9d9a4ac21354caf251a7a53ccbd470898fea02711753"
+    }
+  },
+  "claim_boundary": {
+    "allowed": "Constrained decoding may improve or guarantee tested structural output validity under the provider/schema configuration, while deterministic semantic/source validation can remain necessary.",
+    "not_allowed": [
+      "Constrained decoding universally guarantees semantic correctness.",
+      "Deterministic validation is redundant solely because parsing succeeds.",
+      "The experiment proves hallucination-free operation.",
+      "The experiment establishes universal model-independent guarantees."
+    ]
+  },
+  "created_utc": "2026-10-02T13:34:25.843997+00:00",
+  "execution_plan": {
+    "E1": "Execute cir_constrained once for each of the 50 frozen E1 intents.",
+    "E2A": "Execute cir_constrained once for each of the 200 frozen E2A intents.",
+    "historical_arms": "Do not rerun direct, cir, or proposed historical arms.",
+    "no_retry_rule": "Do not silently rerun completed benchmark observations because of unfavorable results. Any infrastructure interruption must be recorded explicitly before deciding whether continuation is valid."
+  },
+  "experiment": "B-Review",
+  "frozen_components": {
+    "E2A_freeze_manifest": {
+      "path": "experiment-2/reproducibility/experiment2a_frozen/experiment2a_freeze_manifest.json",
+      "sha256": "7b4ce6225dbb7795328ec5239cfa3983b14a8992d9fc2679cd5453554a6db1e1"
+    },
+    "historical_adapter": {
+      "path": "src/llm/together_adapter.py",
+      "sha256": "b11b08277578cdfd366af4e2e96862d601d7f08305dddd2c04c23e0ebc7506b3"
+    },
+    "historical_runner": {
+      "path": "src/experiments/run_all.py",
+      "sha256": "9caf14e350d70d1d7cc7321209893c4ef1d8893d31c4973a885fc482553cdc11"
+    }
+  },
+  "historical_control": {
+    "definition": "Historical CIR pipeline using prompt-instructed JSON generation followed by the frozen deterministic CIR validator.",
+    "historical_E2A_metrics_sha256": "d9b908d86e252f3c06f362f5c677595fe85bda1ec39dbe61f2549f5bd4e3ad51",
+    "historical_E2A_results_sha256": "8c705c41b98b1f32f45fe914f34f9de16898e9e7a7e8de1e50710946356e7417",
+    "historical_adapter_sha256": "b11b08277578cdfd366af4e2e96862d601d7f08305dddd2c04c23e0ebc7506b3",
+    "historical_runner_sha256": "9caf14e350d70d1d7cc7321209893c4ef1d8893d31c4973a885fc482553cdc11",
+    "pipeline": "cir"
+  },
+  "primary_analysis": [
+    "JSON parse success rate for cir_constrained.",
+    "Structural-schema validity rate for cir_constrained.",
+    "Decision accuracy.",
+    "Valid acceptance rate.",
+    "Invalid rejection rate.",
+    "Comparison with the historical CIR arm on the same benchmark.",
+    "Case-level paired correctness comparison where historical case-level CIR evidence is available."
+  ],
+  "relationship_to_other_experiments": {
+    "B_E3": "Separate already-observed 120-case E3-v3 structured-decoding experiment.",
+    "B_review": "Prospective experiment designed specifically to execute the originally requested constrained-decoding comparison on historical E1 and E2A.",
+    "independence_rule": "B-E3 results are not used to modify the B-Review treatment, thresholds, prompt, schema, or evaluation criteria."
+  },
+  "research_question": "Does provider-side structural JSON-schema constrained generation eliminate malformed CIR generation while leaving semantic extraction and deterministic validity decisions as separate concerns?",
+  "semantic_model": {
+    "model": "Qwen/Qwen3.5-9B",
+    "reasoning_enabled": false,
+    "temperature": 0
+  },
+  "semantic_safety_analysis": [
+    "Count structurally valid generated CIRs that are nevertheless rejected by deterministic validation.",
+    "Count semantic/range validation failures despite successful constrained generation.",
+    "Inspect whether unsupported or invalid source requirements can remain unresolved despite syntactically valid generation.",
+    "Distinguish structural generation validity from semantic/source validity."
+  ],
+  "status": "prospectively_preregistered_before_any_B_review_model_call",
+  "treatment": {
+    "definition": "Same Qwen/Qwen3.5-9B model, same historical CIR system prompt, same user intent, reasoning disabled, temperature=0, and same historical CIR downstream validation/mapping/descriptor logic, with provider-side structural JSON-schema constrained generation added at the semantic-generation boundary.",
+    "explicitly_excluded_constraints": [
+      "service_type enum",
+      "latency_ms minimum",
+      "bandwidth_mbps minimum",
+      "reliability minimum/maximum",
+      "device_count minimum"
+    ],
+    "id": "cir_constrained",
+    "name": "historical_CIR_plus_structural_constrained_decoding",
+    "only_intended_change": "provider-side structural JSON-schema constrained generation",
+    "reason_for_exclusion": "The decoding schema must constrain syntax/structure only. Semantic and range admissibility remain the responsibility of the historical deterministic validator.",
+    "structural_schema": {
+      "additionalProperties": false,
+      "properties": {
+        "bandwidth_mbps": {
+          "type": [
+            "number",
+            "null"
+          ]
+        },
+        "coverage": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "device_count": {
+          "type": [
+            "integer",
+            "null"
+          ]
+        },
+        "latency_ms": {
+          "type": [
+            "number",
+            "null"
+          ]
+        },
+        "objective": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "reliability": {
+          "type": [
+            "number",
+            "null"
+          ]
+        },
+        "service_type": {
+          "type": [
+            "string",
+            "null"
+          ]
+        }
+      },
+      "required": [
+        "service_type",
+        "latency_ms",
+        "bandwidth_mbps",
+        "reliability",
+        "device_count",
+        "coverage",
+        "objective"
+      ],
+      "type": "object"
+    }
+  },
+  "version": "v1"
+}

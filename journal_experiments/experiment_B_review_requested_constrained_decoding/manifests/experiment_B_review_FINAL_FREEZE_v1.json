@@ -1,0 +1,45 @@
+{
+  "BR12_rerun": false,
+  "E1_rerun_after_success": false,
+  "E2A_rerun_after_success": false,
+  "benchmark_executions_in_freeze": 0,
+  "experiment": "B-Review",
+  "final_outputs": {
+    "journal_experiments/experiment_B_review_requested_constrained_decoding/final/experiment_B_review_FINAL_results_table_v1.csv": "4d362b0b0862cf79b0acd189c843ce854a4ce2da64bfd5f95091ba98b1d3bf89",
+    "journal_experiments/experiment_B_review_requested_constrained_decoding/final/experiment_B_review_FINAL_summary_v1.json": "a3a9539f8dade42a4f75ec4f28d4a9421937edbcb79d41091c3f7d374d22c8eb"
+  },
+  "freeze": "FINAL",
+  "frozen_inputs": {
+    "data/raw/intents_50.csv": "71093b63d60aa9ebc6f9133bf89f92ed9296fcec73e0703d6c4b58ace90f2826",
+    "experiment-2/data/frozen/experiment2_intents_200_v1.csv": "96bcb4172dac8e9e499a9d9a4ac21354caf251a7a53ccbd470898fea02711753",
+    "experiment-2/reproducibility/experiment2a_frozen/experiment2a_primary_metrics.csv": "d9b908d86e252f3c06f362f5c677595fe85bda1ec39dbe61f2549f5bd4e3ad51",
+    "experiment-2/reproducibility/experiment2a_frozen/experiment2a_results_600.csv": "8c705c41b98b1f32f45fe914f34f9de16898e9e7a7e8de1e50710946356e7417",
+    "journal_experiments/experiment_B_review_requested_constrained_decoding/analysis/experiment_B_review_BR12R1_forensic_summary_v1.json": "3a42a015f363f5da86acecfa8d065613a4d67f1ff87a98de9b0248612f1f992d",
+    "journal_experiments/experiment_B_review_requested_constrained_decoding/analysis/experiment_B_review_BR12R1_unsupported_constraint_forensics_v1.csv": "8860bb2899d3d85ad50d271c2a75d414fc95b7e3b524fdf3f337d3e0e50b6a96",
+    "journal_experiments/experiment_B_review_requested_constrained_decoding/capability_probe/experiment_B_review_BR5_capability_probe_v1.json": "d08119bff0c20c5b735c5eb1f743a65a5beb622088d565f5bfb9a8acf47fd208",
+    "journal_experiments/experiment_B_review_requested_constrained_decoding/implementation/experiment_B_review_structured_adapter_v1.py": "7d12ff7dfe671fbfcc82dbfcad242d9cdbeb114d7fc1b4aed78c887a5756bfad",
+    "journal_experiments/experiment_B_review_requested_constrained_decoding/implementation/run_experiment_B_review_cir_constrained_recovery_v1.py": "8b1acb6862cf967c4dd7ad75802caac9c2219efcbe42d3f6431a41c2275d0b16",
+    "journal_experiments/experiment_B_review_requested_constrained_decoding/implementation/run_experiment_B_review_cir_constrained_v1.py": "1549e032eaed0441be441a2a7fe1a2e0defb3977efbb7968686eef3cf6b74851",
+    "journal_experiments/experiment_B_review_requested_constrained_decoding/manifests/experiment_B_review_BR10R0_recovery_manifest_v1.json": "6923681077b6d47a3e7862989ef660dcdef2efdefb2829336de2fcef20ae2398",
+    "journal_experiments/experiment_B_review_requested_constrained_decoding/manifests/experiment_B_review_BR10R1_E2A_execution_record_v1.json": "418b45e0ad487fed94442f7da2b8cd1987006a6727cb3b757218923c5c8322e5",
+    "journal_experiments/experiment_B_review_requested_constrained_decoding/manifests/experiment_B_review_BR10_interrupted_execution_record_v1.json": "21514eb08dcf63d6742acbfb4e80bb0ec7416b332b4f6b5d681fe57912cf091d",
+    "journal_experiments/experiment_B_review_requested_constrained_decoding/manifests/experiment_B_review_BR12R1_analysis_manifest_v1.json": "c6534e57f939841782bb91198cb8c3d5ca64d471a15cdb18d34c1c0766f25ad7",
+    "journal_experiments/experiment_B_review_requested_constrained_decoding/manifests/experiment_B_review_BR4_implementation_manifest_v1.json": "c3e1a1fb75073ab2ca55c6dbae24c14bbbdb957ed4fc667883d7b425d5f9ceb8",
+    "journal_experiments/experiment_B_review_requested_constrained_decoding/manifests/experiment_B_review_BR5_capability_probe_manifest_v1.json": "0094c6c9b66546bb97ef5c7c3b3fe6a8a520a2d5c2aaf958d7e58483bb807aeb",
+    "journal_experiments/experiment_B_review_requested_constrained_decoding/manifests/experiment_B_review_BR7R1_E1_execution_record_v1.json": "4aaf738112b9d6b448bf7dcc068ce57735724f5f316952fe5eb0cde78803526e",
+    "journal_experiments/experiment_B_review_requested_constrained_decoding/preregistration/experiment_B_review_preregistration_v1.json": "30554d4811bed51a0c1476514f49c0a31c9301c338bdd7ec2c2a9017b2f525ba",
+    "journal_experiments/experiment_B_review_requested_constrained_decoding/results/E1/experiment_B_review_E1_cir_constrained_50_v1.csv": "21ef335ea6218edb01b30dccc1461520767a7d1e9ea2e6956e7ba267dc29ed68",
+    "journal_experiments/experiment_B_review_requested_constrained_decoding/results/E2A/experiment_B_review_E2A_cir_constrained_200_BR10R1_v1.csv": "257ff892912988b10d9abe11f24b2d746d1422d0ab06e96a39d2141b250532c6"
+  },
+  "historical_arms_rerun": false,
+  "model_calls_in_freeze": 0,
+  "notes": [
+    "BR7 initial E1 launch failed during Python import before benchmark execution; corrected execution used PYTHONPATH only.",
+    "Original BR10 E2A attempt was interrupted by provider HTTP 503 after 79 progress markers; no partial result artifact survived.",
+    "BR10-R1 was the frozen replacement 200-case E2A execution. Lost in-memory BR10 outputs were not reconstructed.",
+    "BR12-R1 forensic analysis was deterministic and performed with zero model calls."
+  ],
+  "scientific_components_unchanged": true,
+  "status": "COMPLETE_FROZEN_DO_NOT_RERUN",
+  "version": 1
+}

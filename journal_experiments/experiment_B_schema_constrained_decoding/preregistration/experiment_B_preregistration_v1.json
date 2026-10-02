@@ -1,0 +1,187 @@
+{
+  "analysis_requirements": {
+    "comparison": "Compare treatment with frozen historical B0/A1 baseline descriptively and case-wise only where the required original case-level evidence exists.",
+    "confidence_intervals": "Clopper-Pearson 95% for binomial rates where applicable",
+    "do_not_equate_schema_valid_json_with_semantically_valid_CIR": true,
+    "report_containment": true,
+    "report_downstream_deterministic_rejections": true,
+    "report_semantic_validity_separately": true,
+    "report_syntactic_structural_validity_separately": true
+  },
+  "benchmark": {
+    "cases": 120,
+    "path": "/content/deterministic-intent-translation-journal/experiment-2b/reproducibility/e3v3_heldout_benchmark_v1.0/e3v3_heldout_benchmark_120_v1.csv",
+    "reuse_policy": "Use the frozen E3-v3 held-out benchmark unchanged.",
+    "sha256": "84576e7d99a2721e61ded5a14bdafeb96707b068397243bbed32aa735496d4de"
+  },
+  "claim_boundary": {
+    "allowed_if_supported": "Schema-constrained decoding can improve structural output validity, but deterministic downstream checks remain necessary when structurally valid outputs can still violate source-grounding, semantic, policy, consistency, or admissibility constraints.",
+    "not_allowed": [
+      "schema-constrained decoding universally eliminates hallucinations",
+      "deterministic validation is universally necessary for every system",
+      "formal proof of safety",
+      "zero-risk guarantee",
+      "universal model-independence",
+      "formal 3GPP/O-RAN conformance"
+    ]
+  },
+  "control_arm": {
+    "definition": "Historical frozen E3-v3 behavior: identical CIR system prompt, temperature=0, no provider-side response_format/json_schema constraint, followed by historical JSON text cleaning/parsing and the full deterministic E3-v3 cascade.",
+    "historical_baseline": true,
+    "id": "B0",
+    "name": "unconstrained_json_generation",
+    "rerun_policy": "Do not rerun the historical control merely to recreate evidence already frozen in Experiment A."
+  },
+  "created_utc": "2026-10-02T12:13:52.301704+00:00",
+  "design_type": "prospective controlled decoding-ablation experiment",
+  "execution_policy": {
+    "prompt_tuning_after_results": false,
+    "report_unfavorable_results": true,
+    "rerun_after_observing_results": false,
+    "schema_tuning_after_results": false,
+    "threshold_tuning_after_results": false,
+    "treatment_benchmark_runs": 1
+  },
+  "experiment": "Experiment B — Schema-Constrained Decoding",
+  "frozen_components": {
+    "cir_prompt": "unchanged",
+    "cir_schema_sha256": "f26e771cc7dab2288a78187fe407282f88acc69f9c6fec1f1e781e1a81d5ab34",
+    "consistency_checks": "unchanged",
+    "decision_thresholds": "unchanged",
+    "descriptor_compilation": "unchanged",
+    "deterministic_pre_gates": "unchanged",
+    "deterministic_validator": "unchanged",
+    "experiment_A_final_freeze_sha256": "667cfd8b1e693c0ba2f7107a877c695181b273985adc976e43f124313e8d892a",
+    "historical_adapter_sha256": "b11b08277578cdfd366af4e2e96862d601d7f08305dddd2c04c23e0ebc7506b3",
+    "mapping": "unchanged",
+    "preservation_checks": "unchanged",
+    "reconciliation": "unchanged",
+    "runner_sha256": "40c035cb864978c718a72fcfdfbb164d262529960b0ae78242d5194147cd8257",
+    "temperature": 0,
+    "user_intents": "unchanged",
+    "validator_sha256": "c9e9daad54b5d31a6e4348aea168384eb841b0050fe501a633528df3770b6cb2"
+  },
+  "implementation_policy": {
+    "fallback_or_substitution": false,
+    "if_model_does_not_support_required_structured_output": "Record treatment as provider/model capability unavailable. Do not silently substitute another model or alter the schema.",
+    "modify_frozen_runner": false,
+    "modify_frozen_schema": false,
+    "modify_frozen_validator": false,
+    "modify_historical_adapter": false,
+    "provider_capability_probe": "Before benchmark execution, perform only a synthetic non-benchmark structured-output capability probe.",
+    "treatment_implementation": "Create isolated Experiment-B treatment code. Do not patch frozen historical files."
+  },
+  "primary_metrics": [
+    "decision_accuracy",
+    "VAR_valid_acceptance_rate",
+    "IRR_invalid_rejection_rate",
+    "containment_violations"
+  ],
+  "research_question": "Does provider-side structural JSON-schema constrained decoding eliminate the need for the frozen deterministic validation and failure-containment cascade?",
+  "semantic_model": {
+    "model": "Qwen/Qwen3.5-9B",
+    "model_change_allowed": false,
+    "reason": "Use the historical frozen baseline semantic parser from E3-v3 / Experiment-A A1 so that Experiment B changes decoding mode rather than model identity."
+  },
+  "semantic_safety_metrics": [
+    "deterministic_CIR_validation_rejection_rate",
+    "source_to_CIR_preservation_failure_rate",
+    "constraint_consistency_rejection_rate",
+    "unsupported_or_invalid_request_rejection_rate",
+    "containment_violations"
+  ],
+  "status": "PREREGISTERED_NOT_EXECUTED",
+  "structured_generation_metrics": [
+    "provider_request_success_rate",
+    "parse_success_rate",
+    "seven_required_keys_rate",
+    "additional_property_rate",
+    "structural_schema_validity_rate"
+  ],
+  "treatment_arm": {
+    "definition": "Use the same semantic model, same frozen CIR system prompt, same user intent, same temperature=0, and same downstream E3-v3 deterministic cascade, while adding provider-side structured generation using the preregistered structural decoding schema.",
+    "excluded_from_decoding_schema": {
+      "bandwidth_minimum": {
+        "excluded": true,
+        "reason": "Explicit invalid source values must remain extractable and rejectable downstream."
+      },
+      "device_count_minimum": {
+        "excluded": true,
+        "reason": "Range validity remains the responsibility of the frozen deterministic validator."
+      },
+      "latency_minimum": {
+        "excluded": true,
+        "reason": "Explicit invalid source values must remain extractable and rejectable downstream."
+      },
+      "reliability_range": {
+        "excluded": true,
+        "reason": "Range validity remains the responsibility of the frozen deterministic validator."
+      },
+      "service_type_enum": {
+        "excluded": true,
+        "reason": "Unsupported/invalid service values must remain observable to deterministic validation rather than being prevented or silently corrected by the decoder."
+      }
+    },
+    "id": "B1",
+    "name": "structural_json_schema_constrained_generation",
+    "only_intended_semantic_change": "provider-side structural decoding constraint",
+    "structural_decoding_schema": {
+      "additionalProperties": false,
+      "properties": {
+        "bandwidth_mbps": {
+          "type": [
+            "number",
+            "null"
+          ]
+        },
+        "coverage": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "device_count": {
+          "type": [
+            "integer",
+            "null"
+          ]
+        },
+        "latency_ms": {
+          "type": [
+            "number",
+            "null"
+          ]
+        },
+        "objective": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "reliability": {
+          "type": [
+            "number",
+            "null"
+          ]
+        },
+        "service_type": {
+          "type": [
+            "string",
+            "null"
+          ]
+        }
+      },
+      "required": [
+        "service_type",
+        "latency_ms",
+        "bandwidth_mbps",
+        "reliability",
+        "device_count",
+        "coverage",
+        "objective"
+      ],
+      "type": "object"
+    }
+  },
+  "version": "v1"
+}

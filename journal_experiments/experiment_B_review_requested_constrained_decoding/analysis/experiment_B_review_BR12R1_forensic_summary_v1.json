@@ -1,0 +1,53 @@
+{
+  "all_unsupported_accepted": true,
+  "analysis_type": "deterministic forensic unsupported-constraint analysis",
+  "benchmark": "E2A",
+  "benchmark_executions": 0,
+  "broader_context": {
+    "invalid_requests_accepted": 47,
+    "structurally_valid_but_decision_wrong": 54
+  },
+  "classification_counts": {
+    "DROPPED": 17,
+    "MAPPED_TO_SUPPORTED_FIELD": 3,
+    "OTHER_AMBIGUOUS": 0,
+    "PRESERVED_AS_TEXT": 4
+  },
+  "classification_definition": {
+    "DROPPED": "unsupported lexical concept present in source is absent from the CIR and no associated source numeric literal is mapped into a supported numeric CIR field",
+    "MAPPED_TO_SUPPORTED_FIELD": "source numeric literal associated with unsupported requirement appears in a supported numeric CIR field while unsupported lexical concept is not preserved as free text",
+    "OTHER_AMBIGUOUS": "case does not satisfy the deterministic rules above",
+    "PRESERVED_AS_TEXT": "unsupported lexical concept survives in CIR objective/coverage"
+  },
+  "experiment": "B-Review",
+  "input_hashes": {
+    "experiment-2/data/frozen/experiment2_intents_200_v1.csv": "96bcb4172dac8e9e499a9d9a4ac21354caf251a7a53ccbd470898fea02711753",
+    "experiment-2/reproducibility/experiment2a_frozen/experiment2a_results_600.csv": "8c705c41b98b1f32f45fe914f34f9de16898e9e7a7e8de1e50710946356e7417",
+    "journal_experiments/experiment_B_review_requested_constrained_decoding/manifests/experiment_B_review_BR10R1_E2A_execution_record_v1.json": "418b45e0ad487fed94442f7da2b8cd1987006a6727cb3b757218923c5c8322e5",
+    "journal_experiments/experiment_B_review_requested_constrained_decoding/results/E2A/experiment_B_review_E2A_cir_constrained_200_BR10R1_v1.csv": "257ff892912988b10d9abe11f24b2d746d1422d0ab06e96a39d2141b250532c6"
+  },
+  "interpretation_boundary": "This deterministic lexical/numeric forensic classifier is specific to the frozen synthetic unsupported-parameter cases and is not claimed to be a general semantic-equivalence detector.",
+  "model": "Qwen/Qwen3.5-9B",
+  "model_calls": 0,
+  "output_csv_sha256": "8860bb2899d3d85ad50d271c2a75d414fc95b7e3b524fdf3f337d3e0e50b6a96",
+  "same_acceptance_as_historical_count": 24,
+  "same_cir_as_historical_count": 20,
+  "scope": {
+    "explicit_unsupported_cases": 12,
+    "implicit_unsupported_cases": 12,
+    "total_e2a_cases": 200,
+    "unsupported_cases": 24
+  },
+  "step": "BR12-R1",
+  "treatment": "cir_constrained",
+  "unsupported_stems": [
+    "quantum",
+    "teleport",
+    "magic",
+    "imaginar",
+    "fictional",
+    "impossible",
+    "hyperspeed",
+    "hyperspace"
+  ]
+}

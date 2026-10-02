@@ -1,0 +1,17 @@
+{
+  "benchmark_executions": 0,
+  "experiment": "B-Review",
+  "inputs": {
+    "experiment-2/data/frozen/experiment2_intents_200_v1.csv": "96bcb4172dac8e9e499a9d9a4ac21354caf251a7a53ccbd470898fea02711753",
+    "experiment-2/reproducibility/experiment2a_frozen/experiment2a_results_600.csv": "8c705c41b98b1f32f45fe914f34f9de16898e9e7a7e8de1e50710946356e7417",
+    "journal_experiments/experiment_B_review_requested_constrained_decoding/manifests/experiment_B_review_BR10R1_E2A_execution_record_v1.json": "418b45e0ad487fed94442f7da2b8cd1987006a6727cb3b757218923c5c8322e5",
+    "journal_experiments/experiment_B_review_requested_constrained_decoding/results/E2A/experiment_B_review_E2A_cir_constrained_200_BR10R1_v1.csv": "257ff892912988b10d9abe11f24b2d746d1422d0ab06e96a39d2141b250532c6"
+  },
+  "model_calls": 0,
+  "outputs": {
+    "journal_experiments/experiment_B_review_requested_constrained_decoding/analysis/experiment_B_review_BR12R1_forensic_summary_v1.json": "3a42a015f363f5da86acecfa8d065613a4d67f1ff87a98de9b0248612f1f992d",
+    "journal_experiments/experiment_B_review_requested_constrained_decoding/analysis/experiment_B_review_BR12R1_unsupported_constraint_forensics_v1.csv": "8860bb2899d3d85ad50d271c2a75d414fc95b7e3b524fdf3f337d3e0e50b6a96"
+  },
+  "status": "COMPLETE_FROZEN",
+  "step": "BR12-R1"
+}

@@ -1,0 +1,38 @@
+{
+  "manifest_id": "experiment-A-A10-execution-v1",
+  "arm": "A10",
+  "model": "openai/gpt-oss-120b",
+  "execution_policy": "FIRST_AND_ONLY_PREREGISTERED_EXECUTION",
+  "started_utc": "2026-10-02T11:50:57.503911+00:00",
+  "finished_utc": "2026-10-02T11:53:24.537259+00:00",
+  "wall_clock_seconds": 147.0331892967224,
+  "process_return_code": 0,
+  "benchmark_cases": 120,
+  "unique_case_ids": 120,
+  "limit_used": false,
+  "frozen_runner": {
+    "path": "experiment-2b/implementation/e3_v3/run_experiment2b_e3v3_r7_dev_v1.py",
+    "sha256": "40c035cb864978c718a72fcfdfbb164d262529960b0ae78242d5194147cd8257"
+  },
+  "frozen_benchmark": {
+    "path": "experiment-2b/reproducibility/e3v3_heldout_benchmark_v1.0/e3v3_heldout_benchmark_120_v1.csv",
+    "sha256": "84576e7d99a2721e61ded5a14bdafeb96707b068397243bbed32aa735496d4de"
+  },
+  "preregistration_recovery": {
+    "path": "journal_experiments/experiment_A_model_sweep/preregistration/experiment_A_extension_A7_A10_preregistration_RECOVERED_v1.json",
+    "sha256": "9cd89b9f2937f686405f954628f77f7f44cc08ac79ea9499d3d98d8c1d8dd980",
+    "historical_original_prereg_json_sha256": "5568bf925a7b1de1e561820673bb15d89e818d08f2c2662f4c577fb9aa626f90"
+  },
+  "raw_result": {
+    "path": "journal_experiments/experiment_A_model_sweep/results/raw/A10_gpt-oss-120b_results.csv",
+    "sha256": "998e68f0f484c929864f6a35cb6ae018ee2d22c2cf795c34b6279e6264895207"
+  },
+  "execution_log": {
+    "path": "journal_experiments/experiment_A_model_sweep/logs/A10_gpt-oss-120b_execution.log",
+    "sha256": "a52968aec69da31600e59ac6fb59e7ac2babdc369e56a16e6a94afd2acb4c64d"
+  },
+  "completed_arms_rerun": false,
+  "post_hoc_model_substitution": false,
+  "metrics_analyzed_before_raw_persistence": false,
+  "runtime_recovery_context": true
+}

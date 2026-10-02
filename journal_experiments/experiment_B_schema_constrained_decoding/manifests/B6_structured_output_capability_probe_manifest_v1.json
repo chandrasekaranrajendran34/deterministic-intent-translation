@@ -1,0 +1,10 @@
+{
+  "artifact": "Experiment B B6 capability probe",
+  "benchmark_calls": 0,
+  "capability_status": "SUPPORTED_AND_PROBE_VALID",
+  "model": "Qwen/Qwen3.5-9B",
+  "preregistration_sha256": "d6e6db1bf6248ac211f4ef925ba940254e765e6eedc51c0b67353f897a50a2f5",
+  "probe_sha256": "fc509b6ca254882935ac30c32333ac510d465024a32bf9cbf48ed92239a36392",
+  "provider_calls_attempted": 1,
+  "rerun_allowed": false
+}

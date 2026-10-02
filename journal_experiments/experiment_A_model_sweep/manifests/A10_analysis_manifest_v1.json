@@ -1,0 +1,24 @@
+{
+  "manifest_id": "experiment-A-A10-analysis-v1",
+  "created_utc": "2026-10-02T11:58:37.701475+00:00",
+  "arm": "A10",
+  "model": "openai/gpt-oss-120b",
+  "status": "EVALUABLE",
+  "raw_result": {
+    "sha256": "998e68f0f484c929864f6a35cb6ae018ee2d22c2cf795c34b6279e6264895207"
+  },
+  "execution_log": {
+    "sha256": "a52968aec69da31600e59ac6fb59e7ac2babdc369e56a16e6a94afd2acb4c64d"
+  },
+  "execution_manifest": {
+    "sha256": "83d607e6f2a3b652a481dad6558de1e76f631b68e74185ab742920a89424e823"
+  },
+  "metrics": {
+    "path": "journal_experiments/experiment_A_model_sweep/results/metrics/A10_metrics_v1.json",
+    "sha256": "701f313d8f53934e59bb291534ef822e3a3791382528a15087bc91e6672f13e3"
+  },
+  "containment_violations": 0,
+  "model_or_api_call_during_analysis": false,
+  "raw_result_modified": false,
+  "rerun_performed": false
+}

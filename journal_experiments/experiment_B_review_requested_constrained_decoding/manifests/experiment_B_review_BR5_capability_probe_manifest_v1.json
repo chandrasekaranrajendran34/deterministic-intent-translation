@@ -1,0 +1,16 @@
+{
+  "BR4_manifest_sha256": "c3e1a1fb75073ab2ca55c6dbae24c14bbbdb957ed4fc667883d7b425d5f9ceb8",
+  "benchmark_cases": 0,
+  "created_utc": "2026-10-02T13:40:51.890011+00:00",
+  "experiment": "B-Review",
+  "preregistration_sha256": "30554d4811bed51a0c1476514f49c0a31c9301c338bdd7ec2c2a9017b2f525ba",
+  "probe": {
+    "path": "journal_experiments/experiment_B_review_requested_constrained_decoding/capability_probe/experiment_B_review_BR5_capability_probe_v1.json",
+    "sha256": "d08119bff0c20c5b735c5eb1f743a65a5beb622088d565f5bfb9a8acf47fd208"
+  },
+  "provider_calls": 1,
+  "status": "SUPPORTED_AND_PROBE_VALID",
+  "step": "BR5",
+  "treatment_adapter_sha256": "7d12ff7dfe671fbfcc82dbfcad242d9cdbeb114d7fc1b4aed78c887a5756bfad",
+  "treatment_runner_sha256": "1549e032eaed0441be441a2a7fe1a2e0defb3977efbb7968686eef3cf6b74851"
+}

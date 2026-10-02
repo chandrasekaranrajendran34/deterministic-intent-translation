@@ -1,0 +1,33 @@
+{
+  "benchmark": "E1",
+  "corrective_action_allowed": "Change subprocess execution environment only by prepending the repository root to PYTHONPATH. Do not modify the frozen runner, adapter, prompt, model, schema, temperature, dataset, or downstream logic.",
+  "dataset": {
+    "path": "data/raw/intents_50.csv",
+    "sha256": "71093b63d60aa9ebc6f9133bf89f92ed9296fcec73e0703d6c4b58ace90f2826"
+  },
+  "evidence_based_provider_call_count": 0,
+  "exception": "ModuleNotFoundError: No module named 'src'",
+  "experiment": "B-Review",
+  "failed_log": {
+    "path": "journal_experiments/experiment_B_review_requested_constrained_decoding/logs/experiment_B_review_E1_cir_constrained_50_v1.log",
+    "sha256": "ce567a5d8fb4fae209465247c286d56e369b0f92015f2fb28911c9d1ae77834d"
+  },
+  "failure_class": "subprocess_python_import_path",
+  "frozen_adapter": {
+    "path": "journal_experiments/experiment_B_review_requested_constrained_decoding/implementation/experiment_B_review_structured_adapter_v1.py",
+    "sha256": "7d12ff7dfe671fbfcc82dbfcad242d9cdbeb114d7fc1b4aed78c887a5756bfad"
+  },
+  "frozen_runner": {
+    "path": "journal_experiments/experiment_B_review_requested_constrained_decoding/implementation/run_experiment_B_review_cir_constrained_v1.py",
+    "sha256": "1549e032eaed0441be441a2a7fe1a2e0defb3977efbb7968686eef3cf6b74851"
+  },
+  "observed_benchmark_progress_markers": 0,
+  "preregistration_sha256": "30554d4811bed51a0c1476514f49c0a31c9301c338bdd7ec2c2a9017b2f525ba",
+  "reason_provider_call_count_is_zero": "Python terminated while importing src.validator before module initialization reached main(), dataset iteration, or call_json_structured().",
+  "recorded_utc": "2026-10-02T13:44:22.271110+00:00",
+  "result_artifact_created": false,
+  "scientific_observations_generated": 0,
+  "scientific_treatment_started": false,
+  "status": "FAILED_BEFORE_BENCHMARK_EXECUTION",
+  "step": "BR7-first-launch"
+}

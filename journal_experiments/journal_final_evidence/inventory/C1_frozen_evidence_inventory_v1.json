@@ -1,0 +1,315 @@
+{
+  "C1_actions": {
+    "benchmark_executions": 0,
+    "existing_experimental_files_modified": 0,
+    "existing_results_modified": 0,
+    "model_calls": 0,
+    "new_file_created": "journal_experiments/journal_final_evidence/inventory/C1_frozen_evidence_inventory_v1.json"
+  },
+  "Experiment_A": {
+    "final_freeze": {
+      "exists": true,
+      "path": "/content/deterministic-intent-translation-journal/journal_experiments/experiment_A_model_sweep/manifests/experiment_A_FINAL_FREEZE_v1.json",
+      "sha256": "667cfd8b1e693c0ba2f7107a877c695181b273985adc976e43f124313e8d892a",
+      "size_bytes": 6118
+    },
+    "indexed_files": [
+      {
+        "path": "/content/deterministic-intent-translation-journal/journal_experiments/experiment_A_model_sweep/manifests/experiment_A_FINAL_FREEZE_v1.json",
+        "relative_path": "journal_experiments/experiment_A_model_sweep/manifests/experiment_A_FINAL_FREEZE_v1.json",
+        "sha256": "667cfd8b1e693c0ba2f7107a877c695181b273985adc976e43f124313e8d892a",
+        "size_bytes": 6118
+      },
+      {
+        "path": "/content/deterministic-intent-translation-journal/journal_experiments/experiment_A_model_sweep/results/metrics/A10_metrics_v1.json",
+        "relative_path": "journal_experiments/experiment_A_model_sweep/results/metrics/A10_metrics_v1.json",
+        "sha256": "701f313d8f53934e59bb291534ef822e3a3791382528a15087bc91e6672f13e3",
+        "size_bytes": 1961
+      },
+      {
+        "path": "/content/deterministic-intent-translation-journal/journal_experiments/experiment_A_model_sweep/manifests/experiment_A_six_evaluable_model_summary_manifest_v1.json",
+        "relative_path": "journal_experiments/experiment_A_model_sweep/manifests/experiment_A_six_evaluable_model_summary_manifest_v1.json",
+        "sha256": "3e30e74ea2558819c42d9c2b9ef4dfc7bd9187404b7779884aa5b6c67ad8c01a",
+        "size_bytes": 1111
+      },
+      {
+        "path": "/content/deterministic-intent-translation-journal/journal_experiments/experiment_A_model_sweep/results/analysis/experiment_A_six_evaluable_model_summary_v1.csv",
+        "relative_path": "journal_experiments/experiment_A_model_sweep/results/analysis/experiment_A_six_evaluable_model_summary_v1.csv",
+        "sha256": "36380008c7bd7ed1158666d4f0c8e9d31708863164b4f2551fea7f5238d2c880",
+        "size_bytes": 2554
+      },
+      {
+        "path": "/content/deterministic-intent-translation-journal/journal_experiments/experiment_A_model_sweep/results/analysis/experiment_A_six_evaluable_model_summary_v1.json",
+        "relative_path": "journal_experiments/experiment_A_model_sweep/results/analysis/experiment_A_six_evaluable_model_summary_v1.json",
+        "sha256": "c055cad3071ad923978d7a180f5c811974a726104360ae7e715766083477e448",
+        "size_bytes": 3086
+      },
+      {
+        "path": "/content/deterministic-intent-translation-journal/journal_experiments/experiment_A_model_sweep/manifests/A10_analysis_manifest_v1.json",
+        "relative_path": "journal_experiments/experiment_A_model_sweep/manifests/A10_analysis_manifest_v1.json",
+        "sha256": "1f01fc6e707a5275789975949ee3a38435a3f405e89017ca642412c8d4acc1d2",
+        "size_bytes": 837
+      },
+      {
+        "path": "/content/deterministic-intent-translation-journal/journal_experiments/experiment_A_model_sweep/manifests/A10_execution_manifest_v1.json",
+        "relative_path": "journal_experiments/experiment_A_model_sweep/manifests/A10_execution_manifest_v1.json",
+        "sha256": "83d607e6f2a3b652a481dad6558de1e76f631b68e74185ab742920a89424e823",
+        "size_bytes": 1770
+      },
+      {
+        "path": "/content/deterministic-intent-translation-journal/journal_experiments/experiment_A_model_sweep/manifests/experiment_A_colab_reset_recovery_manifest_v1.json",
+        "relative_path": "journal_experiments/experiment_A_model_sweep/manifests/experiment_A_colab_reset_recovery_manifest_v1.json",
+        "sha256": "65a7203297009292fd2fc4430ea92d9bf6b379559a356410272cf7a54ac3773c",
+        "size_bytes": 1231
+      },
+      {
+        "path": "/content/deterministic-intent-translation-journal/journal_experiments/experiment_A_model_sweep/manifests/experiment_A_extension_preregistration_recovery_manifest_v1.json",
+        "relative_path": "journal_experiments/experiment_A_model_sweep/manifests/experiment_A_extension_preregistration_recovery_manifest_v1.json",
+        "sha256": "dce1582c24aeadc42013eded316d3135becb43c9ce3308d26bfd61428860bd50",
+        "size_bytes": 1245
+      },
+      {
+        "path": "/content/deterministic-intent-translation-journal/journal_experiments/experiment_A_model_sweep/results/raw/A10_gpt-oss-120b_results.csv",
+        "relative_path": "journal_experiments/experiment_A_model_sweep/results/raw/A10_gpt-oss-120b_results.csv",
+        "sha256": "998e68f0f484c929864f6a35cb6ae018ee2d22c2cf795c34b6279e6264895207",
+        "size_bytes": 369919
+      }
+    ]
+  },
+  "Experiment_B_E3": {
+    "analysis_final_candidates": [
+      {
+        "path": "/content/deterministic-intent-translation-journal/journal_experiments/experiment_B_schema_constrained_decoding/manifests/B6_structured_output_capability_probe_manifest_v1.json",
+        "relative_path": "journal_experiments/experiment_B_schema_constrained_decoding/manifests/B6_structured_output_capability_probe_manifest_v1.json",
+        "sha256": "bf15bd084e4f845983f90fe93aa87a206d1dc5701da0ebc10a27cc1e05956afd",
+        "size_bytes": 400
+      },
+      {
+        "path": "/content/deterministic-intent-translation-journal/journal_experiments/experiment_B_schema_constrained_decoding/manifests/experiment_B_B7B_treatment_adapter_manifest_v1.json",
+        "relative_path": "journal_experiments/experiment_B_schema_constrained_decoding/manifests/experiment_B_B7B_treatment_adapter_manifest_v1.json",
+        "sha256": "1a1d5fa869d969ae9bccc33091354a03fede9561006ee40a73fdb1f8ac921329",
+        "size_bytes": 1250
+      },
+      {
+        "path": "/content/deterministic-intent-translation-journal/journal_experiments/experiment_B_schema_constrained_decoding/manifests/experiment_B_B8_harness_manifest_v1.json",
+        "relative_path": "journal_experiments/experiment_B_schema_constrained_decoding/manifests/experiment_B_B8_harness_manifest_v1.json",
+        "sha256": "5b7498a584bed809ecc9398442e3c6df274c5c1310b8dd6a593a65d80fdd6fc6",
+        "size_bytes": 1388
+      },
+      {
+        "path": "/content/deterministic-intent-translation-journal/journal_experiments/experiment_B_schema_constrained_decoding/manifests/experiment_B_preregistration_manifest_v1.json",
+        "relative_path": "journal_experiments/experiment_B_schema_constrained_decoding/manifests/experiment_B_preregistration_manifest_v1.json",
+        "sha256": "c21e585fa855bf3d982c9996bc793e9cc90dc15311a2509fbb48ef0026b5eecf",
+        "size_bytes": 1834
+      }
+    ],
+    "explicit_final_freeze_detected": false,
+    "final_freeze_candidates": [],
+    "known_verified_artifacts": {
+      "journal_experiments/experiment_B_schema_constrained_decoding/implementation/experiment_B_structured_adapter_v1.py": {
+        "sha256": "3e2a1cac6c2427eab9a28b69dc67b9a659ff9c83fd3d7bacb84222c51a21b4b6",
+        "verified": true
+      },
+      "journal_experiments/experiment_B_schema_constrained_decoding/implementation/run_experiment_B_structured_treatment_v1.py": {
+        "sha256": "10314f909693820d6a997a35680eb9366a40af97ba79e67e752568a92cbc7cca",
+        "verified": true
+      },
+      "journal_experiments/experiment_B_schema_constrained_decoding/manifests/experiment_B_B9B_execution_record_v1.json": {
+        "sha256": "4654ea991d50f65089f5be68d5bd565004a8bb768f5e106072fd6c50facfd7d5",
+        "verified": true
+      },
+      "journal_experiments/experiment_B_schema_constrained_decoding/preregistration/experiment_B_preregistration_v1.json": {
+        "sha256": "d6e6db1bf6248ac211f4ef925ba940254e765e6eedc51c0b67353f897a50a2f5",
+        "verified": true
+      },
+      "journal_experiments/experiment_B_schema_constrained_decoding/results/treatment_B1/experiment_B_B1_structured_treatment_120_v1.json": {
+        "sha256": "40b39653bf055022895cbad6755d90d329d10b7e9aaaf244075a1ecdf76bb1c1",
+        "verified": true
+      }
+    }
+  },
+  "Experiment_B_Review": {
+    "final_freeze": {
+      "exists": true,
+      "path": "/content/deterministic-intent-translation-journal/journal_experiments/experiment_B_review_requested_constrained_decoding/manifests/experiment_B_review_FINAL_FREEZE_v1.json",
+      "sha256": "63fa99c81477eb7d2c3136b67f72ac3d4673f7d081d7b332ef8d634c68faf3dd",
+      "size_bytes": 5201
+    },
+    "final_results_table": {
+      "exists": true,
+      "path": "/content/deterministic-intent-translation-journal/journal_experiments/experiment_B_review_requested_constrained_decoding/final/experiment_B_review_FINAL_results_table_v1.csv",
+      "sha256": "4d362b0b0862cf79b0acd189c843ce854a4ce2da64bfd5f95091ba98b1d3bf89",
+      "size_bytes": 253
+    },
+    "final_summary": {
+      "exists": true,
+      "path": "/content/deterministic-intent-translation-journal/journal_experiments/experiment_B_review_requested_constrained_decoding/final/experiment_B_review_FINAL_summary_v1.json",
+      "sha256": "a3a9539f8dade42a4f75ec4f28d4a9421937edbcb79d41091c3f7d374d22c8eb",
+      "size_bytes": 3498
+    },
+    "indexed_files": [
+      {
+        "path": "/content/deterministic-intent-translation-journal/journal_experiments/experiment_B_review_requested_constrained_decoding/final/experiment_B_review_FINAL_results_table_v1.csv",
+        "relative_path": "journal_experiments/experiment_B_review_requested_constrained_decoding/final/experiment_B_review_FINAL_results_table_v1.csv",
+        "sha256": "4d362b0b0862cf79b0acd189c843ce854a4ce2da64bfd5f95091ba98b1d3bf89",
+        "size_bytes": 253
+      },
+      {
+        "path": "/content/deterministic-intent-translation-journal/journal_experiments/experiment_B_review_requested_constrained_decoding/final/experiment_B_review_FINAL_summary_v1.json",
+        "relative_path": "journal_experiments/experiment_B_review_requested_constrained_decoding/final/experiment_B_review_FINAL_summary_v1.json",
+        "sha256": "a3a9539f8dade42a4f75ec4f28d4a9421937edbcb79d41091c3f7d374d22c8eb",
+        "size_bytes": 3498
+      },
+      {
+        "path": "/content/deterministic-intent-translation-journal/journal_experiments/experiment_B_review_requested_constrained_decoding/manifests/experiment_B_review_FINAL_FREEZE_v1.json",
+        "relative_path": "journal_experiments/experiment_B_review_requested_constrained_decoding/manifests/experiment_B_review_FINAL_FREEZE_v1.json",
+        "sha256": "63fa99c81477eb7d2c3136b67f72ac3d4673f7d081d7b332ef8d634c68faf3dd",
+        "size_bytes": 5201
+      },
+      {
+        "path": "/content/deterministic-intent-translation-journal/journal_experiments/experiment_B_review_requested_constrained_decoding/analysis/experiment_B_review_BR12R1_forensic_summary_v1.json",
+        "relative_path": "journal_experiments/experiment_B_review_requested_constrained_decoding/analysis/experiment_B_review_BR12R1_forensic_summary_v1.json",
+        "sha256": "3a42a015f363f5da86acecfa8d065613a4d67f1ff87a98de9b0248612f1f992d",
+        "size_bytes": 2575
+      },
+      {
+        "path": "/content/deterministic-intent-translation-journal/journal_experiments/experiment_B_review_requested_constrained_decoding/analysis/experiment_B_review_BR12R1_unsupported_constraint_forensics_v1.csv",
+        "relative_path": "journal_experiments/experiment_B_review_requested_constrained_decoding/analysis/experiment_B_review_BR12R1_unsupported_constraint_forensics_v1.csv",
+        "sha256": "8860bb2899d3d85ad50d271c2a75d414fc95b7e3b524fdf3f337d3e0e50b6a96",
+        "size_bytes": 12771
+      },
+      {
+        "path": "/content/deterministic-intent-translation-journal/journal_experiments/experiment_B_review_requested_constrained_decoding/manifests/experiment_B_review_BR12R1_analysis_manifest_v1.json",
+        "relative_path": "journal_experiments/experiment_B_review_requested_constrained_decoding/manifests/experiment_B_review_BR12R1_analysis_manifest_v1.json",
+        "sha256": "c6534e57f939841782bb91198cb8c3d5ca64d471a15cdb18d34c1c0766f25ad7",
+        "size_bytes": 1310
+      },
+      {
+        "path": "/content/deterministic-intent-translation-journal/journal_experiments/experiment_B_review_requested_constrained_decoding/logs/experiment_B_review_E2A_cir_constrained_200_BR10R1_v1.log",
+        "relative_path": "journal_experiments/experiment_B_review_requested_constrained_decoding/logs/experiment_B_review_E2A_cir_constrained_200_BR10R1_v1.log",
+        "sha256": "bf9d2dcef55c089a0eb2deee179ec4fe33d36dd69d3e43301d0c748b040436dc",
+        "size_bytes": 3910
+      },
+      {
+        "path": "/content/deterministic-intent-translation-journal/journal_experiments/experiment_B_review_requested_constrained_decoding/manifests/experiment_B_review_BR10R1_E2A_execution_record_v1.json",
+        "relative_path": "journal_experiments/experiment_B_review_requested_constrained_decoding/manifests/experiment_B_review_BR10R1_E2A_execution_record_v1.json",
+        "sha256": "418b45e0ad487fed94442f7da2b8cd1987006a6727cb3b757218923c5c8322e5",
+        "size_bytes": 1706
+      },
+      {
+        "path": "/content/deterministic-intent-translation-journal/journal_experiments/experiment_B_review_requested_constrained_decoding/results/E2A/experiment_B_review_E2A_cir_constrained_200_BR10R1_v1.csv",
+        "relative_path": "journal_experiments/experiment_B_review_requested_constrained_decoding/results/E2A/experiment_B_review_E2A_cir_constrained_200_BR10R1_v1.csv",
+        "sha256": "257ff892912988b10d9abe11f24b2d746d1422d0ab06e96a39d2141b250532c6",
+        "size_bytes": 182915
+      },
+      {
+        "path": "/content/deterministic-intent-translation-journal/journal_experiments/experiment_B_review_requested_constrained_decoding/logs/experiment_B_review_E1_cir_constrained_50_BR7R1_v1.log",
+        "relative_path": "journal_experiments/experiment_B_review_requested_constrained_decoding/logs/experiment_B_review_E1_cir_constrained_50_BR7R1_v1.log",
+        "sha256": "b4cc7295a00d4d9946dc0042b1eafd87e97b134fc506667c9ccfcc50d9656bbf",
+        "size_bytes": 848
+      },
+      {
+        "path": "/content/deterministic-intent-translation-journal/journal_experiments/experiment_B_review_requested_constrained_decoding/manifests/experiment_B_review_BR7R1_E1_execution_record_v1.json",
+        "relative_path": "journal_experiments/experiment_B_review_requested_constrained_decoding/manifests/experiment_B_review_BR7R1_E1_execution_record_v1.json",
+        "sha256": "4aaf738112b9d6b448bf7dcc068ce57735724f5f316952fe5eb0cde78803526e",
+        "size_bytes": 1889
+      },
+      {
+        "path": "/content/deterministic-intent-translation-journal/journal_experiments/experiment_B_review_requested_constrained_decoding/manifests/experiment_B_review_BR10_interrupted_execution_record_v1.json",
+        "relative_path": "journal_experiments/experiment_B_review_requested_constrained_decoding/manifests/experiment_B_review_BR10_interrupted_execution_record_v1.json",
+        "sha256": "21514eb08dcf63d6742acbfb4e80bb0ec7416b332b4f6b5d681fe57912cf091d",
+        "size_bytes": 1598
+      },
+      {
+        "path": "/content/deterministic-intent-translation-journal/journal_experiments/experiment_B_review_requested_constrained_decoding/implementation/run_experiment_B_review_cir_constrained_recovery_v1.py",
+        "relative_path": "journal_experiments/experiment_B_review_requested_constrained_decoding/implementation/run_experiment_B_review_cir_constrained_recovery_v1.py",
+        "sha256": "8b1acb6862cf967c4dd7ad75802caac9c2219efcbe42d3f6431a41c2275d0b16",
+        "size_bytes": 5840
+      },
+      {
+        "path": "/content/deterministic-intent-translation-journal/journal_experiments/experiment_B_review_requested_constrained_decoding/manifests/experiment_B_review_BR10R0_recovery_manifest_v1.json",
+        "relative_path": "journal_experiments/experiment_B_review_requested_constrained_decoding/manifests/experiment_B_review_BR10R0_recovery_manifest_v1.json",
+        "sha256": "6923681077b6d47a3e7862989ef660dcdef2efdefb2829336de2fcef20ae2398",
+        "size_bytes": 1626
+      },
+      {
+        "path": "/content/deterministic-intent-translation-journal/journal_experiments/experiment_B_review_requested_constrained_decoding/results/E1/experiment_B_review_E1_cir_constrained_50_v1.csv",
+        "relative_path": "journal_experiments/experiment_B_review_requested_constrained_decoding/results/E1/experiment_B_review_E1_cir_constrained_50_v1.csv",
+        "sha256": "21ef335ea6218edb01b30dccc1461520767a7d1e9ea2e6956e7ba267dc29ed68",
+        "size_bytes": 42518
+      },
+      {
+        "path": "/content/deterministic-intent-translation-journal/journal_experiments/experiment_B_review_requested_constrained_decoding/capability_probe/experiment_B_review_BR5_capability_probe_v1.json",
+        "relative_path": "journal_experiments/experiment_B_review_requested_constrained_decoding/capability_probe/experiment_B_review_BR5_capability_probe_v1.json",
+        "sha256": "d08119bff0c20c5b735c5eb1f743a65a5beb622088d565f5bfb9a8acf47fd208",
+        "size_bytes": 1212
+      },
+      {
+        "path": "/content/deterministic-intent-translation-journal/journal_experiments/experiment_B_review_requested_constrained_decoding/manifests/experiment_B_review_BR4_implementation_manifest_v1.json",
+        "relative_path": "journal_experiments/experiment_B_review_requested_constrained_decoding/manifests/experiment_B_review_BR4_implementation_manifest_v1.json",
+        "sha256": "c3e1a1fb75073ab2ca55c6dbae24c14bbbdb957ed4fc667883d7b425d5f9ceb8",
+        "size_bytes": 2013
+      },
+      {
+        "path": "/content/deterministic-intent-translation-journal/journal_experiments/experiment_B_review_requested_constrained_decoding/manifests/experiment_B_review_BR5_capability_probe_manifest_v1.json",
+        "relative_path": "journal_experiments/experiment_B_review_requested_constrained_decoding/manifests/experiment_B_review_BR5_capability_probe_manifest_v1.json",
+        "sha256": "0094c6c9b66546bb97ef5c7c3b3fe6a8a520a2d5c2aaf958d7e58483bb807aeb",
+        "size_bytes": 824
+      },
+      {
+        "path": "/content/deterministic-intent-translation-journal/journal_experiments/experiment_B_review_requested_constrained_decoding/manifests/experiment_B_review_BR7_failed_launch_record_v1.json",
+        "relative_path": "journal_experiments/experiment_B_review_requested_constrained_decoding/manifests/experiment_B_review_BR7_failed_launch_record_v1.json",
+        "sha256": "25ccd208edce6d5321c9a15da182641169471797d952c4800b36a10f7e3a05b8",
+        "size_bytes": 1910
+      },
+      {
+        "path": "/content/deterministic-intent-translation-journal/journal_experiments/experiment_B_review_requested_constrained_decoding/manifests/experiment_B_review_preregistration_manifest_v1.json",
+        "relative_path": "journal_experiments/experiment_B_review_requested_constrained_decoding/manifests/experiment_B_review_preregistration_manifest_v1.json",
+        "sha256": "0300c2437e29c7622a103361699eaa005fccd75fcc3fbba4e24ad68b5f10e4a8",
+        "size_bytes": 1422
+      },
+      {
+        "path": "/content/deterministic-intent-translation-journal/journal_experiments/experiment_B_review_requested_constrained_decoding/preregistration/experiment_B_review_preregistration_v1.json",
+        "relative_path": "journal_experiments/experiment_B_review_requested_constrained_decoding/preregistration/experiment_B_review_preregistration_v1.json",
+        "sha256": "30554d4811bed51a0c1476514f49c0a31c9301c338bdd7ec2c2a9017b2f525ba",
+        "size_bytes": 6373
+      }
+    ]
+  },
+  "classification": {
+    "Experiment_A": {
+      "authoritative_freeze": "journal_experiments/experiment_A_model_sweep/manifests/experiment_A_FINAL_FREEZE_v1.json",
+      "authoritative_freeze_sha256": "667cfd8b1e693c0ba2f7107a877c695181b273985adc976e43f124313e8d892a",
+      "role": "Primary model-variation robustness experiment",
+      "status": "FINAL_FROZEN"
+    },
+    "Experiment_B_E3": {
+      "model_calls_remaining": 0,
+      "must_not_be_presented_as_reviewer_requested_B": true,
+      "role": "Separate supplementary constrained-decoding follow-up on frozen E3-v3 120-case benchmark",
+      "status": "EXECUTION_COMPLETE_ANALYTIC_CLOSURE_PENDING"
+    },
+    "Experiment_B_Review": {
+      "authoritative_freeze": "journal_experiments/experiment_B_review_requested_constrained_decoding/manifests/experiment_B_review_FINAL_FREEZE_v1.json",
+      "authoritative_freeze_sha256": "63fa99c81477eb7d2c3136b67f72ac3d4673f7d081d7b332ef8d634c68faf3dd",
+      "role": "Primary reviewer-requested schema-constrained-decoding experiment",
+      "status": "FINAL_FROZEN"
+    }
+  },
+  "created_utc": "2026-10-02T14:45:54.856841+00:00",
+  "experimental_phase": {
+    "Experiment_A": "COMPLETE_FROZEN",
+    "Experiment_B_E3": "ANALYTIC_CLOSURE_PENDING",
+    "Experiment_B_Review": "COMPLETE_FROZEN",
+    "new_model_running_experiments_allowed": false,
+    "planned_model_runs_remaining": 0
+  },
+  "next_step": "C2_READ_ONLY_B_E3_CLOSURE",
+  "persistent_drive_visibility": {
+    "A": true,
+    "B_E3": true,
+    "B_review": true
+  },
+  "purpose": "Read-only inventory before final journal evidence consolidation.",
+  "step": "C1"
+}

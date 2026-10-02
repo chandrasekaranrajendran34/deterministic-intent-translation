@@ -1,0 +1,69 @@
+{
+  "arm": "A10",
+  "model": "openai/gpt-oss-120b",
+  "status": "EVALUABLE",
+  "raw_result_sha256": "998e68f0f484c929864f6a35cb6ae018ee2d22c2cf795c34b6279e6264895207",
+  "sample": {
+    "total": 120,
+    "valid": 58,
+    "invalid": 62
+  },
+  "confusion_matrix_invalid_reject_positive": {
+    "TP": 51,
+    "FP": 20,
+    "FN": 11,
+    "TN": 38
+  },
+  "accuracy": {
+    "numerator": 89,
+    "denominator": 120,
+    "value": 0.7416666666666667,
+    "cp95_lower": 0.653790595288739,
+    "cp95_upper": 0.8172414698303413
+  },
+  "VAR": {
+    "numerator": 38,
+    "denominator": 58,
+    "value": 0.6551724137931034,
+    "cp95_lower": 0.5188026848764364,
+    "cp95_upper": 0.7750990656336632
+  },
+  "IRR": {
+    "numerator": 51,
+    "denominator": 62,
+    "value": 0.8225806451612904,
+    "cp95_lower": 0.7046866785293486,
+    "cp95_upper": 0.9079616040820472
+  },
+  "rejection_precision": 0.7183098591549296,
+  "rejection_recall": 0.8225806451612904,
+  "rejection_f1": 0.7669172932330828,
+  "llm": {
+    "invoked": 77,
+    "parse_success": 77,
+    "parse_failure": 0,
+    "exception_rows": 0
+  },
+  "containment": {
+    "definition": "accepted == False AND descriptor_json present",
+    "accepted": 49,
+    "rejected": 71,
+    "descriptors_emitted": 49,
+    "violations": 0,
+    "accepted_without_descriptor": 0
+  },
+  "rejection_stage_counts": {
+    "<none>": 49,
+    "source_gate": 24,
+    "cir_validation": 15,
+    "constraint_consistency": 14,
+    "preservation": 13,
+    "r7_qualitative_source_gate": 5
+  },
+  "A1_aggregate_delta_percentage_points": {
+    "accuracy_percentage_points": -9.999999999999998,
+    "VAR_percentage_points": -22.413793103448278,
+    "IRR_percentage_points": 1.6129032258064613
+  },
+  "interpretation_boundary": "This is an evaluable model arm. Aggregate metric differences demonstrate model sensitivity under the frozen pipeline; they do not establish causality attributable solely to model family, architecture, or parameter count."
+}

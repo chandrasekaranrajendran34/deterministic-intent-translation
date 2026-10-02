@@ -1,0 +1,7 @@
+model,accuracy_pct,valid_acceptance_rate_pct,invalid_rejection_rate_pct,containment_violations,evidence_status
+Qwen/Qwen3.5-9B,84.17,87.93,80.65,0,FINAL_FROZEN
+meta-llama/Llama-3.3-70B-Instruct-Turbo,83.33,82.76,83.87,0,FINAL_FROZEN
+arize-ai/qwen-2-1.5b-instruct,60.0,18.97,98.39,0,FINAL_FROZEN
+Prism-ML/Ternary-Bonsai-27B,75.83,70.69,80.65,0,FINAL_FROZEN
+deepseek-ai/DeepSeek-V4.1-Flash,84.17,87.93,80.65,0,FINAL_FROZEN
+openai/gpt-oss-120b,74.17,65.52,82.26,0,FINAL_FROZEN
