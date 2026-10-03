@@ -1,0 +1,68 @@
+{
+  "experiment": "Experiment A confirmatory missing-artifact recovery rerun",
+  "arm": "A7",
+  "model": "arize-ai/qwen-2-1.5b-instruct",
+  "evidence_status": "confirmatory recovery evidence only; does not replace frozen Experiment A result",
+  "raw_artifact": "/content/drive/MyDrive/PhD_Research/Deterministic_Intent_Translation/rerun-missing-artifacts/results/raw/A7_qwen-2-1.5b_rerun.csv",
+  "raw_artifact_sha256": "78b2acecc9a89258f98ba7078787110a8fa9816c923348c61c59f2b8544ca92f",
+  "n": 120,
+  "expected_valid": 58,
+  "expected_invalid": 62,
+  "confusion_matrix_invalid_reject_positive": {
+    "TP": 61,
+    "FP": 47,
+    "FN": 1,
+    "TN": 11
+  },
+  "metrics": {
+    "accuracy": 0.6,
+    "accuracy_pct": 60.0,
+    "VAR": 0.1896551724137931,
+    "VAR_pct": 18.96551724137931,
+    "IRR": 0.9838709677419355,
+    "IRR_pct": 98.38709677419355,
+    "precision": 0.5648148148148148,
+    "recall": 0.9838709677419355,
+    "f1": 0.7176470588235293
+  },
+  "execution": {
+    "llm_invoked": 77,
+    "pre_llm_no_call": 43,
+    "parse_ok": 77,
+    "runtime_exceptions": 0
+  },
+  "containment": {
+    "definition": "accepted == False AND descriptor_json present",
+    "descriptors_present": 12,
+    "accepted": 12,
+    "rejected": 108,
+    "accepted_without_descriptor": 0,
+    "violations": 0
+  },
+  "frozen_A7_reference": {
+    "accuracy_pct": 60.0,
+    "VAR_pct": 18.96551724137931,
+    "IRR_pct": 98.38709677419355,
+    "containment_violations": 0
+  },
+  "delta_percentage_points": {
+    "accuracy_pp": 0.0,
+    "VAR_pp": 0.0,
+    "IRR_pp": 0.0
+  },
+  "count_level_comparison": {
+    "frozen_correct": 72,
+    "today_correct": 72,
+    "frozen_valid_accepted": 11,
+    "today_valid_accepted": 11,
+    "frozen_invalid_rejected": 61,
+    "today_invalid_rejected": 61,
+    "exact_aggregate_match": true
+  },
+  "decision_correct_crosscheck": {
+    "confusion_matrix_correct": 72,
+    "decision_correct_true": 72,
+    "passed": true
+  },
+  "generated_utc": "2026-10-03T08:56:24.521848+00:00"
+}

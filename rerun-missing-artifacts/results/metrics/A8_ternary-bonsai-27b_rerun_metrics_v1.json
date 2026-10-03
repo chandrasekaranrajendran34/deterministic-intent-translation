@@ -1,0 +1,62 @@
+{
+  "artifact_type": "confirmatory_recovery_metrics",
+  "experiment": "Experiment A",
+  "arm": "A8",
+  "model": "Prism-ML/Ternary-Bonsai-27B",
+  "created_utc": "2026-10-03T14:20:28.860404+00:00",
+  "scope": {
+    "purpose": "Confirmatory recovery rerun of missing raw artifact.",
+    "frozen_results_modified": false,
+    "replacement_for_frozen_result": false
+  },
+  "raw_artifact": {
+    "path": "/content/drive/MyDrive/PhD_Research/Deterministic_Intent_Translation/rerun-missing-artifacts/results/raw/A8_ternary-bonsai-27b_rerun.csv",
+    "sha256": "4b39ff2219c8fcca729de0e1cf0f79f6522100304136c89654d741a19a06257f",
+    "rows": 120
+  },
+  "dataset_counts": {
+    "total": 120,
+    "expected_valid": 58,
+    "expected_invalid": 62
+  },
+  "execution_health": {
+    "exceptions": 0,
+    "llm_invoked": 77,
+    "parse_success": 77
+  },
+  "current_confirmatory_result": {
+    "tp": 51,
+    "fp": 22,
+    "fn": 11,
+    "tn": 36,
+    "accuracy_pct": 72.5,
+    "var_pct": 62.07,
+    "irr_pct": 82.26,
+    "precision_pct": 69.86,
+    "recall_pct": 82.26,
+    "f1_pct": 75.56,
+    "containment_violations": 0
+  },
+  "frozen_recorded_result": {
+    "tp": 50,
+    "fp": 17,
+    "fn": 12,
+    "tn": 41,
+    "accuracy_pct": 75.83,
+    "var_pct": 70.69,
+    "irr_pct": 80.65,
+    "containment_violations": 0
+  },
+  "comparison_current_minus_frozen": {
+    "tp_delta": 1,
+    "fp_delta": 5,
+    "fn_delta": -1,
+    "tn_delta": -5,
+    "accuracy_delta_pp": -3.33,
+    "var_delta_pp": -8.62,
+    "irr_delta_pp": 1.61,
+    "containment_delta": 0
+  },
+  "canonical_containment_definition": "accepted == False AND descriptor_json is present",
+  "interpretation_boundary": "Differences between this confirmatory rerun and the frozen recorded result are reported as observed and do not alter the frozen Experiment-A evidence."
+}

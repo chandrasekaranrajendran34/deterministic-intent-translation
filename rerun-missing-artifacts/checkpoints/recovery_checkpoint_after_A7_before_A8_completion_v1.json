@@ -1,0 +1,190 @@
+{
+  "checkpoint_type": "confirmatory_recovery_checkpoint",
+  "created_utc": "2026-10-03T09:48:09.455410+00:00",
+  "workspace": "/content/drive/MyDrive/PhD_Research/Deterministic_Intent_Translation/rerun-missing-artifacts",
+  "purpose": "Persistent checkpoint for resuming Experiment-A missing-artifact confirmatory reruns after a Colab disconnect or runtime reset.",
+  "evidence_boundary": "All reruns in this workspace are confirmatory/recovery evidence only and do not replace frozen Experiment-A results.",
+  "completed_arms": {
+    "A2": {
+      "status": "COMPLETE_AND_VALIDATED",
+      "today_accuracy_pct": 82.5,
+      "today_VAR_pct": 82.76,
+      "today_IRR_pct": 82.26,
+      "canonical_containment_violations": 0,
+      "frozen_accuracy_pct": 83.33,
+      "frozen_VAR_pct": 82.76,
+      "frozen_IRR_pct": 83.87,
+      "frozen_containment_violations": 0
+    },
+    "A7": {
+      "status": "COMPLETE_AND_VALIDATED",
+      "today_accuracy_pct": 60.0,
+      "today_VAR_pct": 18.97,
+      "today_IRR_pct": 98.39,
+      "canonical_containment_violations": 0,
+      "frozen_accuracy_pct": 60.0,
+      "frozen_VAR_pct": 18.97,
+      "frozen_IRR_pct": 98.39,
+      "frozen_containment_violations": 0,
+      "aggregate_reproduction": "EXACT"
+    }
+  },
+  "A8": {
+    "attempt_1": {
+      "status": "NON_EVALUABLE_INTERRUPTED",
+      "raw_rows_surviving": 0,
+      "raw_artifact": false,
+      "execution_log": false,
+      "classification": "provenance only; not model/API failure"
+    },
+    "attempt_2": {
+      "status": "IN_PROGRESS_OR_NOT_YET_VALIDATED",
+      "instruction_after_resume": "Inspect filesystem and process state before rerunning or accepting A8 Attempt 2."
+    }
+  },
+  "A9": {
+    "status": "NOT_STARTED_FULL_RERUN"
+  },
+  "canonical_containment_definition": "accepted == False AND descriptor_json is present",
+  "known_artifacts": {
+    "A2_raw": {
+      "exists": true,
+      "path": "/content/drive/MyDrive/PhD_Research/Deterministic_Intent_Translation/rerun-missing-artifacts/results/raw/A2_llama-3.3-70b_rerun.csv",
+      "size_bytes": 375671,
+      "sha256": "5856caf2437d528c510f5432436b0f9ce101d4360258d14a902598ec75dd6e28"
+    },
+    "A2_step15_metrics_preserved": {
+      "exists": true,
+      "path": "/content/drive/MyDrive/PhD_Research/Deterministic_Intent_Translation/rerun-missing-artifacts/results/metrics/A2_llama-3.3-70b_rerun_metrics_v1.json",
+      "size_bytes": 1697,
+      "sha256": "5f63faff7c228202dc629e58e5326bdf6728e45db5a448684a664a71c5f0b332"
+    },
+    "A2_canonical_containment": {
+      "exists": true,
+      "path": "/content/drive/MyDrive/PhD_Research/Deterministic_Intent_Translation/rerun-missing-artifacts/results/metrics/A2_canonical_containment_recheck_v1.json",
+      "size_bytes": 1421,
+      "sha256": "1fbfeb43af54b6935f67e21d58fe9559feb93b56e91eb21864e405dabb1c2ee8"
+    },
+    "A7_raw": {
+      "exists": true,
+      "path": "/content/drive/MyDrive/PhD_Research/Deterministic_Intent_Translation/rerun-missing-artifacts/results/raw/A7_qwen-2-1.5b_rerun.csv",
+      "size_bytes": 359542,
+      "sha256": "78b2acecc9a89258f98ba7078787110a8fa9816c923348c61c59f2b8544ca92f"
+    },
+    "A7_metrics": {
+      "exists": true,
+      "path": "/content/drive/MyDrive/PhD_Research/Deterministic_Intent_Translation/rerun-missing-artifacts/results/metrics/A7_qwen-2-1.5b_rerun_metrics_v1.json",
+      "size_bytes": 1986,
+      "sha256": "d3668e958570b2df1a086b923dfb5e444f32487eff3392d1afde034fba913fb7"
+    },
+    "A8_attempt1_provenance": {
+      "exists": true,
+      "path": "/content/drive/MyDrive/PhD_Research/Deterministic_Intent_Translation/rerun-missing-artifacts/manifests/A8_interrupted_attempt_20261003_v1.json",
+      "size_bytes": 2210,
+      "sha256": "07f5df22379747c8873a67318f34f5cc1967604c4d1862d6d2ffdb4d52028274"
+    },
+    "A8_attempt2_raw": {
+      "exists": false,
+      "path": "/content/drive/MyDrive/PhD_Research/Deterministic_Intent_Translation/rerun-missing-artifacts/results/raw/A8_ternary-bonsai-27b_rerun_attempt2.csv"
+    },
+    "A8_attempt2_log": {
+      "exists": false,
+      "path": "/content/drive/MyDrive/PhD_Research/Deterministic_Intent_Translation/rerun-missing-artifacts/logs/A8_ternary-bonsai-27b_rerun_attempt2.log"
+    }
+  },
+  "workspace_file_count_before_checkpoint": 13,
+  "workspace_inventory": [
+    {
+      "relative_path": "logs/A2_llama-3.3-70b_rerun.log",
+      "absolute_path": "/content/drive/MyDrive/PhD_Research/Deterministic_Intent_Translation/rerun-missing-artifacts/logs/A2_llama-3.3-70b_rerun.log",
+      "size_bytes": 2604,
+      "sha256": "86c3e5924a688eb379d4067a16a63458b2d900a07d28150634aa54e7d902c072",
+      "modified_utc": "2026-10-03T08:39:09+00:00"
+    },
+    {
+      "relative_path": "logs/A7_qwen-2-1.5b_rerun.log",
+      "absolute_path": "/content/drive/MyDrive/PhD_Research/Deterministic_Intent_Translation/rerun-missing-artifacts/logs/A7_qwen-2-1.5b_rerun.log",
+      "size_bytes": 2590,
+      "sha256": "2287df7bea3d7cbb670eb05d8e435e6df8d13a8c41937d36cc2e362542fc998c",
+      "modified_utc": "2026-10-03T08:53:15+00:00"
+    },
+    {
+      "relative_path": "manifests/A8_interrupted_attempt_20261003_v1.json",
+      "absolute_path": "/content/drive/MyDrive/PhD_Research/Deterministic_Intent_Translation/rerun-missing-artifacts/manifests/A8_interrupted_attempt_20261003_v1.json",
+      "size_bytes": 2210,
+      "sha256": "07f5df22379747c8873a67318f34f5cc1967604c4d1862d6d2ffdb4d52028274",
+      "modified_utc": "2026-10-03T09:05:12+00:00"
+    },
+    {
+      "relative_path": "preregistration/experiment_A_missing_artifacts_confirmatory_rerun_prereg_v1.json",
+      "absolute_path": "/content/drive/MyDrive/PhD_Research/Deterministic_Intent_Translation/rerun-missing-artifacts/preregistration/experiment_A_missing_artifacts_confirmatory_rerun_prereg_v1.json",
+      "size_bytes": 2672,
+      "sha256": "35ef6207324ab1300749c1e703c4db4a87a6acca6b13e1f06679b4f95952789e",
+      "modified_utc": "2026-10-03T08:20:31+00:00"
+    },
+    {
+      "relative_path": "results/metrics/A2_canonical_containment_recheck_v1.json",
+      "absolute_path": "/content/drive/MyDrive/PhD_Research/Deterministic_Intent_Translation/rerun-missing-artifacts/results/metrics/A2_canonical_containment_recheck_v1.json",
+      "size_bytes": 1421,
+      "sha256": "1fbfeb43af54b6935f67e21d58fe9559feb93b56e91eb21864e405dabb1c2ee8",
+      "modified_utc": "2026-10-03T08:51:29+00:00"
+    },
+    {
+      "relative_path": "results/metrics/A2_llama-3.3-70b_rerun_metrics_v1.json",
+      "absolute_path": "/content/drive/MyDrive/PhD_Research/Deterministic_Intent_Translation/rerun-missing-artifacts/results/metrics/A2_llama-3.3-70b_rerun_metrics_v1.json",
+      "size_bytes": 1697,
+      "sha256": "5f63faff7c228202dc629e58e5326bdf6728e45db5a448684a664a71c5f0b332",
+      "modified_utc": "2026-10-03T08:42:13+00:00"
+    },
+    {
+      "relative_path": "results/metrics/A7_qwen-2-1.5b_rerun_metrics_v1.json",
+      "absolute_path": "/content/drive/MyDrive/PhD_Research/Deterministic_Intent_Translation/rerun-missing-artifacts/results/metrics/A7_qwen-2-1.5b_rerun_metrics_v1.json",
+      "size_bytes": 1986,
+      "sha256": "d3668e958570b2df1a086b923dfb5e444f32487eff3392d1afde034fba913fb7",
+      "modified_utc": "2026-10-03T08:56:24+00:00"
+    },
+    {
+      "relative_path": "results/raw/A2_llama-3.3-70b_rerun.csv",
+      "absolute_path": "/content/drive/MyDrive/PhD_Research/Deterministic_Intent_Translation/rerun-missing-artifacts/results/raw/A2_llama-3.3-70b_rerun.csv",
+      "size_bytes": 375671,
+      "sha256": "5856caf2437d528c510f5432436b0f9ce101d4360258d14a902598ec75dd6e28",
+      "modified_utc": "2026-10-03T08:39:08+00:00"
+    },
+    {
+      "relative_path": "results/raw/A7_qwen-2-1.5b_rerun.csv",
+      "absolute_path": "/content/drive/MyDrive/PhD_Research/Deterministic_Intent_Translation/rerun-missing-artifacts/results/raw/A7_qwen-2-1.5b_rerun.csv",
+      "size_bytes": 359542,
+      "sha256": "78b2acecc9a89258f98ba7078787110a8fa9816c923348c61c59f2b8544ca92f",
+      "modified_utc": "2026-10-03T08:53:14+00:00"
+    },
+    {
+      "relative_path": "results/smoke/_smoke_A2.csv",
+      "absolute_path": "/content/drive/MyDrive/PhD_Research/Deterministic_Intent_Translation/rerun-missing-artifacts/results/smoke/_smoke_A2.csv",
+      "size_bytes": 19419,
+      "sha256": "4638509336a0167bec15d5b4fc1b951b6c1e0e86c63e309d9c1d76c3a39707fc",
+      "modified_utc": "2026-10-03T08:26:00+00:00"
+    },
+    {
+      "relative_path": "results/smoke/_smoke_A7.csv",
+      "absolute_path": "/content/drive/MyDrive/PhD_Research/Deterministic_Intent_Translation/rerun-missing-artifacts/results/smoke/_smoke_A7.csv",
+      "size_bytes": 17206,
+      "sha256": "24e2b275fe7f3db135a4d3d41a60cf09a063d2f74c491d381a0ae845b4e45ff6",
+      "modified_utc": "2026-10-03T08:29:45+00:00"
+    },
+    {
+      "relative_path": "results/smoke/_smoke_A8.csv",
+      "absolute_path": "/content/drive/MyDrive/PhD_Research/Deterministic_Intent_Translation/rerun-missing-artifacts/results/smoke/_smoke_A8.csv",
+      "size_bytes": 19503,
+      "sha256": "bc840b52adcd3e4960cd2d32ec9477816f4171427d043f17e6fc7ba328e2cb9a",
+      "modified_utc": "2026-10-03T08:33:09+00:00"
+    },
+    {
+      "relative_path": "results/smoke/_smoke_A9.csv",
+      "absolute_path": "/content/drive/MyDrive/PhD_Research/Deterministic_Intent_Translation/rerun-missing-artifacts/results/smoke/_smoke_A9.csv",
+      "size_bytes": 18662,
+      "sha256": "a16aa70c44f039c82b63d18ccd4036d2e3213a95febb4770280c1f4dccbb1f6d",
+      "modified_utc": "2026-10-03T08:35:14+00:00"
+    }
+  ],
+  "resume_rule": "After runtime reset, remount Drive and inspect this checkpoint plus current A8 Attempt-2 filesystem state. Do not repeat A2 or A7."
+}

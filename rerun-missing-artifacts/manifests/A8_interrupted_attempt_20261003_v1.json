@@ -1,0 +1,31 @@
+{
+  "record_type": "interrupted_confirmatory_rerun_attempt",
+  "experiment": "Experiment A missing-artifact confirmatory recovery",
+  "arm": "A8",
+  "model": "Prism-ML/Ternary-Bonsai-27B",
+  "attempt": 1,
+  "started_utc": "2026-10-03T08:57:34.200634+00:00",
+  "termination_observation": "Parent Colab cell raised KeyboardInterrupt while waiting in subprocess.run().",
+  "subprocess_return_code": null,
+  "subprocess_completion_status": "UNKNOWN_DUE_TO_PARENT_KEYBOARD_INTERRUPT",
+  "post_interrupt_inspection": {
+    "runner_process_still_running": false,
+    "raw_output_exists": false,
+    "execution_log_exists": false,
+    "recoverable_result_rows": 0
+  },
+  "interpretation": "The interrupted attempt produced no surviving raw result artifact and no execution log. The interruption is recorded for provenance only and is not treated as an evaluable A8 run, a model failure, an API failure, or a benchmark result.",
+  "rerun_policy": "A subsequent fresh A8 attempt may be performed as a new confirmatory recovery attempt. It must create new raw and log artifact names and must not be represented as continuation or completion of this interrupted attempt.",
+  "canonical_runner": {
+    "path": "/content/drive/MyDrive/PhD_Research/Deterministic_Intent_Translation/experiment-1-v2-together_FINAL/experiment-2b/implementation/e3_v3/run_experiment2b_e3v3_r7_dev_v1.py",
+    "sha256": "40c035cb864978c718a72fcfdfbb164d262529960b0ae78242d5194147cd8257"
+  },
+  "frozen_dataset": {
+    "path": "/content/drive/MyDrive/PhD_Research/Deterministic_Intent_Translation/experiment-1-v2-together_FINAL/experiment-2b/reproducibility/e3v3_heldout_benchmark_v1.0/e3v3_heldout_benchmark_120_v1.csv",
+    "sha256": "84576e7d99a2721e61ded5a14bdafeb96707b068397243bbed32aa735496d4de"
+  },
+  "intended_raw_path_attempt_1": "/content/drive/MyDrive/PhD_Research/Deterministic_Intent_Translation/rerun-missing-artifacts/results/raw/A8_ternary-bonsai-27b_rerun.csv",
+  "intended_log_path_attempt_1": "/content/drive/MyDrive/PhD_Research/Deterministic_Intent_Translation/rerun-missing-artifacts/logs/A8_ternary-bonsai-27b_rerun.log",
+  "frozen_experiment_modified": false,
+  "model_or_api_call_during_this_documentation_step": false
+}

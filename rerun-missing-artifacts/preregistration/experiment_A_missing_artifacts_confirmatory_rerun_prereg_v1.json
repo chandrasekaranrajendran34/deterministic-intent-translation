@@ -1,0 +1,62 @@
+{
+  "experiment": "confirmatory_rerun_missing_experiment_A_raw_artifacts",
+  "date": "2026-10-03",
+  "purpose": "Confirmatory recovery rerun of Experiment A arms whose ephemeral raw artifacts were lost after a Google Colab runtime restart.",
+  "status": "PRE_EXECUTION",
+  "important_boundary": "These reruns do not replace, modify, reconstruct, or overwrite the previously frozen Experiment A results. Today's outputs are stored separately and will be compared retrospectively with the frozen recorded metrics.",
+  "runner": {
+    "path": "experiment-2b/implementation/e3_v3/run_experiment2b_e3v3_r7_dev_v1.py",
+    "sha256": "40c035cb864978c718a72fcfdfbb164d262529960b0ae78242d5194147cd8257"
+  },
+  "dataset": {
+    "path": "experiment-2b/reproducibility/e3v3_heldout_benchmark_v1.0/e3v3_heldout_benchmark_120_v1.csv",
+    "sha256": "84576e7d99a2721e61ded5a14bdafeb96707b068397243bbed32aa735496d4de",
+    "cases": 120,
+    "valid_cases": 58,
+    "invalid_cases": 62
+  },
+  "historical_official_run": {
+    "sha256": "12c3a82bd8cde2d07de352155e9ee14913c821fb745d401c7ffe2f207e850e5e"
+  },
+  "arms": {
+    "A2": {
+      "model": "meta-llama/Llama-3.3-70B-Instruct-Turbo",
+      "recorded_accuracy_pct": 83.33,
+      "recorded_VAR_pct": 82.76,
+      "recorded_IRR_pct": 83.87,
+      "recorded_containment_violations": 0
+    },
+    "A7": {
+      "model": "arize-ai/qwen-2-1.5b-instruct",
+      "recorded_accuracy_pct": 60.0,
+      "recorded_VAR_pct": 18.97,
+      "recorded_IRR_pct": 98.39,
+      "recorded_containment_violations": 0
+    },
+    "A8": {
+      "model": "Prism-ML/Ternary-Bonsai-27B",
+      "recorded_accuracy_pct": 75.83,
+      "recorded_VAR_pct": 70.69,
+      "recorded_IRR_pct": 80.65,
+      "recorded_containment_violations": 0
+    },
+    "A9": {
+      "model": "deepseek-ai/DeepSeek-V4.1-Flash",
+      "recorded_accuracy_pct": 84.17,
+      "recorded_VAR_pct": 87.93,
+      "recorded_IRR_pct": 80.65,
+      "recorded_containment_violations": 0
+    }
+  },
+  "execution_plan": [
+    "Verify environment and API credential availability.",
+    "Run 5-case smoke test independently for A2, A7, A8, and A9.",
+    "Inspect every smoke output before full execution.",
+    "Execute full 120-case rerun only for arms whose endpoint is operational.",
+    "Check full outputs for exceptions/API failures and completeness.",
+    "Compute today's metrics from today's outputs.",
+    "Compare today's results with previously frozen recorded metrics."
+  ],
+  "comparison_rule": "Today's rerun is confirmatory only. Agreement or disagreement will be reported as observed. Previously frozen values will not be changed.",
+  "created_utc": "2026-10-03T08:20:31.504540+00:00"
+}

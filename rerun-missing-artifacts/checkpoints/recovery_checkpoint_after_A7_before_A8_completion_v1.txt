@@ -1,0 +1,54 @@
+EXPERIMENT-A MISSING-ARTIFACT RECOVERY CHECKPOINT
+==========================================================================================
+Created UTC: 2026-10-03T09:48:09.455410+00:00
+
+COMPLETED
+------------------------------------------------------------------------------------------
+A2 : COMPLETE + VALIDATED
+     Today: Accuracy 82.50%, VAR 82.76%, IRR 82.26%, containment 0
+     Frozen: Accuracy 83.33%, VAR 82.76%, IRR 83.87%, containment 0
+
+A7 : COMPLETE + VALIDATED
+     Today: Accuracy 60.00%, VAR 18.97%, IRR 98.39%, containment 0
+     Frozen: Accuracy 60.00%, VAR 18.97%, IRR 98.39%, containment 0
+     Aggregate reproduction: EXACT
+
+A8
+------------------------------------------------------------------------------------------
+Attempt 1: NON-EVALUABLE / INTERRUPTED
+No raw artifact, no log, zero surviving rows.
+Attempt 2: IN PROGRESS OR NOT YET VALIDATED.
+After reconnect: inspect A8 Attempt-2 state BEFORE rerunning.
+
+A9
+------------------------------------------------------------------------------------------
+Full confirmatory rerun NOT STARTED.
+
+CANONICAL CONTAINMENT
+------------------------------------------------------------------------------------------
+Violation = accepted == False AND descriptor_json is present
+
+RESUME INSTRUCTION
+------------------------------------------------------------------------------------------
+1. Mount Google Drive.
+2. Open rerun-missing-artifacts/checkpoints.
+3. Verify this checkpoint.
+4. Inspect A8 Attempt-2 raw/log/process state.
+5. DO NOT repeat A2 or A7.
+6. Continue A8, then A9.
+
+ARTIFACT INVENTORY
+------------------------------------------------------------------------------------------
+logs/A2_llama-3.3-70b_rerun.log | 2604 bytes | SHA256=86c3e5924a688eb379d4067a16a63458b2d900a07d28150634aa54e7d902c072
+logs/A7_qwen-2-1.5b_rerun.log | 2590 bytes | SHA256=2287df7bea3d7cbb670eb05d8e435e6df8d13a8c41937d36cc2e362542fc998c
+manifests/A8_interrupted_attempt_20261003_v1.json | 2210 bytes | SHA256=07f5df22379747c8873a67318f34f5cc1967604c4d1862d6d2ffdb4d52028274
+preregistration/experiment_A_missing_artifacts_confirmatory_rerun_prereg_v1.json | 2672 bytes | SHA256=35ef6207324ab1300749c1e703c4db4a87a6acca6b13e1f06679b4f95952789e
+results/metrics/A2_canonical_containment_recheck_v1.json | 1421 bytes | SHA256=1fbfeb43af54b6935f67e21d58fe9559feb93b56e91eb21864e405dabb1c2ee8
+results/metrics/A2_llama-3.3-70b_rerun_metrics_v1.json | 1697 bytes | SHA256=5f63faff7c228202dc629e58e5326bdf6728e45db5a448684a664a71c5f0b332
+results/metrics/A7_qwen-2-1.5b_rerun_metrics_v1.json | 1986 bytes | SHA256=d3668e958570b2df1a086b923dfb5e444f32487eff3392d1afde034fba913fb7
+results/raw/A2_llama-3.3-70b_rerun.csv | 375671 bytes | SHA256=5856caf2437d528c510f5432436b0f9ce101d4360258d14a902598ec75dd6e28
+results/raw/A7_qwen-2-1.5b_rerun.csv | 359542 bytes | SHA256=78b2acecc9a89258f98ba7078787110a8fa9816c923348c61c59f2b8544ca92f
+results/smoke/_smoke_A2.csv | 19419 bytes | SHA256=4638509336a0167bec15d5b4fc1b951b6c1e0e86c63e309d9c1d76c3a39707fc
+results/smoke/_smoke_A7.csv | 17206 bytes | SHA256=24e2b275fe7f3db135a4d3d41a60cf09a063d2f74c491d381a0ae845b4e45ff6
+results/smoke/_smoke_A8.csv | 19503 bytes | SHA256=bc840b52adcd3e4960cd2d32ec9477816f4171427d043f17e6fc7ba328e2cb9a
+results/smoke/_smoke_A9.csv | 18662 bytes | SHA256=a16aa70c44f039c82b63d18ccd4036d2e3213a95febb4770280c1f4dccbb1f6d

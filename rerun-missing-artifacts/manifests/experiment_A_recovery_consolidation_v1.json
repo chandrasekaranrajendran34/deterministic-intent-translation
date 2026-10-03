@@ -1,0 +1,222 @@
+{
+  "artifact_type": "experiment_A_confirmatory_recovery_consolidation",
+  "version": "v1",
+  "created_utc": "2026-10-03T14:37:33.810559+00:00",
+  "scope": {
+    "purpose": "Consolidate separately executed confirmatory/recovery reruns performed to recover missing raw artifacts.",
+    "arms": [
+      "A2",
+      "A7",
+      "A8",
+      "A9"
+    ],
+    "frozen_results_modified": false,
+    "replacement_for_frozen_experiment_A": false,
+    "paper_reporting_rule": "Original frozen Experiment-A results remain the primary reported results. Recovery reruns are retained separately as confirmatory/reproducibility evidence."
+  },
+  "metric_definition": {
+    "positive_class": "expected invalid / pipeline reject",
+    "tp": "expected invalid and rejected",
+    "fp": "expected valid and rejected",
+    "fn": "expected invalid and accepted",
+    "tn": "expected valid and accepted",
+    "VAR": "TN / expected-valid",
+    "IRR": "TP / expected-invalid",
+    "canonical_containment_violation": "accepted == False AND descriptor_json is present"
+  },
+  "arms": {
+    "A2": {
+      "raw_artifact": {
+        "path": "/content/drive/MyDrive/PhD_Research/Deterministic_Intent_Translation/rerun-missing-artifacts/results/raw/A2_llama-3.3-70b_rerun.csv",
+        "sha256": "5856caf2437d528c510f5432436b0f9ce101d4360258d14a902598ec75dd6e28",
+        "size_bytes": 375671
+      },
+      "metrics_artifact": {
+        "path": "/content/drive/MyDrive/PhD_Research/Deterministic_Intent_Translation/rerun-missing-artifacts/results/metrics/A2_canonical_containment_recheck_v1.json",
+        "sha256": "1fbfeb43af54b6935f67e21d58fe9559feb93b56e91eb21864e405dabb1c2ee8",
+        "size_bytes": 1421
+      },
+      "frozen_recorded_result": {
+        "tp": 52,
+        "fp": 10,
+        "fn": 10,
+        "tn": 48,
+        "accuracy_pct": 83.33,
+        "var_pct": 82.76,
+        "irr_pct": 83.87,
+        "containment_violations": 0
+      },
+      "confirmatory_recovery_result": {
+        "tp": 51,
+        "fp": 10,
+        "fn": 11,
+        "tn": 48,
+        "accuracy_pct": 82.5,
+        "var_pct": 82.76,
+        "irr_pct": 82.26,
+        "containment_violations": 0
+      },
+      "recovery_minus_frozen": {
+        "tp": -1,
+        "fp": 0,
+        "fn": 1,
+        "tn": 0,
+        "accuracy_pp": -0.83,
+        "var_pp": 0.0,
+        "irr_pp": -1.61,
+        "containment": 0
+      }
+    },
+    "A7": {
+      "raw_artifact": {
+        "path": "/content/drive/MyDrive/PhD_Research/Deterministic_Intent_Translation/rerun-missing-artifacts/results/raw/A7_qwen-2-1.5b_rerun.csv",
+        "sha256": "78b2acecc9a89258f98ba7078787110a8fa9816c923348c61c59f2b8544ca92f",
+        "size_bytes": 359542
+      },
+      "metrics_artifact": {
+        "path": "/content/drive/MyDrive/PhD_Research/Deterministic_Intent_Translation/rerun-missing-artifacts/results/metrics/A7_qwen-2-1.5b_rerun_metrics_v1.json",
+        "sha256": "d3668e958570b2df1a086b923dfb5e444f32487eff3392d1afde034fba913fb7",
+        "size_bytes": 1986
+      },
+      "frozen_recorded_result": {
+        "tp": 61,
+        "fp": 47,
+        "fn": 1,
+        "tn": 11,
+        "accuracy_pct": 60.0,
+        "var_pct": 18.97,
+        "irr_pct": 98.39,
+        "containment_violations": 0
+      },
+      "confirmatory_recovery_result": {
+        "tp": 61,
+        "fp": 47,
+        "fn": 1,
+        "tn": 11,
+        "accuracy_pct": 60.0,
+        "var_pct": 18.97,
+        "irr_pct": 98.39,
+        "containment_violations": 0
+      },
+      "recovery_minus_frozen": {
+        "tp": 0,
+        "fp": 0,
+        "fn": 0,
+        "tn": 0,
+        "accuracy_pp": 0.0,
+        "var_pp": 0.0,
+        "irr_pp": 0.0,
+        "containment": 0
+      }
+    },
+    "A8": {
+      "raw_artifact": {
+        "path": "/content/drive/MyDrive/PhD_Research/Deterministic_Intent_Translation/rerun-missing-artifacts/results/raw/A8_ternary-bonsai-27b_rerun.csv",
+        "sha256": "4b39ff2219c8fcca729de0e1cf0f79f6522100304136c89654d741a19a06257f",
+        "size_bytes": 373472
+      },
+      "metrics_artifact": {
+        "path": "/content/drive/MyDrive/PhD_Research/Deterministic_Intent_Translation/rerun-missing-artifacts/results/metrics/A8_ternary-bonsai-27b_rerun_metrics_v1.json",
+        "sha256": "f9142da410f64bc04335653fdbef20712216ac85000671824885a9166afa27a6",
+        "size_bytes": 1809
+      },
+      "frozen_recorded_result": {
+        "tp": 50,
+        "fp": 17,
+        "fn": 12,
+        "tn": 41,
+        "accuracy_pct": 75.83,
+        "var_pct": 70.69,
+        "irr_pct": 80.65,
+        "containment_violations": 0
+      },
+      "confirmatory_recovery_result": {
+        "tp": 51,
+        "fp": 22,
+        "fn": 11,
+        "tn": 36,
+        "accuracy_pct": 72.5,
+        "var_pct": 62.07,
+        "irr_pct": 82.26,
+        "containment_violations": 0
+      },
+      "recovery_minus_frozen": {
+        "tp": 1,
+        "fp": 5,
+        "fn": -1,
+        "tn": -5,
+        "accuracy_pp": -3.33,
+        "var_pp": -8.62,
+        "irr_pp": 1.61,
+        "containment": 0
+      }
+    },
+    "A9": {
+      "raw_artifact": {
+        "path": "/content/drive/MyDrive/PhD_Research/Deterministic_Intent_Translation/rerun-missing-artifacts/results/raw/A9_deepseek-v4.1-flash_rerun.csv",
+        "sha256": "16eb0b8c9d6a75d84bcb1b29758f87d0263ddf9fa51262b029b1c9865fb7d6a3",
+        "size_bytes": 369086
+      },
+      "metrics_artifact": {
+        "path": "/content/drive/MyDrive/PhD_Research/Deterministic_Intent_Translation/rerun-missing-artifacts/results/metrics/A9_deepseek-v4.1-flash_rerun_metrics_v1.json",
+        "sha256": "333c8fd77d05c48059a386c432438e72bbeb2c54d04219165802050882dbd68e",
+        "size_bytes": 1806
+      },
+      "frozen_recorded_result": {
+        "tp": 50,
+        "fp": 7,
+        "fn": 12,
+        "tn": 51,
+        "accuracy_pct": 84.17,
+        "var_pct": 87.93,
+        "irr_pct": 80.65,
+        "containment_violations": 0
+      },
+      "confirmatory_recovery_result": {
+        "tp": 50,
+        "fp": 7,
+        "fn": 12,
+        "tn": 51,
+        "accuracy_pct": 84.17,
+        "var_pct": 87.93,
+        "irr_pct": 80.65,
+        "containment_violations": 0
+      },
+      "recovery_minus_frozen": {
+        "tp": 0,
+        "fp": 0,
+        "fn": 0,
+        "tn": 0,
+        "accuracy_pp": 0.0,
+        "var_pp": 0.0,
+        "irr_pp": 0.0,
+        "containment": 0
+      }
+    }
+  },
+  "a2_provisional_artifact": {
+    "path": "/content/drive/MyDrive/PhD_Research/Deterministic_Intent_Translation/rerun-missing-artifacts/results/metrics/A2_llama-3.3-70b_rerun_metrics_v1.json",
+    "sha256": "5f63faff7c228202dc629e58e5326bdf6728e45db5a448684a664a71c5f0b332",
+    "status": "Preserved historical recovery artifact with a provisional/incorrect containment proxy. Do not use its containment field. Use A2_canonical_containment_recheck_v1.json instead."
+  },
+  "a8_interrupted_attempts": [
+    {
+      "path": "/content/drive/MyDrive/PhD_Research/Deterministic_Intent_Translation/rerun-missing-artifacts/manifests/A8_interrupted_attempt_20261003_v1.json",
+      "sha256": "07f5df22379747c8873a67318f34f5cc1967604c4d1862d6d2ffdb4d52028274",
+      "classification": "non-evaluable interrupted attempt; not classified as model/API failure"
+    },
+    {
+      "path": "/content/drive/MyDrive/PhD_Research/Deterministic_Intent_Translation/rerun-missing-artifacts/manifests/A8_interrupted_attempt2_20261003_v1.json",
+      "sha256": "bfc5f09702dcf619230a86cb61a2bc4f22e0aff91df62f18d2e65a01161bd33c",
+      "classification": "non-evaluable interrupted attempt; not classified as model/API failure"
+    }
+  ],
+  "observations": {
+    "A2": "Recovery decision metrics differed slightly from frozen metrics; canonical containment remained zero.",
+    "A7": "Recovery aggregate decision metrics matched frozen aggregate metrics; canonical containment remained zero.",
+    "A8": "Recovery decision metrics differed from frozen metrics; canonical containment remained zero.",
+    "A9": "Recovery aggregate decision metrics matched frozen aggregate metrics; canonical containment remained zero.",
+    "overall": "Semantic decision performance showed rerun variability for some arms, while zero canonical containment violations were observed in all four confirmatory recovery runs."
+  },
+  "claim_boundary": "These recovery observations do not establish universal model independence, hallucination freedom, zero risk, formal standards conformance, or deterministic semantic-model outputs."
+}

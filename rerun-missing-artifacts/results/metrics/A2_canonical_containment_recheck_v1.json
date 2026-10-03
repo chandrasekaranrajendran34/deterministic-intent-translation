@@ -1,0 +1,31 @@
+{
+  "experiment": "Experiment A confirmatory missing-artifact recovery rerun",
+  "arm": "A2",
+  "model": "meta-llama/Llama-3.3-70B-Instruct-Turbo",
+  "raw_artifact": "/content/drive/MyDrive/PhD_Research/Deterministic_Intent_Translation/rerun-missing-artifacts/results/raw/A2_llama-3.3-70b_rerun.csv",
+  "raw_sha256": "5856caf2437d528c510f5432436b0f9ce101d4360258d14a902598ec75dd6e28",
+  "canonical_containment_definition": "accepted == False AND descriptor_json is present",
+  "canonical_containment_violations": 0,
+  "accepted": 59,
+  "rejected": 61,
+  "descriptors_present": 59,
+  "accepted_without_descriptor": 0,
+  "decision_metrics": {
+    "TP": 51,
+    "FP": 10,
+    "FN": 11,
+    "TN": 48,
+    "accuracy_pct": 82.5,
+    "VAR_pct": 82.75862068965517,
+    "IRR_pct": 82.25806451612904
+  },
+  "frozen_reference": {
+    "accuracy_pct": 83.33,
+    "VAR_pct": 82.76,
+    "IRR_pct": 83.87,
+    "containment_violations": 0
+  },
+  "correction_note": "Step 15 used a non-canonical proxy (expected-invalid AND accepted AND descriptor present), which counts false-negative decision errors rather than Experiment-A containment violations. The Step 15 artifact is preserved unchanged for provenance. This artifact applies the canonical frozen Experiment-A containment definition.",
+  "evidence_status": "confirmatory recovery evidence only; frozen Experiment A unchanged",
+  "generated_utc": "2026-10-03T08:51:29.135993+00:00"
+}

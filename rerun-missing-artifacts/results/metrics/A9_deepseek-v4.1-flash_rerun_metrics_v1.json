@@ -1,0 +1,62 @@
+{
+  "artifact_type": "confirmatory_recovery_metrics",
+  "experiment": "Experiment A",
+  "arm": "A9",
+  "model": "deepseek-ai/DeepSeek-V4.1-Flash",
+  "created_utc": "2026-10-03T14:32:45.659614+00:00",
+  "scope": {
+    "purpose": "Confirmatory recovery rerun of missing raw artifact.",
+    "frozen_results_modified": false,
+    "replacement_for_frozen_result": false
+  },
+  "raw_artifact": {
+    "path": "/content/drive/MyDrive/PhD_Research/Deterministic_Intent_Translation/rerun-missing-artifacts/results/raw/A9_deepseek-v4.1-flash_rerun.csv",
+    "sha256": "16eb0b8c9d6a75d84bcb1b29758f87d0263ddf9fa51262b029b1c9865fb7d6a3",
+    "rows": 120
+  },
+  "dataset_counts": {
+    "total": 120,
+    "expected_valid": 58,
+    "expected_invalid": 62
+  },
+  "execution_health": {
+    "exceptions": 0,
+    "llm_invoked": 77,
+    "parse_success": 77
+  },
+  "current_confirmatory_result": {
+    "tp": 50,
+    "fp": 7,
+    "fn": 12,
+    "tn": 51,
+    "accuracy_pct": 84.17,
+    "var_pct": 87.93,
+    "irr_pct": 80.65,
+    "precision_pct": 87.72,
+    "recall_pct": 80.65,
+    "f1_pct": 84.03,
+    "containment_violations": 0
+  },
+  "frozen_recorded_result": {
+    "tp": 50,
+    "fp": 7,
+    "fn": 12,
+    "tn": 51,
+    "accuracy_pct": 84.17,
+    "var_pct": 87.93,
+    "irr_pct": 80.65,
+    "containment_violations": 0
+  },
+  "comparison_current_minus_frozen": {
+    "tp_delta": 0,
+    "fp_delta": 0,
+    "fn_delta": 0,
+    "tn_delta": 0,
+    "accuracy_delta_pp": 0.0,
+    "var_delta_pp": 0.0,
+    "irr_delta_pp": 0.0,
+    "containment_delta": 0
+  },
+  "canonical_containment_definition": "accepted == False AND descriptor_json is present",
+  "interpretation_boundary": "Differences between this confirmatory rerun and the frozen recorded result are reported as observed and do not alter the frozen Experiment-A evidence."
+}
