@@ -1,0 +1,29 @@
+cff-version: 1.2.0
+message: "If you use this software or its benchmarks, please cite both the software and the accompanying article."
+title: "Deterministic Intent Translation: Implementation, Benchmarks and Reproducibility Artifacts"
+abstract: >-
+  Reference implementation, frozen benchmarks, experiment runners and
+  per-case evidence for a deterministic failure-containment cascade that
+  validates LLM-produced network-slicing intent descriptors before actuation.
+type: software
+authors:
+  - family-names: Chandrasekaran
+    given-names: R.
+    affiliation: "Vel Tech Rangarajan Dr. Sagunthala R&D Institute of Science and Technology"
+  - family-names: Navaz
+    given-names: K.
+    affiliation: "Vel Tech Rangarajan Dr. Sagunthala R&D Institute of Science and Technology"
+  - family-names: "David Neels Ponkumar"
+    given-names: D.
+    affiliation: "Vel Tech Rangarajan Dr. Sagunthala R&D Institute of Science and Technology"
+version: 1.0.0
+date-released: "2026-10-03"
+license: MIT
+repository-code: "https://github.com/chandrasekaranrajendran34/deterministic-intent-translation"
+keywords:
+  - intent-based networking
+  - network slicing
+  - large language models
+  - hallucination containment
+  - deterministic validation
+  - reproducibility artifact
